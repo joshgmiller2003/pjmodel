@@ -1,0 +1,3555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA PJ MODEL · Own Model vs DraftKings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07090f;
+  --card: #12151e;
+  --ink: #f4f6fb;
+  --muted: #9aa4bd;
+  --accent: #ff6b35;
+  --accent2: #4cc9f0;
+  --gold: #ffd166;
+  --border: #252a38;
+  --good: #2ee6a6;
+  --bad: #ff5d73;
+  --glow: rgba(255,107,53,0.15);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #1a1230 0%, transparent 50%),
+              radial-gradient(900px 500px at 100% 0%, #0d1c2e 0%, transparent 45%),
+              var(--bg);
+  color: var(--ink);
+  line-height: 1.45;
+}
+header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(18,21,30,0.9) 0%, transparent 100%);
+}
+h1 { margin: 0 0 4px; font-size: 30px; font-weight: 700; letter-spacing: -0.6px; }
+h1 span { color: var(--accent); text-shadow: 0 0 18px var(--glow); }
+.sub { color: var(--muted); font-size: 14px; }
+.meta { font-size: 12px; color: #6a7888; margin-top: 6px; }
+.disclaimer { font-size: 11px; color: #6a7888; margin-top: 10px; }
+.injury-banner {
+  background: #16120c; border-bottom: 1px solid var(--border); padding: 6px 32px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.injury-banner strong { color: var(--accent); }
+.injury-details {
+  display: none; background: #12100c; border-bottom: 1px solid var(--border); padding: 12px 32px; font-size: 13px;
+}
+.injury-details.show { display: block; }
+nav {
+  display: flex; gap: 6px; padding: 14px 32px; border-bottom: 1px solid var(--border); background: rgba(10,12,18,0.85); flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+}
+nav button {
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600;
+  transition: all 0.15s ease;
+}
+nav button:hover { border-color: var(--accent); color: var(--ink); }
+nav button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); box-shadow: 0 0 12px var(--glow); }
+.container { padding: 22px 32px 80px; max-width: 1440px; margin: 0 auto; }
+.section-title { font-size: 18px; font-weight: 650; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.section-title small { color: var(--muted); font-weight: 500; font-size: 13px; }
+.game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.card {
+  background: linear-gradient(180deg, #161a24 0%, var(--card) 100%);
+  border: 1px solid var(--border); border-radius: 16px; padding: 16px;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover { border-color: #3a4158; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+.card.clickable { cursor: pointer; }
+.card.clickable:hover { border-color: var(--accent); }
+.game-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.matchup { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.team-logo { width: 28px; height: 28px; border-radius: 6px; object-fit: contain; background: #0d1018; }
+.time { color: var(--muted); font-size: 12px; }
+.markets { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.market { background: #0e121a; border-radius: 10px; padding: 9px; text-align: center; border: 1px solid #1e2433; }
+.market label { display: block; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.market .proj { font-size: 15px; font-weight: 700; }
+.market .dk { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.edge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; }
+.edge.pos { background: rgba(46,230,166,0.15); color: var(--good); }
+.edge.neg { background: rgba(255,93,115,0.15); color: var(--bad); }
+.edge.neutral { background: #252a38; color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; padding: 9px 7px; border-bottom: 1px solid var(--border); }
+td { padding: 9px 7px; border-bottom: 1px solid #1a1f2c; }
+tr:hover td { background: rgba(255,255,255,0.03); }
+.player { font-weight: 600; }
+.team { color: var(--muted); font-size: 11px; }
+.stat { font-variant-numeric: tabular-nums; }
+.positive { color: var(--good); font-weight: 650; }
+.negative { color: var(--bad); }
+.brief, .residuals { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-bottom: 20px; font-size: 14px; }
+.filters { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filters button, .filters select {
+  background: #0e121a; border: 1px solid var(--border); color: var(--ink);
+  padding: 6px 11px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+.filters button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); }
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+  z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+  background: #161a24; border: 1px solid var(--border); border-radius: 16px;
+  max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 22px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.modal h3 { margin: 0 0 6px; font-size: 20px; }
+.modal .close {
+  float: right; background: transparent; border: none; color: var(--muted);
+  font-size: 22px; cursor: pointer; line-height: 1;
+}
+.detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.detail-label { color: var(--muted); }
+@media (max-width: 720px) {
+  .markets { grid-template-columns: 1fr; }
+  header, .container, nav, .injury-banner, .injury-details { padding-left: 16px; padding-right: 16px; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: #f7f8fb url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1600&q=60") center/cover fixed;
+  background-blend-mode: soft-light;
+  color: var(--ink);
+  line-height: 1.45;
+}
+header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+}
+h1 { margin: 0 0 4px; font-size: 30px; font-weight: 700; letter-spacing: -0.6px; }
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); font-size: 14px; }
+.meta { font-size: 12px; color: #7a8499; margin-top: 6px; }
+.disclaimer { font-size: 11px; color: #7a8499; margin-top: 10px; }
+.injury-banner {
+  background: #fff8f3; border-bottom: 1px solid var(--border); padding: 6px 32px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.injury-banner strong { color: var(--accent); }
+.injury-details {
+  display: none; background: #fff; border-bottom: 1px solid var(--border); padding: 12px 32px; font-size: 13px;
+}
+.injury-details.show { display: block; }
+nav {
+  display: flex; gap: 6px; padding: 14px 32px; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.9); flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+}
+nav button {
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600;
+}
+nav button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.container { padding: 22px 32px 80px; max-width: 1440px; margin: 0 auto; }
+.section-title { font-size: 18px; font-weight: 650; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.section-title small { color: var(--muted); font-weight: 500; font-size: 13px; }
+.game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.card {
+  background: #fff;
+  border: 1px solid var(--border); border-radius: 16px; padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card:hover { border-color: #d0d5e0; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.card.clickable { cursor: pointer; }
+.card.clickable:hover { border-color: var(--accent); }
+.game-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.matchup { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.team-logo { width: 32px; height: 32px; border-radius: 6px; object-fit: contain; background: #f4f5f8; }
+.time { color: var(--muted); font-size: 12px; }
+.markets { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.market { background: #f4f6fa; border-radius: 10px; padding: 9px; text-align: center; border: 1px solid #e8ebf2; }
+.market label { display: block; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.market .proj { font-size: 15px; font-weight: 700; }
+.market .dk { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.edge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; }
+.edge.pos { background: rgba(42,157,143,0.12); color: var(--good); }
+.edge.neg { background: rgba(230,57,70,0.12); color: var(--bad); }
+.edge.neutral { background: #eef0f5; color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; padding: 9px 7px; border-bottom: 1px solid var(--border); }
+td { padding: 9px 7px; border-bottom: 1px solid #eef0f5; }
+tr:hover td { background: #fafbfc; }
+.player { font-weight: 600; }
+.team { color: var(--muted); font-size: 11px; }
+.stat { font-variant-numeric: tabular-nums; }
+.positive { color: var(--good); font-weight: 650; }
+.negative { color: var(--bad); }
+.brief, .residuals { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-bottom: 20px; font-size: 14px; }
+.filters { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filters button, .filters select {
+  background: #fff; border: 1px solid var(--border); color: var(--ink);
+  padding: 6px 11px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+.filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+  z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+  background: #fff; border: 1px solid var(--border); border-radius: 16px;
+  max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 22px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+.modal h3 { margin: 0 0 6px; font-size: 20px; }
+.modal .close {
+  float: right; background: transparent; border: none; color: var(--muted);
+  font-size: 22px; cursor: pointer; line-height: 1;
+}
+.detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.detail-label { color: var(--muted); }
+@media (max-width: 720px) {
+  .markets { grid-template-columns: 1fr; }
+  header, .container, nav, .injury-banner, .injury-details { padding-left: 16px; padding-right: 16px; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #1a1230 0%, transparent 50%),
+              radial-gradient(900px 500px at 100% 0%, #0d1c2e 0%, transparent 45%),
+              var(--bg);
+  color: var(--ink);
+  line-height: 1.45;
+}
+header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(18,21,30,0.9) 0%, transparent 100%);
+  position: relative;
+}
+h1 { margin: 0 0 4px; font-size: 30px; font-weight: 700; letter-spacing: -0.6px; }
+h1 span { color: var(--accent); text-shadow: 0 0 18px var(--glow); }
+.sub { color: var(--muted); font-size: 14px; }
+.meta { font-size: 12px; color: #6a7888; margin-top: 6px; }
+.disclaimer { font-size: 11px; color: #6a7888; margin-top: 10px; }
+.injury-banner {
+  background: #16120c; border-bottom: 1px solid var(--border); padding: 6px 32px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.injury-banner strong { color: var(--accent); }
+.injury-details {
+  display: none; background: #12100c; border-bottom: 1px solid var(--border); padding: 12px 32px; font-size: 13px;
+}
+.injury-details.show { display: block; }
+nav {
+  display: flex; gap: 6px; padding: 14px 32px; border-bottom: 1px solid var(--border); background: rgba(10,12,18,0.85); flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+}
+nav button {
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600;
+  transition: all 0.15s ease;
+}
+nav button:hover { border-color: var(--accent); color: var(--ink); }
+nav button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); box-shadow: 0 0 12px var(--glow); }
+.container { padding: 22px 32px 80px; max-width: 1440px; margin: 0 auto; }
+.section-title { font-size: 18px; font-weight: 650; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.section-title small { color: var(--muted); font-weight: 500; font-size: 13px; }
+.game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.card {
+  background: linear-gradient(180deg, #161a24 0%, var(--card) 100%);
+  border: 1px solid var(--border); border-radius: 16px; padding: 16px;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover { border-color: #3a4158; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+.card.clickable { cursor: pointer; }
+.card.clickable:hover { border-color: var(--accent); }
+.game-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.matchup { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.team-logo { width: 28px; height: 28px; border-radius: 6px; object-fit: contain; background: #0d1018; }
+.time { color: var(--muted); font-size: 12px; }
+.markets { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.market { background: #0e121a; border-radius: 10px; padding: 9px; text-align: center; border: 1px solid #1e2433; }
+.market label { display: block; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.market .proj { font-size: 15px; font-weight: 700; }
+.market .dk { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.edge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; }
+.edge.pos { background: rgba(46,230,166,0.15); color: var(--good); }
+.edge.neg { background: rgba(255,93,115,0.15); color: var(--bad); }
+.edge.neutral { background: #252a38; color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; padding: 9px 7px; border-bottom: 1px solid var(--border); }
+td { padding: 9px 7px; border-bottom: 1px solid #1a1f2c; }
+tr:hover td { background: rgba(255,255,255,0.03); }
+.player { font-weight: 600; }
+.team { color: var(--muted); font-size: 11px; }
+.stat { font-variant-numeric: tabular-nums; }
+.positive { color: var(--good); font-weight: 650; }
+.negative { color: var(--bad); }
+.brief, .residuals { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-bottom: 20px; font-size: 14px; }
+.brief h2, .residuals h2 { margin: 0 0 8px; font-size: 16px; }
+.filters { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filters button, .filters select {
+  background: #0e121a; border: 1px solid var(--border); color: var(--ink);
+  padding: 6px 11px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+.filters button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); }
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+  z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+  background: #161a24; border: 1px solid var(--border); border-radius: 16px;
+  max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 22px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.modal h3 { margin: 0 0 6px; font-size: 20px; }
+.modal .close {
+  float: right; background: transparent; border: none; color: var(--muted);
+  font-size: 22px; cursor: pointer; line-height: 1;
+}
+.detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.detail-label { color: var(--muted); }
+@media (max-width: 720px) {
+  .markets { grid-template-columns: 1fr; }
+  header, .container, nav, .injury-banner, .injury-details { padding-left: 16px; padding-right: 16px; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.45;
+}
+header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #12151f 0%, var(--bg) 100%);
+}
+h1 { margin: 0 0 4px; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); font-size: 14px; }
+.meta { font-size: 12px; color: #6a7888; margin-top: 6px; }
+.disclaimer { font-size: 11px; color: #6a7888; margin-top: 10px; }
+.injury-banner {
+  background: #1a1510; border-bottom: 1px solid var(--border); padding: 6px 32px;
+  font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.injury-banner strong { color: var(--accent); }
+.injury-details {
+  display: none; background: #14110e; border-bottom: 1px solid var(--border); padding: 12px 32px; font-size: 13px;
+}
+.injury-details.show { display: block; }
+.injury-details table { margin-top: 8px; }
+nav {
+  display: flex; gap: 6px; padding: 14px 32px; border-bottom: 1px solid var(--border); background: #10131a; flex-wrap: wrap;
+}
+nav button {
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600;
+}
+nav button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); }
+.container { padding: 22px 32px 80px; max-width: 1440px; margin: 0 auto; }
+.section-title { font-size: 18px; font-weight: 650; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.section-title small { color: var(--muted); font-weight: 500; font-size: 13px; }
+.game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.card.clickable { cursor: pointer; }
+.card.clickable:hover { border-color: var(--accent); }
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+  z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 22px;
+}
+.modal h3 { margin: 0 0 6px; font-size: 20px; }
+.modal .close {
+  float: right; background: transparent; border: none; color: var(--muted);
+  font-size: 22px; cursor: pointer; line-height: 1;
+}
+.detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.detail-row:last-child { border-bottom: none; }
+.detail-label { color: var(--muted); }
+.props-mini { margin-top: 16px; }
+.props-mini table { font-size: 12px; }
+.game-header { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.matchup { font-size: 17px; font-weight: 700; }
+.time { color: var(--muted); font-size: 12px; }
+.markets { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.market { background: #10131a; border-radius: 10px; padding: 9px; text-align: center; }
+.market label { display: block; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.market .proj { font-size: 15px; font-weight: 700; }
+.market .dk { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.edge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; }
+.edge.pos { background: rgba(61,255,138,0.15); color: var(--good); }
+.edge.neg { background: rgba(255,92,122,0.15); color: var(--bad); }
+.edge.neutral { background: #2a2e3d; color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; padding: 9px 7px; border-bottom: 1px solid var(--border); }
+td { padding: 9px 7px; border-bottom: 1px solid #1a242e; }
+tr:hover td { background: rgba(255,255,255,0.02); }
+.player { font-weight: 600; }
+.team { color: var(--muted); font-size: 11px; }
+.stat { font-variant-numeric: tabular-nums; }
+.positive { color: var(--good); font-weight: 650; }
+.negative { color: var(--bad); }
+.brief, .residuals { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 20px; font-size: 14px; }
+.brief h2, .residuals h2 { margin: 0 0 8px; font-size: 16px; }
+.brief ul, .residuals ul { margin: 6px 0 0 16px; padding: 0; color: var(--muted); }
+.filters { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filters button, .filters select {
+  background: #10131a; border: 1px solid var(--border); color: var(--ink);
+  padding: 6px 11px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+.filters button.active { background: var(--accent); color: #0a0e12; border-color: var(--accent); }
+.hosting { font-size: 13px; color: var(--muted); }
+.hosting code { background: #10131a; padding: 2px 6px; border-radius: 4px; }
+@media (max-width: 720px) {
+  .markets { grid-template-columns: 1fr; }
+  header, .container, nav { padding-left: 16px; padding-right: 16px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="NBA" style="height:28px;vertical-align:middle;margin-right:8px;">NBA <span>PJ MODEL</span></h1>
+  <div class="sub">Own model · DraftKings benchmark · Opening Night & early week</div>
+  <div class="meta" id="generated"></div>
+  <div class="disclaimer">For entertainment and information only. 21+. Not betting advice. Model estimates can be wrong. Lines move — confirm at the book. Gambling problem? Call 1-800-GAMBLER.</div>
+</header>
+<div class="injury-banner" id="injury-toggle">
+  <strong>Injuries</strong>
+  <span style="color:#6a7888;">· Updated 10/21 7:00 PM ET · ESPN + NBA.com (today's slate only)</span>
+  <span id="residual-status" style="float:right;color:var(--accent);font-size:12px;">Residuals: 3 games learned</span>
+</div>
+<div class="injury-details" id="injury-details">
+  <div style="margin-bottom:8px;">
+    Sources: <a href="https://www.espn.com/nba/injuries" target="_blank" style="color:var(--accent);">ESPN</a> · 
+    <a href="https://x.com/ShamsCharania" target="_blank" style="color:var(--accent);">@ShamsCharania</a> · 
+    <a href="https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-21_11_00AM.pdf" target="_blank" style="color:var(--accent);">NBA.com</a>
+    <span style="color:var(--muted);margin-left:8px;">Past games removed — only active slate</span>
+  </div>
+  <table>
+    <thead><tr><th>Player</th><th>Team</th><th>Status</th><th>Reason</th><th>Game</th></tr></thead>
+    <tbody>
+      <tr><td>Mouhamed Gueye</td><td>ATL</td><td class="negative">Out</td><td>Left foot fracture — NBA.com</td><td>ATL@ORL</td></tr>
+      <tr><td>Henri Veesaar</td><td>ATL</td><td class="negative">Out</td><td>Right ACL — NBA.com</td><td>ATL@ORL</td></tr>
+      <tr><td>Anthony Black</td><td>ORL</td><td class="negative">Out</td><td>Right ankle sprain — NBA.com</td><td>ATL@ORL</td></tr>
+      <tr><td>Jonathan Isaac</td><td>ORL</td><td class="negative">Out</td><td>Left knee management — NBA.com</td><td>ATL@ORL</td></tr>
+      <tr><td>Noah Penda</td><td>ORL</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>ATL@ORL</td></tr>
+      <tr><td>AJ Dybantsa</td><td>WAS</td><td class="negative">Out</td><td>Left ankle — NBA.com</td><td>MIL@WAS</td></tr>
+      <tr><td>Tristan Vukcevic</td><td>WAS</td><td class="negative">Out</td><td>Left hip — NBA.com</td><td>MIL@WAS</td></tr>
+      <tr><td>Coby White</td><td>CHA</td><td class="negative">Out</td><td>Left calf strain — ESPN</td><td>CHA@BKN</td></tr>
+      <tr><td>Grant Williams</td><td>CHA</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>CHA@BKN</td></tr>
+      <tr><td>Kon Knueppel</td><td>CHA</td><td class="negative">Out</td><td>Hamstring — ESPN</td><td>CHA@BKN</td></tr>
+      <tr><td>Tyler Bilodeau</td><td>BKN</td><td class="negative">Out</td><td>Right shoulder sprain — NBA.com</td><td>CHA@BKN</td></tr>
+      <tr><td>Dailyn Swain</td><td>CHI</td><td class="negative">Doubtful</td><td>GI illness — NBA.com</td><td>CHI@TOR</td></tr>
+      <tr><td>Jordan Hawkins</td><td>CHI</td><td class="negative">Out</td><td>GI illness — ESPN</td><td>CHI@TOR</td></tr>
+      <tr><td>Donte DiVincenzo</td><td>MIN</td><td class="negative">Out</td><td>Achilles surgery — NBA.com</td><td>MIN@MIA</td></tr>
+      <tr><td>Aaron Nesmith</td><td>IND</td><td class="negative">Out</td><td>Left hamstring — ESPN</td><td>IND@NOP</td></tr>
+      <tr><td>T.J. McConnell</td><td>IND</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>IND@NOP</td></tr>
+      <tr><td>Caleb Martin</td><td>DAL</td><td class="negative">Out</td><td>Right thumb — ESPN</td><td>DAL@HOU</td></tr>
+      <tr><td>Dereck Lively II</td><td>DAL</td><td class="negative">Out</td><td>Foot — ESPN</td><td>DAL@HOU</td></tr>
+      <tr><td>Steven Adams</td><td>HOU</td><td>Questionable</td><td>Right calf — ESPN</td><td>DAL@HOU</td></tr>
+      <tr><td>Stephen Curry</td><td>GSW</td><td>Probable</td><td>Right ankle — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Brandin Podziemski</td><td>GSW</td><td class="negative">Out</td><td>Lower back — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Kristaps Porzingis</td><td>GSW</td><td class="negative">Out</td><td>Not with team / illness — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Jimmy Butler</td><td>GSW</td><td class="negative">Out</td><td>Knee — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Moses Moody</td><td>GSW</td><td class="negative">Out</td><td>Knee — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Collin Sexton</td><td>LAL</td><td>Questionable</td><td>Right soleus — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Cameron Carr</td><td>LAL</td><td class="negative">Out</td><td>Right oblique — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Adou Thiero</td><td>LAL</td><td class="negative">Out</td><td>Left knee — ESPN</td><td>GSW@LAL</td></tr>
+      <tr><td>Jarrett Allen</td><td>CLE</td><td>Day-To-Day</td><td>Right patellar — ESPN</td><td>CLE@PHI</td></tr>
+      <tr><td>Julian Strawther</td><td>DEN</td><td class="negative">Out</td><td>Knee — ESPN</td><td>DEN@OKC</td></tr>
+    </tbody>
+  </table>
+</div>
+<nav>
+  <button class="active" data-tab="games">Games</button>
+  <button data-tab="flash">Flash Bets</button>
+  <button data-tab="best">Best Bets</button>
+  <button data-tab="props">Player Props</button>
+  <button data-tab="combos">Combos</button>
+  <button data-tab="parlays">Parlays</button>
+  <button data-tab="awards">Awards</button>
+  <button data-tab="futures">Team Futures</button>
+  <button data-tab="trends">Trends</button>
+  <button data-tab="live">Live</button>
+  <button data-tab="bankroll">Bankroll</button>
+  <button data-tab="notes">Model Notes</button>
+  <button data-tab="schedule">Schedule</button>
+  <button data-tab="residuals">Residuals</button>
+  <button data-tab="host">Host & Pipeline</button>
+</nav>
+<div class="container">
+  <section id="flash" class="tab" style="display:none;">
+    <div class="section-title">Flash Bets <small>Highest-edge live looks</small></div>
+    <div id="flash-board"></div>
+  </section>
+
+  <section id="best" class="tab" style="display:none;">
+    <div class="section-title">Best Bets <small>Largest model edges vs DraftKings</small></div>
+    <div class="filters" id="best-filters">
+      <button data-best="all" class="active">All</button>
+      <button data-best="PRA">PRA</button>
+      <button data-best="PTS">Points</button>
+      <button data-best="REB">Rebounds</button>
+      <button data-best="AST">Assists</button>
+    </div>
+    <div class="game-grid" id="best-board"></div>
+    <p style="font-size:12px;color:var(--muted);margin-top:12px;">Edges of 0.8+ points highlighted. Model vs market only — not a guarantee.</p>
+  </section>
+
+  <section id="games" class="tab">
+    <div class="section-title">Games <small>Model vs DraftKings</small></div>
+    <div id="games-live-status" style="font-size:12px;color:var(--accent);margin:-6px 0 12px;">Connecting to live scores…</div>
+    <div class="game-grid" id="games-board"></div>
+  </section>
+
+  <section id="props" class="tab" style="display:none;">
+    <div class="section-title">Player Props <small>Model vs DraftKings</small></div>
+    <div class="filters">
+      <button onclick="document.getElementById('stat-filter').value='all';renderProps()">All</button>
+      <button onclick="document.getElementById('stat-filter').value='PRA';renderProps()">PRA</button>
+      <button onclick="document.getElementById('stat-filter').value='PR';renderProps()">PR</button>
+      <button onclick="document.getElementById('stat-filter').value='PA';renderProps()">PA</button>
+      <button onclick="document.getElementById('stat-filter').value='RA';renderProps()">RA</button>
+      <select id="stat-filter">
+        <option value="all">All Stats</option>
+        <option value="PTS">Points</option>
+        <option value="REB">Rebounds</option>
+        <option value="AST">Assists</option>
+        <option value="3PM">3PM</option>
+        <option value="PRA">PRA</option>
+        <option value="PR">PR</option>
+        <option value="PA">PA</option>
+        <option value="RA">RA</option>
+        <option value="STL">Steals</option>
+        <option value="BLK">Blocks</option>
+      </select>
+      <select id="team-filter">
+        <option value="all">All Teams</option>
+      </select>
+      <select id="pos-filter">
+        <option value="all">All Positions</option>
+        <option value="G">Guards</option>
+        <option value="F">Forwards</option>
+        <option value="C">Centers</option>
+      </select>
+      <select id="game-filter"><option value="all">All games</option></select>
+    </div>
+    <div class="card" style="overflow-x:auto;">
+      <table id="props-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Prop Market</th>
+            <th>Sportsbook Line</th>
+            <th>Your Projection</th>
+            <th>Edge Diff</th>
+            <th>Recommended Bet</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+      </table>
+    </div>
+  </section>
+
+  <section id="combos" class="tab" style="display:none;">
+    <div class="section-title">Combos <small>PRA · PR · PA · RA</small></div>
+    <div class="filters">
+      <button onclick="renderCombos('all')">All</button>
+      <button onclick="renderCombos('PRA')">PRA</button>
+      <button onclick="renderCombos('PR')">PR</button>
+      <button onclick="renderCombos('PA')">PA</button>
+      <button onclick="renderCombos('RA')">RA</button>
+    </div>
+    <div class="card" style="overflow-x:auto;">
+      <table id="combos-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Combo</th>
+            <th>Sportsbook Line</th>
+            <th>Your Projection</th>
+            <th>Edge Diff</th>
+            <th>Recommended Bet</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="parlays" class="tab" style="display:none;">
+    <div class="section-title" style="margin-bottom:8px;">Parlay Builder</div>
+    <div class="filters" id="parlay-inner-tabs" style="margin-bottom:10px;">
+      <button data-pleg="2" class="active">2-Leg</button>
+      <button data-pleg="3">3-Leg</button>
+      <button data-pleg="4">4-Leg</button>
+      <button data-pleg="suggested">Suggested</button>
+    </div>
+    <div id="parlay-main" style="margin-top:4px;"></div>
+  </section>
+    <div class="section-title">Trends / Form <small>Recent performance vs expectations</small></div>
+    <div class="brief">
+      <p>Residuals and form data activate after the first games. Once results exist the pipeline will show:</p>
+      <ul>
+        <li>Team margin and total residuals (fading α)</li>
+        <li>Player stat residuals (PTS / REB / AST / PRA)</li>
+        <li>Home/away and rest-day splits</li>
+        <li>Pace and efficiency trends</li>
+      </ul>
+      <div id="trends-content"></div>
+    </div>
+  </section>
+
+  <section id="awards" class="tab" style="display:none;">
+    <div class="section-title">Awards <small>Model projections + DraftKings odds · 10/19/26</small></div>
+    <div class="game-grid">
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">MVP</div>
+        <div class="detail-row"><span>Nikola Jokić</span><span>Model 28% · DK +500</span></div>
+        <div class="detail-row"><span>Shai Gilgeous-Alexander</span><span>Model 22% · DK +380</span></div>
+        <div class="detail-row"><span>Jayson Tatum</span><span>Model 14% · DK +1800</span></div>
+        <div class="detail-row"><span>Victor Wembanyama</span><span>Model — · DK +205</span></div>
+        <div class="note" style="margin-top:8px;">Model numbers are independent. DK odds shown for comparison.</div>
+      </div>
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">Defensive Player of the Year</div>
+        <div class="detail-row"><span>Victor Wembanyama</span><span>Model 31% · DK -360</span></div>
+        <div class="detail-row"><span>Chet Holmgren</span><span>Model 16% · DK +1200</span></div>
+        <div class="detail-row"><span>Bam Adebayo</span><span>Model 11% · DK +4000</span></div>
+        <div class="note" style="margin-top:8px;">DK has Wembanyama as a heavy favorite.</div>
+      </div>
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">Rookie of the Year</div>
+        <div class="detail-row"><span>Cameron Boozer</span><span>DK +270</span></div>
+        <div class="note" style="margin-top:8px;">Model updates once regular-season minutes and production are available. DK odds shown.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="futures" class="tab" style="display:none;">
+    <div class="section-title">Team Futures <small>DraftKings odds · as of 10/19/26</small></div>
+    <div class="game-grid">
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">NBA Championship</div>
+        <div class="detail-row"><span>Oklahoma City Thunder</span><strong>+270</strong></div>
+        <div class="detail-row"><span>San Antonio Spurs</span><strong>+270</strong></div>
+        <div class="detail-row"><span>Philadelphia 76ers</span><strong>+900</strong></div>
+        <div class="detail-row"><span>New York Knicks</span><strong>+900</strong></div>
+        <div class="detail-row"><span>Boston Celtics</span><strong>+1300</strong></div>
+        <div class="detail-row"><span>Cleveland Cavaliers</span><strong>+2200</strong></div>
+        <div class="note" style="margin-top:8px;">DraftKings prices. Thunder and Spurs are co-favorites.</div>
+      </div>
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">Eastern Conference</div>
+        <div class="detail-row"><span>New York Knicks</span><strong>+350</strong></div>
+        <div class="detail-row"><span>Philadelphia 76ers</span><strong>+380</strong></div>
+        <div class="detail-row"><span>Boston Celtics</span><strong>+550</strong></div>
+        <div class="note" style="margin-top:8px;">DraftKings conference odds.</div>
+      </div>
+      <div class="card">
+        <div class="section-title" style="font-size:15px;">Western Conference</div>
+        <div class="detail-row"><span>Oklahoma City Thunder</span><strong>+140</strong></div>
+        <div class="detail-row"><span>San Antonio Spurs</span><strong>+160</strong></div>
+        <div class="detail-row"><span>Denver Nuggets</span><strong>+400</strong></div>
+        <div class="note" style="margin-top:8px;">DraftKings conference odds.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trends" class="tab" style="display:none;">
+    <div class="section-title">Trends <small>Form and residual direction</small></div>
+    <div id="trends-content"></div>
+  </section>
+
+  <section id="live" class="tab" style="display:none;">
+    <div class="section-title">Live / In-Progress <small>Current score vs projection</small></div>
+    <div id="live-board"></div>
+  </section>
+
+  <section id="bankroll" class="tab" style="display:none;">
+    <div class="section-title">Bankroll / Tracking <small>Settled model bets</small></div>
+    <div class="brief">
+      <p id="bankroll-summary">Record loads on open.</p>
+      <table style="margin-top:12px;">
+        <thead><tr><th>Date</th><th>Game / Market</th><th>Side</th><th>Edge</th><th>Result</th><th>Units</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="notes" class="tab" style="display:none;">
+    <div class="section-title">Prediction History <small>Snapshots of every board load</small></div>
+    <div id="prediction-history"></div>
+    <div class="section-title" style="margin-top:18px;">Model Notes</div>
+    <div class="brief" id="notes-content"></div>
+  </section>
+
+  <section id="schedule" class="tab" style="display:none;">
+    <div class="section-title">Schedule / Rest <small>Slate with rest and travel flags</small></div>
+    <div id="schedule-board"></div>
+  </section>
+
+  <section id="residuals" class="tab" style="display:none;">
+    <div class="residuals">
+      <h2>Residual Leaders</h2>
+      <p>No regular-season games have been played yet. After Opening Night the pipeline will track:</p>
+      <ul>
+        <li>Margin residuals (projected spread vs actual)</li>
+        <li>Total residuals</li>
+        <li>Player stat residuals (PTS / REB / AST)</li>
+      </ul>
+      <p>Fading alpha: ~0.45 early season → ~0.12 later. Residuals adjust future projections.</p>
+      <div id="residual-content"></div>
+    </div>
+  </section>
+
+  <section id="host" class="tab" style="display:none;">
+    <div class="brief hosting">
+      <h2>Pipeline & Hosting</h2>
+      <p><strong>Auto-updates (runs on its own):</strong></p>
+      <ul>
+        <li><strong>Daily 10:00 AM ET</strong> — full board: scores, bet settlements (W/L), injuries, player props, games, best bets, combos</li>
+        <li>Player props are rebuilt each run (PTS, REB, AST, 3PM, STL, BLK, PRA/PR/PA/RA) with residual learning + DraftKings lines</li>
+        <li>Finished games stay off main tabs and post to Bankroll as W/L</li>
+      </ul>
+      <p><strong>Host (static, free options):</strong></p>
+      <ul>
+        <li>GitHub Pages — push the HTML + JSON</li>
+        <li>Netlify / Vercel — drag-and-drop the folder</li>
+        <li>Cloudflare Pages</li>
+      </ul>
+      <p>This file is fully self-contained. After each automation run, re-open or refresh the file for the latest props.</p>
+      <p style="margin-top:12px;">Files: <code>NBA_PROJECTIONS.html</code>, <code>update_projections.py</code>, <code>projections_data.json</code></p>
+    </div>
+  </section>
+</div>
+
+<div class="modal-overlay" id="game-modal">
+  <div class="modal" id="modal-content"></div>
+</div>
+
+<script>
+const DATA = {
+  "generated_at": "2026-10-21T23:56:29Z",
+  "season": "2026-27",
+  "games": [
+    {
+      "id": "BOS@DET",
+      "date": "2026-10-20",
+      "time": "3:00 PM ET",
+      "away": "BOS",
+      "home": "DET",
+      "model": {
+        "spread": -1.2,
+        "total": 224.8,
+        "ml_home": 0.52,
+        "ml_away": 0.48
+      },
+      "dk": {
+        "spread": "+1.5",
+        "total": 222.5,
+        "ml_away": "-112",
+        "ml_home": "-108"
+      },
+      "note": "Slight home lean to DET. Total a touch over DK.",
+      "spread_edge": -2.7,
+      "total_edge": 2.3,
+      "status": "Final",
+      "score": {
+        "away": 113,
+        "home": 121
+      },
+      "actual_margin": 8,
+      "actual_total": 234
+    },
+    {
+      "id": "PHI@NYK",
+      "date": "2026-10-20",
+      "time": "7:00 PM ET",
+      "away": "PHI",
+      "home": "NYK",
+      "model": {
+        "spread": -4.8,
+        "total": 234.0,
+        "ml_home": 0.63,
+        "ml_away": 0.37
+      },
+      "dk": {
+        "spread": "-4.5",
+        "total": 232.5,
+        "ml_away": "+160",
+        "ml_home": "-192"
+      },
+      "note": "Close to market. Mild NYK + higher total preference.",
+      "spread_edge": -0.3,
+      "total_edge": 1.5,
+      "status": "Final",
+      "score": {
+        "away": 106,
+        "home": 100
+      },
+      "actual_margin": -6,
+      "actual_total": 206
+    },
+    {
+      "id": "OKC@SAS",
+      "date": "2026-10-20",
+      "time": "9:30 PM ET",
+      "away": "OKC",
+      "home": "SAS",
+      "model": {
+        "spread": -1.8,
+        "total": 232.1,
+        "ml_home": 0.55,
+        "ml_away": 0.45
+      },
+      "dk": {
+        "spread": "-2.5",
+        "total": 231.5,
+        "ml_away": "+120",
+        "ml_home": "-142"
+      },
+      "note": "Model less bullish on SAS than DK. Total nearly identical.",
+      "spread_edge": 0.7,
+      "total_edge": 0.6,
+      "status": "Final",
+      "score": {
+        "away": 116,
+        "home": 104
+      },
+      "live_note": "Halftime",
+      "actual_margin": -12,
+      "actual_total": 220
+    },
+    {
+      "id": "ATL@ORL",
+      "date": "Oct 21",
+      "time": "7:00 PM ET",
+      "away": "ATL",
+      "home": "ORL",
+      "model": {
+        "spread": -2.5,
+        "total": 224
+      },
+      "dk": {
+        "spread": "-2.0",
+        "total": "223",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Live",
+      "score": {
+        "away": 35,
+        "home": 34
+      },
+      "live_note": "10:18 - 2nd"
+    },
+    {
+      "id": "MIL@WAS",
+      "date": "Oct 21",
+      "time": "7:00 PM ET",
+      "away": "MIL",
+      "home": "WAS",
+      "model": {
+        "spread": -6.5,
+        "total": 228
+      },
+      "dk": {
+        "spread": "-6.0",
+        "total": "227",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Live",
+      "score": {
+        "away": 33,
+        "home": 34
+      },
+      "live_note": "6:57 - 2nd"
+    },
+    {
+      "id": "MIN@MIA",
+      "date": "Oct 21",
+      "time": "7:30 PM ET",
+      "away": "MIN",
+      "home": "MIA",
+      "model": {
+        "spread": 1.5,
+        "total": 218
+      },
+      "dk": {
+        "spread": "2.0",
+        "total": "217",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Live",
+      "score": {
+        "away": 22,
+        "home": 17
+      },
+      "live_note": "6:28 - 1st"
+    },
+    {
+      "id": "CHA@BKN",
+      "date": "Oct 21",
+      "time": "7:30 PM ET",
+      "away": "CHA",
+      "home": "BKN",
+      "model": {
+        "spread": -3.0,
+        "total": 221
+      },
+      "dk": {
+        "spread": "-2.5",
+        "total": "220",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Live",
+      "score": {
+        "away": 7,
+        "home": 11
+      },
+      "live_note": "7:11 - 1st"
+    },
+    {
+      "id": "CHI@TOR",
+      "date": "Oct 21",
+      "time": "7:30 PM ET",
+      "away": "CHI",
+      "home": "TOR",
+      "model": {
+        "spread": -4.5,
+        "total": 219
+      },
+      "dk": {
+        "spread": "-4.0",
+        "total": "218",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Live",
+      "score": {
+        "away": 6,
+        "home": 11
+      },
+      "live_note": "7:38 - 1st"
+    },
+    {
+      "id": "UTA@MEM",
+      "date": "Oct 21",
+      "time": "8:00 PM ET",
+      "away": "UTA",
+      "home": "MEM",
+      "model": {
+        "spread": 2.0,
+        "total": 226
+      },
+      "dk": {
+        "spread": "2.5",
+        "total": "225",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "IND@NOP",
+      "date": "Oct 21",
+      "time": "8:00 PM ET",
+      "away": "IND",
+      "home": "NOP",
+      "model": {
+        "spread": -1.5,
+        "total": 223
+      },
+      "dk": {
+        "spread": "-1.0",
+        "total": "222",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "DAL@HOU",
+      "date": "Oct 21",
+      "time": "8:30 PM ET",
+      "away": "DAL",
+      "home": "HOU",
+      "model": {
+        "spread": 3.5,
+        "total": 230
+      },
+      "dk": {
+        "spread": "4.0",
+        "total": "229",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "GSW@LAL",
+      "date": "Oct 21",
+      "time": "10:00 PM ET",
+      "away": "GSW",
+      "home": "LAL",
+      "model": {
+        "spread": -1.0,
+        "total": 232
+      },
+      "dk": {
+        "spread": "-0.5",
+        "total": "231",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "PHX@POR",
+      "date": "Oct 21",
+      "time": "10:00 PM ET",
+      "away": "PHX",
+      "home": "POR",
+      "model": {
+        "spread": -5.5,
+        "total": 225
+      },
+      "dk": {
+        "spread": "-5.0",
+        "total": "224",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "SAC@LAC",
+      "date": "Oct 21",
+      "time": "10:30 PM ET",
+      "away": "SAC",
+      "home": "LAC",
+      "model": {
+        "spread": 4.0,
+        "total": 227
+      },
+      "dk": {
+        "spread": "4.5",
+        "total": "226",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "CLE@PHI",
+      "date": "Oct 22",
+      "time": "7:00 PM ET",
+      "away": "CLE",
+      "home": "PHI",
+      "model": {
+        "spread": -2.0,
+        "total": 222
+      },
+      "dk": {
+        "spread": "-1.5",
+        "total": "221",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    },
+    {
+      "id": "DEN@OKC",
+      "date": "Oct 22",
+      "time": "9:30 PM ET",
+      "away": "DEN",
+      "home": "OKC",
+      "model": {
+        "spread": -7.5,
+        "total": 229
+      },
+      "dk": {
+        "spread": "-7.0",
+        "total": "228",
+        "ml_away": "-110",
+        "ml_home": "-110"
+      },
+      "spread_edge": -0.5,
+      "total_edge": 1.0,
+      "status": "Upcoming"
+    }
+  ],
+  "props": [
+    {
+      "player": "Trae Young",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "PTS",
+      "model": 26.7,
+      "dk": 25.2,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Trae Young",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "AST",
+      "model": 10.6,
+      "dk": 9.6,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Trae Young",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "3PM",
+      "model": 2.2,
+      "dk": 2.5,
+      "edge": -0.3,
+      "side": "Under"
+    },
+    {
+      "player": "Jalen Johnson",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "PTS",
+      "model": 17.8,
+      "dk": 18.8,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jalen Johnson",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "REB",
+      "model": 9.7,
+      "dk": 8.2,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Jalen Johnson",
+      "team": "ATL",
+      "game": "ATL@ORL",
+      "stat": "PRA",
+      "model": 32.1,
+      "dk": 30.6,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Paolo Banchero",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "PTS",
+      "model": 24.0,
+      "dk": 23.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Paolo Banchero",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "REB",
+      "model": 7.2,
+      "dk": 7.7,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Paolo Banchero",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "AST",
+      "model": 4.3,
+      "dk": 3.3,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "PTS",
+      "model": 20.5,
+      "dk": 21.5,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "REB",
+      "model": 5.5,
+      "dk": 4.5,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "ATL@ORL",
+      "stat": "PRA",
+      "model": 31.4,
+      "dk": 30.9,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "PTS",
+      "model": 30.7,
+      "dk": 29.2,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "REB",
+      "model": 11.8,
+      "dk": 10.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "AST",
+      "model": 6.6,
+      "dk": 6.1,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "PRA",
+      "model": 47.1,
+      "dk": 46.1,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Damian Lillard",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "PTS",
+      "model": 24.8,
+      "dk": 24.3,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Damian Lillard",
+      "team": "MIL",
+      "game": "MIL@WAS",
+      "stat": "3PM",
+      "model": 2.5,
+      "dk": 2.5,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "WAS",
+      "game": "MIL@WAS",
+      "stat": "PTS",
+      "model": 18.0,
+      "dk": 19.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "WAS",
+      "game": "MIL@WAS",
+      "stat": "REB",
+      "model": 6.0,
+      "dk": 5.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Jordan Poole",
+      "team": "WAS",
+      "game": "MIL@WAS",
+      "stat": "PTS",
+      "model": 18.3,
+      "dk": 19.3,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jordan Poole",
+      "team": "WAS",
+      "game": "MIL@WAS",
+      "stat": "AST",
+      "model": 4.3,
+      "dk": 2.8,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Anthony Edwards",
+      "team": "MIN",
+      "game": "MIN@MIA",
+      "stat": "PTS",
+      "model": 28.2,
+      "dk": 28.2,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Anthony Edwards",
+      "team": "MIN",
+      "game": "MIN@MIA",
+      "stat": "REB",
+      "model": 4.9,
+      "dk": 4.4,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Anthony Edwards",
+      "team": "MIN",
+      "game": "MIN@MIA",
+      "stat": "AST",
+      "model": 5.5,
+      "dk": 6.5,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "game": "MIN@MIA",
+      "stat": "REB",
+      "model": 12.7,
+      "dk": 12.2,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "game": "MIN@MIA",
+      "stat": "PTS",
+      "model": 13.3,
+      "dk": 14.3,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jimmy Butler",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "PTS",
+      "model": 20.1,
+      "dk": 21.1,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jimmy Butler",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "REB",
+      "model": 5.0,
+      "dk": 4.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Jimmy Butler",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "AST",
+      "model": 6.0,
+      "dk": 7.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "PTS",
+      "model": 16.5,
+      "dk": 15.5,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "REB",
+      "model": 10.1,
+      "dk": 10.1,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "game": "MIN@MIA",
+      "stat": "PRA",
+      "model": 32.7,
+      "dk": 32.2,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "LaMelo Ball",
+      "team": "CHA",
+      "game": "CHA@BKN",
+      "stat": "PTS",
+      "model": 24.1,
+      "dk": 23.6,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "LaMelo Ball",
+      "team": "CHA",
+      "game": "CHA@BKN",
+      "stat": "AST",
+      "model": 7.3,
+      "dk": 6.8,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "LaMelo Ball",
+      "team": "CHA",
+      "game": "CHA@BKN",
+      "stat": "3PM",
+      "model": 3.5,
+      "dk": 3.8,
+      "edge": -0.3,
+      "side": "Under"
+    },
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "CHA@BKN",
+      "stat": "PTS",
+      "model": 19.6,
+      "dk": 20.1,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "CHA@BKN",
+      "stat": "REB",
+      "model": 5.3,
+      "dk": 5.8,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Cam Thomas",
+      "team": "BKN",
+      "game": "CHA@BKN",
+      "stat": "PTS",
+      "model": 22.5,
+      "dk": 21.5,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Cam Thomas",
+      "team": "BKN",
+      "game": "CHA@BKN",
+      "stat": "AST",
+      "model": 3.3,
+      "dk": 2.8,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Nic Claxton",
+      "team": "BKN",
+      "game": "CHA@BKN",
+      "stat": "REB",
+      "model": 10.0,
+      "dk": 11.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Nic Claxton",
+      "team": "BKN",
+      "game": "CHA@BKN",
+      "stat": "PTS",
+      "model": 12.7,
+      "dk": 11.7,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Nic Claxton",
+      "team": "BKN",
+      "game": "CHA@BKN",
+      "stat": "BLK",
+      "model": 2.1,
+      "dk": 2.5,
+      "edge": -0.4,
+      "side": "Under"
+    },
+    {
+      "player": "Josh Giddey",
+      "team": "CHI",
+      "game": "CHI@TOR",
+      "stat": "PTS",
+      "model": 17.2,
+      "dk": 15.7,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Josh Giddey",
+      "team": "CHI",
+      "game": "CHI@TOR",
+      "stat": "REB",
+      "model": 8.0,
+      "dk": 6.5,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Josh Giddey",
+      "team": "CHI",
+      "game": "CHI@TOR",
+      "stat": "AST",
+      "model": 7.6,
+      "dk": 7.6,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Nikola Vucevic",
+      "team": "CHI",
+      "game": "CHI@TOR",
+      "stat": "PTS",
+      "model": 16.8,
+      "dk": 15.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Nikola Vucevic",
+      "team": "CHI",
+      "game": "CHI@TOR",
+      "stat": "REB",
+      "model": 11.3,
+      "dk": 11.8,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Scottie Barnes",
+      "team": "TOR",
+      "game": "CHI@TOR",
+      "stat": "PTS",
+      "model": 19.5,
+      "dk": 19.5,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Scottie Barnes",
+      "team": "TOR",
+      "game": "CHI@TOR",
+      "stat": "REB",
+      "model": 7.3,
+      "dk": 7.3,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Scottie Barnes",
+      "team": "TOR",
+      "game": "CHI@TOR",
+      "stat": "AST",
+      "model": 5.4,
+      "dk": 6.4,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "RJ Barrett",
+      "team": "TOR",
+      "game": "CHI@TOR",
+      "stat": "PTS",
+      "model": 20.0,
+      "dk": 19.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "RJ Barrett",
+      "team": "TOR",
+      "game": "CHI@TOR",
+      "stat": "REB",
+      "model": 4.7,
+      "dk": 5.7,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Lauri Markkanen",
+      "team": "UTA",
+      "game": "UTA@MEM",
+      "stat": "PTS",
+      "model": 22.9,
+      "dk": 22.4,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Lauri Markkanen",
+      "team": "UTA",
+      "game": "UTA@MEM",
+      "stat": "REB",
+      "model": 7.8,
+      "dk": 7.8,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Lauri Markkanen",
+      "team": "UTA",
+      "game": "UTA@MEM",
+      "stat": "3PM",
+      "model": 3.6,
+      "dk": 3.6,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Walker Kessler",
+      "team": "UTA",
+      "game": "UTA@MEM",
+      "stat": "REB",
+      "model": 11.0,
+      "dk": 10.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Walker Kessler",
+      "team": "UTA",
+      "game": "UTA@MEM",
+      "stat": "BLK",
+      "model": 2.1,
+      "dk": 1.7,
+      "edge": 0.4,
+      "side": "Over"
+    },
+    {
+      "player": "Ja Morant",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "PTS",
+      "model": 24.9,
+      "dk": 26.4,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Ja Morant",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "AST",
+      "model": 7.0,
+      "dk": 8.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Ja Morant",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "REB",
+      "model": 4.7,
+      "dk": 5.7,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jaren Jackson Jr",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "PTS",
+      "model": 20.2,
+      "dk": 18.7,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Jaren Jackson Jr",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "REB",
+      "model": 5.9,
+      "dk": 6.4,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Jaren Jackson Jr",
+      "team": "MEM",
+      "game": "UTA@MEM",
+      "stat": "BLK",
+      "model": 2.7,
+      "dk": 2.9,
+      "edge": -0.2,
+      "side": "Under"
+    },
+    {
+      "player": "Tyrese Haliburton",
+      "team": "IND",
+      "game": "IND@NOP",
+      "stat": "PTS",
+      "model": 19.2,
+      "dk": 19.7,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Tyrese Haliburton",
+      "team": "IND",
+      "game": "IND@NOP",
+      "stat": "AST",
+      "model": 10.4,
+      "dk": 8.9,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Tyrese Haliburton",
+      "team": "IND",
+      "game": "IND@NOP",
+      "stat": "3PM",
+      "model": 2.7,
+      "dk": 2.2,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Pascal Siakam",
+      "team": "IND",
+      "game": "IND@NOP",
+      "stat": "PTS",
+      "model": 21.7,
+      "dk": 22.2,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Pascal Siakam",
+      "team": "IND",
+      "game": "IND@NOP",
+      "stat": "REB",
+      "model": 7.6,
+      "dk": 9.1,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Zion Williamson",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "PTS",
+      "model": 25.1,
+      "dk": 23.6,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Zion Williamson",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "REB",
+      "model": 6.1,
+      "dk": 5.1,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Zion Williamson",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "AST",
+      "model": 4.7,
+      "dk": 5.7,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Dejounte Murray",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "PTS",
+      "model": 18.4,
+      "dk": 17.9,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Dejounte Murray",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "AST",
+      "model": 7.0,
+      "dk": 8.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Dejounte Murray",
+      "team": "NOP",
+      "game": "IND@NOP",
+      "stat": "REB",
+      "model": 5.1,
+      "dk": 3.6,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Luka Doncic",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "PTS",
+      "model": 33.0,
+      "dk": 32.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Luka Doncic",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "AST",
+      "model": 9.4,
+      "dk": 9.9,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Luka Doncic",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "REB",
+      "model": 8.8,
+      "dk": 7.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Luka Doncic",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "PRA",
+      "model": 49.3,
+      "dk": 48.3,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Kyrie Irving",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "PTS",
+      "model": 24.3,
+      "dk": 25.8,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Kyrie Irving",
+      "team": "DAL",
+      "game": "DAL@HOU",
+      "stat": "3PM",
+      "model": 3.5,
+      "dk": 3.5,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "DAL@HOU",
+      "stat": "PTS",
+      "model": 20.0,
+      "dk": 20.5,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "DAL@HOU",
+      "stat": "REB",
+      "model": 9.6,
+      "dk": 9.1,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "DAL@HOU",
+      "stat": "AST",
+      "model": 6.1,
+      "dk": 7.6,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Jalen Green",
+      "team": "HOU",
+      "game": "DAL@HOU",
+      "stat": "PTS",
+      "model": 22.1,
+      "dk": 21.1,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Jalen Green",
+      "team": "HOU",
+      "game": "DAL@HOU",
+      "stat": "3PM",
+      "model": 1.8,
+      "dk": 1.9,
+      "edge": -0.1,
+      "side": "Under"
+    },
+    {
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "game": "GSW@LAL",
+      "stat": "PTS",
+      "model": 27.5,
+      "dk": 26.5,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "game": "GSW@LAL",
+      "stat": "3PM",
+      "model": 5.0,
+      "dk": 5.5,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Stephen Curry",
+      "team": "GSW",
+      "game": "GSW@LAL",
+      "stat": "AST",
+      "model": 5.1,
+      "dk": 6.6,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Draymond Green",
+      "team": "GSW",
+      "game": "GSW@LAL",
+      "stat": "REB",
+      "model": 6.9,
+      "dk": 5.9,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Draymond Green",
+      "team": "GSW",
+      "game": "GSW@LAL",
+      "stat": "AST",
+      "model": 5.6,
+      "dk": 5.6,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "LeBron James",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "PTS",
+      "model": 24.8,
+      "dk": 23.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "LeBron James",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "REB",
+      "model": 7.0,
+      "dk": 8.5,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "LeBron James",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "AST",
+      "model": 8.4,
+      "dk": 7.4,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "PTS",
+      "model": 26.3,
+      "dk": 27.8,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "REB",
+      "model": 12.2,
+      "dk": 11.2,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "BLK",
+      "model": 2.5,
+      "dk": 2.5,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "LAL",
+      "game": "GSW@LAL",
+      "stat": "PRA",
+      "model": 42.8,
+      "dk": 43.8,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Kevin Durant",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "PTS",
+      "model": 27.0,
+      "dk": 27.5,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Kevin Durant",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "REB",
+      "model": 6.3,
+      "dk": 5.3,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Kevin Durant",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "AST",
+      "model": 4.2,
+      "dk": 3.7,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Devin Booker",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "PTS",
+      "model": 25.6,
+      "dk": 26.1,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Devin Booker",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "AST",
+      "model": 6.4,
+      "dk": 5.4,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Devin Booker",
+      "team": "PHX",
+      "game": "PHX@POR",
+      "stat": "3PM",
+      "model": 1.6,
+      "dk": 1.9,
+      "edge": -0.3,
+      "side": "Under"
+    },
+    {
+      "player": "Jerami Grant",
+      "team": "POR",
+      "game": "PHX@POR",
+      "stat": "PTS",
+      "model": 25.2,
+      "dk": 24.2,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Scoot Henderson",
+      "team": "POR",
+      "game": "PHX@POR",
+      "stat": "AST",
+      "model": 5.2,
+      "dk": 5.5,
+      "edge": -0.3,
+      "side": "Over"
+    },
+    {
+      "player": "Jerami Grant",
+      "team": "POR",
+      "game": "PHX@POR",
+      "stat": "3PM",
+      "model": 3.8,
+      "dk": 3.3,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Jerami Grant",
+      "team": "POR",
+      "game": "PHX@POR",
+      "stat": "REB",
+      "model": 5.1,
+      "dk": 4.1,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "De'Aaron Fox",
+      "team": "SAC",
+      "game": "SAC@LAC",
+      "stat": "PTS",
+      "model": 24.9,
+      "dk": 25.9,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "De'Aaron Fox",
+      "team": "SAC",
+      "game": "SAC@LAC",
+      "stat": "AST",
+      "model": 7.1,
+      "dk": 7.6,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "SAC@LAC",
+      "stat": "PTS",
+      "model": 18.7,
+      "dk": 17.7,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "SAC@LAC",
+      "stat": "REB",
+      "model": 13.3,
+      "dk": 14.8,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "SAC@LAC",
+      "stat": "AST",
+      "model": 7.1,
+      "dk": 5.6,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Kawhi Leonard",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "PTS",
+      "model": 22.8,
+      "dk": 22.8,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Kawhi Leonard",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "REB",
+      "model": 5.7,
+      "dk": 5.7,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Kawhi Leonard",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "AST",
+      "model": 3.5,
+      "dk": 4.5,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "James Harden",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "PTS",
+      "model": 21.1,
+      "dk": 22.1,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "James Harden",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "AST",
+      "model": 9.4,
+      "dk": 7.9,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "James Harden",
+      "team": "LAC",
+      "game": "SAC@LAC",
+      "stat": "3PM",
+      "model": 2.0,
+      "dk": 2.3,
+      "edge": -0.3,
+      "side": "Under"
+    },
+    {
+      "player": "Donovan Mitchell",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "PTS",
+      "model": 25.9,
+      "dk": 27.4,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Donovan Mitchell",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "AST",
+      "model": 4.8,
+      "dk": 3.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Donovan Mitchell",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "3PM",
+      "model": 2.6,
+      "dk": 2.6,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Evan Mobley",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "PTS",
+      "model": 16.8,
+      "dk": 15.8,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Evan Mobley",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "REB",
+      "model": 9.2,
+      "dk": 8.2,
+      "edge": 1.0,
+      "side": "Over"
+    },
+    {
+      "player": "Evan Mobley",
+      "team": "CLE",
+      "game": "CLE@PHI",
+      "stat": "BLK",
+      "model": 2.2,
+      "dk": 1.8,
+      "edge": 0.4,
+      "side": "Over"
+    },
+    {
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "PTS",
+      "model": 28.3,
+      "dk": 29.8,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "REB",
+      "model": 11.4,
+      "dk": 9.9,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "AST",
+      "model": 3.5,
+      "dk": 4.5,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "PTS",
+      "model": 26.1,
+      "dk": 24.6,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "AST",
+      "model": 6.5,
+      "dk": 8.5,
+      "edge": -2.0,
+      "side": "Under"
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "3PM",
+      "model": 2.6,
+      "dk": 2.6,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "game": "CLE@PHI",
+      "stat": "PRA",
+      "model": 43.0,
+      "dk": 42.5,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "PTS",
+      "model": 27.4,
+      "dk": 25.9,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "REB",
+      "model": 11.9,
+      "dk": 10.4,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "AST",
+      "model": 10.4,
+      "dk": 9.9,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "PRA",
+      "model": 49.2,
+      "dk": 50.7,
+      "edge": -1.5,
+      "side": "Under"
+    },
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "PTS",
+      "model": 20.3,
+      "dk": 20.3,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DEN@OKC",
+      "stat": "AST",
+      "model": 6.1,
+      "dk": 7.1,
+      "edge": -1.0,
+      "side": "Under"
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "PTS",
+      "model": 32.0,
+      "dk": 32.5,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "AST",
+      "model": 6.5,
+      "dk": 6.5,
+      "edge": 0.0,
+      "side": "Under"
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "REB",
+      "model": 4.8,
+      "dk": 4.3,
+      "edge": 0.5,
+      "side": "Over"
+    },
+    {
+      "player": "Chet Holmgren",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "PTS",
+      "model": 16.3,
+      "dk": 14.8,
+      "edge": 1.5,
+      "side": "Over"
+    },
+    {
+      "player": "Chet Holmgren",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "REB",
+      "model": 8.7,
+      "dk": 9.2,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Chet Holmgren",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "BLK",
+      "model": 1.6,
+      "dk": 1.5,
+      "edge": 0.1,
+      "side": "Over"
+    },
+    {
+      "player": "Jalen Williams",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "PTS",
+      "model": 17.7,
+      "dk": 18.2,
+      "edge": -0.5,
+      "side": "Under"
+    },
+    {
+      "player": "Jalen Williams",
+      "team": "OKC",
+      "game": "DEN@OKC",
+      "stat": "REB",
+      "model": 5.2,
+      "dk": 6.7,
+      "edge": -1.5,
+      "side": "Under"
+    }
+  ],
+  "residuals": {
+    "player": {},
+    "team": {},
+    "games_learned": 3,
+    "history": [],
+    "alpha": 0.35
+  },
+  "model_notes": [
+    "Base: projected minutes × recent per-minute rates",
+    "Adjustments: pace, home/away, rest, basic vacancy",
+    "Residual layer: fading α (0.45 early → 0.12 later) once games exist",
+    "Benchmark: DraftKings lines"
+  ],
+  "prediction_history": [],
+  "notes": "Live scores on Games tab + 30s ESPN polling. Upload this index.html to update the site.",
+  "settled_bets": [
+    {
+      "date": "2026-10-20",
+      "game": "BOS @ DET",
+      "market": "Spread",
+      "side": "DET (model)",
+      "edge": -2.7,
+      "result": "W",
+      "units": 1,
+      "actual": "113-121"
+    },
+    {
+      "date": "2026-10-20",
+      "game": "BOS @ DET",
+      "market": "Total",
+      "side": "Over 222.5",
+      "edge": 2.3,
+      "result": "W",
+      "units": 1,
+      "actual": "Total 234"
+    },
+    {
+      "date": "2026-10-20",
+      "game": "PHI @ NYK",
+      "market": "Total",
+      "side": "Over 232.5",
+      "edge": 1.5,
+      "result": "L",
+      "units": -1,
+      "actual": "Total 206"
+    },
+    {
+      "date": "2026-10-20",
+      "game": "OKC @ SAS",
+      "market": "Spread",
+      "side": "SAS (model)",
+      "edge": 0.7,
+      "result": "L",
+      "units": -1,
+      "actual": "116-104"
+    },
+    {
+      "date": "2026-10-20",
+      "game": "OKC @ SAS",
+      "market": "Total",
+      "side": "Over 231.5",
+      "edge": 0.6,
+      "result": "L",
+      "units": -1,
+      "actual": "Total 220"
+    }
+  ],
+  "record": {
+    "wins": 2,
+    "losses": 3,
+    "units": -1
+  }
+};
+
+document.getElementById("generated").textContent = "Generated " + new Date(DATA.generated_at).toLocaleString() + " · Season " + DATA.season;
+
+function edgeClass(e) {
+  if (Math.abs(e) < 0.3) return "neutral";
+  return e > 0 ? "pos" : "neg";
+}
+
+function renderFlashBets() {
+  const board = document.getElementById("flash-board");
+  if (!board) return;
+  const flashes = DATA.props
+    .filter(p => Math.abs(p.edge) >= 1.0)
+    .sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge))
+    .slice(0, 8);
+  if (flashes.length === 0) {
+    board.innerHTML = "<div class='note'>No flash bets right now (edge ≥ 1.0).</div>";
+    return;
+  }
+  board.innerHTML = flashes.map(p => `
+    <div class="card" style="margin-bottom:10px;border-left:4px solid var(--accent);">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <div style="font-weight:700;font-size:15px;">${p.player} <span style="color:var(--muted);font-weight:400;">${p.team}</span></div>
+          <div style="font-size:13px;margin-top:2px;">${p.stat} ${p.side} ${p.dk}</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="edge ${edgeClass(p.edge)}" style="font-size:16px;">${p.edge > 0 ? "+" : ""}${p.edge}</div>
+          <div style="font-size:11px;color:var(--muted);">Model ${p.model}</div>
+        </div>
+      </div>
+      <div style="font-size:12px;margin-top:6px;color:var(--muted);">${p.game}</div>
+    </div>
+  `).join("");
+}
+
+
+function activeGames() {
+  return DATA.games.filter(g => g.status !== "Final");
+}
+
+function renderBankroll() {
+  const tbody = document.querySelector("#bankroll tbody");
+  if (!tbody) return;
+  const bets = DATA.settled_bets || [];
+  const rec = DATA.record || {wins:0, losses:0, units:0};
+  const summary = document.getElementById("bankroll-summary");
+  if (summary) {
+    summary.innerHTML = `<strong>Record:</strong> ${rec.wins}-${rec.losses} · Units: <span class="${rec.units>=0?'positive':'negative'}">${rec.units>0?'+':''}${rec.units}</span>`;
+  }
+  if (!bets.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--muted);">No settled bets yet.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = bets.map(b => `
+    <tr>
+      <td>${b.date}</td>
+      <td>${b.game}<br><span style="font-size:11px;color:var(--muted);">${b.market}</span></td>
+      <td>${b.side}</td>
+      <td class="${b.edge>0?'positive':'negative'}">${b.edge>0?'+':''}${b.edge}</td>
+      <td style="font-weight:700;color:${b.result==='W'?'#3dd68c':(b.result==='L'?'#ff6b6b':'var(--muted)')}">${b.result}</td>
+      <td class="${b.units>0?'positive':'negative'}">${b.units>0?'+':''}${b.units}</td>
+    </tr>
+  `).join("");
+}
+
+function renderBestBets(filter = "all") {
+  const bets = [];
+  // Game edges (only on "all")
+  if (filter === "all") {
+    activeGames().forEach(g => {
+      if (Math.abs(g.spread_edge) >= 0.8) {
+        bets.push({
+          type: "Game Spread",
+          title: `${g.away} @ ${g.home}`,
+          detail: `Model ${g.model.spread > 0 ? "+" : ""}${g.model.spread} vs DK ${g.dk.spread}`,
+          edge: g.spread_edge,
+          side: g.spread_edge > 0 ? "Home cover lean" : "Away cover lean"
+        });
+      }
+      if (Math.abs(g.total_edge) >= 0.8) {
+        bets.push({
+          type: "Game Total",
+          title: `${g.away} @ ${g.home}`,
+          detail: `Model ${g.model.total} vs DK ${g.dk.total}`,
+          edge: g.total_edge,
+          side: g.total_edge > 0 ? "Over" : "Under"
+        });
+      }
+    });
+  }
+  // Prop edges
+  DATA.props.forEach(p => {
+    if (Math.abs(p.edge) >= 0.8 && (filter === "all" || p.stat === filter)) {
+      bets.push({
+        type: `${p.stat} Prop`,
+        title: `${p.player} (${p.team})`,
+        detail: `${p.game} · Model ${p.model} vs DK ${p.dk}`,
+        edge: p.edge,
+        side: p.side,
+        pOver: ["REB", "AST", "3PM", "STL", "BLK"].includes(p.stat) ? pOver(p.model, p.dk) : null,
+        ev: ["REB", "AST", "3PM", "STL", "BLK"].includes(p.stat) ? calcEV(pOver(p.model, p.dk)) : null
+      });
+    }
+  });
+  bets.sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge));
+  const board = document.getElementById("best-board");
+  if (!bets.length) {
+    board.innerHTML = '<div class="card"><p>No edges ≥ 0.8 right now.</p></div>';
+    return;
+  }
+  board.innerHTML = bets.map(b => `
+    <div class="card">
+      <div class="game-header">
+        <div>
+          <div class="matchup">${b.title}</div>
+          <div class="time">${b.type}</div>
+        </div>
+        <span class="edge ${edgeClass(b.edge)}" style="font-size:14px;">${b.edge > 0 ? "+" : ""}${b.edge}</span>
+      </div>
+      <div class="note">${b.detail}${b.pOver ? ` · P(Over): ${b.pOver}% · EV: ${b.ev > 0 ? "+" : ""}${b.ev}%` : ""}</div>
+      <div style="margin-top:8px;font-weight:600;color:var(--accent);">${b.side}</div>
+      <div style="font-size:11px;margin-top:4px;color:${confidence(b.edge).color};">Confidence: ${confidence(b.edge).label}</div>
+    </div>
+  `).join("");
+}
+
+function teamLogo(abbr) {
+  const logos = {
+    BOS: "https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg",
+    DET: "https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg",
+    PHI: "https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg",
+    NYK: "https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg",
+    OKC: "https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg",
+    SAS: "https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg",
+    ATL: "https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg",
+    ORL: "https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg",
+    MIL: "https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg",
+    WAS: "https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg"
+  };
+  return logos[abbr] || "";
+}
+
+function poissonPMF(k, lambda) {
+  if (lambda <= 0) return 0;
+  let logP = -lambda + k * Math.log(lambda);
+  for (let i = 2; i <= k; i++) logP -= Math.log(i);
+  return Math.exp(logP);
+}
+
+function pOver(lambda, line) {
+  // Probability of strictly greater than the line (common for O/U)
+  const floor = Math.floor(line);
+  let p = 0;
+  for (let k = floor + 1; k <= floor + 40; k++) {
+    p += poissonPMF(k, lambda);
+  }
+  return Math.round(p * 1000) / 10; // one decimal percent
+}
+
+function calcEV(pOverPct, odds = -110) {
+  // EV as percentage of stake assuming standard -110
+  const p = pOverPct / 100;
+  const decimal = odds > 0 ? (odds / 100) + 1 : (100 / Math.abs(odds)) + 1;
+  const payout = decimal - 1; // profit per $1
+  const ev = (p * payout) - ((1 - p) * 1);
+  return Math.round(ev * 1000) / 10; // one decimal percent
+}
+
+// Simple mean-to-median adjustment for higher-volume skewed stats (points)
+// Snapshot current predictions into history (called on load and after updates)
+function snapshotPredictions() {
+  if (!DATA.prediction_history) DATA.prediction_history = [];
+  const stamp = new Date().toISOString().slice(0, 16);
+  const snapshot = {
+    timestamp: stamp,
+    games: DATA.games.map(g => ({
+      id: g.id,
+      matchup: `${g.away} @ ${g.home}`,
+      model_spread: g.model.spread,
+      model_total: g.model.total,
+      dk_spread: g.dk.spread,
+      dk_total: g.dk.total
+    })),
+    props: DATA.props.filter(p => Math.abs(p.edge) >= 0.5).slice(0, 30).map(p => ({
+      player: p.player,
+      stat: p.stat,
+      model: p.model,
+      dk: p.dk,
+      edge: p.edge,
+      side: p.side
+    }))
+  };
+  // Avoid exact duplicate timestamps
+  if (!DATA.prediction_history.some(h => h.timestamp === stamp)) {
+    DATA.prediction_history.unshift(snapshot);
+    if (DATA.prediction_history.length > 40) DATA.prediction_history.pop();
+  }
+}
+
+function renderPredictionHistory() {
+  const el = document.getElementById("prediction-history");
+  if (!el || !DATA.prediction_history) return;
+  if (DATA.prediction_history.length === 0) {
+    el.innerHTML = "<div class='note'>No prediction history yet. Snapshots are saved each time the board loads.</div>";
+    return;
+  }
+  el.innerHTML = DATA.prediction_history.slice(0, 5).map(h => `
+    <div style="margin-bottom:12px;padding:10px;background:#1a1f2c;border-radius:8px;">
+      <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">${h.timestamp.replace("T", " ")}</div>
+      <div style="font-size:13px;">${h.games.length} games · ${h.props.length} props logged</div>
+    </div>
+  `).join("");
+}
+function applyResiduals() {
+  if (residualsApplied) return;
+  const alpha = DATA.residuals.alpha || 0.35;
+  DATA.props.forEach(p => {
+    const key = p.player + "|" + p.stat;
+    const res = DATA.residuals.player[key];
+    if (res && Math.abs(res) > 0.1) {
+      p.model = Math.round((p.model + alpha * res) * 10) / 10;
+      p.edge = Math.round((p.model - p.dk) * 10) / 10;
+      p.side = p.edge > 0 ? "Over" : "Under";
+    }
+  });
+  residualsApplied = true;
+}
+
+function medianAdjustment(stat, mean) {
+  if (stat === "PTS") return Math.round((mean - 0.6) * 10) / 10; // typical skew gap
+  return mean;
+}
+
+function confidence(edge) {
+  const abs = Math.abs(edge);
+  if (abs >= 2.0) return {label: "High", color: "var(--good)"};
+  if (abs >= 1.0) return {label: "Medium", color: "var(--gold)"};
+  if (abs >= 0.5) return {label: "Low", color: "var(--muted)"};
+  return {label: "None", color: "#6a7888"};
+}
+
+function renderGames() {
+  const active = activeGames();
+  document.getElementById("games-board").innerHTML = active.map((g, i) => {
+    const modelFav = g.model.spread < 0 ? g.home : g.away;
+    const modelSpread = Math.abs(g.model.spread);
+    const dkSpreadNum = parseFloat(g.dk.spread);
+    const dkPick = g.spread_edge > 0.5 ? `${g.home} ${g.dk.spread}` : (g.spread_edge < -0.5 ? `${g.away} +${Math.abs(dkSpreadNum)}` : "No strong side");
+    const totalPick = g.total_edge > 0.5 ? `Over ${g.dk.total}` : (g.total_edge < -0.5 ? `Under ${g.dk.total}` : "No strong lean");
+    const spreadConf = confidence(g.spread_edge);
+    const totalConf = confidence(g.total_edge);
+    const stayAway = Math.abs(g.spread_edge) < 0.5 && Math.abs(g.total_edge) < 0.5;
+    const isLive = g.status === "Live";
+    const scoreHtml = g.score ? `
+      <div style="margin:8px 0 4px;padding:10px 12px;border-radius:10px;background:${isLive ? '#13251a' : '#1a1f2c'};border:1px solid ${isLive ? 'var(--accent)' : '#2a3140'};">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+          <div style="font-size:13px;font-weight:600;">${g.away}</div>
+          <div style="font-size:22px;font-weight:800;letter-spacing:0.5px;">${g.score.away} <span style="color:var(--muted);font-weight:500;">–</span> ${g.score.home}</div>
+          <div style="font-size:13px;font-weight:600;">${g.home}</div>
+        </div>
+        <div style="font-size:11px;margin-top:4px;color:${isLive ? 'var(--accent)' : 'var(--muted)'};font-weight:600;">
+          ${isLive ? "● LIVE" : (g.status || "")}${g.live_note ? " · " + g.live_note : ""}
+        </div>
+      </div>` : (g.status === "Live" ? `<div style="font-size:12px;color:var(--accent);font-weight:600;margin:6px 0;">● LIVE${g.live_note ? " · " + g.live_note : ""}</div>` : "");
+    const statusHtml = !g.score && g.status && g.status !== "Upcoming" ? `<div style="font-size:12px;color:var(--muted);margin-bottom:6px;">${g.status}</div>` : "";
+    return `
+    <div class="card clickable" data-idx="${i}" style="${isLive ? 'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);' : ''}">
+      <div class="game-header">
+        <div style="width:100%;">
+          <div class="matchup">
+            <img class="team-logo" src="${teamLogo(g.away)}" alt="${g.away}" onerror="this.style.display='none'">
+            ${g.away} @ ${g.home}
+            <img class="team-logo" src="${teamLogo(g.home)}" alt="${g.home}" onerror="this.style.display='none'">
+          </div>
+          <div class="time">${g.date} · ${g.time}</div>
+          ${statusHtml}
+          ${scoreHtml}
+        </div>
+      </div>
+      <div style="background:#1a1f2c;border-radius:8px;padding:10px;margin-bottom:10px;font-size:14px;">
+        ${stayAway ? '<div style="color:var(--bad);font-weight:700;margin-bottom:6px;">⚠ Stay Away — edges too small</div>' : ''}
+        <div><strong style="color:var(--accent);">Model favors:</strong> ${modelFav} by ${modelSpread}</div>
+        <div style="margin-top:4px;"><strong style="color:var(--accent2);">DK pick:</strong> ${dkPick} · ${totalPick}</div>
+        <div style="margin-top:6px;font-size:12px;">
+          Spread confidence: <span style="color:${spreadConf.color};font-weight:600;">${spreadConf.label}</span>
+          · Total confidence: <span style="color:${totalConf.color};font-weight:600;">${totalConf.label}</span>
+        </div>
+      </div>
+      <div class="markets">
+        <div class="market">
+          <label>Spread</label>
+          <div class="proj">${g.model.spread > 0 ? "+" : ""}${g.model.spread}</div>
+          <div class="dk">DK ${g.dk.spread}</div>
+          <span class="edge ${edgeClass(g.spread_edge)}">${g.spread_edge > 0 ? "+" : ""}${g.spread_edge}</span>
+        </div>
+        <div class="market">
+          <label>Total</label>
+          <div class="proj">${g.model.total}</div>
+          <div class="dk">DK ${g.dk.total}</div>
+          <span class="edge ${edgeClass(g.total_edge)}">${g.total_edge > 0 ? "+" : ""}${g.total_edge}</span>
+        </div>
+        <div class="market">
+          <label>Win %</label>
+          <div class="proj">${Math.round(g.model.ml_home*100)}% ${g.home}</div>
+          <div class="dk">DK ${g.dk.ml_away} / ${g.dk.ml_home}</div>
+        </div>
+      </div>
+      <div class="note">${g.note}</div>
+    </div>`;
+  }).join("");
+
+  document.querySelectorAll("#games-board .card").forEach(card => {
+    card.onclick = () => openGameDetail(parseInt(card.dataset.idx));
+  });
+}
+
+function openGameDetail(idx) {
+  const g = activeGames()[idx];
+  if (!g) return;
+  const gameProps = DATA.props.filter(p => p.game === g.id).sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge)).slice(0, 6);
+  const propsHtml = gameProps.length ? `
+    <div class="props-mini">
+      <strong style="font-size:13px;">Top Props for this game</strong>
+      <table style="margin-top:8px;">
+        <thead><tr><th>Player</th><th>Stat</th><th>Model</th><th>DK</th><th>Edge</th></tr></thead>
+        <tbody>
+          ${gameProps.map(p => `<tr>
+            <td>${p.player}</td><td>${p.stat}</td>
+            <td>${p.model}</td><td>${p.dk}</td>
+            <td class="${Math.abs(p.edge)>=0.6?(p.edge>0?'positive':'negative'):''}">${p.edge>0?'+':''}${p.edge}</td>
+          </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>` : "";
+
+  document.getElementById("modal-content").innerHTML = `
+    <button class="close" onclick="document.getElementById('game-modal').classList.remove('show')">×</button>
+    <h3>${g.away} @ ${g.home}</h3>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:14px;">${g.date} · ${g.time}</div>
+
+    <div class="detail-row"><span class="detail-label">Model Spread</span><strong>${g.model.spread > 0 ? "+" : ""}${g.model.spread}</strong></div>
+    <div class="detail-row"><span class="detail-label">DraftKings Spread</span><strong>${g.dk.spread}</strong></div>
+    <div class="detail-row"><span class="detail-label">Spread Edge</span><strong class="${edgeClass(g.spread_edge)}">${g.spread_edge > 0 ? "+" : ""}${g.spread_edge}</strong></div>
+
+    <div class="detail-row"><span class="detail-label">Model Total</span><strong>${g.model.total}</strong></div>
+    <div class="detail-row"><span class="detail-label">DraftKings Total</span><strong>${g.dk.total}</strong></div>
+    <div class="detail-row"><span class="detail-label">Total Edge</span><strong class="${edgeClass(g.total_edge)}">${g.total_edge > 0 ? "+" : ""}${g.total_edge}</strong></div>
+
+    <div class="detail-row"><span class="detail-label">Model Win % (${g.home})</span><strong>${Math.round(g.model.ml_home*100)}%</strong></div>
+    <div class="detail-row"><span class="detail-label">DraftKings ML</span><strong>${g.dk.ml_away} / ${g.dk.ml_home}</strong></div>
+
+    <div style="margin-top:14px;font-size:13px;color:var(--muted);">${g.note}</div>
+    ${propsHtml}
+  `;
+  document.getElementById("game-modal").classList.add("show");
+}
+
+document.getElementById("game-modal").onclick = e => {
+  if (e.target.id === "game-modal") e.target.classList.remove("show");
+};
+
+function populateGameFilter() {
+  const sel = document.getElementById("game-filter");
+  const games = [...new Set(DATA.props.map(p => p.game))];
+  games.forEach(g => {
+    const opt = document.createElement("option");
+    opt.value = g; opt.textContent = g;
+    sel.appendChild(opt);
+  });
+}
+
+function renderCombos(filter = "all") {
+  let list = DATA.props.filter(p => ["PRA", "PR", "PA", "RA"].includes(p.stat));
+  if (filter !== "all") list = list.filter(p => p.stat === filter);
+  list.sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
+  const tbody = document.querySelector("#combos-table tbody");
+  if (!tbody) return;
+  tbody.innerHTML = list.map(p => {
+    const edgePct = Math.round((p.edge / p.dk) * 1000) / 10;
+    const cls = Math.abs(p.edge) >= 0.6 ? (p.edge > 0 ? "positive" : "negative") : "";
+    const rec = Math.abs(p.edge) < 0.4 ? "Pass (No Edge)" : (p.edge > 0 ? "Over" : "Under");
+    return `<tr>
+      <td><div class="player">${p.player}</div><div class="team">${p.team}</div></td>
+      <td>${p.stat}</td>
+      <td class="stat">${p.dk}</td>
+      <td class="stat">${p.model}</td>
+      <td class="stat ${cls}">${p.edge > 0 ? "+" : ""}${p.edge} (${edgePct > 0 ? "+" : ""}${edgePct}%)</td>
+      <td>${rec}</td>
+    </tr>`;
+  }).join("") || "<tr><td colspan='6' style='text-align:center;color:var(--muted);'>No combo props yet</td></tr>";
+}
+
+function renderProps() {
+  const stat = document.getElementById("stat-filter").value;
+  const team = document.getElementById("team-filter").value;
+  const pos = document.getElementById("pos-filter").value;
+  const game = document.getElementById("game-filter").value;
+
+  let list = DATA.props;
+  if (stat !== "all") list = list.filter(p => p.stat === stat);
+  if (team !== "all") list = list.filter(p => p.team === team);
+  if (pos !== "all") list = list.filter(p => (p.pos || "").startsWith(pos));
+  if (game !== "all") list = list.filter(p => p.game === game);
+  list.sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
+
+  document.querySelector("#props-table tbody").innerHTML = list.map((p) => {
+    const usePoisson = ["REB", "AST", "3PM", "STL", "BLK"].includes(p.stat);
+    const displayModel = p.stat === "PTS" ? medianAdjustment(p.stat, p.model) : p.model;
+    const adjEdge = Math.round((displayModel - p.dk) * 10) / 10;
+    const edgePct = Math.round((adjEdge / p.dk) * 1000) / 10;
+    const cls = Math.abs(adjEdge) >= 0.6 ? (adjEdge > 0 ? "positive" : "negative") : "";
+    const rec = Math.abs(adjEdge) < 0.4 ? "Pass (No Edge)" : (adjEdge > 0 ? "Over" : "Under");
+    const pOverVal = usePoisson ? pOver(p.model, p.dk) : null;
+    const evVal = pOverVal !== null ? calcEV(pOverVal) : null;
+    const extra = usePoisson ? `<div style="font-size:11px;color:var(--muted);">P(Over): ${pOverVal}% · EV: ${evVal > 0 ? "+" : ""}${evVal}%</div>` 
+                             : (p.stat === "PTS" ? `<div style="font-size:11px;color:var(--muted);">Median est: ${displayModel}</div>` : "");
+    return `<tr>
+      <td><div class="player clickable" data-player="${p.player}" data-team="${p.team}" data-game="${p.game}" style="cursor:pointer;color:var(--accent2);">${p.player}</div><div class="team">${p.team}</div></td>
+      <td>${p.stat}</td>
+      <td class="stat">${p.dk}</td>
+      <td class="stat">${p.model}${extra}</td>
+      <td class="stat ${cls}">${adjEdge > 0 ? "+" : ""}${adjEdge} (${edgePct > 0 ? "+" : ""}${edgePct}%)</td>
+      <td>${rec}</td>
+    </tr>`;
+  }).join("");
+
+  document.querySelectorAll("#props-table .player.clickable").forEach(el => {
+    el.onclick = () => openPlayerDetail(el.dataset.player, el.dataset.team, el.dataset.game);
+  });
+}
+
+// Populate team filter
+(function() {
+  const teams = [...new Set(DATA.props.map(p => p.team))].sort();
+  const sel = document.getElementById("team-filter");
+  teams.forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    sel.appendChild(opt);
+  });
+})();
+
+document.getElementById("stat-filter").onchange = renderProps;
+document.getElementById("team-filter").onchange = renderProps;
+document.getElementById("pos-filter").onchange = renderProps;
+document.getElementById("game-filter").onchange = renderProps;
+
+function openPlayerDetail(name, team, game) {
+  const playerProps = DATA.props.filter(p => p.player === name && p.game === game);
+  const propsHtml = playerProps.map(p => `
+    <div class="detail-row">
+      <span class="detail-label">${p.stat}</span>
+      <span>Model <strong>${p.model}</strong> · DK <strong>${p.dk}</strong> · Edge <strong class="${edgeClass(p.edge)}">${p.edge > 0 ? "+" : ""}${p.edge}</strong> (${p.side})</span>
+    </div>`).join("");
+
+  document.getElementById("modal-content").innerHTML = `
+    <button class="close" onclick="document.getElementById('game-modal').classList.remove('show')">×</button>
+    <h3>${name}</h3>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:14px;">${team} · ${game}</div>
+
+    <div style="font-weight:600;margin-bottom:6px;">Current Model Lines</div>
+    ${propsHtml}
+
+    <div style="margin-top:18px;padding-top:12px;border-top:1px solid var(--border);">
+      <div style="font-weight:600;margin-bottom:6px;">Season Stats</div>
+      <div style="color:var(--muted);font-size:13px;">
+        Season has not started. Once games begin, this section will pull live stats from 
+        <a href="https://www.nba.com/stats" target="_blank" style="color:var(--accent);">nba.com/stats</a> 
+        (PTS, REB, AST, 3PM, FG%, minutes, recent form, etc.).
+      </div>
+    </div>
+  `;
+  document.getElementById("game-modal").classList.add("show");
+}
+
+// Tabs
+document.querySelectorAll("nav button").forEach(btn => {
+  btn.onclick = () => {
+    const id = btn.dataset.tab;
+    const panel = document.getElementById(id);
+    if (!panel) return;
+    document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll("section.tab").forEach(t => t.style.display = "none");
+    panel.style.display = "block";
+  };
+});
+
+function renderPropsByGame() {
+  const container = document.getElementById("props-by-game");
+  const games = [...new Set(DATA.props.map(p => p.game))];
+  container.innerHTML = games.map(gid => {
+    const props = DATA.props.filter(p => p.game === gid).sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
+    const g = DATA.games.find(x => x.id === gid) || {away:"?", home:"?"};
+    return `
+      <div class="card" style="margin-bottom:14px;">
+        <div class="section-title" style="font-size:16px;">${g.away} @ ${g.home} <small>${gid}</small></div>
+        <table>
+          <thead><tr><th>Player</th><th>Stat</th><th>Model</th><th>DK</th><th>Edge</th><th>Side</th></tr></thead>
+          <tbody>
+            ${props.map(p => `<tr>
+              <td><div class="player">${p.player}</div><div class="team">${p.team}</div></td>
+              <td>${p.stat}</td>
+              <td class="stat">${p.model}</td>
+              <td class="stat">${p.dk}</td>
+              <td class="stat ${Math.abs(p.edge)>=0.6?(p.edge>0?'positive':'negative'):''}">${p.edge>0?'+':''}${p.edge}</td>
+              <td>${p.side}</td>
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>`;
+  }).join("");
+}
+
+function renderEdges() {
+  const rows = [];
+  DATA.games.forEach(g => {
+    if (Math.abs(g.spread_edge) >= 0.3) rows.push({type:"Spread", name:`${g.away}@${g.home}`, market:"Spread", model:g.model.spread, dk:g.dk.spread, edge:g.spread_edge, side:g.spread_edge>0?"Home":"Away"});
+    if (Math.abs(g.total_edge) >= 0.3) rows.push({type:"Total", name:`${g.away}@${g.home}`, market:"Total", model:g.model.total, dk:g.dk.total, edge:g.total_edge, side:g.total_edge>0?"Over":"Under"});
+  });
+  DATA.props.forEach(p => {
+    if (Math.abs(p.edge) >= 0.3) rows.push({type:"Prop", name:`${p.player} (${p.team})`, market:p.stat, model:p.model, dk:p.dk, edge:p.edge, side:p.side});
+  });
+  rows.sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
+  document.querySelector("#edges-table tbody").innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.type}</td>
+      <td>${r.name}</td>
+      <td>${r.market}</td>
+      <td class="stat">${r.model}</td>
+      <td class="stat">${r.dk}</td>
+      <td class="stat ${Math.abs(r.edge)>=0.6?(r.edge>0?'positive':'negative'):''}">${r.edge>0?'+':''}${r.edge}</td>
+      <td>${r.side}</td>
+    </tr>`).join("");
+}
+
+function renderNotes() {
+  const big = DATA.props.filter(p => Math.abs(p.edge) >= 1.0).slice(0, 5);
+  const gameEdges = activeGames().filter(g => Math.abs(g.spread_edge) >= 1.5 || Math.abs(g.total_edge) >= 1.5);
+  let html = "<ul>";
+  gameEdges.forEach(g => {
+    html += `<li><strong>${g.away} @ ${g.home}</strong> — ${g.note}</li>`;
+  });
+  big.forEach(p => {
+    html += `<li><strong>${p.player} ${p.stat}</strong> (${p.game}) — Model ${p.model} vs DK ${p.dk} (${p.edge > 0 ? "+" : ""}${p.edge}). ${p.side}.</li>`;
+  });
+  html += "</ul>";
+  if (!big.length && !gameEdges.length) html = "<p>No large edges to annotate yet.</p>";
+  document.getElementById("notes-content").innerHTML = html;
+}
+
+function renderSchedule() {
+  document.getElementById("schedule-board").innerHTML = activeGames().map(g => `
+    <div class="card" style="margin-bottom:10px;">
+      <div class="matchup">${g.away} @ ${g.home}</div>
+      <div class="time">${g.date} · ${g.time}</div>
+      <div class="note" style="margin-top:6px;">Rest: standard · Travel: none flagged</div>
+    </div>`).join("");
+}
+
+function renderTrends() {
+  const el = document.getElementById("trends-content");
+  if (!el) return;
+  const rec = DATA.record || {wins:0, losses:0, units:0};
+  const bets = DATA.settled_bets || [];
+  el.innerHTML = `
+    <div class="card" style="margin-bottom:12px;">
+      <div style="font-weight:700;margin-bottom:6px;">Opening Night Model Record</div>
+      <div style="font-size:18px;">${rec.wins}-${rec.losses} <span style="font-size:13px;color:var(--muted);">(${rec.units>0?'+':''}${rec.units}u)</span></div>
+    </div>
+    ${bets.map(b => `
+      <div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;">
+        <strong>${b.game}</strong> · ${b.market} ${b.side}
+        <span style="float:right;font-weight:700;color:${b.result==='W'?'#3dd68c':'#ff6b6b'}">${b.result}</span>
+        <div style="color:var(--muted);font-size:11px;">${b.actual}</div>
+      </div>
+    `).join("") || "<div class='note'>No settled results yet.</div>"}
+  `;
+}
+
+const ESPN_ABBREV = {
+  "ATL":"ATL","BOS":"BOS","BKN":"BKN","CHA":"CHA","CHI":"CHI","CLE":"CLE","DAL":"DAL","DEN":"DEN",
+  "DET":"DET","GSW":"GS","GS":"GS","HOU":"HOU","IND":"IND","LAC":"LAC","LAL":"LAL","MEM":"MEM",
+  "MIA":"MIA","MIL":"MIL","MIN":"MIN","NOP":"NO","NO":"NO","NYK":"NY","NY":"NY","OKC":"OKC",
+  "ORL":"ORL","PHI":"PHI","PHX":"PHX","PHO":"PHX","POR":"POR","SAC":"SAC","SAS":"SA","SA":"SA",
+  "TOR":"TOR","UTA":"UTAH","UTAH":"UTAH","WAS":"WSH","WSH":"WSH"
+};
+function normAbbr(a) {
+  if (!a) return "";
+  const u = String(a).toUpperCase().replace(/[^A-Z]/g,"");
+  return ESPN_ABBREV[u] || u;
+}
+function matchEspnGame(event) {
+  const comp = event.competitions && event.competitions[0];
+  if (!comp) return null;
+  const teams = comp.competitors || [];
+  const home = teams.find(t => t.homeAway === "home");
+  const away = teams.find(t => t.homeAway === "away");
+  if (!home || !away) return null;
+  const ha = normAbbr(home.team && home.team.abbreviation);
+  const aa = normAbbr(away.team && away.team.abbreviation);
+  let hit = DATA.games.find(g => normAbbr(g.home) === ha && normAbbr(g.away) === aa);
+  if (!hit) hit = DATA.games.find(g => normAbbr(g.home) === aa && normAbbr(g.away) === ha);
+  return hit || null;
+}
+function setLiveStatus(msg) {
+  const el = document.getElementById("live-updated");
+  if (el) el.textContent = msg;
+  const el2 = document.getElementById("games-live-status");
+  if (el2) el2.textContent = msg;
+}
+async function fetchLiveScores() {
+  try {
+    const res = await fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard", { cache: "no-store" });
+    if (!res.ok) { setLiveStatus("Score feed error " + res.status); return; }
+    const json = await res.json();
+    const events = json.events || [];
+    let changed = false;
+    let liveCount = 0;
+    events.forEach(ev => {
+      const g = matchEspnGame(ev);
+      if (!g) return;
+      const comp = ev.competitions[0];
+      const teams = comp.competitors || [];
+      const home = teams.find(t => t.homeAway === "home");
+      const away = teams.find(t => t.homeAway === "away");
+      const st = (ev.status && ev.status.type) || {};
+      const state = st.state || "";
+      const detail = st.detail || st.shortDetail || "";
+      const awayScore = away ? parseInt(away.score, 10) : NaN;
+      const homeScore = home ? parseInt(home.score, 10) : NaN;
+      if (state === "in") {
+        liveCount++;
+        if (g.status !== "Live") changed = true;
+        g.status = "Live";
+        g.live_note = detail;
+        if (!isNaN(awayScore) && !isNaN(homeScore)) {
+          if (!g.score || g.score.away !== awayScore || g.score.home !== homeScore) changed = true;
+          g.score = { away: awayScore, home: homeScore };
+        }
+      } else if (state === "post") {
+        if (g.status !== "Final") changed = true;
+        g.status = "Final";
+        g.live_note = "Final";
+        if (!isNaN(awayScore) && !isNaN(homeScore)) {
+          g.score = { away: awayScore, home: homeScore };
+          g.actual_margin = homeScore - awayScore;
+          g.actual_total = homeScore + awayScore;
+        }
+      } else if (state === "pre") {
+        if (g.status === "Live") { g.status = "Upcoming"; changed = true; }
+      }
+    });
+    setLiveStatus("Live scores · " + liveCount + " in progress · updated " + new Date().toLocaleTimeString());
+    renderLive();
+    renderGames();
+  } catch (e) {
+    console.warn("Live score fetch failed", e);
+    setLiveStatus("Live feed offline — open site over https and keep tab open");
+  }
+}
+function startLivePolling() {
+  fetchLiveScores();
+  if (window._livePoll) clearInterval(window._livePoll);
+  window._livePoll = setInterval(fetchLiveScores, 15000); // every 15s
+}
+function renderLive() {
+  const board = document.getElementById("live-board");
+  if (!board) return;
+  const live = DATA.games.filter(g => g.status === "Live");
+  const finalsToday = DATA.games.filter(g => g.status === "Final" && g.score);
+  if (live.length === 0) {
+    board.innerHTML = `
+      <div class="note">No games currently live. Auto-refreshes every 30s from ESPN.</div>
+      <div id="live-updated" style="font-size:11px;color:var(--muted);margin-top:6px;"></div>
+      ${finalsToday.length ? `<div class="section-title" style="margin-top:16px;font-size:15px;">Recent finals</div>` +
+        finalsToday.map(g => `<div class="card" style="margin-top:8px;"><div class="matchup">${g.away} ${g.score.away} – ${g.score.home} ${g.home}</div><div style="font-size:12px;color:var(--muted);">Final</div></div>`).join("") : ""}
+    `;
+    return;
+  }
+  board.innerHTML = `
+    <div id="live-updated" style="font-size:11px;color:var(--muted);margin-bottom:10px;"></div>
+    ${live.map(g => `
+    <div class="card" style="border-left:4px solid var(--accent);margin-bottom:10px;">
+      <div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px;">LIVE${g.live_note ? ' · ' + g.live_note : ''}</div>
+      <div class="matchup" style="font-size:16px;">${g.away} @ ${g.home}</div>
+      ${g.score ? `<div style="font-size:22px;font-weight:700;margin:8px 0;">${g.score.away} – ${g.score.home}</div>` : ""}
+      <div style="font-size:13px;margin-top:6px;">
+        Model spread: ${g.model.spread} · Model total: ${g.model.total}<br>
+        DK: ${g.dk.spread} / ${g.dk.total}
+      </div>
+    </div>
+  `).join("")}`;
+}
+
+document.getElementById("injury-toggle").onclick = () => {
+  document.getElementById("injury-details").classList.toggle("show");
+};
+
+document.querySelectorAll("#best-filters button").forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll("#best-filters button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    renderBestBets(btn.dataset.best);
+  };
+});
+
+renderGames();
+populateGameFilter();
+applyResiduals();
+snapshotPredictions();
+const rs = document.getElementById("residual-status");
+if (rs) rs.textContent = `Residuals: ${DATA.residuals.games_learned} games learned · History: ${(DATA.prediction_history||[]).length} snapshots`;
+renderProps();
+renderCombos();
+renderFlashBets();
+renderBestBets("all");
+renderParlayMainOnLoad();
+renderPredictionHistory();
+
+let parlayMode = 2;
+let selectedParlay = [];
+
+function setParlayTab(mode) {
+  parlayMode = mode;
+  selectedParlay = [];
+  document.querySelectorAll("#parlay-inner-tabs button").forEach(b => b.classList.remove("active"));
+  const btn = document.querySelector(`#parlay-inner-tabs button[data-pleg="${mode}"]`);
+  if (btn) btn.classList.add("active");
+  renderParlayMain();
+}
+
+function renderParlayMain() {
+  const main = document.getElementById("parlay-main");
+  if (!main) return;
+  if (parlayMode === "suggested") {
+    renderSuggestedParlays(main);
+  } else {
+    renderCustomBuilder(main);
+  }
+}
+
+function renderCustomBuilder(container) {
+  const props = DATA.props.filter(p => Math.abs(p.edge) >= 0.4).slice(0, 16);
+  container.innerHTML = `
+    <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:10px;">
+      <div id="parlay-leg-list" style="background:#12151c;border:1px solid #2a3140;border-radius:10px;padding:12px;max-height:400px;overflow-y:auto;">
+        <div style="font-size:13px;font-weight:600;color:#9aa4b2;margin-bottom:10px;letter-spacing:0.3px;">AVAILABLE LEGS</div>
+        ${props.map((p, i) => `
+          <div class="parlay-leg" data-idx="${i}" style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:${selectedParlay.includes(i) ? '#1a2332' : '#161a22'};border:1px solid ${selectedParlay.includes(i) ? '#3a4a6a' : 'transparent'};cursor:pointer;">
+            <div style="width:16px;height:16px;border-radius:4px;border:1.5px solid ${selectedParlay.includes(i) ? 'var(--accent)' : '#4a5568'};background:${selectedParlay.includes(i) ? 'var(--accent)' : 'transparent'};display:flex;align-items:center;justify-content:center;">
+              ${selectedParlay.includes(i) ? '<span style="color:#000;font-size:11px;font-weight:700;">✓</span>' : ''}
+            </div>
+            <div style="flex:1;">
+              <div style="font-size:13px;font-weight:600;">${p.player} <span style="color:#6a7888;font-weight:400;">${p.team}</span></div>
+              <div style="font-size:12px;margin-top:2px;color:#c8d0d8;">
+                ${p.stat} ${p.side} <strong>${p.dk}</strong>
+                <span style="margin-left:8px;color:var(--accent);">Model ${p.model}</span>
+                <span style="margin-left:6px;" class="${p.edge>0?'positive':'negative'}">${p.edge>0?'+':''}${p.edge}</span>
+              </div>
+            </div>
+          </div>
+        `).join("")}
+      </div>
+      <div id="parlay-results-panel" style="background:#12151c;border:1px solid #2a3140;border-radius:10px;padding:14px;"></div>
+    </div>`;
+  // Attach click handlers after render
+  container.querySelectorAll(".parlay-leg").forEach(el => {
+    el.onclick = () => toggleParlayLeg(parseInt(el.dataset.idx));
+  });
+  updateParlayResults();
+}
+
+function renderSuggestedParlays(container) {
+  const strong = DATA.props.filter(p => Math.abs(p.edge) >= 0.8).slice(0, 12);
+  const suggestions = [];
+  for (let i = 0; i < Math.min(4, strong.length - 1); i++) {
+    suggestions.push([strong[i], strong[i+1]]);
+    if (i + 2 < strong.length) suggestions.push([strong[i], strong[i+1], strong[i+2]]);
+  }
+  container.innerHTML = `
+    <div class="card">
+      <div style="font-weight:700;margin-bottom:12px;">Suggested Parlays</div>
+      ${suggestions.slice(0, 6).map((combo, idx) => {
+        let dec = 1;
+        combo.forEach(() => dec *= americanToDecimal(-110));
+        const odds = dec >= 2 ? Math.round((dec-1)*100) : Math.round(-100/(dec-1));
+        const avg = Math.round(combo.reduce((s,p)=>s+p.edge,0)/combo.length*10)/10;
+        return `
+          <div style="margin-bottom:14px;padding:12px;background:#1a1f2c;border-radius:8px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span style="font-weight:600;">${combo.length}-Leg Suggestion ${idx+1}</span>
+              <span style="color:var(--accent2);font-weight:700;">${odds>0?'+':''}${odds}</span>
+            </div>
+            ${combo.map(p => `
+              <div style="font-size:13px;margin:4px 0;padding:4px 0;border-bottom:1px solid #2a3140;">
+                ${p.player} ${p.stat} ${p.side} ${p.dk}<br>
+                <span style="font-size:11px;color:var(--accent);">Model ${p.model}</span> · 
+                <span class="${p.edge>0?'positive':'negative'}">${p.edge>0?'+':''}${p.edge}</span> · 
+                <span style="color:var(--muted);">DK ${p.side} ${p.dk}</span>
+              </div>
+            `).join("")}
+            <div style="font-size:12px;margin-top:6px;color:var(--muted);">Avg edge: <strong class="${avg>0?'positive':'negative'}">${avg>0?'+':''}${avg}</strong></div>
+          </div>`;
+      }).join("") || "<div class='note'>No strong edges for suggestions yet.</div>"}
+    </div>`;
+}
+
+function toggleParlayLeg(idx) {
+  if (typeof parlayMode !== "number") return;
+  if (selectedParlay.includes(idx)) {
+    selectedParlay = selectedParlay.filter(x => x !== idx);
+  } else if (selectedParlay.length < parlayMode) {
+    selectedParlay.push(idx);
+  }
+  renderCustomBuilder(document.getElementById("parlay-main"));
+}
+
+function americanToDecimal(odds) {
+  return odds > 0 ? (odds / 100) + 1 : (100 / Math.abs(odds)) + 1;
+}
+
+function updateParlayResults() {
+  const panel = document.getElementById("parlay-results-panel");
+  if (!panel) return;
+  if (selectedParlay.length === 0) {
+    panel.innerHTML = "<div class='note'>Select legs on the left.</div>";
+    return;
+  }
+  const props = DATA.props.filter(p => Math.abs(p.edge) >= 0.4).slice(0, 18);
+  const legs = selectedParlay.map(i => props[i]);
+  let dec = 1;
+  let totalEdge = 0;
+  legs.forEach(p => { dec *= americanToDecimal(-110); totalEdge += p.edge; });
+  const odds = dec >= 2 ? Math.round((dec-1)*100) : Math.round(-100/(dec-1));
+  const avg = Math.round((totalEdge / legs.length) * 10) / 10;
+
+  panel.innerHTML = `
+    <div style="font-size:13px;font-weight:600;color:#9aa4b2;margin-bottom:10px;letter-spacing:0.3px;">YOUR PARLAY</div>
+    ${legs.map((p, idx) => `
+      <div style="margin-bottom:8px;padding:8px 10px;background:#1a1f2c;border-radius:8px;border-left:3px solid var(--accent);">
+        <div style="font-size:11px;color:#6a7888;">Leg ${idx+1}</div>
+        <div style="font-size:13px;font-weight:600;margin:2px 0;">${p.player}</div>
+        <div style="font-size:12px;color:#c8d0d8;">${p.stat} ${p.side} ${p.dk}</div>
+        <div style="font-size:11px;margin-top:3px;">
+          <span style="color:var(--accent);">Model ${p.model}</span>
+          <span style="margin-left:8px;" class="${p.edge>0?'positive':'negative'}">${p.edge>0?'+':''}${p.edge}</span>
+        </div>
+      </div>
+    `).join("")}
+    <div style="margin-top:12px;padding:14px;background:#0e1118;border-radius:10px;text-align:center;border:1px solid #2a3140;">
+      <div style="font-size:11px;color:#6a7888;letter-spacing:0.5px;">EST. DRAFTKINGS</div>
+      <div style="font-size:26px;font-weight:700;color:#e4ff47;margin:4px 0;">${odds>0?'+':''}${odds}</div>
+      <div style="font-size:12px;color:#9aa4b2;">Avg edge <span class="${avg>0?'positive':'negative'}" style="font-weight:600;">${avg>0?'+':''}${avg}</span></div>
+    </div>
+  `;
+}
+
+function renderParlayMainOnLoad() {
+  document.querySelectorAll("#parlay-inner-tabs button").forEach(btn => {
+    btn.onclick = () => {
+      const mode = btn.dataset.pleg === "suggested" ? "suggested" : parseInt(btn.dataset.pleg);
+      setParlayTab(mode);
+    };
+  });
+  setParlayTab(2);
+}
+
+renderNotes();
+renderSchedule();
+renderTrends();
+startLivePolling();
+renderBankroll();
+(function() {
+  const el = document.getElementById("residual-content");
+  if (!el) return;
+  const rec = DATA.record || {wins:0, losses:0, units:0};
+  el.innerHTML = `<p style="color:var(--muted);margin-top:12px;">Opening Night settled. Model record <strong>${rec.wins}-${rec.losses}</strong> (${rec.units>0?'+':''}${rec.units}u). Full residual tables fill as more games complete.</p>`;
+})();
+</script>
+</body>
+</html>
