@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T16:29:51Z",
+ "generated_at": "2026-11-04T16:43:50Z",
  "season": "2026-27",
  "games": [
   {
@@ -179,7 +179,7 @@
    "dk": {
     "ml_home": "-230",
     "ml_away": "+191",
-    "spread": "-5.5",
+    "spread": "-6.5",
     "total": 232.5
    },
    "status": "Upcoming",
@@ -187,9 +187,9 @@
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0.0,
+   "spread_edge": -1.0,
    "total_edge": -2.4,
-   "note": "Model and market are close; no strong spread lean."
+   "note": "Model NOP -5.5, total 230.1; leans UTA vs the market spread."
   },
   {
    "id": "CLE@OKC",
@@ -611,8 +611,8 @@
    "stat": "PTS",
    "model": 19.4,
    "dk": 19.5,
-   "over": -109,
-   "under": -117,
+   "over": -114,
+   "under": -112,
    "edge": -0.1,
    "side": "Under"
   },
@@ -682,10 +682,10 @@
    "game": "PHI@DET",
    "stat": "PTS",
    "model": 12.2,
-   "dk": 11.5,
-   "over": 100,
-   "under": -128,
-   "edge": 0.7,
+   "dk": 10.5,
+   "over": -129,
+   "under": 101,
+   "edge": 1.7,
    "side": "Over"
   },
   {
@@ -778,10 +778,10 @@
    "game": "PHI@DET",
    "stat": "PA",
    "model": 23.7,
-   "dk": 22.5,
-   "over": -124,
-   "under": -106,
-   "edge": 1.2,
+   "dk": 23.5,
+   "over": -107,
+   "under": -123,
+   "edge": 0.2,
    "side": "Over"
   },
   {
@@ -863,8 +863,8 @@
    "stat": "PA",
    "model": 15.2,
    "dk": 13.5,
-   "over": -124,
-   "under": -106,
+   "over": -119,
+   "under": -110,
    "edge": 1.7,
    "side": "Over"
   },
@@ -911,8 +911,8 @@
    "stat": "PR",
    "model": 26.2,
    "dk": 25.5,
-   "over": -118,
-   "under": -111,
+   "over": -122,
+   "under": -108,
    "edge": 0.7,
    "side": "Over"
   },
@@ -1079,8 +1079,8 @@
    "stat": "PRA",
    "model": 30.5,
    "dk": 29.5,
-   "over": -109,
-   "under": -120,
+   "over": -114,
+   "under": -115,
    "edge": 1.0,
    "side": "Over"
   },
@@ -1415,8 +1415,8 @@
    "stat": "RA",
    "model": 4.3,
    "dk": 4.5,
-   "over": -116,
-   "under": -114,
+   "over": -119,
+   "under": -110,
    "edge": -0.2,
    "side": "Under"
   },
@@ -1655,8 +1655,8 @@
    "stat": "AST",
    "model": 7.9,
    "dk": 6.5,
-   "over": -150,
-   "under": 114,
+   "over": -142,
+   "under": 108,
    "edge": 1.4,
    "side": "Over"
   },
@@ -1932,7 +1932,7 @@
    "model": 9.2,
    "dk": 8.5,
    "over": -106,
-   "under": -120,
+   "under": -121,
    "edge": 0.7,
    "side": "Over"
   },
@@ -1943,8 +1943,8 @@
    "stat": "PTS",
    "model": 8.2,
    "dk": 8.5,
-   "over": -105,
-   "under": -121,
+   "over": -101,
+   "under": -126,
    "edge": -0.3,
    "side": "Under"
   },
@@ -1967,8 +1967,8 @@
    "stat": "PA",
    "model": 25.7,
    "dk": 28.5,
-   "over": -111,
-   "under": -119,
+   "over": -106,
+   "under": -124,
    "edge": -2.8,
    "side": "Under"
   },
@@ -2026,10 +2026,10 @@
    "game": "ATL@WAS",
    "stat": "PA",
    "model": 21.2,
-   "dk": 19.5,
-   "over": -104,
-   "under": -126,
-   "edge": 1.7,
+   "dk": 18.5,
+   "over": -127,
+   "under": -103,
+   "edge": 2.7,
    "side": "Over"
   },
   {
@@ -2063,8 +2063,8 @@
    "stat": "PA",
    "model": 11.7,
    "dk": 12.5,
-   "over": -104,
-   "under": -126,
+   "over": -108,
+   "under": -122,
    "edge": -0.8,
    "side": "Under"
   },
@@ -2183,8 +2183,8 @@
    "stat": "PR",
    "model": 15.1,
    "dk": 16.5,
-   "over": -119,
-   "under": -111,
+   "over": -124,
+   "under": -106,
    "edge": -1.4,
    "side": "Under"
   },
@@ -2207,8 +2207,8 @@
    "stat": "PRA",
    "model": 34.7,
    "dk": 37.5,
-   "over": -116,
-   "under": -114,
+   "over": -110,
+   "under": -119,
    "edge": -2.8,
    "side": "Under"
   },
@@ -2243,8 +2243,8 @@
    "stat": "PRA",
    "model": 26.7,
    "dk": 28.5,
-   "over": -117,
-   "under": -113,
+   "over": -121,
+   "under": -109,
    "edge": -1.8,
    "side": "Under"
   },
@@ -2315,8 +2315,8 @@
    "stat": "PRA",
    "model": 17.3,
    "dk": 18.5,
-   "over": -117,
-   "under": -113,
+   "over": -121,
+   "under": -109,
    "edge": -1.2,
    "side": "Under"
   },
@@ -2338,11 +2338,11 @@
    "game": "ATL@WAS",
    "stat": "REB",
    "model": 9.0,
-   "dk": 9.5,
-   "over": 106,
-   "under": -140,
-   "edge": -0.5,
-   "side": "Under"
+   "dk": 8.5,
+   "over": -133,
+   "under": 101,
+   "edge": 0.5,
+   "side": "Over"
   },
   {
    "player": "Onyeka Okongwu",
@@ -2351,8 +2351,8 @@
    "stat": "REB",
    "model": 7.7,
    "dk": 8.5,
-   "over": 104,
-   "under": -137,
+   "over": 100,
+   "under": -132,
    "edge": -0.8,
    "side": "Under"
   },
@@ -2423,8 +2423,8 @@
    "stat": "REB",
    "model": 3.3,
    "dk": 3.5,
-   "over": -114,
-   "under": -115,
+   "over": -120,
+   "under": -109,
    "edge": -0.2,
    "side": "Under"
   },
@@ -2458,10 +2458,10 @@
    "game": "ATL@WAS",
    "stat": "RA",
    "model": 16.9,
-   "dk": 16.5,
-   "over": -106,
-   "under": -124,
-   "edge": 0.4,
+   "dk": 15.5,
+   "over": -132,
+   "under": 100,
+   "edge": 1.4,
    "side": "Over"
   },
   {
@@ -2549,6 +2549,18 @@
    "side": "Under"
   },
   {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "RA",
+   "model": 6.0,
+   "dk": 6.5,
+   "over": -141,
+   "under": 107,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
    "player": "CJ McCollum",
    "team": "ATL",
    "game": "ATL@WAS",
@@ -2559,18 +2571,6 @@
    "under": 102,
    "edge": 0.3,
    "side": "Over"
-  },
-  {
-   "player": "Nickeil Alexander-Walker",
-   "team": "ATL",
-   "game": "ATL@WAS",
-   "stat": "RA",
-   "model": 6.0,
-   "dk": 6.5,
-   "over": -132,
-   "under": 101,
-   "edge": -0.5,
-   "side": "Under"
   },
   {
    "player": "Dyson Daniels",
@@ -2759,8 +2759,8 @@
    "stat": "3PM",
    "model": 1.1,
    "dk": 1.5,
-   "over": 132,
-   "under": -174,
+   "over": 131,
+   "under": -173,
    "edge": -0.4,
    "side": "Under"
   },
@@ -3995,8 +3995,8 @@
    "stat": "PTS",
    "model": 20.6,
    "dk": 21.5,
-   "over": -119,
-   "under": -107,
+   "over": -108,
+   "under": -118,
    "edge": -0.9,
    "side": "Under"
   },
@@ -4042,10 +4042,10 @@
    "game": "CHA@BKN",
    "stat": "PTS",
    "model": 12.0,
-   "dk": 10.5,
-   "over": -129,
-   "under": 102,
-   "edge": 1.5,
+   "dk": 11.5,
+   "over": 102,
+   "under": -130,
+   "edge": 0.5,
    "side": "Over"
   },
   {
@@ -4139,8 +4139,8 @@
    "stat": "PA",
    "model": 22.1,
    "dk": 23.5,
-   "over": -124,
-   "under": -106,
+   "over": -113,
+   "under": -117,
    "edge": -1.4,
    "side": "Under"
   },
@@ -4174,11 +4174,11 @@
    "game": "CHA@BKN",
    "stat": "PA",
    "model": 15.1,
-   "dk": 14.5,
-   "over": -129,
-   "under": -102,
-   "edge": 0.6,
-   "side": "Over"
+   "dk": 15.5,
+   "over": -101,
+   "under": -130,
+   "edge": -0.4,
+   "side": "Under"
   },
   {
    "player": "Grayson Allen",
@@ -4222,22 +4222,10 @@
    "game": "CHA@BKN",
    "stat": "PA",
    "model": 9.1,
-   "dk": 9.5,
-   "over": -134,
-   "under": 102,
-   "edge": -0.4,
-   "side": "Under"
-  },
-  {
-   "player": "Michael Porter Jr.",
-   "team": "BKN",
-   "game": "CHA@BKN",
-   "stat": "PR",
-   "model": 27.7,
-   "dk": 28.5,
-   "over": -106,
-   "under": -124,
-   "edge": -0.8,
+   "dk": 10.5,
+   "over": 101,
+   "under": -133,
+   "edge": -1.4,
    "side": "Under"
   },
   {
@@ -4250,6 +4238,18 @@
    "over": -124,
    "under": -106,
    "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PR",
+   "model": 27.7,
+   "dk": 27.5,
+   "over": -120,
+   "under": -109,
+   "edge": 0.2,
    "side": "Over"
   },
   {
@@ -4390,10 +4390,10 @@
    "game": "CHA@BKN",
    "stat": "PRA",
    "model": 29.2,
-   "dk": 30.5,
-   "over": -113,
-   "under": -116,
-   "edge": -1.3,
+   "dk": 29.5,
+   "over": -124,
+   "under": -106,
+   "edge": -0.3,
    "side": "Under"
   },
   {
@@ -6059,8 +6059,8 @@
    "stat": "AST",
    "model": 5.5,
    "dk": 4.5,
-   "over": -106,
-   "under": -124,
+   "over": -104,
+   "under": -126,
    "edge": 1.0,
    "side": "Over"
   },
@@ -6179,8 +6179,8 @@
    "stat": "PTS",
    "model": 12.4,
    "dk": 12.5,
-   "over": -105,
-   "under": -122,
+   "over": -101,
+   "under": -126,
    "edge": -0.1,
    "side": "Under"
   },
@@ -6191,8 +6191,8 @@
    "stat": "PTS",
    "model": 9.5,
    "dk": 10.5,
-   "over": -124,
-   "under": -103,
+   "over": -127,
+   "under": 100,
    "edge": -1.0,
    "side": "Under"
   },
@@ -6203,8 +6203,8 @@
    "stat": "PTS",
    "model": 12.9,
    "dk": 10.5,
-   "over": -121,
-   "under": -106,
+   "over": -113,
+   "under": -113,
    "edge": 2.4,
    "side": "Over"
   },
@@ -6215,8 +6215,8 @@
    "stat": "PTS",
    "model": 9.2,
    "dk": 9.5,
-   "over": -118,
-   "under": -108,
+   "over": -114,
+   "under": -112,
    "edge": -0.3,
    "side": "Under"
   },
@@ -6239,8 +6239,8 @@
    "stat": "PTS",
    "model": 9.9,
    "dk": 7.5,
-   "over": -114,
-   "under": -111,
+   "over": -111,
+   "under": -115,
    "edge": 2.4,
    "side": "Over"
   },
@@ -6251,7 +6251,7 @@
    "stat": "PA",
    "model": 34.2,
    "dk": 29.5,
-   "over": -105,
+   "over": -104,
    "under": -126,
    "edge": 4.7,
    "side": "Over"
@@ -6262,10 +6262,10 @@
    "game": "IND@MEM",
    "stat": "PA",
    "model": 25.4,
-   "dk": 27.5,
-   "over": -107,
-   "under": -123,
-   "edge": -2.1,
+   "dk": 26.5,
+   "over": -125,
+   "under": -106,
+   "edge": -1.1,
    "side": "Under"
   },
   {
@@ -6311,8 +6311,8 @@
    "stat": "PA",
    "model": 15.3,
    "dk": 12.5,
-   "over": -106,
-   "under": -124,
+   "over": -102,
+   "under": -129,
    "edge": 2.8,
    "side": "Over"
   },
@@ -6322,11 +6322,11 @@
    "game": "IND@MEM",
    "stat": "PR",
    "model": 28.8,
-   "dk": 29.5,
-   "over": -106,
-   "under": -124,
-   "edge": -0.7,
-   "side": "Under"
+   "dk": 28.5,
+   "over": -123,
+   "under": -107,
+   "edge": 0.3,
+   "side": "Over"
   },
   {
    "player": "Cameron Boozer",
@@ -6347,8 +6347,8 @@
    "stat": "PR",
    "model": 32.0,
    "dk": 26.5,
-   "over": -106,
-   "under": -124,
+   "over": -105,
+   "under": -125,
    "edge": 5.5,
    "side": "Over"
   },
@@ -6383,8 +6383,8 @@
    "stat": "PR",
    "model": 14.0,
    "dk": 16.5,
-   "over": -118,
-   "under": -112,
+   "over": -122,
+   "under": -108,
    "edge": -2.5,
    "side": "Under"
   },
@@ -6395,8 +6395,8 @@
    "stat": "PR",
    "model": 16.5,
    "dk": 14.5,
-   "over": -109,
-   "under": -120,
+   "over": -103,
+   "under": -128,
    "edge": 2.0,
    "side": "Over"
   },
@@ -6407,8 +6407,8 @@
    "stat": "PR",
    "model": 12.1,
    "dk": 13.5,
-   "over": -118,
-   "under": -112,
+   "over": -119,
+   "under": -111,
    "edge": -1.4,
    "side": "Under"
   },
@@ -6419,8 +6419,8 @@
    "stat": "PR",
    "model": 13.4,
    "dk": 10.5,
-   "over": -106,
-   "under": -124,
+   "over": -103,
+   "under": -128,
    "edge": 2.9,
    "side": "Over"
   },
@@ -6491,8 +6491,8 @@
    "stat": "PRA",
    "model": 18.9,
    "dk": 14.5,
-   "over": -124,
-   "under": -106,
+   "over": -122,
+   "under": -108,
    "edge": 4.4,
    "side": "Over"
   },
@@ -6515,8 +6515,8 @@
    "stat": "REB",
    "model": 7.2,
    "dk": 8.5,
-   "over": 103,
-   "under": -135,
+   "over": -101,
+   "under": -130,
    "edge": -1.3,
    "side": "Under"
   },
@@ -6551,8 +6551,8 @@
    "stat": "REB",
    "model": 3.6,
    "dk": 3.5,
-   "over": 100,
-   "under": -131,
+   "over": -104,
+   "under": -126,
    "edge": 0.1,
    "side": "Over"
   },
@@ -6587,8 +6587,8 @@
    "stat": "REB",
    "model": 2.6,
    "dk": 2.5,
-   "over": -112,
-   "under": -118,
+   "over": -113,
+   "under": -116,
    "edge": 0.1,
    "side": "Over"
   },
@@ -6599,8 +6599,8 @@
    "stat": "REB",
    "model": 3.6,
    "dk": 2.5,
-   "over": -111,
-   "under": -119,
+   "over": -109,
+   "under": -120,
    "edge": 1.1,
    "side": "Over"
   },
@@ -6779,21 +6779,9 @@
    "stat": "3PM",
    "model": 1.7,
    "dk": 1.5,
-   "over": -187,
-   "under": 141,
+   "over": -180,
+   "under": 136,
    "edge": 0.2,
-   "side": "Over"
-  },
-  {
-   "player": "Jaylen Wells",
-   "team": "MEM",
-   "game": "IND@MEM",
-   "stat": "3PM",
-   "model": 2.0,
-   "dk": 1.5,
-   "over": -152,
-   "under": 115,
-   "edge": 0.5,
    "side": "Over"
   },
   {
@@ -6809,14 +6797,26 @@
    "side": "Over"
   },
   {
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.0,
+   "dk": 1.5,
+   "over": -137,
+   "under": 104,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
    "player": "Jerami Grant",
    "team": "MEM",
    "game": "IND@MEM",
    "stat": "3PM",
    "model": 1.4,
    "dk": 1.5,
-   "over": -113,
-   "under": -116,
+   "over": -112,
+   "under": -118,
    "edge": -0.1,
    "side": "Under"
   },
@@ -6839,8 +6839,8 @@
    "stat": "3PM",
    "model": 2.1,
    "dk": 1.5,
-   "over": 110,
-   "under": -145,
+   "over": 114,
+   "under": -150,
    "edge": 0.6,
    "side": "Over"
   },
@@ -6851,8 +6851,8 @@
    "stat": "3PM",
    "model": 1.0,
    "dk": 1.5,
-   "over": 113,
-   "under": -149,
+   "over": 116,
+   "under": -152,
    "edge": -0.5,
    "side": "Under"
   },
@@ -8951,8 +8951,8 @@
    "stat": "AST",
    "model": 3.1,
    "dk": 3.5,
-   "over": -121,
-   "under": -109,
+   "over": -116,
+   "under": -113,
    "edge": -0.4,
    "side": "Under"
   },
@@ -8987,8 +8987,8 @@
    "stat": "AST",
    "model": 2.8,
    "dk": 2.5,
-   "over": 114,
-   "under": -151,
+   "over": 125,
+   "under": -165,
    "edge": 0.3,
    "side": "Over"
   },
@@ -8999,8 +8999,8 @@
    "stat": "BLK",
    "model": 1.6,
    "dk": 1.5,
-   "over": 156,
-   "under": -209,
+   "over": 161,
+   "under": -217,
    "edge": 0.1,
    "side": "Over"
   },
@@ -9107,8 +9107,8 @@
    "stat": "PTS",
    "model": 15.1,
    "dk": 15.5,
-   "over": -119,
-   "under": -107,
+   "over": -113,
+   "under": -113,
    "edge": -0.4,
    "side": "Under"
   },
@@ -9118,10 +9118,10 @@
    "game": "MIN@HOU",
    "stat": "PTS",
    "model": 17.9,
-   "dk": 14.5,
-   "over": -126,
-   "under": -101,
-   "edge": 3.4,
+   "dk": 15.5,
+   "over": 100,
+   "under": -127,
+   "edge": 2.4,
    "side": "Over"
   },
   {
@@ -9142,11 +9142,11 @@
    "game": "MIN@HOU",
    "stat": "PTS",
    "model": 11.8,
-   "dk": 11.5,
-   "over": -127,
-   "under": 100,
-   "edge": 0.3,
-   "side": "Over"
+   "dk": 12.5,
+   "over": -101,
+   "under": -126,
+   "edge": -0.7,
+   "side": "Under"
   },
   {
    "player": "Tari Eason",
@@ -9155,8 +9155,8 @@
    "stat": "PTS",
    "model": 11.0,
    "dk": 8.5,
-   "over": -130,
-   "under": 102,
+   "over": -128,
+   "under": 100,
    "edge": 2.5,
    "side": "Over"
   },
@@ -9179,8 +9179,8 @@
    "stat": "PTS",
    "model": 10.8,
    "dk": 7.5,
-   "over": -105,
-   "under": -121,
+   "over": 100,
+   "under": -128,
    "edge": 3.3,
    "side": "Over"
   },
@@ -9191,8 +9191,8 @@
    "stat": "PTS",
    "model": 6.7,
    "dk": 6.5,
-   "over": -120,
-   "under": -106,
+   "over": -118,
+   "under": -108,
    "edge": 0.2,
    "side": "Over"
   },
@@ -9251,8 +9251,8 @@
    "stat": "PA",
    "model": 18.6,
    "dk": 19.5,
-   "over": -125,
-   "under": -106,
+   "over": -119,
+   "under": -110,
    "edge": -0.9,
    "side": "Under"
   },
@@ -9323,8 +9323,8 @@
    "stat": "PA",
    "model": 13.6,
    "dk": 9.5,
-   "over": -120,
-   "under": -109,
+   "over": -113,
+   "under": -116,
    "edge": 4.1,
    "side": "Over"
   },
@@ -9346,10 +9346,10 @@
    "game": "MIN@HOU",
    "stat": "PR",
    "model": 24.9,
-   "dk": 28.5,
-   "over": -106,
-   "under": -124,
-   "edge": -3.6,
+   "dk": 27.5,
+   "over": -125,
+   "under": -105,
+   "edge": -2.6,
    "side": "Under"
   },
   {
@@ -9371,8 +9371,8 @@
    "stat": "PR",
    "model": 21.0,
    "dk": 22.5,
-   "over": -109,
-   "under": -121,
+   "over": -104,
+   "under": -127,
    "edge": -1.5,
    "side": "Under"
   },
@@ -9389,6 +9389,18 @@
    "side": "Under"
   },
   {
+   "player": "Jabari Smith Jr.",
+   "team": "HOU",
+   "game": "MIN@HOU",
+   "stat": "PR",
+   "model": 24.3,
+   "dk": 21.5,
+   "over": -122,
+   "under": -108,
+   "edge": 2.8,
+   "side": "Over"
+  },
+  {
    "player": "Ayo Dosunmu",
    "team": "MIN",
    "game": "MIN@HOU",
@@ -9398,18 +9410,6 @@
    "over": -118,
    "under": -111,
    "edge": 0.7,
-   "side": "Over"
-  },
-  {
-   "player": "Jabari Smith Jr.",
-   "team": "HOU",
-   "game": "MIN@HOU",
-   "stat": "PR",
-   "model": 24.3,
-   "dk": 21.5,
-   "over": -116,
-   "under": -114,
-   "edge": 2.8,
    "side": "Over"
   },
   {
@@ -9455,8 +9455,8 @@
    "stat": "PR",
    "model": 17.4,
    "dk": 14.5,
-   "over": -121,
-   "under": -109,
+   "over": -116,
+   "under": -114,
    "edge": 2.9,
    "side": "Over"
   },
@@ -9467,7 +9467,7 @@
    "stat": "PR",
    "model": 13.9,
    "dk": 12.5,
-   "over": -115,
+   "over": -116,
    "under": -114,
    "edge": 1.4,
    "side": "Over"
@@ -9479,8 +9479,8 @@
    "stat": "PR",
    "model": 14.0,
    "dk": 9.5,
-   "over": -125,
-   "under": -106,
+   "over": -112,
+   "under": -118,
    "edge": 4.5,
    "side": "Over"
   },
@@ -9503,8 +9503,8 @@
    "stat": "PRA",
    "model": 28.0,
    "dk": 31.5,
-   "over": -123,
-   "under": -107,
+   "over": -119,
+   "under": -111,
    "edge": -3.5,
    "side": "Under"
   },
@@ -9521,18 +9521,6 @@
    "side": "Under"
   },
   {
-   "player": "Amen Thompson",
-   "team": "HOU",
-   "game": "MIN@HOU",
-   "stat": "PRA",
-   "model": 24.6,
-   "dk": 26.5,
-   "over": -113,
-   "under": -116,
-   "edge": -1.9,
-   "side": "Under"
-  },
-  {
    "player": "Ayo Dosunmu",
    "team": "MIN",
    "game": "MIN@HOU",
@@ -9542,6 +9530,18 @@
    "over": -111,
    "under": -118,
    "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Amen Thompson",
+   "team": "HOU",
+   "game": "MIN@HOU",
+   "stat": "PRA",
+   "model": 24.6,
+   "dk": 26.5,
+   "over": -108,
+   "under": -122,
+   "edge": -1.9,
    "side": "Under"
   },
   {
@@ -9563,8 +9563,8 @@
    "stat": "PRA",
    "model": 26.6,
    "dk": 23.5,
-   "over": -113,
-   "under": -116,
+   "over": -119,
+   "under": -110,
    "edge": 3.1,
    "side": "Over"
   },
@@ -9610,10 +9610,10 @@
    "game": "MIN@HOU",
    "stat": "PRA",
    "model": 16.8,
-   "dk": 12.5,
-   "over": -107,
-   "under": -123,
-   "edge": 4.3,
+   "dk": 11.5,
+   "over": -124,
+   "under": -106,
+   "edge": 5.3,
    "side": "Over"
   },
   {
@@ -9635,8 +9635,8 @@
    "stat": "REB",
    "model": 8.8,
    "dk": 8.5,
-   "over": -122,
-   "under": -108,
+   "over": -125,
+   "under": -105,
    "edge": 0.3,
    "side": "Over"
   },
@@ -9671,8 +9671,8 @@
    "stat": "REB",
    "model": 7.3,
    "dk": 5.5,
-   "over": -114,
-   "under": -115,
+   "over": -117,
+   "under": -113,
    "edge": 1.8,
    "side": "Over"
   },
@@ -9683,8 +9683,8 @@
    "stat": "REB",
    "model": 6.4,
    "dk": 5.5,
-   "over": -107,
-   "under": -122,
+   "over": -105,
+   "under": -125,
    "edge": 0.9,
    "side": "Over"
   },
@@ -9743,8 +9743,8 @@
    "stat": "REB",
    "model": 3.7,
    "dk": 4.5,
-   "over": 113,
-   "under": -148,
+   "over": 116,
+   "under": -153,
    "edge": -0.8,
    "side": "Under"
   },
@@ -9767,8 +9767,8 @@
    "stat": "REB",
    "model": 3.2,
    "dk": 2.5,
-   "over": 102,
-   "under": -134,
+   "over": 128,
+   "under": -169,
    "edge": 0.7,
    "side": "Over"
   },
@@ -9779,8 +9779,8 @@
    "stat": "RA",
    "model": 16.7,
    "dk": 15.5,
-   "over": -105,
-   "under": -125,
+   "over": -103,
+   "under": -128,
    "edge": 1.2,
    "side": "Over"
   },
@@ -9839,8 +9839,8 @@
    "stat": "RA",
    "model": 8.2,
    "dk": 8.5,
-   "over": -131,
-   "under": -101,
+   "over": -126,
+   "under": -104,
    "edge": -0.3,
    "side": "Under"
   },
@@ -9899,8 +9899,8 @@
    "stat": "RA",
    "model": 6.0,
    "dk": 4.5,
-   "over": -132,
-   "under": 100,
+   "over": -107,
+   "under": -123,
    "edge": 1.5,
    "side": "Over"
   },
@@ -9923,8 +9923,8 @@
    "stat": "STL",
    "model": 1.3,
    "dk": 1.5,
-   "over": 140,
-   "under": -187,
+   "over": 145,
+   "under": -193,
    "edge": -0.2,
    "side": "Under"
   },
@@ -10055,8 +10055,8 @@
    "stat": "3PM",
    "model": 2.2,
    "dk": 1.5,
-   "over": 127,
-   "under": -167,
+   "over": 134,
+   "under": -178,
    "edge": 0.7,
    "side": "Over"
   },
@@ -10067,8 +10067,8 @@
    "stat": "3PM",
    "model": 1.0,
    "dk": 1.5,
-   "over": 159,
-   "under": -212,
+   "over": 162,
+   "under": -217,
    "edge": -0.5,
    "side": "Under"
   },
@@ -15771,7 +15771,7 @@
    "game": "ATL@WAS"
   }
  ],
- "injuries_updated": "11/04 11:29 AM ET",
+ "injuries_updated": "11/04 11:43 AM ET",
  "residuals": {
   "player": {},
   "team": [],
@@ -17166,6 +17166,351 @@
      "edge": -4.8
     }
    ]
+  },
+  {
+   "timestamp": "2026-11-04T11:43",
+   "games": [
+    {
+     "id": "PHI@DET",
+     "matchup": "PHI @ DET",
+     "model_spread": -3.6,
+     "model_total": 220.7,
+     "dk_spread": "-2.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@WAS",
+     "matchup": "ATL @ WAS",
+     "model_spread": -2.5,
+     "model_total": 225.1,
+     "dk_spread": "+3.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "MIL@BOS",
+     "matchup": "MIL @ BOS",
+     "model_spread": -6.7,
+     "model_total": 228.2,
+     "dk_spread": "-11.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CHA@BKN",
+     "matchup": "CHA @ BKN",
+     "model_spread": -3.1,
+     "model_total": 220.0,
+     "dk_spread": "+3.5",
+     "dk_total": 213.5
+    },
+    {
+     "id": "CHI@NYK",
+     "matchup": "CHI @ NYK",
+     "model_spread": -6.4,
+     "model_total": 226.7,
+     "dk_spread": "-12.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "IND@MEM",
+     "matchup": "IND @ MEM",
+     "model_spread": -6.3,
+     "model_total": 228.4,
+     "dk_spread": "-6.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "UTA@NOP",
+     "matchup": "UTA @ NOP",
+     "model_spread": -5.5,
+     "model_total": 230.1,
+     "dk_spread": "-6.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "CLE@OKC",
+     "matchup": "CLE @ OKC",
+     "model_spread": -1.5,
+     "model_total": 226.3,
+     "dk_spread": "-3.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIN@HOU",
+     "matchup": "MIN @ HOU",
+     "model_spread": -2.7,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "TOR@DEN",
+     "matchup": "TOR @ DEN",
+     "model_spread": -0.0,
+     "model_total": 228.2,
+     "dk_spread": "-4.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "POR@PHX",
+     "matchup": "POR @ PHX",
+     "model_spread": 2.1,
+     "model_total": 229.0,
+     "dk_spread": "+3.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "DAL@SAS",
+     "matchup": "DAL @ SAS",
+     "model_spread": -4.5,
+     "model_total": 226.1,
+     "dk_spread": "-12.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "LAL@SAC",
+     "matchup": "LAL @ SAC",
+     "model_spread": 2.8,
+     "model_total": 231.3,
+     "dk_spread": "+12.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@LAC",
+     "matchup": "MIA @ LAC",
+     "model_spread": -1.9,
+     "model_total": 229.6,
+     "dk_spread": "+5.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.4,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Nikola Jokic",
+     "stat": "PRA",
+     "model": 40.2,
+     "dk": 47.5,
+     "edge": -7.3
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 56.5,
+     "dk": 49.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 48.3,
+     "dk": 41.5,
+     "edge": 6.8
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PRA",
+     "model": 8.9,
+     "dk": 15.5,
+     "edge": -6.6
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PR",
+     "model": 7.3,
+     "dk": 13.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 37.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PRA",
+     "model": 13.3,
+     "dk": 19.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 28.5,
+     "dk": 22.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PRA",
+     "model": 19.6,
+     "dk": 25.5,
+     "edge": -5.9
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 48.4,
+     "dk": 42.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 20.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PA",
+     "model": 32.7,
+     "dk": 38.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 40.2,
+     "dk": 34.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PA",
+     "model": 10.9,
+     "dk": 16.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 26.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 37.0,
+     "dk": 42.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PRA",
+     "model": 24.1,
+     "dk": 29.5,
+     "edge": -5.4
+    },
+    {
+     "player": "Marcus Smart",
+     "stat": "PRA",
+     "model": 16.8,
+     "dk": 11.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 36.7,
+     "dk": 31.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PRA",
+     "model": 10.3,
+     "dk": 15.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 37.7,
+     "dk": 32.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PR",
+     "model": 22.3,
+     "dk": 27.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PA",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PTS",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PTS",
+     "model": 11.6,
+     "dk": 16.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PA",
+     "model": 30.6,
+     "dk": 35.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Trevon Brazile",
+     "stat": "PR",
+     "model": 14.4,
+     "dk": 9.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Payton Pritchard",
+     "stat": "PRA",
+     "model": 20.7,
+     "dk": 25.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PA",
+     "model": 7.7,
+     "dk": 12.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PR",
+     "model": 8.7,
+     "dk": 13.5,
+     "edge": -4.8
+    }
+   ]
   }
  ],
  "notes": "Model data updates automatically each day.",
@@ -17668,6 +18013,286 @@
    ]
   }
  ],
+ "potd_history": [
+  {
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "game": "MIN@HOU",
+   "stat": "AST",
+   "model": 3.5,
+   "edge": 1.0,
+   "date": "2026-11-04",
+   "eid": "401909930",
+   "time": "8:30 PM ET",
+   "line": 2.5,
+   "side": "Over",
+   "price": -120,
+   "edge_pct": 40.0,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "last10": [
+    1.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    7.0,
+    3.0,
+    3.0
+   ],
+   "score": 94.8,
+   "reasons": [
+    "Model projects 3.5 vs a line of 2.5 (+1, 40% edge)",
+    "Went over in 7 of his last 8 games (5/5 in the last 5)",
+    "Averaging 4.2 over the last 5 and 3.5 over the last 8",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 8)"
+   ]
+  }
+ ],
+ "potd_alts": [
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "RA",
+   "model": 8.2,
+   "edge": 1.7,
+   "date": "2026-11-04",
+   "eid": "401909925",
+   "time": "7:30 PM ET",
+   "line": 6.5,
+   "side": "Over",
+   "price": 102,
+   "edge_pct": 26.2,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "last10": [
+    10.0,
+    7.0,
+    11.0,
+    7.0,
+    9.0,
+    10.0,
+    10.0,
+    3.0
+   ],
+   "score": 92.1,
+   "reasons": [
+    "Model projects 8.2 vs a line of 6.5 (+1.7, 26% edge)",
+    "Went over in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 7.8 over the last 5 and 8.4 over the last 8",
+    "Minutes steady: 31 per game over the last 5 (31 over the last 8)"
+   ]
+  },
+  {
+   "player": "Joan Beringer",
+   "team": "MIN",
+   "game": "MIN@HOU",
+   "stat": "REB",
+   "model": 7.3,
+   "edge": 1.8,
+   "date": "2026-11-04",
+   "eid": "401909930",
+   "time": "8:30 PM ET",
+   "line": 5.5,
+   "side": "Over",
+   "price": -117,
+   "edge_pct": 32.7,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "last10": [
+    6.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    4.0,
+    6.0,
+    7.0
+   ],
+   "score": 92.1,
+   "reasons": [
+    "Model projects 7.3 vs a line of 5.5 (+1.8, 33% edge)",
+    "Went over in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 6.8 over the last 5 and 6.9 over the last 8",
+    "Minutes steady: 21 per game over the last 5 (18 over the last 8)"
+   ]
+  },
+  {
+   "player": "Matisse Thybulle",
+   "team": "LAL",
+   "game": "LAL@SAC",
+   "stat": "REB",
+   "model": 1.7,
+   "edge": -0.8,
+   "date": "2026-11-04",
+   "eid": "401909934",
+   "time": "10:00 PM ET",
+   "line": 2.5,
+   "side": "Under",
+   "price": -142,
+   "edge_pct": 32.0,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     6,
+     8
+    ],
+    "l15": [
+     6,
+     8
+    ]
+   },
+   "last10": [
+    3.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    3.0,
+    2.0,
+    1.0
+   ],
+   "score": 86.9,
+   "reasons": [
+    "Model projects 1.7 vs a line of 2.5 (-0.8, 32% edge)",
+    "Went under in 6 of his last 8 games (4/5 in the last 5)",
+    "Averaging 1.8 over the last 5 and 1.8 over the last 8",
+    "Minutes steady: 24 per game over the last 5 (24 over the last 8)"
+   ]
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 27.4,
+   "edge": 3.9,
+   "date": "2026-11-04",
+   "eid": "401909922",
+   "time": "7:00 PM ET",
+   "line": 23.5,
+   "side": "Over",
+   "price": -113,
+   "edge_pct": 16.6,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     8,
+     8
+    ],
+    "l15": [
+     8,
+     8
+    ]
+   },
+   "last10": [
+    28.0,
+    32.0,
+    26.0,
+    29.0,
+    27.0,
+    27.0,
+    38.0,
+    26.0
+   ],
+   "score": 84.9,
+   "reasons": [
+    "Model projects 27.4 vs a line of 23.5 (+3.9, 17% edge)",
+    "Went over in 8 of his last 8 games (5/5 in the last 5)",
+    "Averaging 29.4 over the last 5 and 29.1 over the last 8",
+    "Minutes steady: 36 per game over the last 5 (38 over the last 8)"
+   ]
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 14.5,
+   "edge": 4.0,
+   "date": "2026-11-04",
+   "eid": "401909925",
+   "time": "7:30 PM ET",
+   "line": 10.5,
+   "side": "Over",
+   "price": -118,
+   "edge_pct": 38.1,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     8
+    ],
+    "l15": [
+     6,
+     8
+    ]
+   },
+   "last10": [
+    21.0,
+    11.0,
+    20.0,
+    15.0,
+    9.0,
+    5.0,
+    27.0,
+    11.0
+   ],
+   "score": 84.2,
+   "reasons": [
+    "Model projects 14.5 vs a line of 10.5 (+4, 38% edge)",
+    "Went over in 6 of his last 8 games (3/5 in the last 5)",
+    "Averaging 13.4 over the last 5 and 14.9 over the last 8",
+    "Minutes steady: 26 per game over the last 5 (26 over the last 8)"
+   ]
+  }
+ ],
  "futures": {
   "title": [
    {
@@ -17853,6 +18478,6 @@
    }
   ],
   "book": "FanDuel",
-  "updated": "11/04 11:29 AM ET"
+  "updated": "11/04 11:43 AM ET"
  }
 }
