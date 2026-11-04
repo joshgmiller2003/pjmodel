@@ -1,0 +1,8 @@
+{
+ "date": "2026-11-03",
+ "used_today": 0,
+ "calls": [],
+ "remaining": null,
+ "history": [],
+ "adjust": {"cycle": "2026-11-01", "used": 498, "note": "credits used on Nov 4 while the site was being built, before tracking existed"}
+}
