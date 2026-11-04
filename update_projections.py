@@ -572,13 +572,45 @@ def injury_boosts(idx, injuries, pos=None):
     return boosts
 
 
-def project_player(games, dfn=None, opp=None, boost=None):
+SCHED_CAP = 0.05     # blowout risk + rest together can move a projection by at most +/-5%
+
+
+def schedule_factor(mins, spread, rest, opp_rest):
+    """Small, capped nudge for game script and fatigue. Returns (multiplier, [notes]).
+    Blowout risk: past an 8-point spread, heavy-minute starters lose a little playing time (up to -4% at a
+    16+ point spread) and deep bench players gain a little (up to +3%). Rest: own team on a back-to-back -3%,
+    3+ days off +1%; opponent on a back-to-back +1.5% (tired defense)."""
+    f, notes = 1.0, []
+    if spread is not None:
+        excess = max(0.0, abs(spread) - 8.0)
+        if excess and mins >= 28:
+            d = min(4.0, excess * 0.5)
+            f *= 1 - d / 100
+            notes.append(f"blowout risk ({abs(spread):g}-pt spread) -{d:g}%")
+        elif excess and mins < 22:
+            d = min(3.0, excess * 0.4)
+            f *= 1 + d / 100
+            notes.append(f"blowout minutes ({abs(spread):g}-pt spread) +{d:g}%")
+    if rest == 0:
+        f *= 0.97
+        notes.append("back-to-back -3%")
+    elif rest is not None and rest >= 3:
+        f *= 1.01
+        notes.append(f"{rest} days rest +1%")
+    if opp_rest == 0:
+        f *= 1.015
+        notes.append("opponent on a back-to-back +1.5%")
+    return _clamp(f, SCHED_CAP), notes
+
+
+def project_player(games, dfn=None, opp=None, boost=None, sched=None):
     """games: chronological list of box-score rows. Returns {stat: projection} or None.
 
     Base = recent per-minute rate x projected minutes. With `dfn` (team_defense) and `opp`, the base rate is
     first neutralised for the defenses the player already faced, then scaled to tonight's opponent (by his
     position when known) and the expected pace of this game. `boost` (injury_boosts) adds minutes and usage
-    when teammates are out. `_matchup` / `_injury` hold the % change from each."""
+    when teammates are out. `sched` = {"spread", "rest", "opp_rest"} applies schedule_factor (blowout risk, rest).
+    `_matchup` / `_injury` / `_sched` hold the % change from each."""
     recent = [g for g in games if g["min"] >= 5][-10:][::-1]   # newest first
     if len(recent) < 3:
         return None
@@ -601,13 +633,16 @@ def project_player(games, dfn=None, opp=None, boost=None):
     inj = {k: min(xm * rate[k] + add.get(k, 0.0), base[k] * INJ_CAP) for k in DEF_STATS}
     raw = {s: sum(g[k] for g in recent) / tot_min * mins for s, k in STAT_KEY.items()}
     mid = {s: base[k] * mx[k] for s, k in STAT_KEY.items()}           # matchup only
-    p = {s: (base[k] + inj[k]) * mx[k] for s, k in STAT_KEY.items()}  # matchup + injuries
+    sf, snotes = schedule_factor(mins, sched.get("spread"), sched.get("rest"), sched.get("opp_rest")) if sched else (1.0, [])
+    p = {s: (base[k] + inj[k]) * mx[k] * sf for s, k in STAT_KEY.items()}  # matchup + injuries + schedule
     for combo, parts in (("PRA", ("PTS", "REB", "AST")), ("PR", ("PTS", "REB")), ("PA", ("PTS", "AST")), ("RA", ("REB", "AST"))):
         for d in (p, raw, mid):
             d[combo] = sum(d[x] for x in parts)
     out = {k: rnd(v) for k, v in p.items()}
     out["_matchup"] = {k: rnd((mid[k] / raw[k] - 1) * 100, 1) if raw[k] else 0.0 for k in p}
-    out["_injury"] = {k: rnd((p[k] / mid[k] - 1) * 100, 1) if mid[k] else 0.0 for k in p}
+    out["_injury"] = {k: rnd(((p[k] / sf) / mid[k] - 1) * 100, 1) if mid[k] else 0.0 for k in p}
+    out["_sched"] = rnd((sf - 1) * 100, 1)
+    out["_sched_notes"] = snotes
     return out
 
 
@@ -866,6 +901,22 @@ def _rate(vals, ok, n):
     return (sum(1 for v in sl if ok(v)), len(sl)) if sl else (0, 0)
 
 
+def sched_ctx(row, team):
+    """Spread (DraftKings when posted, else the model) and rest days for `team` in this game row."""
+    dk = (row or {}).get("dk") or {}
+    try:
+        spread = float(dk.get("spread"))
+    except (TypeError, ValueError):
+        spread = (row or {}).get("model", {}).get("spread")
+    rest = (row or {}).get("rest") or {}
+    side = "home" if team == (row or {}).get("home") else "away"
+    return {"spread": spread, "rest": rest.get(side), "opp_rest": rest.get("away" if side == "home" else "home")}
+
+
+def sched_note(p):
+    return "Game script / rest: " + ", ".join(p.get("sched_notes") or []) + f" (net {'+' if p['sched'] > 0 else ''}{p['sched']:g}%)"
+
+
 def matchup_note(p):
     m, opp = p.get("matchup"), p.get("opp")
     if m is None or not opp:
@@ -941,6 +992,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
                                   f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {n15})",
                                   matchup_note(p),
                                   *([injury_note(p)] if p.get("injury") else []),
+                                  *([sched_note(p)] if abs(p.get("sched") or 0) >= 1 else []),
                                   "Not on the injury report at pick time"]})
 
     # ---- game bets
@@ -1515,12 +1567,13 @@ def main():
                     continue
                 opp = g["away"] if team == g["home"] else g["home"]
                 bst = boosts.get(norm(player))
-                proj = project_player(hist, dfn, opp, bst)
+                proj = project_player(hist, dfn, opp, bst, sched_ctx(row, team))
                 if not proj or stat not in proj:
                     continue
                 fresh.append({"player": hist[-1]["n"], "team": team, "opp": opp, "game": g["id"], "stat": stat,
                               "model": proj[stat], "matchup": proj["_matchup"][stat],
                               "injury": proj["_injury"][stat], "inj_out": sorted(set(bst["out"])) if bst else [],
+                              "sched": proj["_sched"], "sched_notes": proj["_sched_notes"],
                               "dk": line, "over": over_px, "under": under_px})
             if fresh:
                 pending["props"][eid] = fresh
@@ -1534,10 +1587,11 @@ def main():
                     continue
                 opp = g["away"] if p["team"] == g["home"] else g["home"]
                 bst = boosts.get(norm(p["player"]))
-                proj = project_player(hist, dfn, opp, bst)
+                proj = project_player(hist, dfn, opp, bst, sched_ctx(row, p["team"]))
                 if proj and p["stat"] in proj:
                     p.update(opp=opp, model=proj[p["stat"]], matchup=proj["_matchup"][p["stat"]],
-                             injury=proj["_injury"][p["stat"]], inj_out=sorted(set(bst["out"])) if bst else [])
+                             injury=proj["_injury"][p["stat"]], inj_out=sorted(set(bst["out"])) if bst else [],
+                             sched=proj["_sched"], sched_notes=proj["_sched_notes"])
         for p in pending["props"].get(eid, []):
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
@@ -1609,7 +1663,7 @@ def main():
             "games": games, "props": props, "teams": TEAM_NAMES, "injuries": injuries, "injuries_updated": now.strftime("%m/%d %I:%M %p ET"),
             "residuals": state["residuals"],
             "model_notes": ["Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
-                            "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); home court for games; injured players skipped",
+                            "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
                             "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted)"],

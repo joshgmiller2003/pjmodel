@@ -927,6 +927,8 @@ function renderProps() {
     const extra = pOverVal !== null ? `<div style="font-size:11px;color:var(--muted);">P(Over) ${pOverVal}%</div>` : "";
     const ijv = p.injury;
     const ij = (ijv != null && Math.abs(ijv) >= 1) ? `<div style="font-size:11px;color:var(--good);" title="${(p.inj_out || []).join(", ")} out: extra minutes and usage">Teammate out +${ijv}%</div>` : "";
+    const scv = p.sched;
+    const sc = (scv != null && Math.abs(scv) >= 1) ? `<div style="font-size:11px;color:var(--muted);" title="${(p.sched_notes || []).join(", ")}">Script/rest ${scv > 0 ? "+" : ""}${scv}%</div>` : "";
     const mxv = p.matchup;
     const mx = (mxv != null && p.opp) ? `<div style="font-size:11px;color:${Math.abs(mxv) < 1 ? "var(--muted)" : (mxv > 0 ? "var(--good)" : "var(--bad)")};" title="Change from ${p.opp}'s defense in this stat and the expected pace">vs ${p.opp} ${mxv > 0 ? "+" : ""}${mxv}%</div>` : "";
     const e = p.edge;
@@ -943,7 +945,7 @@ function renderProps() {
       <td><span class="stat-tag">${p.stat}</span></td>
       <td class="stat">${p.dk}</td>
       <td class="stat price">${odds}</td>
-      <td class="stat"><strong>${p.model}</strong>${extra}${mx}${ij}</td>
+      <td class="stat"><strong>${p.model}</strong>${extra}${mx}${ij}${sc}</td>
       <td class="stat"><div class="edgebar"><span class="${cls}" style="min-width:38px;">${e > 0 ? "+" : ""}${e}</span><span class="bar"><i style="width:${w}%;background:${e >= 0 ? "var(--good)" : "var(--bad)"};"></i></span><span class="team">${pct > 0 ? "+" : ""}${pct}%</span></div></td>
       <td>${lean}</td>
     </tr>`;
