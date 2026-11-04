@@ -52,7 +52,7 @@ jobs:
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '150' }}
           MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5000' }}
-          ODDS_RESET_DAY: ${{ vars.ODDS_RESET_DAY || '1' }}
+          ODDS_RESET_DAY: ${{ vars.ODDS_RESET_DAY || '4' }}   # plan upgraded Nov 4, so it resets on the 4th
         run: python update_projections.py
 
       - name: Sanity-check output
