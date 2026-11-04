@@ -51,6 +51,7 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '150' }}
+          MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5000' }}
           ODDS_RESET_DAY: ${{ vars.ODDS_RESET_DAY || '1' }}
         run: python update_projections.py
 
