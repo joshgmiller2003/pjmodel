@@ -25,7 +25,12 @@ jobs:
       - id: check
         run: |
           H=$(TZ=America/New_York date +%H)
-          echo "ET hour is $H"
+          D=$(TZ=America/New_York date +%F)
+          echo "ET hour is $H on $D"
+          # Paused for the rest of Nov 4 (owner's request). Normal schedule resumes Nov 5 at 1 AM ET.
+          if [ "$D" = "2026-11-04" ]; then
+            echo "Paused today"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "01" ] || [ "$H" = "11" ] || [ "$H" = "18" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"
           else
@@ -51,8 +56,8 @@ jobs:
           # Uses the newer key (ODDS_API_KEY1) when it exists, otherwise the original one.
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY1 || secrets.ODDS_API_KEY }}
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
-          DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '75' }}
-          MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '2500' }}
+          DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '150' }}
+          MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5000' }}
           ODDS_RESET_DAY: ${{ vars.ODDS_RESET_DAY || '4' }}   # plan upgraded Nov 4, so it resets on the 4th
         run: python update_projections.py
 
