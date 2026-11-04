@@ -470,7 +470,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.297
   },
   {
    "player": "LeBron James",
@@ -503,7 +504,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Tyrese Maxey",
@@ -536,7 +538,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Ausar Thompson",
@@ -572,7 +575,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Daniss Jenkins",
@@ -608,7 +612,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Joel Embiid",
@@ -641,7 +646,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "Jaylen Brown",
@@ -674,7 +680,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "VJ Edgecombe",
@@ -707,7 +714,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Paul Reed",
@@ -743,7 +751,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.377
   },
   {
    "player": "Duncan Robinson",
@@ -779,7 +788,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.377
   },
   {
    "player": "Paul Reed",
@@ -815,7 +825,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Joel Embiid",
@@ -848,7 +859,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Cade Cunningham",
@@ -884,7 +896,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.468
   },
   {
    "player": "Tyrese Maxey",
@@ -917,7 +930,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.679
   },
   {
    "player": "Jaylen Brown",
@@ -950,7 +964,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.441
   },
   {
    "player": "Joel Embiid",
@@ -983,7 +998,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.36
   },
   {
    "player": "LeBron James",
@@ -1016,7 +1032,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.53
   },
   {
    "player": "Duncan Robinson",
@@ -1052,7 +1069,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.787
   },
   {
    "player": "Paul Reed",
@@ -1088,7 +1106,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.608
   },
   {
    "player": "John Collins",
@@ -1124,7 +1143,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.293
   },
   {
    "player": "VJ Edgecombe",
@@ -1157,7 +1177,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.6
   },
   {
    "player": "Ausar Thompson",
@@ -1193,7 +1214,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.444
   },
   {
    "player": "Daniss Jenkins",
@@ -1229,7 +1251,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Anfernee Simons",
@@ -1262,7 +1285,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Kevin Huerter",
@@ -1298,7 +1322,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.352
   },
   {
    "player": "Javonte Green",
@@ -1334,7 +1359,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Cade Cunningham",
@@ -1370,7 +1396,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.379
   },
   {
    "player": "Tyrese Maxey",
@@ -1403,7 +1430,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.648
   },
   {
    "player": "Jaylen Brown",
@@ -1436,7 +1464,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.451
   },
   {
    "player": "Joel Embiid",
@@ -1469,7 +1498,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.429
   },
   {
    "player": "LeBron James",
@@ -1502,7 +1532,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Duncan Robinson",
@@ -1538,7 +1569,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.773
   },
   {
    "player": "Paul Reed",
@@ -1574,7 +1606,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Ausar Thompson",
@@ -1610,7 +1643,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.563
   },
   {
    "player": "Daniss Jenkins",
@@ -1646,7 +1680,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.519
   },
   {
    "player": "VJ Edgecombe",
@@ -1679,7 +1714,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.57
   },
   {
    "player": "Cade Cunningham",
@@ -1715,7 +1751,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.463
   },
   {
    "player": "Joel Embiid",
@@ -1748,7 +1785,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.454
   },
   {
    "player": "Tyrese Maxey",
@@ -1781,7 +1819,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.64
   },
   {
    "player": "Jaylen Brown",
@@ -1814,7 +1853,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.462
   },
   {
    "player": "LeBron James",
@@ -1847,7 +1887,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.603
   },
   {
    "player": "Paul Reed",
@@ -1883,7 +1924,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.532
   },
   {
    "player": "John Collins",
@@ -1919,7 +1961,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Ausar Thompson",
@@ -1955,7 +1998,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.612
   },
   {
    "player": "Duncan Robinson",
@@ -1991,7 +2035,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.778
   },
   {
    "player": "VJ Edgecombe",
@@ -2024,7 +2069,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.603
   },
   {
    "player": "Daniss Jenkins",
@@ -2060,7 +2106,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.572
   },
   {
    "player": "Kevin Huerter",
@@ -2096,7 +2143,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.34
   },
   {
    "player": "Anfernee Simons",
@@ -2129,7 +2177,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.602
   },
   {
    "player": "Javonte Green",
@@ -2165,7 +2214,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Cade Cunningham",
@@ -2201,7 +2251,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.436
   },
   {
    "player": "Tyrese Maxey",
@@ -2234,7 +2285,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.663
   },
   {
    "player": "Joel Embiid",
@@ -2267,7 +2319,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.469
   },
   {
    "player": "Jaylen Brown",
@@ -2300,7 +2353,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.467
   },
   {
    "player": "LeBron James",
@@ -2333,7 +2387,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.564
   },
   {
    "player": "Paul Reed",
@@ -2369,7 +2424,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.535
   },
   {
    "player": "Ausar Thompson",
@@ -2405,7 +2461,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.615
   },
   {
    "player": "VJ Edgecombe",
@@ -2438,7 +2495,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.588
   },
   {
    "player": "Duncan Robinson",
@@ -2474,7 +2532,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.766
   },
   {
    "player": "Daniss Jenkins",
@@ -2510,7 +2569,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.552
   },
   {
    "player": "Paul Reed",
@@ -2546,7 +2606,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Joel Embiid",
@@ -2579,7 +2640,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.742
   },
   {
    "player": "Ausar Thompson",
@@ -2615,7 +2677,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "John Collins",
@@ -2651,7 +2714,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.565
   },
   {
    "player": "Jaylen Brown",
@@ -2684,7 +2748,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "LeBron James",
@@ -2717,7 +2782,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.724
   },
   {
    "player": "Cade Cunningham",
@@ -2753,7 +2819,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.538
   },
   {
    "player": "VJ Edgecombe",
@@ -2786,7 +2853,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.601
   },
   {
    "player": "Tyrese Maxey",
@@ -2819,7 +2887,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Javonte Green",
@@ -2855,7 +2924,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Daniss Jenkins",
@@ -2891,7 +2961,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.731
   },
   {
    "player": "Duncan Robinson",
@@ -2927,7 +2998,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Cade Cunningham",
@@ -2963,7 +3035,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.451
   },
   {
    "player": "LeBron James",
@@ -2996,7 +3069,8 @@
      5,
      6
     ]
-   }
+   },
+   "p_over": 0.649
   },
   {
    "player": "Joel Embiid",
@@ -3029,7 +3103,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Ausar Thompson",
@@ -3065,7 +3140,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.749
   },
   {
    "player": "Paul Reed",
@@ -3101,7 +3177,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.467
   },
   {
    "player": "Jaylen Brown",
@@ -3134,7 +3211,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.574
   },
   {
    "player": "Tyrese Maxey",
@@ -3167,7 +3245,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.517
   },
   {
    "player": "VJ Edgecombe",
@@ -3200,7 +3279,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.697
   },
   {
    "player": "Daniss Jenkins",
@@ -3236,7 +3316,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Duncan Robinson",
@@ -3272,7 +3353,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Tyrese Maxey",
@@ -3305,7 +3387,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Ausar Thompson",
@@ -3341,7 +3424,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Paul Reed",
@@ -3377,7 +3461,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "VJ Edgecombe",
@@ -3410,7 +3495,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "LeBron James",
@@ -3443,7 +3529,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Cade Cunningham",
@@ -3479,7 +3566,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.777
   },
   {
    "player": "Jaylen Brown",
@@ -3512,7 +3600,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Duncan Robinson",
@@ -3548,7 +3637,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Tyrese Maxey",
@@ -3581,7 +3671,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Cade Cunningham",
@@ -3617,7 +3708,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Anfernee Simons",
@@ -3650,7 +3742,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "VJ Edgecombe",
@@ -3683,7 +3776,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Jaylen Brown",
@@ -3716,7 +3810,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Kevin Huerter",
@@ -3752,7 +3847,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Daniss Jenkins",
@@ -3788,7 +3884,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Joel Embiid",
@@ -3821,7 +3918,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.393
   },
   {
    "player": "Javonte Green",
@@ -3857,7 +3955,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.753
   },
   {
    "player": "LeBron James",
@@ -3890,7 +3989,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.551
   },
   {
    "player": "Trae Young",
@@ -3925,7 +4025,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Jalen Johnson",
@@ -3960,7 +4061,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Dyson Daniels",
@@ -3995,7 +4097,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Kyshawn George",
@@ -4030,7 +4133,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.69
   },
   {
    "player": "CJ McCollum",
@@ -4065,7 +4169,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -4100,7 +4205,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.353
   },
   {
    "player": "Onyeka Okongwu",
@@ -4135,7 +4241,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "AJ Dybantsa",
@@ -4168,7 +4275,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.217
   },
   {
    "player": "Anthony Davis",
@@ -4203,7 +4311,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "Alex Sarr",
@@ -4238,7 +4347,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Anthony Davis",
@@ -4273,7 +4383,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Alex Sarr",
@@ -4308,7 +4419,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Anthony Davis",
@@ -4343,7 +4455,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.557
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -4378,7 +4491,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.481
   },
   {
    "player": "Jalen Johnson",
@@ -4413,7 +4527,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.468
   },
   {
    "player": "Trae Young",
@@ -4448,7 +4563,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.458
   },
   {
    "player": "AJ Dybantsa",
@@ -4481,7 +4597,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.638
   },
   {
    "player": "CJ McCollum",
@@ -4516,7 +4633,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.335
   },
   {
    "player": "Kyshawn George",
@@ -4551,7 +4669,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Onyeka Okongwu",
@@ -4586,7 +4705,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.445
   },
   {
    "player": "Aaron Wiggins",
@@ -4621,7 +4741,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.658
   },
   {
    "player": "Dyson Daniels",
@@ -4656,7 +4777,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.385
   },
   {
    "player": "Alex Sarr",
@@ -4691,7 +4813,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Luguentz Dort",
@@ -4726,7 +4849,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.649
   },
   {
    "player": "Tre Johnson",
@@ -4761,7 +4885,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.526
   },
   {
    "player": "Bilal Coulibaly",
@@ -4796,7 +4921,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Trae Young",
@@ -4831,7 +4957,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.484
   },
   {
    "player": "Jalen Johnson",
@@ -4866,7 +4993,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.443
   },
   {
    "player": "Anthony Davis",
@@ -4901,7 +5029,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.559
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -4936,7 +5065,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "CJ McCollum",
@@ -4971,7 +5101,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.359
   },
   {
    "player": "AJ Dybantsa",
@@ -5004,7 +5135,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.523
   },
   {
    "player": "Kyshawn George",
@@ -5039,7 +5171,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.752
   },
   {
    "player": "Onyeka Okongwu",
@@ -5074,7 +5207,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.413
   },
   {
    "player": "Dyson Daniels",
@@ -5109,7 +5243,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.354
   },
   {
    "player": "Alex Sarr",
@@ -5144,7 +5279,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.584
   },
   {
    "player": "Anthony Davis",
@@ -5179,7 +5315,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.52
   },
   {
    "player": "Jalen Johnson",
@@ -5214,7 +5351,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -5249,7 +5387,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.452
   },
   {
    "player": "AJ Dybantsa",
@@ -5282,7 +5421,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.546
   },
   {
    "player": "Onyeka Okongwu",
@@ -5317,7 +5457,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Trae Young",
@@ -5352,7 +5493,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.514
   },
   {
    "player": "Kyshawn George",
@@ -5387,7 +5529,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "CJ McCollum",
@@ -5422,7 +5565,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.328
   },
   {
    "player": "Dyson Daniels",
@@ -5457,7 +5601,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.39
   },
   {
    "player": "Alex Sarr",
@@ -5492,7 +5637,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.509
   },
   {
    "player": "Bilal Coulibaly",
@@ -5527,7 +5673,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.443
   },
   {
    "player": "Jalen Johnson",
@@ -5562,7 +5709,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.513
   },
   {
    "player": "Anthony Davis",
@@ -5597,7 +5745,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.523
   },
   {
    "player": "Trae Young",
@@ -5632,7 +5781,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.476
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -5667,7 +5817,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.458
   },
   {
    "player": "Onyeka Okongwu",
@@ -5702,7 +5853,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.465
   },
   {
    "player": "AJ Dybantsa",
@@ -5735,7 +5887,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.519
   },
   {
    "player": "Kyshawn George",
@@ -5770,7 +5923,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.654
   },
   {
    "player": "CJ McCollum",
@@ -5805,7 +5959,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.389
   },
   {
    "player": "Dyson Daniels",
@@ -5840,7 +5995,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.368
   },
   {
    "player": "Alex Sarr",
@@ -5875,7 +6031,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.558
   },
   {
    "player": "Anthony Davis",
@@ -5910,7 +6067,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.454
   },
   {
    "player": "Jalen Johnson",
@@ -5945,7 +6103,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.71
   },
   {
    "player": "Onyeka Okongwu",
@@ -5980,7 +6139,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.518
   },
   {
    "player": "Alex Sarr",
@@ -6015,7 +6175,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.314
   },
   {
    "player": "Dyson Daniels",
@@ -6050,7 +6211,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "AJ Dybantsa",
@@ -6083,7 +6245,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.384
   },
   {
    "player": "Kyshawn George",
@@ -6118,7 +6281,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Bilal Coulibaly",
@@ -6153,7 +6317,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.527
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -6188,7 +6353,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "CJ McCollum",
@@ -6223,7 +6389,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Trae Young",
@@ -6258,7 +6425,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Jalen Johnson",
@@ -6293,7 +6461,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.67
   },
   {
    "player": "Anthony Davis",
@@ -6328,7 +6497,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.361
   },
   {
    "player": "Trae Young",
@@ -6363,7 +6533,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.557
   },
   {
    "player": "Dyson Daniels",
@@ -6398,7 +6569,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.488
   },
   {
    "player": "Onyeka Okongwu",
@@ -6433,7 +6605,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.592
   },
   {
    "player": "Kyshawn George",
@@ -6468,7 +6641,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.637
   },
   {
    "player": "Alex Sarr",
@@ -6503,7 +6677,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "AJ Dybantsa",
@@ -6536,7 +6711,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.333
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -6571,7 +6747,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "CJ McCollum",
@@ -6606,7 +6783,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.549
   },
   {
    "player": "Dyson Daniels",
@@ -6641,7 +6819,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -6676,7 +6855,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Jalen Johnson",
@@ -6711,7 +6891,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.228
   },
   {
    "player": "Anthony Davis",
@@ -6746,7 +6927,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Trae Young",
@@ -6781,7 +6963,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "AJ Dybantsa",
@@ -6814,7 +6997,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.777
   },
   {
    "player": "Nickeil Alexander-Walker",
@@ -6849,7 +7033,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Trae Young",
@@ -6884,7 +7069,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.243
   },
   {
    "player": "Aaron Wiggins",
@@ -6919,7 +7105,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "CJ McCollum",
@@ -6954,7 +7141,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.296
   },
   {
    "player": "Kyshawn George",
@@ -6989,7 +7177,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Luguentz Dort",
@@ -7024,7 +7213,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "AJ Dybantsa",
@@ -7057,7 +7247,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Jalen Johnson",
@@ -7092,7 +7283,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "Onyeka Okongwu",
@@ -7127,7 +7319,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Tre Johnson",
@@ -7162,7 +7355,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Alex Sarr",
@@ -7197,7 +7391,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.503
   },
   {
    "player": "Anthony Davis",
@@ -7232,7 +7427,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Derrick White",
@@ -7269,7 +7465,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.765
   },
   {
    "player": "Payton Pritchard",
@@ -7306,7 +7503,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Paul George",
@@ -7343,7 +7541,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.61
   },
   {
    "player": "Tyler Herro",
@@ -7378,7 +7577,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.352
   },
   {
    "player": "Ryan Rollins",
@@ -7411,7 +7611,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -7444,7 +7645,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Kyle Kuzma",
@@ -7477,7 +7679,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Brayden Burries",
@@ -7512,7 +7715,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.167
   },
   {
    "player": "Myles Turner",
@@ -7545,7 +7749,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Neemias Queta",
@@ -7580,7 +7785,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Paul George",
@@ -7617,7 +7823,8 @@
      0,
      5
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Tyler Herro",
@@ -7652,7 +7859,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.517
   },
   {
    "player": "Payton Pritchard",
@@ -7689,7 +7897,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Derrick White",
@@ -7726,7 +7935,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.319
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -7759,7 +7969,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.573
   },
   {
    "player": "Brayden Burries",
@@ -7794,7 +8005,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Ryan Rollins",
@@ -7827,7 +8039,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Neemias Queta",
@@ -7862,7 +8075,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.759
   },
   {
    "player": "Kyle Kuzma",
@@ -7895,7 +8109,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Myles Turner",
@@ -7928,7 +8143,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.417
   },
   {
    "player": "Kel'el Ware",
@@ -7963,7 +8179,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.666
   },
   {
    "player": "AJ Green",
@@ -7998,7 +8215,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.608
   },
   {
    "player": "Paul George",
@@ -8035,7 +8253,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.623
   },
   {
    "player": "Tyler Herro",
@@ -8070,7 +8289,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Derrick White",
@@ -8107,7 +8327,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.455
   },
   {
    "player": "Payton Pritchard",
@@ -8144,7 +8365,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.518
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -8177,7 +8399,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.555
   },
   {
    "player": "Ryan Rollins",
@@ -8210,7 +8433,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.492
   },
   {
    "player": "Brayden Burries",
@@ -8245,7 +8469,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.222
   },
   {
    "player": "Kyle Kuzma",
@@ -8278,7 +8503,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.53
   },
   {
    "player": "Paul George",
@@ -8315,7 +8541,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.727
   },
   {
    "player": "Tyler Herro",
@@ -8350,7 +8577,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.495
   },
   {
    "player": "Derrick White",
@@ -8387,7 +8615,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.289
   },
   {
    "player": "Payton Pritchard",
@@ -8424,7 +8653,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.514
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -8457,7 +8687,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Neemias Queta",
@@ -8492,7 +8723,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Kel'el Ware",
@@ -8527,7 +8759,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.663
   },
   {
    "player": "Brayden Burries",
@@ -8562,7 +8795,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.332
   },
   {
    "player": "Myles Turner",
@@ -8595,7 +8829,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Ryan Rollins",
@@ -8628,7 +8863,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.544
   },
   {
    "player": "Kyle Kuzma",
@@ -8661,7 +8897,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Paul George",
@@ -8698,7 +8935,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.723
   },
   {
    "player": "Tyler Herro",
@@ -8733,7 +8971,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.491
   },
   {
    "player": "Derrick White",
@@ -8770,7 +9009,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.429
   },
   {
    "player": "Payton Pritchard",
@@ -8807,7 +9047,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -8840,7 +9081,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.664
   },
   {
    "player": "Brayden Burries",
@@ -8875,7 +9117,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.276
   },
   {
    "player": "Ryan Rollins",
@@ -8908,7 +9151,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Kyle Kuzma",
@@ -8941,7 +9185,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.581
   },
   {
    "player": "Kel'el Ware",
@@ -8976,7 +9221,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.575
   },
   {
    "player": "Neemias Queta",
@@ -9011,7 +9257,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.473
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -9044,7 +9291,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.736
   },
   {
    "player": "Paul George",
@@ -9081,7 +9329,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.868
   },
   {
    "player": "Myles Turner",
@@ -9114,7 +9363,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Tyler Herro",
@@ -9149,7 +9399,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Brayden Burries",
@@ -9184,7 +9435,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Kyle Kuzma",
@@ -9217,7 +9469,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.874
   },
   {
    "player": "Derrick White",
@@ -9254,7 +9507,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.485
   },
   {
    "player": "Payton Pritchard",
@@ -9291,7 +9545,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.463
   },
   {
    "player": "Ryan Rollins",
@@ -9324,7 +9579,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.731
   },
   {
    "player": "Paul George",
@@ -9361,7 +9617,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.838
   },
   {
    "player": "Derrick White",
@@ -9398,7 +9655,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.691
   },
   {
    "player": "Tyler Herro",
@@ -9433,7 +9691,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -9466,7 +9725,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Payton Pritchard",
@@ -9503,7 +9763,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.422
   },
   {
    "player": "Brayden Burries",
@@ -9538,7 +9799,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.418
   },
   {
    "player": "Ryan Rollins",
@@ -9571,7 +9833,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Kyle Kuzma",
@@ -9604,7 +9867,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.76
   },
   {
    "player": "Paul George",
@@ -9641,7 +9905,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.751
   },
   {
    "player": "Derrick White",
@@ -9678,7 +9943,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Paul George",
@@ -9715,7 +9981,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.697
   },
   {
    "player": "Tyler Herro",
@@ -9750,7 +10017,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.679
   },
   {
    "player": "Payton Pritchard",
@@ -9787,7 +10055,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Derrick White",
@@ -9824,7 +10093,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.296
   },
   {
    "player": "AJ Green",
@@ -9859,7 +10129,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Myles Turner",
@@ -9892,7 +10163,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "Ryan Rollins",
@@ -9925,7 +10197,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Brayden Burries",
@@ -9960,7 +10233,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.228
   },
   {
    "player": "Kyle Kuzma",
@@ -9993,7 +10267,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.753
   },
   {
    "player": "Jaime Jaquez Jr.",
@@ -10026,7 +10301,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.817
   },
   {
    "player": "Kel'el Ware",
@@ -10061,7 +10337,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Julius Randle",
@@ -10096,7 +10373,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.468
   },
   {
    "player": "Mikel Brown Jr.",
@@ -10131,7 +10409,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.674
   },
   {
    "player": "Dennis Schroder",
@@ -10164,7 +10443,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.735
   },
   {
    "player": "Nolan Traore",
@@ -10199,7 +10479,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Brandon Miller",
@@ -10232,7 +10513,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Grayson Allen",
@@ -10265,7 +10547,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Day'Ron Sharpe",
@@ -10300,7 +10583,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.323
   },
   {
    "player": "Naz Reid",
@@ -10333,7 +10617,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "Moussa Diabate",
@@ -10366,7 +10651,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Michael Porter Jr.",
@@ -10401,7 +10687,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Brandon Miller",
@@ -10434,7 +10721,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.552
   },
   {
    "player": "Michael Porter Jr.",
@@ -10469,7 +10757,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Julius Randle",
@@ -10504,7 +10793,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.661
   },
   {
    "player": "Naz Reid",
@@ -10537,7 +10827,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Mikel Brown Jr.",
@@ -10572,7 +10863,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.445
   },
   {
    "player": "Nolan Traore",
@@ -10607,7 +10899,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Grayson Allen",
@@ -10640,7 +10933,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.718
   },
   {
    "player": "Moussa Diabate",
@@ -10673,7 +10967,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.569
   },
   {
    "player": "Day'Ron Sharpe",
@@ -10708,7 +11003,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.436
   },
   {
    "player": "Dennis Schroder",
@@ -10741,7 +11037,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Noah Clowney",
@@ -10776,7 +11073,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.551
   },
   {
    "player": "Brandon Miller",
@@ -10809,7 +11107,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Julius Randle",
@@ -10844,7 +11143,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.627
   },
   {
    "player": "Michael Porter Jr.",
@@ -10879,7 +11179,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.526
   },
   {
    "player": "Naz Reid",
@@ -10912,7 +11213,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Mikel Brown Jr.",
@@ -10947,7 +11249,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Nolan Traore",
@@ -10982,7 +11285,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Grayson Allen",
@@ -11015,7 +11319,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Dennis Schroder",
@@ -11048,7 +11353,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.694
   },
   {
    "player": "Moussa Diabate",
@@ -11081,7 +11387,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.558
   },
   {
    "player": "Day'Ron Sharpe",
@@ -11116,7 +11423,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.374
   },
   {
    "player": "Brandon Miller",
@@ -11149,7 +11457,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.548
   },
   {
    "player": "Michael Porter Jr.",
@@ -11184,7 +11493,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.583
   },
   {
    "player": "Julius Randle",
@@ -11219,7 +11529,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.678
   },
   {
    "player": "Naz Reid",
@@ -11252,7 +11563,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Moussa Diabate",
@@ -11285,7 +11597,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Day'Ron Sharpe",
@@ -11320,7 +11633,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.395
   },
   {
    "player": "Mikel Brown Jr.",
@@ -11355,7 +11669,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Grayson Allen",
@@ -11388,7 +11703,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.695
   },
   {
    "player": "Nolan Traore",
@@ -11423,7 +11739,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.616
   },
   {
    "player": "Dennis Schroder",
@@ -11456,7 +11773,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.698
   },
   {
    "player": "Noah Clowney",
@@ -11491,7 +11809,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Julius Randle",
@@ -11526,7 +11845,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.64
   },
   {
    "player": "Brandon Miller",
@@ -11559,7 +11879,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Michael Porter Jr.",
@@ -11594,7 +11915,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Naz Reid",
@@ -11627,7 +11949,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Moussa Diabate",
@@ -11660,7 +11983,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.483
   },
   {
    "player": "Mikel Brown Jr.",
@@ -11695,7 +12019,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.486
   },
   {
    "player": "Day'Ron Sharpe",
@@ -11730,7 +12055,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "Nolan Traore",
@@ -11765,7 +12091,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Grayson Allen",
@@ -11798,7 +12125,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.695
   },
   {
    "player": "Dennis Schroder",
@@ -11831,7 +12159,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.686
   },
   {
    "player": "Moussa Diabate",
@@ -11864,7 +12193,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.544
   },
   {
    "player": "Naz Reid",
@@ -11897,7 +12227,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Day'Ron Sharpe",
@@ -11932,7 +12263,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.401
   },
   {
    "player": "Julius Randle",
@@ -11967,7 +12299,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.635
   },
   {
    "player": "Michael Porter Jr.",
@@ -12002,7 +12335,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.55
   },
   {
    "player": "Brandon Miller",
@@ -12035,7 +12369,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.437
   },
   {
    "player": "Noah Clowney",
@@ -12070,7 +12405,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Mikel Brown Jr.",
@@ -12105,7 +12441,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Grayson Allen",
@@ -12138,7 +12475,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Dennis Schroder",
@@ -12171,7 +12509,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Nolan Traore",
@@ -12206,7 +12545,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "Julius Randle",
@@ -12241,7 +12581,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.579
   },
   {
    "player": "Moussa Diabate",
@@ -12274,7 +12615,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.45
   },
   {
    "player": "Naz Reid",
@@ -12307,7 +12649,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Day'Ron Sharpe",
@@ -12342,7 +12685,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.45
   },
   {
    "player": "Michael Porter Jr.",
@@ -12377,7 +12721,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.491
   },
   {
    "player": "Brandon Miller",
@@ -12410,7 +12755,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.436
   },
   {
    "player": "Mikel Brown Jr.",
@@ -12445,7 +12791,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.652
   },
   {
    "player": "Dennis Schroder",
@@ -12478,7 +12825,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.742
   },
   {
    "player": "Nolan Traore",
@@ -12513,7 +12861,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.532
   },
   {
    "player": "Grayson Allen",
@@ -12546,7 +12895,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.615
   },
   {
    "player": "Moussa Diabate",
@@ -12579,7 +12929,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Brandon Miller",
@@ -12612,7 +12963,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Michael Porter Jr.",
@@ -12647,7 +12999,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Brandon Miller",
@@ -12680,7 +13033,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.42
   },
   {
    "player": "Michael Porter Jr.",
@@ -12715,7 +13069,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Naz Reid",
@@ -12748,7 +13103,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Grayson Allen",
@@ -12781,7 +13137,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.697
   },
   {
    "player": "Mikel Brown Jr.",
@@ -12816,7 +13173,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Julius Randle",
@@ -12851,7 +13209,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Nolan Traore",
@@ -12886,7 +13245,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Noah Clowney",
@@ -12921,7 +13281,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.451
   },
   {
    "player": "Josh Giddey",
@@ -12954,7 +13315,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.461
   },
   {
    "player": "Jalen Brunson",
@@ -12991,7 +13353,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.394
   },
   {
    "player": "Karl-Anthony Towns",
@@ -13028,7 +13391,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Tre Jones",
@@ -13063,7 +13427,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.308
   },
   {
    "player": "Caleb Wilson",
@@ -13098,7 +13463,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Mikal Bridges",
@@ -13133,7 +13499,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "OG Anunoby",
@@ -13170,7 +13537,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Norman Powell",
@@ -13205,7 +13573,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Matas Buzelis",
@@ -13238,7 +13607,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Jalen Smith",
@@ -13271,7 +13641,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Caleb Wilson",
@@ -13306,7 +13677,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Matas Buzelis",
@@ -13339,7 +13711,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.503
   },
   {
    "player": "Jalen Brunson",
@@ -13376,7 +13749,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.709
   },
   {
    "player": "Karl-Anthony Towns",
@@ -13413,7 +13787,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Norman Powell",
@@ -13448,7 +13823,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.53
   },
   {
    "player": "Caleb Wilson",
@@ -13483,7 +13859,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.626
   },
   {
    "player": "OG Anunoby",
@@ -13520,7 +13897,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.63
   },
   {
    "player": "Matas Buzelis",
@@ -13553,7 +13931,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.533
   },
   {
    "player": "Josh Giddey",
@@ -13586,7 +13965,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.21
   },
   {
    "player": "Jalen Smith",
@@ -13619,7 +13999,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.691
   },
   {
    "player": "Mikal Bridges",
@@ -13654,7 +14035,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.259
   },
   {
    "player": "Tre Jones",
@@ -13689,7 +14071,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.786
   },
   {
    "player": "Landry Shamet",
@@ -13724,7 +14107,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.71
   },
   {
    "player": "Jalen Brunson",
@@ -13761,7 +14145,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Karl-Anthony Towns",
@@ -13798,7 +14183,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.639
   },
   {
    "player": "Caleb Wilson",
@@ -13833,7 +14219,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.672
   },
   {
    "player": "Norman Powell",
@@ -13868,7 +14255,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Josh Giddey",
@@ -13901,7 +14289,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.221
   },
   {
    "player": "OG Anunoby",
@@ -13938,7 +14327,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.67
   },
   {
    "player": "Matas Buzelis",
@@ -13971,7 +14361,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.534
   },
   {
    "player": "Mikal Bridges",
@@ -14006,7 +14397,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.284
   },
   {
    "player": "Jalen Smith",
@@ -14039,7 +14431,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "Tre Jones",
@@ -14074,7 +14467,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.612
   },
   {
    "player": "Karl-Anthony Towns",
@@ -14111,7 +14505,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.7
   },
   {
    "player": "Jalen Brunson",
@@ -14148,7 +14543,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.648
   },
   {
    "player": "Caleb Wilson",
@@ -14183,7 +14579,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.601
   },
   {
    "player": "Norman Powell",
@@ -14218,7 +14615,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.514
   },
   {
    "player": "OG Anunoby",
@@ -14255,7 +14653,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Josh Giddey",
@@ -14288,7 +14687,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.153
   },
   {
    "player": "Jalen Smith",
@@ -14321,7 +14721,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.68
   },
   {
    "player": "Matas Buzelis",
@@ -14354,7 +14755,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.477
   },
   {
    "player": "Mikal Bridges",
@@ -14389,7 +14791,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.318
   },
   {
    "player": "Tre Jones",
@@ -14424,7 +14827,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.732
   },
   {
    "player": "Karl-Anthony Towns",
@@ -14461,7 +14865,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.667
   },
   {
    "player": "Jalen Brunson",
@@ -14498,7 +14903,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.584
   },
   {
    "player": "Caleb Wilson",
@@ -14533,7 +14939,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.592
   },
   {
    "player": "Josh Giddey",
@@ -14566,7 +14973,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.214
   },
   {
    "player": "Norman Powell",
@@ -14601,7 +15009,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.48
   },
   {
    "player": "OG Anunoby",
@@ -14638,7 +15047,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.708
   },
   {
    "player": "Jalen Smith",
@@ -14671,7 +15081,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.677
   },
   {
    "player": "Matas Buzelis",
@@ -14704,7 +15115,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.476
   },
   {
    "player": "Mikal Bridges",
@@ -14739,7 +15151,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "Tre Jones",
@@ -14774,7 +15187,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.672
   },
   {
    "player": "Karl-Anthony Towns",
@@ -14811,7 +15225,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.741
   },
   {
    "player": "Jalen Smith",
@@ -14844,7 +15259,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Caleb Wilson",
@@ -14879,7 +15295,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Josh Giddey",
@@ -14912,7 +15329,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.283
   },
   {
    "player": "OG Anunoby",
@@ -14949,7 +15367,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.616
   },
   {
    "player": "Matas Buzelis",
@@ -14982,7 +15401,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.391
   },
   {
    "player": "Jalen Brunson",
@@ -15019,7 +15439,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.375
   },
   {
    "player": "Mikal Bridges",
@@ -15054,7 +15475,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.397
   },
   {
    "player": "Norman Powell",
@@ -15089,7 +15511,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Tre Jones",
@@ -15124,7 +15547,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Karl-Anthony Towns",
@@ -15161,7 +15585,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.667
   },
   {
    "player": "Josh Giddey",
@@ -15194,7 +15619,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.435
   },
   {
    "player": "Jalen Brunson",
@@ -15231,7 +15657,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.269
   },
   {
    "player": "Jalen Smith",
@@ -15264,7 +15691,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.622
   },
   {
    "player": "Caleb Wilson",
@@ -15299,7 +15727,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.569
   },
   {
    "player": "OG Anunoby",
@@ -15336,7 +15765,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Matas Buzelis",
@@ -15369,7 +15799,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.44
   },
   {
    "player": "Mikal Bridges",
@@ -15404,7 +15835,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.455
   },
   {
    "player": "Tre Jones",
@@ -15439,7 +15871,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.536
   },
   {
    "player": "Norman Powell",
@@ -15474,7 +15907,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.274
   },
   {
    "player": "OG Anunoby",
@@ -15511,7 +15945,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Norman Powell",
@@ -15546,7 +15981,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Caleb Wilson",
@@ -15581,7 +16017,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Mikal Bridges",
@@ -15616,7 +16053,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.667
   },
   {
    "player": "Jalen Brunson",
@@ -15653,7 +16091,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Norman Powell",
@@ -15688,7 +16127,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "OG Anunoby",
@@ -15725,7 +16165,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.323
   },
   {
    "player": "Landry Shamet",
@@ -15760,7 +16201,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.815
   },
   {
    "player": "Caleb Wilson",
@@ -15795,7 +16237,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Matas Buzelis",
@@ -15828,7 +16271,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Jalen Smith",
@@ -15861,7 +16305,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Karl-Anthony Towns",
@@ -15898,7 +16343,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Josh Giddey",
@@ -15931,7 +16377,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Mikal Bridges",
@@ -15966,7 +16413,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Andrew Nembhard",
@@ -16003,7 +16451,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.561
   },
   {
    "player": "Ty Jerome",
@@ -16038,7 +16487,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.394
   },
   {
    "player": "Cameron Boozer",
@@ -16073,7 +16523,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.753
   },
   {
    "player": "Cam Spencer",
@@ -16108,7 +16559,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Pascal Siakam",
@@ -16145,7 +16597,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Cedric Coward",
@@ -16180,7 +16633,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Zach Edey",
@@ -16215,7 +16669,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Cameron Boozer",
@@ -16250,7 +16705,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Pascal Siakam",
@@ -16287,7 +16743,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "Ty Jerome",
@@ -16322,7 +16779,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Andrew Nembhard",
@@ -16359,7 +16817,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.789
   },
   {
    "player": "Cameron Boozer",
@@ -16394,7 +16853,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Cedric Coward",
@@ -16429,7 +16889,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.427
   },
   {
    "player": "Aaron Nesmith",
@@ -16466,7 +16927,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.717
   },
   {
    "player": "Jerami Grant",
@@ -16501,7 +16963,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.422
   },
   {
    "player": "Jaylen Wells",
@@ -16536,7 +16999,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Kelly Oubre Jr.",
@@ -16573,7 +17037,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.628
   },
   {
    "player": "Zach Edey",
@@ -16608,7 +17073,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.395
   },
   {
    "player": "Cam Spencer",
@@ -16643,7 +17109,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.771
   },
   {
    "player": "Ty Jerome",
@@ -16678,7 +17145,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.663
   },
   {
    "player": "Pascal Siakam",
@@ -16715,7 +17183,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.696
   },
   {
    "player": "Andrew Nembhard",
@@ -16752,7 +17221,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.722
   },
   {
    "player": "Cameron Boozer",
@@ -16787,7 +17257,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.568
   },
   {
    "player": "Cedric Coward",
@@ -16822,7 +17293,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.424
   },
   {
    "player": "Cam Spencer",
@@ -16857,7 +17329,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Pascal Siakam",
@@ -16894,7 +17367,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.751
   },
   {
    "player": "Cameron Boozer",
@@ -16929,7 +17403,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Ty Jerome",
@@ -16964,7 +17439,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.67
   },
   {
    "player": "Andrew Nembhard",
@@ -17001,7 +17477,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.743
   },
   {
    "player": "Cedric Coward",
@@ -17036,7 +17513,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.584
   },
   {
    "player": "Zach Edey",
@@ -17071,7 +17549,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.451
   },
   {
    "player": "Jaylen Wells",
@@ -17106,7 +17585,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.639
   },
   {
    "player": "Jerami Grant",
@@ -17141,7 +17621,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.407
   },
   {
    "player": "Cam Spencer",
@@ -17176,7 +17657,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.846
   },
   {
    "player": "Pascal Siakam",
@@ -17213,7 +17695,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.72
   },
   {
    "player": "Cameron Boozer",
@@ -17248,7 +17731,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.592
   },
   {
    "player": "Ty Jerome",
@@ -17283,7 +17767,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.666
   },
   {
    "player": "Andrew Nembhard",
@@ -17320,7 +17805,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.689
   },
   {
    "player": "Cedric Coward",
@@ -17355,7 +17841,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.571
   },
   {
    "player": "Cam Spencer",
@@ -17390,7 +17877,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.792
   },
   {
    "player": "Cameron Boozer",
@@ -17425,7 +17913,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.626
   },
   {
    "player": "Zach Edey",
@@ -17460,7 +17949,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.449
   },
   {
    "player": "Cedric Coward",
@@ -17495,7 +17985,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "Pascal Siakam",
@@ -17532,7 +18023,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.784
   },
   {
    "player": "Jaylen Wells",
@@ -17567,7 +18059,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.527
   },
   {
    "player": "Ty Jerome",
@@ -17602,7 +18095,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Andrew Nembhard",
@@ -17639,7 +18133,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Jerami Grant",
@@ -17674,7 +18169,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Cam Spencer",
@@ -17709,7 +18205,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.747
   },
   {
    "player": "Cameron Boozer",
@@ -17744,7 +18241,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.72
   },
   {
    "player": "Andrew Nembhard",
@@ -17781,7 +18279,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.518
   },
   {
    "player": "Pascal Siakam",
@@ -17818,7 +18317,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.78
   },
   {
    "player": "Cedric Coward",
@@ -17853,7 +18353,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.782
   },
   {
    "player": "Ty Jerome",
@@ -17888,7 +18389,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.556
   },
   {
    "player": "Cam Spencer",
@@ -17923,7 +18425,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.644
   },
   {
    "player": "Ty Jerome",
@@ -17958,7 +18461,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Andrew Nembhard",
@@ -17995,7 +18499,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.503
   },
   {
    "player": "Cedric Coward",
@@ -18030,7 +18535,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Pascal Siakam",
@@ -18067,7 +18573,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Cameron Boozer",
@@ -18102,7 +18609,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.259
   },
   {
    "player": "Ty Jerome",
@@ -18137,7 +18645,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Andrew Nembhard",
@@ -18174,7 +18683,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Cameron Boozer",
@@ -18209,7 +18719,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "Aaron Nesmith",
@@ -18246,7 +18757,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Cedric Coward",
@@ -18281,7 +18793,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Jaylen Wells",
@@ -18316,7 +18829,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Jerami Grant",
@@ -18351,7 +18865,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Pascal Siakam",
@@ -18388,7 +18903,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Cam Spencer",
@@ -18423,7 +18939,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.713
   },
   {
    "player": "Kelly Oubre Jr.",
@@ -18460,7 +18977,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Dejounte Murray",
@@ -18496,7 +19014,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.686
   },
   {
    "player": "Keyonte George",
@@ -18531,7 +19050,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "Darryn Peterson",
@@ -18566,7 +19086,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Jeremiah Fears",
@@ -18602,7 +19123,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.809
   },
   {
    "player": "Trey Murphy III",
@@ -18638,7 +19160,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Zion Williamson",
@@ -18674,7 +19197,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Derik Queen",
@@ -18710,7 +19234,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Lauri Markkanen",
@@ -18745,7 +19270,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Lauri Markkanen",
@@ -18780,7 +19306,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.345
   },
   {
    "player": "Keyonte George",
@@ -18815,7 +19342,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.526
   },
   {
    "player": "Zion Williamson",
@@ -18851,7 +19379,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Dejounte Murray",
@@ -18887,7 +19416,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.661
   },
   {
    "player": "Trey Murphy III",
@@ -18923,7 +19453,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.447
   },
   {
    "player": "Darryn Peterson",
@@ -18958,7 +19489,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.553
   },
   {
    "player": "Jeremiah Fears",
@@ -18994,7 +19526,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.634
   },
   {
    "player": "Ace Bailey",
@@ -19029,7 +19562,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.514
   },
   {
    "player": "Saddiq Bey",
@@ -19065,7 +19599,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.717
   },
   {
    "player": "Derik Queen",
@@ -19101,7 +19636,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Jaxson Hayes",
@@ -19136,7 +19672,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.563
   },
   {
    "player": "Karlo Matkovic",
@@ -19172,7 +19709,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.633
   },
   {
    "player": "Brice Sensabaugh",
@@ -19207,7 +19745,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.657
   },
   {
    "player": "Keyonte George",
@@ -19242,7 +19781,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.489
   },
   {
    "player": "Dejounte Murray",
@@ -19278,7 +19818,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "Zion Williamson",
@@ -19314,7 +19855,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Lauri Markkanen",
@@ -19349,7 +19891,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.392
   },
   {
    "player": "Trey Murphy III",
@@ -19385,7 +19928,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.468
   },
   {
    "player": "Darryn Peterson",
@@ -19420,7 +19964,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.525
   },
   {
    "player": "Jeremiah Fears",
@@ -19456,7 +20001,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.644
   },
   {
    "player": "Derik Queen",
@@ -19492,7 +20038,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.651
   },
   {
    "player": "Lauri Markkanen",
@@ -19527,7 +20074,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.411
   },
   {
    "player": "Zion Williamson",
@@ -19563,7 +20111,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.635
   },
   {
    "player": "Keyonte George",
@@ -19598,7 +20147,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.526
   },
   {
    "player": "Dejounte Murray",
@@ -19634,7 +20184,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Trey Murphy III",
@@ -19670,7 +20221,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.455
   },
   {
    "player": "Ace Bailey",
@@ -19705,7 +20257,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Darryn Peterson",
@@ -19740,7 +20293,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.558
   },
   {
    "player": "Jeremiah Fears",
@@ -19776,7 +20330,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.643
   },
   {
    "player": "Saddiq Bey",
@@ -19812,7 +20367,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.694
   },
   {
    "player": "Derik Queen",
@@ -19848,7 +20404,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.738
   },
   {
    "player": "Jaxson Hayes",
@@ -19883,7 +20440,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.587
   },
   {
    "player": "Karlo Matkovic",
@@ -19919,7 +20477,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Keyonte George",
@@ -19954,7 +20513,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.529
   },
   {
    "player": "Dejounte Murray",
@@ -19990,7 +20550,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.712
   },
   {
    "player": "Lauri Markkanen",
@@ -20025,7 +20586,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "Zion Williamson",
@@ -20061,7 +20623,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.552
   },
   {
    "player": "Trey Murphy III",
@@ -20097,7 +20660,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.473
   },
   {
    "player": "Darryn Peterson",
@@ -20132,7 +20696,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.535
   },
   {
    "player": "Jeremiah Fears",
@@ -20168,7 +20733,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.646
   },
   {
    "player": "Derik Queen",
@@ -20204,7 +20770,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.764
   },
   {
    "player": "Derik Queen",
@@ -20240,7 +20807,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Lauri Markkanen",
@@ -20275,7 +20843,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.52
   },
   {
    "player": "Jaxson Hayes",
@@ -20310,7 +20879,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.55
   },
   {
    "player": "Ace Bailey",
@@ -20345,7 +20915,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.759
   },
   {
    "player": "Karlo Matkovic",
@@ -20381,7 +20952,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.419
   },
   {
    "player": "Zion Williamson",
@@ -20417,7 +20989,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Dejounte Murray",
@@ -20453,7 +21026,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.616
   },
   {
    "player": "Trey Murphy III",
@@ -20489,7 +21063,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Saddiq Bey",
@@ -20525,7 +21100,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "Darryn Peterson",
@@ -20560,7 +21136,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Jeremiah Fears",
@@ -20596,7 +21173,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Keyonte George",
@@ -20631,7 +21209,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Dejounte Murray",
@@ -20667,7 +21246,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Keyonte George",
@@ -20702,7 +21282,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.564
   },
   {
    "player": "Derik Queen",
@@ -20738,7 +21319,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.793
   },
   {
    "player": "Zion Williamson",
@@ -20774,7 +21356,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.479
   },
   {
    "player": "Lauri Markkanen",
@@ -20809,7 +21392,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.519
   },
   {
    "player": "Trey Murphy III",
@@ -20845,7 +21429,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.625
   },
   {
    "player": "Darryn Peterson",
@@ -20880,7 +21465,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.595
   },
   {
    "player": "Jeremiah Fears",
@@ -20916,7 +21502,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.679
   },
   {
    "player": "Trey Murphy III",
@@ -20952,7 +21539,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "Lauri Markkanen",
@@ -20987,7 +21575,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Keyonte George",
@@ -21022,7 +21611,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.377
   },
   {
    "player": "Ace Bailey",
@@ -21057,7 +21647,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Saddiq Bey",
@@ -21093,7 +21684,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Darryn Peterson",
@@ -21128,7 +21720,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Dejounte Murray",
@@ -21164,7 +21757,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.191
   },
   {
    "player": "Jeremiah Fears",
@@ -21200,7 +21794,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Brice Sensabaugh",
@@ -21235,7 +21830,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "James Harden",
@@ -21271,7 +21867,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.55
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -21308,7 +21905,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.182
   },
   {
    "player": "Donovan Mitchell",
@@ -21344,7 +21942,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.728
   },
   {
    "player": "Ajay Mitchell",
@@ -21381,7 +21980,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "Evan Mobley",
@@ -21417,7 +22017,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Isaiah Hartenstein",
@@ -21454,7 +22055,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.242
   },
   {
    "player": "Alex Caruso",
@@ -21491,7 +22093,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.79
   },
   {
    "player": "Jaylin Williams",
@@ -21528,7 +22131,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.323
   },
   {
    "player": "Jarrett Allen",
@@ -21564,7 +22168,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Aday Mara",
@@ -21601,7 +22206,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Evan Mobley",
@@ -21637,7 +22243,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -21674,7 +22281,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.528
   },
   {
    "player": "Donovan Mitchell",
@@ -21710,7 +22318,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Ajay Mitchell",
@@ -21747,7 +22356,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.558
   },
   {
    "player": "James Harden",
@@ -21783,7 +22393,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.653
   },
   {
    "player": "Evan Mobley",
@@ -21819,7 +22430,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.808
   },
   {
    "player": "Jarrett Allen",
@@ -21855,7 +22467,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.716
   },
   {
    "player": "Jared McCain",
@@ -21892,7 +22505,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.476
   },
   {
    "player": "Isaiah Hartenstein",
@@ -21929,7 +22543,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.52
   },
   {
    "player": "Sam Merrill",
@@ -21965,7 +22580,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.662
   },
   {
    "player": "Alex Caruso",
@@ -22002,7 +22618,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.777
   },
   {
    "player": "Aday Mara",
@@ -22039,7 +22656,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.455
   },
   {
    "player": "Kenrich Williams",
@@ -22076,7 +22694,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.53
   },
   {
    "player": "Jaylin Williams",
@@ -22113,7 +22732,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.079
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -22150,7 +22770,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.429
   },
   {
    "player": "Donovan Mitchell",
@@ -22186,7 +22807,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.617
   },
   {
    "player": "James Harden",
@@ -22222,7 +22844,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.606
   },
   {
    "player": "Ajay Mitchell",
@@ -22259,7 +22882,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.563
   },
   {
    "player": "Evan Mobley",
@@ -22295,7 +22919,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.776
   },
   {
    "player": "Jared McCain",
@@ -22332,7 +22957,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.511
   },
   {
    "player": "Isaiah Hartenstein",
@@ -22369,7 +22995,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.469
   },
   {
    "player": "Alex Caruso",
@@ -22406,7 +23033,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.814
   },
   {
    "player": "Jaylin Williams",
@@ -22443,7 +23071,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.151
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -22480,7 +23109,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.522
   },
   {
    "player": "Donovan Mitchell",
@@ -22516,7 +23146,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.674
   },
   {
    "player": "Evan Mobley",
@@ -22552,7 +23183,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.69
   },
   {
    "player": "Ajay Mitchell",
@@ -22589,7 +23221,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.568
   },
   {
    "player": "Jarrett Allen",
@@ -22625,7 +23258,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.743
   },
   {
    "player": "Isaiah Hartenstein",
@@ -22662,7 +23296,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "James Harden",
@@ -22698,7 +23333,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.65
   },
   {
    "player": "Jared McCain",
@@ -22735,7 +23371,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.478
   },
   {
    "player": "Aday Mara",
@@ -22772,7 +23409,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Kenrich Williams",
@@ -22809,7 +23447,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.421
   },
   {
    "player": "Jaylin Williams",
@@ -22846,7 +23485,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.074
   },
   {
    "player": "Alex Caruso",
@@ -22883,7 +23523,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.798
   },
   {
    "player": "Sam Merrill",
@@ -22919,7 +23560,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.732
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -22956,7 +23598,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.467
   },
   {
    "player": "Donovan Mitchell",
@@ -22992,7 +23635,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.651
   },
   {
    "player": "Evan Mobley",
@@ -23028,7 +23672,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "James Harden",
@@ -23064,7 +23709,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.617
   },
   {
    "player": "Ajay Mitchell",
@@ -23101,7 +23747,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.572
   },
   {
    "player": "Isaiah Hartenstein",
@@ -23138,7 +23785,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.511
   },
   {
    "player": "Jared McCain",
@@ -23175,7 +23823,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Alex Caruso",
@@ -23212,7 +23861,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.816
   },
   {
    "player": "Jaylin Williams",
@@ -23249,7 +23899,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.124
   },
   {
    "player": "Isaiah Hartenstein",
@@ -23286,7 +23937,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.693
   },
   {
    "player": "Evan Mobley",
@@ -23322,7 +23974,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.407
   },
   {
    "player": "Jarrett Allen",
@@ -23358,7 +24011,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Aday Mara",
@@ -23395,7 +24049,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Jaylin Williams",
@@ -23432,7 +24087,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.195
   },
   {
    "player": "Kenrich Williams",
@@ -23469,7 +24125,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Donovan Mitchell",
@@ -23505,7 +24162,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.741
   },
   {
    "player": "James Harden",
@@ -23541,7 +24199,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.642
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -23578,7 +24237,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.721
   },
   {
    "player": "Alex Caruso",
@@ -23615,7 +24275,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.762
   },
   {
    "player": "Ajay Mitchell",
@@ -23652,7 +24313,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.623
   },
   {
    "player": "Jared McCain",
@@ -23689,7 +24351,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Sam Merrill",
@@ -23725,7 +24388,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Isaiah Hartenstein",
@@ -23762,7 +24426,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Evan Mobley",
@@ -23798,7 +24463,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.461
   },
   {
    "player": "James Harden",
@@ -23834,7 +24500,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.626
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -23871,7 +24538,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.34
   },
   {
    "player": "Donovan Mitchell",
@@ -23907,7 +24575,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.785
   },
   {
    "player": "Jaylin Williams",
@@ -23944,7 +24613,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.266
   },
   {
    "player": "Ajay Mitchell",
@@ -23981,7 +24651,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.6
   },
   {
    "player": "Alex Caruso",
@@ -24018,7 +24689,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.81
   },
   {
    "player": "Jared McCain",
@@ -24055,7 +24727,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.706
   },
   {
    "player": "Ajay Mitchell",
@@ -24092,7 +24765,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -24129,7 +24803,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Donovan Mitchell",
@@ -24165,7 +24840,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Alex Caruso",
@@ -24202,7 +24878,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Donovan Mitchell",
@@ -24238,7 +24915,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "James Harden",
@@ -24274,7 +24952,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Jared McCain",
@@ -24311,7 +24990,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.269
   },
   {
    "player": "Sam Merrill",
@@ -24347,7 +25027,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.377
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -24384,7 +25065,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Jaylin Williams",
@@ -24421,7 +25103,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.191
   },
   {
    "player": "Alex Caruso",
@@ -24458,7 +25141,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Kenrich Williams",
@@ -24495,7 +25179,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Evan Mobley",
@@ -24531,7 +25216,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Ajay Mitchell",
@@ -24568,7 +25254,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.156
   },
   {
    "player": "LaMelo Ball",
@@ -24604,7 +25291,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.458
   },
   {
    "player": "Alperen Sengun",
@@ -24639,7 +25327,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.55
   },
   {
    "player": "Fred VanVleet",
@@ -24674,7 +25363,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Ayo Dosunmu",
@@ -24710,7 +25400,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Amen Thompson",
@@ -24745,7 +25436,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.485
   },
   {
    "player": "Kevin Durant",
@@ -24780,7 +25472,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.375
   },
   {
    "player": "Jaden McDaniels",
@@ -24816,7 +25509,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.762
   },
   {
    "player": "Jonathan Kuminga",
@@ -24852,7 +25546,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Marcus Smart",
@@ -24887,7 +25582,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Kevin Durant",
@@ -24922,7 +25618,8 @@
      3,
      7
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Rudy Gobert",
@@ -24958,7 +25655,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.156
   },
   {
    "player": "Alperen Sengun",
@@ -24993,7 +25691,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.667
   },
   {
    "player": "Jabari Smith Jr.",
@@ -25028,7 +25727,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.551
   },
   {
    "player": "Kevin Durant",
@@ -25063,7 +25763,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "Alperen Sengun",
@@ -25098,7 +25799,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.711
   },
   {
    "player": "LaMelo Ball",
@@ -25134,7 +25836,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jaden McDaniels",
@@ -25170,7 +25873,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.731
   },
   {
    "player": "Ayo Dosunmu",
@@ -25206,7 +25910,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.655
   },
   {
    "player": "Amen Thompson",
@@ -25241,7 +25946,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Jabari Smith Jr.",
@@ -25276,7 +25982,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.628
   },
   {
    "player": "Jonathan Kuminga",
@@ -25312,7 +26019,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.492
   },
   {
    "player": "Fred VanVleet",
@@ -25347,7 +26055,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.484
   },
   {
    "player": "Tari Eason",
@@ -25382,7 +26091,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.723
   },
   {
    "player": "Rudy Gobert",
@@ -25418,7 +26128,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.472
   },
   {
    "player": "Marcus Smart",
@@ -25453,7 +26164,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Joan Beringer",
@@ -25489,7 +26201,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.625
   },
   {
    "player": "Kevin Durant",
@@ -25524,7 +26237,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.285
   },
   {
    "player": "Alperen Sengun",
@@ -25559,7 +26273,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.662
   },
   {
    "player": "LaMelo Ball",
@@ -25595,7 +26310,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.471
   },
   {
    "player": "Ayo Dosunmu",
@@ -25631,7 +26347,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.61
   },
   {
    "player": "Amen Thompson",
@@ -25666,7 +26383,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jaden McDaniels",
@@ -25702,7 +26420,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.752
   },
   {
    "player": "Fred VanVleet",
@@ -25737,7 +26456,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.6
   },
   {
    "player": "Jabari Smith Jr.",
@@ -25772,7 +26492,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "Jonathan Kuminga",
@@ -25808,7 +26529,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.556
   },
   {
    "player": "Rudy Gobert",
@@ -25844,7 +26566,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.429
   },
   {
    "player": "Marcus Smart",
@@ -25879,7 +26602,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.73
   },
   {
    "player": "Alperen Sengun",
@@ -25914,7 +26638,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Kevin Durant",
@@ -25949,7 +26674,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "LaMelo Ball",
@@ -25985,7 +26711,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.508
   },
   {
    "player": "Amen Thompson",
@@ -26020,7 +26747,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.524
   },
   {
    "player": "Jaden McDaniels",
@@ -26056,7 +26784,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.709
   },
   {
    "player": "Jabari Smith Jr.",
@@ -26091,7 +26820,8 @@
      5,
      7
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Ayo Dosunmu",
@@ -26127,7 +26857,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.686
   },
   {
    "player": "Rudy Gobert",
@@ -26163,7 +26894,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Jonathan Kuminga",
@@ -26199,7 +26931,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Fred VanVleet",
@@ -26234,7 +26967,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.546
   },
   {
    "player": "Tari Eason",
@@ -26269,7 +27003,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.721
   },
   {
    "player": "Joan Beringer",
@@ -26305,7 +27040,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.742
   },
   {
    "player": "Marcus Smart",
@@ -26340,7 +27076,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.747
   },
   {
    "player": "Alperen Sengun",
@@ -26375,7 +27112,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.644
   },
   {
    "player": "Kevin Durant",
@@ -26410,7 +27148,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.32
   },
   {
    "player": "LaMelo Ball",
@@ -26446,7 +27185,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Ayo Dosunmu",
@@ -26482,7 +27222,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.643
   },
   {
    "player": "Amen Thompson",
@@ -26517,7 +27258,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.495
   },
   {
    "player": "Jaden McDaniels",
@@ -26553,7 +27295,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.775
   },
   {
    "player": "Jabari Smith Jr.",
@@ -26588,7 +27331,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.624
   },
   {
    "player": "Jonathan Kuminga",
@@ -26624,7 +27368,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.555
   },
   {
    "player": "Rudy Gobert",
@@ -26660,7 +27405,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Fred VanVleet",
@@ -26695,7 +27441,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.648
   },
   {
    "player": "Marcus Smart",
@@ -26730,7 +27477,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.771
   },
   {
    "player": "Rudy Gobert",
@@ -26766,7 +27514,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.642
   },
   {
    "player": "Alperen Sengun",
@@ -26801,7 +27550,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.596
   },
   {
    "player": "Jabari Smith Jr.",
@@ -26836,7 +27586,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "Amen Thompson",
@@ -26871,7 +27622,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.535
   },
   {
    "player": "Joan Beringer",
@@ -26907,7 +27659,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.809
   },
   {
    "player": "Tari Eason",
@@ -26942,7 +27695,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.57
   },
   {
    "player": "Jonathan Kuminga",
@@ -26978,7 +27732,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.57
   },
   {
    "player": "Jaden McDaniels",
@@ -27014,7 +27769,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.659
   },
   {
    "player": "Kevin Durant",
@@ -27049,7 +27805,8 @@
      5,
      7
     ]
-   }
+   },
+   "p_over": 0.366
   },
   {
    "player": "Ayo Dosunmu",
@@ -27085,7 +27842,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.818
   },
   {
    "player": "LaMelo Ball",
@@ -27121,7 +27879,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.391
   },
   {
    "player": "Fred VanVleet",
@@ -27156,7 +27915,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Marcus Smart",
@@ -27191,7 +27951,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.715
   },
   {
    "player": "Alperen Sengun",
@@ -27226,7 +27987,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.587
   },
   {
    "player": "Rudy Gobert",
@@ -27262,7 +28024,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.565
   },
   {
    "player": "LaMelo Ball",
@@ -27298,7 +28061,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.515
   },
   {
    "player": "Amen Thompson",
@@ -27333,7 +28097,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Ayo Dosunmu",
@@ -27369,7 +28134,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.628
   },
   {
    "player": "Kevin Durant",
@@ -27404,7 +28170,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.423
   },
   {
    "player": "Fred VanVleet",
@@ -27439,7 +28206,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.826
   },
   {
    "player": "Jabari Smith Jr.",
@@ -27474,7 +28242,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jaden McDaniels",
@@ -27510,7 +28279,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.884
   },
   {
    "player": "Jonathan Kuminga",
@@ -27546,7 +28316,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.643
   },
   {
    "player": "Marcus Smart",
@@ -27581,7 +28352,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.853
   },
   {
    "player": "LaMelo Ball",
@@ -27617,7 +28389,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Amen Thompson",
@@ -27652,7 +28425,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Ayo Dosunmu",
@@ -27688,7 +28462,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Jaden McDaniels",
@@ -27724,7 +28499,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Jabari Smith Jr.",
@@ -27759,7 +28535,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "LaMelo Ball",
@@ -27795,7 +28572,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Fred VanVleet",
@@ -27830,7 +28608,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.404
   },
   {
    "player": "Jabari Smith Jr.",
@@ -27865,7 +28644,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Kevin Durant",
@@ -27900,7 +28680,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Ayo Dosunmu",
@@ -27936,7 +28717,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Jaden McDaniels",
@@ -27972,7 +28754,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Jonathan Kuminga",
@@ -28008,7 +28791,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Marcus Smart",
@@ -28043,7 +28827,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Tari Eason",
@@ -28078,7 +28863,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.228
   },
   {
    "player": "Nikola Jokic",
@@ -28111,7 +28897,8 @@
      1,
      5
     ]
-   }
+   },
+   "p_over": 0.235
   },
   {
    "player": "Immanuel Quickley",
@@ -28146,7 +28933,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Jamal Murray",
@@ -28179,7 +28967,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Scottie Barnes",
@@ -28214,7 +29003,8 @@
      0,
      4
     ]
-   }
+   },
+   "p_over": 0.488
   },
   {
    "player": "Jamal Shead",
@@ -28249,7 +29039,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.658
   },
   {
    "player": "RJ Barrett",
@@ -28284,7 +29075,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.658
   },
   {
    "player": "Aaron Gordon",
@@ -28317,7 +29109,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "DeMar DeRozan",
@@ -28350,7 +29143,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Cameron Johnson",
@@ -28383,7 +29177,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Scottie Barnes",
@@ -28418,7 +29213,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.503
   },
   {
    "player": "Nikola Jokic",
@@ -28451,7 +29247,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Nikola Jokic",
@@ -28484,7 +29281,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.201
   },
   {
    "player": "Jamal Murray",
@@ -28517,7 +29315,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Scottie Barnes",
@@ -28552,7 +29351,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "RJ Barrett",
@@ -28587,7 +29387,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Immanuel Quickley",
@@ -28622,7 +29423,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Aaron Gordon",
@@ -28655,7 +29457,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.369
   },
   {
    "player": "Christian Braun",
@@ -28688,7 +29491,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.634
   },
   {
    "player": "Ja'Kobe Walter",
@@ -28723,7 +29527,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.516
   },
   {
    "player": "Cameron Johnson",
@@ -28756,7 +29561,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.195
   },
   {
    "player": "DeMar DeRozan",
@@ -28789,7 +29595,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.437
   },
   {
    "player": "Collin Murray-Boyles",
@@ -28824,7 +29631,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.528
   },
   {
    "player": "Jamal Shead",
@@ -28859,7 +29667,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.46
   },
   {
    "player": "Jakob Poeltl",
@@ -28894,7 +29703,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "Trevon Brazile",
@@ -28927,7 +29737,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.718
   },
   {
    "player": "Nikola Jokic",
@@ -28960,7 +29771,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.158
   },
   {
    "player": "Jamal Murray",
@@ -28993,7 +29805,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.574
   },
   {
    "player": "Scottie Barnes",
@@ -29028,7 +29841,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.597
   },
   {
    "player": "RJ Barrett",
@@ -29063,7 +29877,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Immanuel Quickley",
@@ -29098,7 +29913,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.606
   },
   {
    "player": "Aaron Gordon",
@@ -29131,7 +29947,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.346
   },
   {
    "player": "Cameron Johnson",
@@ -29164,7 +29981,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.242
   },
   {
    "player": "DeMar DeRozan",
@@ -29197,7 +30015,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.47
   },
   {
    "player": "Jamal Shead",
@@ -29232,7 +30051,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.515
   },
   {
    "player": "Nikola Jokic",
@@ -29265,7 +30085,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.207
   },
   {
    "player": "Scottie Barnes",
@@ -29300,7 +30121,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Jamal Murray",
@@ -29333,7 +30155,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.646
   },
   {
    "player": "RJ Barrett",
@@ -29368,7 +30191,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.525
   },
   {
    "player": "Immanuel Quickley",
@@ -29403,7 +30227,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.681
   },
   {
    "player": "Aaron Gordon",
@@ -29436,7 +30261,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.365
   },
   {
    "player": "Christian Braun",
@@ -29469,7 +30295,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.648
   },
   {
    "player": "Ja'Kobe Walter",
@@ -29504,7 +30331,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.546
   },
   {
    "player": "Cameron Johnson",
@@ -29537,7 +30365,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.38
   },
   {
    "player": "Collin Murray-Boyles",
@@ -29572,7 +30401,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.462
   },
   {
    "player": "DeMar DeRozan",
@@ -29605,7 +30435,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.446
   },
   {
    "player": "Jakob Poeltl",
@@ -29640,7 +30471,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.437
   },
   {
    "player": "Trevon Brazile",
@@ -29673,7 +30505,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.741
   },
   {
    "player": "Nikola Jokic",
@@ -29706,7 +30539,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.171
   },
   {
    "player": "Scottie Barnes",
@@ -29741,7 +30575,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Jamal Murray",
@@ -29774,7 +30609,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.633
   },
   {
    "player": "RJ Barrett",
@@ -29809,7 +30645,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.548
   },
   {
    "player": "Immanuel Quickley",
@@ -29844,7 +30681,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.597
   },
   {
    "player": "Aaron Gordon",
@@ -29877,7 +30715,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.344
   },
   {
    "player": "Cameron Johnson",
@@ -29910,7 +30749,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.385
   },
   {
    "player": "DeMar DeRozan",
@@ -29943,7 +30783,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Nikola Jokic",
@@ -29976,7 +30817,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.27
   },
   {
    "player": "Scottie Barnes",
@@ -30011,7 +30853,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.504
   },
   {
    "player": "RJ Barrett",
@@ -30046,7 +30889,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Jakob Poeltl",
@@ -30081,7 +30925,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.616
   },
   {
    "player": "Aaron Gordon",
@@ -30114,7 +30959,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.471
   },
   {
    "player": "Collin Murray-Boyles",
@@ -30149,7 +30995,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.366
   },
   {
    "player": "Jamal Murray",
@@ -30182,7 +31029,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "Christian Braun",
@@ -30215,7 +31063,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "Trevon Brazile",
@@ -30248,7 +31097,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "Ja'Kobe Walter",
@@ -30283,7 +31133,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.468
   },
   {
    "player": "Cameron Johnson",
@@ -30316,7 +31167,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.721
   },
   {
    "player": "Immanuel Quickley",
@@ -30351,7 +31203,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "DeMar DeRozan",
@@ -30384,7 +31237,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.323
   },
   {
    "player": "Nikola Jokic",
@@ -30417,7 +31271,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.185
   },
   {
    "player": "Scottie Barnes",
@@ -30452,7 +31307,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.487
   },
   {
    "player": "Jamal Murray",
@@ -30485,7 +31341,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.636
   },
   {
    "player": "RJ Barrett",
@@ -30520,7 +31377,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.584
   },
   {
    "player": "Immanuel Quickley",
@@ -30555,7 +31413,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.579
   },
   {
    "player": "Aaron Gordon",
@@ -30588,7 +31447,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.443
   },
   {
    "player": "Cameron Johnson",
@@ -30621,7 +31481,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.603
   },
   {
    "player": "DeMar DeRozan",
@@ -30654,7 +31515,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.532
   },
   {
    "player": "Scottie Barnes",
@@ -30689,7 +31551,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Nikola Jokic",
@@ -30722,7 +31585,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Christian Braun",
@@ -30755,7 +31619,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Ja'Kobe Walter",
@@ -30790,7 +31655,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Immanuel Quickley",
@@ -30825,7 +31691,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Jamal Murray",
@@ -30858,7 +31725,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.867
   },
   {
    "player": "Immanuel Quickley",
@@ -30893,7 +31761,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Ja'Kobe Walter",
@@ -30928,7 +31797,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Cameron Johnson",
@@ -30961,7 +31831,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "RJ Barrett",
@@ -30996,7 +31867,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Aaron Gordon",
@@ -31029,7 +31901,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Nikola Jokic",
@@ -31062,7 +31935,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Christian Braun",
@@ -31095,7 +31969,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Scottie Barnes",
@@ -31130,7 +32005,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.393
   },
   {
    "player": "Deni Avdija",
@@ -31165,7 +32041,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Devin Booker",
@@ -31198,7 +32075,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Damian Lillard",
@@ -31233,7 +32111,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.41
   },
   {
    "player": "Jrue Holiday",
@@ -31268,7 +32147,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Collin Gillespie",
@@ -31301,7 +32181,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.69
   },
   {
    "player": "Scoot Henderson",
@@ -31336,7 +32217,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.217
   },
   {
    "player": "Jalen Green",
@@ -31369,7 +32251,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.66
   },
   {
    "player": "Miles Bridges",
@@ -31402,7 +32285,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.43
   },
   {
    "player": "Dillon Brooks",
@@ -31435,7 +32319,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Donovan Clingan",
@@ -31470,7 +32355,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Donovan Clingan",
@@ -31505,7 +32391,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Deni Avdija",
@@ -31540,7 +32427,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.589
   },
   {
    "player": "Devin Booker",
@@ -31573,7 +32461,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.48
   },
   {
    "player": "Damian Lillard",
@@ -31608,7 +32497,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.536
   },
   {
    "player": "Dillon Brooks",
@@ -31641,7 +32531,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.465
   },
   {
    "player": "Miles Bridges",
@@ -31674,7 +32565,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.513
   },
   {
    "player": "Jalen Green",
@@ -31707,7 +32599,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.241
   },
   {
    "player": "Scoot Henderson",
@@ -31742,7 +32635,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.263
   },
   {
    "player": "Jrue Holiday",
@@ -31777,7 +32671,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.677
   },
   {
    "player": "Toumani Camara",
@@ -31812,7 +32707,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.747
   },
   {
    "player": "Donovan Clingan",
@@ -31847,7 +32743,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.61
   },
   {
    "player": "Collin Gillespie",
@@ -31880,7 +32777,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.389
   },
   {
    "player": "Khaman Maluach",
@@ -31913,7 +32811,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.64
   },
   {
    "player": "Deni Avdija",
@@ -31948,7 +32847,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.6
   },
   {
    "player": "Devin Booker",
@@ -31981,7 +32881,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.478
   },
   {
    "player": "Damian Lillard",
@@ -32016,7 +32917,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.477
   },
   {
    "player": "Miles Bridges",
@@ -32049,7 +32951,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.534
   },
   {
    "player": "Jalen Green",
@@ -32082,7 +32985,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.297
   },
   {
    "player": "Dillon Brooks",
@@ -32115,7 +33019,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.555
   },
   {
    "player": "Jrue Holiday",
@@ -32150,7 +33055,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.646
   },
   {
    "player": "Scoot Henderson",
@@ -32185,7 +33091,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.15
   },
   {
    "player": "Collin Gillespie",
@@ -32218,7 +33125,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.457
   },
   {
    "player": "Donovan Clingan",
@@ -32253,7 +33161,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Deni Avdija",
@@ -32288,7 +33197,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.525
   },
   {
    "player": "Devin Booker",
@@ -32321,7 +33231,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.465
   },
   {
    "player": "Damian Lillard",
@@ -32356,7 +33267,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Miles Bridges",
@@ -32389,7 +33301,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.57
   },
   {
    "player": "Donovan Clingan",
@@ -32424,7 +33337,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.569
   },
   {
    "player": "Dillon Brooks",
@@ -32457,7 +33371,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.555
   },
   {
    "player": "Jalen Green",
@@ -32490,7 +33405,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.249
   },
   {
    "player": "Jrue Holiday",
@@ -32525,7 +33441,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.656
   },
   {
    "player": "Toumani Camara",
@@ -32560,7 +33477,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.631
   },
   {
    "player": "Scoot Henderson",
@@ -32595,7 +33513,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.258
   },
   {
    "player": "Khaman Maluach",
@@ -32628,7 +33547,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.528
   },
   {
    "player": "Collin Gillespie",
@@ -32661,7 +33581,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.349
   },
   {
    "player": "Deni Avdija",
@@ -32696,7 +33617,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.582
   },
   {
    "player": "Devin Booker",
@@ -32729,7 +33651,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.439
   },
   {
    "player": "Damian Lillard",
@@ -32764,7 +33687,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.516
   },
   {
    "player": "Miles Bridges",
@@ -32797,7 +33721,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.536
   },
   {
    "player": "Donovan Clingan",
@@ -32832,7 +33757,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.613
   },
   {
    "player": "Jrue Holiday",
@@ -32867,7 +33793,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.625
   },
   {
    "player": "Dillon Brooks",
@@ -32900,7 +33827,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.556
   },
   {
    "player": "Jalen Green",
@@ -32933,7 +33861,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.306
   },
   {
    "player": "Scoot Henderson",
@@ -32968,7 +33897,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.15
   },
   {
    "player": "Collin Gillespie",
@@ -33001,7 +33931,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.423
   },
   {
    "player": "Donovan Clingan",
@@ -33036,7 +33967,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.663
   },
   {
    "player": "Deni Avdija",
@@ -33071,7 +34003,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.565
   },
   {
    "player": "Khaman Maluach",
@@ -33104,7 +34037,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.394
   },
   {
    "player": "Miles Bridges",
@@ -33137,7 +34071,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.58
   },
   {
    "player": "Jrue Holiday",
@@ -33172,7 +34107,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Toumani Camara",
@@ -33207,7 +34143,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.185
   },
   {
    "player": "Devin Booker",
@@ -33240,7 +34177,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.42
   },
   {
    "player": "Damian Lillard",
@@ -33275,7 +34213,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.69
   },
   {
    "player": "Dillon Brooks",
@@ -33308,7 +34247,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Jalen Green",
@@ -33341,7 +34281,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Collin Gillespie",
@@ -33374,7 +34315,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.269
   },
   {
    "player": "Scoot Henderson",
@@ -33409,7 +34351,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Donovan Clingan",
@@ -33444,7 +34387,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.64
   },
   {
    "player": "Deni Avdija",
@@ -33479,7 +34423,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.622
   },
   {
    "player": "Devin Booker",
@@ -33512,7 +34457,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.338
   },
   {
    "player": "Miles Bridges",
@@ -33545,7 +34491,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.631
   },
   {
    "player": "Jrue Holiday",
@@ -33580,7 +34527,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.628
   },
   {
    "player": "Damian Lillard",
@@ -33615,7 +34563,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.545
   },
   {
    "player": "Collin Gillespie",
@@ -33648,7 +34597,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Jalen Green",
@@ -33681,7 +34631,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.523
   },
   {
    "player": "Dillon Brooks",
@@ -33714,7 +34665,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.671
   },
   {
    "player": "Scoot Henderson",
@@ -33749,7 +34701,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.258
   },
   {
    "player": "Collin Gillespie",
@@ -33782,7 +34735,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Toumani Camara",
@@ -33817,7 +34771,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Jrue Holiday",
@@ -33852,7 +34807,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.727
   },
   {
    "player": "Dillon Brooks",
@@ -33885,7 +34841,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.593
   },
   {
    "player": "Damian Lillard",
@@ -33920,7 +34877,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Toumani Camara",
@@ -33955,7 +34913,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.803
   },
   {
    "player": "Dillon Brooks",
@@ -33988,7 +34947,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Miles Bridges",
@@ -34021,7 +34981,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Jrue Holiday",
@@ -34056,7 +35017,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.692
   },
   {
    "player": "Collin Gillespie",
@@ -34089,7 +35051,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Jalen Green",
@@ -34122,7 +35085,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.191
   },
   {
    "player": "Deni Avdija",
@@ -34157,7 +35121,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Scoot Henderson",
@@ -34192,7 +35157,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Devin Booker",
@@ -34225,7 +35191,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "De'Aaron Fox",
@@ -34260,7 +35227,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Stephon Castle",
@@ -34295,7 +35263,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.366
   },
   {
    "player": "Cooper Flagg",
@@ -34333,7 +35302,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Dylan Harper",
@@ -34368,7 +35338,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Kyrie Irving",
@@ -34406,7 +35377,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.61
   },
   {
    "player": "Naji Marshall",
@@ -34442,7 +35414,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.881
   },
   {
    "player": "Victor Wembanyama",
@@ -34477,7 +35450,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Devin Vassell",
@@ -34512,7 +35486,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Victor Wembanyama",
@@ -34547,7 +35522,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Daniel Gafford",
@@ -34583,7 +35559,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Cooper Flagg",
@@ -34621,7 +35598,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.632
   },
   {
    "player": "Victor Wembanyama",
@@ -34656,7 +35634,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.459
   },
   {
    "player": "Cooper Flagg",
@@ -34694,7 +35673,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.657
   },
   {
    "player": "Kyrie Irving",
@@ -34732,7 +35712,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.695
   },
   {
    "player": "Dylan Harper",
@@ -34767,7 +35748,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.536
   },
   {
    "player": "Stephon Castle",
@@ -34802,7 +35784,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.372
   },
   {
    "player": "De'Aaron Fox",
@@ -34837,7 +35820,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.481
   },
   {
    "player": "P.J. Washington",
@@ -34875,7 +35859,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.638
   },
   {
    "player": "Devin Vassell",
@@ -34910,7 +35895,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.5
   },
   {
    "player": "Naji Marshall",
@@ -34946,7 +35932,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.578
   },
   {
    "player": "Julian Champagnie",
@@ -34979,7 +35966,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.59
   },
   {
    "player": "Keldon Johnson",
@@ -35012,7 +36000,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.518
   },
   {
    "player": "Daniel Gafford",
@@ -35048,7 +36037,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.675
   },
   {
    "player": "Cooper Flagg",
@@ -35086,7 +36076,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.682
   },
   {
    "player": "Victor Wembanyama",
@@ -35121,7 +36112,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.463
   },
   {
    "player": "Kyrie Irving",
@@ -35159,7 +36151,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.666
   },
   {
    "player": "Stephon Castle",
@@ -35194,7 +36187,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.319
   },
   {
    "player": "Dylan Harper",
@@ -35229,7 +36223,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.548
   },
   {
    "player": "De'Aaron Fox",
@@ -35264,7 +36259,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Devin Vassell",
@@ -35299,7 +36295,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Naji Marshall",
@@ -35335,7 +36332,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.821
   },
   {
    "player": "Victor Wembanyama",
@@ -35370,7 +36368,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.403
   },
   {
    "player": "Cooper Flagg",
@@ -35408,7 +36407,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.595
   },
   {
    "player": "Kyrie Irving",
@@ -35446,7 +36446,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.703
   },
   {
    "player": "Dylan Harper",
@@ -35481,7 +36482,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.541
   },
   {
    "player": "Stephon Castle",
@@ -35516,7 +36518,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.378
   },
   {
    "player": "P.J. Washington",
@@ -35554,7 +36557,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.653
   },
   {
    "player": "De'Aaron Fox",
@@ -35589,7 +36593,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.486
   },
   {
    "player": "Devin Vassell",
@@ -35624,7 +36629,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.385
   },
   {
    "player": "Daniel Gafford",
@@ -35660,7 +36666,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.635
   },
   {
    "player": "Naji Marshall",
@@ -35696,7 +36703,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.587
   },
   {
    "player": "Julian Champagnie",
@@ -35729,7 +36737,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.572
   },
   {
    "player": "Keldon Johnson",
@@ -35762,7 +36771,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.686
   },
   {
    "player": "Victor Wembanyama",
@@ -35797,7 +36807,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.413
   },
   {
    "player": "Cooper Flagg",
@@ -35835,7 +36846,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.654
   },
   {
    "player": "Kyrie Irving",
@@ -35873,7 +36885,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.703
   },
   {
    "player": "Stephon Castle",
@@ -35908,7 +36921,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.324
   },
   {
    "player": "Dylan Harper",
@@ -35943,7 +36957,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.55
   },
   {
    "player": "De'Aaron Fox",
@@ -35978,7 +36993,8 @@
      1,
      4
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Devin Vassell",
@@ -36013,7 +37029,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.406
   },
   {
    "player": "Naji Marshall",
@@ -36049,7 +37066,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.743
   },
   {
    "player": "Victor Wembanyama",
@@ -36084,7 +37102,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.361
   },
   {
    "player": "Daniel Gafford",
@@ -36120,7 +37139,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.504
   },
   {
    "player": "P.J. Washington",
@@ -36158,7 +37178,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "Cooper Flagg",
@@ -36196,7 +37217,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.394
   },
   {
    "player": "Stephon Castle",
@@ -36231,7 +37253,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.384
   },
   {
    "player": "Dylan Harper",
@@ -36266,7 +37289,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.419
   },
   {
    "player": "Devin Vassell",
@@ -36301,7 +37325,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.275
   },
   {
    "player": "Julian Champagnie",
@@ -36334,7 +37359,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.313
   },
   {
    "player": "Keldon Johnson",
@@ -36367,7 +37393,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.83
   },
   {
    "player": "De'Aaron Fox",
@@ -36402,7 +37429,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.567
   },
   {
    "player": "Kyrie Irving",
@@ -36440,7 +37468,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.623
   },
   {
    "player": "Naji Marshall",
@@ -36476,7 +37505,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.397
   },
   {
    "player": "Victor Wembanyama",
@@ -36511,7 +37541,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.409
   },
   {
    "player": "Cooper Flagg",
@@ -36549,7 +37580,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Stephon Castle",
@@ -36584,7 +37616,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.259
   },
   {
    "player": "Dylan Harper",
@@ -36619,7 +37652,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.489
   },
   {
    "player": "De'Aaron Fox",
@@ -36654,7 +37688,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.479
   },
   {
    "player": "Kyrie Irving",
@@ -36692,7 +37727,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Devin Vassell",
@@ -36727,7 +37763,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.513
   },
   {
    "player": "Naji Marshall",
@@ -36763,7 +37800,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.897
   },
   {
    "player": "Cooper Flagg",
@@ -36801,7 +37839,8 @@
      4,
      4
     ]
-   }
+   },
+   "p_over": 0.713
   },
   {
    "player": "De'Aaron Fox",
@@ -36836,7 +37875,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Victor Wembanyama",
@@ -36871,7 +37911,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Devin Vassell",
@@ -36906,7 +37947,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.537
   },
   {
    "player": "Stephon Castle",
@@ -36941,7 +37983,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "Kyrie Irving",
@@ -36979,7 +38022,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Dylan Harper",
@@ -37014,7 +38058,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.699
   },
   {
    "player": "Kyrie Irving",
@@ -37052,7 +38097,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.66
   },
   {
    "player": "Julian Champagnie",
@@ -37085,7 +38131,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Victor Wembanyama",
@@ -37120,7 +38167,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.167
   },
   {
    "player": "Devin Vassell",
@@ -37155,7 +38203,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "P.J. Washington",
@@ -37193,7 +38242,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.594
   },
   {
    "player": "Cooper Flagg",
@@ -37231,7 +38281,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Stephon Castle",
@@ -37266,7 +38317,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "De'Aaron Fox",
@@ -37301,7 +38353,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.301
   },
   {
    "player": "Dylan Harper",
@@ -37336,7 +38389,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.337
   },
   {
    "player": "Luka Doncic",
@@ -37371,7 +38425,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.64
   },
   {
    "player": "Darius Acuff Jr.",
@@ -37409,7 +38464,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.489
   },
   {
    "player": "Domantas Sabonis",
@@ -37447,7 +38503,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.608
   },
   {
    "player": "Austin Reaves",
@@ -37482,7 +38539,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.471
   },
   {
    "player": "Zach LaVine",
@@ -37520,7 +38578,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.577
   },
   {
    "player": "Quentin Grimes",
@@ -37553,7 +38612,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Walker Kessler",
@@ -37588,7 +38648,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Luka Doncic",
@@ -37623,7 +38684,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.611
   },
   {
    "player": "Darius Acuff Jr.",
@@ -37661,7 +38723,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.602
   },
   {
    "player": "Austin Reaves",
@@ -37696,7 +38759,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.458
   },
   {
    "player": "Zach LaVine",
@@ -37734,7 +38798,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.672
   },
   {
    "player": "De'Andre Hunter",
@@ -37772,7 +38837,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.54
   },
   {
    "player": "Domantas Sabonis",
@@ -37810,7 +38876,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.626
   },
   {
    "player": "Walker Kessler",
@@ -37845,7 +38912,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.663
   },
   {
    "player": "Precious Achiuwa",
@@ -37883,7 +38951,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.656
   },
   {
    "player": "Malik Monk",
@@ -37921,7 +38990,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Ziaire Williams",
@@ -37954,7 +39024,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.839
   },
   {
    "player": "Quentin Grimes",
@@ -37987,7 +39058,8 @@
      3,
      7
     ]
-   }
+   },
+   "p_over": 0.546
   },
   {
    "player": "Matisse Thybulle",
@@ -38020,7 +39092,8 @@
      4,
      7
     ]
-   }
+   },
+   "p_over": 0.673
   },
   {
    "player": "Jake LaRavia",
@@ -38053,7 +39126,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.531
   },
   {
    "player": "Luka Doncic",
@@ -38088,7 +39162,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Darius Acuff Jr.",
@@ -38126,7 +39201,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Austin Reaves",
@@ -38161,7 +39237,8 @@
      2,
      6
     ]
-   }
+   },
+   "p_over": 0.494
   },
   {
    "player": "Zach LaVine",
@@ -38199,7 +39276,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.649
   },
   {
    "player": "Domantas Sabonis",
@@ -38237,7 +39315,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.665
   },
   {
    "player": "Quentin Grimes",
@@ -38270,7 +39349,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.589
   },
   {
    "player": "Luka Doncic",
@@ -38305,7 +39385,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.629
   },
   {
    "player": "Darius Acuff Jr.",
@@ -38343,7 +39424,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.636
   },
   {
    "player": "Austin Reaves",
@@ -38378,7 +39460,8 @@
      3,
      6
     ]
-   }
+   },
+   "p_over": 0.415
   },
   {
    "player": "Domantas Sabonis",
@@ -38416,7 +39499,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.629
   },
   {
    "player": "Walker Kessler",
@@ -38451,7 +39535,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.627
   },
   {
    "player": "Zach LaVine",
@@ -38489,7 +39574,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.668
   },
   {
    "player": "De'Andre Hunter",
@@ -38527,7 +39613,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Precious Achiuwa",
@@ -38565,7 +39652,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.558
   },
   {
    "player": "Ziaire Williams",
@@ -38598,7 +39686,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.841
   },
   {
    "player": "Quentin Grimes",
@@ -38631,7 +39720,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.556
   },
   {
    "player": "Jake LaRavia",
@@ -38664,7 +39754,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.621
   },
   {
    "player": "Matisse Thybulle",
@@ -38697,7 +39788,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.573
   },
   {
    "player": "Luka Doncic",
@@ -38732,7 +39824,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.631
   },
   {
    "player": "Darius Acuff Jr.",
@@ -38770,7 +39863,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.6
   },
   {
    "player": "Domantas Sabonis",
@@ -38808,7 +39902,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.623
   },
   {
    "player": "Austin Reaves",
@@ -38843,7 +39938,8 @@
      2,
      6
     ]
-   }
+   },
+   "p_over": 0.455
   },
   {
    "player": "Zach LaVine",
@@ -38881,7 +39977,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Quentin Grimes",
@@ -38914,7 +40011,8 @@
      4,
      6
     ]
-   }
+   },
+   "p_over": 0.551
   },
   {
    "player": "Domantas Sabonis",
@@ -38952,7 +40050,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.642
   },
   {
    "player": "Walker Kessler",
@@ -38987,7 +40086,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.492
   },
   {
    "player": "Luka Doncic",
@@ -39022,7 +40122,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Precious Achiuwa",
@@ -39060,7 +40161,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.327
   },
   {
    "player": "De'Andre Hunter",
@@ -39098,7 +40200,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.61
   },
   {
    "player": "Austin Reaves",
@@ -39133,7 +40236,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.397
   },
   {
    "player": "Darius Acuff Jr.",
@@ -39171,7 +40275,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.586
   },
   {
    "player": "Jake LaRavia",
@@ -39204,7 +40309,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Quentin Grimes",
@@ -39237,7 +40343,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Zach LaVine",
@@ -39275,7 +40382,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Matisse Thybulle",
@@ -39308,7 +40416,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.269
   },
   {
    "player": "Ziaire Williams",
@@ -39341,7 +40450,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "Domantas Sabonis",
@@ -39379,7 +40489,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.629
   },
   {
    "player": "Luka Doncic",
@@ -39414,7 +40525,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.701
   },
   {
    "player": "Darius Acuff Jr.",
@@ -39452,7 +40564,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.599
   },
   {
    "player": "Austin Reaves",
@@ -39487,7 +40600,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.358
   },
   {
    "player": "Zach LaVine",
@@ -39525,7 +40639,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.614
   },
   {
    "player": "Quentin Grimes",
@@ -39558,7 +40673,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.613
   },
   {
    "player": "Luka Doncic",
@@ -39593,7 +40709,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Matisse Thybulle",
@@ -39626,7 +40743,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.507
   },
   {
    "player": "Luka Doncic",
@@ -39661,7 +40779,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.728
   },
   {
    "player": "Darius Acuff Jr.",
@@ -39699,7 +40818,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Zach LaVine",
@@ -39737,7 +40857,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.62
   },
   {
    "player": "Austin Reaves",
@@ -39772,7 +40893,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.482
   },
   {
    "player": "De'Andre Hunter",
@@ -39810,7 +40932,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Malik Monk",
@@ -39848,7 +40971,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Matisse Thybulle",
@@ -39881,7 +41005,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Quentin Grimes",
@@ -39914,7 +41039,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.191
   },
   {
    "player": "Ziaire Williams",
@@ -39947,7 +41073,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.566
   },
   {
    "player": "Darius Garland",
@@ -39980,7 +41107,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.401
   },
   {
    "player": "Davion Mitchell",
@@ -40013,7 +41141,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.687
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -40046,7 +41175,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.33
   },
   {
    "player": "Kris Dunn",
@@ -40079,7 +41209,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Pelle Larsson",
@@ -40112,7 +41243,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Bam Adebayo",
@@ -40145,7 +41277,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.397
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -40178,7 +41311,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.38
   },
   {
    "player": "Darius Garland",
@@ -40211,7 +41345,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.475
   },
   {
    "player": "Bam Adebayo",
@@ -40244,7 +41379,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.381
   },
   {
    "player": "Rui Hachimura",
@@ -40277,7 +41413,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.358
   },
   {
    "player": "Andrew Wiggins",
@@ -40310,7 +41447,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.274
   },
   {
    "player": "Davion Mitchell",
@@ -40343,7 +41481,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.895
   },
   {
    "player": "Pelle Larsson",
@@ -40376,7 +41515,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.562
   },
   {
    "player": "Derrick Jones Jr.",
@@ -40409,7 +41549,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.573
   },
   {
    "player": "Brook Lopez",
@@ -40442,7 +41583,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.676
   },
   {
    "player": "Klay Thompson",
@@ -40475,7 +41617,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.684
   },
   {
    "player": "Bobby Portis",
@@ -40508,7 +41651,8 @@
      0,
      3
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Isaiah Jackson",
@@ -40541,7 +41685,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.583
   },
   {
    "player": "Kris Dunn",
@@ -40574,7 +41719,8 @@
      2,
      5
     ]
-   }
+   },
+   "p_over": 0.719
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -40607,7 +41753,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.34
   },
   {
    "player": "Darius Garland",
@@ -40640,7 +41787,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.478
   },
   {
    "player": "Bam Adebayo",
@@ -40673,7 +41821,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.346
   },
   {
    "player": "Davion Mitchell",
@@ -40706,7 +41855,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.817
   },
   {
    "player": "Pelle Larsson",
@@ -40739,7 +41889,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.59
   },
   {
    "player": "Kris Dunn",
@@ -40772,7 +41923,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.716
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -40805,7 +41957,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.389
   },
   {
    "player": "Bam Adebayo",
@@ -40838,7 +41991,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.36
   },
   {
    "player": "Darius Garland",
@@ -40871,7 +42025,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.389
   },
   {
    "player": "Rui Hachimura",
@@ -40904,7 +42059,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.426
   },
   {
    "player": "Andrew Wiggins",
@@ -40937,7 +42093,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.216
   },
   {
    "player": "Isaiah Jackson",
@@ -40970,7 +42127,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.555
   },
   {
    "player": "Brook Lopez",
@@ -41003,7 +42161,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.641
   },
   {
    "player": "Bobby Portis",
@@ -41036,7 +42195,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.506
   },
   {
    "player": "Pelle Larsson",
@@ -41069,7 +42229,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.573
   },
   {
    "player": "Davion Mitchell",
@@ -41102,7 +42263,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.798
   },
   {
    "player": "Derrick Jones Jr.",
@@ -41135,7 +42297,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.646
   },
   {
    "player": "Kris Dunn",
@@ -41168,7 +42331,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.742
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -41201,7 +42365,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.396
   },
   {
    "player": "Darius Garland",
@@ -41234,7 +42399,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.413
   },
   {
    "player": "Bam Adebayo",
@@ -41267,7 +42433,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.328
   },
   {
    "player": "Davion Mitchell",
@@ -41300,7 +42467,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.778
   },
   {
    "player": "Pelle Larsson",
@@ -41333,7 +42501,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.547
   },
   {
    "player": "Kris Dunn",
@@ -41366,7 +42535,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.694
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -41399,7 +42569,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.605
   },
   {
    "player": "Bam Adebayo",
@@ -41432,7 +42603,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.308
   },
   {
    "player": "Isaiah Jackson",
@@ -41465,7 +42637,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.505
   },
   {
    "player": "Bobby Portis",
@@ -41498,7 +42671,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.645
   },
   {
    "player": "Rui Hachimura",
@@ -41531,7 +42705,8 @@
      0,
      1
     ]
-   }
+   },
+   "p_over": 0.554
   },
   {
    "player": "Brook Lopez",
@@ -41564,7 +42739,8 @@
      0,
      0
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Kris Dunn",
@@ -41597,7 +42773,8 @@
      2,
      4
     ]
-   }
+   },
+   "p_over": 0.391
   },
   {
    "player": "Derrick Jones Jr.",
@@ -41630,7 +42807,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.542
   },
   {
    "player": "Andrew Wiggins",
@@ -41663,7 +42841,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.264
   },
   {
    "player": "Pelle Larsson",
@@ -41696,7 +42875,8 @@
      2,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Darius Garland",
@@ -41729,7 +42909,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.269
   },
   {
    "player": "Davion Mitchell",
@@ -41762,7 +42943,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.167
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -41795,7 +42977,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.536
   },
   {
    "player": "Bam Adebayo",
@@ -41828,7 +43011,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.35
   },
   {
    "player": "Darius Garland",
@@ -41861,7 +43045,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.324
   },
   {
    "player": "Davion Mitchell",
@@ -41894,7 +43079,8 @@
      0,
      2
     ]
-   }
+   },
+   "p_over": 0.491
   },
   {
    "player": "Kris Dunn",
@@ -41927,7 +43113,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.58
   },
   {
    "player": "Pelle Larsson",
@@ -41960,7 +43147,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.56
   },
   {
    "player": "Kris Dunn",
@@ -41993,7 +43181,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.733
   },
   {
    "player": "Bam Adebayo",
@@ -42026,7 +43215,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.713
   },
   {
    "player": "Giannis Antetokounmpo",
@@ -42059,7 +43249,8 @@
      4,
      5
     ]
-   }
+   },
+   "p_over": 0.191
   },
   {
    "player": "Darius Garland",
@@ -42092,7 +43283,8 @@
      1,
      1
     ]
-   }
+   },
+   "p_over": 0.156
   },
   {
    "player": "Darius Garland",
@@ -42125,7 +43317,8 @@
      3,
      5
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Klay Thompson",
@@ -42158,7 +43351,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.679
   },
   {
    "player": "Rui Hachimura",
@@ -42191,7 +43385,8 @@
      1,
      2
     ]
-   }
+   },
+   "p_over": 0.456
   },
   {
    "player": "Andrew Wiggins",
@@ -42224,7 +43419,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.373
   },
   {
    "player": "Davion Mitchell",
@@ -42257,7 +43453,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Brook Lopez",
@@ -42290,7 +43487,8 @@
      3,
      4
     ]
-   }
+   },
+   "p_over": 0.408
   },
   {
    "player": "Derrick Jones Jr.",
@@ -42323,7 +43521,8 @@
      3,
      3
     ]
-   }
+   },
+   "p_over": 0.669
   },
   {
    "player": "Bobby Portis",
@@ -42356,7 +43555,8 @@
      1,
      3
     ]
-   }
+   },
+   "p_over": 0.442
   },
   {
    "player": "Bam Adebayo",
@@ -42389,7 +43589,8 @@
      2,
      2
     ]
-   }
+   },
+   "p_over": 0.122
   },
   {
    "player": "Kris Dunn",
@@ -42422,7 +43623,8 @@
      5,
      5
     ]
-   }
+   },
+   "p_over": 0.593
   }
  ],
  "teams": {
@@ -43134,10 +44336,10 @@
  },
  "model_notes": [
   "Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
-  "Adjustments: opponent defense (capped +/-5%), home court for games; injured players skipped",
-  "Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now 0.45)",
+  "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
   "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-  "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted)"
+  "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers",
+  "Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now 0.45)"
  ],
  "prediction_history": [
   {
@@ -46463,13 +47665,13 @@
    "p_model": 74.2,
    "p_win": 79.5,
    "ev": 60.6,
-   "picked_at": "2026-11-04 05:47 PM ET",
-   "first_picked_at": "2026-11-04 05:30 PM ET",
+   "picked_at": "2026-11-04 05:53 PM ET",
    "open_line": 6.5,
    "open_price": 102,
+   "first_picked_at": "2026-11-04 05:30 PM ET",
    "close_line": 6.5,
    "close_price": 102,
-   "close_at": "2026-11-04 05:47 PM ET",
+   "close_at": "2026-11-04 05:53 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -46906,14 +48108,14 @@
     "day": 1,
     "stake": 10.0,
     "to_win": 7.46,
-    "picked_at": "2026-11-04 05:47 PM ET",
+    "picked_at": "2026-11-04 05:53 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value",
-    "first_picked_at": "2026-11-04 05:37 PM ET",
     "open_line": 7.5,
     "open_price": -134,
+    "first_picked_at": "2026-11-04 05:37 PM ET",
     "close_line": 7.5,
     "close_price": -134,
-    "close_at": "2026-11-04 05:47 PM ET",
+    "close_at": "2026-11-04 05:53 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -47214,7 +48416,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 8.2 RA vs a line of 6.5 (+1.7, 26% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 8.4 over the last 8 | Minutes steady: 31 per game over the last 5 (31 over the last 8) | Matchup vs BKN: neutral for RA (defense and pace about league average) | BKN ranks among the top-10 defenses for RA; he went over 6.5 in 2 of 3 games against that tier | Not on the injury report at pick time",
-    "picked_at": "2026-11-04 05:47 PM ET",
+    "picked_at": "2026-11-04 05:53 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -47252,7 +48454,7 @@
     "actual": null,
     "units": null,
     "why": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value | Model projects 10.7 RA vs a line of 7.5 (+3.2, 43% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 9.8 over the last 5 and 9.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Matchup vs HOU: neutral for RA (defense and pace about league average) | HOU ranks among the middle-10 defenses for RA; he went over 7.5 in 2 of 2 games against that tier | Teammate injury boost: Anthony Edwards, Terrence Shannon Jr. out, +12.1% to his RA projection (extra minutes and usage) | Not on the injury report at pick time",
-    "picked_at": "2026-11-04 05:47 PM ET",
+    "picked_at": "2026-11-04 05:53 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -47280,6 +48482,16 @@
   },
   "all": {
    "bets": 0
+  }
+ },
+ "calibration": {
+  "note": "Every graded model lean (all posted props, spreads and totals), bucketed by the model's win chance.",
+  "buckets": {},
+  "markets": {},
+  "paused": {},
+  "pause_rule": {
+   "min_bets": 150,
+   "roi": -8.0
   }
  }
 }

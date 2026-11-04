@@ -1033,6 +1033,14 @@ def carry_open(new, old):
     return new
 
 
+def p_over_for(stat, mean, line, hist):
+    """Model chance of going over, same distribution the picks use (saved so calibration can grade it)."""
+    if stat not in STAT_VAL:
+        return None
+    vals = [STAT_VAL[stat](r) for r in hist if r["min"] >= 5][-15:]
+    return rnd(prob_over(stat, mean, line, vals), 3)
+
+
 def sched_ctx(row, team):
     """Spread (DraftKings when posted, else the model) and rest days for `team` in this game row."""
     dk = (row or {}).get("dk") or {}
@@ -1066,7 +1074,7 @@ def injury_note(p):
     return f"Teammate injury boost: {who} out, {'+' if m > 0 else ''}{m:g}% to his {p['stat']} projection (extra minutes and usage)"
 
 
-def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
+def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=None):
     """Rank every bet on today's board (player props, spreads, totals, moneylines). Returns (pick, runners_up).
 
     Every candidate needs real support from recent results, a sane edge (very large edges usually mean the
@@ -1089,7 +1097,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
         g = ev.get(p["game"])
         if not g or g["status"] != "Upcoming" or g["date"] != today_iso or not p["dk"]:
             continue
-        if norm(p["player"]) in hurt or p["stat"] not in STAT_VAL:
+        if norm(p["player"]) in hurt or p["stat"] not in STAT_VAL or p["stat"] in (paused or {}):
             continue
         over = p["edge"] > 0
         price = p.get("over") if over else p.get("under")
@@ -1151,7 +1159,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
 
         # spread
         se = row.get("spread_edge", 0)
-        if 1.5 <= abs(se) <= 6:
+        if 1.5 <= abs(se) <= 6 and "Spread" not in (paused or {}):
             home_pick = se > 0
             team, opp = (H, A) if home_pick else (A, H)
             line = hs if home_pick else -hs
@@ -1172,7 +1180,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
 
         # total
         te = row.get("total_edge", 0)
-        if 3 <= abs(te) <= 12:
+        if 3 <= abs(te) <= 12 and "Total" not in (paused or {}):
             over = te > 0
             line = float(dk["total"])
             price = dk.get("over_px" if over else "under_px") or -110
@@ -1510,7 +1518,40 @@ def update_ledger(settled_bets, potd_hist, ladder, now):
     return {"summary": summary, "bets": recent}
 
 
-def settle(pending, plog, state):
+CALIB_PATH = ROOT / "data" / "calibration.json"
+PAUSE_MIN_BETS = 150     # a market needs this many graded model leans before it can be paused
+PAUSE_ROI = -8.0         # ... and an ROI this bad (%, 1 unit per lean at the posted price)
+
+
+def calib_record(cal, market, p, res, price):
+    """Add one graded model lean. p = model's chance its side wins; res W/L/P; price = posted DK price."""
+    if res == "P" or p is None:
+        return
+    p = max(0.5, min(0.999, p))
+    b = str(min(90, int(p * 100) // 5 * 5))                # 50, 55, ... 90 (90 = 90%+)
+    win = res == "W"
+    units = ((price / 100 if price > 0 else 100 / -price) if price else 100 / 110) if win else -1.0
+    for key in ("ALL", market):
+        m = cal["buckets"].setdefault(key, {})
+        r = m.setdefault(b, {"n": 0, "w": 0, "p": 0.0})
+        r["n"] += 1; r["w"] += win; r["p"] = rnd(r["p"] + p, 3)
+    r = cal["markets"].setdefault(market, {"n": 0, "w": 0, "p": 0.0, "units": 0.0})
+    r["n"] += 1; r["w"] += win; r["p"] = rnd(r["p"] + p, 3); r["units"] = rnd(r["units"] + units, 2)
+
+
+def paused_markets(cal):
+    """#8 auto-pause: markets with a big enough sample that keep losing are left out of Pick of the Day and
+    the ladder until they recover. Shown on the Model tab."""
+    out = {}
+    for mk, r in (cal or {}).get("markets", {}).items():
+        if r["n"] >= PAUSE_MIN_BETS:
+            roi = 100 * r["units"] / r["n"]
+            if roi <= PAUSE_ROI:
+                out[mk] = rnd(roi, 1)
+    return out
+
+
+def settle(pending, plog, state, cal=None):
     """Score frozen predictions for games that have finished. Updates state in place."""
     names = {}
     for eid, g in plog["games"].items():
@@ -1534,11 +1575,24 @@ def settle(pending, plog, state):
                 res = "P" if cover == 0 else ("W" if (cover > 0) == home_pick else "L")
                 side = f'{pg["home"]} {dk["spread"]}' if home_pick else f'{pg["away"]} {sgn(-hs)}'
                 bets.append(("Spread", side, rnd(sedge), res, f"{lg['away_pts']}-{lg['home_pts']}"))
+            if cal is not None and sedge:
+                hp = sedge > 0
+                mm = -pg["model"]["spread"] if hp else pg["model"]["spread"]          # model margin for our side
+                ln = hs if hp else -hs
+                cov = margin + hs
+                if cov:
+                    calib_record(cal, "Spread", phi((mm + ln) / GAME_SD), "W" if (cov > 0) == hp else "L",
+                                 dk.get("spread_px_home" if hp else "spread_px_away"))
             tedge = pg["model"]["total"] - dk["total"]
             if abs(tedge) >= BET_EDGE_GAME:
                 over = tedge > 0
                 res = "P" if total == dk["total"] else ("W" if (total > dk["total"]) == over else "L")
                 bets.append(("Total", f'{"Over" if over else "Under"} {dk["total"]:g}', rnd(tedge), res, f"Total {total}"))
+            if cal is not None and tedge and total != dk["total"]:
+                ov = tedge > 0
+                po = 1 - phi((dk["total"] - pg["model"]["total"]) / 17.0)
+                calib_record(cal, "Total", po if ov else 1 - po, "W" if (total > dk["total"]) == ov else "L",
+                             dk.get("over_px" if ov else "under_px"))
         for p in pending["props"].get(eid, []):
             row = names[eid].get(norm(p["player"]))
             if not row:
@@ -1553,12 +1607,16 @@ def settle(pending, plog, state):
             old = state["residuals"]["player"].get(key, 0.0)
             state["residuals"]["player"][key] = rnd((1 - RES_BETA) * old + RES_BETA * (actual - p["model"]), 2)
             edge = p["model"] - p["dk"]
+            if cal is not None and edge and p.get("p_over") is not None and actual != p["dk"]:
+                lean_over = edge > 0
+                calib_record(cal, p["stat"], p["p_over"] if lean_over else 1 - p["p_over"],
+                             "W" if (actual > p["dk"]) == lean_over else "L", p.get("over") if lean_over else p.get("under"))
             if abs(edge) >= BET_EDGE_PROP:
                 over = edge > 0
                 res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == over else "L")
                 price = p.get("over") if over else p.get("under")
                 bets.append(("Player Prop", f'{p["player"]} {"Over" if over else "Under"} {p["dk"]:g} {p["stat"]}',
-                             rnd(edge), res, f'{actual:g} {p["stat"]}', price))
+                             rnd(edge), res, f'{actual:g} {p["stat"]}', price, p["stat"]))
         if dk:
             state["accuracy"].insert(0, {"date": lg["date"], "game": label, "model_spread": pg["model"]["spread"],
                                          "dk_spread": float(dk["spread"]), "actual_margin": margin,
@@ -1566,10 +1624,11 @@ def settle(pending, plog, state):
         for bet in bets:
             market, side, edge, res, actual = bet[:5]
             price = bet[5] if len(bet) > 5 else None
+            stat = bet[6] if len(bet) > 6 else market
             win = (price / 100 if price and price > 0 else 100 / -price if price else WIN_UNITS)
             units = rnd(win, 2) if res == "W" else (-1.0 if res == "L" else 0.0)
-            state["settled_bets"].insert(0, {"date": lg["date"], "game": label, "market": market, "side": side,
-                                             "edge": edge, "result": res, "units": rnd(units, 2), "actual": actual})
+            state["settled_bets"].insert(0, {"date": lg["date"], "game": label, "market": market, "side": side, "stat": stat,
+                                             "edge": edge, "result": res, "units": rnd(units, 2), "actual": actual, "price": price})
             rec = state["record"]
             rec["wins"] += res == "W"
             rec["losses"] += res == "L"
@@ -1611,7 +1670,9 @@ def main():
     # 1. results in
     ingest(plog, today)
     # 2. score what we predicted
-    settle(pending, plog, state)
+    cal = load(CALIB_PATH, {"note": "Every graded model lean (all posted props, spreads and totals), bucketed by the model's win chance.",
+                            "buckets": {}, "markets": {}})
+    settle(pending, plog, state, cal)
 
     # 3. slate: yesterday..tomorrow
     slate = []
@@ -1710,6 +1771,7 @@ def main():
                               "model": proj[stat], "matchup": proj["_matchup"][stat],
                               "injury": proj["_injury"][stat], "inj_out": sorted(set(bst["out"])) if bst else [],
                               "sched": proj["_sched"], "sched_notes": proj["_sched_notes"],
+                              "p_over": p_over_for(stat, proj[stat], line, hist),
                               "dk": line, "over": over_px, "under": under_px})
             if fresh:
                 pending["props"][eid] = fresh
@@ -1727,7 +1789,8 @@ def main():
                 if proj and p["stat"] in proj:
                     p.update(opp=opp, model=proj[p["stat"]], matchup=proj["_matchup"][p["stat"]],
                              injury=proj["_injury"][p["stat"]], inj_out=sorted(set(bst["out"])) if bst else [],
-                             sched=proj["_sched"], sched_notes=proj["_sched_notes"])
+                             sched=proj["_sched"], sched_notes=proj["_sched_notes"],
+                             p_over=p_over_for(p["stat"], proj[p["stat"]], p["dk"], hist))
         for p in pending["props"].get(eid, []):
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
@@ -1743,7 +1806,8 @@ def main():
     potd_alts = prev.get("potd_alts", []) if locked else []
     if todays and locked and not todays.get("locked_at"):
         todays["locked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
-    pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso)
+    paused = paused_markets(cal)
+    pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso, paused)
     add_win_probs(all_cands)
     if not locked:
         potd_alts = new_alts
@@ -1805,13 +1869,14 @@ def main():
                             "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted)"],
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers"],
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
             "potd_history": potd_hist[:400], "potd_alts": potd_alts,
             "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
+            "calibration": {**cal, "paused": paused, "pause_rule": {"min_bets": PAUSE_MIN_BETS, "roi": PAUSE_ROI}},
             "clv": {"potd": clv_summary(potd_hist), "ladder": clv_summary(ladder["steps"]),
                     "all": clv_summary(potd_hist + ladder["steps"])},
             "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
@@ -1826,6 +1891,7 @@ def main():
     assert isinstance(data["games"], list) and isinstance(data["props"], list)
     save(LOG_PATH, plog)
     save(PENDING_PATH, pending)
+    save(CALIB_PATH, cal, indent=1)
     CREDITS.save()
     ladder["steps"] = ladder["steps"][:1000]
     save(LADDER_PATH, ladder, indent=1)
