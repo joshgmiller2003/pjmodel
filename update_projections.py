@@ -27,6 +27,7 @@ LOG_PATH = ROOT / "data" / "player_log.json"
 PENDING_PATH = ROOT / "data" / "pending.json"
 POTD_LOG = ROOT / "data" / "potd_log.json"      # permanent record of every Pick of the Day
 LADDER_PATH = ROOT / "data" / "ladder.json"     # ladder challenge: every step, every attempt
+RECORDS_DIR = ROOT / "data" / "records"         # permanent bet ledger: one file per month + a summary
 LADDER_START = float(os.environ.get("LADDER_START", "10") or 10)
 LADDER_GOAL = float(os.environ.get("LADDER_GOAL", "1000") or 1000)
 ALT_MARKETS = {"player_points_alternate": "PTS", "player_rebounds_alternate": "REB",
@@ -1028,6 +1029,73 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
     return out[:24]
 
 
+# ------------------------------------------------------------------ permanent bet ledger
+def _status(r):
+    return "Pending" if not r else {"W": "Won", "L": "Lost", "P": "Push"}.get(r, r)
+
+
+def ledger_rows(settled_bets, potd_hist, ladder):
+    rows = []
+    for b in settled_bets:
+        rows.append({"id": f"model|{b['date']}|{b['game']}|{b['market']}|{b['side']}", "source": "Model bet",
+                     "date": b["date"], "game": b["game"], "market": b["market"], "pick": b["side"],
+                     "price": b.get("price"), "edge": b.get("edge"), "result": b.get("result"),
+                     "status": _status(b.get("result")), "actual": b.get("actual"), "units": b.get("units"),
+                     "why": f"Model edge of {b.get('edge')} vs the DraftKings line"})
+    for h in potd_hist:
+        rows.append({"id": f"potd|{h['date']}", "source": "Pick of the Day", "date": h["date"], "game": h["game"],
+                     "market": h.get("type", "Prop"), "pick": h.get("label") or f"{h.get('player')} {h.get('side')} {h.get('line')} {h.get('stat')}",
+                     "price": h.get("price"), "edge": h.get("edge"), "confidence": h.get("score"),
+                     "result": h.get("result"), "status": _status(h.get("result")), "actual": h.get("actual"),
+                     "units": h.get("units"), "why": " | ".join(h.get("reasons") or []),
+                     "picked_at": h.get("picked_at"), "graded_at": h.get("graded_at")})
+    for st in ladder.get("steps", []):
+        r = st.get("result")
+        rows.append({"id": f"ladder|{st['attempt']}|{st['day']}|{st['date']}", "source": "Ladder Challenge",
+                     "date": st["date"], "game": st["game"], "market": st.get("type", "Prop"), "pick": st.get("label"),
+                     "price": st.get("price"), "edge": st.get("edge"), "confidence": st.get("score"),
+                     "attempt": st["attempt"], "day": st["day"], "stake": st.get("stake"), "to_win": st.get("to_win"),
+                     "bankroll_after": st.get("bankroll_after"), "win_chance": st.get("p_win"),
+                     "result": r, "status": _status(r), "actual": st.get("actual"),
+                     "units": (rnd(st["stake"] * (decimal(st["price"]) - 1), 2) if r == "W" else -st["stake"] if r == "L" else 0.0) if r else None,
+                     "why": " | ".join([st.get("why_ladder", "")] + (st.get("reasons") or [])).strip(" |"),
+                     "picked_at": st.get("picked_at"), "graded_at": st.get("graded_at")})
+    return rows
+
+
+def update_ledger(settled_bets, potd_hist, ladder, now):
+    """Upsert every bet into data/records/bets_YYYY-MM.json (never deletes) and rebuild summary.json."""
+    RECORDS_DIR.mkdir(parents=True, exist_ok=True)
+    by_month = {}
+    for r in ledger_rows(settled_bets, potd_hist, ladder):
+        by_month.setdefault(r["date"][:7], []).append(r)
+    for month, rows in by_month.items():
+        path = RECORDS_DIR / f"bets_{month}.json"
+        cur = {x["id"]: x for x in load(path, {"bets": []}).get("bets", [])}
+        for r in rows:
+            cur[r["id"]] = {**cur.get(r["id"], {}), **{k: v for k, v in r.items() if v is not None or k not in cur.get(r["id"], {})}}
+        order = {"Pick of the Day": 0, "Ladder Challenge": 1, "Model bet": 2}
+        bets = sorted(cur.values(), key=lambda x: (x["date"], -order.get(x["source"], 9)), reverse=True)
+        save(path, {"month": month, "updated": now.strftime("%Y-%m-%d %I:%M %p ET"), "count": len(bets), "bets": bets}, indent=1)
+    # summary across every month on disk
+    summary, recent = {}, []
+    for f in sorted(RECORDS_DIR.glob("bets_*.json"), reverse=True):
+        data = load(f, {"bets": []})
+        for b in data["bets"]:
+            for key in (("All", b["source"]), (data.get("month", f.stem[5:]), b["source"])):
+                t = summary.setdefault(key[0], {}).setdefault(key[1], {"bets": 0, "won": 0, "lost": 0, "push": 0, "pending": 0, "units": 0.0})
+                t["bets"] += 1
+                t[{"W": "won", "L": "lost", "P": "push"}.get(b.get("result"), "pending")] += 1
+                if b["source"] != "Ladder Challenge":
+                    t["units"] = rnd(t["units"] + (b.get("units") or 0), 2)
+        if len(recent) < 600:
+            recent += data["bets"][:600 - len(recent)]
+    save(RECORDS_DIR / "summary.json", {"updated": now.strftime("%Y-%m-%d %I:%M %p ET"),
+                                        "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
+                                        "by_month": summary}, indent=1)
+    return {"summary": summary, "bets": recent}
+
+
 def settle(pending, plog, state):
     """Score frozen predictions for games that have finished. Updates state in place."""
     names = {}
@@ -1323,6 +1391,8 @@ def main():
     CREDITS.save()
     ladder["steps"] = ladder["steps"][:1000]
     save(LADDER_PATH, ladder, indent=1)
+    records = update_ledger(state["settled_bets"], potd_hist, ladder, now)
+    data["records"] = records
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
     save(ROOT / "player_games.json", build_game_logs(idx, slate, now.strftime("%m/%d %I:%M %p ET")))

@@ -334,6 +334,7 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 .lad-next { text-align: right; }
 @media (max-width: 720px) { .lad-next { text-align: left; } .lad-bank { font-size: 38px; } }
 .rung-row.sug td { background: rgba(92,200,255,0.08); }
+.date-row td { background: var(--surface-2); color: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .3px; padding: 8px 18px !important; }
 .seed-line td { border-bottom: 2px dashed var(--border) !important; }
 @media (max-width: 900px) {
   .today-strip { grid-template-columns: repeat(2, 1fr); }
@@ -398,7 +399,7 @@ nav button:first-child { margin-left: -13px; }
   <button data-tab="playerlog">Game Log</button>
   <button data-tab="hotcold">Hot &amp; Cold</button>
   <button data-tab="standings">Standings &amp; Futures</button>
-  <button data-tab="bankroll">Bankroll</button>
+  <button data-tab="bankroll">Records</button>
   <button data-tab="model">Model</button>
 </nav>
 <div class="container">
@@ -534,16 +535,19 @@ nav button:first-child { margin-left: -13px; }
   </section>
 
   <section id="bankroll" class="tab" style="display:none;">
-    <div class="section-title">Bankroll <small>Every model bet, settled automatically · 1 unit each</small></div>
-    <div class="kpis" id="bankroll-kpis"></div>
-    <div class="card table-wrap" style="margin-bottom:16px;"><table id="bankroll-markets"></table></div>
-    <div class="filters" id="bankroll-filters"></div>
-    <div class="card table-wrap">
-      <table id="bankroll-table">
-        <thead><tr><th>Date</th><th>Game / Market</th><th>Side</th><th>Edge</th><th>Actual</th><th>Result</th><th>Units</th></tr></thead>
-        <tbody></tbody>
-      </table>
+    <div class="section-title">Records <small>Every bet the site makes, saved permanently and graded automatically</small>
+      <button class="btn" style="margin-left:auto;" onclick="downloadRecords()">Download CSV</button></div>
+    <div class="card table-wrap" style="margin-bottom:16px;"><table id="rec-summary"></table></div>
+    <div class="filters" id="rec-source"></div>
+    <div class="filters">
+      <select id="rec-status"><option value="all">All results</option><option>Won</option><option>Lost</option><option>Push</option><option>Pending</option></select>
+      <select id="rec-month"></select>
+      <select id="rec-market"><option value="all">All markets</option></select>
+      <span class="count" id="rec-count" style="margin:0 0 0 6px;"></span>
     </div>
+    <div class="kpis" id="bankroll-kpis"></div>
+    <div class="card table-wrap"><table id="rec-table"></table></div>
+    <p class="note" style="margin-top:12px;">Saved in your repo under <code>data/records/</code>, with one file per month (<code>bets_2026-11.json</code> and so on) plus <code>summary.json</code>. Nothing is ever deleted. Pick of the Day and Model bets are 1 unit each at the posted price; Ladder Challenge steps are tracked in dollars. Click any row to see why the bet was made.</p>
   </section>
 
   <section id="model" class="tab" style="display:none;">
@@ -821,7 +825,7 @@ function renderTodayStrip() {
     <div class="ts hl" onclick="goTab('potd')"><div class="l">Pick of the Day <em>›</em></div><div class="v">${potd ? (potd.label || potd.player) + " " + fmtPrice(potd.price) : "Posts at 11 AM ET"}</div><div class="s">${potd ? (potd.result ? (potd.result === "W" ? "Won" : potd.result === "L" ? "Lost" : "Push") + " · " + (potd.actual || "") : "Confidence " + Math.round(potd.score) + " · " + (potd.type || "Prop")) : "Best bet on the board"}</div></div>
     <div class="ts" onclick="goTab('ladders')"><div class="l">Ladder Challenge <em>›</em></div><div class="v">${L ? m(bank) + (step ? " · Day " + step.day : "") : "Starts with the next update"}</div><div class="s">${step ? step.label + " " + fmtPrice(step.price) : L ? "Attempt #" + L.attempt + " · goal " + m(L.goal) : "$10 → $1,000, one bet a day"}</div></div>
     <div class="ts" onclick="goTab('props')"><div class="l">Player props <em>›</em></div><div class="v">${DATA.props.length.toLocaleString()} lines</div><div class="s">${strong} with an edge of 1+ · ${new Set(DATA.props.map(p => p.game)).size} games</div></div>
-    <div class="ts" onclick="goTab('bankroll')"><div class="l">Slate &amp; record <em>›</em></div><div class="v">${g.length} game${g.length === 1 ? "" : "s"}${live ? " · " + live + " live" : ""}</div><div class="s">Model bets ${rec.wins || 0}-${rec.losses || 0} · ${(rec.units || 0) > 0 ? "+" : ""}${rec.units || 0}u</div></div>`;
+    <div class="ts" onclick="goTab('bankroll')"><div class="l">Slate &amp; records <em>›</em></div><div class="v">${g.length} game${g.length === 1 ? "" : "s"}${live ? " · " + live + " live" : ""}</div><div class="s">Model bets ${rec.wins || 0}-${rec.losses || 0} · ${(rec.units || 0) > 0 ? "+" : ""}${rec.units || 0}u</div></div>`;
 }
 function openGameDetail(idx) {
   const g = activeGames()[idx];
@@ -1124,41 +1128,82 @@ document.querySelectorAll("#best-filters button").forEach(btn => {
   };
 });
 
-// ---------- Bankroll ----------
-var bankFilter = "all";
+// ---------- Records (permanent ledger) ----------
+var recSource = "all";
+function recRows() {
+  const R = DATA.records;
+  if (R && R.bets) return R.bets;
+  // fallback before the first ledger build: assemble from what the page already has
+  const rows = [];
+  (DATA.settled_bets || []).forEach(b => rows.push({source: "Model bet", date: b.date, game: b.game, market: b.market, pick: b.side, edge: b.edge, result: b.result, status: {W: "Won", L: "Lost", P: "Push"}[b.result] || "Pending", actual: b.actual, units: b.units}));
+  (DATA.potd_history || []).map(potdNorm).forEach(h => rows.push({source: "Pick of the Day", date: h.date, game: h.game, market: h.type, pick: h.label, price: h.price, confidence: h.score, result: h.result, status: {W: "Won", L: "Lost", P: "Push"}[h.result] || "Pending", actual: h.actual, units: h.units, why: (h.reasons || []).join(" | ")}));
+  return rows.sort((a, b) => b.date.localeCompare(a.date));
+}
 function renderBankroll() {
-  const bets = DATA.settled_bets || [];
-  const graded = bets.filter(b => b.result === "W" || b.result === "L");
-  const W = graded.filter(b => b.result === "W").length, L = graded.length - W;
-  const units = Math.round(bets.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100;
-  const roi = bets.length ? Math.round(units / bets.length * 1000) / 10 : 0;
-  const last7 = (() => { const cut = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10); const sl = bets.filter(b => b.date >= cut); return Math.round(sl.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100; })();
+  const rows = recRows();
   const sign = v => (v > 0 ? "+" : "") + v;
+  const S = (DATA.records && DATA.records.summary && DATA.records.summary.All) || null;
+  const sources = ["Pick of the Day", "Ladder Challenge", "Model bet"];
+  const agg = src => {
+    if (S && S[src]) return S[src];
+    const a = rows.filter(r => r.source === src);
+    return {bets: a.length, won: a.filter(r => r.result === "W").length, lost: a.filter(r => r.result === "L").length, push: a.filter(r => r.result === "P").length, pending: a.filter(r => !r.result).length, units: Math.round(a.reduce((t, r) => t + (src === "Ladder Challenge" ? 0 : (r.units || 0)), 0) * 100) / 100};
+  };
+  document.getElementById("rec-summary").innerHTML = `<thead><tr><th>All-time</th><th>Bets</th><th>Record</th><th>Win %</th><th>Pending</th><th>Result</th></tr></thead><tbody>` +
+    sources.map(src => { const t = agg(src); const wl = t.won + t.lost; const lad = src === "Ladder Challenge" && DATA.ladder;
+      return `<tr><td><strong>${src === "Model bet" ? "Model bets" : src}</strong></td><td>${t.bets}</td><td>${t.won}-${t.lost}${t.push ? "-" + t.push : ""}</td><td>${wl ? Math.round(100 * t.won / wl) + "%" : "–"}</td><td>${t.pending}</td>
+      <td class="stat ${lad ? "" : t.units > 0 ? "positive" : t.units < 0 ? "negative" : ""}">${lad ? "Attempt #" + DATA.ladder.attempt + " · " + money(DATA.ladder.bankroll) : (wl ? sign(t.units) + "u" : "–")}</td></tr>`; }).join("") + "</tbody>";
+  // filters
+  document.getElementById("rec-source").innerHTML = [["all", "All records"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder Challenge"], ["Model bet", "Model bets"]]
+    .map(([k, l]) => `<button data-k="${k}" class="${k === recSource ? "active" : ""}">${l} <span style="opacity:.6;">${k === "all" ? rows.length : rows.filter(r => r.source === k).length}</span></button>`).join("");
+  document.querySelectorAll("#rec-source button").forEach(b => b.onclick = () => { recSource = b.dataset.k; renderBankroll(); });
+  const months = [...new Set(rows.map(r => r.date.slice(0, 7)))];
+  const mSel = document.getElementById("rec-month"), mk = document.getElementById("rec-market");
+  if (!mSel.options.length) {
+    mSel.innerHTML = `<option value="all">All months</option>` + months.map(m => `<option value="${m}">${new Date(m + "-15").toLocaleDateString([], {month: "long", year: "numeric"})}</option>`).join("");
+    [...new Set(rows.map(r => r.market))].forEach(x => { const o = document.createElement("option"); o.value = x; o.textContent = x; mk.appendChild(o); });
+    ["rec-status", "rec-month", "rec-market"].forEach(id => document.getElementById(id).onchange = renderBankroll);
+  }
+  const st = document.getElementById("rec-status").value, mo = mSel.value, mt = mk.value;
+  const list = rows.filter(r => (recSource === "all" || r.source === recSource) && (st === "all" || r.status === st) && (mo === "all" || r.date.startsWith(mo)) && (mt === "all" || r.market === mt));
+  window._recList = list;
+  document.getElementById("rec-count").textContent = `${list.length} bet${list.length === 1 ? "" : "s"}`;
+  // KPIs for the current view
+  const g = list.filter(r => r.result === "W" || r.result === "L"), w = g.filter(r => r.result === "W").length;
+  const unitRows = list.filter(r => r.source !== "Ladder Challenge" && r.result);
+  const u = Math.round(unitRows.reduce((t, r) => t + (r.units || 0), 0) * 100) / 100;
+  let streak = "–"; if (g.length) { const r0 = g[0].result; let n = 0; for (const r of g) { if (r.result === r0) n++; else break; } streak = r0 + n; }
   document.getElementById("bankroll-kpis").innerHTML = `
-    <div class="kpi"><div class="l">Record</div><div class="v">${W}-${L}</div><div class="s">${graded.length ? Math.round(100 * W / graded.length) : 0}% win rate</div></div>
-    <div class="kpi"><div class="l">Units</div><div class="v ${units >= 0 ? "positive" : "negative"}">${sign(units)}</div><div class="s">${bets.length} bets</div></div>
-    <div class="kpi"><div class="l">ROI</div><div class="v ${roi >= 0 ? "positive" : "negative"}">${sign(roi)}%</div><div class="s">per unit risked</div></div>
-    <div class="kpi"><div class="l">Last 7 days</div><div class="v ${last7 >= 0 ? "positive" : "negative"}">${sign(last7)}u</div><div class="s">units</div></div>`;
-  const groups = {};
-  bets.forEach(b => { const k = b.market === "Player Prop" ? "Prop · " + (b.side.split(" ").pop()) : b.market; (groups[k] = groups[k] || []).push(b); });
-  const rows = Object.entries(groups).map(([k, a]) => { const w = a.filter(b => b.result === "W").length, l = a.filter(b => b.result === "L").length, u = Math.round(a.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100; return {k, w, l, u, n: a.length}; }).sort((a, b) => b.u - a.u);
-  document.getElementById("bankroll-markets").innerHTML = `<thead><tr><th>Market</th><th>Bets</th><th>Record</th><th>Win %</th><th>Units</th><th>ROI</th></tr></thead><tbody>` +
-    (rows.length ? rows.map(r => `<tr><td><strong>${r.k}</strong></td><td>${r.n}</td><td>${r.w}-${r.l}</td><td>${r.w + r.l ? Math.round(100 * r.w / (r.w + r.l)) : 0}%</td><td class="${r.u >= 0 ? "positive" : "negative"}">${sign(r.u)}</td><td class="${r.u >= 0 ? "positive" : "negative"}">${sign(Math.round(r.u / r.n * 1000) / 10)}%</td></tr>`).join("")
-      : '<tr><td colspan="6" style="color:var(--muted);text-align:center;padding:22px;">No settled bets yet. Results post here automatically after games finish.</td></tr>') + "</tbody>";
-  const kinds = ["all", "Spread", "Total", "Player Prop"];
-  document.getElementById("bankroll-filters").innerHTML = kinds.map(k => `<button data-k="${k}" class="${k === bankFilter ? "active" : ""}">${k === "all" ? "All bets" : k === "Player Prop" ? "Props" : k}</button>`).join("");
-  document.querySelectorAll("#bankroll-filters button").forEach(b => b.onclick = () => { bankFilter = b.dataset.k; renderBankroll(); });
-  const list = bets.filter(b => bankFilter === "all" || b.market === bankFilter).slice(0, 200);
-  document.querySelector("#bankroll-table tbody").innerHTML = list.length ? list.map(b => `
-    <tr>
-      <td class="team" style="font-size:12px;white-space:nowrap;">${b.date}</td>
-      <td>${b.game}<div class="team">${b.market}</div></td>
-      <td>${b.side}</td>
-      <td class="stat ${b.edge > 0 ? "positive" : "negative"}">${b.edge > 0 ? "+" : ""}${b.edge}</td>
-      <td class="team" style="font-size:12px;">${b.actual || ""}</td>
-      <td><span class="pill ${b.result === "W" ? "over" : b.result === "L" ? "under" : "pass"}">${b.result === "W" ? "Win" : b.result === "L" ? "Loss" : "Push"}</span></td>
-      <td class="stat ${b.units > 0 ? "positive" : b.units < 0 ? "negative" : ""}">${b.units > 0 ? "+" : ""}${b.units}</td>
-    </tr>`).join("") : '<tr><td colspan="7" style="color:var(--muted);text-align:center;padding:22px;">No bets in this view yet.</td></tr>';
+    <div class="kpi"><div class="l">Record</div><div class="v">${w}-${g.length - w}</div><div class="s">${g.length ? Math.round(100 * w / g.length) : 0}% win rate</div></div>
+    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${unitRows.length ? sign(u) : "–"}</div><div class="s">${unitRows.length ? "ROI " + sign(Math.round(u / unitRows.length * 1000) / 10) + "%" : "Model bets and POTD"}</div></div>
+    <div class="kpi"><div class="l">Pending</div><div class="v">${list.filter(r => !r.result).length}</div><div class="s">graded after games finish</div></div>
+    <div class="kpi"><div class="l">Streak</div><div class="v ${/^W/.test(streak) ? "positive" : /^L/.test(streak) ? "negative" : ""}">${streak}</div><div class="s">in this view</div></div>`;
+  // grouped table
+  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : "Ladder"}</span>`;
+  let html = `<thead><tr><th>Type</th><th>Pick</th><th>Game</th><th>Market</th><th>Result</th><th>Final</th><th>Units / $</th></tr></thead><tbody>`, last = "", i = 0;
+  list.slice(0, 400).forEach(r => {
+    if (r.date !== last) { last = r.date; html += `<tr class="date-row"><td colspan="7">${new Date(r.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "long", day: "numeric", year: "numeric"})}</td></tr>`; }
+    const money$ = r.source === "Ladder Challenge" ? (r.result === "W" ? `<span class="positive">+${money(r.units)}</span>` : r.result === "L" ? `<span class="negative">-${money(r.stake)}</span>` : `${money(r.stake || 0)} stake`) : (r.units != null && r.result ? `<span class="${r.units > 0 ? "positive" : r.units < 0 ? "negative" : ""}">${sign(r.units)}u</span>` : "–");
+    html += `<tr class="rec-row" data-i="${i}" style="cursor:pointer;"><td>${tag(r.source)}${r.source === "Ladder Challenge" ? `<div class="team" style="margin-top:3px;">#${r.attempt} · Day ${r.day}</div>` : ""}</td>
+      <td><strong>${r.pick}</strong> ${r.price != null ? `<span class="price">${fmtPrice(r.price)}</span>` : ""}</td>
+      <td class="team" style="font-size:12px;">${(r.game || "").replace("@", " @ ")}</td><td class="team" style="font-size:12px;">${r.market}</td>
+      <td>${resultPill(r)}</td><td class="team" style="font-size:12px;">${r.actual || "–"}</td><td class="stat">${money$}</td></tr>
+      <tr class="rec-why" data-i="${i}" style="display:none;"><td colspan="7" style="background:var(--bg);">
+        ${r.why ? `<ul class="potd-why" style="margin:4px 0;">${r.why.split(" | ").filter(Boolean).map(x => `<li>${x}</li>`).join("")}</ul>` : '<span class="note">No reasoning saved for this bet.</span>'}
+        <div class="note">${[r.confidence != null ? "Confidence " + Math.round(r.confidence) : "", r.win_chance != null ? "Win chance " + r.win_chance + "%" : "", r.edge != null ? "Edge " + r.edge : "", r.picked_at ? "Picked " + r.picked_at : "", r.graded_at ? "Graded " + r.graded_at : ""].filter(Boolean).join(" · ")}</div></td></tr>`;
+    i++;
+  });
+  if (!list.length) html += '<tr><td colspan="7" class="note" style="padding:22px;text-align:center;">No bets in this view yet.</td></tr>';
+  document.getElementById("rec-table").innerHTML = html + "</tbody>";
+  document.querySelectorAll("#rec-table .rec-row").forEach(r => r.onclick = () => { const w = document.querySelector(`#rec-table .rec-why[data-i="${r.dataset.i}"]`); w.style.display = w.style.display === "none" ? "" : "none"; });
+}
+function downloadRecords() {
+  const list = window._recList || recRows();
+  const q = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const cols = ["date", "source", "market", "pick", "price", "game", "status", "actual", "units", "stake", "bankroll_after", "attempt", "day", "confidence", "win_chance", "edge", "why", "picked_at", "graded_at"];
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([[cols.join(",")].concat(list.map(r => cols.map(c => q(r[c])).join(","))).join("\n")], {type: "text/csv"}));
+  a.download = "pj_model_records.csv"; a.click();
 }
 
 // ---------- Model ----------
