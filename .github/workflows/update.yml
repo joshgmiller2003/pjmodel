@@ -1,0 +1,64 @@
+name: Update projections
+
+on:
+  schedule:
+    # 1:00 AM ET and 11:00 AM ET. Each is listed at both the EST and EDT UTC hours;
+    # the gate job below lets only the one that matches the real ET hour through.
+    - cron: "0 5,6 * * *"
+    - cron: "0 15,16 * * *"
+  workflow_dispatch:        # run by hand from the Actions tab any time
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-projections
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - id: check
+        run: |
+          H=$(TZ=America/New_York date +%H)
+          echo "ET hour is $H"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "01" ] || [ "$H" = "11" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  update:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run model
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python update_projections.py
+
+      - name: Sanity-check output
+        run: python -c "import json; d=json.load(open('projections_data.json')); assert d.get('games') is not None and d.get('props') is not None; print('ok', d.get('generated_at'))"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "pj-model-bot"
+          git config user.email "pj-model-bot@users.noreply.github.com"
+          git add projections_data.json player_games.json data
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "Update $(date -u +%F-%H%M)"
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push
