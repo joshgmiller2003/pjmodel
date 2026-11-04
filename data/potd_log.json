@@ -55,13 +55,26 @@
     "Averaging 7.8 over the last 5 and 8.4 over the last 8",
     "Minutes steady: 31 per game over the last 5 (31 over the last 8)",
     "Matchup vs BKN: neutral for RA (defense and pace about league average)",
+    "BKN ranks among the top-10 defenses for RA; he went over 6.5 in 2 of 3 games against that tier",
     "Not on the injury report at pick time"
    ],
    "candidates_considered": 67,
    "p_model": 74.2,
    "p_win": 79.5,
    "ev": 60.6,
-   "picked_at": "2026-11-04 05:30 PM ET"
+   "picked_at": "2026-11-04 05:47 PM ET",
+   "first_picked_at": "2026-11-04 05:30 PM ET",
+   "open_line": 6.5,
+   "open_price": 102,
+   "close_line": 6.5,
+   "close_price": 102,
+   "close_at": "2026-11-04 05:47 PM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
   }
  ]
 }
