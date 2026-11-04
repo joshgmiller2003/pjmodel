@@ -34,10 +34,13 @@ ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
+DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "150") or 150)   # hard cap per ET day
+ODDS_RESET_DAY = int(os.environ.get("ODDS_RESET_DAY", "1") or 1)               # day of month the plan resets
+CREDITS_PATH = Path(__file__).resolve().parent / "data" / "credits.json"
 
 PROP_MARKETS = {
     "player_points": "PTS", "player_rebounds": "REB", "player_assists": "AST",
-    "player_threes": "3PM", "player_blocks": "BLK", "player_steals": "STL",
+    "player_threes": "3PM",
     "player_points_rebounds_assists": "PRA", "player_points_rebounds": "PR",
     "player_points_assists": "PA", "player_rebounds_assists": "RA",
 }
@@ -76,6 +79,74 @@ def get(url, **params):
             log(f"request error {url}: {e}")
         time.sleep(2 * (i + 1))
     return None
+
+
+class Credits:
+    """Hard daily budget for The Odds API. Every paid call goes through spend()."""
+
+    def __init__(self, now):
+        self.now = now
+        self.day = now.date().isoformat()
+        st = load(CREDITS_PATH, {})
+        self.state = st if st.get("date") == self.day else {"date": self.day, "used_today": 0, "calls": [],
+                                                              "remaining": st.get("remaining"), "history": st.get("history", [])}
+        self.state["limit"] = DAILY_CREDIT_LIMIT
+        self.skipped = []
+
+    def days_to_reset(self):
+        d = self.now.date()
+        nxt = d.replace(day=min(ODDS_RESET_DAY, 28))
+        if nxt <= d:
+            nxt = (nxt.replace(day=1) + timedelta(days=32)).replace(day=min(ODDS_RESET_DAY, 28))
+        return max(1, (nxt - d).days)
+
+    def allowance(self):
+        """What is still allowed today: the daily cap, and never more than an even share of what is left in the plan."""
+        left_today = DAILY_CREDIT_LIMIT - self.state["used_today"]
+        rem = self.state.get("remaining")
+        if rem is not None:
+            # even share of the plan: what was left at the start of today, split over the days until it resets
+            share = (int(rem) + self.state["used_today"]) // self.days_to_reset() - self.state["used_today"]
+            left_today = min(left_today, share, int(rem))
+        return max(0, left_today)
+
+    def spend(self, url, est, label, **params):
+        if not ODDS_KEY:
+            return None
+        if est > self.allowance():
+            self.skipped.append(label)
+            log(f"credits: skipped {label} (needs ~{est}, {self.allowance()} left today)")
+            return None
+        try:
+            r = S.get(url, params={**params, "apiKey": ODDS_KEY}, timeout=25)
+        except requests.RequestException as e:
+            log(f"odds request error {label}: {e}")
+            return None
+        cost = int(num(r.headers.get("x-requests-last", est)))
+        rem = r.headers.get("x-requests-remaining")
+        self.state["used_today"] += cost
+        if rem is not None:
+            self.state["remaining"] = int(num(rem))
+        self.state["calls"].append({"time": datetime.now(ET).strftime("%I:%M %p"), "call": label, "cost": cost})
+        if r.status_code != 200:
+            log(f"odds HTTP {r.status_code} for {label}")
+            return None
+        try:
+            return r.json()
+        except ValueError:
+            return None
+
+    def save(self):
+        st = self.state
+        st["calls"] = st["calls"][-80:]
+        hist = [h for h in st.get("history", []) if h["date"] != self.day]
+        hist.insert(0, {"date": self.day, "used": st["used_today"], "limit": DAILY_CREDIT_LIMIT})
+        st["history"] = hist[:60]
+        st["days_to_reset"] = self.days_to_reset()
+        save(CREDITS_PATH, st, indent=1)
+
+
+CREDITS = None
 
 
 def load(path, default):
@@ -311,7 +382,7 @@ def odds_props(slate, plog_idx):
     """DraftKings player-prop lines via the-odds-api.com. Returns {event_id: [(player, stat, line)]}."""
     if not ODDS_KEY:
         return {}
-    evs = get(f"{ODDS}/events", apiKey=ODDS_KEY)
+    evs = CREDITS.spend(f"{ODDS}/events", 0, "event list")
     if not evs:
         return {}
     name_to_abbr = {}
@@ -329,8 +400,8 @@ def odds_props(slate, plog_idx):
         if not oid or used >= MAX_PROP_EVENTS:
             continue
         used += 1
-        j = get(f"{ODDS}/events/{oid}/odds", apiKey=ODDS_KEY, regions="us", bookmakers="draftkings",
-                markets=",".join(PROP_MARKETS), oddsFormat="american")
+        j = CREDITS.spend(f"{ODDS}/events/{oid}/odds", len(PROP_MARKETS), f"props {g['away']}@{g['home']}",
+                          regions="us", bookmakers="draftkings", markets=",".join(PROP_MARKETS), oddsFormat="american")
         found = {}
         for bk in (j or {}).get("bookmakers", []):
             for m in bk.get("markets", []):
@@ -353,8 +424,8 @@ def odds_game_lines():
     """DraftKings spread/total/moneyline for every NBA game in one call. {(away_name, home_name): lines}"""
     if not ODDS_KEY:
         return {}
-    j = get(f"{ODDS}/odds", apiKey=ODDS_KEY, regions="us", bookmakers="draftkings",
-            markets="h2h,spreads,totals", oddsFormat="american")
+    j = CREDITS.spend(f"{ODDS}/odds", 3, "game lines", regions="us", bookmakers="draftkings",
+                      markets="h2h,spreads,totals", oddsFormat="american")
     out = {}
     for e in j or []:
         h, a = NAME_FIX.get(e["home_team"], e["home_team"]), NAME_FIX.get(e["away_team"], e["away_team"])
@@ -404,8 +475,8 @@ def fetch_futures():
     """NBA championship odds. DraftKings when it is listed, otherwise the first US book."""
     if not ODDS_KEY:
         return None
-    j = get("https://api.the-odds-api.com/v4/sports/basketball_nba_championship_winner/odds", apiKey=ODDS_KEY,
-            regions="us", markets="outrights", oddsFormat="american")
+    j = CREDITS.spend("https://api.the-odds-api.com/v4/sports/basketball_nba_championship_winner/odds", 1,
+                      "championship odds", regions="us", markets="outrights", oddsFormat="american")
     books = [bk for e in (j or []) for bk in e.get("bookmakers", [])]
     log(f"futures: {len(books)} books ({', '.join(b.get('key', '') for b in books[:6])})")
     if not books:
@@ -799,6 +870,10 @@ def settle(pending, plog, state):
 # -------------------------------------------------------------------- main
 def main():
     now = datetime.now(ET)
+    global CREDITS
+    CREDITS = Credits(now)
+    slot = "overnight" if now.hour < 6 else ("pretip" if now.hour >= 17 else "morning")
+    log(f"run slot: {slot}; daily credit limit {DAILY_CREDIT_LIMIT}, used so far today {CREDITS.state['used_today']}")
     today = now.date()
     prev = load(OUT, {})
     plog = load(LOG_PATH, {"games": {}, "through": None})
@@ -849,15 +924,22 @@ def main():
         injuries = prev.get("injuries", [])
     out_set = {(norm(i["player"])) for i in injuries if i["status"].lower() == "out"}
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
-    prop_lines = odds_props(upcoming, idx) if upcoming else {}
+    # Spend in priority order: game lines (3) -> props for today's games, earliest tip first -> futures (once a day).
+    # Overnight runs skip props: most lines are not posted yet and they move before tip-off.
     gml = odds_game_lines() if upcoming else {}
+    def tip(g):
+        m = re.match(r"(\d+):(\d+) (AM|PM)", g["time"])
+        return (int(m.group(1)) % 12 + (12 if m.group(3) == "PM" else 0)) * 60 + int(m.group(2)) if m else 9999
+    todays_up = sorted([g for g in upcoming if g["date"] == t_iso], key=tip)
+    prop_lines = odds_props(todays_up, idx) if (todays_up and slot != "overnight") else {}
     for g in upcoming:
         hit = gml.get((NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])))
         if hit:
             g["_lines"] = {**hit, "provider": "DraftKings"}
     rest = team_rest(plog, slate)
     standings = fetch_standings() or prev.get("standings")
-    futures = fetch_futures() or prev.get("futures")
+    fut_fresh = (prev.get("futures") or {}).get("updated", "")[:5] == now.strftime("%m/%d")
+    futures = (None if fut_fresh else fetch_futures()) or prev.get("futures")
 
     games, props = [], []
     for g in slate:
@@ -969,6 +1051,10 @@ def main():
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
             "potd_history": potd_hist[:400], "potd_alts": potd_alts,
+            "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
+                        "allowed_now": CREDITS.allowance(), "skipped": CREDITS.skipped, "slot": slot,
+                        "calls": CREDITS.state["calls"][-20:], "history": CREDITS.state.get("history", [])[:14],
+                        "days_to_reset": CREDITS.days_to_reset()},
             "futures": {"title": futures, "book": futures[0].get("book", ""), "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
@@ -976,6 +1062,7 @@ def main():
     assert isinstance(data["games"], list) and isinstance(data["props"], list)
     save(LOG_PATH, plog)
     save(PENDING_PATH, pending)
+    CREDITS.save()
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
     save(ROOT / "player_games.json", build_game_logs(idx, slate, now.strftime("%m/%d %I:%M %p ET")))
