@@ -753,7 +753,8 @@ function calcEV(pOverPct, odds = -110) {
 // Snapshot current predictions into history (called on load and after updates)
 var residualsApplied = false;
 function applyResiduals() {
-  if (residualsApplied) return;
+  // The update script now applies the learning adjustment itself (same number for the page, picks and grading).
+  if (residualsApplied || DATA.props.some(p => p.base != null)) { residualsApplied = true; return; }
   const alpha = DATA.residuals.alpha || 0.35;
   DATA.props.forEach(p => {
     const key = p.player + "|" + p.stat;

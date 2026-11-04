@@ -991,7 +991,11 @@ def track_clv(entries, games, props, slate, now):
     took it, in points of implied probability. Beating the close over time is the best sign of real edges."""
     status = {g["event_id"]: g["status"] for g in slate}
     for e in entries:
-        if e.get("result") or not e.get("price"):
+        if e.get("result"):
+            if e.get("clv") and not e["clv"].get("final"):
+                e["clv"]["final"] = True              # graded: the last line we saw before tip is the close
+            continue
+        if not e.get("price"):
             continue
         e.setdefault("open_line", e.get("line"))
         e.setdefault("open_price", e.get("price"))
@@ -1031,6 +1035,17 @@ def carry_open(new, old):
                 new[k] = old[k]
         new.setdefault("first_picked_at", old.get("first_picked_at") or old.get("picked_at"))
     return new
+
+
+def with_residual(state, player, stat, base):
+    """Learning loop: nudge a projection by the player's recent miss on that stat (alpha fades as games are
+    learned), capped at +/-15% so it can never swing a line drastically. Done here, once, so the page, the picks
+    and the grading all use the same number."""
+    res = state["residuals"]["player"].get(f"{player}|{stat}", 0.0)
+    a = state["residuals"].get("alpha", 0.35)
+    if not res or abs(res) <= 0.1:
+        return base
+    return rnd(base + max(-0.15 * base, min(0.15 * base, a * res)))
 
 
 def p_over_for(stat, mean, line, hist):
@@ -1705,6 +1720,7 @@ def settle(pending, plog, state, cal=None):
     for eid, g in plog["games"].items():
         names[eid] = {norm(p["n"]): p for p in g["players"]}
     done = []
+    state["_n_before"] = len(state["settled_bets"])
     for eid, pg in pending["games"].items():
         lg = plog["games"].get(eid)
         if not lg or pg.get("settled"):
@@ -1753,7 +1769,7 @@ def settle(pending, plog, state, cal=None):
                 continue
             key = f'{p["player"]}|{p["stat"]}'
             old = state["residuals"]["player"].get(key, 0.0)
-            state["residuals"]["player"][key] = rnd((1 - RES_BETA) * old + RES_BETA * (actual - p["model"]), 2)
+            state["residuals"]["player"][key] = rnd((1 - RES_BETA) * old + RES_BETA * (actual - p.get("base", p["model"])), 2)
             edge = p["model"] - p["dk"]
             if cal is not None and edge and p.get("p_over") is not None and actual != p["dk"]:
                 lean_over = edge > 0
@@ -1784,6 +1800,7 @@ def settle(pending, plog, state, cal=None):
         state["residuals"]["games_learned"] += 1
         pg["settled"] = True
         done.append(eid)
+    state["new_bets"] = state["settled_bets"][:len(state["settled_bets"]) - state.get("_n_before", 0)]
     state["settled_bets"] = state["settled_bets"][:500]
     state["accuracy"] = state["accuracy"][:1000]
     log(f"settled {len(done)} games")
@@ -1821,6 +1838,7 @@ def main():
     cal = load(CALIB_PATH, {"note": "Every graded model lean (all posted props, spreads and totals), bucketed by the model's win chance.",
                             "buckets": {}, "markets": {}})
     settle(pending, plog, state, cal)
+    state["residuals"]["alpha"] = rnd(0.12 + 0.33 * math.exp(-state["residuals"]["games_learned"] / 60), 3)
 
     # 3. slate: yesterday..tomorrow
     slate = []
@@ -1915,11 +1933,12 @@ def main():
                 proj = project_player(hist, dfn, opp, bst, sched_ctx(row, team))
                 if not proj or stat not in proj:
                     continue
+                mdl = with_residual(state, hist[-1]["n"], stat, proj[stat])
                 fresh.append({"player": hist[-1]["n"], "team": team, "opp": opp, "game": g["id"], "stat": stat,
-                              "model": proj[stat], "matchup": proj["_matchup"][stat],
+                              "model": mdl, "base": proj[stat], "matchup": proj["_matchup"][stat],
                               "injury": proj["_injury"][stat], "inj_out": sorted(set(bst["out"])) if bst else [],
                               "sched": proj["_sched"], "sched_notes": proj["_sched_notes"],
-                              "p_over": p_over_for(stat, proj[stat], line, hist),
+                              "p_over": p_over_for(stat, mdl, line, hist),
                               "dk": line, "over": over_px, "under": under_px})
             if fresh:
                 pending["props"][eid] = fresh
@@ -1935,10 +1954,11 @@ def main():
                 bst = boosts.get(norm(p["player"]))
                 proj = project_player(hist, dfn, opp, bst, sched_ctx(row, p["team"]))
                 if proj and p["stat"] in proj:
-                    p.update(opp=opp, model=proj[p["stat"]], matchup=proj["_matchup"][p["stat"]],
+                    p.update(opp=opp, model=with_residual(state, p["player"], p["stat"], proj[p["stat"]]), base=proj[p["stat"]],
+                             matchup=proj["_matchup"][p["stat"]],
                              injury=proj["_injury"][p["stat"]], inj_out=sorted(set(bst["out"])) if bst else [],
                              sched=proj["_sched"], sched_notes=proj["_sched_notes"],
-                             p_over=p_over_for(p["stat"], proj[p["stat"]], p["dk"], hist))
+                             p_over=p_over_for(p["stat"], p["model"], p["dk"], hist))
         for p in pending["props"].get(eid, []):
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
@@ -2045,7 +2065,7 @@ def main():
     CREDITS.save()
     ladder["steps"] = ladder["steps"][:1000]
     save(LADDER_PATH, ladder, indent=1)
-    records = update_ledger(state["settled_bets"], potd_hist, ladder, now)
+    records = update_ledger(state.get("new_bets", []) + state["settled_bets"], potd_hist, ladder, now)
     data["records"] = records
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
