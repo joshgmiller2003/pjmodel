@@ -1898,6 +1898,8 @@ def main():
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
     # Spend in priority order: game lines (3) -> props for today's games, earliest tip first -> futures (once a day).
     # Overnight runs skip props: most lines are not posted yet and they move before tip-off.
+    if upcoming and slot != "overnight" and ODDS_KEY:
+        CREDITS.spend(f"{ODDS}/events", 0, "balance check")   # free call: reads the key's real balance before any paid call
     gml = odds_game_lines() if (upcoming and slot != "overnight") else {}   # 1 AM lines move before anyone bets them
     def tip(g):
         m = re.match(r"(\d+):(\d+) (AM|PM)", g["time"])
