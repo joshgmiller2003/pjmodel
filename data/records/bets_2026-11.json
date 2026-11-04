@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-04 01:11 PM ET",
+ "updated": "2026-11-04 05:02 PM ET",
  "count": 2,
  "bets": [
   {
@@ -25,24 +25,24 @@
    "id": "ladder|1|1|2026-11-04",
    "source": "Ladder Challenge",
    "date": "2026-11-04",
-   "game": "MIN@HOU",
+   "game": "PHI@DET",
    "market": "Prop",
-   "pick": "Jaden McDaniels Over 7.5 RA",
-   "price": -134,
-   "edge": 2.1,
-   "confidence": 92.1,
+   "pick": "Tyrese Maxey Over 23.5 PTS",
+   "price": -113,
+   "edge": 3.9,
+   "confidence": 84.9,
    "attempt": 1,
    "day": 1,
    "stake": 10.0,
-   "to_win": 7.46,
+   "to_win": 8.85,
    "bankroll_after": null,
-   "win_chance": 83.6,
+   "win_chance": 82.9,
    "result": null,
    "status": "Pending",
    "actual": null,
    "units": null,
-   "why": "Highest win chance on the board at a ladder-friendly price: 83.6% to win, +46% expected value | Model projects 9.6 RA vs a line of 7.5 (+2.1, 28% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 9.8 over the last 5 and 9.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Not on the injury report at pick time",
-   "picked_at": "2026-11-04 01:11 PM ET",
+   "why": "Highest win chance on the board at a ladder-friendly price: 82.9% to win, +56.3% expected value | Model projects 27.4 PTS vs a line of 23.5 (+3.9, 17% edge) | Went over the line in 8 of his last 8 games (5/5 in the last 5) | Averaging 29.4 over the last 5 and 29.1 over the last 8 | Minutes steady: 36 per game over the last 5 (38 over the last 8) | Matchup vs DET: -5.2% to his PTS projection from their defense and pace (works against the over) | Not on the injury report at pick time",
+   "picked_at": "2026-11-04 05:02 PM ET",
    "graded_at": null
   }
  ]
