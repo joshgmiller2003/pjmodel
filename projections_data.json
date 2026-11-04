@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T16:44:39Z",
+ "generated_at": "2026-11-04T16:55:29Z",
  "season": "2026-27",
  "games": [
   {
@@ -42,7 +42,7 @@
     "ml_away": 0.42
    },
    "dk": {
-    "spread": "+3.5",
+    "spread": "+2.5",
     "total": 232.5,
     "ml_away": "-154",
     "ml_home": "+130"
@@ -52,7 +52,7 @@
     "away": 1,
     "home": 1
    },
-   "spread_edge": 6.0,
+   "spread_edge": 5.0,
    "total_edge": -7.4,
    "note": "Model WAS -2.5, total 225.1; leans WAS vs the market spread."
   },
@@ -152,8 +152,8 @@
    "dk": {
     "spread": "-6.5",
     "total": 228.5,
-    "ml_away": "+200",
-    "ml_home": "-242"
+    "ml_away": "+191",
+    "ml_home": "-230"
    },
    "status": "Upcoming",
    "rest": {
@@ -15771,7 +15771,7 @@
    "game": "ATL@WAS"
   }
  ],
- "injuries_updated": "11/04 11:44 AM ET",
+ "injuries_updated": "11/04 11:55 AM ET",
  "residuals": {
   "player": {},
   "team": [],
@@ -17856,6 +17856,351 @@
      "edge": -4.8
     }
    ]
+  },
+  {
+   "timestamp": "2026-11-04T11:55",
+   "games": [
+    {
+     "id": "PHI@DET",
+     "matchup": "PHI @ DET",
+     "model_spread": -3.6,
+     "model_total": 220.7,
+     "dk_spread": "-2.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@WAS",
+     "matchup": "ATL @ WAS",
+     "model_spread": -2.5,
+     "model_total": 225.1,
+     "dk_spread": "+2.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "MIL@BOS",
+     "matchup": "MIL @ BOS",
+     "model_spread": -6.7,
+     "model_total": 228.2,
+     "dk_spread": "-11.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CHA@BKN",
+     "matchup": "CHA @ BKN",
+     "model_spread": -3.1,
+     "model_total": 220.0,
+     "dk_spread": "+3.5",
+     "dk_total": 213.5
+    },
+    {
+     "id": "CHI@NYK",
+     "matchup": "CHI @ NYK",
+     "model_spread": -6.4,
+     "model_total": 226.7,
+     "dk_spread": "-12.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "IND@MEM",
+     "matchup": "IND @ MEM",
+     "model_spread": -6.3,
+     "model_total": 228.4,
+     "dk_spread": "-6.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "UTA@NOP",
+     "matchup": "UTA @ NOP",
+     "model_spread": -5.5,
+     "model_total": 230.1,
+     "dk_spread": "-5.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "CLE@OKC",
+     "matchup": "CLE @ OKC",
+     "model_spread": -1.5,
+     "model_total": 226.3,
+     "dk_spread": "-3.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIN@HOU",
+     "matchup": "MIN @ HOU",
+     "model_spread": -2.7,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "TOR@DEN",
+     "matchup": "TOR @ DEN",
+     "model_spread": -0.0,
+     "model_total": 228.2,
+     "dk_spread": "-4.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "POR@PHX",
+     "matchup": "POR @ PHX",
+     "model_spread": 2.1,
+     "model_total": 229.0,
+     "dk_spread": "+3.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "DAL@SAS",
+     "matchup": "DAL @ SAS",
+     "model_spread": -4.5,
+     "model_total": 226.1,
+     "dk_spread": "-12.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "LAL@SAC",
+     "matchup": "LAL @ SAC",
+     "model_spread": 2.8,
+     "model_total": 231.3,
+     "dk_spread": "+12.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@LAC",
+     "matchup": "MIA @ LAC",
+     "model_spread": -1.9,
+     "model_total": 229.6,
+     "dk_spread": "+5.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.4,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Nikola Jokic",
+     "stat": "PRA",
+     "model": 40.2,
+     "dk": 47.5,
+     "edge": -7.3
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 56.5,
+     "dk": 49.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 48.3,
+     "dk": 41.5,
+     "edge": 6.8
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PRA",
+     "model": 8.9,
+     "dk": 15.5,
+     "edge": -6.6
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PR",
+     "model": 7.3,
+     "dk": 13.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 37.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PRA",
+     "model": 13.3,
+     "dk": 19.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 28.5,
+     "dk": 22.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PRA",
+     "model": 19.6,
+     "dk": 25.5,
+     "edge": -5.9
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 48.4,
+     "dk": 42.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 20.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PA",
+     "model": 32.7,
+     "dk": 38.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 40.2,
+     "dk": 34.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PA",
+     "model": 10.9,
+     "dk": 16.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 26.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 37.0,
+     "dk": 42.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PRA",
+     "model": 24.1,
+     "dk": 29.5,
+     "edge": -5.4
+    },
+    {
+     "player": "Marcus Smart",
+     "stat": "PRA",
+     "model": 16.8,
+     "dk": 11.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 36.7,
+     "dk": 31.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PRA",
+     "model": 10.3,
+     "dk": 15.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 37.7,
+     "dk": 32.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PR",
+     "model": 22.3,
+     "dk": 27.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PA",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PTS",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PTS",
+     "model": 11.6,
+     "dk": 16.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PA",
+     "model": 30.6,
+     "dk": 35.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Trevon Brazile",
+     "stat": "PR",
+     "model": 14.4,
+     "dk": 9.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Payton Pritchard",
+     "stat": "PRA",
+     "model": 20.7,
+     "dk": 25.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PA",
+     "model": 7.7,
+     "dk": 12.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PR",
+     "model": 8.7,
+     "dk": 13.5,
+     "edge": -4.8
+    }
+   ]
   }
  ],
  "notes": "Model data updates automatically each day.",
@@ -18360,19 +18705,23 @@
  ],
  "potd_history": [
   {
-   "player": "Jaden McDaniels",
-   "team": "MIN",
-   "game": "MIN@HOU",
-   "stat": "AST",
-   "model": 3.5,
-   "edge": 1.0,
    "date": "2026-11-04",
    "eid": "401909930",
+   "game": "MIN@HOU",
    "time": "8:30 PM ET",
-   "line": 2.5,
+   "home": "HOU",
+   "away": "MIN",
+   "type": "Prop",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "AST",
    "side": "Over",
+   "line": 2.5,
    "price": -120,
+   "model": 3.5,
+   "edge": 1.0,
    "edge_pct": 40.0,
+   "label": "Jaden McDaniels Over 2.5 AST",
    "hits": {
     "l5": [
      5,
@@ -18387,40 +18736,52 @@
      8
     ]
    },
-   "last10": [
-    1.0,
-    3.0,
-    3.0,
-    4.0,
-    4.0,
-    7.0,
-    3.0,
-    3.0
-   ],
+   "chart": {
+    "vals": [
+     1.0,
+     3.0,
+     3.0,
+     4.0,
+     4.0,
+     7.0,
+     3.0,
+     3.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "AST"
+   },
    "score": 94.8,
    "reasons": [
-    "Model projects 3.5 vs a line of 2.5 (+1, 40% edge)",
-    "Went over in 7 of his last 8 games (5/5 in the last 5)",
+    "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge)",
+    "Went over the line in 7 of his last 8 games (5/5 in the last 5)",
     "Averaging 4.2 over the last 5 and 3.5 over the last 8",
-    "Minutes steady: 35 per game over the last 5 (33 over the last 8)"
-   ]
+    "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86,
+   "picked_at": "2026-11-04 11:55 AM ET"
   }
  ],
  "potd_alts": [
   {
-   "player": "Dennis Schroder",
-   "team": "CHA",
-   "game": "CHA@BKN",
-   "stat": "RA",
-   "model": 8.2,
-   "edge": 1.7,
    "date": "2026-11-04",
    "eid": "401909925",
+   "game": "CHA@BKN",
    "time": "7:30 PM ET",
-   "line": 6.5,
+   "home": "BKN",
+   "away": "CHA",
+   "type": "Prop",
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "stat": "RA",
    "side": "Over",
+   "line": 6.5,
    "price": 102,
+   "model": 8.2,
+   "edge": 1.7,
    "edge_pct": 26.2,
+   "label": "Dennis Schroder Over 6.5 RA",
    "hits": {
     "l5": [
      4,
@@ -18435,38 +18796,49 @@
      8
     ]
    },
-   "last10": [
-    10.0,
-    7.0,
-    11.0,
-    7.0,
-    9.0,
-    10.0,
-    10.0,
-    3.0
-   ],
+   "chart": {
+    "vals": [
+     10.0,
+     7.0,
+     11.0,
+     7.0,
+     9.0,
+     10.0,
+     10.0,
+     3.0
+    ],
+    "line": 6.5,
+    "side": "Over",
+    "label": "RA"
+   },
    "score": 92.1,
    "reasons": [
-    "Model projects 8.2 vs a line of 6.5 (+1.7, 26% edge)",
-    "Went over in 7 of his last 8 games (4/5 in the last 5)",
+    "Model projects 8.2 RA vs a line of 6.5 (+1.7, 26% edge)",
+    "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
     "Averaging 7.8 over the last 5 and 8.4 over the last 8",
-    "Minutes steady: 31 per game over the last 5 (31 over the last 8)"
-   ]
+    "Minutes steady: 31 per game over the last 5 (31 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86
   },
   {
-   "player": "Joan Beringer",
-   "team": "MIN",
-   "game": "MIN@HOU",
-   "stat": "REB",
-   "model": 7.3,
-   "edge": 1.8,
    "date": "2026-11-04",
    "eid": "401909930",
+   "game": "MIN@HOU",
    "time": "8:30 PM ET",
-   "line": 5.5,
+   "home": "HOU",
+   "away": "MIN",
+   "type": "Prop",
+   "player": "Joan Beringer",
+   "team": "MIN",
+   "stat": "REB",
    "side": "Over",
+   "line": 5.5,
    "price": -117,
+   "model": 7.3,
+   "edge": 1.8,
    "edge_pct": 32.7,
+   "label": "Joan Beringer Over 5.5 REB",
    "hits": {
     "l5": [
      4,
@@ -18481,38 +18853,102 @@
      8
     ]
    },
-   "last10": [
-    6.0,
-    9.0,
-    6.0,
-    7.0,
-    10.0,
-    4.0,
-    6.0,
-    7.0
-   ],
+   "chart": {
+    "vals": [
+     6.0,
+     9.0,
+     6.0,
+     7.0,
+     10.0,
+     4.0,
+     6.0,
+     7.0
+    ],
+    "line": 5.5,
+    "side": "Over",
+    "label": "REB"
+   },
    "score": 92.1,
    "reasons": [
-    "Model projects 7.3 vs a line of 5.5 (+1.8, 33% edge)",
-    "Went over in 7 of his last 8 games (4/5 in the last 5)",
+    "Model projects 7.3 REB vs a line of 5.5 (+1.8, 33% edge)",
+    "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
     "Averaging 6.8 over the last 5 and 6.9 over the last 8",
-    "Minutes steady: 21 per game over the last 5 (18 over the last 8)"
-   ]
+    "Minutes steady: 21 per game over the last 5 (18 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86
   },
   {
-   "player": "Matisse Thybulle",
-   "team": "LAL",
-   "game": "LAL@SAC",
-   "stat": "REB",
-   "model": 1.7,
-   "edge": -0.8,
+   "date": "2026-11-04",
+   "eid": "401909930",
+   "game": "MIN@HOU",
+   "time": "8:30 PM ET",
+   "home": "HOU",
+   "away": "MIN",
+   "type": "Spread",
+   "team": "MIN",
+   "side": "Cover",
+   "line": 7.5,
+   "price": -110,
+   "model": -2.7,
+   "edge": 4.8,
+   "edge_pct": null,
+   "label": "MIN +7.5",
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     25,
+     22,
+     23,
+     -2,
+     -5,
+     26,
+     -10,
+     12
+    ],
+    "line": -7.5,
+    "side": "Over",
+    "label": "MIN margin"
+   },
+   "score": 92.1,
+   "reasons": [
+    "Model has MIN losing by 2.7; the line is MIN +7.5 (4.8-point edge)",
+    "MIN would have covered +7.5 in 7 of their last 8 games (4/5 in the last 5)",
+    "MIN average margin: +4.2 over the last 5, +11.4 over the last 8"
+   ],
+   "candidates_considered": 86
+  },
+  {
    "date": "2026-11-04",
    "eid": "401909934",
+   "game": "LAL@SAC",
    "time": "10:00 PM ET",
-   "line": 2.5,
+   "home": "SAC",
+   "away": "LAL",
+   "type": "Prop",
+   "player": "Matisse Thybulle",
+   "team": "LAL",
+   "stat": "REB",
    "side": "Under",
+   "line": 2.5,
    "price": -142,
+   "model": 1.7,
+   "edge": -0.8,
    "edge_pct": 32.0,
+   "label": "Matisse Thybulle Under 2.5 REB",
    "hits": {
     "l5": [
      4,
@@ -18527,38 +18963,49 @@
      8
     ]
    },
-   "last10": [
-    3.0,
-    1.0,
-    1.0,
-    2.0,
-    1.0,
-    3.0,
-    2.0,
-    1.0
-   ],
+   "chart": {
+    "vals": [
+     3.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0,
+     3.0,
+     2.0,
+     1.0
+    ],
+    "line": 2.5,
+    "side": "Under",
+    "label": "REB"
+   },
    "score": 86.9,
    "reasons": [
-    "Model projects 1.7 vs a line of 2.5 (-0.8, 32% edge)",
-    "Went under in 6 of his last 8 games (4/5 in the last 5)",
+    "Model projects 1.7 REB vs a line of 2.5 (-0.8, 32% edge)",
+    "Went under the line in 6 of his last 8 games (4/5 in the last 5)",
     "Averaging 1.8 over the last 5 and 1.8 over the last 8",
-    "Minutes steady: 24 per game over the last 5 (24 over the last 8)"
-   ]
+    "Minutes steady: 24 per game over the last 5 (24 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86
   },
   {
-   "player": "Tyrese Maxey",
-   "team": "PHI",
-   "game": "PHI@DET",
-   "stat": "PTS",
-   "model": 27.4,
-   "edge": 3.9,
    "date": "2026-11-04",
    "eid": "401909922",
+   "game": "PHI@DET",
    "time": "7:00 PM ET",
-   "line": 23.5,
+   "home": "DET",
+   "away": "PHI",
+   "type": "Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "stat": "PTS",
    "side": "Over",
+   "line": 23.5,
    "price": -113,
+   "model": 27.4,
+   "edge": 3.9,
    "edge_pct": 16.6,
+   "label": "Tyrese Maxey Over 23.5 PTS",
    "hits": {
     "l5": [
      5,
@@ -18573,38 +19020,49 @@
      8
     ]
    },
-   "last10": [
-    28.0,
-    32.0,
-    26.0,
-    29.0,
-    27.0,
-    27.0,
-    38.0,
-    26.0
-   ],
+   "chart": {
+    "vals": [
+     28.0,
+     32.0,
+     26.0,
+     29.0,
+     27.0,
+     27.0,
+     38.0,
+     26.0
+    ],
+    "line": 23.5,
+    "side": "Over",
+    "label": "PTS"
+   },
    "score": 84.9,
    "reasons": [
-    "Model projects 27.4 vs a line of 23.5 (+3.9, 17% edge)",
-    "Went over in 8 of his last 8 games (5/5 in the last 5)",
+    "Model projects 27.4 PTS vs a line of 23.5 (+3.9, 17% edge)",
+    "Went over the line in 8 of his last 8 games (5/5 in the last 5)",
     "Averaging 29.4 over the last 5 and 29.1 over the last 8",
-    "Minutes steady: 36 per game over the last 5 (38 over the last 8)"
-   ]
+    "Minutes steady: 36 per game over the last 5 (38 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86
   },
   {
-   "player": "Grayson Allen",
-   "team": "CHA",
-   "game": "CHA@BKN",
-   "stat": "PTS",
-   "model": 14.5,
-   "edge": 4.0,
    "date": "2026-11-04",
    "eid": "401909925",
+   "game": "CHA@BKN",
    "time": "7:30 PM ET",
-   "line": 10.5,
+   "home": "BKN",
+   "away": "CHA",
+   "type": "Prop",
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "stat": "PTS",
    "side": "Over",
+   "line": 10.5,
    "price": -118,
+   "model": 14.5,
+   "edge": 4.0,
    "edge_pct": 38.1,
+   "label": "Grayson Allen Over 10.5 PTS",
    "hits": {
     "l5": [
      3,
@@ -18619,23 +19077,30 @@
      8
     ]
    },
-   "last10": [
-    21.0,
-    11.0,
-    20.0,
-    15.0,
-    9.0,
-    5.0,
-    27.0,
-    11.0
-   ],
+   "chart": {
+    "vals": [
+     21.0,
+     11.0,
+     20.0,
+     15.0,
+     9.0,
+     5.0,
+     27.0,
+     11.0
+    ],
+    "line": 10.5,
+    "side": "Over",
+    "label": "PTS"
+   },
    "score": 84.2,
    "reasons": [
-    "Model projects 14.5 vs a line of 10.5 (+4, 38% edge)",
-    "Went over in 6 of his last 8 games (3/5 in the last 5)",
+    "Model projects 14.5 PTS vs a line of 10.5 (+4, 38% edge)",
+    "Went over the line in 6 of his last 8 games (3/5 in the last 5)",
     "Averaging 13.4 over the last 5 and 14.9 over the last 8",
-    "Minutes steady: 26 per game over the last 5 (26 over the last 8)"
-   ]
+    "Minutes steady: 26 per game over the last 5 (26 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86
   }
  ],
  "futures": {

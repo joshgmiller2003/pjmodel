@@ -1,0 +1,63 @@
+{
+ "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
+ "picks": [
+  {
+   "date": "2026-11-04",
+   "eid": "401909930",
+   "game": "MIN@HOU",
+   "time": "8:30 PM ET",
+   "home": "HOU",
+   "away": "MIN",
+   "type": "Prop",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "AST",
+   "side": "Over",
+   "line": 2.5,
+   "price": -120,
+   "model": 3.5,
+   "edge": 1.0,
+   "edge_pct": 40.0,
+   "label": "Jaden McDaniels Over 2.5 AST",
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     3.0,
+     3.0,
+     4.0,
+     4.0,
+     7.0,
+     3.0,
+     3.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "AST"
+   },
+   "score": 94.8,
+   "reasons": [
+    "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge)",
+    "Went over the line in 7 of his last 8 games (5/5 in the last 5)",
+    "Averaging 4.2 over the last 5 and 3.5 over the last 8",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 86,
+   "picked_at": "2026-11-04 11:55 AM ET"
+  }
+ ]
+}
