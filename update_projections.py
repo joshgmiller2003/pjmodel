@@ -12,7 +12,7 @@ When the game ends, (actual - model) becomes a residual that nudges future
 projections for that player/stat, with a weight (alpha) that fades over time.
 
 Env vars: ODDS_API_KEY (optional, enables player props from DraftKings via
-the-odds-api.com), MAX_PROP_EVENTS (default 8).
+the-odds-api.com), MAX_PROP_EVENTS (default 30, i.e. every game).
 """
 import json, math, os, re, sys, time, unicodedata
 from datetime import date, datetime, timedelta, timezone
@@ -32,7 +32,7 @@ ET = ZoneInfo("America/New_York")
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
-MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "8"))
+MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
 
 PROP_MARKETS = {
     "player_points": "PTS", "player_rebounds": "REB", "player_assists": "AST",
