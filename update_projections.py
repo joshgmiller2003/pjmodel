@@ -397,7 +397,8 @@ def wmean(vals, decay):
 DEF_STATS = ("pts", "reb", "ast", "tpm", "stl", "blk")
 DEF_CAP = 0.10       # opponent defense can move a stat by at most +/-10%
 PACE_CAP = 0.05      # expected game pace can move a stat by at most +/-5%
-MATCHUP_CAP = 0.12   # combined matchup cap
+MATCHUP_CAP = 0.12   # combined matchup cap (tonight's opponent and the defenses already faced, together)
+POS_SHRINK_K = 20    # position-level defense is noisier than team-level, so it is pulled harder toward average
 STAT_KEY = {"PTS": "pts", "REB": "reb", "AST": "ast", "3PM": "tpm", "BLK": "blk", "STL": "stl"}
 
 
@@ -487,7 +488,7 @@ def team_defense(plog, pos=None):
             L, R = lgp[q], r["bypos"][q]
             if not L["min"]:
                 continue
-            shr = SHRINK_K * L["min"] / n                        # pseudo-minutes: K games of a typical team
+            shr = POS_SHRINK_K * L["min"] / n                    # pseudo-minutes: K games of a typical team
             row["pos"][q] = {k: (((R[k] + shr * L[k] / L["min"]) / (R["min"] + shr)) / (L[k] / L["min"]) / (pace / lg_pace))
                              if L[k] else 1.0 for k in DEF_STATS}
         out[t] = row
@@ -631,7 +632,9 @@ def project_player(games, dfn=None, opp=None, boost=None, sched=None):
         mx = matchup_factors(dfn, team, opp, name)
         faced = {k: sum(g["min"] * matchup_factors(dfn, g["t"], g.get("opp"), name)[k] for g in recent) / tot_min
                  for k in DEF_STATS}
-        rate = {k: rate[k] / (faced[k] or 1) for k in DEF_STATS}
+        # the whole matchup move (tonight vs the defenses already faced) stays within MATCHUP_CAP
+        net = {k: _clamp(mx[k] / (faced[k] or 1), MATCHUP_CAP) for k in DEF_STATS}
+        mx = {k: net[k] for k in DEF_STATS}
     xm = min((boost or {}).get("min", 0.0), max(0.0, 38.0 - mins))
     add = (boost or {}).get("add", {})
     base = {k: rate[k] * mins for k in DEF_STATS}
