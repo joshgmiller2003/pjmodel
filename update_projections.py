@@ -36,8 +36,9 @@ MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
 
 PROP_MARKETS = {
     "player_points": "PTS", "player_rebounds": "REB", "player_assists": "AST",
-    "player_threes": "3PM", "player_blocks": "BLK",
-    "player_points_rebounds_assists": "PRA",
+    "player_threes": "3PM", "player_blocks": "BLK", "player_steals": "STL",
+    "player_points_rebounds_assists": "PRA", "player_points_rebounds": "PR",
+    "player_points_assists": "PA", "player_rebounds_assists": "RA",
 }
 ABBR_FIX = {"GS": "GSW", "NY": "NYK", "SA": "SAS", "NO": "NOP", "WSH": "WAS", "UTAH": "UTA"}
 NAME_FIX = {"Los Angeles Clippers": "LA Clippers"}
@@ -161,7 +162,13 @@ def parse_lines(comp, home):
 
     def ml(side):
         v = ((o.get(side) or {}).get("moneyLine"))
-        return str(v) if v is not None else "N/A"
+        if v is None:   # newer ESPN shape: odds.moneyline.home.close.odds
+            mk = (o.get("moneyline") or {}).get("home" if side == "homeTeamOdds" else "away") or {}
+            v = (mk.get("close") or {}).get("odds") or (mk.get("open") or {}).get("odds")
+        if v is None:
+            return "N/A"
+        v = str(v)
+        return v if v.startswith(("+", "-")) or v == "EVEN" else (f"+{v}" if num(v) > 0 else v)
     return {"spread": sgn(spread), "total": float(total),
             "ml_away": ml("awayTeamOdds"), "ml_home": ml("homeTeamOdds"),
             "provider": (o.get("provider") or {}).get("name", "")}
@@ -289,10 +296,13 @@ def project_player(games, opp_factor):
     if mins < 12:
         return None
     tot_min = sum(g["min"] for g in recent)
-    rate = {k: sum(g[k] for g in recent) / tot_min for k in ("pts", "reb", "ast", "tpm", "blk")}
+    rate = {k: sum(g[k] for g in recent) / tot_min for k in ("pts", "reb", "ast", "tpm", "blk", "stl")}
     p = {"PTS": rate["pts"] * mins * opp_factor, "REB": rate["reb"] * mins, "AST": rate["ast"] * mins,
-         "3PM": rate["tpm"] * mins, "BLK": rate["blk"] * mins}
+         "3PM": rate["tpm"] * mins, "BLK": rate["blk"] * mins, "STL": rate["stl"] * mins}
     p["PRA"] = p["PTS"] + p["REB"] + p["AST"]
+    p["PR"] = p["PTS"] + p["REB"]
+    p["PA"] = p["PTS"] + p["AST"]
+    p["RA"] = p["REB"] + p["AST"]
     return {k: rnd(v) for k, v in p.items()}
 
 
@@ -320,14 +330,107 @@ def odds_props(slate, plog_idx):
         used += 1
         j = get(f"{ODDS}/events/{oid}/odds", apiKey=ODDS_KEY, regions="us", bookmakers="draftkings",
                 markets=",".join(PROP_MARKETS), oddsFormat="american")
-        lines = []
+        found = {}
         for bk in (j or {}).get("bookmakers", []):
             for m in bk.get("markets", []):
                 stat = PROP_MARKETS.get(m["key"])
+                if not stat:
+                    continue
                 for o in m.get("outcomes", []):
-                    if stat and o.get("name") == "Over" and o.get("point") is not None:
-                        lines.append((o.get("description", ""), stat, float(o["point"])))
-        out[g["event_id"]] = list({(p, st): (p, st, ln) for p, st, ln in lines}.values())
+                    if o.get("point") is None or o.get("name") not in ("Over", "Under"):
+                        continue
+                    key = (o.get("description", ""), stat)
+                    row = found.setdefault(key, {"line": float(o["point"]), "over": None, "under": None})
+                    if float(o["point"]) != row["line"]:
+                        continue                      # keep the main (first) line only
+                    row["over" if o["name"] == "Over" else "under"] = o.get("price")
+        out[g["event_id"]] = [(pl, st, r["line"], r["over"], r["under"]) for (pl, st), r in found.items()]
+    return out
+
+
+def odds_game_lines():
+    """DraftKings spread/total/moneyline for every NBA game in one call. {(away_name, home_name): lines}"""
+    if not ODDS_KEY:
+        return {}
+    j = get(f"{ODDS}/odds", apiKey=ODDS_KEY, regions="us", bookmakers="draftkings",
+            markets="h2h,spreads,totals", oddsFormat="american")
+    out = {}
+    for e in j or []:
+        h, a = NAME_FIX.get(e["home_team"], e["home_team"]), NAME_FIX.get(e["away_team"], e["away_team"])
+        row = {}
+        for bk in e.get("bookmakers", []):
+            for m in bk.get("markets", []):
+                oc = {o.get("name"): o for o in m.get("outcomes", [])}
+                if m["key"] == "spreads" and e["home_team"] in oc and oc[e["home_team"]].get("point") is not None:
+                    row["spread"] = sgn(float(oc[e["home_team"]]["point"]))
+                elif m["key"] == "totals" and "Over" in oc and oc["Over"].get("point") is not None:
+                    row["total"] = float(oc["Over"]["point"])
+                elif m["key"] == "h2h":
+                    fmt = lambda v: "N/A" if v is None else (f"+{v}" if v > 0 else str(v))
+                    row["ml_home"] = fmt((oc.get(e["home_team"]) or {}).get("price"))
+                    row["ml_away"] = fmt((oc.get(e["away_team"]) or {}).get("price"))
+        if "spread" in row and "total" in row:
+            row.setdefault("ml_home", "N/A"); row.setdefault("ml_away", "N/A")
+            out[(a, h)] = row
+    return out
+
+
+def fetch_standings():
+    j = get("https://site.api.espn.com/apis/v2/sports/basketball/nba/standings")
+    if not j:
+        return None
+    confs = []
+    for c in j.get("children", []):
+        rows = []
+        for e in (c.get("standings") or {}).get("entries", []):
+            st = {s.get("name"): s for s in e.get("stats", [])}
+            dv = lambda k: (st.get(k) or {}).get("displayValue", "")
+            rows.append({"team": abbr(e["team"].get("abbreviation")), "name": e["team"].get("displayName", ""),
+                         "w": int(num((st.get("wins") or {}).get("value"))), "l": int(num((st.get("losses") or {}).get("value"))),
+                         "pct": dv("winPercent"), "gb": dv("gamesBehind"), "seed": int(num((st.get("playoffSeed") or {}).get("value"))),
+                         "streak": dv("streak"), "l10": dv("Last Ten Games"), "home": dv("Home"), "road": dv("Road"),
+                         "ppg": dv("avgPointsFor"), "opp": dv("avgPointsAgainst"), "diff": dv("differential")})
+        rows.sort(key=lambda r: (r["seed"] or 99, -r["w"]))
+        confs.append({"name": c.get("name", ""), "teams": rows})
+    return confs or None
+
+
+def fetch_futures():
+    """DraftKings NBA championship odds (one market)."""
+    if not ODDS_KEY:
+        return None
+    j = get("https://api.the-odds-api.com/v4/sports/basketball_nba_championship_winner/odds", apiKey=ODDS_KEY,
+            regions="us", bookmakers="draftkings", markets="outrights", oddsFormat="american")
+    rows = []
+    for e in j or []:
+        for bk in e.get("bookmakers", []):
+            for m in bk.get("markets", []):
+                for o in m.get("outcomes", []):
+                    nm = NAME_FIX.get(o.get("name"), o.get("name"))
+                    ab = next((k for k, v in TEAM_NAMES.items() if v == nm), "")
+                    price = o.get("price")
+                    if price is None:
+                        continue
+                    implied = 100 / (price + 100) if price > 0 else -price / (-price + 100)
+                    rows.append({"team": ab, "name": nm, "odds": f"+{price}" if price > 0 else str(price), "implied": rnd(implied * 100, 1)})
+    rows.sort(key=lambda r: -r["implied"])
+    return rows or None
+
+
+def team_rest(plog, slate):
+    """Days of rest before each slate game, from the finished-game log."""
+    played = {}
+    for g in plog["games"].values():
+        for t in (g["home"], g["away"]):
+            played.setdefault(t, set()).add(g["date"])
+    out = {}
+    for g in slate:
+        d = date.fromisoformat(g["date"])
+        rest = {}
+        for side in ("away", "home"):
+            prior = [x for x in played.get(g[side], ()) if x < g["date"]]
+            rest[side] = (d - date.fromisoformat(max(prior))).days - 1 if prior else None
+        out[g["event_id"]] = rest
     return out
 
 
@@ -410,7 +513,11 @@ def settle(pending, plog, state):
             if not row:
                 continue
             actual = {"PTS": row["pts"], "REB": row["reb"], "AST": row["ast"], "3PM": row["tpm"],
-                      "BLK": row["blk"], "PRA": row["pts"] + row["reb"] + row["ast"]}[p["stat"]]
+                      "BLK": row["blk"], "STL": row["stl"], "PRA": row["pts"] + row["reb"] + row["ast"],
+                      "PR": row["pts"] + row["reb"], "PA": row["pts"] + row["ast"],
+                      "RA": row["reb"] + row["ast"]}.get(p["stat"])
+            if actual is None:
+                continue
             key = f'{p["player"]}|{p["stat"]}'
             old = state["residuals"]["player"].get(key, 0.0)
             state["residuals"]["player"][key] = rnd((1 - RES_BETA) * old + RES_BETA * (actual - p["model"]), 2)
@@ -418,10 +525,18 @@ def settle(pending, plog, state):
             if abs(edge) >= BET_EDGE_PROP:
                 over = edge > 0
                 res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == over else "L")
+                price = p.get("over") if over else p.get("under")
                 bets.append(("Player Prop", f'{p["player"]} {"Over" if over else "Under"} {p["dk"]:g} {p["stat"]}',
-                             rnd(edge), res, f'{actual:g} {p["stat"]}'))
-        for market, side, edge, res, actual in bets:
-            units = WIN_UNITS if res == "W" else (-1.0 if res == "L" else 0.0)
+                             rnd(edge), res, f'{actual:g} {p["stat"]}', price))
+        if dk:
+            state["accuracy"].insert(0, {"date": lg["date"], "game": label, "model_spread": pg["model"]["spread"],
+                                         "dk_spread": float(dk["spread"]), "actual_margin": margin,
+                                         "model_total": pg["model"]["total"], "dk_total": dk["total"], "actual_total": total})
+        for bet in bets:
+            market, side, edge, res, actual = bet[:5]
+            price = bet[5] if len(bet) > 5 else None
+            win = (price / 100 if price and price > 0 else 100 / -price if price else WIN_UNITS)
+            units = rnd(win, 2) if res == "W" else (-1.0 if res == "L" else 0.0)
             state["settled_bets"].insert(0, {"date": lg["date"], "game": label, "market": market, "side": side,
                                              "edge": edge, "result": res, "units": rnd(units, 2), "actual": actual})
             rec = state["record"]
@@ -431,7 +546,8 @@ def settle(pending, plog, state):
         state["residuals"]["games_learned"] += 1
         pg["settled"] = True
         done.append(eid)
-    state["settled_bets"] = state["settled_bets"][:300]
+    state["settled_bets"] = state["settled_bets"][:500]
+    state["accuracy"] = state["accuracy"][:1000]
     log(f"settled {len(done)} games")
 
 
@@ -452,6 +568,7 @@ def main():
         "settled_bets": prev.get("settled_bets", []),
         "record": prev.get("record") or {"wins": 0, "losses": 0, "units": 0},
         "prediction_history": prev.get("prediction_history", []),
+        "accuracy": prev.get("accuracy", []),
     }
     if isinstance(state["residuals"]["player"], list):
         state["residuals"]["player"] = {}
@@ -488,6 +605,14 @@ def main():
     out_set = {(norm(i["player"])) for i in injuries if i["status"].lower() == "out"}
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
     prop_lines = odds_props(upcoming, idx) if upcoming else {}
+    gml = odds_game_lines() if upcoming else {}
+    for g in upcoming:
+        hit = gml.get((NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])))
+        if hit:
+            g["_lines"] = {**hit, "provider": "DraftKings"}
+    rest = team_rest(plog, slate)
+    standings = fetch_standings() or prev.get("standings")
+    futures = fetch_futures() or prev.get("futures")
 
     games, props = [], []
     for g in slate:
@@ -503,7 +628,7 @@ def main():
                                      "model": model, "dk": dk}
         row = {"id": g["id"], "date": g["date"], "time": g["time"], "away": g["away"], "home": g["home"],
                "model": model, "dk": dk or {"spread": "N/A", "total": 0, "ml_away": "N/A", "ml_home": "N/A"},
-               "status": g["status"]}
+               "status": g["status"], "rest": rest.get(eid, {})}
         if dk:
             row["spread_edge"] = rnd(float(dk["spread"]) - model["spread"])
             row["total_edge"] = rnd(model["total"] - dk["total"])
@@ -524,7 +649,7 @@ def main():
         # props
         if g["status"] == "Upcoming" and eid in prop_lines:
             fresh = []
-            for player, stat, line in prop_lines[eid]:
+            for player, stat, line, over_px, under_px in prop_lines[eid]:
                 hist = idx.get(norm(player))
                 if not hist or norm(player) in out_set:
                     continue
@@ -539,7 +664,7 @@ def main():
                 if not proj or stat not in proj:
                     continue
                 fresh.append({"player": hist[-1]["n"], "team": team, "game": g["id"], "stat": stat,
-                              "model": proj[stat], "dk": line})
+                              "model": proj[stat], "dk": line, "over": over_px, "under": under_px})
             if fresh:
                 pending["props"][eid] = fresh
         for p in pending["props"].get(eid, []):
@@ -576,10 +701,12 @@ def main():
             "model_notes": ["Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
                             "Adjustments: opponent defense (capped +/-5%), home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
-                            "Benchmark: DraftKings via ESPN (games) and The Odds API (props)",
-                            "Bets are scored at flat 1 unit, -110 (win +0.91, loss -1)"],
+                            "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted)"],
             "prediction_history": state["prediction_history"], "notes": note,
-            "settled_bets": state["settled_bets"], "record": state["record"]}
+            "settled_bets": state["settled_bets"], "record": state["record"],
+            "accuracy": state["accuracy"], "standings": standings,
+            "futures": {"title": futures, "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
     json.dumps(data)

@@ -123,7 +123,8 @@ nav button.active { color: var(--ink); border-bottom-color: var(--accent); }
 .card.live { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--shadow); }
 
 /* ---------- game cards ---------- */
-.game-header { display: flex; justify-content: space-between; margin-bottom: 14px; }
+.game-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 14px; }
+.game-header > .edge { margin-top: 0; padding: 4px 10px; font-size: 13px !important; flex: 0 0 auto; }
 .matchup { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; letter-spacing: -0.2px; }
 .team-logo { width: 30px; height: 30px; object-fit: contain; }
 .time { color: var(--muted); font-size: 12px; margin-top: 4px; }
@@ -222,7 +223,23 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 .props-mini { margin-top: 18px; }
 .props-mini table { font-size: 12.5px; }
 
+.kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.kpi .l { font-size: 10.5px; text-transform: uppercase; letter-spacing: .7px; color: var(--faint); font-weight: 700; }
+.kpi .v { font-size: 24px; font-weight: 800; margin-top: 4px; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+.kpi .s { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.badge { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 2px 7px; border-radius: 999px; letter-spacing: .3px; }
+.badge.b2b { background: var(--bad-soft); color: var(--bad); }
+.badge.rest { background: var(--good-soft); color: var(--good); }
+.badge.norm { background: var(--surface-2); color: var(--muted); }
+.badge.inj { background: rgba(245,196,81,0.14); color: var(--gold); }
+.badge.out { background: var(--bad-soft); color: var(--bad); }
+.rest-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.price { font-size: 11px; color: var(--muted); }
+.conf-head { font-size: 13px; color: var(--muted); font-weight: 700; padding: 16px 18px 6px; }
+.seed-line td { border-bottom: 2px dashed var(--border) !important; }
 @media (max-width: 720px) {
+  .game-grid[style] { grid-template-columns: 1fr !important; }
   header { grid-template-columns: 1fr; padding: 20px 16px 12px; }
   .meta { grid-column: 1; grid-row: auto; justify-self: start; white-space: normal; }
   h1 { font-size: 22px; }
@@ -256,8 +273,7 @@ nav button:first-child { margin-left: -13px; }
 <div class="injury-details" id="injury-details">
   <div style="margin-bottom:8px;">
     Sources: <a href="https://www.espn.com/nba/injuries" target="_blank" style="color:var(--accent);">ESPN</a> · 
-    <a href="https://x.com/ShamsCharania" target="_blank" style="color:var(--accent);">@ShamsCharania</a> · 
-    <a href="https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-21_11_00AM.pdf" target="_blank" style="color:var(--accent);">NBA.com</a>
+    <a href="https://x.com/ShamsCharania" target="_blank" style="color:var(--accent);">@ShamsCharania</a>
     <span style="color:var(--muted);margin-left:8px;">Past games removed — only active slate</span>
   </div>
   <table>
@@ -267,28 +283,21 @@ nav button:first-child { margin-left: -13px; }
 </div>
 <nav>
   <button class="active" data-tab="games">Games</button>
-  <button data-tab="flash">Flash Bets</button>
   <button data-tab="best">Best Bets</button>
   <button data-tab="props">Player Props</button>
-  <button data-tab="combos">Combos</button>
   <button data-tab="parlays">Parlays</button>
-  <button data-tab="awards">Awards</button>
-  <button data-tab="futures">Team Futures</button>
   <button data-tab="playerlog">Game Log</button>
-  <button data-tab="trends">Trends</button>
-  <button data-tab="live">Live</button>
+  <button data-tab="hotcold">Hot &amp; Cold</button>
+  <button data-tab="standings">Standings &amp; Futures</button>
   <button data-tab="bankroll">Bankroll</button>
-  <button data-tab="notes">Model Notes</button>
-  <button data-tab="schedule">Schedule</button>
-  <button data-tab="residuals">Residuals</button>
-  <button data-tab="host">Host & Pipeline</button>
+  <button data-tab="model">Model</button>
 </nav>
 <div class="container">
-  <section id="flash" class="tab" style="display:none;">
-    <div class="section-title">Flash Bets <small>Highest-edge live looks</small></div>
-    <div id="flash-board"></div>
+  <section id="games" class="tab">
+    <div class="section-title">Games <small>Model vs DraftKings</small></div>
+    <div id="games-live-status" style="font-size:12px;color:var(--accent);margin:-6px 0 12px;">Connecting to live scores…</div>
+    <div class="game-grid" id="games-board"></div>
   </section>
-
   <section id="best" class="tab" style="display:none;">
     <div class="section-title">Best Bets <small>Largest model edges vs DraftKings</small></div>
     <div class="filters" id="best-filters">
@@ -301,13 +310,6 @@ nav button:first-child { margin-left: -13px; }
     <div class="game-grid" id="best-board"></div>
     <p style="font-size:12px;color:var(--muted);margin-top:12px;">Edges of 0.8+ points highlighted. Model vs market only — not a guarantee.</p>
   </section>
-
-  <section id="games" class="tab">
-    <div class="section-title">Games <small>Model vs DraftKings</small></div>
-    <div id="games-live-status" style="font-size:12px;color:var(--accent);margin:-6px 0 12px;">Connecting to live scores…</div>
-    <div class="game-grid" id="games-board"></div>
-  </section>
-
   <section id="props" class="tab" style="display:none;">
     <div class="section-title">Player Props <small>Every posted DraftKings line vs the model</small></div>
     <div class="filters" id="stat-chips"></div>
@@ -337,6 +339,7 @@ nav button:first-child { margin-left: -13px; }
             <th>Game</th>
             <th>Market</th>
             <th>DK Line</th>
+            <th>Odds O/U</th>
             <th>Model</th>
             <th>Edge</th>
             <th>Lean</th>
@@ -346,33 +349,6 @@ nav button:first-child { margin-left: -13px; }
       </table>
     </div>
   </section>
-
-  <section id="combos" class="tab" style="display:none;">
-    <div class="section-title">Combos <small>PRA · PR · PA · RA</small></div>
-    <div class="filters">
-      <button onclick="renderCombos('all')">All</button>
-      <button onclick="renderCombos('PRA')">PRA</button>
-      <button onclick="renderCombos('PR')">PR</button>
-      <button onclick="renderCombos('PA')">PA</button>
-      <button onclick="renderCombos('RA')">RA</button>
-    </div>
-    <div class="card" style="overflow-x:auto;">
-      <table id="combos-table">
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Combo</th>
-            <th>Sportsbook Line</th>
-            <th>Your Projection</th>
-            <th>Edge Diff</th>
-            <th>Recommended Bet</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </section>
-
   <section id="parlays" class="tab" style="display:none;">
     <div class="section-title" style="margin-bottom:8px;">Parlay Builder</div>
     <div class="filters" id="parlay-inner-tabs" style="margin-bottom:10px;">
@@ -383,63 +359,6 @@ nav button:first-child { margin-left: -13px; }
     </div>
     <div id="parlay-main" style="margin-top:4px;"></div>
   </section>
-
-  <section id="awards" class="tab" style="display:none;">
-    <div class="section-title">Awards <small>Model projections + DraftKings odds · 10/19/26</small></div>
-    <div class="game-grid">
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">MVP</div>
-        <div class="detail-row"><span>Nikola Jokić</span><span>Model 28% · DK +500</span></div>
-        <div class="detail-row"><span>Shai Gilgeous-Alexander</span><span>Model 22% · DK +380</span></div>
-        <div class="detail-row"><span>Jayson Tatum</span><span>Model 14% · DK +1800</span></div>
-        <div class="detail-row"><span>Victor Wembanyama</span><span>Model — · DK +205</span></div>
-        <div class="note" style="margin-top:8px;">Model numbers are independent. DK odds shown for comparison.</div>
-      </div>
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">Defensive Player of the Year</div>
-        <div class="detail-row"><span>Victor Wembanyama</span><span>Model 31% · DK -360</span></div>
-        <div class="detail-row"><span>Chet Holmgren</span><span>Model 16% · DK +1200</span></div>
-        <div class="detail-row"><span>Bam Adebayo</span><span>Model 11% · DK +4000</span></div>
-        <div class="note" style="margin-top:8px;">DK has Wembanyama as a heavy favorite.</div>
-      </div>
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">Rookie of the Year</div>
-        <div class="detail-row"><span>Cameron Boozer</span><span>DK +270</span></div>
-        <div class="note" style="margin-top:8px;">Model updates once regular-season minutes and production are available. DK odds shown.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="futures" class="tab" style="display:none;">
-    <div class="section-title">Team Futures <small>DraftKings odds · as of 10/19/26</small></div>
-    <div class="game-grid">
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">NBA Championship</div>
-        <div class="detail-row"><span>Oklahoma City Thunder</span><strong>+270</strong></div>
-        <div class="detail-row"><span>San Antonio Spurs</span><strong>+270</strong></div>
-        <div class="detail-row"><span>Philadelphia 76ers</span><strong>+900</strong></div>
-        <div class="detail-row"><span>New York Knicks</span><strong>+900</strong></div>
-        <div class="detail-row"><span>Boston Celtics</span><strong>+1300</strong></div>
-        <div class="detail-row"><span>Cleveland Cavaliers</span><strong>+2200</strong></div>
-        <div class="note" style="margin-top:8px;">DraftKings prices. Thunder and Spurs are co-favorites.</div>
-      </div>
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">Eastern Conference</div>
-        <div class="detail-row"><span>New York Knicks</span><strong>+350</strong></div>
-        <div class="detail-row"><span>Philadelphia 76ers</span><strong>+380</strong></div>
-        <div class="detail-row"><span>Boston Celtics</span><strong>+550</strong></div>
-        <div class="note" style="margin-top:8px;">DraftKings conference odds.</div>
-      </div>
-      <div class="card">
-        <div class="section-title" style="font-size:15px;">Western Conference</div>
-        <div class="detail-row"><span>Oklahoma City Thunder</span><strong>+140</strong></div>
-        <div class="detail-row"><span>San Antonio Spurs</span><strong>+160</strong></div>
-        <div class="detail-row"><span>Denver Nuggets</span><strong>+400</strong></div>
-        <div class="note" style="margin-top:8px;">DraftKings conference odds.</div>
-      </div>
-    </div>
-  </section>
-
   <section id="playerlog" class="tab" style="display:none;">
     <div class="section-title">Game Log <small>Hit rates for the last 5 / 10 / 15 games</small></div>
     <div class="card" style="margin-bottom:14px;">
@@ -451,75 +370,47 @@ nav button:first-child { margin-left: -13px; }
     <div class="card" style="margin-bottom:14px;"><div id="pl-chart"></div></div>
     <div class="card" style="overflow-x:auto;"><div id="pl-detail"></div></div>
   </section>
-
-  <section id="trends" class="tab" style="display:none;">
-    <div class="section-title">Trends <small>Form and residual direction</small></div>
-    <div id="trends-content"></div>
+  <section id="hotcold" class="tab" style="display:none;">
+    <div class="section-title">Hot &amp; Cold <small>Last 5 games vs last 15, players on tonight's slate</small></div>
+    <div class="filters" id="hc-stats"></div>
+    <div class="game-grid" style="grid-template-columns:repeat(auto-fill,minmax(600px,1fr));">
+      <div class="card table-wrap"><div style="padding:16px 18px 4px;font-weight:700;color:var(--good);">Heating up</div><table id="hc-hot"></table></div>
+      <div class="card table-wrap"><div style="padding:16px 18px 4px;font-weight:700;color:var(--bad);">Cooling off</div><table id="hc-cold"></table></div>
+    </div>
+    <p class="note" style="margin-top:12px;">Change = average over the last 5 games minus average over the last 15. Minutes trend shows whether a role is growing or shrinking. Click a player for the full game log.</p>
   </section>
 
-  <section id="live" class="tab" style="display:none;">
-    <div class="section-title">Live / In-Progress <small>Current score vs projection</small></div>
-    <div id="live-board"></div>
+  <section id="standings" class="tab" style="display:none;">
+    <div class="section-title">Standings &amp; Futures <small id="standings-meta"></small></div>
+    <div class="game-grid" id="standings-board" style="grid-template-columns:repeat(auto-fill,minmax(520px,1fr));"></div>
+    <div class="section-title" style="margin-top:26px;">NBA Championship odds <small id="futures-meta">DraftKings</small></div>
+    <div class="card table-wrap" id="futures-board"></div>
   </section>
 
   <section id="bankroll" class="tab" style="display:none;">
-    <div class="section-title">Bankroll / Tracking <small>Settled model bets</small></div>
-    <div class="brief">
-      <p id="bankroll-summary">Record loads on open.</p>
-      <table style="margin-top:12px;">
-        <thead><tr><th>Date</th><th>Game / Market</th><th>Side</th><th>Edge</th><th>Result</th><th>Units</th></tr></thead>
+    <div class="section-title">Bankroll <small>Every model bet, settled automatically · 1 unit each</small></div>
+    <div class="kpis" id="bankroll-kpis"></div>
+    <div class="card table-wrap" style="margin-bottom:16px;"><table id="bankroll-markets"></table></div>
+    <div class="filters" id="bankroll-filters"></div>
+    <div class="card table-wrap">
+      <table id="bankroll-table">
+        <thead><tr><th>Date</th><th>Game / Market</th><th>Side</th><th>Edge</th><th>Actual</th><th>Result</th><th>Units</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
   </section>
 
-  <section id="notes" class="tab" style="display:none;">
-    <div class="section-title">Prediction History <small>Snapshots of every board load</small></div>
-    <div id="prediction-history"></div>
-    <div class="section-title" style="margin-top:18px;">Model Notes</div>
-    <div class="brief" id="notes-content"></div>
-  </section>
-
-  <section id="schedule" class="tab" style="display:none;">
-    <div class="section-title">Schedule / Rest <small>Slate with rest and travel flags</small></div>
-    <div id="schedule-board"></div>
-  </section>
-
-  <section id="residuals" class="tab" style="display:none;">
-    <div class="residuals">
-      <h2>Residual Leaders</h2>
-      <p>No regular-season games have been played yet. After Opening Night the pipeline will track:</p>
-      <ul>
-        <li>Margin residuals (projected spread vs actual)</li>
-        <li>Total residuals</li>
-        <li>Player stat residuals (PTS / REB / AST)</li>
-      </ul>
-      <p>Fading alpha: ~0.45 early season → ~0.12 later. Residuals adjust future projections.</p>
-      <div id="residual-content"></div>
+  <section id="model" class="tab" style="display:none;">
+    <div class="section-title">Model <small>How it works and how accurate it has been</small></div>
+    <div class="kpis" id="model-kpis"></div>
+    <div class="game-grid" style="grid-template-columns:repeat(auto-fill,minmax(420px,1fr));">
+      <div class="card"><div style="font-weight:700;margin-bottom:8px;">Accuracy vs DraftKings</div><div id="model-accuracy"></div></div>
+      <div class="card"><div style="font-weight:700;margin-bottom:8px;">How the model works</div><ul id="model-notes" style="margin:0 0 0 18px;padding:0;color:var(--muted);"></ul></div>
     </div>
-  </section>
-
-  <section id="host" class="tab" style="display:none;">
-    <div class="brief hosting">
-      <h2>Pipeline & Hosting</h2>
-      <p><strong>Auto-updates (runs on its own):</strong></p>
-      <ul>
-        <li><strong>Daily 10:00 AM ET</strong> — full board: scores, bet settlements (W/L), injuries, player props, games, best bets, combos</li>
-        <li>Player props are rebuilt each run (PTS, REB, AST, 3PM, STL, BLK, PRA/PR/PA/RA) with residual learning + DraftKings lines</li>
-        <li>Finished games stay off main tabs and post to Bankroll as W/L</li>
-      </ul>
-      <p><strong>Host (static, free options):</strong></p>
-      <ul>
-        <li>GitHub Pages — push the HTML + JSON</li>
-        <li>Netlify / Vercel — drag-and-drop the folder</li>
-        <li>Cloudflare Pages</li>
-      </ul>
-      <p>This file is fully self-contained. After each automation run, re-open or refresh the file for the latest props.</p>
-      <p style="margin-top:12px;">Files: <code>NBA_PROJECTIONS.html</code>, <code>update_projections.py</code>, <code>projections_data.json</code></p>
-    </div>
+    <div class="section-title" style="margin-top:24px;font-size:16px;">Biggest adjustments <small>Where the model has been learning from its misses</small></div>
+    <div class="card table-wrap"><table id="model-residuals"></table></div>
   </section>
 </div>
-
 <div class="modal-overlay" id="game-modal">
   <div class="modal" id="modal-content"></div>
 </div>
@@ -560,69 +451,24 @@ let DATA = (function(){
 })();
 
 
-document.getElementById("generated").textContent = "Generated " + new Date(DATA.generated_at).toLocaleString() + " · Season " + DATA.season;
+document.getElementById("generated").textContent = DATA.generated_at
+  ? "Updated " + new Date(DATA.generated_at).toLocaleString([], {timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) + " ET · Season " + DATA.season
+  : "Waiting for first update";
+function nextUpdateText() {
+  const now = new Date();
+  const et = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+  const h = et.getHours() + et.getMinutes() / 60;
+  const next = h < 1 ? "1:00 AM" : h < 11 ? "11:00 AM" : "1:00 AM";
+  return "Next data update " + next + " ET · scores and injuries refresh live";
+}
 
 function edgeClass(e) {
   if (Math.abs(e) < 0.3) return "neutral";
   return e > 0 ? "pos" : "neg";
 }
 
-function renderFlashBets() {
-  const board = document.getElementById("flash-board");
-  if (!board) return;
-  const flashes = DATA.props
-    .filter(p => Math.abs(p.edge) >= 1.0)
-    .sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge))
-    .slice(0, 8);
-  if (flashes.length === 0) {
-    board.innerHTML = "<div class='note'>No flash bets right now (edge ≥ 1.0).</div>";
-    return;
-  }
-  board.innerHTML = flashes.map(p => `
-    <div class="card" style="margin-bottom:10px;border-left:4px solid var(--accent);">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div>
-          <div style="font-weight:700;font-size:15px;">${p.player} <span style="color:var(--muted);font-weight:400;">${p.team}</span></div>
-          <div style="font-size:13px;margin-top:2px;">${p.stat} ${p.side} ${p.dk}</div>
-        </div>
-        <div style="text-align:right;">
-          <div class="edge ${edgeClass(p.edge)}" style="font-size:16px;">${p.edge > 0 ? "+" : ""}${p.edge}</div>
-          <div style="font-size:11px;color:var(--muted);">Model ${p.model}</div>
-        </div>
-      </div>
-      <div style="font-size:12px;margin-top:6px;color:var(--muted);">${p.game}</div>
-    </div>
-  `).join("");
-}
-
-
 function activeGames() {
   return DATA.games.filter(g => g.status !== "Final");
-}
-
-function renderBankroll() {
-  const tbody = document.querySelector("#bankroll tbody");
-  if (!tbody) return;
-  const bets = DATA.settled_bets || [];
-  const rec = DATA.record || {wins:0, losses:0, units:0};
-  const summary = document.getElementById("bankroll-summary");
-  if (summary) {
-    summary.innerHTML = `<strong>Record:</strong> ${rec.wins}-${rec.losses} · Units: <span class="${rec.units>=0?'positive':'negative'}">${rec.units>0?'+':''}${rec.units}</span>`;
-  }
-  if (!bets.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="color:var(--muted);">No settled bets yet.</td></tr>';
-    return;
-  }
-  tbody.innerHTML = bets.map(b => `
-    <tr>
-      <td>${b.date}</td>
-      <td>${b.game}<br><span style="font-size:11px;color:var(--muted);">${b.market}</span></td>
-      <td>${b.side}</td>
-      <td class="${b.edge>0?'positive':'negative'}">${b.edge>0?'+':''}${b.edge}</td>
-      <td style="font-weight:700;color:${b.result==='W'?'var(--good)':(b.result==='L'?'var(--bad)':'var(--muted)')}">${b.result}</td>
-      <td class="${b.units>0?'positive':'negative'}">${b.units>0?'+':''}${b.units}</td>
-    </tr>
-  `).join("");
 }
 
 function renderBestBets(filter = "all") {
@@ -636,7 +482,7 @@ function renderBestBets(filter = "all") {
           title: `${g.away} @ ${g.home}`,
           detail: `Model ${g.model.spread > 0 ? "+" : ""}${g.model.spread} vs DK ${g.dk.spread}`,
           edge: g.spread_edge,
-          side: g.spread_edge > 0 ? "Home cover lean" : "Away cover lean"
+          side: g.spread_edge > 0 ? `${g.home} ${g.dk.spread}` : `${g.away} ${(-parseFloat(g.dk.spread) > 0 ? "+" : "") + (-parseFloat(g.dk.spread))}`
         });
       }
       if (Math.abs(g.total_edge) >= 0.8) {
@@ -686,20 +532,9 @@ function renderBestBets(filter = "all") {
   `).join("");
 }
 
+const NBA_IDS = {ATL:737,BOS:738,BKN:751,CHA:766,CHI:741,CLE:739,DAL:742,DEN:743,DET:765,GSW:744,HOU:745,IND:754,LAC:746,LAL:747,MEM:763,MIA:748,MIL:749,MIN:750,NOP:740,NYK:752,OKC:760,ORL:753,PHI:755,PHX:756,POR:757,SAC:758,SAS:759,TOR:761,UTA:762,WAS:764};
 function teamLogo(abbr) {
-  const logos = {
-    BOS: "https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg",
-    DET: "https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg",
-    PHI: "https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg",
-    NYK: "https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg",
-    OKC: "https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg",
-    SAS: "https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg",
-    ATL: "https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg",
-    ORL: "https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg",
-    MIL: "https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg",
-    WAS: "https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg"
-  };
-  return logos[abbr] || "";
+  return NBA_IDS[abbr] ? "https://cdn.nba.com/logos/nba/1610612" + NBA_IDS[abbr] + "/global/L/logo.svg" : "";
 }
 
 function poissonPMF(k, lambda) {
@@ -730,49 +565,6 @@ function calcEV(pOverPct, odds = -110) {
 
 // Simple mean-to-median adjustment for higher-volume skewed stats (points)
 // Snapshot current predictions into history (called on load and after updates)
-function snapshotPredictions() {
-  if (!DATA.prediction_history) DATA.prediction_history = [];
-  const stamp = new Date().toISOString().slice(0, 16);
-  const snapshot = {
-    timestamp: stamp,
-    games: DATA.games.map(g => ({
-      id: g.id,
-      matchup: `${g.away} @ ${g.home}`,
-      model_spread: g.model.spread,
-      model_total: g.model.total,
-      dk_spread: g.dk.spread,
-      dk_total: g.dk.total
-    })),
-    props: DATA.props.filter(p => Math.abs(p.edge) >= 0.5).slice(0, 30).map(p => ({
-      player: p.player,
-      stat: p.stat,
-      model: p.model,
-      dk: p.dk,
-      edge: p.edge,
-      side: p.side
-    }))
-  };
-  // Avoid exact duplicate timestamps
-  if (!DATA.prediction_history.some(h => h.timestamp === stamp)) {
-    DATA.prediction_history.unshift(snapshot);
-    if (DATA.prediction_history.length > 40) DATA.prediction_history.pop();
-  }
-}
-
-function renderPredictionHistory() {
-  const el = document.getElementById("prediction-history");
-  if (!el || !DATA.prediction_history) return;
-  if (DATA.prediction_history.length === 0) {
-    el.innerHTML = "<div class='note'>No prediction history yet. Snapshots are saved each time the board loads.</div>";
-    return;
-  }
-  el.innerHTML = DATA.prediction_history.slice(0, 5).map(h => `
-    <div style="margin-bottom:12px;padding:10px;background:var(--bg);border:1px solid var(--border-soft);border-radius:8px;">
-      <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">${h.timestamp.replace("T", " ")}</div>
-      <div style="font-size:13px;">${h.games.length} games · ${h.props.length} props logged</div>
-    </div>
-  `).join("");
-}
 var residualsApplied = false;
 function applyResiduals() {
   if (residualsApplied) return;
@@ -802,6 +594,22 @@ function confidence(edge) {
   return {label: "None", color: "var(--muted)"};
 }
 
+function restBadge(team, d) {
+  if (d === null || d === undefined) return "";
+  if (d === 0) return `<span class="badge b2b">${team} back-to-back</span>`;
+  if (d >= 2) return `<span class="badge rest">${team} ${d} days rest</span>`;
+  return `<span class="badge norm">${team} 1 day rest</span>`;
+}
+function restHtml(g) {
+  const r = g.rest || {};
+  const h = restBadge(g.away, r.away) + restBadge(g.home, r.home);
+  return h ? `<div class="rest-row">${h}</div>` : "";
+}
+function injuryFor(name) {
+  const k = (name || "").toLowerCase();
+  return (DATA.injuries || []).find(i => (i.player || "").toLowerCase() === k);
+}
+function fmtPrice(v) { return v === null || v === undefined ? "" : (v > 0 ? "+" + v : String(v)); }
 function renderGames() {
   const active = activeGames();
   document.getElementById("games-board").innerHTML = active.map((g, i) => {
@@ -834,6 +642,7 @@ function renderGames() {
             <img class="team-logo" src="${teamLogo(g.home)}" alt="${g.home}" onerror="this.style.display='none'">
           </div>
           <div class="time">${g.date} · ${g.time}</div>
+          ${restHtml(g)}
           ${statusHtml}
           ${scoreHtml}
         </div>
@@ -930,27 +739,6 @@ function populateGameFilter() {
   });
 }
 
-function renderCombos(filter = "all") {
-  let list = DATA.props.filter(p => ["PRA", "PR", "PA", "RA"].includes(p.stat));
-  if (filter !== "all") list = list.filter(p => p.stat === filter);
-  list.sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
-  const tbody = document.querySelector("#combos-table tbody");
-  if (!tbody) return;
-  tbody.innerHTML = list.map(p => {
-    const edgePct = Math.round((p.edge / p.dk) * 1000) / 10;
-    const cls = Math.abs(p.edge) >= 0.6 ? (p.edge > 0 ? "positive" : "negative") : "";
-    const rec = Math.abs(p.edge) < 0.4 ? "Pass (No Edge)" : (p.edge > 0 ? "Over" : "Under");
-    return `<tr>
-      <td><div class="player">${p.player}</div><div class="team">${p.team}</div></td>
-      <td>${p.stat}</td>
-      <td class="stat">${p.dk}</td>
-      <td class="stat">${p.model}</td>
-      <td class="stat ${cls}">${p.edge > 0 ? "+" : ""}${p.edge} (${edgePct > 0 ? "+" : ""}${edgePct}%)</td>
-      <td>${rec}</td>
-    </tr>`;
-  }).join("") || "<tr><td colspan='6' style='text-align:center;color:var(--muted);'>No combo props yet</td></tr>";
-}
-
 const STAT_NAMES = {PTS:"Points",REB:"Rebounds",AST:"Assists","3PM":"3-Pointers",BLK:"Blocks",STL:"Steals",PRA:"Pts+Reb+Ast",PR:"Pts+Reb",PA:"Pts+Ast",RA:"Reb+Ast"};
 function buildPropFilters() {
   const order = ["PTS","REB","AST","3PM","PRA","PR","PA","RA","BLK","STL"];
@@ -999,16 +787,20 @@ function renderProps() {
     const cls = Math.abs(e) >= 0.6 ? (e > 0 ? "positive" : "negative") : "";
     const lean = Math.abs(e) < 0.4 ? '<span class="pill pass">Pass</span>' : (e > 0 ? '<span class="pill over">Over ' + p.dk + '</span>' : '<span class="pill under">Under ' + p.dk + '</span>');
     const w = Math.min(100, Math.abs(e) / maxEdge * 100);
+    const inj = injuryFor(p.player);
+    const injHtml = inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}" title="${inj.reason || ""}">${inj.status}</span>` : "";
+    const odds = (p.over != null || p.under != null) ? `${fmtPrice(p.over) || "–"} / ${fmtPrice(p.under) || "–"}` : "–";
     return `<tr>
-      <td><div class="player clickable" data-player="${p.player}" data-team="${p.team}" data-game="${p.game}" style="cursor:pointer;">${p.player}</div><div class="team">${p.team}</div></td>
+      <td><div class="player clickable" data-player="${p.player}" data-team="${p.team}" data-game="${p.game}" style="cursor:pointer;">${p.player}${injHtml}</div><div class="team">${p.team}</div></td>
       <td class="team" style="font-size:12px;">${p.game.replace("@", " @ ")}</td>
       <td><span class="stat-tag">${p.stat}</span></td>
       <td class="stat">${p.dk}</td>
+      <td class="stat price">${odds}</td>
       <td class="stat"><strong>${p.model}</strong>${extra}</td>
       <td class="stat"><div class="edgebar"><span class="${cls}" style="min-width:38px;">${e > 0 ? "+" : ""}${e}</span><span class="bar"><i style="width:${w}%;background:${e >= 0 ? "var(--good)" : "var(--bad)"};"></i></span><span class="team">${pct > 0 ? "+" : ""}${pct}%</span></div></td>
       <td>${lean}</td>
     </tr>`;
-  }).join("") : `<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:28px;">${DATA.props.length ? "No props match these filters." : "No player props posted yet. They appear once DraftKings lines are up."}</td></tr>`;
+  }).join("") : `<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:28px;">${DATA.props.length ? "No props match these filters." : "No player props posted yet. They appear once DraftKings lines are up."}</td></tr>`;
 
   document.querySelectorAll("#props-table .player.clickable").forEach(el => {
     el.onclick = () => openPlayerDetail(el.dataset.player, el.dataset.team, el.dataset.game);
@@ -1028,30 +820,56 @@ function renderProps() {
 })();
 
 
+const STAT_FN = {PTS:r=>r.pts,REB:r=>r.reb,AST:r=>r.ast,"3PM":r=>r.tpm,BLK:r=>r.blk,STL:r=>r.stl,PRA:r=>r.pts+r.reb+r.ast,PR:r=>r.pts+r.reb,PA:r=>r.pts+r.ast,RA:r=>r.reb+r.ast};
+function playerRows(name) {
+  const P = window.PLAYER_GAMES;
+  if (!P || !P.players || !P.players[name]) return null;
+  return P.players[name].rows.map(a => { const o = {}; P.cols.forEach((c, i) => o[c] = a[i]); return o; });
+}
+function playerFormHtml(name, props) {
+  const rs = playerRows(name);
+  if (!rs || !rs.length) return '<div class="note" style="margin-top:16px;">Recent game data appears after the next update.</div>';
+  const avg = (n, f) => { const sl = rs.slice(0, n); return (sl.reduce((t, r) => t + f(r), 0) / sl.length).toFixed(1); };
+  const stats = ["PTS","REB","AST","3PM","STL","BLK"];
+  let h = `<div style="margin-top:18px;font-weight:600;margin-bottom:6px;">Recent form <span class="note">(${rs.length} games)</span></div>
+    <table><thead><tr><th></th><th>MIN</th>${stats.map(s => `<th>${s}</th>`).join("")}</tr></thead><tbody>`;
+  [...new Set([5, 10, 15].map(n => Math.min(n, rs.length)))].forEach(n => { if (n >= 3) h += `<tr><td>Last ${Math.min(n, rs.length)}</td><td>${avg(n, r => r.min)}</td>${stats.map(s => `<td>${avg(n, STAT_FN[s])}</td>`).join("")}</tr>`; });
+  h += "</tbody></table>";
+  if (props.length) {
+    h += `<div style="margin-top:16px;font-weight:600;margin-bottom:6px;">Hit rate vs tonight's lines</div><table><thead><tr><th>Prop</th><th>Line</th><th>L5</th><th>L10</th><th>L15</th></tr></thead><tbody>`;
+    props.forEach(p => {
+      const f = STAT_FN[p.stat]; if (!f) return;
+      const hr = n => { const sl = rs.slice(0, n); const k = sl.filter(r => f(r) > p.dk).length; const pc = Math.round(100 * k / sl.length); return `<td class="${pc >= 60 ? "positive" : pc <= 40 ? "negative" : ""}">${k}/${sl.length} · ${pc}%</td>`; };
+      h += `<tr><td>${p.stat}</td><td>${p.dk}</td>${hr(5)}${hr(10)}${hr(15)}</tr>`;
+    });
+    h += "</tbody></table>";
+  }
+  h += `<div style="margin-top:14px;"><button class="close" style="float:none;width:auto;height:auto;border-radius:8px;padding:7px 12px;font-size:12.5px;" onclick="openGameLog('${name.replace(/'/g, "\\'")}')">Open full game log →</button></div>`;
+  return h;
+}
+function openGameLog(name) {
+  document.getElementById("game-modal").classList.remove("show");
+  document.querySelector('nav button[data-tab="playerlog"]').click();
+  if (window.pickPlayer) window.pickPlayer(name);
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
 function openPlayerDetail(name, team, game) {
   const playerProps = DATA.props.filter(p => p.player === name && p.game === game);
   const propsHtml = playerProps.map(p => `
     <div class="detail-row">
       <span class="detail-label">${p.stat}</span>
-      <span>Model <strong>${p.model}</strong> · DK <strong>${p.dk}</strong> · Edge <strong class="${edgeClass(p.edge)}">${p.edge > 0 ? "+" : ""}${p.edge}</strong> (${p.side})</span>
+      <span>Model <strong>${p.model}</strong> · DK <strong>${p.dk}</strong>${p.over != null ? ` <span class="price">(${fmtPrice(p.over)}/${fmtPrice(p.under)})</span>` : ""} · Edge <strong class="${edgeClass(p.edge)}">${p.edge > 0 ? "+" : ""}${p.edge}</strong> (${p.side})</span>
     </div>`).join("");
 
   document.getElementById("modal-content").innerHTML = `
     <button class="close" onclick="document.getElementById('game-modal').classList.remove('show')">×</button>
-    <h3>${name}</h3>
+    <h3>${name}${(i => i ? ` <span class="badge ${/out/i.test(i.status) ? "out" : "inj"}" style="vertical-align:middle;">${i.status}${i.reason ? " · " + i.reason : ""}</span>` : "")(injuryFor(name))}</h3>
     <div style="color:var(--muted);font-size:13px;margin-bottom:14px;">${team} · ${game}</div>
 
-    <div style="font-weight:600;margin-bottom:6px;">Current Model Lines</div>
+    <div style="font-weight:600;margin-bottom:6px;">Tonight's props</div>
     ${propsHtml}
 
-    <div style="margin-top:18px;padding-top:12px;border-top:1px solid var(--border);">
-      <div style="font-weight:600;margin-bottom:6px;">Season Stats</div>
-      <div style="color:var(--muted);font-size:13px;">
-        Season has not started. Once games begin, this section will pull live stats from 
-        <a href="https://www.nba.com/stats" target="_blank" style="color:var(--accent);">nba.com/stats</a> 
-        (PTS, REB, AST, 3PM, FG%, minutes, recent form, etc.).
-      </div>
-    </div>
+    ${playerFormHtml(name, playerProps)}
   `;
   document.getElementById("game-modal").classList.add("show");
 }
@@ -1068,98 +886,6 @@ document.querySelectorAll("nav button").forEach(btn => {
     panel.style.display = "block";
   };
 });
-
-function renderPropsByGame() {
-  const container = document.getElementById("props-by-game");
-  const games = [...new Set(DATA.props.map(p => p.game))];
-  container.innerHTML = games.map(gid => {
-    const props = DATA.props.filter(p => p.game === gid).sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
-    const g = DATA.games.find(x => x.id === gid) || {away:"?", home:"?"};
-    return `
-      <div class="card" style="margin-bottom:14px;">
-        <div class="section-title" style="font-size:16px;">${g.away} @ ${g.home} <small>${gid}</small></div>
-        <table>
-          <thead><tr><th>Player</th><th>Stat</th><th>Model</th><th>DK</th><th>Edge</th><th>Side</th></tr></thead>
-          <tbody>
-            ${props.map(p => `<tr>
-              <td><div class="player">${p.player}</div><div class="team">${p.team}</div></td>
-              <td>${p.stat}</td>
-              <td class="stat">${p.model}</td>
-              <td class="stat">${p.dk}</td>
-              <td class="stat ${Math.abs(p.edge)>=0.6?(p.edge>0?'positive':'negative'):''}">${p.edge>0?'+':''}${p.edge}</td>
-              <td>${p.side}</td>
-            </tr>`).join("")}
-          </tbody>
-        </table>
-      </div>`;
-  }).join("");
-}
-
-function renderEdges() {
-  const rows = [];
-  DATA.games.forEach(g => {
-    if (Math.abs(g.spread_edge) >= 0.3) rows.push({type:"Spread", name:`${g.away}@${g.home}`, market:"Spread", model:g.model.spread, dk:g.dk.spread, edge:g.spread_edge, side:g.spread_edge>0?"Home":"Away"});
-    if (Math.abs(g.total_edge) >= 0.3) rows.push({type:"Total", name:`${g.away}@${g.home}`, market:"Total", model:g.model.total, dk:g.dk.total, edge:g.total_edge, side:g.total_edge>0?"Over":"Under"});
-  });
-  DATA.props.forEach(p => {
-    if (Math.abs(p.edge) >= 0.3) rows.push({type:"Prop", name:`${p.player} (${p.team})`, market:p.stat, model:p.model, dk:p.dk, edge:p.edge, side:p.side});
-  });
-  rows.sort((a,b) => Math.abs(b.edge) - Math.abs(a.edge));
-  document.querySelector("#edges-table tbody").innerHTML = rows.map(r => `
-    <tr>
-      <td>${r.type}</td>
-      <td>${r.name}</td>
-      <td>${r.market}</td>
-      <td class="stat">${r.model}</td>
-      <td class="stat">${r.dk}</td>
-      <td class="stat ${Math.abs(r.edge)>=0.6?(r.edge>0?'positive':'negative'):''}">${r.edge>0?'+':''}${r.edge}</td>
-      <td>${r.side}</td>
-    </tr>`).join("");
-}
-
-function renderNotes() {
-  const big = DATA.props.filter(p => Math.abs(p.edge) >= 1.0).slice(0, 5);
-  const gameEdges = activeGames().filter(g => Math.abs(g.spread_edge) >= 1.5 || Math.abs(g.total_edge) >= 1.5);
-  let html = "<ul>";
-  gameEdges.forEach(g => {
-    html += `<li><strong>${g.away} @ ${g.home}</strong> — ${g.note}</li>`;
-  });
-  big.forEach(p => {
-    html += `<li><strong>${p.player} ${p.stat}</strong> (${p.game}) — Model ${p.model} vs DK ${p.dk} (${p.edge > 0 ? "+" : ""}${p.edge}). ${p.side}.</li>`;
-  });
-  html += "</ul>";
-  if (!big.length && !gameEdges.length) html = "<p>No large edges to annotate yet.</p>";
-  document.getElementById("notes-content").innerHTML = html;
-}
-
-function renderSchedule() {
-  document.getElementById("schedule-board").innerHTML = activeGames().map(g => `
-    <div class="card" style="margin-bottom:10px;">
-      <div class="matchup">${g.away} @ ${g.home}</div>
-      <div class="time">${g.date} · ${g.time}</div>
-      <div class="note" style="margin-top:6px;">Rest: standard · Travel: none flagged</div>
-    </div>`).join("");
-}
-
-function renderTrends() {
-  const el = document.getElementById("trends-content");
-  if (!el) return;
-  const rec = DATA.record || {wins:0, losses:0, units:0};
-  const bets = DATA.settled_bets || [];
-  el.innerHTML = `
-    <div class="card" style="margin-bottom:12px;">
-      <div style="font-weight:700;margin-bottom:6px;">Opening Night Model Record</div>
-      <div style="font-size:18px;">${rec.wins}-${rec.losses} <span style="font-size:13px;color:var(--muted);">(${rec.units>0?'+':''}${rec.units}u)</span></div>
-    </div>
-    ${bets.map(b => `
-      <div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;">
-        <strong>${b.game}</strong> · ${b.market} ${b.side}
-        <span style="float:right;font-weight:700;color:${b.result==='W'?'var(--good)':'var(--bad)'}">${b.result}</span>
-        <div style="color:var(--muted);font-size:11px;">${b.actual}</div>
-      </div>
-    `).join("") || "<div class='note'>No settled results yet.</div>"}
-  `;
-}
 
 const ESPN_ABBREV = {
   "ATL":"ATL","BOS":"BOS","BKN":"BKN","CHA":"CHA","CHI":"CHI","CLE":"CLE","DAL":"DAL","DEN":"DEN",
@@ -1235,7 +961,6 @@ async function fetchLiveScores() {
       }
     });
     setLiveStatus("Live scores · " + liveCount + " in progress · updated " + new Date().toLocaleTimeString());
-    renderLive();
     renderGames();
   } catch (e) {
     console.warn("Live score fetch failed", e);
@@ -1247,35 +972,6 @@ function startLivePolling() {
   if (window._livePoll) clearInterval(window._livePoll);
   window._livePoll = setInterval(fetchLiveScores, 15000); // every 15s
 }
-function renderLive() {
-  const board = document.getElementById("live-board");
-  if (!board) return;
-  const live = DATA.games.filter(g => g.status === "Live");
-  const finalsToday = DATA.games.filter(g => g.status === "Final" && g.score);
-  if (live.length === 0) {
-    board.innerHTML = `
-      <div class="note">No games currently live. Auto-refreshes every 30s from ESPN.</div>
-      <div id="live-updated" style="font-size:11px;color:var(--muted);margin-top:6px;"></div>
-      ${finalsToday.length ? `<div class="section-title" style="margin-top:16px;font-size:15px;">Recent finals</div>` +
-        finalsToday.map(g => `<div class="card" style="margin-top:8px;"><div class="matchup">${g.away} ${g.score.away} – ${g.score.home} ${g.home}</div><div style="font-size:12px;color:var(--muted);">Final</div></div>`).join("") : ""}
-    `;
-    return;
-  }
-  board.innerHTML = `
-    <div id="live-updated" style="font-size:11px;color:var(--muted);margin-bottom:10px;"></div>
-    ${live.map(g => `
-    <div class="card" style="border-left:4px solid var(--accent);margin-bottom:10px;">
-      <div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px;">LIVE${g.live_note ? ' · ' + g.live_note : ''}</div>
-      <div class="matchup" style="font-size:16px;">${g.away} @ ${g.home}</div>
-      ${g.score ? `<div style="font-size:22px;font-weight:700;margin:8px 0;">${g.score.away} – ${g.score.home}</div>` : ""}
-      <div style="font-size:13px;margin-top:6px;">
-        Model spread: ${g.model.spread} · Model total: ${g.model.total}<br>
-        DK: ${g.dk.spread} / ${g.dk.total}
-      </div>
-    </div>
-  `).join("")}`;
-}
-
 document.getElementById("injury-toggle").onclick = () => {
   document.getElementById("injury-details").classList.toggle("show");
 };
@@ -1288,21 +984,144 @@ document.querySelectorAll("#best-filters button").forEach(btn => {
   };
 });
 
+// ---------- Bankroll ----------
+var bankFilter = "all";
+function renderBankroll() {
+  const bets = DATA.settled_bets || [];
+  const graded = bets.filter(b => b.result === "W" || b.result === "L");
+  const W = graded.filter(b => b.result === "W").length, L = graded.length - W;
+  const units = Math.round(bets.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100;
+  const roi = bets.length ? Math.round(units / bets.length * 1000) / 10 : 0;
+  const last7 = (() => { const cut = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10); const sl = bets.filter(b => b.date >= cut); return Math.round(sl.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100; })();
+  const sign = v => (v > 0 ? "+" : "") + v;
+  document.getElementById("bankroll-kpis").innerHTML = `
+    <div class="kpi"><div class="l">Record</div><div class="v">${W}-${L}</div><div class="s">${graded.length ? Math.round(100 * W / graded.length) : 0}% win rate</div></div>
+    <div class="kpi"><div class="l">Units</div><div class="v ${units >= 0 ? "positive" : "negative"}">${sign(units)}</div><div class="s">${bets.length} bets</div></div>
+    <div class="kpi"><div class="l">ROI</div><div class="v ${roi >= 0 ? "positive" : "negative"}">${sign(roi)}%</div><div class="s">per unit risked</div></div>
+    <div class="kpi"><div class="l">Last 7 days</div><div class="v ${last7 >= 0 ? "positive" : "negative"}">${sign(last7)}u</div><div class="s">units</div></div>`;
+  const groups = {};
+  bets.forEach(b => { const k = b.market === "Player Prop" ? "Prop · " + (b.side.split(" ").pop()) : b.market; (groups[k] = groups[k] || []).push(b); });
+  const rows = Object.entries(groups).map(([k, a]) => { const w = a.filter(b => b.result === "W").length, l = a.filter(b => b.result === "L").length, u = Math.round(a.reduce((t, b) => t + (b.units || 0), 0) * 100) / 100; return {k, w, l, u, n: a.length}; }).sort((a, b) => b.u - a.u);
+  document.getElementById("bankroll-markets").innerHTML = `<thead><tr><th>Market</th><th>Bets</th><th>Record</th><th>Win %</th><th>Units</th><th>ROI</th></tr></thead><tbody>` +
+    (rows.length ? rows.map(r => `<tr><td><strong>${r.k}</strong></td><td>${r.n}</td><td>${r.w}-${r.l}</td><td>${r.w + r.l ? Math.round(100 * r.w / (r.w + r.l)) : 0}%</td><td class="${r.u >= 0 ? "positive" : "negative"}">${sign(r.u)}</td><td class="${r.u >= 0 ? "positive" : "negative"}">${sign(Math.round(r.u / r.n * 1000) / 10)}%</td></tr>`).join("")
+      : '<tr><td colspan="6" style="color:var(--muted);text-align:center;padding:22px;">No settled bets yet. Results post here automatically after games finish.</td></tr>') + "</tbody>";
+  const kinds = ["all", "Spread", "Total", "Player Prop"];
+  document.getElementById("bankroll-filters").innerHTML = kinds.map(k => `<button data-k="${k}" class="${k === bankFilter ? "active" : ""}">${k === "all" ? "All bets" : k === "Player Prop" ? "Props" : k}</button>`).join("");
+  document.querySelectorAll("#bankroll-filters button").forEach(b => b.onclick = () => { bankFilter = b.dataset.k; renderBankroll(); });
+  const list = bets.filter(b => bankFilter === "all" || b.market === bankFilter).slice(0, 200);
+  document.querySelector("#bankroll-table tbody").innerHTML = list.length ? list.map(b => `
+    <tr>
+      <td class="team" style="font-size:12px;white-space:nowrap;">${b.date}</td>
+      <td>${b.game}<div class="team">${b.market}</div></td>
+      <td>${b.side}</td>
+      <td class="stat ${b.edge > 0 ? "positive" : "negative"}">${b.edge > 0 ? "+" : ""}${b.edge}</td>
+      <td class="team" style="font-size:12px;">${b.actual || ""}</td>
+      <td><span class="pill ${b.result === "W" ? "over" : b.result === "L" ? "under" : "pass"}">${b.result === "W" ? "Win" : b.result === "L" ? "Loss" : "Push"}</span></td>
+      <td class="stat ${b.units > 0 ? "positive" : b.units < 0 ? "negative" : ""}">${b.units > 0 ? "+" : ""}${b.units}</td>
+    </tr>`).join("") : '<tr><td colspan="7" style="color:var(--muted);text-align:center;padding:22px;">No bets in this view yet.</td></tr>';
+}
+
+// ---------- Model ----------
+function renderModel() {
+  const acc = DATA.accuracy || [];
+  const R = DATA.residuals || {};
+  const mae = (a, f) => a.length ? Math.round(a.reduce((t, x) => t + Math.abs(f(x)), 0) / a.length * 10) / 10 : null;
+  const mS = mae(acc, x => -x.model_spread - x.actual_margin), dS = mae(acc, x => -x.dk_spread - x.actual_margin);
+  const mT = mae(acc, x => x.model_total - x.actual_total), dT = mae(acc, x => x.dk_total - x.actual_total);
+  const closer = acc.length ? Math.round(100 * acc.filter(x => Math.abs(-x.model_spread - x.actual_margin) < Math.abs(-x.dk_spread - x.actual_margin)).length / acc.length) : null;
+  document.getElementById("model-kpis").innerHTML = `
+    <div class="kpi"><div class="l">Games learned</div><div class="v">${R.games_learned || 0}</div><div class="s">settled and scored</div></div>
+    <div class="kpi"><div class="l">Learning rate</div><div class="v">${R.alpha != null ? R.alpha : "–"}</div><div class="s">fades as more games come in</div></div>
+    <div class="kpi"><div class="l">Spread error</div><div class="v">${mS != null ? mS : "–"}</div><div class="s">${dS != null ? "DraftKings: " + dS + " pts" : "avg miss, points"}</div></div>
+    <div class="kpi"><div class="l">Total error</div><div class="v">${mT != null ? mT : "–"}</div><div class="s">${dT != null ? "DraftKings: " + dT + " pts" : "avg miss, points"}</div></div>`;
+  document.getElementById("model-accuracy").innerHTML = acc.length ? `
+    <div class="detail-row"><span class="detail-label">Games compared</span><strong>${acc.length}</strong></div>
+    <div class="detail-row"><span class="detail-label">Model closer than DK on the margin</span><strong>${closer}%</strong></div>
+    <div class="detail-row"><span class="detail-label">Avg spread miss · model / DK</span><strong>${mS} / ${dS}</strong></div>
+    <div class="detail-row"><span class="detail-label">Avg total miss · model / DK</span><strong>${mT} / ${dT}</strong></div>
+    <div class="detail-row"><span class="detail-label">Last 10 games · spread miss model / DK</span><strong>${mae(acc.slice(0, 10), x => -x.model_spread - x.actual_margin)} / ${mae(acc.slice(0, 10), x => -x.dk_spread - x.actual_margin)}</strong></div>
+    <div class="note" style="margin-top:8px;">Lower is better. If the model's miss is consistently lower than DraftKings', its edges are worth more.</div>`
+    : '<div class="note">Accuracy tracking starts with the next finished games. Each game is compared once it goes final.</div>';
+  document.getElementById("model-notes").innerHTML = (DATA.model_notes || []).map(n => `<li style="margin-bottom:6px;">${n}</li>`).join("");
+  const res = Object.entries(R.player || {}).map(([k, v]) => { const [pl, st] = k.split("|"); return {pl, st, v}; }).filter(x => Math.abs(x.v) >= 0.5).sort((a, b) => Math.abs(b.v) - Math.abs(a.v)).slice(0, 25);
+  document.getElementById("model-residuals").innerHTML = `<thead><tr><th>Player</th><th>Stat</th><th>Adjustment</th><th>Meaning</th></tr></thead><tbody>` +
+    (res.length ? res.map(x => `<tr><td><strong>${x.pl}</strong></td><td><span class="stat-tag">${x.st}</span></td><td class="stat ${x.v > 0 ? "positive" : "negative"}">${x.v > 0 ? "+" : ""}${x.v}</td><td class="team" style="font-size:12px;">${x.v > 0 ? "Has been beating the projection, nudged up" : "Has been falling short, nudged down"}</td></tr>`).join("")
+      : '<tr><td colspan="4" style="color:var(--muted);text-align:center;padding:22px;">No large adjustments yet.</td></tr>') + "</tbody>";
+}
+
+// ---------- Standings & Futures ----------
+function renderStandings() {
+  const st = DATA.standings || [];
+  const board = document.getElementById("standings-board");
+  const cls = s => /^W/.test(s || "") ? "positive" : /^L/.test(s || "") ? "negative" : "";
+  board.innerHTML = st.length ? st.map(c => `
+    <div class="card table-wrap"><div class="conf-head">${c.name}</div><table>
+      <thead><tr><th>#</th><th>Team</th><th>W-L</th><th>GB</th><th>L10</th><th>Strk</th><th>Home</th><th>Road</th><th>Diff</th></tr></thead><tbody>
+      ${c.teams.map((t, i) => `<tr class="${i === 5 || i === 9 ? "seed-line" : ""}">
+        <td class="team">${t.seed || i + 1}</td>
+        <td><div style="display:flex;align-items:center;gap:8px;"><img class="team-logo" style="width:22px;height:22px;" src="${teamLogo(t.team)}" alt="" onerror="this.style.display='none'"><strong>${t.team}</strong></div></td>
+        <td class="stat">${t.w}-${t.l}</td><td class="stat team">${t.gb}</td><td class="stat">${t.l10}</td>
+        <td class="stat ${cls(t.streak)}">${t.streak}</td><td class="stat team">${t.home}</td><td class="stat team">${t.road}</td>
+        <td class="stat ${parseFloat(t.diff) >= 0 ? "positive" : "negative"}">${t.diff}</td></tr>`).join("")}
+      </tbody></table></div>`).join("")
+    : '<div class="card"><div class="note">Standings load with the next update.</div></div>';
+  document.getElementById("standings-meta").textContent = "Dashed lines: playoff (top 6) and play-in (7-10) cutoffs";
+  const fut = (DATA.futures && DATA.futures.title) || [];
+  const fb = document.getElementById("futures-board");
+  if (DATA.futures && DATA.futures.updated) document.getElementById("futures-meta").textContent = "DraftKings · updated " + DATA.futures.updated;
+  const rec = {}; st.forEach(c => c.teams.forEach(t => rec[t.team] = t));
+  const max = Math.max(1, ...fut.map(f => f.implied));
+  fb.innerHTML = fut.length ? `<table><thead><tr><th>Team</th><th>Odds</th><th>Implied chance</th><th>Record</th></tr></thead><tbody>` + fut.map(f => `
+    <tr><td><div style="display:flex;align-items:center;gap:8px;"><img class="team-logo" style="width:22px;height:22px;" src="${teamLogo(f.team)}" alt="" onerror="this.style.display='none'"><strong>${f.name}</strong></div></td>
+    <td class="stat"><strong>${f.odds}</strong></td>
+    <td><div class="edgebar"><span class="stat" style="min-width:44px;">${f.implied}%</span><span class="bar" style="width:120px;"><i style="width:${f.implied / max * 100}%;background:var(--accent);"></i></span></div></td>
+    <td class="stat team">${rec[f.team] ? rec[f.team].w + "-" + rec[f.team].l : ""}</td></tr>`).join("") + "</tbody></table>"
+    : '<div class="note" style="padding:18px;">Championship odds load with the next update.</div>';
+}
+
+// ---------- Hot & Cold ----------
+var hcStat = "PTS";
+function renderHotCold() {
+  const P = window.PLAYER_GAMES;
+  const hot = document.getElementById("hc-hot"), cold = document.getElementById("hc-cold");
+  if (!hot) return;
+  const stats = ["PTS","REB","AST","3PM","PRA","MIN"];
+  document.getElementById("hc-stats").innerHTML = stats.map(s => `<button data-s="${s}" class="${s === hcStat ? "active" : ""}">${s === "MIN" ? "Minutes" : (STAT_NAMES[s] || s)}</button>`).join("");
+  document.querySelectorAll("#hc-stats button").forEach(b => b.onclick = () => { hcStat = b.dataset.s; renderHotCold(); });
+  if (!P || !P.players) { hot.innerHTML = cold.innerHTML = '<tbody><tr><td class="note" style="padding:18px;">Loading player data…</td></tr></tbody>'; return; }
+  const f = hcStat === "MIN" ? (r => r.min) : STAT_FN[hcStat];
+  const rows = [];
+  Object.keys(P.players).forEach(n => {
+    const rs = playerRows(n); if (!rs || rs.length < 8) return;
+    const a = (k, fn) => rs.slice(0, k).reduce((t, r) => t + fn(r), 0) / Math.min(k, rs.length);
+    const l5 = a(5, f), l15 = a(15, f);
+    if (l15 < (hcStat === "MIN" ? 10 : hcStat === "3PM" ? 0.8 : 3)) return;
+    const prop = DATA.props.find(p => p.player === n && p.stat === hcStat);
+    rows.push({n, team: P.players[n].team, l5, l15, d: l5 - l15, pct: (l5 - l15) / l15 * 100, min5: a(5, r => r.min), min15: a(15, r => r.min), prop});
+  });
+  const table = list => `<thead><tr><th>Player</th><th>L5</th><th>L15</th><th>Change</th><th>Minutes L5 / L15</th><th>Tonight</th></tr></thead><tbody>` + list.map(r => `
+    <tr><td><div class="player clickable" data-name="${r.n}" style="cursor:pointer;">${r.n}</div><div class="team">${r.team}</div></td>
+    <td class="stat"><strong>${r.l5.toFixed(1)}</strong></td><td class="stat team">${r.l15.toFixed(1)}</td>
+    <td class="stat ${r.d >= 0 ? "positive" : "negative"}" style="white-space:nowrap;">${r.d >= 0 ? "+" : ""}${r.d.toFixed(1)} <span class="team">(${r.pct >= 0 ? "+" : ""}${Math.round(r.pct)}%)</span></td>
+    <td class="stat team">${r.min5.toFixed(0)} / ${r.min15.toFixed(0)}</td>
+    <td style="white-space:nowrap;">${r.prop ? `<span class="stat-tag">${r.prop.stat} ${r.prop.dk}</span> <span class="pill ${r.prop.edge >= 0.4 ? "over" : r.prop.edge <= -0.4 ? "under" : "pass"}">${r.prop.edge >= 0.4 ? "Over" : r.prop.edge <= -0.4 ? "Under" : "Pass"}</span>` : '<span class="team">–</span>'}</td></tr>`).join("") + "</tbody>";
+  const sorted = rows.slice().sort((a, b) => b.pct - a.pct);
+  hot.innerHTML = table(sorted.slice(0, 15));
+  cold.innerHTML = table(sorted.slice(-15).reverse());
+  document.querySelectorAll("#hotcold .player.clickable").forEach(el => el.onclick = () => openGameLog(el.dataset.name));
+}
+
 var parlayMode = 2;
 var selectedParlay = [];
 renderGames();
 populateGameFilter();
 buildPropFilters();
 applyResiduals();
-snapshotPredictions();
 const rs = document.getElementById("residual-status");
-if (rs) rs.textContent = `Residuals: ${DATA.residuals.games_learned} games learned · History: ${(DATA.prediction_history||[]).length} snapshots`;
+if (rs) rs.textContent = nextUpdateText();
 renderProps();
-renderCombos();
-renderFlashBets();
 renderBestBets("all");
 renderParlayMainOnLoad();
-renderPredictionHistory();
 
 
 function setParlayTab(mode) {
@@ -1450,17 +1269,12 @@ function renderParlayMainOnLoad() {
   setParlayTab(2);
 }
 
-renderNotes();
-renderSchedule();
-renderTrends();
 startLivePolling();
 renderBankroll();
-(function() {
-  const el = document.getElementById("residual-content");
-  if (!el) return;
-  const rec = DATA.record || {wins:0, losses:0, units:0};
-  el.innerHTML = `<p style="color:var(--muted);margin-top:12px;">Opening Night settled. Model record <strong>${rec.wins}-${rec.losses}</strong> (${rec.units>0?'+':''}${rec.units}u). Full residual tables fill as more games complete.</p>`;
-})();
+renderModel();
+renderStandings();
+renderHotCold();
+
 
 // Injuries: live from ESPN in the browser (on load, then every 5 min); falls back to the daily data file
 (function () {
@@ -1495,6 +1309,7 @@ renderBankroll();
         });
       });
       DATA.injuries = rows;
+      if (typeof renderProps === "function") renderProps();
       paint(rows, "Live " + new Date().toLocaleTimeString([], {hour: "numeric", minute: "2-digit"}));
     }).catch(fallback);
   }
@@ -1582,7 +1397,8 @@ renderBankroll();
     };
     var d = '<div class="section-title" style="font-size:15px;">Detailed box score <small>averages first, then each game</small></div>' +
       '<table><thead><tr><th>Game</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>3PM</th><th>STL</th><th>BLK</th><th>TO</th><th>FG</th><th>FG%</th><th>3PT</th><th>3P%</th><th>FT</th><th>FT%</th><th>Poss used*</th><th>+/-</th></tr></thead><tbody>';
-    [5, 10, 15].forEach(function (n) { if (rs.length >= Math.min(n, 3)) d += row("<td>Avg L" + Math.min(n, rs.length) + "</td>", rs.slice(0, n), true); });
+    var seen = {};
+    [5, 10, 15].forEach(function (n) { var k = Math.min(n, rs.length); if (k >= 3 && !seen[k]) { seen[k] = 1; d += row("<td>Avg L" + k + "</td>", rs.slice(0, n), true); } });
     rs.forEach(function (r) { d += row("<td>" + esc(r.date.slice(5)) + " " + (r.home ? "vs " : "@ ") + esc(r.opp) + "</td>", [r], false); });
     $("pl-detail").innerHTML = d + '</tbody></table><div style="color:var(--muted);font-size:12px;margin-top:8px;">*Possessions used is an estimate: FGA + 0.44 x FTA + turnovers. Touches and potential assists come from NBA tracking data, which ESPN box scores do not include.</div>';
   }
@@ -1590,6 +1406,7 @@ renderBankroll();
     var m = Object.keys(P.players).filter(function (n) { return (n + " (" + P.players[n].team + ")") === v || n.toLowerCase() === v.toLowerCase(); })[0];
     if (m) { name = m; render(); }
   }
+  window.pickPlayer = function (n) { if (P && P.players[n]) { name = n; $("pl-search").value = n + " (" + P.players[n].team + ")"; render(); } };
   function init() {
     var names = Object.keys(P.players).sort();
     $("pl-list").innerHTML = names.map(function (n) { return '<option value="' + esc(n + " (" + P.players[n].team + ")") + '">'; }).join("");
@@ -1597,7 +1414,7 @@ renderBankroll();
     name = names[0]; if (name) { $("pl-search").value = name + " (" + P.players[name].team + ")"; render(); }
   }
   fetch("player_games.json?v=" + Date.now(), {cache: "no-store"}).then(function (r) { if (!r.ok) throw 0; return r.json(); })
-    .then(function (j) { P = j; if (Object.keys(j.players || {}).length) init(); else throw 0; })
+    .then(function (j) { P = j; window.PLAYER_GAMES = j; if (typeof renderHotCold === "function") renderHotCold(); if (Object.keys(j.players || {}).length) init(); else throw 0; })
     .catch(function () { $("pl-meta").textContent = "Player data appears after the first update run."; });
 })();
 </script>
