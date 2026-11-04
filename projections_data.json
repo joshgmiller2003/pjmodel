@@ -47665,13 +47665,13 @@
    "p_model": 74.2,
    "p_win": 79.5,
    "ev": 60.6,
-   "picked_at": "2026-11-04 05:53 PM ET",
+   "picked_at": "2026-11-04 06:01 PM ET",
    "open_line": 6.5,
    "open_price": 102,
    "first_picked_at": "2026-11-04 05:30 PM ET",
    "close_line": 6.5,
    "close_price": 102,
-   "close_at": "2026-11-04 05:53 PM ET",
+   "close_at": "2026-11-04 06:01 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -48108,14 +48108,14 @@
     "day": 1,
     "stake": 10.0,
     "to_win": 7.46,
-    "picked_at": "2026-11-04 05:53 PM ET",
+    "picked_at": "2026-11-04 06:01 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value",
     "open_line": 7.5,
     "open_price": -134,
     "first_picked_at": "2026-11-04 05:37 PM ET",
     "close_line": 7.5,
     "close_price": -134,
-    "close_at": "2026-11-04 05:53 PM ET",
+    "close_at": "2026-11-04 06:01 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -48416,7 +48416,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 8.2 RA vs a line of 6.5 (+1.7, 26% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 8.4 over the last 8 | Minutes steady: 31 per game over the last 5 (31 over the last 8) | Matchup vs BKN: neutral for RA (defense and pace about league average) | BKN ranks among the top-10 defenses for RA; he went over 6.5 in 2 of 3 games against that tier | Not on the injury report at pick time",
-    "picked_at": "2026-11-04 05:53 PM ET",
+    "picked_at": "2026-11-04 06:01 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -48454,7 +48454,7 @@
     "actual": null,
     "units": null,
     "why": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value | Model projects 10.7 RA vs a line of 7.5 (+3.2, 43% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 9.8 over the last 5 and 9.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Matchup vs HOU: neutral for RA (defense and pace about league average) | HOU ranks among the middle-10 defenses for RA; he went over 7.5 in 2 of 2 games against that tier | Teammate injury boost: Anthony Edwards, Terrence Shannon Jr. out, +12.1% to his RA projection (extra minutes and usage) | Not on the injury report at pick time",
-    "picked_at": "2026-11-04 05:53 PM ET",
+    "picked_at": "2026-11-04 06:01 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -48493,5 +48493,122 @@
    "min_bets": 150,
    "roi": -8.0
   }
+ },
+ "streaks": {
+  "potd": {
+   "current": null,
+   "best_win": {
+    "n": 0,
+    "start": null,
+    "end": null
+   },
+   "record": "0-0"
+  },
+  "ladder": {
+   "attempt": 1,
+   "day": 0,
+   "bankroll": 10.0,
+   "best_day": 0,
+   "peak": 10.0,
+   "completed": 0
+  },
+  "badges": [
+   {
+    "id": "first_win",
+    "group": "Pick of the Day",
+    "name": "First Win",
+    "desc": "Win a Pick of the Day",
+    "earned": null,
+    "progress": "0/1"
+   },
+   {
+    "id": "heater",
+    "group": "Pick of the Day",
+    "name": "Heater",
+    "desc": "3 Picks of the Day in a row",
+    "earned": null,
+    "progress": "0/3"
+   },
+   {
+    "id": "on_fire",
+    "group": "Pick of the Day",
+    "name": "On Fire",
+    "desc": "5 Picks of the Day in a row",
+    "earned": null,
+    "progress": "0/5"
+   },
+   {
+    "id": "unstoppable",
+    "group": "Pick of the Day",
+    "name": "Unstoppable",
+    "desc": "10 Picks of the Day in a row",
+    "earned": null,
+    "progress": "0/10"
+   },
+   {
+    "id": "ten_wins",
+    "group": "Pick of the Day",
+    "name": "Double Digits",
+    "desc": "10 Pick of the Day wins",
+    "earned": null,
+    "progress": "0/10"
+   },
+   {
+    "id": "winning_month",
+    "group": "Pick of the Day",
+    "name": "Winning Month",
+    "desc": "A month with 10+ graded picks at 55%+",
+    "earned": null,
+    "progress": "no graded month yet"
+   },
+   {
+    "id": "climber",
+    "group": "Ladder",
+    "name": "Climber",
+    "desc": "Reach Day 3 of a ladder",
+    "earned": null,
+    "progress": "0/3"
+   },
+   {
+    "id": "day5",
+    "group": "Ladder",
+    "name": "Ladder Day 5",
+    "desc": "5 ladder wins in a row",
+    "earned": null,
+    "progress": "0/5"
+   },
+   {
+    "id": "doubled",
+    "group": "Ladder",
+    "name": "Doubled Up",
+    "desc": "Grow a ladder to 2x the start",
+    "earned": null,
+    "progress": "$10 / $20"
+   },
+   {
+    "id": "triple",
+    "group": "Ladder",
+    "name": "Triple Digits",
+    "desc": "Grow a ladder to $100",
+    "earned": null,
+    "progress": "$10 / $100"
+   },
+   {
+    "id": "summit",
+    "group": "Ladder",
+    "name": "Summit",
+    "desc": "Finish a ladder at the goal",
+    "earned": null,
+    "progress": "$10 / $1000"
+   },
+   {
+    "id": "sharp",
+    "group": "Sharp",
+    "name": "Sharp",
+    "desc": "Beat the closing line on 10 picks",
+    "earned": null,
+    "progress": "0/10"
+   }
+  ]
  }
 }

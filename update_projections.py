@@ -1367,6 +1367,154 @@ def run_ladder(lad, plog, cands, slate, t_iso, now):
     return lad
 
 
+ALERTS_PATH = ROOT / "data" / "alerts.json"
+DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+SITE_URL = os.environ.get("SITE_URL", "https://joshgmiller2003.github.io/pjmodel/")
+
+BADGES = [  # id, group, name, description, test(stats) -> bool, progress(stats) -> str
+    ("first_win", "Pick of the Day", "First Win", "Win a Pick of the Day", lambda s: s["potd_w"] >= 1, lambda s: f"{min(s['potd_w'], 1)}/1"),
+    ("heater", "Pick of the Day", "Heater", "3 Picks of the Day in a row", lambda s: s["potd_best"] >= 3, lambda s: f"{min(s['potd_best'], 3)}/3"),
+    ("on_fire", "Pick of the Day", "On Fire", "5 Picks of the Day in a row", lambda s: s["potd_best"] >= 5, lambda s: f"{min(s['potd_best'], 5)}/5"),
+    ("unstoppable", "Pick of the Day", "Unstoppable", "10 Picks of the Day in a row", lambda s: s["potd_best"] >= 10, lambda s: f"{min(s['potd_best'], 10)}/10"),
+    ("ten_wins", "Pick of the Day", "Double Digits", "10 Pick of the Day wins", lambda s: s["potd_w"] >= 10, lambda s: f"{min(s['potd_w'], 10)}/10"),
+    ("winning_month", "Pick of the Day", "Winning Month", "A month with 10+ graded picks at 55%+", lambda s: s["win_month"], lambda s: "best so far " + s["best_month"] if s["best_month"] != "-" else "no graded month yet"),
+    ("climber", "Ladder", "Climber", "Reach Day 3 of a ladder", lambda s: s["lad_best_day"] >= 3, lambda s: f"{min(s['lad_best_day'], 3)}/3"),
+    ("day5", "Ladder", "Ladder Day 5", "5 ladder wins in a row", lambda s: s["lad_best_day"] >= 5, lambda s: f"{min(s['lad_best_day'], 5)}/5"),
+    ("doubled", "Ladder", "Doubled Up", "Grow a ladder to 2x the start", lambda s: s["lad_peak"] >= 2 * s["lad_start"], lambda s: f"${s['lad_peak']:g} / ${2 * s['lad_start']:g}"),
+    ("triple", "Ladder", "Triple Digits", "Grow a ladder to $100", lambda s: s["lad_peak"] >= 100, lambda s: f"${s['lad_peak']:g} / $100"),
+    ("summit", "Ladder", "Summit", "Finish a ladder at the goal", lambda s: s["lad_done"] >= 1, lambda s: f"${s['lad_peak']:g} / ${s['lad_goal']:g}"),
+    ("sharp", "Sharp", "Sharp", "Beat the closing line on 10 picks", lambda s: s["clv_beat"] >= 10, lambda s: f"{min(s['clv_beat'], 10)}/10"),
+]
+
+
+def streaks_and_badges(potd_hist, ladder, prev_badges=None):
+    """#13 Streaks and badges, rebuilt every run from the permanent records (nothing new to store).
+    A badge keeps the date it was first earned."""
+    graded = sorted([h for h in potd_hist if h.get("result") in ("W", "L")], key=lambda h: h["date"])
+    cur_t, cur_n, best, run, best_end, run_start, best_start = None, 0, 0, 0, None, None, None
+    for h in graded:
+        if h["result"] == cur_t:
+            cur_n += 1
+        else:
+            cur_t, cur_n = h["result"], 1
+        if h["result"] == "W":
+            run += 1
+            run_start = run_start if run > 1 else h["date"]
+            if run > best:
+                best, best_end, best_start = run, h["date"], run_start
+        else:
+            run = 0
+    months = {}
+    for h in graded:
+        m = months.setdefault(h["date"][:7], [0, 0]); m[0] += h["result"] == "W"; m[1] += 1
+    good = {k: v for k, v in months.items() if v[1] >= 10 and v[0] / v[1] >= 0.55}
+    bm = max(months.items(), key=lambda kv: (kv[1][0] / kv[1][1], kv[1][1])) if months else None
+    bm = f"{bm[1][0]}-{bm[1][1] - bm[1][0]} ({bm[0]})" if bm else "-"
+    steps = sorted(ladder.get("steps", []), key=lambda x: (x["attempt"], x["date"]))
+    best_day, day_now, peak = 0, 0, ladder.get("start", 10)
+    for st in steps:
+        if st.get("result") == "W":
+            peak = max(peak, st.get("bankroll_after") or 0)
+    by_att = {}
+    for st in steps:
+        by_att.setdefault(st["attempt"], []).append(st)
+    for att, rows in by_att.items():
+        n = sum(1 for r in rows if r.get("result") == "W")
+        best_day = max(best_day, n)
+        if att == ladder.get("attempt"):
+            day_now = n
+    stats = {"potd_w": sum(1 for h in graded if h["result"] == "W"), "potd_best": best, "win_month": bool(good),
+             "best_month": bm, "lad_best_day": best_day, "lad_peak": rnd(peak, 2), "lad_start": ladder.get("start", 10),
+             "lad_goal": ladder.get("goal", 1000),
+             "lad_done": sum(1 for a in ladder.get("attempts", []) if a.get("result") == "Completed"),
+             "clv_beat": sum(1 for e in potd_hist + ladder.get("steps", []) if (e.get("clv") or {}).get("beat") and (e.get("clv") or {}).get("final"))}
+    old = {b["id"]: b for b in (prev_badges or [])}
+    today = datetime.now(ET).date().isoformat()
+    badges = []
+    for bid, group, name, desc, test, prog in BADGES:
+        ok = bool(test(stats))
+        earned = (old.get(bid) or {}).get("earned") or (today if ok else None)
+        badges.append({"id": bid, "group": group, "name": name, "desc": desc, "earned": earned if (ok or earned) else None,
+                       "progress": prog(stats)})
+    return {"potd": {"current": {"type": cur_t, "n": cur_n} if cur_t else None,
+                     "best_win": {"n": best, "start": best_start, "end": best_end},
+                     "record": f"{stats['potd_w']}-{len(graded) - stats['potd_w']}"},
+            "ladder": {"attempt": ladder.get("attempt"), "day": day_now, "bankroll": ladder.get("bankroll"),
+                       "best_day": best_day, "peak": stats["lad_peak"], "completed": stats["lad_done"]},
+            "badges": badges}
+
+
+# ------------------------------------------------------------------ #9 Discord alerts
+def discord_post(payload):
+    if not DISCORD_WEBHOOK:
+        return False
+    try:
+        r = requests.post(DISCORD_WEBHOOK, json=payload, timeout=20)
+        if r.status_code in (200, 204):
+            return True
+        log(f"discord: HTTP {r.status_code}")
+    except requests.RequestException as e:
+        log(f"discord error: {e}")
+    return False
+
+
+def _pick_embed(title, p, color, extra=None):
+    lines = [f"**{p['label']}** ({fmt_px(p['price'])})", f"{p['game'].replace('@', ' @ ')} - {p.get('time', '')}"]
+    if p.get("score") is not None:
+        lines.append(f"Confidence {round(p['score'])}/100" + (f" - win chance {p['p_win']:g}%" if p.get("p_win") is not None else ""))
+    lines += ["", *[f"- {r}" for r in (p.get("reasons") or [])[:4]]]
+    if extra:
+        lines += ["", extra]
+    return {"title": title, "url": SITE_URL, "description": "\n".join(lines)[:3900], "color": color}
+
+
+def send_alerts(slot, potd_hist, ladder, streaks, slate, t_iso, now):
+    """Morning run: post today's Pick of the Day and ladder step. 6 PM run: post again only if the pick changed.
+    1 AM run: post last night's results. Each message goes out once (data/alerts.json). Needs the
+    DISCORD_WEBHOOK_URL secret; without it this does nothing."""
+    st = load(ALERTS_PATH, {})
+    if not DISCORD_WEBHOOK:
+        log("alerts: no DISCORD_WEBHOOK_URL secret set; skipping")
+        return
+    pick = next((h for h in potd_hist if h["date"] == t_iso), None)
+    step = next((x for x in ladder.get("steps", []) if x["date"] == t_iso), None)
+    cur = (streaks.get("potd") or {}).get("current")
+    streak_txt = f"POTD record {streaks['potd']['record']}" + (f" - current streak {cur['type']}{cur['n']}" if cur else "")
+    embeds = []
+    if slot == "morning" and pick and st.get("pick_date") != t_iso:
+        embeds.append(_pick_embed(f"Pick of the Day - {now.strftime('%a %b %-d')}", pick, 0xFF7A1A, streak_txt))
+        if step:
+            embeds.append(_pick_embed(f"Ladder Challenge - attempt #{step['attempt']}, day {step['day']}", step, 0x5CC8FF,
+                                      f"Stake ${step['stake']:g} to win ${step['to_win']:g}"))
+        if discord_post({"username": "PJ MODEL", "content": f"Today's picks are up: {SITE_URL}", "embeds": embeds}):
+            st.update(pick_date=t_iso, pick_label=pick["label"], step_label=(step or {}).get("label"))
+    elif slot == "pretip" and pick and st.get("pick_date") == t_iso and not pick.get("result"):
+        live = next((g["status"] != "Upcoming" for g in slate if g["event_id"] == pick.get("eid")), False)
+        if not live and pick["label"] != st.get("pick_label"):
+            if discord_post({"username": "PJ MODEL", "content": "Pick of the Day updated with the latest lines and injuries:",
+                             "embeds": [_pick_embed("Updated Pick of the Day", pick, 0xFF7A1A, f"Replaces: {st.get('pick_label')}")]}):
+                st.update(pick_label=pick["label"])
+    elif slot == "overnight":
+        y = (now.date() - timedelta(days=1)).isoformat()
+        if st.get("recap_date") != y:
+            py = next((h for h in potd_hist if h["date"] == y and h.get("result")), None)
+            ly = next((x for x in ladder.get("steps", []) if x["date"] == y and x.get("result")), None)
+            word = {"W": "WON", "L": "LOST", "P": "PUSH"}
+            out = []
+            if py:
+                out.append(f"Pick of the Day: **{py['label']}** - {word[py['result']]} ({py.get('actual', '')})")
+            if ly:
+                out.append(f"Ladder: **{ly['label']}** - {word[ly['result']]}" +
+                           (f", bankroll now ${ladder.get('bankroll'):g}" if ly["result"] != "L" else f", attempt #{ly['attempt']} ends; a new ladder starts at ${ladder.get('start'):g}"))
+            if out:
+                new = [b["name"] for b in streaks.get("badges", []) if b.get("earned") == now.date().isoformat()]
+                out += ["", streak_txt] + ([f"New badge: {', '.join(new)}"] if new else [])
+                if discord_post({"username": "PJ MODEL", "embeds": [{"title": f"Results - {y}", "url": SITE_URL,
+                                                                     "description": "\n".join(out), "color": 0x2ECC71 if (py or ly or {}).get("result") == "W" else 0xE74C3C}]}):
+                    st.update(recap_date=y)
+    save(ALERTS_PATH, st, indent=1)
+
+
 def fmt_px(p):
     return f"+{p}" if p > 0 else str(p)
 
@@ -1818,6 +1966,7 @@ def main():
     # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
     ladder = run_ladder(load(LADDER_PATH, {}), plog, all_cands, slate, t_iso, now)
     track_clv(potd_hist[:5] + ladder["steps"][:5], games, props, slate, now)
+    streaks = streaks_and_badges(potd_hist, ladder, (prev.get("streaks") or {}).get("badges"))
 
     # 3d. Alt-line ladders: lowest spending priority, morning run only, for the games of the best props
     alt_ladders = prev.get("alt_ladders", []) if prev.get("alt_date") == t_iso else []
@@ -1876,6 +2025,7 @@ def main():
             "potd_history": potd_hist[:400], "potd_alts": potd_alts,
             "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
+            "streaks": streaks,
             "calibration": {**cal, "paused": paused, "pause_rule": {"min_bets": PAUSE_MIN_BETS, "roi": PAUSE_ROI}},
             "clv": {"potd": clv_summary(potd_hist), "ladder": clv_summary(ladder["steps"]),
                     "all": clv_summary(potd_hist + ladder["steps"])},
@@ -1899,6 +2049,10 @@ def main():
     data["records"] = records
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
+    try:
+        send_alerts(slot, potd_hist, ladder, streaks, slate, t_iso, now)
+    except Exception as e:                       # alerts must never break the update
+        log(f"alerts failed: {e}")
     save(ROOT / "player_games.json", build_game_logs(idx, slate, now.strftime("%m/%d %I:%M %p ET")))
     log(f"wrote {len(games)} games, {len(props)} props, {len(injuries)} injuries")
     return 0
