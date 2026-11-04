@@ -1089,13 +1089,13 @@ function renderCredits() {
   if (!k) return;
   if (!c) { k.innerHTML = '<div class="kpi"><div class="l">Credits</div><div class="v">–</div><div class="s">Tracking starts with the next update</div></div>'; return; }
   const pct = Math.min(100, Math.round(100 * c.used_today / Math.max(1, c.limit)));
-  document.getElementById("credit-meta").textContent = `Hard limit of ${c.limit} per day · updates run 1 AM, 11 AM and 6 PM ET`;
+  document.getElementById("credit-meta").textContent = `Hard limits: ${c.limit} per day and ${(c.month_limit || 5000).toLocaleString()} per month for this site · updates run 1 AM, 11 AM and 6 PM ET`;
   k.innerHTML = `
     <div class="kpi"><div class="l">Used today</div><div class="v">${c.used_today} <span style="font-size:14px;color:var(--muted);">/ ${c.limit}</span></div>
       <div class="bar" style="height:6px;border-radius:3px;background:var(--surface-2);margin-top:8px;overflow:hidden;"><i style="display:block;height:100%;width:${pct}%;background:${pct >= 90 ? "var(--bad)" : pct >= 70 ? "var(--gold)" : "var(--good)"};"></i></div></div>
-    <div class="kpi"><div class="l">Left today</div><div class="v">${c.allowed_now}</div><div class="s">${c.allowed_now < c.limit - c.used_today ? "paced to last until the plan resets" : "before the daily cap"}</div></div>
-    <div class="kpi"><div class="l">Left in plan</div><div class="v">${c.remaining != null ? c.remaining.toLocaleString() : "–"}</div><div class="s">resets in ${c.days_to_reset} day${c.days_to_reset === 1 ? "" : "s"}</div></div>
-    <div class="kpi"><div class="l">Last 7 days</div><div class="v">${(c.history || []).slice(0, 7).reduce((t, h) => t + h.used, 0)}</div><div class="s">credits used</div></div>`;
+    <div class="kpi"><div class="l">Left today</div><div class="v">${c.allowed_now}</div><div class="s">${c.allowed_now < c.limit - c.used_today ? "paced so the monthly budget lasts" : "before the daily cap"}</div></div>
+    <div class="kpi"><div class="l">Left in plan (all sites)</div><div class="v">${c.remaining != null ? c.remaining.toLocaleString() : "–"}</div><div class="s">resets in ${c.days_to_reset} day${c.days_to_reset === 1 ? "" : "s"}</div></div>
+    <div class="kpi"><div class="l">This site this month</div><div class="v">${(c.month_used || 0).toLocaleString()} <span style="font-size:14px;color:var(--muted);">/ ${(c.month_limit || 5000).toLocaleString()}</span></div><div class="s">your key is shared with another site</div></div>`;
   const calls = (c.calls || []).slice().reverse();
   document.getElementById("credit-calls").innerHTML = `<thead><tr><th>Time (ET)</th><th>Call</th><th>Credits</th></tr></thead><tbody>` +
     (calls.length ? calls.map(x => `<tr><td class="team" style="font-size:12px;">${x.time}</td><td>${x.call}</td><td class="stat">${x.cost}</td></tr>`).join("") : '<tr><td colspan="3" class="note" style="padding:18px;">No paid calls yet today.</td></tr>') +

@@ -35,6 +35,7 @@ ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
 DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "150") or 150)   # hard cap per ET day
+MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5000") or 5000)  # this site's share of the plan
 ODDS_RESET_DAY = int(os.environ.get("ODDS_RESET_DAY", "1") or 1)               # day of month the plan resets
 CREDITS_PATH = Path(__file__).resolve().parent / "data" / "credits.json"
 
@@ -89,7 +90,8 @@ class Credits:
         self.day = now.date().isoformat()
         st = load(CREDITS_PATH, {})
         self.state = st if st.get("date") == self.day else {"date": self.day, "used_today": 0, "calls": [],
-                                                              "remaining": st.get("remaining"), "history": st.get("history", [])}
+                                                              "remaining": st.get("remaining"), "history": st.get("history", []),
+                                                              "adjust": st.get("adjust")}
         self.state["limit"] = DAILY_CREDIT_LIMIT
         self.skipped = []
 
@@ -100,9 +102,27 @@ class Credits:
             nxt = (nxt.replace(day=1) + timedelta(days=32)).replace(day=min(ODDS_RESET_DAY, 28))
         return max(1, (nxt - d).days)
 
+    def cycle_start(self):
+        d = self.now.date()
+        start = d.replace(day=min(ODDS_RESET_DAY, 28))
+        if start > d:
+            start = (start.replace(day=1) - timedelta(days=1)).replace(day=min(ODDS_RESET_DAY, 28))
+        return start.isoformat()
+
+    def month_used(self):
+        """Credits THIS site has used since the plan last reset (the key may be shared with other sites)."""
+        cs = self.cycle_start()
+        adj = self.state.get("adjust") or {}
+        extra = adj.get("used", 0) if adj.get("cycle") == cs else 0       # credits used before tracking existed
+        return sum(h["used"] for h in self.state.get("history", []) if cs <= h["date"] < self.day) + self.state["used_today"] + extra
+
     def allowance(self):
         """What is still allowed today: the daily cap, and never more than an even share of what is left in the plan."""
         left_today = DAILY_CREDIT_LIMIT - self.state["used_today"]
+        # this site's monthly budget, spread evenly over the days left in the cycle
+        month_left = MONTHLY_CREDIT_LIMIT - self.month_used()
+        site_share = (month_left + self.state["used_today"]) // self.days_to_reset() - self.state["used_today"]
+        left_today = min(left_today, site_share, month_left)
         rem = self.state.get("remaining")
         if rem is not None:
             # even share of the plan: what was left at the start of today, split over the days until it resets
@@ -143,6 +163,8 @@ class Credits:
         hist.insert(0, {"date": self.day, "used": st["used_today"], "limit": DAILY_CREDIT_LIMIT})
         st["history"] = hist[:60]
         st["days_to_reset"] = self.days_to_reset()
+        st["month_used"] = self.month_used()
+        st["month_limit"] = MONTHLY_CREDIT_LIMIT
         save(CREDITS_PATH, st, indent=1)
 
 
@@ -1054,7 +1076,8 @@ def main():
             "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
                         "allowed_now": CREDITS.allowance(), "skipped": CREDITS.skipped, "slot": slot,
                         "calls": CREDITS.state["calls"][-20:], "history": CREDITS.state.get("history", [])[:14],
-                        "days_to_reset": CREDITS.days_to_reset()},
+                        "days_to_reset": CREDITS.days_to_reset(), "month_used": CREDITS.month_used(),
+                        "month_limit": MONTHLY_CREDIT_LIMIT},
             "futures": {"title": futures, "book": futures[0].get("book", ""), "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
