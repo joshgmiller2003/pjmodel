@@ -484,6 +484,88 @@ def fetch_injuries(slate):
 
 
 # -------------------------------------------------------------- settlement
+STAT_VAL = {"PTS": lambda r: r["pts"], "REB": lambda r: r["reb"], "AST": lambda r: r["ast"], "3PM": lambda r: r["tpm"],
+            "BLK": lambda r: r["blk"], "STL": lambda r: r["stl"], "PRA": lambda r: r["pts"] + r["reb"] + r["ast"],
+            "PR": lambda r: r["pts"] + r["reb"], "PA": lambda r: r["pts"] + r["ast"], "RA": lambda r: r["reb"] + r["ast"]}
+
+
+def units_for(res, price):
+    if res == "W":
+        return rnd(price / 100 if price and price > 0 else 100 / -price if price else WIN_UNITS, 2)
+    return -1.0 if res == "L" else 0.0
+
+
+def grade_potd(history, plog):
+    """Grade any Pick of the Day whose game has finished."""
+    for h in history:
+        if h.get("result") or h["eid"] not in plog["games"]:
+            continue
+        g = plog["games"][h["eid"]]
+        row = next((r for r in g["players"] if norm(r["n"]) == norm(h["player"])), None)
+        if row is None:
+            h["result"], h["actual"], h["units"] = "P", "DNP", 0.0     # did not play: treated as a void
+            continue
+        act = STAT_VAL[h["stat"]](row)
+        over = h["side"] == "Over"
+        h["result"] = "P" if act == h["line"] else ("W" if (act > h["line"]) == over else "L")
+        h["actual"] = f"{act:g} {h['stat']}"
+        h["units"] = units_for(h["result"], h.get("price"))
+
+
+def pick_of_the_day(props, slate, idx, injuries, today_iso):
+    """Rank tonight's props and return (pick, runners_up).
+
+    A candidate must: be for a game today that has not started, have a posted price no worse than -160,
+    a player not on the injury report, 8+ logged games, steady minutes, an edge of 6-40% of the line
+    (bigger usually means the model is missing news), and a last-10 hit rate of 60%+ in the pick's direction.
+    Score = 55% hit rate (L10, with L5 and L15 as support) + 45% edge size.
+    """
+    gm = {g["id"]: g for g in slate}
+    hurt = {norm(i["player"]): i["status"] for i in injuries}
+    cands = []
+    for p in props:
+        g = gm.get(p["game"])
+        if not g or g["status"] != "Upcoming" or g["date"] != today_iso or not p["dk"]:
+            continue
+        if norm(p["player"]) in hurt or p["stat"] not in STAT_VAL:
+            continue
+        over = p["edge"] > 0
+        price = p.get("over") if over else p.get("under")
+        if price is None or price < -160:
+            continue
+        hist = [r for r in idx.get(norm(p["player"]), []) if r["min"] >= 5]
+        if len(hist) < 8:
+            continue
+        rs = hist[::-1]                                         # newest first
+        vals = [STAT_VAL[p["stat"]](r) for r in rs]
+        hit = lambda n: sum(1 for v in vals[:n] if (v > p["dk"] if over else v < p["dk"])) / len(vals[:n])
+        h5, h10, h15 = hit(5), hit(10), hit(15)
+        epct = abs(p["edge"]) / p["dk"]
+        m5 = sum(r["min"] for r in rs[:5]) / len(rs[:5])
+        m15 = sum(r["min"] for r in rs[:15]) / len(rs[:15])
+        if h10 < 0.6 or not (0.06 <= epct <= 0.40) or m5 < 20 or m5 < m15 - 6:
+            continue
+        score = 0.55 * (0.5 * h10 + 0.25 * h5 + 0.25 * h15) + 0.45 * min(epct / 0.25, 1)
+        n5, n10, n15 = min(5, len(vals)), min(10, len(vals)), min(15, len(vals))
+        reasons = [f"Model projects {p['model']:g} vs a line of {p['dk']:g} ({'+' if p['edge'] > 0 else ''}{p['edge']:g}, {round(epct * 100)}% edge)",
+                   f"Went {'over' if over else 'under'} in {round(h10 * n10)} of his last {n10} games ({round(h5 * n5)}/{n5} in the last 5)",
+                   f"Averaging {sum(vals[:5]) / n5:.1f} over the last 5 and {sum(vals[:n15]) / n15:.1f} over the last {n15}",
+                   f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {min(15, len(rs))})"]
+        cands.append({**{k: p[k] for k in ("player", "team", "game", "stat", "model", "edge")},
+                      "date": today_iso, "eid": g["event_id"], "time": g["time"], "line": p["dk"],
+                      "side": "Over" if over else "Under", "price": price, "edge_pct": rnd(epct * 100, 1),
+                      "hits": {"l5": [round(h5 * n5), n5], "l10": [round(h10 * n10), n10], "l15": [round(h15 * n15), n15]},
+                      "last10": vals[:10][::-1], "score": rnd(score * 100, 1), "reasons": reasons})
+    cands.sort(key=lambda c: -c["score"])
+    seen, alts = set(), []
+    for c in cands[1:]:                                         # one entry per player for the runners-up
+        if c["player"] not in seen and c["player"] != (cands[0]["player"] if cands else None):
+            seen.add(c["player"]); alts.append(c)
+        if len(alts) == 5:
+            break
+    return (cands[0] if cands else None), alts
+
+
 def settle(pending, plog, state):
     """Score frozen predictions for games that have finished. Updates state in place."""
     names = {}
@@ -676,6 +758,20 @@ def main():
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
 
+    # 3b. Pick of the Day: re-picked each run until its game tips off, then locked
+    potd_hist = prev.get("potd_history", [])
+    grade_potd(potd_hist, plog)
+    todays = next((h for h in potd_hist if h["date"] == t_iso), None)
+    locked = todays and (todays.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == todays["eid"]), True))
+    potd_alts = prev.get("potd_alts", []) if locked else []
+    if not locked:
+        pick, potd_alts = pick_of_the_day(props, slate, idx, injuries, t_iso)
+        potd_hist = [h for h in potd_hist if h["date"] != t_iso]
+        if pick:
+            potd_hist.insert(0, pick)
+    potd_hist = potd_hist[:200]
+    log(f"potd: {potd_hist[0]['player'] + ' ' + potd_hist[0]['side'] + ' ' + str(potd_hist[0]['line']) + ' ' + potd_hist[0]['stat'] if potd_hist and potd_hist[0]['date'] == t_iso else 'none today'}")
+
     # 4. fading learning rate
     gl = state["residuals"]["games_learned"]
     state["residuals"]["alpha"] = rnd(0.12 + 0.33 * math.exp(-gl / 60), 3)
@@ -711,6 +807,7 @@ def main():
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
+            "potd_history": potd_hist, "potd_alts": potd_alts,
             "futures": {"title": futures, "book": futures[0].get("book", ""), "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
