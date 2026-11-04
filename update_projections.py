@@ -32,7 +32,7 @@ LADDER_START = float(os.environ.get("LADDER_START", "10") or 10)
 LADDER_GOAL = float(os.environ.get("LADDER_GOAL", "1000") or 1000)
 ALT_MARKETS = {"player_points_alternate": "PTS", "player_rebounds_alternate": "REB",
                "player_assists_alternate": "AST", "player_threes_alternate": "3PM"}
-ALT_GAMES = int(os.environ.get("ALT_LADDER_GAMES", "3") or 3)   # games per day that get alt-line ladders
+ALT_GAMES = int(os.environ.get("ALT_LADDER_GAMES", "1") or 1)   # games per day that get alt-line ladders
 
 SEASON = "2026-27"
 SEASON_START = date(2026, 10, 20)
@@ -41,8 +41,8 @@ ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
-DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "150") or 150)   # hard cap per ET day
-MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5000") or 5000)  # this site's share of the plan
+DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "75") or 75)   # hard cap per ET day
+MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "2500") or 2500)  # this site's share of the plan
 ODDS_RESET_DAY = int(os.environ.get("ODDS_RESET_DAY", "1") or 1)               # day of month the plan resets
 CREDITS_PATH = Path(__file__).resolve().parent / "data" / "credits.json"
 
@@ -1227,12 +1227,13 @@ def main():
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
     # Spend in priority order: game lines (3) -> props for today's games, earliest tip first -> futures (once a day).
     # Overnight runs skip props: most lines are not posted yet and they move before tip-off.
-    gml = odds_game_lines() if upcoming else {}
+    # Lean schedule: 1 AM spends nothing, 11 AM is the one full pull, 6 PM only refreshes game lines (3 credits).
+    gml = odds_game_lines() if (upcoming and slot != "overnight") else {}
     def tip(g):
         m = re.match(r"(\d+):(\d+) (AM|PM)", g["time"])
         return (int(m.group(1)) % 12 + (12 if m.group(3) == "PM" else 0)) * 60 + int(m.group(2)) if m else 9999
     todays_up = sorted([g for g in upcoming if g["date"] == t_iso], key=tip)
-    prop_lines = odds_props(todays_up, idx) if (todays_up and slot != "overnight") else {}
+    prop_lines = odds_props(todays_up, idx) if (todays_up and slot == "morning") else {}
     for g in upcoming:
         hit = gml.get((NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])))
         if hit:
