@@ -390,11 +390,13 @@ nav button:first-child { margin-left: -13px; }
     <div class="section-title">Pick of the Day <small id="potd-meta"></small></div>
     <div id="potd-hero"></div>
     <div class="kpis" id="potd-kpis" style="margin-top:16px;"></div>
-    <div class="section-title" style="font-size:16px;margin-top:22px;">Also considered <small>Next best props that passed every filter</small></div>
+    <div class="card table-wrap" style="margin-bottom:6px;"><table id="potd-types"></table></div>
+    <div class="section-title" style="font-size:16px;margin-top:22px;">Also considered <small>Next best bets that passed every filter</small></div>
     <div class="game-grid" id="potd-alts"></div>
-    <div class="section-title" style="font-size:16px;margin-top:26px;">History <small>Every past pick, graded automatically</small></div>
+    <div class="section-title" style="font-size:16px;margin-top:26px;">Pick log <small>Every pick, why it was made and how it finished · click a row for the reasons</small>
+      <button class="btn" style="margin-left:auto;" onclick="downloadPotd()">Download CSV</button></div>
     <div class="card table-wrap"><table id="potd-history"></table></div>
-    <p class="note" style="margin-top:12px;">How it's picked: each update ranks every prop for today's games that hasn't tipped off. A pick must have a posted price no worse than -160, a player not on the injury report, steady minutes, a model edge of 6–40% of the line, and a hit rate of at least 60% over the last 10 games in that direction. The score weighs hit rate (55%) and edge size (45%). The pick locks once its game starts.</p>
+    <p class="note" style="margin-top:12px;">How it's picked: each update ranks every bet on today's board that hasn't tipped off, including player props, spreads, totals and moneylines. Every candidate must be backed by recent results (60%+ hit rate over the last 10 for props, spreads and totals; a winning record for moneylines), have a sane edge (props 6–40% of the line, spreads 1.5–6 pts, totals 3–12 pts, moneylines 4–20 points of win probability over the price), and a price no worse than -160 (-250 for moneylines). Props also need a healthy player with steady minutes. Score = 55% recent hit rate + 45% edge size. The pick locks at tip-off and is saved permanently in <code>data/potd_log.json</code> with its reasons and result.</p>
   </section>
 
   <section id="hotcold" class="tab" style="display:none;">
@@ -1142,13 +1144,17 @@ function renderHotCold() {
 // ---------- Pick of the Day ----------
 function potdBars(vals, line, side) {
   if (!vals || !vals.length) return "";
-  const W = 420, H = 130, base = 104, top = 14, mx = Math.max(line, ...vals) * 1.15 || 1, bw = W / vals.length;
-  const y = v => base - (base - top) * v / mx;
+  const W = 420, H = 150, top = 16, bottom = 120;
+  const hi = Math.max(line, 0, ...vals), lo = Math.min(line, 0, ...vals);
+  const pad = (hi - lo) * 0.12 || 1, max = hi + pad, min = lo < 0 ? lo - pad : 0;
+  const y = v => top + (bottom - top) * (max - v) / (max - min), bw = W / vals.length;
   let c = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;">`;
+  if (min < 0) c += `<line x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}" stroke="var(--border)" stroke-width="1"/>`;
   vals.forEach((v, i) => {
     const hit = side === "Over" ? v > line : v < line, x = i * bw + bw * 0.18, w = bw * 0.64;
-    c += `<rect x="${x}" y="${y(v)}" width="${w}" height="${base - y(v)}" rx="3" fill="${hit ? "var(--good)" : "var(--bad)"}" opacity="0.85"/>` +
-         `<text x="${x + w / 2}" y="${y(v) - 4}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>`;
+    const y1 = y(Math.max(v, 0)), y2 = y(Math.min(v, 0));
+    c += `<rect x="${x}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" rx="3" fill="${hit ? "var(--good)" : "var(--bad)"}" opacity="0.85"/>` +
+         `<text x="${x + w / 2}" y="${v >= 0 ? y1 - 4 : y2 + 11}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>`;
   });
   c += `<line x1="0" x2="${W}" y1="${y(line)}" y2="${y(line)}" stroke="var(--gold)" stroke-dasharray="5 4" stroke-width="1.5"/>` +
        `<text x="${W - 2}" y="${H - 6}" fill="var(--gold)" font-size="10" text-anchor="end">— Line ${line}</text>` +
@@ -1156,44 +1162,73 @@ function potdBars(vals, line, side) {
   return c;
 }
 function hitTxt(h) { return h ? `${h[0]}/${h[1]}` : "–"; }
+const POTD_VERB = {Prop: null, Spread: "covered", Total: null, Moneyline: "won"};
+function potdNorm(p) {
+  const type = p.type || "Prop";
+  return Object.assign({type,
+    label: p.label || `${p.player} ${p.side} ${p.line} ${p.stat}`,
+    chart: p.chart || {vals: p.last10 || [], line: p.line, side: p.side, label: p.stat}}, p, {type});
+}
+function potdTiles(p) {
+  const sign = v => (v > 0 ? "+" : "") + v;
+  const verb = POTD_VERB[p.type] || (p.side || "").toLowerCase();
+  let a, b;
+  if (p.type === "Prop") { a = ["Model", p.model, "line " + p.line]; b = ["Edge", sign(p.edge), (p.edge_pct || "") + "% of line"]; }
+  else if (p.type === "Spread") { a = ["Model margin", sign(p.model), `line ${p.team} ${sign(p.line)}`]; b = ["Edge", p.edge + " pts", "vs the spread"]; }
+  else if (p.type === "Total") { a = ["Model total", p.model, "line " + p.line]; b = ["Edge", p.edge + " pts", "vs the total"]; }
+  else { a = ["Model win %", p.model + "%", "price " + fmtPrice(p.price)]; b = ["Edge", "+" + p.edge + " pts", "win prob over price"]; }
+  const t = (x, cls) => `<div class="market"><label>${x[0]}</label><div class="proj ${cls || ""}">${x[1]}</div><div class="dk">${x[2]}</div></div>`;
+  return t(a) + t(b, "positive") + t(["Confidence", Math.round(p.score), "score out of 100"]) +
+    ["l5", "l10", "l15"].map((k, i) => t([["Last 5", "Last 10", "Last 15"][i], hitTxt(p.hits && p.hits[k]), verb])).join("");
+}
+function potdTitle(p) {
+  if (p.type === "Prop") return {logo: p.team, name: p.player, sub: `${p.team} · ${p.game.replace("@", " @ ")} · ${p.time}`,
+    bet: `${p.side} ${p.line} ${STAT_NAMES[p.stat] || p.stat}`};
+  const m = `${p.away} @ ${p.home}`;
+  if (p.type === "Total") return {logo: p.home, name: m, sub: `Game total · ${p.time}`, bet: `${p.side} ${p.line}`};
+  if (p.type === "Spread") return {logo: p.team, name: p.team + (p.team === p.home ? " vs " + p.away : " @ " + p.home), sub: `Spread · ${p.time}`, bet: `${p.team} ${p.line > 0 ? "+" : ""}${p.line}`};
+  return {logo: p.team, name: p.team + (p.team === p.home ? " vs " + p.away : " @ " + p.home), sub: `Moneyline · ${p.time}`, bet: `${p.team} to win`};
+}
+function resultPill(h, extra) {
+  if (!h.result) return `<span class="pill pass ${extra || ""}">Pending</span>`;
+  return `<span class="pill ${extra || ""} ${h.result === "W" ? "over" : h.result === "L" ? "under" : "pass"}">${h.result === "W" ? "Win" : h.result === "L" ? "Loss" : "Push"}</span>`;
+}
 function renderPotd() {
-  const hist = DATA.potd_history || [];
+  const hist = (DATA.potd_history || []).map(potdNorm);
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
   const p = hist.find(h => h.date === today);
   const hero = document.getElementById("potd-hero");
   const sign = v => (v > 0 ? "+" : "") + v;
-  document.getElementById("potd-meta").textContent = p ? `${p.game.replace("@", " @ ")} · ${p.time}` : "";
+  document.getElementById("potd-meta").textContent = p ? `${p.type} · ${p.game.replace("@", " @ ")} · ${p.time}` : "";
   if (!p) {
-    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or no prop cleared every filter. The pick is chosen at each update (1 AM and 11 AM ET).</div></div>`;
+    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or nothing cleared every filter. The pick is chosen at each update (1 AM and 11 AM ET).</div></div>`;
   } else {
     const g = (DATA.games || []).find(x => x.id === p.game);
-    const inj = injuryFor(p.player);
+    const T = potdTitle(p);
+    const inj = p.player ? injuryFor(p.player) : null;
     const res = p.result ? `<span class="pill potd-result ${p.result === "W" ? "over" : p.result === "L" ? "under" : "pass"}">${p.result === "W" ? "WIN" : p.result === "L" ? "LOSS" : "PUSH"} · ${p.actual || ""}</span>`
-              : g && g.status === "Live" ? `<span class="pill potd-result pass">LIVE${g.live_note ? " · " + g.live_note : ""}</span>` : "";
+              : g && g.status === "Live" ? `<span class="pill potd-result pass">LIVE${g.live_note ? " · " + g.live_note : ""}${g.score ? " · " + g.away + " " + g.score.away + "-" + g.score.home + " " + g.home : ""}</span>`
+              : `<span class="pill potd-result pass">${p.locked_at ? "Locked" : "Can still update before tip-off"}</span>`;
     hero.innerHTML = `<div class="card potd-hero">${res}
-      <div class="eyebrow">Pick of the Day · ${new Date(p.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "short", day: "numeric"})}</div>
-      <div class="who"><img class="team-logo" style="width:44px;height:44px;" src="${teamLogo(p.team)}" alt="" onerror="this.style.display='none'">
-        <div><div class="name">${p.player}${inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}" style="vertical-align:middle;">${inj.status}</span>` : ""}</div>
-        <div class="team" style="font-size:13px;margin-top:3px;">${p.team} · ${p.game.replace("@", " @ ")} · ${p.time}</div></div></div>
-      <div class="bet">${p.side} ${p.line} ${STAT_NAMES[p.stat] || p.stat}<span class="px">${fmtPrice(p.price)}</span></div>
+      <div class="eyebrow">Pick of the Day · ${new Date(p.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "short", day: "numeric"})} · ${p.type}</div>
+      <div class="who"><img class="team-logo" style="width:44px;height:44px;" src="${teamLogo(T.logo)}" alt="" onerror="this.style.display='none'">
+        <div><div class="name">${T.name}${inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}" style="vertical-align:middle;">${inj.status}</span>` : ""}</div>
+        <div class="team" style="font-size:13px;margin-top:3px;">${T.sub}</div></div></div>
+      <div class="bet">${T.bet}<span class="px">${fmtPrice(p.price)}</span></div>
       <div class="potd-grid">
         <div>
-          <div class="potd-stats">
-            <div class="market"><label>Model</label><div class="proj">${p.model}</div><div class="dk">line ${p.line}</div></div>
-            <div class="market"><label>Edge</label><div class="proj ${p.edge > 0 ? "positive" : "negative"}">${sign(p.edge)}</div><div class="dk">${p.edge_pct}% of line</div></div>
-            <div class="market"><label>Confidence</label><div class="proj">${Math.round(p.score)}</div><div class="dk">score out of 100</div></div>
-            <div class="market"><label>Last 5</label><div class="proj">${hitTxt(p.hits.l5)}</div><div class="dk">${p.side.toLowerCase()}</div></div>
-            <div class="market"><label>Last 10</label><div class="proj">${hitTxt(p.hits.l10)}</div><div class="dk">${p.side.toLowerCase()}</div></div>
-            <div class="market"><label>Last 15</label><div class="proj">${hitTxt(p.hits.l15)}</div><div class="dk">${p.side.toLowerCase()}</div></div>
-          </div>
+          <div class="potd-stats">${potdTiles(p)}</div>
           <div style="font-weight:700;margin:16px 0 8px;">Why this pick</div>
           <ul class="potd-why">${(p.reasons || []).map(r => `<li>${r}</li>`).join("")}</ul>
+          <div class="note">Picked ${p.picked_at || p.date}${p.candidates_considered ? ` · best of ${p.candidates_considered} qualifying bets` : ""}</div>
         </div>
-        <div>${potdBars(p.last10, p.line, p.side)}
-          <div style="margin-top:10px;"><button class="btn" onclick="openGameLog('${p.player.replace(/'/g, "\\'")}')">Full game log →</button></div>
+        <div>${potdBars(p.chart.vals, p.chart.line, p.chart.side)}
+          <div class="note" style="margin-top:4px;">${p.chart.label || ""}</div>
+          ${p.player ? `<div style="margin-top:10px;"><button class="btn" onclick="openGameLog('${p.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}
         </div>
       </div></div>`;
   }
+  // record
   const graded = hist.filter(h => h.result === "W" || h.result === "L");
   const W = graded.filter(h => h.result === "W").length, L = graded.length - W;
   const units = Math.round(hist.reduce((t, h) => t + (h.units || 0), 0) * 100) / 100;
@@ -1203,26 +1238,52 @@ function renderPotd() {
   document.getElementById("potd-kpis").innerHTML = `
     <div class="kpi"><div class="l">POTD record</div><div class="v">${W}-${L}</div><div class="s">${graded.length ? Math.round(100 * W / graded.length) : 0}% hit rate</div></div>
     <div class="kpi"><div class="l">Units</div><div class="v ${units >= 0 ? "positive" : "negative"}">${sign(units)}</div><div class="s">1 unit per pick, at the posted price</div></div>
+    <div class="kpi"><div class="l">ROI</div><div class="v ${units >= 0 ? "positive" : "negative"}">${hist.filter(h => h.result).length ? sign(Math.round(units / hist.filter(h => h.result).length * 1000) / 10) + "%" : "–"}</div><div class="s">per pick</div></div>
     <div class="kpi"><div class="l">Streak</div><div class="v ${/^W/.test(streak) ? "positive" : /^L/.test(streak) ? "negative" : ""}">${streak}</div><div class="s">current run</div></div>
     <div class="kpi"><div class="l">Last 10</div><div class="v">${l10w}-${last10.length - l10w}</div><div class="s">most recent graded picks</div></div>`;
-  const alts = (DATA.potd_alts || []).filter(a => a.date === today);
+  const types = ["Prop", "Spread", "Total", "Moneyline"].map(t => {
+    const a = hist.filter(h => h.type === t && h.result);
+    const w = a.filter(h => h.result === "W").length, l = a.filter(h => h.result === "L").length, u = Math.round(a.reduce((x, h) => x + (h.units || 0), 0) * 100) / 100;
+    return `<tr><td><strong>${t === "Prop" ? "Player props" : t === "Moneyline" ? "Moneylines" : t + "s"}</strong></td><td>${a.length}</td><td>${w}-${l}</td><td>${w + l ? Math.round(100 * w / (w + l)) + "%" : "–"}</td><td class="stat ${u > 0 ? "positive" : u < 0 ? "negative" : ""}">${a.length ? sign(u) : "–"}</td></tr>`;
+  }).join("");
+  document.getElementById("potd-types").innerHTML = `<thead><tr><th>Bet type</th><th>Picks</th><th>Record</th><th>Win %</th><th>Units</th></tr></thead><tbody>${types}</tbody>`;
+  // alternatives
+  const alts = (DATA.potd_alts || []).map(potdNorm).filter(a => a.date === today);
   document.getElementById("potd-alts").innerHTML = alts.length ? alts.map(a => `
-    <div class="card clickable" onclick="openPlayerDetail('${a.player.replace(/'/g, "\\'")}','${a.team}','${a.game}')">
-      <div class="game-header"><div><div class="matchup">${a.player}</div><div class="time">${a.team} · ${a.game.replace("@", " @ ")}</div></div><span class="edge ${a.edge > 0 ? "pos" : "neg"}">${sign(a.edge)}</span></div>
-      <div style="font-weight:700;">${a.side} ${a.line} ${a.stat} <span class="price">${fmtPrice(a.price)}</span></div>
-      <div class="note" style="margin-top:6px;">Model ${a.model} · L10 ${hitTxt(a.hits.l10)} · score ${Math.round(a.score)}</div>
-    </div>`).join("") : '<div class="card"><div class="note">No other props cleared every filter today.</div></div>';
-  const past = hist.filter(h => h.date !== today || h.result);
-  document.getElementById("potd-history").innerHTML = `<thead><tr><th>Date</th><th>Pick</th><th>Game</th><th>Model</th><th>Actual</th><th>Result</th><th>Units</th></tr></thead><tbody>` +
-    (past.length ? past.map(h => `<tr>
+    <div class="card">
+      <div class="game-header"><div><div class="matchup">${a.type === "Prop" ? a.player : a.label}</div><div class="time">${a.type} · ${a.game.replace("@", " @ ")}</div></div><span class="edge pos">${Math.round(a.score)}</span></div>
+      <div style="font-weight:700;">${a.type === "Prop" ? `${a.side} ${a.line} ${a.stat}` : potdTitle(a).bet} <span class="price">${fmtPrice(a.price)}</span></div>
+      <div class="note" style="margin-top:6px;">${(a.reasons || [])[0] || ""}</div>
+      <div class="note" style="margin-top:4px;">Last 10: ${hitTxt(a.hits && a.hits.l10)}</div>
+    </div>`).join("") : '<div class="card"><div class="note">No other bets cleared every filter today.</div></div>';
+  // log
+  const rows = hist.filter(h => h.date !== today || h.result).sort((a, b) => b.date.localeCompare(a.date));
+  document.getElementById("potd-history").innerHTML = `<thead><tr><th>Date</th><th>Type</th><th>Pick</th><th>Game</th><th>Confidence</th><th>Result</th><th>Final</th><th>Units</th></tr></thead><tbody>` +
+    (rows.length ? rows.map((h, i) => `<tr class="potd-row" data-i="${i}" style="cursor:pointer;">
       <td class="team" style="font-size:12px;white-space:nowrap;">${h.date}</td>
-      <td><strong>${h.player}</strong><div class="team">${h.side} ${h.line} ${h.stat} ${fmtPrice(h.price)}</div></td>
+      <td><span class="stat-tag">${h.type}</span></td>
+      <td><strong>${h.label}</strong> <span class="price">${fmtPrice(h.price)}</span></td>
       <td class="team" style="font-size:12px;">${h.game.replace("@", " @ ")}</td>
-      <td class="stat">${h.model}</td>
+      <td class="stat">${Math.round(h.score)}</td>
+      <td>${resultPill(h)}</td>
       <td class="team" style="font-size:12px;">${h.actual || "–"}</td>
-      <td>${h.result ? `<span class="pill ${h.result === "W" ? "over" : h.result === "L" ? "under" : "pass"}">${h.result === "W" ? "Win" : h.result === "L" ? "Loss" : "Push"}</span>` : '<span class="pill pass">Pending</span>'}</td>
-      <td class="stat ${h.units > 0 ? "positive" : h.units < 0 ? "negative" : ""}">${h.units != null ? sign(h.units) : "–"}</td></tr>`).join("")
-      : '<tr><td colspan="7" style="color:var(--muted);text-align:center;padding:22px;">The first pick will show here once it is graded.</td></tr>') + "</tbody>";
+      <td class="stat ${h.units > 0 ? "positive" : h.units < 0 ? "negative" : ""}">${h.units != null ? sign(h.units) : "–"}</td></tr>
+      <tr class="potd-why-row" data-i="${i}" style="display:none;"><td colspan="8" style="background:var(--bg);"><ul class="potd-why" style="margin:4px 0;">${(h.reasons || []).map(r => `<li>${r}</li>`).join("")}</ul>
+        <div class="note">Picked ${h.picked_at || h.date}${h.locked_at ? " · locked " + h.locked_at : ""}${h.graded_at ? " · graded " + h.graded_at : ""}</div></td></tr>`).join("")
+      : '<tr><td colspan="8" style="color:var(--muted);text-align:center;padding:22px;">The first pick will show here once its game finishes.</td></tr>') + "</tbody>";
+  document.querySelectorAll("#potd-history .potd-row").forEach(r => r.onclick = () => {
+    const w = document.querySelector(`#potd-history .potd-why-row[data-i="${r.dataset.i}"]`); w.style.display = w.style.display === "none" ? "" : "none";
+  });
+}
+function downloadPotd() {
+  const hist = (DATA.potd_history || []).map(potdNorm);
+  const q = v => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const head = ["date", "type", "pick", "price", "game", "model", "edge", "confidence", "last10", "result", "final", "units", "reasons", "picked_at"];
+  const lines = [head.join(",")].concat(hist.map(h => [h.date, h.type, h.label, fmtPrice(h.price), h.game, h.model, h.edge, Math.round(h.score),
+    hitTxt(h.hits && h.hits.l10), h.result || "Pending", h.actual || "", h.units == null ? "" : h.units, (h.reasons || []).join(" | "), h.picked_at || ""].map(q).join(",")));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([lines.join("\n")], {type: "text/csv"}));
+  a.download = "pick_of_the_day_log.csv"; a.click();
 }
 
 var parlayMode = 2;

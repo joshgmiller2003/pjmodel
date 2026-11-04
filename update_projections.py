@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "projections_data.json"
 LOG_PATH = ROOT / "data" / "player_log.json"
 PENDING_PATH = ROOT / "data" / "pending.json"
+POTD_LOG = ROOT / "data" / "potd_log.json"      # permanent record of every Pick of the Day
 
 SEASON = "2026-27"
 SEASON_START = date(2026, 10, 20)
@@ -363,8 +364,12 @@ def odds_game_lines():
                 oc = {o.get("name"): o for o in m.get("outcomes", [])}
                 if m["key"] == "spreads" and e["home_team"] in oc and oc[e["home_team"]].get("point") is not None:
                     row["spread"] = sgn(float(oc[e["home_team"]]["point"]))
+                    row["spread_px_home"] = oc[e["home_team"]].get("price")
+                    row["spread_px_away"] = (oc.get(e["away_team"]) or {}).get("price")
                 elif m["key"] == "totals" and "Over" in oc and oc["Over"].get("point") is not None:
                     row["total"] = float(oc["Over"]["point"])
+                    row["over_px"] = oc["Over"].get("price")
+                    row["under_px"] = (oc.get("Under") or {}).get("price")
                 elif m["key"] == "h2h":
                     fmt = lambda v: "N/A" if v is None else (f"+{v}" if v > 0 else str(v))
                     row["ml_home"] = fmt((oc.get(e["home_team"]) or {}).get("price"))
@@ -495,36 +500,89 @@ def units_for(res, price):
     return -1.0 if res == "L" else 0.0
 
 
+def implied(price):
+    return 100 / (price + 100) if price > 0 else -price / (-price + 100)
+
+
+def ml_num(v):
+    try:
+        return int(str(v).replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+
+
 def grade_potd(history, plog):
-    """Grade any Pick of the Day whose game has finished."""
+    """Grade any Pick of the Day whose game has finished (props, spreads, totals and moneylines)."""
     for h in history:
         if h.get("result") or h["eid"] not in plog["games"]:
             continue
         g = plog["games"][h["eid"]]
-        row = next((r for r in g["players"] if norm(r["n"]) == norm(h["player"])), None)
-        if row is None:
-            h["result"], h["actual"], h["units"] = "P", "DNP", 0.0     # did not play: treated as a void
-            continue
-        act = STAT_VAL[h["stat"]](row)
-        over = h["side"] == "Over"
-        h["result"] = "P" if act == h["line"] else ("W" if (act > h["line"]) == over else "L")
-        h["actual"] = f"{act:g} {h['stat']}"
+        kind = h.get("type", "Prop")
+        if kind == "Prop":
+            row = next((r for r in g["players"] if norm(r["n"]) == norm(h["player"])), None)
+            if row is None:
+                h["result"], h["actual"], h["units"] = "P", "Did not play (void)", 0.0
+                continue
+            act = STAT_VAL[h["stat"]](row)
+            over = h["side"] == "Over"
+            h["result"] = "P" if act == h["line"] else ("W" if (act > h["line"]) == over else "L")
+            h["actual"] = f"{act:g} {h['stat']}"
+        else:
+            pts = {g["home"]: g["home_pts"], g["away"]: g["away_pts"]}
+            score = f"{g['away']} {g['away_pts']} - {g['home_pts']} {g['home']}"
+            if kind == "Total":
+                tot = g["home_pts"] + g["away_pts"]
+                h["result"] = "P" if tot == h["line"] else ("W" if (tot > h["line"]) == (h["side"] == "Over") else "L")
+                h["actual"] = f"Total {tot} ({score})"
+            else:
+                t = h["team"]
+                opp = g["home"] if t == g["away"] else g["away"]
+                margin = pts[t] - pts[opp]
+                if kind == "Spread":
+                    cover = margin + h["line"]
+                    h["result"] = "P" if cover == 0 else ("W" if cover > 0 else "L")
+                else:
+                    h["result"] = "W" if margin > 0 else "L"
+                h["actual"] = score
         h["units"] = units_for(h["result"], h.get("price"))
+        h["graded_at"] = datetime.now(ET).strftime("%Y-%m-%d %I:%M %p ET")
 
 
-def pick_of_the_day(props, slate, idx, injuries, today_iso):
-    """Rank tonight's props and return (pick, runners_up).
+def team_log(plog):
+    """team -> list of (date, points for, points against), oldest first."""
+    out = {}
+    for g in sorted(plog["games"].values(), key=lambda x: x["date"]):
+        out.setdefault(g["home"], []).append((g["date"], g["home_pts"], g["away_pts"]))
+        out.setdefault(g["away"], []).append((g["date"], g["away_pts"], g["home_pts"]))
+    return out
 
-    A candidate must: be for a game today that has not started, have a posted price no worse than -160,
-    a player not on the injury report, 8+ logged games, steady minutes, an edge of 6-40% of the line
-    (bigger usually means the model is missing news), and a last-10 hit rate of 60%+ in the pick's direction.
-    Score = 55% hit rate (L10, with L5 and L15 as support) + 45% edge size.
+
+def _rate(vals, ok, n):
+    sl = vals[:n]
+    return (sum(1 for v in sl if ok(v)), len(sl)) if sl else (0, 0)
+
+
+def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
+    """Rank every bet on today's board (player props, spreads, totals, moneylines). Returns (pick, runners_up).
+
+    Every candidate needs real support from recent results, a sane edge (very large edges usually mean the
+    model is missing news) and a playable price. Score = 55% recent hit rate + 45% edge size, on a 0-100 scale.
     """
-    gm = {g["id"]: g for g in slate}
+    ev = {g["id"]: g for g in slate}
     hurt = {norm(i["player"]): i["status"] for i in injuries}
+    tl = team_log(plog)
     cands = []
+
+    def base(g, row):
+        return {"date": today_iso, "eid": g["event_id"], "game": row["id"], "time": row["time"],
+                "home": row["home"], "away": row["away"]}
+
+    def score_of(h5, h10, h15, edge_part):
+        return rnd((0.55 * (0.5 * h10 + 0.25 * h5 + 0.25 * h15) + 0.45 * min(edge_part, 1)) * 100, 1)
+
+    # ---- player props
     for p in props:
-        g = gm.get(p["game"])
+        g = ev.get(p["game"])
         if not g or g["status"] != "Upcoming" or g["date"] != today_iso or not p["dk"]:
             continue
         if norm(p["player"]) in hurt or p["stat"] not in STAT_VAL:
@@ -536,34 +594,134 @@ def pick_of_the_day(props, slate, idx, injuries, today_iso):
         hist = [r for r in idx.get(norm(p["player"]), []) if r["min"] >= 5]
         if len(hist) < 8:
             continue
-        rs = hist[::-1]                                         # newest first
+        rs = hist[::-1]
         vals = [STAT_VAL[p["stat"]](r) for r in rs]
-        hit = lambda n: sum(1 for v in vals[:n] if (v > p["dk"] if over else v < p["dk"])) / len(vals[:n])
-        h5, h10, h15 = hit(5), hit(10), hit(15)
+        ok = (lambda v: v > p["dk"]) if over else (lambda v: v < p["dk"])
+        (a5, n5), (a10, n10), (a15, n15) = _rate(vals, ok, 5), _rate(vals, ok, 10), _rate(vals, ok, 15)
         epct = abs(p["edge"]) / p["dk"]
-        m5 = sum(r["min"] for r in rs[:5]) / len(rs[:5])
-        m15 = sum(r["min"] for r in rs[:15]) / len(rs[:15])
-        if h10 < 0.6 or not (0.06 <= epct <= 0.40) or m5 < 20 or m5 < m15 - 6:
+        m5 = sum(r["min"] for r in rs[:5]) / n5
+        m15 = sum(r["min"] for r in rs[:15]) / n15
+        if a10 / n10 < 0.6 or not (0.06 <= epct <= 0.40) or m5 < 20 or m5 < m15 - 6:
             continue
-        score = 0.55 * (0.5 * h10 + 0.25 * h5 + 0.25 * h15) + 0.45 * min(epct / 0.25, 1)
-        n5, n10, n15 = min(5, len(vals)), min(10, len(vals)), min(15, len(vals))
-        reasons = [f"Model projects {p['model']:g} vs a line of {p['dk']:g} ({'+' if p['edge'] > 0 else ''}{p['edge']:g}, {round(epct * 100)}% edge)",
-                   f"Went {'over' if over else 'under'} in {round(h10 * n10)} of his last {n10} games ({round(h5 * n5)}/{n5} in the last 5)",
-                   f"Averaging {sum(vals[:5]) / n5:.1f} over the last 5 and {sum(vals[:n15]) / n15:.1f} over the last {n15}",
-                   f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {min(15, len(rs))})"]
-        cands.append({**{k: p[k] for k in ("player", "team", "game", "stat", "model", "edge")},
-                      "date": today_iso, "eid": g["event_id"], "time": g["time"], "line": p["dk"],
-                      "side": "Over" if over else "Under", "price": price, "edge_pct": rnd(epct * 100, 1),
-                      "hits": {"l5": [round(h5 * n5), n5], "l10": [round(h10 * n10), n10], "l15": [round(h15 * n15), n15]},
-                      "last10": vals[:10][::-1], "score": rnd(score * 100, 1), "reasons": reasons})
+        side = "Over" if over else "Under"
+        row = next(r for r in games if r["id"] == p["game"])
+        cands.append({**base(g, row), "type": "Prop", "player": p["player"], "team": p["team"], "stat": p["stat"],
+                      "side": side, "line": p["dk"], "price": price, "model": p["model"], "edge": p["edge"],
+                      "edge_pct": rnd(epct * 100, 1), "label": f"{p['player']} {side} {p['dk']:g} {p['stat']}",
+                      "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
+                      "chart": {"vals": vals[:10][::-1], "line": p["dk"], "side": side, "label": p["stat"]},
+                      "score": score_of(a5 / n5, a10 / n10, a15 / n15, epct / 0.25),
+                      "reasons": [f"Model projects {p['model']:g} {p['stat']} vs a line of {p['dk']:g} ({'+' if p['edge'] > 0 else ''}{p['edge']:g}, {round(epct * 100)}% edge)",
+                                  f"Went {side.lower()} the line in {a10} of his last {n10} games ({a5}/{n5} in the last 5)",
+                                  f"Averaging {sum(vals[:n5]) / n5:.1f} over the last 5 and {sum(vals[:n15]) / n15:.1f} over the last {n15}",
+                                  f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {n15})",
+                                  "Not on the injury report at pick time"]})
+
+    # ---- game bets
+    for row in games:
+        g = ev.get(row["id"])
+        dk = row.get("dk") or {}
+        if not g or g["status"] != "Upcoming" or g["date"] != today_iso or dk.get("spread") in (None, "N/A") or not dk.get("total"):
+            continue
+        H, A = row["home"], row["away"]
+        th, ta = tl.get(H, [])[::-1], tl.get(A, [])[::-1]            # newest first
+        if len(th) < 6 or len(ta) < 6:
+            continue
+        rest = row.get("rest") or {}
+        rest_txt = []
+        for t, side_key in ((A, "away"), (H, "home")):
+            d = rest.get(side_key)
+            if d == 0:
+                rest_txt.append(f"{t} on a back-to-back")
+            elif d is not None and d >= 2:
+                rest_txt.append(f"{t} on {d} days rest")
+        model_margin = -row["model"]["spread"]                       # home perspective
+        hs = float(dk["spread"])
+
+        # spread
+        se = row.get("spread_edge", 0)
+        if 1.5 <= abs(se) <= 6:
+            home_pick = se > 0
+            team, opp = (H, A) if home_pick else (A, H)
+            line = hs if home_pick else -hs
+            price = dk.get("spread_px_home" if home_pick else "spread_px_away") or -110
+            margins = [f - a for _, f, a in (th if home_pick else ta)]
+            ok = lambda m: m + line > 0
+            (a5, n5), (a10, n10), (a15, n15) = _rate(margins, ok, 5), _rate(margins, ok, 10), _rate(margins, ok, 15)
+            if a10 / n10 >= 0.6 and price >= -160:
+                mm = model_margin if home_pick else -model_margin
+                cands.append({**base(g, row), "type": "Spread", "team": team, "side": "Cover", "line": line, "price": price,
+                              "model": rnd(mm), "edge": rnd(abs(se)), "edge_pct": None, "label": f"{team} {sgn(line)}",
+                              "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
+                              "chart": {"vals": margins[:10][::-1], "line": -line, "side": "Over", "label": f"{team} margin"},
+                              "score": score_of(a5 / n5, a10 / n10, a15 / n15, abs(se) / 4),
+                              "reasons": [f"Model has {team} {'winning' if mm > 0 else 'losing'} by {abs(mm):.1f}; the line is {team} {sgn(line)} ({abs(se):g}-point edge)",
+                                          f"{team} would have covered {sgn(line)} in {a10} of their last {n10} games ({a5}/{n5} in the last 5)",
+                                          f"{team} average margin: {sum(margins[:n5]) / n5:+.1f} over the last 5, {sum(margins[:n15]) / n15:+.1f} over the last {n15}"] + rest_txt})
+
+        # total
+        te = row.get("total_edge", 0)
+        if 3 <= abs(te) <= 12:
+            over = te > 0
+            line = float(dk["total"])
+            price = dk.get("over_px" if over else "under_px") or -110
+            tot = [f + a for _, f, a in th]
+            tot2 = [f + a for _, f, a in ta]
+            ok = (lambda v: v > line) if over else (lambda v: v < line)
+            def both(n):
+                a1, n1 = _rate(tot, ok, n); a2, n2 = _rate(tot2, ok, n)
+                return a1 + a2, n1 + n2
+            (a5, n5), (a10, n10), (a15, n15) = both(5), both(10), both(15)
+            if a10 / n10 >= 0.6 and price >= -160:
+                side = "Over" if over else "Under"
+                mixed = [round((x + y) / 2, 1) for x, y in zip(tot[:10], tot2[:10])][::-1]
+                cands.append({**base(g, row), "type": "Total", "team": H, "side": side, "line": line, "price": price,
+                              "model": row["model"]["total"], "edge": rnd(abs(te)), "edge_pct": None, "label": f"{A} @ {H} {side} {line:g}",
+                              "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
+                              "chart": {"vals": mixed, "line": line, "side": side, "label": "avg game total, both teams"},
+                              "score": score_of(a5 / n5, a10 / n10, a15 / n15, abs(te) / 8),
+                              "reasons": [f"Model total {row['model']['total']:g} vs a line of {line:g} ({abs(te):g}-point edge)",
+                                          f"{a10} of the two teams' last {n10} games went {side.lower()} {line:g}",
+                                          f"{H} games average {sum(tot[:5]) / len(tot[:5]):.1f} total points over the last 5; {A} games {sum(tot2[:5]) / len(tot2[:5]):.1f}"] + rest_txt})
+
+        # moneyline
+        for team, opp, p_win, px in ((H, A, row["model"]["ml_home"], ml_num(dk.get("ml_home"))),
+                                     (A, H, row["model"]["ml_away"], ml_num(dk.get("ml_away")))):
+            if px is None or not (-250 <= px <= 250):
+                continue
+            imp = implied(px)
+            edge = p_win - imp
+            if not (0.04 <= edge <= 0.20):
+                continue
+            res = th if team == H else ta
+            wins = [f - a for _, f, a in res]
+            ok = lambda m: m > 0
+            (a5, n5), (a10, n10), (a15, n15) = _rate(wins, ok, 5), _rate(wins, ok, 10), _rate(wins, ok, 15)
+            if a10 / n10 < 0.5:
+                continue
+            evu = p_win * (px / 100 if px > 0 else 100 / -px) - (1 - p_win)
+            cands.append({**base(g, row), "type": "Moneyline", "team": team, "side": "Win", "line": 0, "price": px,
+                          "model": rnd(p_win * 100, 1), "edge": rnd(edge * 100, 1), "edge_pct": None, "label": f"{team} ML",
+                          "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
+                          "chart": {"vals": wins[:10][::-1], "line": 0, "side": "Over", "label": f"{team} margin"},
+                          "score": score_of(a5 / n5, a10 / n10, a15 / n15, edge / 0.10),
+                          "reasons": [f"Model gives {team} a {p_win * 100:.0f}% chance to win; {sgn(px)} implies {imp * 100:.0f}% ({edge * 100:.1f}-point edge)",
+                                      f"Expected value: {evu * 100:+.1f}% per unit at {sgn(px)}",
+                                      f"{team} won {a10} of their last {n10} ({a5}/{n5} in the last 5)"] + rest_txt})
+
     cands.sort(key=lambda c: -c["score"])
-    seen, alts = set(), []
-    for c in cands[1:]:                                         # one entry per player for the runners-up
-        if c["player"] not in seen and c["player"] != (cands[0]["player"] if cands else None):
-            seen.add(c["player"]); alts.append(c)
-        if len(alts) == 5:
+    for c in cands:
+        c["candidates_considered"] = len(cands)
+    pick = cands[0] if cands else None
+    key = lambda c: c.get("player") or c["game"] + c["type"]
+    seen, alts = {key(pick) if pick else None}, []
+    for c in cands[1:]:
+        if key(c) in seen:
+            continue
+        seen.add(key(c)); alts.append(c)
+        if len(alts) == 6:
             break
-    return (cands[0] if cands else None), alts
+    return pick, alts
 
 
 def settle(pending, plog, state):
@@ -758,19 +916,22 @@ def main():
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
 
-    # 3b. Pick of the Day: re-picked each run until its game tips off, then locked
-    potd_hist = prev.get("potd_history", [])
+    # 3b. Pick of the Day: re-picked each run until its game tips off, then locked and saved for good
+    potd_log = load(POTD_LOG, None)
+    potd_hist = potd_log["picks"] if potd_log else prev.get("potd_history", [])
     grade_potd(potd_hist, plog)
     todays = next((h for h in potd_hist if h["date"] == t_iso), None)
-    locked = todays and (todays.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == todays["eid"]), True))
+    locked = bool(todays) and bool(todays.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == todays["eid"]), True))
     potd_alts = prev.get("potd_alts", []) if locked else []
+    if todays and locked and not todays.get("locked_at"):
+        todays["locked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
     if not locked:
-        pick, potd_alts = pick_of_the_day(props, slate, idx, injuries, t_iso)
+        pick, potd_alts = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso)
         potd_hist = [h for h in potd_hist if h["date"] != t_iso]
         if pick:
+            pick["picked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
             potd_hist.insert(0, pick)
-    potd_hist = potd_hist[:200]
-    log(f"potd: {potd_hist[0]['player'] + ' ' + potd_hist[0]['side'] + ' ' + str(potd_hist[0]['line']) + ' ' + potd_hist[0]['stat'] if potd_hist and potd_hist[0]['date'] == t_iso else 'none today'}")
+    log("potd: " + (potd_hist[0]["label"] + f" ({potd_hist[0]['type']})" if potd_hist and potd_hist[0]["date"] == t_iso else "none today"))
 
     # 4. fading learning rate
     gl = state["residuals"]["games_learned"]
@@ -807,7 +968,7 @@ def main():
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
-            "potd_history": potd_hist, "potd_alts": potd_alts,
+            "potd_history": potd_hist[:400], "potd_alts": potd_alts,
             "futures": {"title": futures, "book": futures[0].get("book", ""), "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
@@ -815,6 +976,7 @@ def main():
     assert isinstance(data["games"], list) and isinstance(data["props"], list)
     save(LOG_PATH, plog)
     save(PENDING_PATH, pending)
+    save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
     save(ROOT / "player_games.json", build_game_logs(idx, slate, now.strftime("%m/%d %I:%M %p ET")))
     log(f"wrote {len(games)} games, {len(props)} props, {len(injuries)} injuries")
