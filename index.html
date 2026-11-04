@@ -1559,7 +1559,7 @@ function renderAltLadders() {
   document.querySelectorAll("#alt-stats button").forEach(b => b.onclick = () => { altStat = b.dataset.s; renderAltLadders(); });
   const list = all.filter(a => fresh && (altStat === "all" || a.stat === altStat));
   const board = document.getElementById("alt-board");
-  if (!list.length) { board.innerHTML = `<div class="card"><div class="note">${fresh ? "No ladders for this stat today." : "Alt-line ladders load with the 11 AM ET update for the day's best game."}</div></div>`; return; }
+  if (!list.length) { board.innerHTML = `<div class="card"><div class="note">${fresh ? "No ladders for this stat today." : "Alt-line ladders load with the 11 AM ET update for the day's best games."}</div></div>`; return; }
   board.innerHTML = list.map(a => {
     const sug = new Set(a.suggested || []);
     const inj = injuryFor(a.player);
