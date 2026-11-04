@@ -968,12 +968,15 @@ function renderProps() {
     const inj = injuryFor(p.player);
     const injHtml = inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}" title="${inj.reason || ""}">${inj.status}</span>` : "";
     const odds = (p.over != null || p.under != null) ? `${fmtPrice(p.over) || "–"} / ${fmtPrice(p.under) || "–"}` : "–";
+    const BK = {fanduel: "FanDuel", betmgm: "BetMGM", williamhill_us: "Caesars", espnbet: "ESPN BET", fanatics: "Fanatics", betrivers: "BetRivers", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX"};
+    const bestSide = e > 0 ? p.best_over : p.best_under;
+    const best = bestSide && bestSide[0] != null ? `<div style="font-size:11px;color:var(--good);" title="Best price across 10 sportsbooks at the same line; the record is graded at DraftKings">Best ${e > 0 ? "O" : "U"} ${fmtPrice(bestSide[0])} ${BK[bestSide[1]] || bestSide[1]}</div>` : "";
     return `<tr>
       <td><div class="player clickable" data-player="${p.player}" data-team="${p.team}" data-game="${p.game}" style="cursor:pointer;">${p.player}${injHtml}</div><div class="team">${p.team}</div></td>
       <td class="team" style="font-size:12px;">${p.game.replace("@", " @ ")}</td>
       <td><span class="stat-tag">${p.stat}</span></td>
       <td class="stat">${p.dk}</td>
-      <td class="stat price">${odds}</td>
+      <td class="stat price">${odds}${best}</td>
       <td class="stat"><strong>${p.model}</strong>${extra}${mx}${ij}${sc}</td>
       <td class="stat"><div class="edgebar"><span class="${cls}" style="min-width:38px;">${e > 0 ? "+" : ""}${e}</span><span class="bar"><i style="width:${w}%;background:${e >= 0 ? "var(--good)" : "var(--bad)"};"></i></span><span class="team">${pct > 0 ? "+" : ""}${pct}%</span></div></td>
       <td>${lean}${tierHtml(p)}</td>

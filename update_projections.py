@@ -41,8 +41,13 @@ ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
-DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "150") or 150)   # hard cap per ET day
-MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5000") or 5000)  # this site's share of the plan
+DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "250") or 250)   # hard cap per ET day (unused credits roll forward)
+MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5500") or 5500)  # this site's share of the plan
+# Up to 10 sportsbooks bill as ONE region on The Odds API, so these cost the same as DraftKings alone.
+# DraftKings stays the line the model is compared and graded against; the others supply the best price.
+BOOKS = ["draftkings", "fanduel", "betmgm", "williamhill_us", "espnbet", "fanatics", "betrivers", "hardrockbet", "ballybet", "betparx"]
+BOOK_NAMES = {"draftkings": "DraftKings", "fanduel": "FanDuel", "betmgm": "BetMGM", "williamhill_us": "Caesars", "espnbet": "ESPN BET",
+              "fanatics": "Fanatics", "betrivers": "BetRivers", "hardrockbet": "Hard Rock", "ballybet": "Bally Bet", "betparx": "betPARX"}
 ODDS_RESET_DAY = int(os.environ.get("ODDS_RESET_DAY", "1") or 1)               # day of month the plan resets
 CREDITS_PATH = Path(__file__).resolve().parent / "data" / "credits.json"
 
@@ -669,8 +674,8 @@ def odds_props(slate, plog_idx):
             continue
         used += 1
         j = CREDITS.spend(f"{ODDS}/events/{oid}/odds", len(PROP_MARKETS), f"props {g['away']}@{g['home']}",
-                          regions="us", bookmakers="draftkings", markets=",".join(PROP_MARKETS), oddsFormat="american")
-        found = {}
+                          bookmakers=",".join(BOOKS), markets=",".join(PROP_MARKETS), oddsFormat="american")
+        found, others = {}, []
         for bk in (j or {}).get("bookmakers", []):
             for m in bk.get("markets", []):
                 stat = PROP_MARKETS.get(m["key"])
@@ -679,12 +684,26 @@ def odds_props(slate, plog_idx):
                 for o in m.get("outcomes", []):
                     if o.get("point") is None or o.get("name") not in ("Over", "Under"):
                         continue
+                    if bk.get("key") != "draftkings":
+                        others.append((bk.get("key"), (o.get("description", ""), stat), float(o["point"]), o["name"], o.get("price")))
+                        continue
                     key = (o.get("description", ""), stat)
                     row = found.setdefault(key, {"line": float(o["point"]), "over": None, "under": None})
                     if float(o["point"]) != row["line"]:
                         continue                      # keep the main (first) line only
                     row["over" if o["name"] == "Over" else "under"] = o.get("price")
-        out[g["event_id"]] = [(pl, st, r["line"], r["over"], r["under"]) for (pl, st), r in found.items()]
+        # best price across books, at DraftKings' line only (a different line is a different bet)
+        for book, key, pt, side, px in others:
+            row = found.get(key)
+            if not row or pt != row["line"] or px is None:
+                continue
+            k = "best_over" if side == "Over" else "best_under"
+            cur = row.get(k) or ([row["over" if side == "Over" else "under"], "draftkings"] if row["over" if side == "Over" else "under"] is not None else None)
+            if cur is None or px > cur[0]:
+                row[k] = [px, book]
+        out[g["event_id"]] = [(pl, st, r["line"], r["over"], r["under"],
+                               {k: r[k] for k in ("best_over", "best_under") if r.get(k) and r[k][1] != "draftkings"})
+                              for (pl, st), r in found.items() if r["over"] is not None or r["under"] is not None]
     return out
 
 
@@ -692,7 +711,7 @@ def odds_game_lines():
     """DraftKings spread/total/moneyline for every NBA game in one call. {(away_name, home_name): lines}"""
     if not ODDS_KEY:
         return {}
-    j = CREDITS.spend(f"{ODDS}/odds", 3, "game lines", regions="us", bookmakers="draftkings",
+    j = CREDITS.spend(f"{ODDS}/odds", 3, "game lines", bookmakers="draftkings",
                       markets="h2h,spreads,totals", oddsFormat="american")
     out = {}
     for e in j or []:
@@ -1089,6 +1108,13 @@ def injury_note(p):
     return f"Teammate injury boost: {who} out, {'+' if m > 0 else ''}{m:g}% to his {p['stat']} projection (extra minutes and usage)"
 
 
+def best_price_note(p, over, price):
+    px, book = p["best_over" if over else "best_under"]
+    if px is None or price is None or px <= price:
+        return None
+    return f"Best price: {fmt_px(px)} at {BOOK_NAMES.get(book, book)} (DraftKings {fmt_px(price)}; the record is graded at DraftKings)"
+
+
 def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=None):
     """Rank every bet on today's board (player props, spreads, totals, moneylines). Returns (pick, runners_up).
 
@@ -1149,6 +1175,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
                                   *([tier_note(p)] if p.get("tiers") else []),
                                   *([injury_note(p)] if p.get("injury") else []),
                                   *([sched_note(p)] if abs(p.get("sched") or 0) >= 1 else []),
+                                  *[x for x in [best_price_note(p, over, price) if p.get("best_over" if over else "best_under") else None] if x],
                                   "Not on the injury report at pick time"]})
 
     # ---- game bets
@@ -1871,11 +1898,13 @@ def main():
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
     # Spend in priority order: game lines (3) -> props for today's games, earliest tip first -> futures (once a day).
     # Overnight runs skip props: most lines are not posted yet and they move before tip-off.
-    gml = odds_game_lines() if upcoming else {}
+    gml = odds_game_lines() if (upcoming and slot != "overnight") else {}   # 1 AM lines move before anyone bets them
     def tip(g):
         m = re.match(r"(\d+):(\d+) (AM|PM)", g["time"])
         return (int(m.group(1)) % 12 + (12 if m.group(3) == "PM" else 0)) * 60 + int(m.group(2)) if m else 9999
     todays_up = sorted([g for g in upcoming if g["date"] == t_iso], key=tip)
+    if gml:   # props only for games whose game lines are posted (props come out after them)
+        todays_up = [g for g in todays_up if (NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])) in gml] or todays_up
     prop_lines = odds_props(todays_up, idx) if (todays_up and slot != "overnight") else {}
     for g in upcoming:
         hit = gml.get((NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])))
@@ -1921,7 +1950,8 @@ def main():
         # props
         if g["status"] == "Upcoming" and eid in prop_lines:
             fresh = []
-            for player, stat, line, over_px, under_px in prop_lines[eid]:
+            for player, stat, line, over_px, under_px, *extra in prop_lines[eid]:
+                extra = extra[0] if extra else {}
                 hist = idx.get(norm(player))
                 if not hist or norm(player) in out_set:
                     continue
@@ -1939,7 +1969,7 @@ def main():
                               "injury": proj["_injury"][stat], "inj_out": sorted(set(bst["out"])) if bst else [],
                               "sched": proj["_sched"], "sched_notes": proj["_sched_notes"],
                               "p_over": p_over_for(stat, mdl, line, hist),
-                              "dk": line, "over": over_px, "under": under_px})
+                              "dk": line, "over": over_px, "under": under_px, **extra})
             if fresh:
                 pending["props"][eid] = fresh
         elif g["status"] == "Upcoming" and pending["props"].get(eid):
