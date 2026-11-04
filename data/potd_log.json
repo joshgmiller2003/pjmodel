@@ -3,25 +3,25 @@
  "picks": [
   {
    "date": "2026-11-04",
-   "eid": "401909930",
-   "game": "MIN@HOU",
-   "time": "8:30 PM ET",
-   "home": "HOU",
-   "away": "MIN",
+   "eid": "401909925",
+   "game": "CHA@BKN",
+   "time": "7:30 PM ET",
+   "home": "BKN",
+   "away": "CHA",
    "type": "Prop",
-   "player": "Jaden McDaniels",
-   "team": "MIN",
-   "stat": "AST",
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "stat": "RA",
    "side": "Over",
-   "line": 2.5,
-   "price": -120,
-   "model": 3.5,
-   "edge": 1.0,
-   "edge_pct": 40.0,
-   "label": "Jaden McDaniels Over 2.5 AST",
+   "line": 6.5,
+   "price": 102,
+   "model": 8.2,
+   "edge": 1.7,
+   "edge_pct": 26.2,
+   "label": "Dennis Schroder Over 6.5 RA",
    "hits": {
     "l5": [
-     5,
+     4,
      5
     ],
     "l10": [
@@ -35,32 +35,33 @@
    },
    "chart": {
     "vals": [
-     1.0,
-     3.0,
-     3.0,
-     4.0,
-     4.0,
+     10.0,
      7.0,
-     3.0,
+     11.0,
+     7.0,
+     9.0,
+     10.0,
+     10.0,
      3.0
     ],
-    "line": 2.5,
+    "line": 6.5,
     "side": "Over",
-    "label": "AST"
+    "label": "RA"
    },
-   "score": 94.8,
+   "score": 92.1,
    "reasons": [
-    "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge)",
-    "Went over the line in 7 of his last 8 games (5/5 in the last 5)",
-    "Averaging 4.2 over the last 5 and 3.5 over the last 8",
-    "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
+    "Model projects 8.2 RA vs a line of 6.5 (+1.7, 26% edge)",
+    "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 7.8 over the last 5 and 8.4 over the last 8",
+    "Minutes steady: 31 per game over the last 5 (31 over the last 8)",
+    "Matchup vs BKN: neutral for RA (defense and pace about league average)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
-   "p_model": 67.9,
-   "p_win": 75.7,
-   "ev": 38.8,
-   "picked_at": "2026-11-04 01:11 PM ET"
+   "candidates_considered": 67,
+   "p_model": 74.2,
+   "p_win": 79.5,
+   "ev": 60.6,
+   "picked_at": "2026-11-04 05:30 PM ET"
   }
  ]
 }
