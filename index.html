@@ -1068,7 +1068,7 @@ function renderStandings() {
   document.getElementById("standings-meta").textContent = "Dashed lines: playoff (top 6) and play-in (7-10) cutoffs";
   const fut = (DATA.futures && DATA.futures.title) || [];
   const fb = document.getElementById("futures-board");
-  if (DATA.futures && DATA.futures.updated) document.getElementById("futures-meta").textContent = "DraftKings · updated " + DATA.futures.updated;
+  if (DATA.futures && DATA.futures.updated) document.getElementById("futures-meta").textContent = (DATA.futures.book || "DraftKings") + " · updated " + DATA.futures.updated;
   const rec = {}; st.forEach(c => c.teams.forEach(t => rec[t.team] = t));
   const max = Math.max(1, ...fut.map(f => f.implied));
   fb.innerHTML = fut.length ? `<table><thead><tr><th>Team</th><th>Odds</th><th>Implied chance</th><th>Record</th></tr></thead><tbody>` + fut.map(f => `

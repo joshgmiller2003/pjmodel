@@ -396,24 +396,29 @@ def fetch_standings():
 
 
 def fetch_futures():
-    """DraftKings NBA championship odds (one market)."""
+    """NBA championship odds. DraftKings when it is listed, otherwise the first US book."""
     if not ODDS_KEY:
         return None
     j = get("https://api.the-odds-api.com/v4/sports/basketball_nba_championship_winner/odds", apiKey=ODDS_KEY,
-            regions="us", bookmakers="draftkings", markets="outrights", oddsFormat="american")
+            regions="us", markets="outrights", oddsFormat="american")
+    books = [bk for e in (j or []) for bk in e.get("bookmakers", [])]
+    log(f"futures: {len(books)} books ({', '.join(b.get('key', '') for b in books[:6])})")
+    if not books:
+        return None
+    bk = next((b for b in books if b.get("key") == "draftkings"), books[0])
     rows = []
-    for e in j or []:
-        for bk in e.get("bookmakers", []):
-            for m in bk.get("markets", []):
-                for o in m.get("outcomes", []):
-                    nm = NAME_FIX.get(o.get("name"), o.get("name"))
-                    ab = next((k for k, v in TEAM_NAMES.items() if v == nm), "")
-                    price = o.get("price")
-                    if price is None:
-                        continue
-                    implied = 100 / (price + 100) if price > 0 else -price / (-price + 100)
-                    rows.append({"team": ab, "name": nm, "odds": f"+{price}" if price > 0 else str(price), "implied": rnd(implied * 100, 1)})
+    for m in bk.get("markets", []):
+        for o in m.get("outcomes", []):
+            nm = NAME_FIX.get(o.get("name"), o.get("name"))
+            ab = next((k for k, v in TEAM_NAMES.items() if v == nm), "")
+            price = o.get("price")
+            if price is None:
+                continue
+            implied = 100 / (price + 100) if price > 0 else -price / (-price + 100)
+            rows.append({"team": ab, "name": nm, "odds": f"+{price}" if price > 0 else str(price), "implied": rnd(implied * 100, 1)})
     rows.sort(key=lambda r: -r["implied"])
+    if rows:
+        rows[0]["book"] = bk.get("title", bk.get("key", ""))
     return rows or None
 
 
@@ -706,7 +711,7 @@ def main():
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
-            "futures": {"title": futures, "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
+            "futures": {"title": futures, "book": futures[0].get("book", ""), "updated": now.strftime("%m/%d %I:%M %p ET")} if isinstance(futures, list) else futures}
 
     # validate before replacing anything
     json.dumps(data)
