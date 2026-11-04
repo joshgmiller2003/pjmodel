@@ -252,6 +252,22 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 @media (max-width: 720px) { .potd-grid { grid-template-columns: 1fr; } .potd-hero .bet { font-size: 24px; } .potd-hero .name { font-size: 22px; } .potd-result { position: static; display: inline-block; margin-bottom: 10px; } }
 .btn { background: var(--surface-2); border: 1px solid var(--border); color: var(--ink); border-radius: 8px; padding: 7px 12px; font: 600 12.5px "Inter", system-ui, sans-serif; cursor: pointer; }
 .btn:hover { border-color: var(--accent2); }
+.lad-hero { border-color: rgba(92,200,255,0.4); background: linear-gradient(135deg, rgba(92,200,255,0.10), var(--card) 60%); padding: 24px; }
+.lad-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.lad-bank { font-size: 46px; font-weight: 800; letter-spacing: -1.5px; line-height: 1; font-variant-numeric: tabular-nums; }
+.lad-track { position: relative; height: 12px; border-radius: 999px; background: var(--surface-2); margin: 26px 0 30px; }
+.lad-track .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: linear-gradient(90deg, var(--accent2), var(--good)); }
+.lad-track .tick { position: absolute; top: -4px; width: 2px; height: 20px; background: var(--border); }
+.lad-track .tick span { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); font-size: 10.5px; color: var(--muted); white-space: nowrap; }
+.lad-track .me { position: absolute; top: -7px; width: 26px; height: 26px; border-radius: 50%; background: var(--ink); border: 3px solid var(--accent2); transform: translateX(-50%); box-shadow: 0 0 0 4px rgba(92,200,255,0.2); }
+.lad-steps { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.lad-steps .s { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; font-size: 12px; font-weight: 800; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+.lad-steps .s.W { background: var(--good-soft); color: var(--good); border-color: rgba(52,211,153,0.35); }
+.lad-steps .s.L { background: var(--bad-soft); color: var(--bad); border-color: rgba(248,113,113,0.35); }
+.lad-steps .s.now { border-color: var(--accent2); color: var(--accent2); }
+.lad-next { text-align: right; }
+@media (max-width: 720px) { .lad-next { text-align: left; } .lad-bank { font-size: 38px; } }
+.rung-row.sug td { background: rgba(92,200,255,0.08); }
 .seed-line td { border-bottom: 2px dashed var(--border) !important; }
 @media (max-width: 720px) {
   .game-grid[style] { grid-template-columns: 1fr !important; }
@@ -299,6 +315,7 @@ nav button:first-child { margin-left: -13px; }
 <nav>
   <button class="active" data-tab="games">Games</button>
   <button data-tab="potd">Pick of the Day</button>
+  <button data-tab="ladders">Ladders</button>
   <button data-tab="best">Best Bets</button>
   <button data-tab="props">Player Props</button>
   <button data-tab="parlays">Parlays</button>
@@ -397,6 +414,30 @@ nav button:first-child { margin-left: -13px; }
       <button class="btn" style="margin-left:auto;" onclick="downloadPotd()">Download CSV</button></div>
     <div class="card table-wrap"><table id="potd-history"></table></div>
     <p class="note" style="margin-top:12px;">How it's picked: each update ranks every bet on today's board that hasn't tipped off, including player props, spreads, totals and moneylines. Every candidate must be backed by recent results (60%+ hit rate over the last 10 for props, spreads and totals; a winning record for moneylines), have a sane edge (props 6–40% of the line, spreads 1.5–6 pts, totals 3–12 pts, moneylines 4–20 points of win probability over the price), and a price no worse than -160 (-250 for moneylines). Props also need a healthy player with steady minutes. Score = 55% recent hit rate + 45% edge size. The pick locks at tip-off and is saved permanently in <code>data/potd_log.json</code> with its reasons and result.</p>
+  </section>
+
+<section id="ladders" class="tab" style="display:none;">
+    <div class="section-title">Ladders <small id="ladder-sub">One bet a day, winnings roll forward</small></div>
+    <div class="filters" id="ladder-mode">
+      <button data-m="challenge" class="active">Ladder Challenge</button>
+      <button data-m="alt">Alt-Line Ladders</button>
+    </div>
+    <div id="ladder-challenge">
+      <div id="lad-hero"></div>
+      <div class="game-grid" style="grid-template-columns:repeat(auto-fill,minmax(520px,1fr));margin-top:16px;">
+        <div id="lad-today"></div>
+        <div class="card table-wrap"><div class="conf-head" id="lad-climb-head">This climb</div><table id="lad-climb"></table></div>
+      </div>
+      <div class="kpis" id="lad-kpis" style="margin-top:16px;"></div>
+      <div class="section-title" style="font-size:16px;margin-top:10px;">Past attempts</div>
+      <div class="card table-wrap"><table id="lad-attempts"></table></div>
+      <p class="note" style="margin-top:12px;" id="lad-rules"></p>
+    </div>
+    <div id="ladder-alt" style="display:none;">
+      <div class="filters" id="alt-stats"></div>
+      <div class="game-grid" id="alt-board" style="grid-template-columns:repeat(auto-fill,minmax(380px,1fr));"></div>
+      <p class="note" style="margin-top:12px;">Each rung is an alternate line at DraftKings. Book % is the chance the price implies; Model % blends the model's projection with the player's last 15 games. Rungs where Model % beats Book % are value (positive EV). The suggested ladder spreads one stake across the best value rungs, for example 50% on the safest rung, 30% on the middle and 20% on the long shot, so one hit covers part of the misses and a big night pays a lot.</p>
+    </div>
   </section>
 
   <section id="hotcold" class="tab" style="display:none;">
@@ -1309,6 +1350,129 @@ function downloadPotd() {
   a.download = "pick_of_the_day_log.csv"; a.click();
 }
 
+// ---------- Ladders ----------
+var ladderMode = "challenge", altStat = "all";
+const money = v => "$" + (Math.round(v * 100) / 100).toLocaleString(undefined, {minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2});
+function ladderShare(text) {
+  const done = () => { const b = document.getElementById("lad-share"); if (b) { b.textContent = "Copied!"; setTimeout(() => b.textContent = "Share today's step", 1800); } };
+  if (navigator.share) { navigator.share({text, url: location.href}).catch(() => {}); return; }
+  try { navigator.clipboard.writeText(text + " " + location.href).then(done, done); } catch (e) { done(); }
+}
+function nextPickText() {
+  const et = new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}));
+  const t = new Date(et); t.setHours(11, 0, 0, 0); if (et >= t) t.setDate(t.getDate() + 1);
+  const ms = t - et, h = Math.floor(ms / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+  return `Next step posts at 11:00 AM ET · in ${h}h ${m}m`;
+}
+function renderLadders() {
+  document.querySelectorAll("#ladder-mode button").forEach(b => { b.classList.toggle("active", b.dataset.m === ladderMode); b.onclick = () => { ladderMode = b.dataset.m; renderLadders(); }; });
+  document.getElementById("ladder-challenge").style.display = ladderMode === "challenge" ? "" : "none";
+  document.getElementById("ladder-alt").style.display = ladderMode === "alt" ? "" : "none";
+  document.getElementById("ladder-sub").textContent = ladderMode === "challenge" ? "One bet a day, winnings roll forward" : "Alternate lines for tonight's best spots";
+  renderLadderChallenge(); renderAltLadders();
+}
+function renderLadderChallenge() {
+  const L = DATA.ladder;
+  const hero = document.getElementById("lad-hero");
+  if (!L) { hero.innerHTML = '<div class="card"><div style="font-weight:700;">The ladder challenge starts with the next update.</div><div class="note">' + nextPickText() + '</div></div>'; return; }
+  const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  const steps = (L.steps || []).map(potdNorm);
+  const cur = steps.filter(x => x.attempt === L.attempt).sort((a, b) => a.day - b.day);
+  const todayStep = steps.find(x => x.date === today);
+  const start = L.start || 10, goal = L.goal || 1000;
+  const bank = todayStep && !todayStep.result && todayStep.attempt === L.attempt ? todayStep.stake : L.bankroll;
+  const pos = v => Math.max(0, Math.min(100, Math.log(Math.max(v, start) / start) / Math.log(goal / start) * 100));
+  const ticks = [start, start * 2.5, start * 10, start * 25, goal].filter((v, i, a) => v <= goal && a.indexOf(v) === i);
+  const winsInRow = cur.filter(x => x.result === "W").length;
+  const next = todayStep && !todayStep.result ? todayStep.stake + todayStep.to_win : null;
+  hero.innerHTML = `<div class="card lad-hero">
+    <div class="lad-top">
+      <div><div class="eyebrow" style="font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent2);">Ladder Challenge · Attempt #${L.attempt}</div>
+        <div class="lad-bank" style="margin-top:10px;">${money(bank)}</div>
+        <div class="team" style="font-size:13px;margin-top:6px;">Started at ${money(start)} · goal ${money(goal)} · ${cur.length ? "Day " + (todayStep && todayStep.attempt === L.attempt ? todayStep.day : cur.length + 1) : "Day 1"} · ${winsInRow} win${winsInRow === 1 ? "" : "s"} in a row</div></div>
+      <div class="lad-next">${next ? `<div class="note">If today's step hits</div><div style="font-size:24px;font-weight:800;color:var(--good);">${money(next)}</div>` : ""}
+        <div class="note" style="margin-top:6px;">${nextPickText()}</div></div>
+    </div>
+    <div class="lad-track"><div class="fill" style="width:${pos(bank)}%;"></div>
+      ${ticks.map(v => `<div class="tick" style="left:${pos(v)}%;"><span>${money(v)}</span></div>`).join("")}
+      <div class="me" style="left:${pos(bank)}%;"></div></div>
+    <div class="lad-steps">${cur.map(x => `<div class="s ${x.result || "now"}" title="Day ${x.day}: ${x.label} ${fmtPrice(x.price)}">${x.result === "W" ? "✓" : x.result === "L" ? "✕" : x.result === "P" ? "–" : x.day}</div>`).join("") || '<div class="note">Day 1 starts with the next pick.</div>'}</div>
+  </div>`;
+  // today's step
+  const t = todayStep;
+  const g = t ? (DATA.games || []).find(x => x.id === t.game) : null;
+  document.getElementById("lad-today").innerHTML = t ? `<div class="card" style="height:100%;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
+      <div><div class="team" style="font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;">Today's step · Day ${t.day}</div>
+      <div style="font-size:22px;font-weight:800;margin-top:6px;letter-spacing:-0.4px;">${t.label} <span class="price" style="font-size:15px;">${fmtPrice(t.price)}</span></div>
+      <div class="team" style="font-size:12.5px;margin-top:2px;">${t.type} · ${t.game.replace("@", " @ ")} · ${t.time}</div></div>
+      ${t.result ? resultPill(t) : g && g.status === "Live" ? `<span class="pill pass">LIVE${g.score ? " " + g.score.away + "-" + g.score.home : ""}</span>` : `<span class="pill pass">${t.locked_at ? "Locked" : "Pending"}</span>`}
+    </div>
+    <div class="potd-stats" style="margin-top:14px;">
+      <div class="market"><label>Stake</label><div class="proj">${money(t.stake)}</div><div class="dk">whole bankroll</div></div>
+      <div class="market"><label>To win</label><div class="proj positive">${money(t.to_win)}</div><div class="dk">→ ${money(t.stake + t.to_win)}</div></div>
+      <div class="market"><label>Win chance</label><div class="proj">${t.p_win}%</div><div class="dk">EV ${t.ev > 0 ? "+" : ""}${t.ev}%</div></div>
+    </div>
+    <div style="font-weight:700;margin:14px 0 6px;">Why this step</div>
+    <ul class="potd-why">${[t.why_ladder].concat(t.reasons || []).filter(Boolean).map(r => `<li>${r}</li>`).join("")}</ul>
+    <div style="margin-top:12px;"><button class="btn" id="lad-share">Share today's step</button></div>
+  </div>` : `<div class="card" style="height:100%;"><div style="font-weight:700;margin-bottom:6px;">No step yet today</div><div class="note">${nextPickText()}. If nothing on the board is safe enough with a positive expected value, it's a rest day and the bankroll waits.</div></div>`;
+  const sb = document.getElementById("lad-share");
+  if (sb && t) sb.onclick = () => ladderShare(`PJ Model Ladder · Attempt #${t.attempt}, Day ${t.day}: ${money(start)} → ${money(t.stake)}. Today's step: ${t.label} (${fmtPrice(t.price)}).`);
+  // climb table
+  document.getElementById("lad-climb-head").textContent = `Attempt #${L.attempt} so far`;
+  document.getElementById("lad-climb").innerHTML = `<thead><tr><th>Day</th><th>Bet</th><th>Stake</th><th>Result</th><th>Bankroll</th></tr></thead><tbody>` +
+    (cur.length ? cur.slice().reverse().map(x => `<tr><td class="stat">${x.day}<div class="team">${x.date.slice(5)}</div></td><td><strong>${x.label}</strong> <span class="price">${fmtPrice(x.price)}</span><div class="team">${x.actual || x.type}</div></td><td class="stat">${money(x.stake)}</td><td>${resultPill(x)}</td><td class="stat"><strong>${x.bankroll_after != null ? money(x.bankroll_after) : "–"}</strong></td></tr>`).join("")
+      : '<tr><td colspan="5" class="note" style="padding:18px;">Fresh start. Day 1 is the next pick.</td></tr>') + "</tbody>";
+  // stats
+  const att = L.attempts || [];
+  const allSteps = steps.filter(x => x.result === "W" || x.result === "L");
+  const sw = allSteps.filter(x => x.result === "W").length;
+  const best = att.concat(cur.length ? [{peak: Math.max(L.bankroll, ...cur.map(x => x.bankroll_after || 0)), days: cur.length}] : []).reduce((b, a) => a.peak > (b ? b.peak : 0) ? a : b, null);
+  document.getElementById("lad-kpis").innerHTML = `
+    <div class="kpi"><div class="l">Best climb</div><div class="v">${best ? money(best.peak) : money(start)}</div><div class="s">${best ? best.days + " day" + (best.days === 1 ? "" : "s") : "no steps yet"}</div></div>
+    <div class="kpi"><div class="l">Ladders completed</div><div class="v">${att.filter(a => a.result === "Completed").length}</div><div class="s">reached ${money(goal)}</div></div>
+    <div class="kpi"><div class="l">Attempts</div><div class="v">${L.attempt}</div><div class="s">current is #${L.attempt}</div></div>
+    <div class="kpi"><div class="l">Step hit rate</div><div class="v">${allSteps.length ? Math.round(100 * sw / allSteps.length) + "%" : "–"}</div><div class="s">${sw}-${allSteps.length - sw} all time</div></div>`;
+  document.getElementById("lad-attempts").innerHTML = `<thead><tr><th>Attempt</th><th>Dates</th><th>Days</th><th>Peak</th><th>Result</th></tr></thead><tbody>` +
+    (att.length ? att.map(a => `<tr><td><strong>#${a.attempt}</strong></td><td class="team" style="font-size:12px;">${a.start || ""} → ${a.end}</td><td class="stat">${a.days}</td><td class="stat"><strong>${money(a.peak)}</strong></td><td><span class="pill ${a.result === "Completed" ? "over" : "under"}">${a.result}</span></td></tr>`).join("")
+      : '<tr><td colspan="5" class="note" style="padding:18px;">No finished attempts yet.</td></tr>') + "</tbody>";
+  document.getElementById("lad-rules").textContent = `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`;
+}
+function renderAltLadders() {
+  const all = DATA.alt_ladders || [];
+  const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  const fresh = DATA.alt_date === today;
+  const stats = [...new Set(all.map(a => a.stat))];
+  document.getElementById("alt-stats").innerHTML = ["all"].concat(stats).map(st => `<button data-s="${st}" class="${st === altStat ? "active" : ""}">${st === "all" ? "All" : (STAT_NAMES[st] || st)}</button>`).join("");
+  document.querySelectorAll("#alt-stats button").forEach(b => b.onclick = () => { altStat = b.dataset.s; renderAltLadders(); });
+  const list = all.filter(a => fresh && (altStat === "all" || a.stat === altStat));
+  const board = document.getElementById("alt-board");
+  if (!list.length) { board.innerHTML = `<div class="card"><div class="note">${fresh ? "No ladders for this stat today." : "Alt-line ladders load with the 11 AM ET update for the day's best games."}</div></div>`; return; }
+  board.innerHTML = list.map(a => {
+    const sug = new Set(a.suggested || []);
+    const inj = injuryFor(a.player);
+    return `<div class="card table-wrap">
+      <div style="padding:16px 18px 8px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+        <div><div class="matchup" style="font-size:16px;">${a.player}${inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}">${inj.status}</span>` : ""}</div>
+        <div class="time">${a.team} · ${a.game.replace("@", " @ ")} · ${a.time}</div></div>
+        <span class="stat-tag">${STAT_NAMES[a.stat] || a.stat}</span>
+      </div>
+      <div style="padding:0 18px 8px;display:flex;gap:16px;flex-wrap:wrap;" class="team">
+        <span>Model <strong style="color:var(--ink);">${a.model}</strong></span><span>L5 avg <strong style="color:var(--ink);">${a.avg5}</strong></span><span>L15 avg <strong style="color:var(--ink);">${a.avg15}</strong></span>${a.main_line != null ? `<span>Main line <strong style="color:var(--ink);">${a.main_line}</strong></span>` : ""}
+      </div>
+      <table><thead><tr><th>Rung</th><th>Odds</th><th>Book %</th><th>Model %</th><th>L15 hit</th><th>EV</th></tr></thead><tbody>
+      ${a.rungs.map(r => `<tr class="rung-row ${sug.has(r.line) ? "sug" : ""}">
+        <td style="white-space:nowrap;"><strong>${Math.ceil(r.line)}+</strong>${sug.has(r.line) ? ' <span class="badge rest" style="background:rgba(92,200,255,0.15);color:var(--accent2);">Ladder</span>' : ""}</td>
+        <td class="stat">${fmtPrice(r.price)}</td><td class="stat team">${r.implied}%</td>
+        <td class="stat"><strong>${r.p}%</strong></td><td class="stat team">${r.hit[0]}/${r.hit[1]}</td>
+        <td class="stat ${r.ev > 0 ? "positive" : "negative"}">${r.ev > 0 ? "+" : ""}${r.ev}%</td></tr>`).join("")}
+      </tbody></table>
+      <div class="note" style="padding:10px 18px 14px;">${sug.size ? `Suggested ladder: ${[...sug].map(l => Math.ceil(l) + "+").join(" → ")}` : "No rung shows value tonight. Pass, or play the main line."}</div>
+    </div>`;
+  }).join("");
+}
+
 var parlayMode = 2;
 var selectedParlay = [];
 renderGames();
@@ -1470,6 +1634,7 @@ function renderParlayMainOnLoad() {
 startLivePolling();
 renderBankroll();
 renderPotd();
+renderLadders();
 renderModel();
 renderCredits();
 renderStandings();

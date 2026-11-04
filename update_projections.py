@@ -26,6 +26,12 @@ OUT = ROOT / "projections_data.json"
 LOG_PATH = ROOT / "data" / "player_log.json"
 PENDING_PATH = ROOT / "data" / "pending.json"
 POTD_LOG = ROOT / "data" / "potd_log.json"      # permanent record of every Pick of the Day
+LADDER_PATH = ROOT / "data" / "ladder.json"     # ladder challenge: every step, every attempt
+LADDER_START = float(os.environ.get("LADDER_START", "10") or 10)
+LADDER_GOAL = float(os.environ.get("LADDER_GOAL", "1000") or 1000)
+ALT_MARKETS = {"player_points_alternate": "PTS", "player_rebounds_alternate": "REB",
+               "player_assists_alternate": "AST", "player_threes_alternate": "3PM"}
+ALT_GAMES = int(os.environ.get("ALT_LADDER_GAMES", "3") or 3)   # games per day that get alt-line ladders
 
 SEASON = "2026-27"
 SEASON_START = date(2026, 10, 20)
@@ -814,7 +820,212 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
         seen.add(key(c)); alts.append(c)
         if len(alts) == 6:
             break
-    return pick, alts
+    return pick, alts, cands
+
+
+# ------------------------------------------------------------------ win probability
+def poisson_over(lam, line):
+    """P(X > line) for Poisson(lam); line is a half number like 2.5."""
+    k = int(math.floor(line))
+    if lam <= 0:
+        return 0.0
+    term, cdf = math.exp(-lam), math.exp(-lam)
+    for i in range(1, k + 1):
+        term *= lam / i
+        cdf += term
+    return max(0.0, min(1.0, 1 - cdf))
+
+
+COUNT_STATS = {"REB", "AST", "3PM", "BLK", "STL"}
+
+
+def prob_over(stat, mean, line, vals=None):
+    if stat in COUNT_STATS:
+        return poisson_over(mean, line)
+    sd = 1.0
+    if vals and len(vals) >= 3:
+        m = sum(vals) / len(vals)
+        sd = math.sqrt(sum((v - m) ** 2 for v in vals) / (len(vals) - 1))
+    sd = max(sd, 0.25 * mean, 2.0)            # single-game scoring is noisy; never trust a tiny sample sd
+    return 1 - phi((line - mean) / sd)
+
+
+def add_win_probs(cands):
+    """Attach p_win: 60% model distribution + 40% recent hit rate (shrinks small samples toward the model)."""
+    for c in cands:
+        h = c["hits"]["l15"] if c["type"] == "Prop" else c["hits"]["l10"]
+        hr = h[0] / h[1] if h[1] else 0.5
+        if c["type"] == "Prop":
+            po = prob_over(c["stat"], c["model"], c["line"], c["chart"]["vals"])
+            pm = po if c["side"] == "Over" else 1 - po
+        elif c["type"] == "Spread":
+            pm = phi((c["model"] + c["line"]) / GAME_SD)
+        elif c["type"] == "Total":
+            po = 1 - phi((c["line"] - c["model"]) / 17.0)
+            pm = po if c["side"] == "Over" else 1 - po
+        else:
+            pm = c["model"] / 100
+        c["p_model"] = rnd(pm * 100, 1)
+        c["p_win"] = rnd((0.6 * pm + 0.4 * hr) * 100, 1)
+        dec = 1 + (c["price"] / 100 if c["price"] > 0 else 100 / -c["price"])
+        c["ev"] = rnd((c["p_win"] / 100 * dec - 1) * 100, 1)
+
+
+def decimal(price):
+    return 1 + (price / 100 if price > 0 else 100 / -price)
+
+
+# ------------------------------------------------------------------ ladder challenge
+def ladder_pick(cands):
+    """Safest bet with a real payout: price -200 to +120, positive expected value. Highest win chance wins."""
+    pool = [c for c in cands if -200 <= c["price"] <= 120 and c.get("ev", -1) > 0]
+    pool.sort(key=lambda c: (-c["p_win"], -c["ev"]))
+    return pool[0] if pool else None
+
+
+def run_ladder(lad, plog, cands, slate, t_iso, now):
+    lad.setdefault("start", LADDER_START); lad.setdefault("goal", LADDER_GOAL)
+    lad.setdefault("attempt", 1); lad.setdefault("bankroll", lad["start"]); lad.setdefault("steps", [])
+    lad.setdefault("attempts", []); lad.setdefault("attempt_started", t_iso)
+    stamp = now.strftime("%Y-%m-%d %I:%M %p ET")
+    # 1. grade finished steps, oldest first, and move the bankroll
+    grade_potd(lad["steps"], plog)
+    stale = (now.date() - timedelta(days=3)).isoformat()
+    for st in lad["steps"]:
+        if not st.get("result") and st["date"] < stale:           # postponed / never graded: void it
+            st.update(result="P", actual="No result (void)", units=0.0)
+    for st in sorted(lad["steps"], key=lambda x: x["date"]):
+        if not st.get("result") or st.get("applied"):
+            continue
+        st["applied"] = True
+        if st["result"] == "W":
+            lad["bankroll"] = rnd(st["stake"] * decimal(st["price"]), 2)
+            st["bankroll_after"] = lad["bankroll"]
+            if lad["bankroll"] >= lad["goal"]:
+                lad["attempts"].insert(0, {"attempt": st["attempt"], "start": lad["attempt_started"], "end": st["date"],
+                                           "days": st["day"], "peak": lad["bankroll"], "result": "Completed"})
+                lad["attempt"] += 1; lad["bankroll"] = lad["start"]; lad["attempt_started"] = None
+        elif st["result"] == "L":
+            st["bankroll_after"] = 0
+            peak = max([x.get("bankroll_after", 0) for x in lad["steps"] if x["attempt"] == st["attempt"]] + [lad["start"]])
+            lad["attempts"].insert(0, {"attempt": st["attempt"], "start": lad["attempt_started"], "end": st["date"],
+                                       "days": st["day"], "peak": peak, "result": "Busted"})
+            lad["attempt"] += 1; lad["bankroll"] = lad["start"]; lad["attempt_started"] = None
+        else:
+            lad["bankroll"] = st["stake"]; st["bankroll_after"] = st["stake"]
+    # 2. today's step: re-picked until its game tips off, then locked
+    today = next((x for x in lad["steps"] if x["date"] == t_iso), None)
+    pending_old = any(not x.get("result") for x in lad["steps"] if x["date"] < t_iso)
+    if pending_old:
+        log("ladder: waiting on an earlier step to be graded")
+        return lad
+    locked = bool(today) and bool(today.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == today["eid"]), True))
+    if today and locked:
+        today.setdefault("locked_at", stamp)
+        return lad
+    lad["steps"] = [x for x in lad["steps"] if x["date"] != t_iso]
+    pick = ladder_pick(cands)
+    if pick:
+        if not lad.get("attempt_started"):
+            lad["attempt_started"] = t_iso
+        day = 1 + sum(1 for x in lad["steps"] if x["attempt"] == lad["attempt"])
+        stake = lad["bankroll"]
+        step = {k: pick[k] for k in ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price",
+                                     "model", "edge", "hits", "reasons", "p_win", "p_model", "ev", "score")
+                if k in pick}
+        for k in ("player", "team", "stat"):
+            if k in pick:
+                step[k] = pick[k]
+        step.update({"date": t_iso, "attempt": lad["attempt"], "day": day, "stake": stake,
+                     "to_win": rnd(stake * (decimal(pick["price"]) - 1), 2), "picked_at": stamp,
+                     "why_ladder": f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value"})
+        lad["steps"].insert(0, step)
+        log(f"ladder: attempt {lad['attempt']} day {day}, ${stake:g} on {pick['label']} ({fmt_px(pick['price'])})")
+    else:
+        log("ladder: no bet cleared the ladder filters today (rest day)")
+    return lad
+
+
+def fmt_px(p):
+    return f"+{p}" if p > 0 else str(p)
+
+
+# ------------------------------------------------------------------ alt-line ladders
+def odds_alt_lines(games_for_alt, slate):
+    """Alternate player lines (PTS/REB/AST/3PM) for a few games. {event_id: {(player, stat): [(line, over_price)]}}"""
+    if not ODDS_KEY or not games_for_alt:
+        return {}
+    evs = CREDITS.spend(f"{ODDS}/events", 0, "event list")
+    if not evs:
+        return {}
+    name_to_abbr = {NAME_FIX.get(nm, nm): ab for g in slate for ab, nm in g["names"].items()}
+    by_pair = {}
+    for e in evs:
+        h = name_to_abbr.get(NAME_FIX.get(e["home_team"], e["home_team"]))
+        a = name_to_abbr.get(NAME_FIX.get(e["away_team"], e["away_team"]))
+        if h and a:
+            by_pair[(a, h)] = e["id"]
+    out = {}
+    for g in games_for_alt:
+        oid = by_pair.get((g["away"], g["home"]))
+        if not oid:
+            continue
+        j = CREDITS.spend(f"{ODDS}/events/{oid}/odds", len(ALT_MARKETS), f"alt lines {g['away']}@{g['home']}",
+                          regions="us", bookmakers="draftkings", markets=",".join(ALT_MARKETS), oddsFormat="american")
+        rows = {}
+        for bk in (j or {}).get("bookmakers", []):
+            for m in bk.get("markets", []):
+                stat = ALT_MARKETS.get(m["key"])
+                for o in m.get("outcomes", []):
+                    if stat and o.get("name") == "Over" and o.get("point") is not None and o.get("price") is not None:
+                        rows.setdefault((o.get("description", ""), stat), {})[float(o["point"])] = o["price"]
+        out[g["event_id"]] = {k: sorted(v.items()) for k, v in rows.items()}
+    return out
+
+
+def build_alt_ladders(alt, slate, idx, props, injuries):
+    gm = {g["event_id"]: g for g in slate}
+    hurt = {norm(i["player"]) for i in injuries if i["status"].lower() == "out"}
+    proj = {(p["player"], p["stat"]): p for p in props}
+    out = []
+    for eid, rows in alt.items():
+        g = gm.get(eid)
+        for (player, stat), rungs in rows.items():
+            hist = [r for r in idx.get(norm(player), []) if r["min"] >= 5]
+            if norm(player) in hurt or len(hist) < 5 or len(rungs) < 3:
+                continue
+            vals = [STAT_VAL[stat](r) for r in hist[::-1]][:15]
+            pr = next((v for (pl, st), v in proj.items() if norm(pl) == norm(player) and st == stat), None)
+            mean = pr["model"] if pr else sum(vals[:10]) / len(vals[:10])
+            ladder = []
+            for line, price in rungs:
+                if price < -1000 or price > 3000:
+                    continue
+                pm = prob_over(stat, mean, line, vals)
+                hit = sum(1 for v in vals if v > line)
+                p = 0.6 * pm + 0.4 * hit / len(vals)
+                imp = implied(price)
+                ladder.append({"line": line, "price": price, "implied": rnd(imp * 100, 1), "p": rnd(p * 100, 1),
+                               "hit": [hit, len(vals)], "ev": rnd((p * decimal(price) - 1) * 100, 1)})
+            ladder = [r for r in ladder if 1 <= r["implied"] <= 95]
+            if len(ladder) < 3:
+                continue
+            # suggested 3-rung ladder: safest +EV-ish rung, a middle rung, and a long shot with value
+            value = [r for r in ladder if r["ev"] > 0 and -250 <= r["price"] <= 1000]
+            pick = []
+            if value:
+                safe = max(value, key=lambda r: r["p"])
+                longs = [r for r in value if r["price"] >= 200 and r["line"] > safe["line"]]
+                mids = [r for r in value if safe["price"] < r["price"] < 200 and r["line"] > safe["line"]]
+                pick = [safe] + ([max(mids, key=lambda r: r["ev"])] if mids else []) + ([max(longs, key=lambda r: r["ev"])] if longs else [])
+            best = max(ladder, key=lambda r: r["ev"])
+            out.append({"player": player, "team": hist[-1]["t"], "game": g["id"] if g else "", "time": g["time"] if g else "",
+                        "stat": stat, "model": rnd(mean, 1), "main_line": pr["dk"] if pr else None,
+                        "avg5": rnd(sum(vals[:5]) / len(vals[:5]), 1), "avg15": rnd(sum(vals) / len(vals), 1),
+                        "last10": vals[:10][::-1], "rungs": ladder, "suggested": [r["line"] for r in pick],
+                        "best_ev": best["ev"], "value_rungs": len(value)})
+    out.sort(key=lambda x: (-x["value_rungs"], -x["best_ev"]))
+    return out[:24]
 
 
 def settle(pending, plog, state):
@@ -1029,12 +1240,34 @@ def main():
     potd_alts = prev.get("potd_alts", []) if locked else []
     if todays and locked and not todays.get("locked_at"):
         todays["locked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
+    pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso)
+    add_win_probs(all_cands)
     if not locked:
-        pick, potd_alts = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso)
+        potd_alts = new_alts
         potd_hist = [h for h in potd_hist if h["date"] != t_iso]
         if pick:
             pick["picked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
             potd_hist.insert(0, pick)
+    # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
+    ladder = run_ladder(load(LADDER_PATH, {}), plog, all_cands, slate, t_iso, now)
+
+    # 3d. Alt-line ladders: lowest spending priority, morning run only, for the games of the best props
+    alt_ladders = prev.get("alt_ladders", []) if prev.get("alt_date") == t_iso else []
+    alt_date = prev.get("alt_date") if alt_ladders else None
+    if slot == "morning" and todays_up:
+        ranked = []
+        for c in sorted(all_cands, key=lambda c: -c["score"]):
+            gg = next((g for g in todays_up if g["event_id"] == c["eid"]), None)
+            if gg and gg not in ranked:
+                ranked.append(gg)
+        for g in todays_up:
+            if g not in ranked:
+                ranked.append(g)
+        alt = odds_alt_lines(ranked[:ALT_GAMES], slate)
+        built = build_alt_ladders(alt, slate, idx, props, injuries)
+        if built:
+            alt_ladders, alt_date = built, t_iso
+
     log("potd: " + (potd_hist[0]["label"] + f" ({potd_hist[0]['type']})" if potd_hist and potd_hist[0]["date"] == t_iso else "none today"))
 
     # 4. fading learning rate
@@ -1073,6 +1306,8 @@ def main():
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
             "potd_history": potd_hist[:400], "potd_alts": potd_alts,
+            "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
+            "alt_ladders": alt_ladders, "alt_date": alt_date,
             "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
                         "allowed_now": CREDITS.allowance(), "skipped": CREDITS.skipped, "slot": slot,
                         "calls": CREDITS.state["calls"][-20:], "history": CREDITS.state.get("history", [])[:14],
@@ -1086,6 +1321,8 @@ def main():
     save(LOG_PATH, plog)
     save(PENDING_PATH, pending)
     CREDITS.save()
+    ladder["steps"] = ladder["steps"][:1000]
+    save(LADDER_PATH, ladder, indent=1)
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
     save(ROOT / "player_games.json", build_game_logs(idx, slate, now.strftime("%m/%d %I:%M %p ET")))
