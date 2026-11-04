@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T16:26:24Z",
+ "generated_at": "2026-11-04T16:29:51Z",
  "season": "2026-27",
  "games": [
   {
@@ -10234,10 +10234,10 @@
    "game": "TOR@DEN",
    "stat": "PTS",
    "model": 25.4,
-   "dk": 23.5,
-   "over": -103,
-   "under": -123,
-   "edge": 1.9,
+   "dk": 22.5,
+   "over": -112,
+   "under": -113,
+   "edge": 2.9,
    "side": "Over"
   },
   {
@@ -10247,8 +10247,8 @@
    "stat": "PTS",
    "model": 21.3,
    "dk": 21.5,
-   "over": -111,
-   "under": -114,
+   "over": -118,
+   "under": -108,
    "edge": -0.2,
    "side": "Under"
   },
@@ -10258,10 +10258,10 @@
    "game": "TOR@DEN",
    "stat": "PTS",
    "model": 18.8,
-   "dk": 16.5,
-   "over": -125,
-   "under": -102,
-   "edge": 2.3,
+   "dk": 17.5,
+   "over": -102,
+   "under": -125,
+   "edge": 1.3,
    "side": "Over"
   },
   {
@@ -10294,11 +10294,11 @@
    "game": "TOR@DEN",
    "stat": "PTS",
    "model": 12.5,
-   "dk": 11.5,
-   "over": -124,
-   "under": -103,
-   "edge": 1.0,
-   "side": "Over"
+   "dk": 12.5,
+   "over": 101,
+   "under": -129,
+   "edge": 0.0,
+   "side": "Under"
   },
   {
    "player": "Cameron Johnson",
@@ -10355,8 +10355,8 @@
    "stat": "PTS",
    "model": 4.5,
    "dk": 6.5,
-   "over": -108,
-   "under": -118,
+   "over": -114,
+   "under": -112,
    "edge": -2.0,
    "side": "Under"
   },
@@ -10402,10 +10402,10 @@
    "game": "TOR@DEN",
    "stat": "PA",
    "model": 30.5,
-   "dk": 29.5,
-   "over": -106,
-   "under": -125,
-   "edge": 1.0,
+   "dk": 28.5,
+   "over": -116,
+   "under": -113,
+   "edge": 2.0,
    "side": "Over"
   },
   {
@@ -10415,8 +10415,8 @@
    "stat": "PA",
    "model": 25.4,
    "dk": 25.5,
-   "over": -117,
-   "under": -112,
+   "over": -122,
+   "under": -108,
    "edge": -0.1,
    "side": "Under"
   },
@@ -10499,8 +10499,8 @@
    "stat": "PR",
    "model": 33.5,
    "dk": 30.5,
-   "over": -118,
-   "under": -112,
+   "over": -107,
+   "under": -122,
    "edge": 3.0,
    "side": "Over"
   },
@@ -10535,8 +10535,8 @@
    "stat": "PR",
    "model": 22.8,
    "dk": 20.5,
-   "over": -121,
-   "under": -109,
+   "over": -126,
+   "under": -105,
    "edge": 2.3,
    "side": "Over"
   },
@@ -10619,8 +10619,8 @@
    "stat": "PR",
    "model": 10.2,
    "dk": 12.5,
-   "over": -112,
-   "under": -117,
+   "over": -117,
+   "under": -113,
    "edge": -2.3,
    "side": "Under"
   },
@@ -10655,8 +10655,8 @@
    "stat": "PRA",
    "model": 38.6,
    "dk": 36.5,
-   "over": -123,
-   "under": -107,
+   "over": -108,
+   "under": -121,
    "edge": 2.1,
    "side": "Over"
   },
@@ -10679,8 +10679,8 @@
    "stat": "PRA",
    "model": 31.7,
    "dk": 31.5,
-   "over": -119,
-   "under": -110,
+   "over": -125,
+   "under": -106,
    "edge": 0.2,
    "side": "Over"
   },
@@ -10726,10 +10726,10 @@
    "game": "TOR@DEN",
    "stat": "PRA",
    "model": 14.9,
-   "dk": 16.5,
-   "over": -102,
-   "under": -129,
-   "edge": -1.6,
+   "dk": 15.5,
+   "over": -128,
+   "under": -102,
+   "edge": -0.6,
    "side": "Under"
   },
   {
@@ -14194,11 +14194,11 @@
    "game": "MIA@LAC",
    "stat": "AST",
    "model": 5.8,
-   "dk": 5.5,
-   "over": -158,
-   "under": 119,
-   "edge": 0.3,
-   "side": "Over"
+   "dk": 6.5,
+   "over": 118,
+   "under": -156,
+   "edge": -0.7,
+   "side": "Under"
   },
   {
    "player": "Kris Dunn",
@@ -14220,7 +14220,7 @@
    "model": 3.7,
    "dk": 3.5,
    "over": -110,
-   "under": -120,
+   "under": -119,
    "edge": 0.2,
    "side": "Over"
   },
@@ -14242,10 +14242,10 @@
    "game": "MIA@LAC",
    "stat": "PTS",
    "model": 28.9,
-   "dk": 30.5,
-   "over": -103,
-   "under": -124,
-   "edge": -1.6,
+   "dk": 29.5,
+   "over": -124,
+   "under": -103,
+   "edge": -0.6,
    "side": "Under"
   },
   {
@@ -14254,10 +14254,10 @@
    "game": "MIA@LAC",
    "stat": "PTS",
    "model": 21.0,
-   "dk": 21.5,
-   "over": -123,
-   "under": -104,
-   "edge": -0.5,
+   "dk": 22.5,
+   "over": -105,
+   "under": -122,
+   "edge": -1.5,
    "side": "Under"
   },
   {
@@ -14316,7 +14316,7 @@
    "model": 11.5,
    "dk": 11.5,
    "over": -104,
-   "under": -122,
+   "under": -123,
    "edge": 0.0,
    "side": "Under"
   },
@@ -14327,8 +14327,8 @@
    "stat": "PTS",
    "model": 11.9,
    "dk": 10.5,
-   "over": 101,
-   "under": -129,
+   "over": -103,
+   "under": -124,
    "edge": 1.4,
    "side": "Over"
   },
@@ -14363,8 +14363,8 @@
    "stat": "PTS",
    "model": 8.6,
    "dk": 8.5,
-   "over": -126,
-   "under": -101,
+   "over": -124,
+   "under": -103,
    "edge": 0.1,
    "side": "Over"
   },
@@ -14375,8 +14375,8 @@
    "stat": "PTS",
    "model": 10.2,
    "dk": 8.5,
-   "over": -118,
-   "under": -108,
+   "over": -120,
+   "under": -107,
    "edge": 1.7,
    "side": "Over"
   },
@@ -14422,10 +14422,10 @@
    "game": "MIA@LAC",
    "stat": "PA",
    "model": 20.0,
-   "dk": 21.5,
-   "over": -124,
-   "under": -106,
-   "edge": -1.5,
+   "dk": 22.5,
+   "over": -104,
+   "under": -127,
+   "edge": -2.5,
    "side": "Under"
   },
   {
@@ -14435,8 +14435,8 @@
    "stat": "PA",
    "model": 23.9,
    "dk": 19.5,
-   "over": -108,
-   "under": -122,
+   "over": -104,
+   "under": -126,
    "edge": 4.4,
    "side": "Over"
   },
@@ -14447,8 +14447,8 @@
    "stat": "PA",
    "model": 15.2,
    "dk": 14.5,
-   "over": -124,
-   "under": -106,
+   "over": -126,
+   "under": -104,
    "edge": 0.7,
    "side": "Over"
   },
@@ -14483,8 +14483,8 @@
    "stat": "PR",
    "model": 24.6,
    "dk": 27.5,
-   "over": -117,
-   "under": -113,
+   "over": -121,
+   "under": -109,
    "edge": -2.9,
    "side": "Under"
   },
@@ -14494,10 +14494,10 @@
    "game": "MIA@LAC",
    "stat": "PR",
    "model": 22.8,
-   "dk": 24.5,
-   "over": -123,
-   "under": -107,
-   "edge": -1.7,
+   "dk": 25.5,
+   "over": -106,
+   "under": -124,
+   "edge": -2.7,
    "side": "Under"
   },
   {
@@ -14531,21 +14531,9 @@
    "stat": "PR",
    "model": 16.7,
    "dk": 15.5,
-   "over": -122,
-   "under": -107,
-   "edge": 1.2,
-   "side": "Over"
-  },
-  {
-   "player": "Bobby Portis",
-   "team": "MIA",
-   "game": "MIA@LAC",
-   "stat": "PR",
-   "model": 15.1,
-   "dk": 14.5,
-   "over": -125,
+   "over": -124,
    "under": -106,
-   "edge": 0.6,
+   "edge": 1.2,
    "side": "Over"
   },
   {
@@ -14561,15 +14549,15 @@
    "side": "Over"
   },
   {
-   "player": "Davion Mitchell",
+   "player": "Bobby Portis",
    "team": "MIA",
    "game": "MIA@LAC",
    "stat": "PR",
-   "model": 17.4,
+   "model": 15.1,
    "dk": 14.5,
-   "over": -114,
-   "under": -116,
-   "edge": 2.9,
+   "over": -121,
+   "under": -109,
+   "edge": 0.6,
    "side": "Over"
   },
   {
@@ -14579,9 +14567,21 @@
    "stat": "PR",
    "model": 14.9,
    "dk": 14.5,
-   "over": -114,
-   "under": -115,
+   "over": -119,
+   "under": -110,
    "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "game": "MIA@LAC",
+   "stat": "PR",
+   "model": 17.4,
+   "dk": 14.5,
+   "over": -114,
+   "under": -116,
+   "edge": 2.9,
    "side": "Over"
   },
   {
@@ -14615,8 +14615,8 @@
    "stat": "PRA",
    "model": 47.1,
    "dk": 48.5,
-   "over": -111,
-   "under": -119,
+   "over": -112,
+   "under": -117,
    "edge": -1.4,
    "side": "Under"
   },
@@ -14663,8 +14663,8 @@
    "stat": "PRA",
    "model": 18.6,
    "dk": 18.5,
-   "over": -108,
-   "under": -122,
+   "over": -112,
+   "under": -118,
    "edge": 0.1,
    "side": "Over"
   },
@@ -14687,8 +14687,8 @@
    "stat": "REB",
    "model": 12.4,
    "dk": 11.5,
-   "over": -128,
-   "under": -103,
+   "over": -126,
+   "under": -105,
    "edge": 0.9,
    "side": "Over"
   },
@@ -14711,8 +14711,8 @@
    "stat": "REB",
    "model": 6.6,
    "dk": 6.5,
-   "over": -129,
-   "under": -102,
+   "over": -131,
+   "under": -101,
    "edge": 0.1,
    "side": "Over"
   },
@@ -14723,8 +14723,8 @@
    "stat": "REB",
    "model": 6.5,
    "dk": 5.5,
-   "over": -126,
-   "under": -104,
+   "over": -123,
+   "under": -107,
    "edge": 1.0,
    "side": "Over"
   },
@@ -14771,8 +14771,8 @@
    "stat": "REB",
    "model": 4.8,
    "dk": 4.5,
-   "over": 121,
-   "under": -159,
+   "over": 116,
+   "under": -154,
    "edge": 0.3,
    "side": "Over"
   },
@@ -14795,8 +14795,8 @@
    "stat": "REB",
    "model": 3.4,
    "dk": 3.5,
-   "over": 113,
-   "under": -149,
+   "over": 108,
+   "under": -142,
    "edge": -0.1,
    "side": "Under"
   },
@@ -14831,8 +14831,8 @@
    "stat": "RA",
    "model": 18.2,
    "dk": 17.5,
-   "over": -133,
-   "under": 101,
+   "over": -131,
+   "under": 100,
    "edge": 0.7,
    "side": "Over"
   },
@@ -14854,10 +14854,10 @@
    "game": "MIA@LAC",
    "stat": "RA",
    "model": 8.3,
-   "dk": 9.5,
-   "over": -143,
-   "under": 109,
-   "edge": -1.2,
+   "dk": 10.5,
+   "over": 109,
+   "under": -143,
+   "edge": -2.2,
    "side": "Under"
   },
   {
@@ -14891,8 +14891,8 @@
    "stat": "RA",
    "model": 7.1,
    "dk": 6.5,
-   "over": -133,
-   "under": 101,
+   "over": -139,
+   "under": 105,
    "edge": 0.6,
    "side": "Over"
   },
@@ -14927,7 +14927,7 @@
    "stat": "STL",
    "model": 0.9,
    "dk": 1.5,
-   "over": 143,
+   "over": 144,
    "under": -192,
    "edge": -0.6,
    "side": "Under"
@@ -15035,8 +15035,8 @@
    "stat": "3PM",
    "model": 1.7,
    "dk": 1.5,
-   "over": 117,
-   "under": -154,
+   "over": 118,
+   "under": -156,
    "edge": 0.2,
    "side": "Over"
   },
@@ -15771,7 +15771,7 @@
    "game": "ATL@WAS"
   }
  ],
- "injuries_updated": "11/04 11:26 AM ET",
+ "injuries_updated": "11/04 11:29 AM ET",
  "residuals": {
   "player": {},
   "team": [],
@@ -16821,6 +16821,351 @@
      "edge": -4.8
     }
    ]
+  },
+  {
+   "timestamp": "2026-11-04T11:29",
+   "games": [
+    {
+     "id": "PHI@DET",
+     "matchup": "PHI @ DET",
+     "model_spread": -3.6,
+     "model_total": 220.7,
+     "dk_spread": "-2.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@WAS",
+     "matchup": "ATL @ WAS",
+     "model_spread": -2.5,
+     "model_total": 225.1,
+     "dk_spread": "+3.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "MIL@BOS",
+     "matchup": "MIL @ BOS",
+     "model_spread": -6.7,
+     "model_total": 228.2,
+     "dk_spread": "-11.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CHA@BKN",
+     "matchup": "CHA @ BKN",
+     "model_spread": -3.1,
+     "model_total": 220.0,
+     "dk_spread": "+3.5",
+     "dk_total": 213.5
+    },
+    {
+     "id": "CHI@NYK",
+     "matchup": "CHI @ NYK",
+     "model_spread": -6.4,
+     "model_total": 226.7,
+     "dk_spread": "-12.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "IND@MEM",
+     "matchup": "IND @ MEM",
+     "model_spread": -6.3,
+     "model_total": 228.4,
+     "dk_spread": "-6.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "UTA@NOP",
+     "matchup": "UTA @ NOP",
+     "model_spread": -5.5,
+     "model_total": 230.1,
+     "dk_spread": "-5.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "CLE@OKC",
+     "matchup": "CLE @ OKC",
+     "model_spread": -1.5,
+     "model_total": 226.3,
+     "dk_spread": "-3.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIN@HOU",
+     "matchup": "MIN @ HOU",
+     "model_spread": -2.7,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "TOR@DEN",
+     "matchup": "TOR @ DEN",
+     "model_spread": -0.0,
+     "model_total": 228.2,
+     "dk_spread": "-4.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "POR@PHX",
+     "matchup": "POR @ PHX",
+     "model_spread": 2.1,
+     "model_total": 229.0,
+     "dk_spread": "+3.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "DAL@SAS",
+     "matchup": "DAL @ SAS",
+     "model_spread": -4.5,
+     "model_total": 226.1,
+     "dk_spread": "-12.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "LAL@SAC",
+     "matchup": "LAL @ SAC",
+     "model_spread": 2.8,
+     "model_total": 231.3,
+     "dk_spread": "+12.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@LAC",
+     "matchup": "MIA @ LAC",
+     "model_spread": -1.9,
+     "model_total": 229.6,
+     "dk_spread": "+5.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.4,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Nikola Jokic",
+     "stat": "PRA",
+     "model": 40.2,
+     "dk": 47.5,
+     "edge": -7.3
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 56.5,
+     "dk": 49.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 48.3,
+     "dk": 41.5,
+     "edge": 6.8
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PRA",
+     "model": 8.9,
+     "dk": 15.5,
+     "edge": -6.6
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PR",
+     "model": 7.3,
+     "dk": 13.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 37.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PRA",
+     "model": 13.3,
+     "dk": 19.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 28.5,
+     "dk": 22.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PRA",
+     "model": 19.6,
+     "dk": 25.5,
+     "edge": -5.9
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 48.4,
+     "dk": 42.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 20.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PA",
+     "model": 32.7,
+     "dk": 38.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 40.2,
+     "dk": 34.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PA",
+     "model": 10.9,
+     "dk": 16.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 26.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 37.0,
+     "dk": 42.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PRA",
+     "model": 24.1,
+     "dk": 29.5,
+     "edge": -5.4
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 36.7,
+     "dk": 31.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PRA",
+     "model": 10.3,
+     "dk": 15.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 37.7,
+     "dk": 32.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PR",
+     "model": 22.3,
+     "dk": 27.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PA",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PTS",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PTS",
+     "model": 11.6,
+     "dk": 16.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PA",
+     "model": 30.6,
+     "dk": 35.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Trevon Brazile",
+     "stat": "PR",
+     "model": 14.4,
+     "dk": 9.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Payton Pritchard",
+     "stat": "PRA",
+     "model": 20.7,
+     "dk": 25.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PA",
+     "model": 7.7,
+     "dk": 12.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PR",
+     "model": 8.7,
+     "dk": 13.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PR",
+     "model": 11.7,
+     "dk": 16.5,
+     "edge": -4.8
+    }
+   ]
   }
  ],
  "notes": "Model data updates automatically each day.",
@@ -17323,5 +17668,191 @@
    ]
   }
  ],
- "futures": null
+ "futures": {
+  "title": [
+   {
+    "team": "SAS",
+    "name": "San Antonio Spurs",
+    "odds": "+280",
+    "implied": 26.3,
+    "book": "FanDuel"
+   },
+   {
+    "team": "OKC",
+    "name": "Oklahoma City Thunder",
+    "odds": "+410",
+    "implied": 19.6
+   },
+   {
+    "team": "PHI",
+    "name": "Philadelphia 76ers",
+    "odds": "+950",
+    "implied": 9.5
+   },
+   {
+    "team": "BOS",
+    "name": "Boston Celtics",
+    "odds": "+1000",
+    "implied": 9.1
+   },
+   {
+    "team": "NYK",
+    "name": "New York Knicks",
+    "odds": "+1000",
+    "implied": 9.1
+   },
+   {
+    "team": "HOU",
+    "name": "Houston Rockets",
+    "odds": "+1600",
+    "implied": 5.9
+   },
+   {
+    "team": "TOR",
+    "name": "Toronto Raptors",
+    "odds": "+1700",
+    "implied": 5.6
+   },
+   {
+    "team": "MIN",
+    "name": "Minnesota Timberwolves",
+    "odds": "+1900",
+    "implied": 5.0
+   },
+   {
+    "team": "DEN",
+    "name": "Denver Nuggets",
+    "odds": "+2200",
+    "implied": 4.3
+   },
+   {
+    "team": "DET",
+    "name": "Detroit Pistons",
+    "odds": "+2200",
+    "implied": 4.3
+   },
+   {
+    "team": "CLE",
+    "name": "Cleveland Cavaliers",
+    "odds": "+2700",
+    "implied": 3.6
+   },
+   {
+    "team": "LAL",
+    "name": "Los Angeles Lakers",
+    "odds": "+3000",
+    "implied": 3.2
+   },
+   {
+    "team": "POR",
+    "name": "Portland Trail Blazers",
+    "odds": "+3000",
+    "implied": 3.2
+   },
+   {
+    "team": "MIA",
+    "name": "Miami Heat",
+    "odds": "+4500",
+    "implied": 2.2
+   },
+   {
+    "team": "ATL",
+    "name": "Atlanta Hawks",
+    "odds": "+5000",
+    "implied": 2.0
+   },
+   {
+    "team": "ORL",
+    "name": "Orlando Magic",
+    "odds": "+5000",
+    "implied": 2.0
+   },
+   {
+    "team": "IND",
+    "name": "Indiana Pacers",
+    "odds": "+5000",
+    "implied": 2.0
+   },
+   {
+    "team": "GSW",
+    "name": "Golden State Warriors",
+    "odds": "+7500",
+    "implied": 1.3
+   },
+   {
+    "team": "CHA",
+    "name": "Charlotte Hornets",
+    "odds": "+12500",
+    "implied": 0.8
+   },
+   {
+    "team": "MEM",
+    "name": "Memphis Grizzlies",
+    "odds": "+15000",
+    "implied": 0.7
+   },
+   {
+    "team": "PHX",
+    "name": "Phoenix Suns",
+    "odds": "+20000",
+    "implied": 0.5
+   },
+   {
+    "team": "DAL",
+    "name": "Dallas Mavericks",
+    "odds": "+25000",
+    "implied": 0.4
+   },
+   {
+    "team": "WAS",
+    "name": "Washington Wizards",
+    "odds": "+40000",
+    "implied": 0.2
+   },
+   {
+    "team": "UTA",
+    "name": "Utah Jazz",
+    "odds": "+70000",
+    "implied": 0.1
+   },
+   {
+    "team": "NOP",
+    "name": "New Orleans Pelicans",
+    "odds": "+75000",
+    "implied": 0.1
+   },
+   {
+    "team": "BKN",
+    "name": "Brooklyn Nets",
+    "odds": "+100000",
+    "implied": 0.1
+   },
+   {
+    "team": "MIL",
+    "name": "Milwaukee Bucks",
+    "odds": "+100000",
+    "implied": 0.1
+   },
+   {
+    "team": "LAC",
+    "name": "LA Clippers",
+    "odds": "+100000",
+    "implied": 0.1
+   },
+   {
+    "team": "SAC",
+    "name": "Sacramento Kings",
+    "odds": "+100000",
+    "implied": 0.1
+   },
+   {
+    "team": "CHI",
+    "name": "Chicago Bulls",
+    "odds": "+100000",
+    "implied": 0.1
+   }
+  ],
+  "book": "FanDuel",
+  "updated": "11/04 11:29 AM ET"
+ }
 }
