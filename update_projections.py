@@ -388,8 +388,72 @@ def wmean(vals, decay):
     return sum(v * x for v, x in zip(vals, w)) / sum(w)
 
 
-def project_player(games, opp_factor):
-    """games: chronological list of box-score rows. Returns {stat: projection} or None."""
+DEF_STATS = ("pts", "reb", "ast", "tpm", "stl", "blk")
+DEF_CAP = 0.10       # opponent defense can move a stat by at most +/-10%
+PACE_CAP = 0.05      # expected game pace can move a stat by at most +/-5%
+MATCHUP_CAP = 0.12   # combined matchup cap
+STAT_KEY = {"PTS": "pts", "REB": "reb", "AST": "ast", "3PM": "tpm", "BLK": "blk", "STL": "stl"}
+
+
+def _poss(rows):
+    return sum(r.get("fga", 0) - r.get("oreb", 0) + r.get("to", 0) + 0.44 * r.get("fta", 0) for r in rows)
+
+
+def _clamp(x, cap):
+    return min(1 + cap, max(1 - cap, x))
+
+
+def team_defense(plog):
+    """What each team allows per 100 possessions in every prop stat, plus its pace, from ESPN box scores
+    already saved in data/player_log.json (no API calls). Shrunk toward league average like team_ratings."""
+    agg, lg, lg_poss, n = {}, {k: 0.0 for k in DEF_STATS}, 0.0, 0
+    for g in plog["games"].values():
+        h, a = g["home"], g["away"]
+        by = {t: [p for p in g["players"] if p["t"] == t] for t in (h, a)}
+        if not by[h] or not by[a]:
+            continue
+        gp = (_poss(by[h]) + _poss(by[a])) / 2
+        if gp <= 50:
+            continue
+        for t, o in ((h, a), (a, h)):
+            r = agg.setdefault(t, {"n": 0, "poss": 0.0, **{k: 0.0 for k in DEF_STATS}})
+            r["n"] += 1
+            r["poss"] += gp
+            for k in DEF_STATS:
+                v = sum(p.get(k, 0) for p in by[o])
+                r[k] += v
+                lg[k] += v
+        lg_poss += 2 * gp
+        n += 2
+    if not n:
+        return {"teams": {}, "pace": 100.0}
+    lg_pace = lg_poss / n
+    rate = {k: lg[k] / lg_poss for k in DEF_STATS}            # league stat per possession
+    out = {}
+    for t, r in agg.items():
+        poss = r["poss"] + SHRINK_K * lg_pace
+        out[t] = {"n": r["n"], "pace": (r["poss"] + SHRINK_K * lg_pace) / (r["n"] + SHRINK_K),
+                  **{k: ((r[k] + SHRINK_K * lg_pace * rate[k]) / poss) / rate[k] if rate[k] else 1.0 for k in DEF_STATS}}
+    return {"teams": out, "pace": lg_pace}
+
+
+def matchup_factors(dfn, team, opp):
+    """{stat_key: multiplier} for a player on `team` facing `opp`: opponent defense x expected game pace."""
+    T = dfn.get("teams", {})
+    lg_pace = dfn.get("pace", 100.0)
+    if opp not in T:
+        return {k: 1.0 for k in DEF_STATS}
+    tp = T.get(team, {}).get("pace", lg_pace)
+    pace_f = _clamp((tp + T[opp]["pace"] - lg_pace) / tp, PACE_CAP)   # player's own rate already reflects his team's pace
+    return {k: _clamp(_clamp(T[opp][k], DEF_CAP) * pace_f, MATCHUP_CAP) for k in DEF_STATS}
+
+
+def project_player(games, dfn=None, opp=None):
+    """games: chronological list of box-score rows. Returns {stat: projection} or None.
+
+    Base = recent per-minute rate x projected minutes. With `dfn` (team_defense) and `opp`, the base rate is
+    first neutralised for the defenses the player already faced, then scaled to tonight's opponent
+    (stats allowed per 100 possessions) and the expected pace of this game. `_matchup` holds the % change."""
     recent = [g for g in games if g["min"] >= 5][-10:][::-1]   # newest first
     if len(recent) < 3:
         return None
@@ -397,14 +461,22 @@ def project_player(games, opp_factor):
     if mins < 12:
         return None
     tot_min = sum(g["min"] for g in recent)
-    rate = {k: sum(g[k] for g in recent) / tot_min for k in ("pts", "reb", "ast", "tpm", "blk", "stl")}
-    p = {"PTS": rate["pts"] * mins * opp_factor, "REB": rate["reb"] * mins, "AST": rate["ast"] * mins,
-         "3PM": rate["tpm"] * mins, "BLK": rate["blk"] * mins, "STL": rate["stl"] * mins}
-    p["PRA"] = p["PTS"] + p["REB"] + p["AST"]
-    p["PR"] = p["PTS"] + p["REB"]
-    p["PA"] = p["PTS"] + p["AST"]
-    p["RA"] = p["REB"] + p["AST"]
-    return {k: rnd(v) for k, v in p.items()}
+    rate = {k: sum(g[k] for g in recent) / tot_min for k in DEF_STATS}
+    mx = {k: 1.0 for k in DEF_STATS}
+    if dfn and opp:
+        team = recent[0]["t"]
+        mx = matchup_factors(dfn, team, opp)
+        faced = {k: sum(g["min"] * matchup_factors(dfn, g["t"], g.get("opp"))[k] for g in recent) / tot_min
+                 for k in DEF_STATS}
+        rate = {k: rate[k] / (faced[k] or 1) for k in DEF_STATS}
+    raw = {s: sum(g[k] for g in recent) / tot_min * mins for s, k in STAT_KEY.items()}
+    p = {s: rate[k] * mx[k] * mins for s, k in STAT_KEY.items()}
+    for combo, parts in (("PRA", ("PTS", "REB", "AST")), ("PR", ("PTS", "REB")), ("PA", ("PTS", "AST")), ("RA", ("REB", "AST"))):
+        p[combo] = sum(p[x] for x in parts)
+        raw[combo] = sum(raw[x] for x in parts)
+    out = {k: rnd(v) for k, v in p.items()}
+    out["_matchup"] = {k: rnd((p[k] / raw[k] - 1) * 100, 1) if raw[k] else 0.0 for k in p}
+    return out
 
 
 def odds_props(slate, plog_idx):
@@ -662,6 +734,17 @@ def _rate(vals, ok, n):
     return (sum(1 for v in sl if ok(v)), len(sl)) if sl else (0, 0)
 
 
+def matchup_note(p):
+    m, opp = p.get("matchup"), p.get("opp")
+    if m is None or not opp:
+        return "Matchup: not adjusted"
+    if abs(m) < 1:
+        return f"Matchup vs {opp}: neutral for {p['stat']} (defense and pace about league average)"
+    good = (m > 0) == (p["edge"] > 0)
+    return (f"Matchup vs {opp}: {'+' if m > 0 else ''}{m:g}% to his {p['stat']} projection from their defense and pace"
+            f" ({'helps' if good else 'works against'} the {'over' if p['edge'] > 0 else 'under'})")
+
+
 def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
     """Rank every bet on today's board (player props, spreads, totals, moneylines). Returns (pick, runners_up).
 
@@ -715,6 +798,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
                                   f"Went {side.lower()} the line in {a10} of his last {n10} games ({a5}/{n5} in the last 5)",
                                   f"Averaging {sum(vals[:n5]) / n5:.1f} over the last 5 and {sum(vals[:n15]) / n15:.1f} over the last {n15}",
                                   f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {n15})",
+                                  matchup_note(p),
                                   "Not on the injury report at pick time"]})
 
     # ---- game bets
@@ -1219,6 +1303,7 @@ def main():
         log("no games today or tomorrow; publishing an empty slate")
 
     ratings, lg = team_ratings(plog)
+    dfn = team_defense(plog)
     idx = player_index(plog)
     injuries = fetch_injuries(slate)
     if injuries is None:
@@ -1285,16 +1370,25 @@ def main():
                 if team not in (g["home"], g["away"]):
                     continue
                 opp = g["away"] if team == g["home"] else g["home"]
-                of = 1.0
-                if opp in ratings and lg:
-                    of = min(1.05, max(0.95, ratings[opp]["def"] / lg))
-                proj = project_player(hist, of)
+                proj = project_player(hist, dfn, opp)
                 if not proj or stat not in proj:
                     continue
-                fresh.append({"player": hist[-1]["n"], "team": team, "game": g["id"], "stat": stat,
-                              "model": proj[stat], "dk": line, "over": over_px, "under": under_px})
+                fresh.append({"player": hist[-1]["n"], "team": team, "opp": opp, "game": g["id"], "stat": stat,
+                              "model": proj[stat], "matchup": proj["_matchup"][stat],
+                              "dk": line, "over": over_px, "under": under_px})
             if fresh:
                 pending["props"][eid] = fresh
+        elif g["status"] == "Upcoming" and pending["props"].get(eid):
+            # No new lines this run (saves credits): keep the saved DraftKings lines but re-project them
+            # with the latest box scores and matchup data. Costs nothing.
+            for p in pending["props"][eid]:
+                hist = idx.get(norm(p["player"]))
+                if not hist:
+                    continue
+                opp = g["away"] if p["team"] == g["home"] else g["home"]
+                proj = project_player(hist, dfn, opp)
+                if proj and p["stat"] in proj:
+                    p.update(opp=opp, model=proj[p["stat"]], matchup=proj["_matchup"][p["stat"]])
         for p in pending["props"].get(eid, []):
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
@@ -1366,7 +1460,7 @@ def main():
             "games": games, "props": props, "teams": TEAM_NAMES, "injuries": injuries, "injuries_updated": now.strftime("%m/%d %I:%M %p ET"),
             "residuals": state["residuals"],
             "model_notes": ["Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
-                            "Adjustments: opponent defense (capped +/-5%), home court for games; injured players skipped",
+                            "Adjustments: props scaled to the opponent's defense in that stat (allowed per 100 possessions, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
                             "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted)"],

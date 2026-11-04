@@ -925,6 +925,8 @@ function renderProps() {
     const usePoisson = ["REB", "AST", "3PM", "STL", "BLK"].includes(p.stat);
     const pOverVal = usePoisson && typeof pOver === "function" ? pOver(p.model, p.dk) : null;
     const extra = pOverVal !== null ? `<div style="font-size:11px;color:var(--muted);">P(Over) ${pOverVal}%</div>` : "";
+    const mxv = p.matchup;
+    const mx = (mxv != null && p.opp) ? `<div style="font-size:11px;color:${Math.abs(mxv) < 1 ? "var(--muted)" : (mxv > 0 ? "var(--good)" : "var(--bad)")};" title="Change from ${p.opp}'s defense in this stat and the expected pace">vs ${p.opp} ${mxv > 0 ? "+" : ""}${mxv}%</div>` : "";
     const e = p.edge;
     const pct = p.dk ? Math.round((e / p.dk) * 1000) / 10 : 0;
     const cls = Math.abs(e) >= 0.6 ? (e > 0 ? "positive" : "negative") : "";
@@ -939,7 +941,7 @@ function renderProps() {
       <td><span class="stat-tag">${p.stat}</span></td>
       <td class="stat">${p.dk}</td>
       <td class="stat price">${odds}</td>
-      <td class="stat"><strong>${p.model}</strong>${extra}</td>
+      <td class="stat"><strong>${p.model}</strong>${extra}${mx}</td>
       <td class="stat"><div class="edgebar"><span class="${cls}" style="min-width:38px;">${e > 0 ? "+" : ""}${e}</span><span class="bar"><i style="width:${w}%;background:${e >= 0 ? "var(--good)" : "var(--bad)"};"></i></span><span class="team">${pct > 0 ? "+" : ""}${pct}%</span></div></td>
       <td>${lean}</td>
     </tr>`;
@@ -1001,7 +1003,7 @@ function openPlayerDetail(name, team, game) {
   const propsHtml = playerProps.map(p => `
     <div class="detail-row">
       <span class="detail-label">${p.stat}</span>
-      <span>Model <strong>${p.model}</strong> · DK <strong>${p.dk}</strong>${p.over != null ? ` <span class="price">(${fmtPrice(p.over)}/${fmtPrice(p.under)})</span>` : ""} · Edge <strong class="${edgeClass(p.edge)}">${p.edge > 0 ? "+" : ""}${p.edge}</strong> (${p.side})</span>
+      <span>Model <strong>${p.model}</strong> · DK <strong>${p.dk}</strong>${p.over != null ? ` <span class="price">(${fmtPrice(p.over)}/${fmtPrice(p.under)})</span>` : ""} · Edge <strong class="${edgeClass(p.edge)}">${p.edge > 0 ? "+" : ""}${p.edge}</strong> (${p.side})${p.matchup != null && p.opp ? ` · Matchup vs ${p.opp} ${p.matchup > 0 ? "+" : ""}${p.matchup}%` : ""}</span>
     </div>`).join("");
 
   document.getElementById("modal-content").innerHTML = `
