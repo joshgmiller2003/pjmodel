@@ -439,7 +439,7 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 </header>
 <div class="injury-banner" id="injury-toggle">
   <strong>Injuries</strong>
-  <span style="color:#6a7888;">· Updated 10/21 7:00 PM ET · ESPN + NBA.com (today's slate only)</span>
+  <span id="injury-updated" style="color:#6a7888;">· ESPN (active slate only)</span>
   <span id="residual-status" style="float:right;color:var(--accent);font-size:12px;">Residuals: 3 games learned</span>
 </div>
 <div class="injury-details" id="injury-details">
@@ -451,37 +451,7 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   </div>
   <table>
     <thead><tr><th>Player</th><th>Team</th><th>Status</th><th>Reason</th><th>Game</th></tr></thead>
-    <tbody>
-      <tr><td>Mouhamed Gueye</td><td>ATL</td><td class="negative">Out</td><td>Left foot fracture — NBA.com</td><td>ATL@ORL</td></tr>
-      <tr><td>Henri Veesaar</td><td>ATL</td><td class="negative">Out</td><td>Right ACL — NBA.com</td><td>ATL@ORL</td></tr>
-      <tr><td>Anthony Black</td><td>ORL</td><td class="negative">Out</td><td>Right ankle sprain — NBA.com</td><td>ATL@ORL</td></tr>
-      <tr><td>Jonathan Isaac</td><td>ORL</td><td class="negative">Out</td><td>Left knee management — NBA.com</td><td>ATL@ORL</td></tr>
-      <tr><td>Noah Penda</td><td>ORL</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>ATL@ORL</td></tr>
-      <tr><td>AJ Dybantsa</td><td>WAS</td><td class="negative">Out</td><td>Left ankle — NBA.com</td><td>MIL@WAS</td></tr>
-      <tr><td>Tristan Vukcevic</td><td>WAS</td><td class="negative">Out</td><td>Left hip — NBA.com</td><td>MIL@WAS</td></tr>
-      <tr><td>Coby White</td><td>CHA</td><td class="negative">Out</td><td>Left calf strain — ESPN</td><td>CHA@BKN</td></tr>
-      <tr><td>Grant Williams</td><td>CHA</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>CHA@BKN</td></tr>
-      <tr><td>Kon Knueppel</td><td>CHA</td><td class="negative">Out</td><td>Hamstring — ESPN</td><td>CHA@BKN</td></tr>
-      <tr><td>Tyler Bilodeau</td><td>BKN</td><td class="negative">Out</td><td>Right shoulder sprain — NBA.com</td><td>CHA@BKN</td></tr>
-      <tr><td>Dailyn Swain</td><td>CHI</td><td class="negative">Doubtful</td><td>GI illness — NBA.com</td><td>CHI@TOR</td></tr>
-      <tr><td>Jordan Hawkins</td><td>CHI</td><td class="negative">Out</td><td>GI illness — ESPN</td><td>CHI@TOR</td></tr>
-      <tr><td>Donte DiVincenzo</td><td>MIN</td><td class="negative">Out</td><td>Achilles surgery — NBA.com</td><td>MIN@MIA</td></tr>
-      <tr><td>Aaron Nesmith</td><td>IND</td><td class="negative">Out</td><td>Left hamstring — ESPN</td><td>IND@NOP</td></tr>
-      <tr><td>T.J. McConnell</td><td>IND</td><td class="negative">Out</td><td>Right hamstring — ESPN</td><td>IND@NOP</td></tr>
-      <tr><td>Caleb Martin</td><td>DAL</td><td class="negative">Out</td><td>Right thumb — ESPN</td><td>DAL@HOU</td></tr>
-      <tr><td>Dereck Lively II</td><td>DAL</td><td class="negative">Out</td><td>Foot — ESPN</td><td>DAL@HOU</td></tr>
-      <tr><td>Steven Adams</td><td>HOU</td><td>Questionable</td><td>Right calf — ESPN</td><td>DAL@HOU</td></tr>
-      <tr><td>Stephen Curry</td><td>GSW</td><td>Probable</td><td>Right ankle — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Brandin Podziemski</td><td>GSW</td><td class="negative">Out</td><td>Lower back — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Kristaps Porzingis</td><td>GSW</td><td class="negative">Out</td><td>Not with team / illness — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Jimmy Butler</td><td>GSW</td><td class="negative">Out</td><td>Knee — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Moses Moody</td><td>GSW</td><td class="negative">Out</td><td>Knee — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Collin Sexton</td><td>LAL</td><td>Questionable</td><td>Right soleus — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Cameron Carr</td><td>LAL</td><td class="negative">Out</td><td>Right oblique — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Adou Thiero</td><td>LAL</td><td class="negative">Out</td><td>Left knee — ESPN</td><td>GSW@LAL</td></tr>
-      <tr><td>Jarrett Allen</td><td>CLE</td><td>Day-To-Day</td><td>Right patellar — ESPN</td><td>CLE@PHI</td></tr>
-      <tr><td>Julian Strawther</td><td>DEN</td><td class="negative">Out</td><td>Knee — ESPN</td><td>DEN@OKC</td></tr>
-    </tbody>
+    <tbody id="injury-body"></tbody>
   </table>
 </div>
 <nav>
@@ -493,6 +463,7 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   <button data-tab="parlays">Parlays</button>
   <button data-tab="awards">Awards</button>
   <button data-tab="futures">Team Futures</button>
+  <button data-tab="playerlog">Game Log</button>
   <button data-tab="trends">Trends</button>
   <button data-tab="live">Live</button>
   <button data-tab="bankroll">Bankroll</button>
@@ -574,9 +545,6 @@ tr:hover td { background: rgba(255,255,255,0.02); }
       </table>
     </div>
   </section>
-      </table>
-    </div>
-  </section>
 
   <section id="combos" class="tab" style="display:none;">
     <div class="section-title">Combos <small>PRA · PR · PA · RA</small></div>
@@ -613,18 +581,6 @@ tr:hover td { background: rgba(255,255,255,0.02); }
       <button data-pleg="suggested">Suggested</button>
     </div>
     <div id="parlay-main" style="margin-top:4px;"></div>
-  </section>
-    <div class="section-title">Trends / Form <small>Recent performance vs expectations</small></div>
-    <div class="brief">
-      <p>Residuals and form data activate after the first games. Once results exist the pipeline will show:</p>
-      <ul>
-        <li>Team margin and total residuals (fading α)</li>
-        <li>Player stat residuals (PTS / REB / AST / PRA)</li>
-        <li>Home/away and rest-day splits</li>
-        <li>Pace and efficiency trends</li>
-      </ul>
-      <div id="trends-content"></div>
-    </div>
   </section>
 
   <section id="awards" class="tab" style="display:none;">
@@ -681,6 +637,18 @@ tr:hover td { background: rgba(255,255,255,0.02); }
         <div class="note" style="margin-top:8px;">DraftKings conference odds.</div>
       </div>
     </div>
+  </section>
+
+  <section id="playerlog" class="tab" style="display:none;">
+    <div class="section-title">Game Log <small>Hit rates for the last 5 / 10 / 15 games</small></div>
+    <div class="card" style="margin-bottom:14px;">
+      <input id="pl-search" list="pl-list" placeholder="Search a player..." autocomplete="off" style="width:min(320px,100%);background:var(--bg);color:var(--ink);border:1px solid var(--border);border-radius:8px;padding:8px 10px;">
+      <datalist id="pl-list"></datalist>
+      <span id="pl-meta" style="color:var(--muted);font-size:12px;margin-left:10px;"></span>
+    </div>
+    <div class="card" style="margin-bottom:14px;overflow-x:auto;"><div id="pl-rates"></div></div>
+    <div class="card" style="margin-bottom:14px;"><div id="pl-chart"></div></div>
+    <div class="card" style="overflow-x:auto;"><div id="pl-detail"></div></div>
   </section>
 
   <section id="trends" class="tab" style="display:none;">
@@ -756,1919 +724,40 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 </div>
 
 <script>
-const DATA = {
-  "generated_at": "2026-10-21T23:56:29Z",
-  "season": "2026-27",
-  "games": [
-    {
-      "id": "BOS@DET",
-      "date": "2026-10-20",
-      "time": "3:00 PM ET",
-      "away": "BOS",
-      "home": "DET",
-      "model": {
-        "spread": -1.2,
-        "total": 224.8,
-        "ml_home": 0.52,
-        "ml_away": 0.48
-      },
-      "dk": {
-        "spread": "+1.5",
-        "total": 222.5,
-        "ml_away": "-112",
-        "ml_home": "-108"
-      },
-      "note": "Slight home lean to DET. Total a touch over DK.",
-      "spread_edge": -2.7,
-      "total_edge": 2.3,
-      "status": "Final",
-      "score": {
-        "away": 113,
-        "home": 121
-      },
-      "actual_margin": 8,
-      "actual_total": 234
-    },
-    {
-      "id": "PHI@NYK",
-      "date": "2026-10-20",
-      "time": "7:00 PM ET",
-      "away": "PHI",
-      "home": "NYK",
-      "model": {
-        "spread": -4.8,
-        "total": 234.0,
-        "ml_home": 0.63,
-        "ml_away": 0.37
-      },
-      "dk": {
-        "spread": "-4.5",
-        "total": 232.5,
-        "ml_away": "+160",
-        "ml_home": "-192"
-      },
-      "note": "Close to market. Mild NYK + higher total preference.",
-      "spread_edge": -0.3,
-      "total_edge": 1.5,
-      "status": "Final",
-      "score": {
-        "away": 106,
-        "home": 100
-      },
-      "actual_margin": -6,
-      "actual_total": 206
-    },
-    {
-      "id": "OKC@SAS",
-      "date": "2026-10-20",
-      "time": "9:30 PM ET",
-      "away": "OKC",
-      "home": "SAS",
-      "model": {
-        "spread": -1.8,
-        "total": 232.1,
-        "ml_home": 0.55,
-        "ml_away": 0.45
-      },
-      "dk": {
-        "spread": "-2.5",
-        "total": 231.5,
-        "ml_away": "+120",
-        "ml_home": "-142"
-      },
-      "note": "Model less bullish on SAS than DK. Total nearly identical.",
-      "spread_edge": 0.7,
-      "total_edge": 0.6,
-      "status": "Final",
-      "score": {
-        "away": 116,
-        "home": 104
-      },
-      "live_note": "Halftime",
-      "actual_margin": -12,
-      "actual_total": 220
-    },
-    {
-      "id": "ATL@ORL",
-      "date": "Oct 21",
-      "time": "7:00 PM ET",
-      "away": "ATL",
-      "home": "ORL",
-      "model": {
-        "spread": -2.5,
-        "total": 224
-      },
-      "dk": {
-        "spread": "-2.0",
-        "total": "223",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Live",
-      "score": {
-        "away": 35,
-        "home": 34
-      },
-      "live_note": "10:18 - 2nd"
-    },
-    {
-      "id": "MIL@WAS",
-      "date": "Oct 21",
-      "time": "7:00 PM ET",
-      "away": "MIL",
-      "home": "WAS",
-      "model": {
-        "spread": -6.5,
-        "total": 228
-      },
-      "dk": {
-        "spread": "-6.0",
-        "total": "227",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Live",
-      "score": {
-        "away": 33,
-        "home": 34
-      },
-      "live_note": "6:57 - 2nd"
-    },
-    {
-      "id": "MIN@MIA",
-      "date": "Oct 21",
-      "time": "7:30 PM ET",
-      "away": "MIN",
-      "home": "MIA",
-      "model": {
-        "spread": 1.5,
-        "total": 218
-      },
-      "dk": {
-        "spread": "2.0",
-        "total": "217",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Live",
-      "score": {
-        "away": 22,
-        "home": 17
-      },
-      "live_note": "6:28 - 1st"
-    },
-    {
-      "id": "CHA@BKN",
-      "date": "Oct 21",
-      "time": "7:30 PM ET",
-      "away": "CHA",
-      "home": "BKN",
-      "model": {
-        "spread": -3.0,
-        "total": 221
-      },
-      "dk": {
-        "spread": "-2.5",
-        "total": "220",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Live",
-      "score": {
-        "away": 7,
-        "home": 11
-      },
-      "live_note": "7:11 - 1st"
-    },
-    {
-      "id": "CHI@TOR",
-      "date": "Oct 21",
-      "time": "7:30 PM ET",
-      "away": "CHI",
-      "home": "TOR",
-      "model": {
-        "spread": -4.5,
-        "total": 219
-      },
-      "dk": {
-        "spread": "-4.0",
-        "total": "218",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Live",
-      "score": {
-        "away": 6,
-        "home": 11
-      },
-      "live_note": "7:38 - 1st"
-    },
-    {
-      "id": "UTA@MEM",
-      "date": "Oct 21",
-      "time": "8:00 PM ET",
-      "away": "UTA",
-      "home": "MEM",
-      "model": {
-        "spread": 2.0,
-        "total": 226
-      },
-      "dk": {
-        "spread": "2.5",
-        "total": "225",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "IND@NOP",
-      "date": "Oct 21",
-      "time": "8:00 PM ET",
-      "away": "IND",
-      "home": "NOP",
-      "model": {
-        "spread": -1.5,
-        "total": 223
-      },
-      "dk": {
-        "spread": "-1.0",
-        "total": "222",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "DAL@HOU",
-      "date": "Oct 21",
-      "time": "8:30 PM ET",
-      "away": "DAL",
-      "home": "HOU",
-      "model": {
-        "spread": 3.5,
-        "total": 230
-      },
-      "dk": {
-        "spread": "4.0",
-        "total": "229",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "GSW@LAL",
-      "date": "Oct 21",
-      "time": "10:00 PM ET",
-      "away": "GSW",
-      "home": "LAL",
-      "model": {
-        "spread": -1.0,
-        "total": 232
-      },
-      "dk": {
-        "spread": "-0.5",
-        "total": "231",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "PHX@POR",
-      "date": "Oct 21",
-      "time": "10:00 PM ET",
-      "away": "PHX",
-      "home": "POR",
-      "model": {
-        "spread": -5.5,
-        "total": 225
-      },
-      "dk": {
-        "spread": "-5.0",
-        "total": "224",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "SAC@LAC",
-      "date": "Oct 21",
-      "time": "10:30 PM ET",
-      "away": "SAC",
-      "home": "LAC",
-      "model": {
-        "spread": 4.0,
-        "total": 227
-      },
-      "dk": {
-        "spread": "4.5",
-        "total": "226",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "CLE@PHI",
-      "date": "Oct 22",
-      "time": "7:00 PM ET",
-      "away": "CLE",
-      "home": "PHI",
-      "model": {
-        "spread": -2.0,
-        "total": 222
-      },
-      "dk": {
-        "spread": "-1.5",
-        "total": "221",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    },
-    {
-      "id": "DEN@OKC",
-      "date": "Oct 22",
-      "time": "9:30 PM ET",
-      "away": "DEN",
-      "home": "OKC",
-      "model": {
-        "spread": -7.5,
-        "total": 229
-      },
-      "dk": {
-        "spread": "-7.0",
-        "total": "228",
-        "ml_away": "-110",
-        "ml_home": "-110"
-      },
-      "spread_edge": -0.5,
-      "total_edge": 1.0,
-      "status": "Upcoming"
-    }
-  ],
-  "props": [
-    {
-      "player": "Trae Young",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "PTS",
-      "model": 26.7,
-      "dk": 25.2,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Trae Young",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "AST",
-      "model": 10.6,
-      "dk": 9.6,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Trae Young",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "3PM",
-      "model": 2.2,
-      "dk": 2.5,
-      "edge": -0.3,
-      "side": "Under"
-    },
-    {
-      "player": "Jalen Johnson",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "PTS",
-      "model": 17.8,
-      "dk": 18.8,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jalen Johnson",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "REB",
-      "model": 9.7,
-      "dk": 8.2,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Jalen Johnson",
-      "team": "ATL",
-      "game": "ATL@ORL",
-      "stat": "PRA",
-      "model": 32.1,
-      "dk": 30.6,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Paolo Banchero",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "PTS",
-      "model": 24.0,
-      "dk": 23.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Paolo Banchero",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "REB",
-      "model": 7.2,
-      "dk": 7.7,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Paolo Banchero",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "AST",
-      "model": 4.3,
-      "dk": 3.3,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Franz Wagner",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "PTS",
-      "model": 20.5,
-      "dk": 21.5,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Franz Wagner",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "REB",
-      "model": 5.5,
-      "dk": 4.5,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Franz Wagner",
-      "team": "ORL",
-      "game": "ATL@ORL",
-      "stat": "PRA",
-      "model": 31.4,
-      "dk": 30.9,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Giannis Antetokounmpo",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "PTS",
-      "model": 30.7,
-      "dk": 29.2,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Giannis Antetokounmpo",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "REB",
-      "model": 11.8,
-      "dk": 10.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Giannis Antetokounmpo",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "AST",
-      "model": 6.6,
-      "dk": 6.1,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Giannis Antetokounmpo",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "PRA",
-      "model": 47.1,
-      "dk": 46.1,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Damian Lillard",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "PTS",
-      "model": 24.8,
-      "dk": 24.3,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Damian Lillard",
-      "team": "MIL",
-      "game": "MIL@WAS",
-      "stat": "3PM",
-      "model": 2.5,
-      "dk": 2.5,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Kyle Kuzma",
-      "team": "WAS",
-      "game": "MIL@WAS",
-      "stat": "PTS",
-      "model": 18.0,
-      "dk": 19.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Kyle Kuzma",
-      "team": "WAS",
-      "game": "MIL@WAS",
-      "stat": "REB",
-      "model": 6.0,
-      "dk": 5.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Jordan Poole",
-      "team": "WAS",
-      "game": "MIL@WAS",
-      "stat": "PTS",
-      "model": 18.3,
-      "dk": 19.3,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jordan Poole",
-      "team": "WAS",
-      "game": "MIL@WAS",
-      "stat": "AST",
-      "model": 4.3,
-      "dk": 2.8,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Anthony Edwards",
-      "team": "MIN",
-      "game": "MIN@MIA",
-      "stat": "PTS",
-      "model": 28.2,
-      "dk": 28.2,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Anthony Edwards",
-      "team": "MIN",
-      "game": "MIN@MIA",
-      "stat": "REB",
-      "model": 4.9,
-      "dk": 4.4,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Anthony Edwards",
-      "team": "MIN",
-      "game": "MIN@MIA",
-      "stat": "AST",
-      "model": 5.5,
-      "dk": 6.5,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Rudy Gobert",
-      "team": "MIN",
-      "game": "MIN@MIA",
-      "stat": "REB",
-      "model": 12.7,
-      "dk": 12.2,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Rudy Gobert",
-      "team": "MIN",
-      "game": "MIN@MIA",
-      "stat": "PTS",
-      "model": 13.3,
-      "dk": 14.3,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jimmy Butler",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "PTS",
-      "model": 20.1,
-      "dk": 21.1,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jimmy Butler",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "REB",
-      "model": 5.0,
-      "dk": 4.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Jimmy Butler",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "AST",
-      "model": 6.0,
-      "dk": 7.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Bam Adebayo",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "PTS",
-      "model": 16.5,
-      "dk": 15.5,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Bam Adebayo",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "REB",
-      "model": 10.1,
-      "dk": 10.1,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Bam Adebayo",
-      "team": "MIA",
-      "game": "MIN@MIA",
-      "stat": "PRA",
-      "model": 32.7,
-      "dk": 32.2,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "LaMelo Ball",
-      "team": "CHA",
-      "game": "CHA@BKN",
-      "stat": "PTS",
-      "model": 24.1,
-      "dk": 23.6,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "LaMelo Ball",
-      "team": "CHA",
-      "game": "CHA@BKN",
-      "stat": "AST",
-      "model": 7.3,
-      "dk": 6.8,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "LaMelo Ball",
-      "team": "CHA",
-      "game": "CHA@BKN",
-      "stat": "3PM",
-      "model": 3.5,
-      "dk": 3.8,
-      "edge": -0.3,
-      "side": "Under"
-    },
-    {
-      "player": "Brandon Miller",
-      "team": "CHA",
-      "game": "CHA@BKN",
-      "stat": "PTS",
-      "model": 19.6,
-      "dk": 20.1,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Brandon Miller",
-      "team": "CHA",
-      "game": "CHA@BKN",
-      "stat": "REB",
-      "model": 5.3,
-      "dk": 5.8,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Cam Thomas",
-      "team": "BKN",
-      "game": "CHA@BKN",
-      "stat": "PTS",
-      "model": 22.5,
-      "dk": 21.5,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Cam Thomas",
-      "team": "BKN",
-      "game": "CHA@BKN",
-      "stat": "AST",
-      "model": 3.3,
-      "dk": 2.8,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Nic Claxton",
-      "team": "BKN",
-      "game": "CHA@BKN",
-      "stat": "REB",
-      "model": 10.0,
-      "dk": 11.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Nic Claxton",
-      "team": "BKN",
-      "game": "CHA@BKN",
-      "stat": "PTS",
-      "model": 12.7,
-      "dk": 11.7,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Nic Claxton",
-      "team": "BKN",
-      "game": "CHA@BKN",
-      "stat": "BLK",
-      "model": 2.1,
-      "dk": 2.5,
-      "edge": -0.4,
-      "side": "Under"
-    },
-    {
-      "player": "Josh Giddey",
-      "team": "CHI",
-      "game": "CHI@TOR",
-      "stat": "PTS",
-      "model": 17.2,
-      "dk": 15.7,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Josh Giddey",
-      "team": "CHI",
-      "game": "CHI@TOR",
-      "stat": "REB",
-      "model": 8.0,
-      "dk": 6.5,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Josh Giddey",
-      "team": "CHI",
-      "game": "CHI@TOR",
-      "stat": "AST",
-      "model": 7.6,
-      "dk": 7.6,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Nikola Vucevic",
-      "team": "CHI",
-      "game": "CHI@TOR",
-      "stat": "PTS",
-      "model": 16.8,
-      "dk": 15.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Nikola Vucevic",
-      "team": "CHI",
-      "game": "CHI@TOR",
-      "stat": "REB",
-      "model": 11.3,
-      "dk": 11.8,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Scottie Barnes",
-      "team": "TOR",
-      "game": "CHI@TOR",
-      "stat": "PTS",
-      "model": 19.5,
-      "dk": 19.5,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Scottie Barnes",
-      "team": "TOR",
-      "game": "CHI@TOR",
-      "stat": "REB",
-      "model": 7.3,
-      "dk": 7.3,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Scottie Barnes",
-      "team": "TOR",
-      "game": "CHI@TOR",
-      "stat": "AST",
-      "model": 5.4,
-      "dk": 6.4,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "RJ Barrett",
-      "team": "TOR",
-      "game": "CHI@TOR",
-      "stat": "PTS",
-      "model": 20.0,
-      "dk": 19.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "RJ Barrett",
-      "team": "TOR",
-      "game": "CHI@TOR",
-      "stat": "REB",
-      "model": 4.7,
-      "dk": 5.7,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Lauri Markkanen",
-      "team": "UTA",
-      "game": "UTA@MEM",
-      "stat": "PTS",
-      "model": 22.9,
-      "dk": 22.4,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Lauri Markkanen",
-      "team": "UTA",
-      "game": "UTA@MEM",
-      "stat": "REB",
-      "model": 7.8,
-      "dk": 7.8,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Lauri Markkanen",
-      "team": "UTA",
-      "game": "UTA@MEM",
-      "stat": "3PM",
-      "model": 3.6,
-      "dk": 3.6,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Walker Kessler",
-      "team": "UTA",
-      "game": "UTA@MEM",
-      "stat": "REB",
-      "model": 11.0,
-      "dk": 10.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Walker Kessler",
-      "team": "UTA",
-      "game": "UTA@MEM",
-      "stat": "BLK",
-      "model": 2.1,
-      "dk": 1.7,
-      "edge": 0.4,
-      "side": "Over"
-    },
-    {
-      "player": "Ja Morant",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "PTS",
-      "model": 24.9,
-      "dk": 26.4,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Ja Morant",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "AST",
-      "model": 7.0,
-      "dk": 8.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Ja Morant",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "REB",
-      "model": 4.7,
-      "dk": 5.7,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jaren Jackson Jr",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "PTS",
-      "model": 20.2,
-      "dk": 18.7,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Jaren Jackson Jr",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "REB",
-      "model": 5.9,
-      "dk": 6.4,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Jaren Jackson Jr",
-      "team": "MEM",
-      "game": "UTA@MEM",
-      "stat": "BLK",
-      "model": 2.7,
-      "dk": 2.9,
-      "edge": -0.2,
-      "side": "Under"
-    },
-    {
-      "player": "Tyrese Haliburton",
-      "team": "IND",
-      "game": "IND@NOP",
-      "stat": "PTS",
-      "model": 19.2,
-      "dk": 19.7,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Tyrese Haliburton",
-      "team": "IND",
-      "game": "IND@NOP",
-      "stat": "AST",
-      "model": 10.4,
-      "dk": 8.9,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Tyrese Haliburton",
-      "team": "IND",
-      "game": "IND@NOP",
-      "stat": "3PM",
-      "model": 2.7,
-      "dk": 2.2,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Pascal Siakam",
-      "team": "IND",
-      "game": "IND@NOP",
-      "stat": "PTS",
-      "model": 21.7,
-      "dk": 22.2,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Pascal Siakam",
-      "team": "IND",
-      "game": "IND@NOP",
-      "stat": "REB",
-      "model": 7.6,
-      "dk": 9.1,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Zion Williamson",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "PTS",
-      "model": 25.1,
-      "dk": 23.6,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Zion Williamson",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "REB",
-      "model": 6.1,
-      "dk": 5.1,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Zion Williamson",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "AST",
-      "model": 4.7,
-      "dk": 5.7,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Dejounte Murray",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "PTS",
-      "model": 18.4,
-      "dk": 17.9,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Dejounte Murray",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "AST",
-      "model": 7.0,
-      "dk": 8.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Dejounte Murray",
-      "team": "NOP",
-      "game": "IND@NOP",
-      "stat": "REB",
-      "model": 5.1,
-      "dk": 3.6,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Luka Doncic",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "PTS",
-      "model": 33.0,
-      "dk": 32.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Luka Doncic",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "AST",
-      "model": 9.4,
-      "dk": 9.9,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Luka Doncic",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "REB",
-      "model": 8.8,
-      "dk": 7.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Luka Doncic",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "PRA",
-      "model": 49.3,
-      "dk": 48.3,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Kyrie Irving",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "PTS",
-      "model": 24.3,
-      "dk": 25.8,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Kyrie Irving",
-      "team": "DAL",
-      "game": "DAL@HOU",
-      "stat": "3PM",
-      "model": 3.5,
-      "dk": 3.5,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Alperen Sengun",
-      "team": "HOU",
-      "game": "DAL@HOU",
-      "stat": "PTS",
-      "model": 20.0,
-      "dk": 20.5,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Alperen Sengun",
-      "team": "HOU",
-      "game": "DAL@HOU",
-      "stat": "REB",
-      "model": 9.6,
-      "dk": 9.1,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Alperen Sengun",
-      "team": "HOU",
-      "game": "DAL@HOU",
-      "stat": "AST",
-      "model": 6.1,
-      "dk": 7.6,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Jalen Green",
-      "team": "HOU",
-      "game": "DAL@HOU",
-      "stat": "PTS",
-      "model": 22.1,
-      "dk": 21.1,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Jalen Green",
-      "team": "HOU",
-      "game": "DAL@HOU",
-      "stat": "3PM",
-      "model": 1.8,
-      "dk": 1.9,
-      "edge": -0.1,
-      "side": "Under"
-    },
-    {
-      "player": "Stephen Curry",
-      "team": "GSW",
-      "game": "GSW@LAL",
-      "stat": "PTS",
-      "model": 27.5,
-      "dk": 26.5,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Stephen Curry",
-      "team": "GSW",
-      "game": "GSW@LAL",
-      "stat": "3PM",
-      "model": 5.0,
-      "dk": 5.5,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Stephen Curry",
-      "team": "GSW",
-      "game": "GSW@LAL",
-      "stat": "AST",
-      "model": 5.1,
-      "dk": 6.6,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Draymond Green",
-      "team": "GSW",
-      "game": "GSW@LAL",
-      "stat": "REB",
-      "model": 6.9,
-      "dk": 5.9,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Draymond Green",
-      "team": "GSW",
-      "game": "GSW@LAL",
-      "stat": "AST",
-      "model": 5.6,
-      "dk": 5.6,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "LeBron James",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "PTS",
-      "model": 24.8,
-      "dk": 23.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "LeBron James",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "REB",
-      "model": 7.0,
-      "dk": 8.5,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "LeBron James",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "AST",
-      "model": 8.4,
-      "dk": 7.4,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Anthony Davis",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "PTS",
-      "model": 26.3,
-      "dk": 27.8,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Anthony Davis",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "REB",
-      "model": 12.2,
-      "dk": 11.2,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Anthony Davis",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "BLK",
-      "model": 2.5,
-      "dk": 2.5,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Anthony Davis",
-      "team": "LAL",
-      "game": "GSW@LAL",
-      "stat": "PRA",
-      "model": 42.8,
-      "dk": 43.8,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Kevin Durant",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "PTS",
-      "model": 27.0,
-      "dk": 27.5,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Kevin Durant",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "REB",
-      "model": 6.3,
-      "dk": 5.3,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Kevin Durant",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "AST",
-      "model": 4.2,
-      "dk": 3.7,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Devin Booker",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "PTS",
-      "model": 25.6,
-      "dk": 26.1,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Devin Booker",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "AST",
-      "model": 6.4,
-      "dk": 5.4,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Devin Booker",
-      "team": "PHX",
-      "game": "PHX@POR",
-      "stat": "3PM",
-      "model": 1.6,
-      "dk": 1.9,
-      "edge": -0.3,
-      "side": "Under"
-    },
-    {
-      "player": "Jerami Grant",
-      "team": "POR",
-      "game": "PHX@POR",
-      "stat": "PTS",
-      "model": 25.2,
-      "dk": 24.2,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Scoot Henderson",
-      "team": "POR",
-      "game": "PHX@POR",
-      "stat": "AST",
-      "model": 5.2,
-      "dk": 5.5,
-      "edge": -0.3,
-      "side": "Over"
-    },
-    {
-      "player": "Jerami Grant",
-      "team": "POR",
-      "game": "PHX@POR",
-      "stat": "3PM",
-      "model": 3.8,
-      "dk": 3.3,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Jerami Grant",
-      "team": "POR",
-      "game": "PHX@POR",
-      "stat": "REB",
-      "model": 5.1,
-      "dk": 4.1,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "De'Aaron Fox",
-      "team": "SAC",
-      "game": "SAC@LAC",
-      "stat": "PTS",
-      "model": 24.9,
-      "dk": 25.9,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "De'Aaron Fox",
-      "team": "SAC",
-      "game": "SAC@LAC",
-      "stat": "AST",
-      "model": 7.1,
-      "dk": 7.6,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Domantas Sabonis",
-      "team": "SAC",
-      "game": "SAC@LAC",
-      "stat": "PTS",
-      "model": 18.7,
-      "dk": 17.7,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Domantas Sabonis",
-      "team": "SAC",
-      "game": "SAC@LAC",
-      "stat": "REB",
-      "model": 13.3,
-      "dk": 14.8,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Domantas Sabonis",
-      "team": "SAC",
-      "game": "SAC@LAC",
-      "stat": "AST",
-      "model": 7.1,
-      "dk": 5.6,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Kawhi Leonard",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "PTS",
-      "model": 22.8,
-      "dk": 22.8,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Kawhi Leonard",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "REB",
-      "model": 5.7,
-      "dk": 5.7,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Kawhi Leonard",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "AST",
-      "model": 3.5,
-      "dk": 4.5,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "James Harden",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "PTS",
-      "model": 21.1,
-      "dk": 22.1,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "James Harden",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "AST",
-      "model": 9.4,
-      "dk": 7.9,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "James Harden",
-      "team": "LAC",
-      "game": "SAC@LAC",
-      "stat": "3PM",
-      "model": 2.0,
-      "dk": 2.3,
-      "edge": -0.3,
-      "side": "Under"
-    },
-    {
-      "player": "Donovan Mitchell",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "PTS",
-      "model": 25.9,
-      "dk": 27.4,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Donovan Mitchell",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "AST",
-      "model": 4.8,
-      "dk": 3.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Donovan Mitchell",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "3PM",
-      "model": 2.6,
-      "dk": 2.6,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Evan Mobley",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "PTS",
-      "model": 16.8,
-      "dk": 15.8,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Evan Mobley",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "REB",
-      "model": 9.2,
-      "dk": 8.2,
-      "edge": 1.0,
-      "side": "Over"
-    },
-    {
-      "player": "Evan Mobley",
-      "team": "CLE",
-      "game": "CLE@PHI",
-      "stat": "BLK",
-      "model": 2.2,
-      "dk": 1.8,
-      "edge": 0.4,
-      "side": "Over"
-    },
-    {
-      "player": "Joel Embiid",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "PTS",
-      "model": 28.3,
-      "dk": 29.8,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Joel Embiid",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "REB",
-      "model": 11.4,
-      "dk": 9.9,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Joel Embiid",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "AST",
-      "model": 3.5,
-      "dk": 4.5,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Tyrese Maxey",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "PTS",
-      "model": 26.1,
-      "dk": 24.6,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Tyrese Maxey",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "AST",
-      "model": 6.5,
-      "dk": 8.5,
-      "edge": -2.0,
-      "side": "Under"
-    },
-    {
-      "player": "Tyrese Maxey",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "3PM",
-      "model": 2.6,
-      "dk": 2.6,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Joel Embiid",
-      "team": "PHI",
-      "game": "CLE@PHI",
-      "stat": "PRA",
-      "model": 43.0,
-      "dk": 42.5,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Nikola Jokic",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "PTS",
-      "model": 27.4,
-      "dk": 25.9,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Nikola Jokic",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "REB",
-      "model": 11.9,
-      "dk": 10.4,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Nikola Jokic",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "AST",
-      "model": 10.4,
-      "dk": 9.9,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Nikola Jokic",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "PRA",
-      "model": 49.2,
-      "dk": 50.7,
-      "edge": -1.5,
-      "side": "Under"
-    },
-    {
-      "player": "Jamal Murray",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "PTS",
-      "model": 20.3,
-      "dk": 20.3,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Jamal Murray",
-      "team": "DEN",
-      "game": "DEN@OKC",
-      "stat": "AST",
-      "model": 6.1,
-      "dk": 7.1,
-      "edge": -1.0,
-      "side": "Under"
-    },
-    {
-      "player": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "PTS",
-      "model": 32.0,
-      "dk": 32.5,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "AST",
-      "model": 6.5,
-      "dk": 6.5,
-      "edge": 0.0,
-      "side": "Under"
-    },
-    {
-      "player": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "REB",
-      "model": 4.8,
-      "dk": 4.3,
-      "edge": 0.5,
-      "side": "Over"
-    },
-    {
-      "player": "Chet Holmgren",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "PTS",
-      "model": 16.3,
-      "dk": 14.8,
-      "edge": 1.5,
-      "side": "Over"
-    },
-    {
-      "player": "Chet Holmgren",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "REB",
-      "model": 8.7,
-      "dk": 9.2,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Chet Holmgren",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "BLK",
-      "model": 1.6,
-      "dk": 1.5,
-      "edge": 0.1,
-      "side": "Over"
-    },
-    {
-      "player": "Jalen Williams",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "PTS",
-      "model": 17.7,
-      "dk": 18.2,
-      "edge": -0.5,
-      "side": "Under"
-    },
-    {
-      "player": "Jalen Williams",
-      "team": "OKC",
-      "game": "DEN@OKC",
-      "stat": "REB",
-      "model": 5.2,
-      "dk": 6.7,
-      "edge": -1.5,
-      "side": "Under"
-    }
-  ],
-  "residuals": {
-    "player": {},
-    "team": {},
-    "games_learned": 3,
-    "history": [],
-    "alpha": 0.35
-  },
-  "model_notes": [
-    "Base: projected minutes × recent per-minute rates",
-    "Adjustments: pace, home/away, rest, basic vacancy",
-    "Residual layer: fading α (0.45 early → 0.12 later) once games exist",
-    "Benchmark: DraftKings lines"
-  ],
-  "prediction_history": [],
-  "notes": "Live scores on Games tab + 30s ESPN polling. Upload this index.html to update the site.",
-  "settled_bets": [
-    {
-      "date": "2026-10-20",
-      "game": "BOS @ DET",
-      "market": "Spread",
-      "side": "DET (model)",
-      "edge": -2.7,
-      "result": "W",
-      "units": 1,
-      "actual": "113-121"
-    },
-    {
-      "date": "2026-10-20",
-      "game": "BOS @ DET",
-      "market": "Total",
-      "side": "Over 222.5",
-      "edge": 2.3,
-      "result": "W",
-      "units": 1,
-      "actual": "Total 234"
-    },
-    {
-      "date": "2026-10-20",
-      "game": "PHI @ NYK",
-      "market": "Total",
-      "side": "Over 232.5",
-      "edge": 1.5,
-      "result": "L",
-      "units": -1,
-      "actual": "Total 206"
-    },
-    {
-      "date": "2026-10-20",
-      "game": "OKC @ SAS",
-      "market": "Spread",
-      "side": "SAS (model)",
-      "edge": 0.7,
-      "result": "L",
-      "units": -1,
-      "actual": "116-104"
-    },
-    {
-      "date": "2026-10-20",
-      "game": "OKC @ SAS",
-      "market": "Total",
-      "side": "Over 231.5",
-      "edge": 0.6,
-      "result": "L",
-      "units": -1,
-      "actual": "Total 220"
-    }
-  ],
-  "record": {
-    "wins": 2,
-    "losses": 3,
-    "units": -1
+let DATA = (function(){
+  var FALLBACK = {"generated_at":"","season":"2026-27","games":[],"props":[],"teams":{"ATL":"Atlanta Hawks","BOS":"Boston Celtics","BKN":"Brooklyn Nets","CHA":"Charlotte Hornets","CHI":"Chicago Bulls","CLE":"Cleveland Cavaliers","DAL":"Dallas Mavericks","DEN":"Denver Nuggets","DET":"Detroit Pistons","GSW":"Golden State Warriors","HOU":"Houston Rockets","IND":"Indiana Pacers","LAC":"LA Clippers","LAL":"Los Angeles Lakers","MEM":"Memphis Grizzlies","MIA":"Miami Heat","MIL":"Milwaukee Bucks","MIN":"Minnesota Timberwolves","NOP":"New Orleans Pelicans","NYK":"New York Knicks","OKC":"Oklahoma City Thunder","ORL":"Orlando Magic","PHI":"Philadelphia 76ers","PHX":"Phoenix Suns","POR":"Portland Trail Blazers","SAC":"Sacramento Kings","SAS":"San Antonio Spurs","TOR":"Toronto Raptors","UTA":"Utah Jazz","WAS":"Washington Wizards"},"injuries":[],"injuries_updated":"waiting for first update","residuals":{"player":{},"team":[],"games_learned":0,"history":[],"alpha":0.45},"model_notes":["Waiting for the first automatic update."],"prediction_history":[],"notes":"Waiting for the first automatic update.","settled_bets":[],"record":{"wins":0,"losses":0,"units":0}};
+  try {
+    var x = new XMLHttpRequest();
+    x.open("GET", "projections_data.json?v=" + Date.now(), false);
+    x.send();
+    if (x.status === 200) { return JSON.parse(x.responseText); }
+  } catch (e) {}
+  return FALLBACK;
+})();
+// Freshness guard: never show old games, even if a scheduled update was missed
+(function () {
+  var today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  var age = DATA.generated_at ? Date.now() - Date.parse(DATA.generated_at) : Infinity;
+  var iso = function (g) { return /^\d{4}-\d{2}-\d{2}$/.test(g.date || ""); };
+  var keep = function (g) {
+    if (!iso(g)) return false;
+    if (g.status === "Final") return g.date === today;
+    if (g.status === "Live") return g.date >= today || age < 6 * 3600 * 1000;
+    return g.date >= today;
+  };
+  DATA.games = (DATA.games || []).filter(keep);
+  var ids = {}; DATA.games.forEach(function (g) { ids[g.id] = 1; });
+  DATA.props = (DATA.props || []).filter(function (p) { return ids[p.game]; });
+  if (age > 14 * 3600 * 1000) {
+    var box = document.createElement("div");
+    box.style.cssText = "background:#2a1d12;border:1px solid var(--accent);color:var(--gold);padding:8px 14px;margin:8px 0;border-radius:10px;font-size:13px;";
+    box.textContent = DATA.generated_at
+      ? "Data last updated " + new Date(DATA.generated_at).toLocaleString([], {timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit"}) + " ET. The scheduled update may be delayed; old games are hidden."
+      : "Waiting for the first automatic update.";
+    var c = document.querySelector(".container"); if (c) c.insertBefore(box, c.firstChild);
   }
-};
+})();
+
 
 document.getElementById("generated").textContent = "Generated " + new Date(DATA.generated_at).toLocaleString() + " · Season " + DATA.season;
 
@@ -2917,7 +1006,7 @@ function renderGames() {
     const modelFav = g.model.spread < 0 ? g.home : g.away;
     const modelSpread = Math.abs(g.model.spread);
     const dkSpreadNum = parseFloat(g.dk.spread);
-    const dkPick = g.spread_edge > 0.5 ? `${g.home} ${g.dk.spread}` : (g.spread_edge < -0.5 ? `${g.away} +${Math.abs(dkSpreadNum)}` : "No strong side");
+    const dkPick = g.spread_edge > 0.5 ? `${g.home} ${g.dk.spread}` : (g.spread_edge < -0.5 ? `${g.away} ${(-dkSpreadNum) > 0 ? '+' : ''}${-dkSpreadNum}` : "No strong side");
     const totalPick = g.total_edge > 0.5 ? `Over ${g.dk.total}` : (g.total_edge < -0.5 ? `Under ${g.dk.total}` : "No strong lean");
     const spreadConf = confidence(g.spread_edge);
     const totalConf = confidence(g.total_edge);
@@ -3549,6 +1638,145 @@ renderBankroll();
   if (!el) return;
   const rec = DATA.record || {wins:0, losses:0, units:0};
   el.innerHTML = `<p style="color:var(--muted);margin-top:12px;">Opening Night settled. Model record <strong>${rec.wins}-${rec.losses}</strong> (${rec.units>0?'+':''}${rec.units}u). Full residual tables fill as more games complete.</p>`;
+})();
+
+// Injuries: live from ESPN in the browser (on load, then every 5 min); falls back to the daily data file
+(function () {
+  var URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries";
+  var esc = function (x) { return String(x == null ? "" : x).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
+  var body = document.getElementById("injury-body");
+  var stamp = document.getElementById("injury-updated");
+  function paint(rows, label) {
+    if (body) body.innerHTML = rows.length ? rows.map(function (r) {
+      var cls = /out/i.test(r.status) ? "negative" : "";
+      return "<tr><td>" + esc(r.player) + "</td><td>" + esc(r.team) + "</td><td class=\"" + cls + "\">" + esc(r.status) + "</td><td>" + esc(r.reason) + "</td><td>" + esc(r.game) + "</td></tr>";
+    }).join("") : '<tr><td colspan="5" style="color:var(--muted);">No injuries reported for the active slate.</td></tr>';
+    if (stamp) stamp.textContent = "· " + label + " · ESPN (active slate only)";
+  }
+  function fallback() {
+    paint(DATA.injuries || [], DATA.injuries_updated ? "Updated " + DATA.injuries_updated : "Waiting for first update");
+  }
+  function live() {
+    var names = DATA.teams || {}, inv = {}, slate = {};
+    Object.keys(names).forEach(function (a) { inv[names[a]] = a; });
+    (DATA.games || []).forEach(function (g) { if (g.status !== "Final") { slate[g.away] = g.id; slate[g.home] = g.id; } });
+    if (!Object.keys(inv).length) { fallback(); return Promise.resolve(); }
+    return fetch(URL, {cache: "no-store"}).then(function (r) { if (!r.ok) throw new Error("http"); return r.json(); }).then(function (j) {
+      var rows = [];
+      (j.injuries || []).forEach(function (t) {
+        var ab = inv[t.displayName];
+        if (!ab || !slate[ab]) return;
+        (t.injuries || []).forEach(function (i) {
+          var d = i.details || {};
+          var reason = [d.side, d.type || d.location].filter(Boolean).join(" ") || (i.shortComment || "").slice(0, 80) || "Undisclosed";
+          rows.push({player: (i.athlete || {}).displayName || "", team: ab, status: i.status || "", reason: reason, game: slate[ab]});
+        });
+      });
+      DATA.injuries = rows;
+      paint(rows, "Live " + new Date().toLocaleTimeString([], {hour: "numeric", minute: "2-digit"}));
+    }).catch(fallback);
+  }
+  fallback();
+  live();
+  setInterval(live, 300000);
+})();
+
+// ---------------- Game Log tab: hit rates + detailed box score (data: player_games.json) ----------------
+(function () {
+  var COLS = ["date","opp","home","min","pts","reb","ast","tpm","stl","blk","fgm","fga","tpa","ftm","fta","to","oreb","dreb","pf","pm"];
+  var STATS = [["PTS",function(r){return r.pts;}],["REB",function(r){return r.reb;}],["AST",function(r){return r.ast;}],["3PM",function(r){return r.tpm;}],["STL",function(r){return r.stl;}],["BLK",function(r){return r.blk;}],["PRA",function(r){return r.pts+r.reb+r.ast;}],["PR",function(r){return r.pts+r.reb;}],["PA",function(r){return r.pts+r.ast;}],["RA",function(r){return r.reb+r.ast;}]];
+  var P = null, name = null, stat = "PTS", edits = {};
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (x) { return String(x == null ? "" : x).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
+  var sum = function (a, f) { return a.reduce(function (t, r) { return t + f(r); }, 0); };
+  var pct = function (m, a) { return a ? (100 * m / a).toFixed(1) + "%" : "-"; };
+
+  function games() {
+    return P.players[name].rows.map(function (a) { var o = {}; COLS.forEach(function (c, i) { o[c] = a[i]; }); return o; });  // newest first
+  }
+  function fn(s) { return STATS.filter(function (x) { return x[0] === s; })[0][1]; }
+  function lineFor(rs, s) {
+    var k = name + "|" + s;
+    if (edits[k] != null) return {v: edits[k], src: "custom"};
+    var p = (DATA.props || []).filter(function (x) { return x.player === name && x.stat === s; })[0];
+    if (p) return {v: p.dk, src: "DraftKings"};
+    return {v: Math.floor(sum(rs, fn(s)) / rs.length) + 0.5, src: "avg-based"};
+  }
+  function hit(rs, f, line, n) {
+    var sl = rs.slice(0, n); if (!sl.length) return "<td>-</td>";
+    var h = sl.filter(function (r) { return f(r) > line; }).length, p = Math.round(100 * h / sl.length);
+    var cls = p >= 60 ? "positive" : (p <= 40 ? "negative" : "");
+    return '<td class="' + cls + '">' + h + "/" + sl.length + " · " + p + "%</td>";
+  }
+  function render() {
+    if (!P || !name || !P.players[name]) return;
+    var rs = games(), t = P.players[name].team;
+    $("pl-meta").textContent = t + " · " + rs.length + " games · data " + P.updated;
+
+    // hit-rate table, all main stats
+    var h = '<table><thead><tr><th>Stat</th><th>Line</th><th>Avg L5</th><th>Over L5</th><th>Over L10</th><th>Over L15</th></tr></thead><tbody>';
+    STATS.forEach(function (x) {
+      var l = lineFor(rs, x[0]), f = x[1], on = x[0] === stat;
+      h += '<tr data-stat="' + x[0] + '" style="cursor:pointer;' + (on ? "background:var(--glow);" : "") + '"><td><strong>' + x[0] + '</strong></td>' +
+        '<td><input type="number" step="0.5" value="' + l.v + '" data-stat="' + x[0] + '" style="width:64px;background:var(--bg);color:var(--ink);border:1px solid var(--border);border-radius:6px;padding:3px 5px;"> <small style="color:var(--muted);">' + l.src + '</small></td>' +
+        '<td>' + (sum(rs.slice(0, 5), f) / Math.min(5, rs.length)).toFixed(1) + '</td>' + hit(rs, f, l.v, 5) + hit(rs, f, l.v, 10) + hit(rs, f, l.v, 15) + '</tr>';
+    });
+    $("pl-rates").innerHTML = h + '</tbody></table><div style="color:var(--muted);font-size:12px;margin-top:8px;">Over = player finished above the line. Click a row to chart it; edit a line to recompute.</div>';
+    Array.prototype.forEach.call($("pl-rates").querySelectorAll("input"), function (i) {
+      i.onclick = function (e) { e.stopPropagation(); };
+      i.onchange = function () { var v = parseFloat(i.value); if (!isNaN(v)) { edits[name + "|" + i.dataset.stat] = v; stat = i.dataset.stat; render(); } };
+    });
+    Array.prototype.forEach.call($("pl-rates").querySelectorAll("tr[data-stat]"), function (tr) {
+      tr.onclick = function () { stat = tr.dataset.stat; render(); };
+    });
+
+    // bar chart for selected stat, oldest -> newest
+    var f = fn(stat), line = lineFor(rs, stat).v, seq = rs.slice().reverse(), W = 600, H = 230, base = 190, top = 28;
+    var mx = Math.max.apply(null, seq.map(f).concat([line, 1])) * 1.15, bw = W / seq.length;
+    var y = function (v) { return base - (base - top) * v / mx; };
+    var c = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;max-width:760px;">';
+    seq.forEach(function (r, i) {
+      var v = f(r), x = i * bw + bw * 0.15, w = bw * 0.7, over = v > line;
+      c += '<rect x="' + x + '" y="' + y(v) + '" width="' + w + '" height="' + (base - y(v)) + '" rx="3" fill="' + (over ? "var(--good)" : "var(--bad)") + '" opacity="0.85"/>' +
+        '<text x="' + (x + w / 2) + '" y="' + (y(v) - 5) + '" fill="var(--ink)" font-size="11" text-anchor="middle">' + (Math.round(v * 10) / 10) + '</text>' +
+        '<text x="' + (x + w / 2) + '" y="' + (base + 14) + '" fill="var(--muted)" font-size="9" text-anchor="middle">' + (r.home ? "" : "@") + esc(r.opp) + '</text>' +
+        '<text x="' + (x + w / 2) + '" y="' + (base + 26) + '" fill="var(--muted)" font-size="8" text-anchor="middle">' + esc(r.date.slice(5)) + '</text>';
+    });
+    c += '<line x1="0" x2="' + W + '" y1="' + y(line) + '" y2="' + y(line) + '" stroke="var(--gold)" stroke-dasharray="5 4" stroke-width="1.5"/>' +
+      '<text x="' + (W - 2) + '" y="' + (y(line) - 4) + '" fill="var(--gold)" font-size="11" text-anchor="end">Line ' + line + '</text></svg>';
+    $("pl-chart").innerHTML = '<div class="section-title" style="font-size:15px;">' + esc(name) + ' · ' + stat + ' <small>last ' + seq.length + ' games, oldest to newest</small></div>' + c;
+
+    // detailed box score + averages
+    var td = function (v) { return "<td>" + v + "</td>"; };
+    var row = function (lbl, sl, avg) {
+      var n = sl.length, g = function (k) { return sum(sl, function (r) { return r[k]; }); }, d = function (k) { return avg ? (g(k) / n).toFixed(1) : g(k); };
+      var poss = function (r) { return r.fga + 0.44 * r.fta + r.to; };
+      return "<tr" + (avg ? ' style="font-weight:650;background:#161a26;"' : "") + ">" + lbl +
+        td(avg ? (g("min") / n).toFixed(0) : sl[0].min) + td(d("pts")) + td(d("reb")) + td(d("ast")) + td(d("tpm")) + td(d("stl")) + td(d("blk")) + td(d("to")) +
+        td(avg ? (g("fgm") / n).toFixed(1) + "-" + (g("fga") / n).toFixed(1) : sl[0].fgm + "-" + sl[0].fga) + td(pct(g("fgm"), g("fga"))) +
+        td(avg ? (g("tpm") / n).toFixed(1) + "-" + (g("tpa") / n).toFixed(1) : sl[0].tpm + "-" + sl[0].tpa) + td(pct(g("tpm"), g("tpa"))) +
+        td(avg ? (g("ftm") / n).toFixed(1) + "-" + (g("fta") / n).toFixed(1) : sl[0].ftm + "-" + sl[0].fta) + td(pct(g("ftm"), g("fta"))) +
+        td(avg ? (sum(sl, poss) / n).toFixed(1) : poss(sl[0]).toFixed(1)) + td(avg ? (g("pm") / n).toFixed(1) : (sl[0].pm > 0 ? "+" : "") + sl[0].pm) + "</tr>";
+    };
+    var d = '<div class="section-title" style="font-size:15px;">Detailed box score <small>averages first, then each game</small></div>' +
+      '<table><thead><tr><th>Game</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>3PM</th><th>STL</th><th>BLK</th><th>TO</th><th>FG</th><th>FG%</th><th>3PT</th><th>3P%</th><th>FT</th><th>FT%</th><th>Poss used*</th><th>+/-</th></tr></thead><tbody>';
+    [5, 10, 15].forEach(function (n) { if (rs.length >= Math.min(n, 3)) d += row("<td>Avg L" + Math.min(n, rs.length) + "</td>", rs.slice(0, n), true); });
+    rs.forEach(function (r) { d += row("<td>" + esc(r.date.slice(5)) + " " + (r.home ? "vs " : "@ ") + esc(r.opp) + "</td>", [r], false); });
+    $("pl-detail").innerHTML = d + '</tbody></table><div style="color:var(--muted);font-size:12px;margin-top:8px;">*Possessions used is an estimate: FGA + 0.44 x FTA + turnovers. Touches and potential assists come from NBA tracking data, which ESPN box scores do not include.</div>';
+  }
+  function pick(v) {
+    var m = Object.keys(P.players).filter(function (n) { return (n + " (" + P.players[n].team + ")") === v || n.toLowerCase() === v.toLowerCase(); })[0];
+    if (m) { name = m; render(); }
+  }
+  function init() {
+    var names = Object.keys(P.players).sort();
+    $("pl-list").innerHTML = names.map(function (n) { return '<option value="' + esc(n + " (" + P.players[n].team + ")") + '">'; }).join("");
+    $("pl-search").oninput = function () { pick($("pl-search").value); };
+    name = names[0]; if (name) { $("pl-search").value = name + " (" + P.players[name].team + ")"; render(); }
+  }
+  fetch("player_games.json?v=" + Date.now(), {cache: "no-store"}).then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (j) { P = j; if (Object.keys(j.players || {}).length) init(); else throw 0; })
+    .catch(function () { $("pl-meta").textContent = "Player data appears after the first update run."; });
 })();
 </script>
 </body>

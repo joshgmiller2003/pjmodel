@@ -1,0 +1,58 @@
+{
+ "generated_at": "",
+ "season": "2026-27",
+ "games": [],
+ "props": [],
+ "teams": {
+  "ATL": "Atlanta Hawks",
+  "BOS": "Boston Celtics",
+  "BKN": "Brooklyn Nets",
+  "CHA": "Charlotte Hornets",
+  "CHI": "Chicago Bulls",
+  "CLE": "Cleveland Cavaliers",
+  "DAL": "Dallas Mavericks",
+  "DEN": "Denver Nuggets",
+  "DET": "Detroit Pistons",
+  "GSW": "Golden State Warriors",
+  "HOU": "Houston Rockets",
+  "IND": "Indiana Pacers",
+  "LAC": "LA Clippers",
+  "LAL": "Los Angeles Lakers",
+  "MEM": "Memphis Grizzlies",
+  "MIA": "Miami Heat",
+  "MIL": "Milwaukee Bucks",
+  "MIN": "Minnesota Timberwolves",
+  "NOP": "New Orleans Pelicans",
+  "NYK": "New York Knicks",
+  "OKC": "Oklahoma City Thunder",
+  "ORL": "Orlando Magic",
+  "PHI": "Philadelphia 76ers",
+  "PHX": "Phoenix Suns",
+  "POR": "Portland Trail Blazers",
+  "SAC": "Sacramento Kings",
+  "SAS": "San Antonio Spurs",
+  "TOR": "Toronto Raptors",
+  "UTA": "Utah Jazz",
+  "WAS": "Washington Wizards"
+ },
+ "injuries": [],
+ "injuries_updated": "waiting for first update",
+ "residuals": {
+  "player": {},
+  "team": [],
+  "games_learned": 0,
+  "history": [],
+  "alpha": 0.45
+ },
+ "model_notes": [
+  "Waiting for the first automatic update."
+ ],
+ "prediction_history": [],
+ "notes": "Waiting for the first automatic update.",
+ "settled_bets": [],
+ "record": {
+  "wins": 0,
+  "losses": 0,
+  "units": 0
+ }
+}
