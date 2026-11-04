@@ -59,6 +59,9 @@ jobs:
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '150' }}
           MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5000' }}
           ODDS_RESET_DAY: ${{ vars.ODDS_RESET_DAY || '4' }}   # plan upgraded Nov 4, so it resets on the 4th
+          # Daily Discord alerts (Pick of the Day + ladder at 11 AM, results at 1 AM). Add the webhook under
+          # Settings > Secrets and variables > Actions > New repository secret, named DISCORD_WEBHOOK_URL.
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python update_projections.py
 
       - name: Sanity-check output
