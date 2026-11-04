@@ -48,6 +48,72 @@ a { color: var(--accent2); text-decoration: none; }
 a:hover { text-decoration: underline; }
 ::selection { background: var(--accent); color: #fff; }
 
+/* ---------- header (v2) ---------- */
+header.topbar { max-width: 1360px; margin: 0 auto; padding: 18px 32px 14px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand .mark { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), #ff4d2e); box-shadow: 0 6px 18px rgba(255,122,26,0.28); }
+.brand .mark img { height: 28px; filter: brightness(0) invert(1); }
+header.topbar h1 { font-size: 22px; letter-spacing: -0.4px; margin: 0; line-height: 1.1; }
+header.topbar .sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.top-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+header.topbar .meta { grid-column: auto; grid-row: auto; }
+.chip-btn { display: inline-flex; align-items: center; gap: 7px; background: var(--surface); border: 1px solid var(--border); color: var(--ink); border-radius: 999px; padding: 6px 13px; font: 500 12px "Inter", system-ui, sans-serif; cursor: pointer; }
+.chip-btn:hover { border-color: #3a4660; }
+.chip-btn #injury-updated { color: var(--muted); }
+.dot-red { width: 7px; height: 7px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 0 3px var(--bad-soft); }
+.next-up { width: 100%; font-size: 11.5px; color: var(--faint); margin-top: -6px; }
+.injury-details { margin-bottom: 8px; }
+/* ---------- today strip ---------- */
+.today-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 26px; }
+.ts { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; transition: border-color .15s, transform .15s; box-shadow: var(--shadow); min-width: 0; }
+.ts:hover { border-color: #34405a; transform: translateY(-1px); }
+.ts .l { font-size: 10.5px; text-transform: uppercase; letter-spacing: .8px; color: var(--faint); font-weight: 800; display: flex; justify-content: space-between; }
+.ts .l em { font-style: normal; color: var(--accent2); }
+.ts .v { font-size: 16px; font-weight: 750; margin-top: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ts .s { font-size: 12px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ts.hl { border-color: rgba(255,122,26,0.45); background: linear-gradient(135deg, rgba(255,122,26,0.10), var(--card) 70%); }
+/* ---------- game card v2 ---------- */
+.gc { padding: 0; overflow: hidden; }
+.gc-head { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; padding: 18px 18px 14px; }
+.gc-team { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; min-width: 0; }
+.gc-team img { width: 46px; height: 46px; object-fit: contain; }
+.gc-team .ab { font-size: 16px; font-weight: 800; letter-spacing: -0.2px; }
+.gc-team .nm { font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.gc-mid { text-align: center; }
+.gc-mid .t { font-size: 13px; font-weight: 700; }
+.gc-mid .d { font-size: 11px; color: var(--faint); margin-top: 2px; }
+.gc-mid .sc { font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+.gc-mid .lv { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: .5px; }
+.gc .rest-row { justify-content: center; margin: 0 0 12px; padding: 0 18px; }
+.gc-mk { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.gc-mk > div { padding: 12px 10px; text-align: center; }
+.gc-mk > div + div { border-left: 1px solid var(--border-soft); }
+.gc-mk label { display: block; font-size: 10px; color: var(--faint); text-transform: uppercase; letter-spacing: .8px; font-weight: 800; }
+.gc-mk .mv { font-size: 17px; font-weight: 750; margin-top: 4px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.gc-mk .dv { font-size: 11.5px; color: var(--muted); margin-top: 1px; white-space: nowrap; }
+.gc-lean { padding: 12px 18px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12.5px; }
+.lean { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); font-weight: 650; }
+.lean .c { font-size: 10.5px; font-weight: 800; letter-spacing: .4px; text-transform: uppercase; }
+.lean.none { color: var(--muted); font-weight: 500; }
+.gc-foot { margin-left: auto; color: var(--faint); font-size: 11.5px; }
+/* ---------- parlay builder v2 ---------- */
+.pb { display: grid; grid-template-columns: 1fr 360px; gap: 16px; align-items: start; }
+.pb-legs { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.pleg { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; transition: border-color .15s, background .15s; position: relative; }
+.pleg:hover { border-color: #3a4660; }
+.pleg.on { border-color: var(--accent2); background: linear-gradient(135deg, rgba(92,200,255,0.10), var(--card)); }
+.pleg.on::after { content: "✓"; position: absolute; top: 10px; right: 12px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent2); color: #04121c; font-size: 12px; font-weight: 800; display: grid; place-items: center; }
+.pleg .pn { font-weight: 700; font-size: 13.5px; padding-right: 26px; }
+.pleg .pg { font-size: 11px; color: var(--faint); margin-top: 1px; }
+.pleg .pl { font-size: 13px; margin-top: 8px; font-weight: 650; }
+.pb-slip { position: sticky; top: 64px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.pb-slip .big { font-size: 34px; font-weight: 800; color: var(--accent); letter-spacing: -0.8px; }
+.slip-leg { display: flex; justify-content: space-between; gap: 8px; padding: 9px 0; border-bottom: 1px solid var(--border-soft); font-size: 13px; }
+/* ---------- footer ---------- */
+.site-foot { max-width: 1360px; margin: 0 auto; padding: 22px 32px 40px; border-top: 1px solid var(--border-soft); color: var(--faint); font-size: 11.5px; display: grid; gap: 4px; }
+.site-foot strong { color: var(--muted); }
+.container { padding-bottom: 40px; }
+
 /* ---------- header ---------- */
 header {
   max-width: 1360px; margin: 0 auto;
@@ -269,7 +335,17 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 @media (max-width: 720px) { .lad-next { text-align: left; } .lad-bank { font-size: 38px; } }
 .rung-row.sug td { background: rgba(92,200,255,0.08); }
 .seed-line td { border-bottom: 2px dashed var(--border) !important; }
+@media (max-width: 900px) {
+  .today-strip { grid-template-columns: repeat(2, 1fr); }
+  .pb { grid-template-columns: 1fr; }
+  .pb-slip { position: static; }
+}
+@media (max-width: 520px) { .today-strip { grid-template-columns: 1fr; gap: 8px; } }
 @media (max-width: 720px) {
+  header.topbar { padding: 14px 16px 10px; }
+  .hide-sm { display: none; }
+  .site-foot { padding: 18px 16px 30px; }
+  .gc-team img { width: 38px; height: 38px; }
   .game-grid[style] { grid-template-columns: 1fr !important; }
   header { grid-template-columns: 1fr; padding: 20px 16px 12px; }
   .meta { grid-column: 1; grid-row: auto; justify-self: start; white-space: normal; }
@@ -290,17 +366,17 @@ nav button:first-child { margin-left: -13px; }
 </style>
 </head>
 <body>
-<header>
-  <h1><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="NBA" style="height:28px;vertical-align:middle;margin-right:8px;">NBA <span>PJ MODEL</span></h1>
-  <div class="sub">Daily projections for every game and player prop, benchmarked against DraftKings</div>
-  <div class="meta" id="generated"></div>
-  <div class="disclaimer">For entertainment and information only. 21+. Not betting advice. Model estimates can be wrong. Lines move — confirm at the book. Gambling problem? Call 1-800-GAMBLER.</div>
+<header class="topbar">
+  <div class="brand">
+    <div class="mark"><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="" onerror="this.style.display='none'"></div>
+    <div><h1>PJ <span>MODEL</span></h1><div class="sub">NBA projections, props and picks vs DraftKings</div></div>
+  </div>
+  <div class="top-right">
+    <span class="meta" id="generated"></span>
+    <button class="chip-btn" id="injury-toggle"><span class="dot-red"></span><strong>Injuries</strong> <span id="injury-count"></span><span id="injury-updated" class="hide-sm"></span></button>
+  </div>
+  <span id="residual-status" class="next-up"></span>
 </header>
-<div class="injury-banner" id="injury-toggle">
-  <strong>Injuries</strong>
-  <span id="injury-updated" style="color:var(--muted);">· ESPN (active slate only)</span>
-  <span id="residual-status" style="float:right;color:var(--accent);font-size:12px;">Residuals: 3 games learned</span>
-</div>
 <div class="injury-details" id="injury-details">
   <div style="margin-bottom:8px;">
     Sources: <a href="https://www.espn.com/nba/injuries" target="_blank" style="color:var(--accent);">ESPN</a> · 
@@ -327,8 +403,8 @@ nav button:first-child { margin-left: -13px; }
 </nav>
 <div class="container">
   <section id="games" class="tab">
-    <div class="section-title">Games <small>Model vs DraftKings</small></div>
-    <div id="games-live-status" style="font-size:12px;color:var(--accent);margin:-6px 0 12px;">Connecting to live scores…</div>
+    <div class="today-strip" id="today-strip"></div>
+    <div class="section-title">Tonight's games <small id="games-live-status">Connecting to live scores…</small></div>
     <div class="game-grid" id="games-board"></div>
   </section>
   <section id="best" class="tab" style="display:none;">
@@ -484,6 +560,11 @@ nav button:first-child { margin-left: -13px; }
     <div class="card table-wrap"><table id="model-residuals"></table></div>
   </section>
 </div>
+<footer class="site-foot">
+  <div><strong>PJ MODEL</strong> · Updates automatically at 1 AM, 11 AM and 6 PM ET. Scores and injuries refresh live while this page is open.</div>
+  <div>Data: ESPN (scores, box scores, injuries, standings) · DraftKings lines via The Odds API.</div>
+  <div>For entertainment and information only. 21+. Not betting advice; model estimates can be wrong and lines move, so confirm at the book. Gambling problem? Call 1-800-GAMBLER.</div>
+</footer>
 <div class="modal-overlay" id="game-modal">
   <div class="modal" id="modal-content"></div>
 </div>
@@ -685,78 +766,63 @@ function injuryFor(name) {
 function fmtPrice(v) { return v === null || v === undefined ? "" : (v > 0 ? "+" + v : String(v)); }
 function renderGames() {
   const active = activeGames();
-  document.getElementById("games-board").innerHTML = active.map((g, i) => {
-    const modelFav = g.model.spread < 0 ? g.home : g.away;
-    const modelSpread = Math.abs(g.model.spread);
-    const dkSpreadNum = parseFloat(g.dk.spread);
-    const dkPick = g.spread_edge > 0.5 ? `${g.home} ${g.dk.spread}` : (g.spread_edge < -0.5 ? `${g.away} ${(-dkSpreadNum) > 0 ? '+' : ''}${-dkSpreadNum}` : "No strong side");
-    const totalPick = g.total_edge > 0.5 ? `Over ${g.dk.total}` : (g.total_edge < -0.5 ? `Under ${g.dk.total}` : "No strong lean");
-    const spreadConf = confidence(g.spread_edge);
-    const totalConf = confidence(g.total_edge);
-    const stayAway = Math.abs(g.spread_edge) < 0.5 && Math.abs(g.total_edge) < 0.5;
+  const sign = v => (v > 0 ? "+" : "") + v;
+  const board = document.getElementById("games-board");
+  if (!active.length) { board.innerHTML = '<div class="card"><div style="font-weight:700;">No games left today</div><div class="note">The next slate shows up after the 1 AM ET update.</div></div>'; renderTodayStrip(); return; }
+  board.innerHTML = active.map((g, i) => {
     const isLive = g.status === "Live";
-    const scoreHtml = g.score ? `
-      <div class="scorebox ${isLive ? 'live' : ''}">
-        <div class="row">
-          <div style="font-size:13px;font-weight:600;">${g.away}</div>
-          <div class="pts">${g.score.away} <span style="color:var(--muted);font-weight:500;">–</span> ${g.score.home}</div>
-          <div style="font-size:13px;font-weight:600;">${g.home}</div>
-        </div>
-        <div class="st">${isLive ? "● LIVE" : (g.status || "")}${g.live_note ? " · " + g.live_note : ""}</div>
-      </div>` : (g.status === "Live" ? `<div class="live-tag">● LIVE${g.live_note ? " · " + g.live_note : ""}</div>` : "");
-    const statusHtml = !g.score && g.status && g.status !== "Upcoming" ? `<div style="font-size:12px;color:var(--muted);margin-bottom:6px;">${g.status}</div>` : "";
-    return `
-    <div class="card clickable ${isLive ? 'live' : ''}" data-idx="${i}">
-      <div class="game-header">
-        <div style="width:100%;">
-          <div class="matchup">
-            <img class="team-logo" src="${teamLogo(g.away)}" alt="${g.away}" onerror="this.style.display='none'">
-            ${g.away} @ ${g.home}
-            <img class="team-logo" src="${teamLogo(g.home)}" alt="${g.home}" onerror="this.style.display='none'">
-          </div>
-          <div class="time">${g.date} · ${g.time}</div>
-          ${restHtml(g)}
-          ${statusHtml}
-          ${scoreHtml}
-        </div>
+    const nm = t => ((DATA.teams || {})[t] || t).split(" ").slice(-1)[0];
+    const se = g.spread_edge || 0, te = g.total_edge || 0;
+    const spreadLean = Math.abs(se) >= 0.5 ? (se > 0 ? `${g.home} ${g.dk.spread}` : `${g.away} ${sign(-parseFloat(g.dk.spread))}`) : null;
+    const totalLean = Math.abs(te) >= 0.5 ? `${te > 0 ? "Over" : "Under"} ${g.dk.total}` : null;
+    const cs = confidence(se), ct = confidence(te);
+    const mid = g.score
+      ? `<div class="sc">${g.score.away}<span style="color:var(--faint);font-weight:500;"> – </span>${g.score.home}</div><div class="${isLive ? "lv" : "d"}">${isLive ? "● LIVE" + (g.live_note ? " · " + g.live_note : "") : (g.status || "")}</div>`
+      : `<div class="t">${g.time.replace(" ET", "")}</div><div class="d">${new Date(g.date + "T12:00").toLocaleDateString([], {weekday: "short", month: "short", day: "numeric"})}</div>`;
+    const pWin = Math.round(g.model.ml_home * 100);
+    const favHome = pWin >= 50;
+    return `<div class="card clickable gc ${isLive ? "live" : ""}" data-idx="${i}">
+      <div class="gc-head">
+        <div class="gc-team"><img src="${teamLogo(g.away)}" alt="" onerror="this.style.visibility='hidden'"><div class="ab">${g.away}</div><div class="nm">${nm(g.away)}</div></div>
+        <div class="gc-mid">${mid}</div>
+        <div class="gc-team"><img src="${teamLogo(g.home)}" alt="" onerror="this.style.visibility='hidden'"><div class="ab">${g.home}</div><div class="nm">${nm(g.home)}</div></div>
       </div>
-      <div class="summary">
-        ${stayAway ? '<div class="warn">Stay away: edges too small</div>' : ''}
-        <div><span class="k">Model favors</span> <strong>${modelFav} by ${modelSpread}</strong></div>
-        <div style="margin-top:3px;"><span class="k">Lean</span> <strong>${dkPick}</strong> · <strong>${totalPick}</strong></div>
-        <div class="conf">
-          Spread confidence: <span style="color:${spreadConf.color};font-weight:600;">${spreadConf.label}</span>
-          · Total confidence: <span style="color:${totalConf.color};font-weight:600;">${totalConf.label}</span>
-        </div>
+      ${restHtml(g)}
+      <div class="gc-mk">
+        <div><label>Spread</label><div class="mv">${g.home} ${sign(g.model.spread)}</div><div class="dv">DK ${g.dk.spread}</div><span class="edge ${edgeClass(se)}">${sign(se)}</span></div>
+        <div><label>Total</label><div class="mv">${g.model.total}</div><div class="dv">DK ${g.dk.total || "–"}</div><span class="edge ${edgeClass(te)}">${sign(te)}</span></div>
+        <div><label>Win chance</label><div class="mv">${favHome ? g.home : g.away} ${favHome ? pWin : 100 - pWin}%</div><div class="dv">DK ${g.dk.ml_away} / ${g.dk.ml_home}</div></div>
       </div>
-      <div class="markets">
-        <div class="market">
-          <label>Spread</label>
-          <div class="proj">${g.model.spread > 0 ? "+" : ""}${g.model.spread}</div>
-          <div class="dk">DK ${g.dk.spread}</div>
-          <span class="edge ${edgeClass(g.spread_edge)}">${g.spread_edge > 0 ? "+" : ""}${g.spread_edge}</span>
-        </div>
-        <div class="market">
-          <label>Total</label>
-          <div class="proj">${g.model.total}</div>
-          <div class="dk">DK ${g.dk.total}</div>
-          <span class="edge ${edgeClass(g.total_edge)}">${g.total_edge > 0 ? "+" : ""}${g.total_edge}</span>
-        </div>
-        <div class="market">
-          <label>Win %</label>
-          <div class="proj">${Math.round(g.model.ml_home*100)}% ${g.home}</div>
-          <div class="dk">DK ${g.dk.ml_away} / ${g.dk.ml_home}</div>
-        </div>
+      <div class="gc-lean">
+        ${spreadLean ? `<span class="lean">${spreadLean} <span class="c" style="color:${cs.color};">${cs.label}</span></span>` : '<span class="lean none">No spread lean</span>'}
+        ${totalLean ? `<span class="lean">${totalLean} <span class="c" style="color:${ct.color};">${ct.label}</span></span>` : '<span class="lean none">No total lean</span>'}
+        <span class="gc-foot">${DATA.props.filter(p => p.game === g.id).length} props ›</span>
       </div>
-      <div class="note">${g.note}</div>
     </div>`;
   }).join("");
-
   document.querySelectorAll("#games-board .card").forEach(card => {
     card.onclick = () => openGameDetail(parseInt(card.dataset.idx));
   });
+  renderTodayStrip();
 }
-
+function goTab(t) { const b = document.querySelector(`nav button[data-tab="${t}"]`); if (b) { b.click(); window.scrollTo({top: 0, behavior: "smooth"}); } }
+function renderTodayStrip() {
+  const el = document.getElementById("today-strip"); if (!el) return;
+  const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  const potd = (DATA.potd_history || []).find(h => h.date === today);
+  const L = DATA.ladder; const step = L && (L.steps || []).find(x => x.date === today);
+  const bank = L ? (step && !step.result ? step.stake : L.bankroll) : null;
+  const strong = DATA.props.filter(p => Math.abs(p.edge) >= 1).length;
+  const live = DATA.games.filter(g => g.status === "Live").length;
+  const g = activeGames();
+  const rec = DATA.record || {};
+  const m = v => "$" + (Math.round(v * 100) / 100).toLocaleString();
+  el.innerHTML = `
+    <div class="ts hl" onclick="goTab('potd')"><div class="l">Pick of the Day <em>›</em></div><div class="v">${potd ? (potd.label || potd.player) + " " + fmtPrice(potd.price) : "Posts at 11 AM ET"}</div><div class="s">${potd ? (potd.result ? (potd.result === "W" ? "Won" : potd.result === "L" ? "Lost" : "Push") + " · " + (potd.actual || "") : "Confidence " + Math.round(potd.score) + " · " + (potd.type || "Prop")) : "Best bet on the board"}</div></div>
+    <div class="ts" onclick="goTab('ladders')"><div class="l">Ladder Challenge <em>›</em></div><div class="v">${L ? m(bank) + (step ? " · Day " + step.day : "") : "Starts with the next update"}</div><div class="s">${step ? step.label + " " + fmtPrice(step.price) : L ? "Attempt #" + L.attempt + " · goal " + m(L.goal) : "$10 → $1,000, one bet a day"}</div></div>
+    <div class="ts" onclick="goTab('props')"><div class="l">Player props <em>›</em></div><div class="v">${DATA.props.length.toLocaleString()} lines</div><div class="s">${strong} with an edge of 1+ · ${new Set(DATA.props.map(p => p.game)).size} games</div></div>
+    <div class="ts" onclick="goTab('bankroll')"><div class="l">Slate &amp; record <em>›</em></div><div class="v">${g.length} game${g.length === 1 ? "" : "s"}${live ? " · " + live + " live" : ""}</div><div class="s">Model bets ${rec.wins || 0}-${rec.losses || 0} · ${(rec.units || 0) > 0 ? "+" : ""}${rec.units || 0}u</div></div>`;
+}
 function openGameDetail(idx) {
   const g = activeGames()[idx];
   if (!g) return;
@@ -1505,37 +1571,42 @@ function renderParlayMain() {
   }
 }
 
+function parlayPool() {
+  const px = p => (p.edge > 0 ? p.over : p.under);
+  const sc = p => Math.abs(p.edge) / Math.sqrt(Math.max(p.dk, 1));
+  return DATA.props.filter(p => Math.abs(p.edge) >= 0.5 && px(p) != null && px(p) >= -180 && p.dk >= 1.5)
+    .slice().sort((a, b) => sc(b) - sc(a)).slice(0, 36);
+}
 function renderCustomBuilder(container) {
-  const props = DATA.props.filter(p => Math.abs(p.edge) >= 0.4).slice(0, 16);
-  container.innerHTML = `
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:10px;">
-      <div id="parlay-leg-list" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;max-height:400px;overflow-y:auto;">
-        <div style="font-size:13px;font-weight:600;color:var(--muted);margin-bottom:10px;letter-spacing:0.3px;">AVAILABLE LEGS</div>
-        ${props.map((p, i) => `
-          <div class="parlay-leg" data-idx="${i}" style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:${selectedParlay.includes(i) ? 'var(--surface-2)' : 'var(--bg)'};border:1px solid ${selectedParlay.includes(i) ? 'var(--accent2)' : 'transparent'};cursor:pointer;">
-            <div style="width:16px;height:16px;border-radius:4px;border:1.5px solid ${selectedParlay.includes(i) ? 'var(--accent)' : '#4a5568'};background:${selectedParlay.includes(i) ? 'var(--accent)' : 'transparent'};display:flex;align-items:center;justify-content:center;">
-              ${selectedParlay.includes(i) ? '<span style="color:#000;font-size:11px;font-weight:700;">✓</span>' : ''}
-            </div>
-            <div style="flex:1;">
-              <div style="font-size:13px;font-weight:600;">${p.player} <span style="color:var(--muted);font-weight:400;">${p.team}</span></div>
-              <div style="font-size:12px;margin-top:2px;color:var(--ink);">
-                ${p.stat} ${p.side} <strong>${p.dk}</strong>
-                <span style="margin-left:8px;color:var(--accent);">Model ${p.model}</span>
-                <span style="margin-left:6px;" class="${p.edge>0?'positive':'negative'}">${p.edge>0?'+':''}${p.edge}</span>
-              </div>
-            </div>
-          </div>
-        `).join("")}
-      </div>
-      <div id="parlay-results-panel" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;"></div>
-    </div>`;
-  // Attach click handlers after render
-  container.querySelectorAll(".parlay-leg").forEach(el => {
-    el.onclick = () => toggleParlayLeg(parseInt(el.dataset.idx));
-  });
+  const pool = parlayPool();
+  container.innerHTML = `<div class="pb">
+    <div><div class="note" style="margin-bottom:10px;">Tap up to ${parlayMode} legs. Best edges first, priced -180 or better.</div><div class="pb-legs">
+      ${pool.map((p, i) => { const px = p.edge > 0 ? p.over : p.under; const side = p.edge > 0 ? "Over" : "Under"; return `<div class="pleg ${selectedParlay.includes(i) ? "on" : ""}" data-idx="${i}">
+        <div class="pn">${p.player}</div><div class="pg">${p.team} · ${p.game.replace("@", " @ ")}</div>
+        <div class="pl">${side} ${p.dk} ${p.stat} <span class="price">${fmtPrice(px)}</span></div>
+        <div class="note" style="margin-top:3px;">Model ${p.model} · <span class="${p.edge > 0 ? "positive" : "negative"}">${p.edge > 0 ? "+" : ""}${p.edge}</span></div></div>`; }).join("") || '<div class="note">No legs with a posted price yet.</div>'}
+    </div></div>
+    <div class="pb-slip" id="parlay-results-panel"></div></div>`;
+  container.querySelectorAll(".pleg").forEach(el => el.onclick = () => toggleParlayLeg(parseInt(el.dataset.idx)));
   updateParlayResults();
 }
-
+function updateParlayResults() {
+  const panel = document.getElementById("parlay-results-panel");
+  if (!panel) return;
+  const pool = parlayPool();
+  const legs = selectedParlay.map(i => pool[i]).filter(Boolean);
+  if (!legs.length) { panel.innerHTML = `<div style="font-weight:700;margin-bottom:6px;">Your slip</div><div class="note">Pick ${parlayMode} legs to see the combined price and payout.</div>`; return; }
+  let dec = 1; legs.forEach(p => dec *= americanToDecimal((p.edge > 0 ? p.over : p.under) || -110));
+  const odds = dec >= 2 ? Math.round((dec - 1) * 100) : Math.round(-100 / (dec - 1));
+  const sameGame = new Set(legs.map(p => p.game)).size < legs.length;
+  panel.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;"><div style="font-weight:700;">Your slip</div><span class="team">${legs.length}/${parlayMode} legs</span></div>
+    ${legs.map(p => `<div class="slip-leg"><div><strong>${p.player}</strong><div class="team">${p.edge > 0 ? "Over" : "Under"} ${p.dk} ${p.stat}</div></div><span class="stat">${fmtPrice(p.edge > 0 ? p.over : p.under)}</span></div>`).join("")}
+    <div style="margin-top:14px;" class="team">Combined price (at posted DraftKings odds)</div>
+    <div class="big">${odds > 0 ? "+" : ""}${odds}</div>
+    <div class="team" style="margin-top:2px;">$10 pays <strong style="color:var(--ink);">$${(10 * dec).toFixed(2)}</strong></div>
+    ${sameGame ? '<div class="note" style="margin-top:10px;color:var(--gold);">Same-game legs: books price these as a same-game parlay, so the real price will be lower.</div>' : ""}
+    ${legs.length < parlayMode ? `<div class="note" style="margin-top:10px;">Add ${parlayMode - legs.length} more leg${parlayMode - legs.length === 1 ? "" : "s"}.</div>` : ""}`;
+}
 function renderSuggestedParlays(container) {
   const strong = DATA.props.filter(p => Math.abs(p.edge) >= 0.8).slice(0, 12);
   const suggestions = [];
@@ -1585,42 +1656,6 @@ function americanToDecimal(odds) {
   return odds > 0 ? (odds / 100) + 1 : (100 / Math.abs(odds)) + 1;
 }
 
-function updateParlayResults() {
-  const panel = document.getElementById("parlay-results-panel");
-  if (!panel) return;
-  if (selectedParlay.length === 0) {
-    panel.innerHTML = "<div class='note'>Select legs on the left.</div>";
-    return;
-  }
-  const props = DATA.props.filter(p => Math.abs(p.edge) >= 0.4).slice(0, 18);
-  const legs = selectedParlay.map(i => props[i]);
-  let dec = 1;
-  let totalEdge = 0;
-  legs.forEach(p => { dec *= americanToDecimal(-110); totalEdge += p.edge; });
-  const odds = dec >= 2 ? Math.round((dec-1)*100) : Math.round(-100/(dec-1));
-  const avg = Math.round((totalEdge / legs.length) * 10) / 10;
-
-  panel.innerHTML = `
-    <div style="font-size:13px;font-weight:600;color:var(--muted);margin-bottom:10px;letter-spacing:0.3px;">YOUR PARLAY</div>
-    ${legs.map((p, idx) => `
-      <div style="margin-bottom:8px;padding:8px 10px;background:var(--bg);border:1px solid var(--border-soft);border-radius:8px;border-left:3px solid var(--accent) !important;">
-        <div style="font-size:11px;color:var(--muted);">Leg ${idx+1}</div>
-        <div style="font-size:13px;font-weight:600;margin:2px 0;">${p.player}</div>
-        <div style="font-size:12px;color:var(--ink);">${p.stat} ${p.side} ${p.dk}</div>
-        <div style="font-size:11px;margin-top:3px;">
-          <span style="color:var(--accent);">Model ${p.model}</span>
-          <span style="margin-left:8px;" class="${p.edge>0?'positive':'negative'}">${p.edge>0?'+':''}${p.edge}</span>
-        </div>
-      </div>
-    `).join("")}
-    <div style="margin-top:12px;padding:14px;background:var(--bg);border-radius:10px;text-align:center;border:1px solid var(--border);">
-      <div style="font-size:11px;color:var(--muted);letter-spacing:0.5px;">EST. DRAFTKINGS</div>
-      <div style="font-size:26px;font-weight:700;color:var(--accent);margin:4px 0;">${odds>0?'+':''}${odds}</div>
-      <div style="font-size:12px;color:var(--muted);">Avg edge <span class="${avg>0?'positive':'negative'}" style="font-weight:600;">${avg>0?'+':''}${avg}</span></div>
-    </div>
-  `;
-}
-
 function renderParlayMainOnLoad() {
   document.querySelectorAll("#parlay-inner-tabs button").forEach(btn => {
     btn.onclick = () => {
@@ -1652,7 +1687,8 @@ renderHotCold();
       var cls = /out/i.test(r.status) ? "negative" : "";
       return "<tr><td>" + esc(r.player) + "</td><td>" + esc(r.team) + "</td><td class=\"" + cls + "\">" + esc(r.status) + "</td><td>" + esc(r.reason) + "</td><td>" + esc(r.game) + "</td></tr>";
     }).join("") : '<tr><td colspan="5" style="color:var(--muted);">No injuries reported for the active slate.</td></tr>';
-    if (stamp) stamp.textContent = "· " + label + " · ESPN (active slate only)";
+    if (stamp) stamp.textContent = "· " + label;
+    var cnt = document.getElementById("injury-count"); if (cnt) cnt.textContent = rows.length ? "(" + rows.length + ")" : "";
   }
   function fallback() {
     paint(DATA.injuries || [], DATA.injuries_updated ? "Updated " + DATA.injuries_updated : "Waiting for first update");
@@ -1776,7 +1812,10 @@ renderHotCold();
     var names = Object.keys(P.players).sort();
     $("pl-list").innerHTML = names.map(function (n) { return '<option value="' + esc(n + " (" + P.players[n].team + ")") + '">'; }).join("");
     $("pl-search").oninput = function () { pick($("pl-search").value); };
-    name = names[0]; if (name) { $("pl-search").value = name + " (" + P.players[name].team + ")"; render(); }
+    var mins = function (n) { var r = P.players[n].rows.slice(0, 5); return r.reduce(function (t, a) { return t + a[COLS.indexOf("min")]; }, 0) / Math.max(1, r.length); };
+    var withProps = names.filter(function (n) { return (DATA.props || []).some(function (p) { return p.player === n; }); });
+    name = (withProps.length ? withProps : names).slice().sort(function (a, b) { return mins(b) - mins(a); })[0];
+    if (name) { $("pl-search").value = name + " (" + P.players[name].team + ")"; render(); }
   }
   fetch("player_games.json?v=" + Date.now(), {cache: "no-store"}).then(function (r) { if (!r.ok) throw 0; return r.json(); })
     .then(function (j) { P = j; window.PLAYER_GAMES = j; if (typeof renderHotCold === "function") renderHotCold(); if (Object.keys(j.players || {}).length) init(); else throw 0; })
