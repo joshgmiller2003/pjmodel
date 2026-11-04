@@ -901,6 +901,138 @@ def _rate(vals, ok, n):
     return (sum(1 for v in sl if ok(v)), len(sl)) if sl else (0, 0)
 
 
+COMBO_KEYS = {"PTS": ("pts",), "REB": ("reb",), "AST": ("ast",), "3PM": ("tpm",), "BLK": ("blk",), "STL": ("stl",),
+              "PRA": ("pts", "reb", "ast"), "PR": ("pts", "reb"), "PA": ("pts", "ast"), "RA": ("reb", "ast")}
+TIER_NAME = {"tough": "top-10 defenses", "mid": "middle-10 defenses", "soft": "bottom-10 defenses"}
+
+
+def defense_tiers(dfn, stat, q):
+    """{team: 'tough'|'mid'|'soft'} for one prop stat against position q (team-level when q is unknown).
+    Ranked by what each team allows; top 10 stingiest are 'tough', bottom 10 'soft'."""
+    T = dfn.get("teams", {})
+    keys = COMBO_KEYS.get(stat, ())
+    if not T or not keys:
+        return {}
+    val = {}
+    for t, r in T.items():
+        src = (r.get("pos") or {}).get(q) if q else None
+        src = src or r
+        val[t] = sum(src[k] for k in keys) / len(keys)
+    order = sorted(val, key=val.get)
+    n = len(order)
+    return {t: ("tough" if i < n / 3 else "soft" if i >= n - n / 3 else "mid") for i, t in enumerate(order)}
+
+
+def add_tier_hits(props, idx, dfn):
+    """#5 Matchup-aware hit rates: how the player did against defenses like tonight's (same third of the
+    league in that stat vs his position), plus vs the toughest and softest thirds. Display + reasons only."""
+    cache = {}
+    for p in props:
+        if p["stat"] not in STAT_VAL or not p.get("opp"):
+            continue
+        q = dfn.get("positions", {}).get(norm(p["player"]))
+        ck = (p["stat"], q)
+        if ck not in cache:
+            cache[ck] = defense_tiers(dfn, p["stat"], q)
+        tiers = cache[ck]
+        if p["opp"] not in tiers:
+            continue
+        rows = [r for r in idx.get(norm(p["player"]), []) if r["min"] >= 5 and r.get("opp") in tiers]
+        over = p.get("side", "Over") == "Over"
+        res = {"tonight": tiers[p["opp"]]}
+        for tier in ("tough", "mid", "soft"):
+            vals = [STAT_VAL[p["stat"]](r) for r in rows if tiers[r["opp"]] == tier]
+            hit = sum(1 for v in vals if (v > p["dk"] if over else v < p["dk"]))
+            res[tier] = [hit, len(vals)]
+        p["tiers"] = res
+
+
+def tier_note(p):
+    t = p.get("tiers")
+    if not t:
+        return None
+    a, n = t[t["tonight"]]
+    side = "over" if p["edge"] > 0 else "under"
+    if not n:
+        return f"{p['opp']} ranks among the {TIER_NAME[t['tonight']]} for {p['stat']}; no games against that tier yet"
+    return f"{p['opp']} ranks among the {TIER_NAME[t['tonight']]} for {p['stat']}; he went {side} {p['dk']:g} in {a} of {n} games against that tier"
+
+
+def market_now(bet, games, props):
+    """The current DraftKings line and price for a saved bet (from this run's data, no extra API calls)."""
+    if bet.get("type") == "Prop":
+        p = next((x for x in props if x["game"] == bet["game"] and x["stat"] == bet.get("stat")
+                  and norm(x["player"]) == norm(bet.get("player", ""))), None)
+        if not p:
+            return None
+        px = p.get("over") if bet["side"] == "Over" else p.get("under")
+        return (p["dk"], px) if px is not None else None
+    row = next((r for r in games if r["id"] == bet["game"] and r["date"] == bet["date"]), None)
+    dk = (row or {}).get("dk") or {}
+    try:
+        if bet["type"] == "Spread":
+            hs = float(dk["spread"])
+            home = bet["team"] == row["home"]
+            return (hs if home else -hs, dk.get("spread_px_home" if home else "spread_px_away") or -110)
+        if bet["type"] == "Total":
+            return (float(dk["total"]), dk.get("over_px" if bet["side"] == "Over" else "under_px") or -110)
+        if bet["type"] == "Moneyline":
+            px = ml_num(dk.get("ml_home" if bet["team"] == row["home"] else "ml_away"))
+            return (0, px) if px is not None else None
+    except (KeyError, TypeError, ValueError):
+        return None
+    return None
+
+
+def track_clv(entries, games, props, slate, now):
+    """#6 Closing line value. While a bet's game has not tipped, keep copying the latest DraftKings line into
+    close_line / close_price; once it tips that is the closing number. clv.line > 0 means the line moved our
+    way (e.g. our Over 22.5 closed at 23.5); clv.price > 0 means the price got more expensive after we
+    took it, in points of implied probability. Beating the close over time is the best sign of real edges."""
+    status = {g["event_id"]: g["status"] for g in slate}
+    for e in entries:
+        if e.get("result") or not e.get("price"):
+            continue
+        e.setdefault("open_line", e.get("line"))
+        e.setdefault("open_price", e.get("price"))
+        if status.get(e.get("eid")) == "Upcoming":
+            cur = market_now(e, games, props)
+            if cur:
+                e["close_line"], e["close_price"] = cur
+                e["close_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
+        if e.get("close_price") is None:
+            continue
+        ol, cl = e.get("open_line") or 0, e.get("close_line") or 0
+        if e["type"] == "Moneyline":
+            lm = 0.0
+        elif e["type"] == "Spread":
+            lm = ol - cl                                    # we hold +7.5 and it closes +6.5: beat it by 1
+        else:
+            lm = (cl - ol) if e["side"] == "Over" else (ol - cl)
+        pm = (implied(e["close_price"]) - implied(e["open_price"])) * 100
+        e["clv"] = {"line": rnd(lm, 1), "price": rnd(pm, 1), "beat": bool(lm > 0 or (lm == 0 and pm > 0.5)),
+                    "final": status.get(e.get("eid")) != "Upcoming"}
+
+
+def clv_summary(entries):
+    done = [e for e in entries if e.get("clv") and e["clv"].get("final")]
+    if not done:
+        return {"bets": 0}
+    return {"bets": len(done), "beat": sum(1 for e in done if e["clv"]["beat"]),
+            "avg_line": rnd(sum(e["clv"]["line"] for e in done) / len(done), 2),
+            "avg_price": rnd(sum(e["clv"]["price"] for e in done) / len(done), 2)}
+
+
+def carry_open(new, old):
+    """When a re-pick lands on the same bet, keep the first price we posted so CLV is measured from it."""
+    if new and old and new.get("label") == old.get("label"):
+        for k in ("open_line", "open_price", "first_picked_at"):
+            if old.get(k) is not None:
+                new[k] = old[k]
+        new.setdefault("first_picked_at", old.get("first_picked_at") or old.get("picked_at"))
+    return new
+
+
 def sched_ctx(row, team):
     """Spread (DraftKings when posted, else the model) and rest days for `team` in this game row."""
     dk = (row or {}).get("dk") or {}
@@ -991,6 +1123,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso):
                                   f"Averaging {sum(vals[:n5]) / n5:.1f} over the last 5 and {sum(vals[:n15]) / n15:.1f} over the last {n15}",
                                   f"Minutes steady: {m5:.0f} per game over the last 5 ({m15:.0f} over the last {n15})",
                                   matchup_note(p),
+                                  *([tier_note(p)] if p.get("tiers") else []),
                                   *([injury_note(p)] if p.get("injury") else []),
                                   *([sched_note(p)] if abs(p.get("sched") or 0) >= 1 else []),
                                   "Not on the injury report at pick time"]})
@@ -1204,6 +1337,7 @@ def run_ladder(lad, plog, cands, slate, t_iso, now):
         return lad
     lad["steps"] = [x for x in lad["steps"] if x["date"] != t_iso]
     pick = ladder_pick(cands)
+    prev_step = today
     if pick:
         if not lad.get("attempt_started"):
             lad["attempt_started"] = t_iso
@@ -1218,7 +1352,7 @@ def run_ladder(lad, plog, cands, slate, t_iso, now):
         step.update({"date": t_iso, "attempt": lad["attempt"], "day": day, "stake": stake,
                      "to_win": rnd(stake * (decimal(pick["price"]) - 1), 2), "picked_at": stamp,
                      "why_ladder": f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value"})
-        lad["steps"].insert(0, step)
+        lad["steps"].insert(0, carry_open(step, prev_step))
         log(f"ladder: attempt {lad['attempt']} day {day}, ${stake:g} on {pick['label']} ({fmt_px(pick['price'])})")
     else:
         log("ladder: no bet cleared the ladder filters today (rest day)")
@@ -1326,7 +1460,8 @@ def ledger_rows(settled_bets, potd_hist, ladder):
                      "price": h.get("price"), "edge": h.get("edge"), "confidence": h.get("score"),
                      "result": h.get("result"), "status": _status(h.get("result")), "actual": h.get("actual"),
                      "units": h.get("units"), "why": " | ".join(h.get("reasons") or []),
-                     "picked_at": h.get("picked_at"), "graded_at": h.get("graded_at")})
+                     "picked_at": h.get("picked_at"), "graded_at": h.get("graded_at"), "clv": h.get("clv"),
+                     "open": [h.get("open_line"), h.get("open_price")], "close": [h.get("close_line"), h.get("close_price")]})
     for st in ladder.get("steps", []):
         r = st.get("result")
         rows.append({"id": f"ladder|{st['attempt']}|{st['day']}|{st['date']}", "source": "Ladder Challenge",
@@ -1337,7 +1472,8 @@ def ledger_rows(settled_bets, potd_hist, ladder):
                      "result": r, "status": _status(r), "actual": st.get("actual"),
                      "units": (rnd(st["stake"] * (decimal(st["price"]) - 1), 2) if r == "W" else -st["stake"] if r == "L" else 0.0) if r else None,
                      "why": " | ".join([st.get("why_ladder", "")] + (st.get("reasons") or [])).strip(" |"),
-                     "picked_at": st.get("picked_at"), "graded_at": st.get("graded_at")})
+                     "picked_at": st.get("picked_at"), "graded_at": st.get("graded_at"), "clv": st.get("clv"),
+                     "open": [st.get("open_line"), st.get("open_price")], "close": [st.get("close_line"), st.get("close_price")]})
     return rows
 
 
@@ -1596,6 +1732,8 @@ def main():
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
 
+    add_tier_hits(props, idx, dfn)
+
     # 3b. Pick of the Day: re-picked each run until its game tips off, then locked and saved for good
     potd_log = load(POTD_LOG, None)
     potd_hist = potd_log["picks"] if potd_log else prev.get("potd_history", [])
@@ -1612,9 +1750,10 @@ def main():
         potd_hist = [h for h in potd_hist if h["date"] != t_iso]
         if pick:
             pick["picked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
-            potd_hist.insert(0, pick)
+            potd_hist.insert(0, carry_open(pick, todays))
     # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
     ladder = run_ladder(load(LADDER_PATH, {}), plog, all_cands, slate, t_iso, now)
+    track_clv(potd_hist[:5] + ladder["steps"][:5], games, props, slate, now)
 
     # 3d. Alt-line ladders: lowest spending priority, morning run only, for the games of the best props
     alt_ladders = prev.get("alt_ladders", []) if prev.get("alt_date") == t_iso else []
@@ -1673,6 +1812,8 @@ def main():
             "potd_history": potd_hist[:400], "potd_alts": potd_alts,
             "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
+            "clv": {"potd": clv_summary(potd_hist), "ladder": clv_summary(ladder["steps"]),
+                    "all": clv_summary(potd_hist + ladder["steps"])},
             "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
                         "allowed_now": CREDITS.allowance(), "skipped": CREDITS.skipped, "slot": slot,
                         "calls": CREDITS.state["calls"][-20:], "history": CREDITS.state.get("history", [])[:14],

@@ -947,7 +947,7 @@ function renderProps() {
       <td class="stat price">${odds}</td>
       <td class="stat"><strong>${p.model}</strong>${extra}${mx}${ij}${sc}</td>
       <td class="stat"><div class="edgebar"><span class="${cls}" style="min-width:38px;">${e > 0 ? "+" : ""}${e}</span><span class="bar"><i style="width:${w}%;background:${e >= 0 ? "var(--good)" : "var(--bad)"};"></i></span><span class="team">${pct > 0 ? "+" : ""}${pct}%</span></div></td>
-      <td>${lean}</td>
+      <td>${lean}${tierHtml(p)}</td>
     </tr>`;
   }).join("") : `<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:28px;">${DATA.props.length ? "No props match these filters." : "No player props posted yet. They appear once DraftKings lines are up."}</td></tr>`;
 
@@ -1135,6 +1135,20 @@ document.querySelectorAll("#best-filters button").forEach(btn => {
 });
 
 // ---------- Records (permanent ledger) ----------
+function tierHtml(p) {
+  const t = p.tiers; if (!t) return "";
+  const nm = {tough: "tough D", mid: "avg D", soft: "soft D"};
+  const [a, n] = t[t.tonight] || [0, 0];
+  const side = p.edge > 0 ? "over" : "under";
+  const col = !n ? "var(--muted)" : a / n >= 0.6 ? "var(--good)" : a / n <= 0.4 ? "var(--bad)" : "var(--muted)";
+  const tip = ["tough", "mid", "soft"].map(k => `${nm[k]}: ${t[k][0]}/${t[k][1]} ${side}`).join(" · ");
+  return `<div style="font-size:11px;margin-top:4px;color:${col};" title="${p.opp} is a ${nm[t.tonight]} for ${p.stat} vs his position. ${tip}">vs ${nm[t.tonight]}: ${n ? a + "/" + n : "no games"}</div>`;
+}
+function clvBadge(r) {
+  const c = r.clv; if (!c || (!c.final && !c.line && !c.price)) return "";
+  const txt = c.line ? (c.line > 0 ? "+" : "") + c.line + " pts" : (c.price > 0 ? "+" : "") + c.price + "%";
+  return ` <span class="badge" title="Closing line value: ${r.open && r.open[0] != null ? "took " + r.open[0] + " (" + fmtPrice(r.open[1]) + ")" : "opened"} · ${c.final ? "closed" : "now"} ${r.close && r.close[0] != null ? r.close[0] + " (" + fmtPrice(r.close[1]) + ")" : ""}" style="background:${c.beat ? "rgba(46,204,113,0.14)" : "rgba(255,255,255,0.06)"};color:${c.beat ? "var(--good)" : "var(--muted)"};">CLV ${txt}</span>`;
+}
 var recSource = "all";
 function recRows() {
   const R = DATA.records;
@@ -1183,6 +1197,10 @@ function renderBankroll() {
     <div class="kpi"><div class="l">Record</div><div class="v">${w}-${g.length - w}</div><div class="s">${g.length ? Math.round(100 * w / g.length) : 0}% win rate</div></div>
     <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${unitRows.length ? sign(u) : "–"}</div><div class="s">${unitRows.length ? "ROI " + sign(Math.round(u / unitRows.length * 1000) / 10) + "%" : "Model bets and POTD"}</div></div>
     <div class="kpi"><div class="l">Pending</div><div class="v">${list.filter(r => !r.result).length}</div><div class="s">graded after games finish</div></div>
+    ${(() => { const c = list.filter(r => r.clv && r.clv.final); const bt = c.filter(r => r.clv.beat).length;
+      const al = c.length ? Math.round(c.reduce((t, r) => t + r.clv.line, 0) / c.length * 10) / 10 : 0;
+      const ap = c.length ? Math.round(c.reduce((t, r) => t + r.clv.price, 0) / c.length * 10) / 10 : 0;
+      return `<div class="kpi"><div class="l">Beat the close</div><div class="v ${c.length && bt / c.length >= 0.5 ? "positive" : ""}">${c.length ? bt + "/" + c.length : "–"}</div><div class="s">${c.length ? "avg " + sign(al) + " pts, " + sign(ap) + "% price" : "measured once games tip"}</div></div>`; })()}
     <div class="kpi"><div class="l">Streak</div><div class="v ${/^W/.test(streak) ? "positive" : /^L/.test(streak) ? "negative" : ""}">${streak}</div><div class="s">in this view</div></div>`;
   // grouped table
   const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : "Ladder"}</span>`;
@@ -1191,7 +1209,7 @@ function renderBankroll() {
     if (r.date !== last) { last = r.date; html += `<tr class="date-row"><td colspan="7">${new Date(r.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "long", day: "numeric", year: "numeric"})}</td></tr>`; }
     const money$ = r.source === "Ladder Challenge" ? (r.result === "W" ? `<span class="positive">+${money(r.units)}</span>` : r.result === "L" ? `<span class="negative">-${money(r.stake)}</span>` : `${money(r.stake || 0)} stake`) : (r.units != null && r.result ? `<span class="${r.units > 0 ? "positive" : r.units < 0 ? "negative" : ""}">${sign(r.units)}u</span>` : "–");
     html += `<tr class="rec-row" data-i="${i}" style="cursor:pointer;"><td>${tag(r.source)}${r.source === "Ladder Challenge" ? `<div class="team" style="margin-top:3px;">#${r.attempt} · Day ${r.day}</div>` : ""}</td>
-      <td><strong>${r.pick}</strong> ${r.price != null ? `<span class="price">${fmtPrice(r.price)}</span>` : ""}</td>
+      <td><strong>${r.pick}</strong> ${r.price != null ? `<span class="price">${fmtPrice(r.price)}</span>` : ""}${clvBadge(r)}</td>
       <td class="team" style="font-size:12px;">${(r.game || "").replace("@", " @ ")}</td><td class="team" style="font-size:12px;">${r.market}</td>
       <td>${resultPill(r)}</td><td class="team" style="font-size:12px;">${r.actual || "–"}</td><td class="stat">${money$}</td></tr>
       <tr class="rec-why" data-i="${i}" style="display:none;"><td colspan="7" style="background:var(--bg);">
