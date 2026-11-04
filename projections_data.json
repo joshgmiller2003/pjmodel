@@ -1,8 +1,4708 @@
 {
- "generated_at": "",
+ "generated_at": "2026-11-04T15:39:14Z",
  "season": "2026-27",
- "games": [],
- "props": [],
+ "games": [
+  {
+   "id": "PHI@DET",
+   "date": "2026-11-04",
+   "time": "7:00 PM ET",
+   "away": "PHI",
+   "home": "DET",
+   "model": {
+    "spread": -3.6,
+    "total": 220.7,
+    "ml_home": 0.62,
+    "ml_away": 0.38
+   },
+   "dk": {
+    "spread": "-2.5",
+    "total": 219.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 1.1,
+   "total_edge": 1.2,
+   "note": "Model DET -3.6, total 220.7; leans DET vs the market spread."
+  },
+  {
+   "id": "ATL@WAS",
+   "date": "2026-11-04",
+   "time": "7:00 PM ET",
+   "away": "ATL",
+   "home": "WAS",
+   "model": {
+    "spread": -2.5,
+    "total": 225.1,
+    "ml_home": 0.58,
+    "ml_away": 0.42
+   },
+   "dk": {
+    "spread": "+2.5",
+    "total": 232.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 5.0,
+   "total_edge": -7.4,
+   "note": "Model WAS -2.5, total 225.1; leans WAS vs the market spread."
+  },
+  {
+   "id": "MIL@BOS",
+   "date": "2026-11-04",
+   "time": "7:30 PM ET",
+   "away": "MIL",
+   "home": "BOS",
+   "model": {
+    "spread": -6.7,
+    "total": 228.2,
+    "ml_home": 0.71,
+    "ml_away": 0.29
+   },
+   "dk": {
+    "spread": "-11.5",
+    "total": 223.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -4.8,
+   "total_edge": 4.7,
+   "note": "Model BOS -6.7, total 228.2; leans MIL vs the market spread."
+  },
+  {
+   "id": "CHA@BKN",
+   "date": "2026-11-04",
+   "time": "7:30 PM ET",
+   "away": "CHA",
+   "home": "BKN",
+   "model": {
+    "spread": -3.1,
+    "total": 220.0,
+    "ml_home": 0.6,
+    "ml_away": 0.4
+   },
+   "dk": {
+    "spread": "+3.5",
+    "total": 212.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 6.6,
+   "total_edge": 7.5,
+   "note": "Model BKN -3.1, total 220; leans BKN vs the market spread."
+  },
+  {
+   "id": "CHI@NYK",
+   "date": "2026-11-04",
+   "time": "7:30 PM ET",
+   "away": "CHI",
+   "home": "NYK",
+   "model": {
+    "spread": -6.4,
+    "total": 226.7,
+    "ml_home": 0.7,
+    "ml_away": 0.3
+   },
+   "dk": {
+    "spread": "-11.5",
+    "total": 233.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -5.1,
+   "total_edge": -6.8,
+   "note": "Model NYK -6.4, total 226.7; leans CHI vs the market spread."
+  },
+  {
+   "id": "IND@MEM",
+   "date": "2026-11-04",
+   "time": "8:00 PM ET",
+   "away": "IND",
+   "home": "MEM",
+   "model": {
+    "spread": -6.3,
+    "total": 228.4,
+    "ml_home": 0.7,
+    "ml_away": 0.3
+   },
+   "dk": {
+    "spread": "-6.5",
+    "total": 229.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -0.2,
+   "total_edge": -1.1,
+   "note": "Model and market are close; no strong spread lean."
+  },
+  {
+   "id": "UTA@NOP",
+   "date": "2026-11-04",
+   "time": "8:00 PM ET",
+   "away": "UTA",
+   "home": "NOP",
+   "model": {
+    "spread": -5.5,
+    "total": 230.1,
+    "ml_home": 0.68,
+    "ml_away": 0.32
+   },
+   "dk": {
+    "spread": "-6.5",
+    "total": 233.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -1.0,
+   "total_edge": -3.4,
+   "note": "Model NOP -5.5, total 230.1; leans UTA vs the market spread."
+  },
+  {
+   "id": "CLE@OKC",
+   "date": "2026-11-04",
+   "time": "8:00 PM ET",
+   "away": "CLE",
+   "home": "OKC",
+   "model": {
+    "spread": -1.5,
+    "total": 226.3,
+    "ml_home": 0.55,
+    "ml_away": 0.45
+   },
+   "dk": {
+    "spread": "-3.5",
+    "total": 226.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -2.0,
+   "total_edge": -0.2,
+   "note": "Model OKC -1.5, total 226.3; leans CLE vs the market spread."
+  },
+  {
+   "id": "MIN@HOU",
+   "date": "2026-11-04",
+   "time": "8:30 PM ET",
+   "away": "MIN",
+   "home": "HOU",
+   "model": {
+    "spread": -2.7,
+    "total": 226.5,
+    "ml_home": 0.59,
+    "ml_away": 0.41
+   },
+   "dk": {
+    "spread": "-7.5",
+    "total": 220.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -4.8,
+   "total_edge": 6.0,
+   "note": "Model HOU -2.7, total 226.5; leans MIN vs the market spread."
+  },
+  {
+   "id": "TOR@DEN",
+   "date": "2026-11-04",
+   "time": "9:00 PM ET",
+   "away": "TOR",
+   "home": "DEN",
+   "model": {
+    "spread": -0.0,
+    "total": 228.2,
+    "ml_home": 0.5,
+    "ml_away": 0.5
+   },
+   "dk": {
+    "spread": "-4.5",
+    "total": 230.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -4.5,
+   "total_edge": -2.3,
+   "note": "Model DEN -0, total 228.2; leans TOR vs the market spread."
+  },
+  {
+   "id": "POR@PHX",
+   "date": "2026-11-04",
+   "time": "9:00 PM ET",
+   "away": "POR",
+   "home": "PHX",
+   "model": {
+    "spread": 2.1,
+    "total": 229.0,
+    "ml_home": 0.43,
+    "ml_away": 0.57
+   },
+   "dk": {
+    "spread": "+3.5",
+    "total": 227.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 1.4,
+   "total_edge": 1.5,
+   "note": "Model PHX +2.1, total 229; leans PHX vs the market spread."
+  },
+  {
+   "id": "DAL@SAS",
+   "date": "2026-11-04",
+   "time": "9:30 PM ET",
+   "away": "DAL",
+   "home": "SAS",
+   "model": {
+    "spread": -4.5,
+    "total": 226.1,
+    "ml_home": 0.65,
+    "ml_away": 0.35
+   },
+   "dk": {
+    "spread": "-12.5",
+    "total": 226.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": -8.0,
+   "total_edge": -0.4,
+   "note": "Model SAS -4.5, total 226.1; leans DAL vs the market spread."
+  },
+  {
+   "id": "LAL@SAC",
+   "date": "2026-11-04",
+   "time": "10:00 PM ET",
+   "away": "LAL",
+   "home": "SAC",
+   "model": {
+    "spread": 2.8,
+    "total": 231.3,
+    "ml_home": 0.41,
+    "ml_away": 0.59
+   },
+   "dk": {
+    "spread": "+12.5",
+    "total": 234.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 9.7,
+   "total_edge": -3.2,
+   "note": "Model SAC +2.8, total 231.3; leans SAC vs the market spread."
+  },
+  {
+   "id": "MIA@LAC",
+   "date": "2026-11-04",
+   "time": "10:30 PM ET",
+   "away": "MIA",
+   "home": "LAC",
+   "model": {
+    "spread": -1.9,
+    "total": 229.6,
+    "ml_home": 0.56,
+    "ml_away": 0.44
+   },
+   "dk": {
+    "spread": "+4.5",
+    "total": 233.5,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 6.4,
+   "total_edge": -3.9,
+   "note": "Model LAC -1.9, total 229.6; leans LAC vs the market spread."
+  },
+  {
+   "id": "ORL@PHX",
+   "date": "2026-11-05",
+   "time": "9:00 PM ET",
+   "away": "ORL",
+   "home": "PHX",
+   "model": {
+    "spread": -2.4,
+    "total": 226.9,
+    "ml_home": 0.58,
+    "ml_away": 0.42
+   },
+   "dk": {
+    "spread": "N/A",
+    "total": 0,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 0,
+   "total_edge": 0,
+   "note": "No market line available yet."
+  },
+  {
+   "id": "MIA@GSW",
+   "date": "2026-11-05",
+   "time": "10:00 PM ET",
+   "away": "MIA",
+   "home": "GSW",
+   "model": {
+    "spread": -4.4,
+    "total": 231.7,
+    "ml_home": 0.64,
+    "ml_away": 0.36
+   },
+   "dk": {
+    "spread": "N/A",
+    "total": 0,
+    "ml_away": "N/A",
+    "ml_home": "N/A"
+   },
+   "status": "Upcoming",
+   "spread_edge": 0,
+   "total_edge": 0,
+   "note": "No market line available yet."
+  }
+ ],
+ "props": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 7.0,
+   "dk": 8.5,
+   "edge": -1.5,
+   "side": "Under"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 7.3,
+   "dk": 6.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 5.2,
+   "dk": 4.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 5.0,
+   "dk": 4.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 4.5,
+   "dk": 4.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 4.7,
+   "dk": 3.5,
+   "edge": 1.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 4.3,
+   "dk": 3.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 3.0,
+   "dk": 2.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 2.2,
+   "dk": 2.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "AST",
+   "model": 2.3,
+   "dk": 2.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "BLK",
+   "model": 0.9,
+   "dk": 1.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "BLK",
+   "model": 0.8,
+   "dk": 0.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 22.4,
+   "dk": 25.5,
+   "edge": -3.1,
+   "side": "Under"
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 27.4,
+   "dk": 23.5,
+   "edge": 3.9,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 19.4,
+   "dk": 19.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 17.2,
+   "dk": 19.5,
+   "edge": -2.3,
+   "side": "Under"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 15.3,
+   "dk": 15.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 17.3,
+   "dk": 14.5,
+   "edge": 2.8,
+   "side": "Over"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 13.5,
+   "dk": 12.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "John Collins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 7.8,
+   "dk": 12.5,
+   "edge": -4.7,
+   "side": "Under"
+  },
+  {
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 12.2,
+   "dk": 11.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 9.3,
+   "dk": 10.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 9.6,
+   "dk": 9.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 10.9,
+   "dk": 8.5,
+   "edge": 2.4,
+   "side": "Over"
+  },
+  {
+   "player": "Kevin Huerter",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 6.1,
+   "dk": 7.5,
+   "edge": -1.4,
+   "side": "Under"
+  },
+  {
+   "player": "Javonte Green",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PTS",
+   "model": 6.6,
+   "dk": 6.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 34.8,
+   "dk": 39.5,
+   "edge": -4.7,
+   "side": "Under"
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 36.7,
+   "dk": 31.5,
+   "edge": 5.2,
+   "side": "Over"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 31.0,
+   "dk": 31.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 30.5,
+   "dk": 29.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 29.5,
+   "dk": 28.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 22.8,
+   "dk": 23.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 21.4,
+   "dk": 21.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 22.4,
+   "dk": 19.5,
+   "edge": 2.9,
+   "side": "Over"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 21.6,
+   "dk": 19.5,
+   "edge": 2.1,
+   "side": "Over"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "PRA",
+   "model": 17.5,
+   "dk": 17.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 7.0,
+   "dk": 7.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 9.0,
+   "dk": 7.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 7.1,
+   "dk": 6.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "John Collins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 6.3,
+   "dk": 6.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 6.8,
+   "dk": 6.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 7.0,
+   "dk": 5.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 5.3,
+   "dk": 5.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 7.2,
+   "dk": 5.5,
+   "edge": 1.7,
+   "side": "Over"
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 4.1,
+   "dk": 3.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Javonte Green",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 3.5,
+   "dk": 2.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "REB",
+   "model": 2.0,
+   "dk": 2.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 4.0,
+   "dk": 3.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 2.4,
+   "dk": 2.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 2.8,
+   "dk": 1.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Kevin Huerter",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 1.4,
+   "dk": 1.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 1.4,
+   "dk": 1.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 0.5,
+   "dk": 0.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Javonte Green",
+   "team": "DET",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 1.5,
+   "dk": 0.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "LeBron James",
+   "team": "PHI",
+   "game": "PHI@DET",
+   "stat": "3PM",
+   "model": 0.8,
+   "dk": 0.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Trae Young",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 9.9,
+   "dk": 10.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 7.9,
+   "dk": 7.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 4.3,
+   "dk": 5.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 4.0,
+   "dk": 3.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 4.5,
+   "dk": 3.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 2.8,
+   "dk": 3.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 1.7,
+   "dk": 2.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 2.0,
+   "dk": 2.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "AST",
+   "model": 2.2,
+   "dk": 1.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "BLK",
+   "model": 0.9,
+   "dk": 1.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "BLK",
+   "model": 1.0,
+   "dk": 0.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 23.2,
+   "dk": 23.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 20.7,
+   "dk": 21.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 17.8,
+   "dk": 20.5,
+   "edge": -2.7,
+   "side": "Under"
+  },
+  {
+   "player": "Trae Young",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 19.8,
+   "dk": 19.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 19.3,
+   "dk": 17.5,
+   "edge": 1.8,
+   "side": "Over"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 14.2,
+   "dk": 16.5,
+   "edge": -2.3,
+   "side": "Under"
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 16.6,
+   "dk": 14.5,
+   "edge": 2.1,
+   "side": "Over"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 12.0,
+   "dk": 14.5,
+   "edge": -2.5,
+   "side": "Under"
+  },
+  {
+   "player": "Aaron Wiggins",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 13.1,
+   "dk": 11.5,
+   "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 9.5,
+   "dk": 11.5,
+   "edge": -2.0,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 9.5,
+   "dk": 10.5,
+   "edge": -1.0,
+   "side": "Under"
+  },
+  {
+   "player": "Luguentz Dort",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 9.3,
+   "dk": 8.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Tre Johnson",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 9.2,
+   "dk": 8.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PTS",
+   "model": 8.2,
+   "dk": 8.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 34.7,
+   "dk": 37.5,
+   "edge": -2.8,
+   "side": "Under"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 34.4,
+   "dk": 36.5,
+   "edge": -2.1,
+   "side": "Under"
+  },
+  {
+   "player": "Trae Young",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 33.3,
+   "dk": 33.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 26.7,
+   "dk": 28.5,
+   "edge": -1.8,
+   "side": "Under"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 22.4,
+   "dk": 25.5,
+   "edge": -3.1,
+   "side": "Under"
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 25.7,
+   "dk": 25.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 25.6,
+   "dk": 24.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 20.9,
+   "dk": 23.5,
+   "edge": -2.6,
+   "side": "Under"
+  },
+  {
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 19.3,
+   "dk": 22.5,
+   "edge": -3.2,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "PRA",
+   "model": 17.3,
+   "dk": 18.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 9.2,
+   "dk": 10.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 9.0,
+   "dk": 9.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 7.7,
+   "dk": 8.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 5.6,
+   "dk": 6.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 5.5,
+   "dk": 5.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 4.7,
+   "dk": 5.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 4.4,
+   "dk": 4.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 3.6,
+   "dk": 3.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 3.3,
+   "dk": 3.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 2.8,
+   "dk": 2.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Trae Young",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "REB",
+   "model": 3.5,
+   "dk": 2.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 3.9,
+   "dk": 2.5,
+   "edge": 1.4,
+   "side": "Over"
+  },
+  {
+   "player": "Trae Young",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 2.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Aaron Wiggins",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 2.0,
+   "dk": 2.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Luguentz Dort",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.6,
+   "dk": 1.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "AJ Dybantsa",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.0,
+   "dk": 1.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.1,
+   "dk": 1.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.3,
+   "dk": 1.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Tre Johnson",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.1,
+   "dk": 1.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 0.7,
+   "dk": 0.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "game": "ATL@WAS",
+   "stat": "3PM",
+   "model": 1.0,
+   "dk": 0.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 7.8,
+   "dk": 7.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 4.8,
+   "dk": 4.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 3.5,
+   "dk": 4.5,
+   "edge": -1.0,
+   "side": "Under"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 5.0,
+   "dk": 4.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 4.0,
+   "dk": 4.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 4.2,
+   "dk": 3.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 2.8,
+   "dk": 3.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "AST",
+   "model": 1.4,
+   "dk": 2.5,
+   "edge": -1.1,
+   "side": "Under"
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "BLK",
+   "model": 2.8,
+   "dk": 1.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "BLK",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 27.9,
+   "dk": 27.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 21.6,
+   "dk": 20.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 21.2,
+   "dk": 20.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 14.2,
+   "dk": 16.5,
+   "edge": -2.3,
+   "side": "Under"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 11.6,
+   "dk": 16.5,
+   "edge": -4.9,
+   "side": "Under"
+  },
+  {
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 15.9,
+   "dk": 14.5,
+   "edge": 1.4,
+   "side": "Over"
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 9.4,
+   "dk": 11.5,
+   "edge": -2.1,
+   "side": "Under"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 10.3,
+   "dk": 10.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 10.6,
+   "dk": 10.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 7.8,
+   "dk": 9.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 9.4,
+   "dk": 9.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Kel'el Ware",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 11.4,
+   "dk": 9.5,
+   "edge": 1.9,
+   "side": "Over"
+  },
+  {
+   "player": "AJ Green",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PTS",
+   "model": 7.8,
+   "dk": 6.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 41.6,
+   "dk": 42.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 32.6,
+   "dk": 30.5,
+   "edge": 2.1,
+   "side": "Over"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 30.1,
+   "dk": 29.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 19.6,
+   "dk": 25.5,
+   "edge": -5.9,
+   "side": "Under"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 20.7,
+   "dk": 24.5,
+   "edge": -3.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 25.8,
+   "dk": 23.5,
+   "edge": 2.3,
+   "side": "Over"
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 15.5,
+   "dk": 18.5,
+   "edge": -3.0,
+   "side": "Under"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 18.5,
+   "dk": 17.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "PRA",
+   "model": 18.3,
+   "dk": 16.5,
+   "edge": 1.8,
+   "side": "Over"
+  },
+  {
+   "player": "Kel'el Ware",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 8.8,
+   "dk": 7.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 5.9,
+   "dk": 7.5,
+   "edge": -1.6,
+   "side": "Under"
+  },
+  {
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 5.6,
+   "dk": 6.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 7.1,
+   "dk": 5.5,
+   "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 5.1,
+   "dk": 5.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 6.0,
+   "dk": 4.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 4.9,
+   "dk": 4.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 6.2,
+   "dk": 4.5,
+   "edge": 1.7,
+   "side": "Over"
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 4.8,
+   "dk": 4.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 3.1,
+   "dk": 3.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 3.0,
+   "dk": 3.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "REB",
+   "model": 4.0,
+   "dk": 3.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 3.2,
+   "dk": 2.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 3.5,
+   "dk": 2.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.9,
+   "dk": 2.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.6,
+   "dk": 2.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Derrick White",
+   "team": "BOS",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.6,
+   "dk": 2.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "AJ Green",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 2.4,
+   "dk": 1.5,
+   "edge": 0.9,
+   "side": "Over"
+  },
+  {
+   "player": "Myles Turner",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.1,
+   "dk": 1.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.4,
+   "dk": 1.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Brayden Burries",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 0.9,
+   "dk": 1.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.2,
+   "dk": 0.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 1.5,
+   "dk": 0.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Kel'el Ware",
+   "team": "MIL",
+   "game": "MIL@BOS",
+   "stat": "3PM",
+   "model": 0.9,
+   "dk": 0.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 4.9,
+   "dk": 4.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 4.1,
+   "dk": 3.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 4.9,
+   "dk": 3.5,
+   "edge": 1.4,
+   "side": "Over"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 3.1,
+   "dk": 3.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 2.4,
+   "dk": 2.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 1.8,
+   "dk": 2.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Naz Reid",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 1.9,
+   "dk": 2.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 2.0,
+   "dk": 1.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "AST",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 23.6,
+   "dk": 22.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 20.6,
+   "dk": 21.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 20.5,
+   "dk": 19.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Naz Reid",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 15.5,
+   "dk": 15.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 10.8,
+   "dk": 12.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 12.0,
+   "dk": 10.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 14.5,
+   "dk": 10.5,
+   "edge": 4.0,
+   "side": "Over"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 9.1,
+   "dk": 8.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 7.2,
+   "dk": 7.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 10.7,
+   "dk": 7.5,
+   "edge": 3.2,
+   "side": "Over"
+  },
+  {
+   "player": "Noah Clowney",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PTS",
+   "model": 5.3,
+   "dk": 5.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 33.0,
+   "dk": 31.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 31.7,
+   "dk": 31.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 29.2,
+   "dk": 30.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Naz Reid",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 25.6,
+   "dk": 25.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 20.5,
+   "dk": 19.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 17.4,
+   "dk": 19.5,
+   "edge": -2.1,
+   "side": "Under"
+  },
+  {
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 16.5,
+   "dk": 17.5,
+   "edge": -1.0,
+   "side": "Under"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 17.2,
+   "dk": 17.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 19.8,
+   "dk": 15.5,
+   "edge": 4.3,
+   "side": "Over"
+  },
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "PRA",
+   "model": 19.0,
+   "dk": 14.5,
+   "edge": 4.5,
+   "side": "Over"
+  },
+  {
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 9.4,
+   "dk": 8.5,
+   "edge": 0.9,
+   "side": "Over"
+  },
+  {
+   "player": "Naz Reid",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 8.2,
+   "dk": 7.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Day'Ron Sharpe",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 7.4,
+   "dk": 7.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 7.7,
+   "dk": 6.5,
+   "edge": 1.2,
+   "side": "Over"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 7.1,
+   "dk": 6.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 5.5,
+   "dk": 5.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Noah Clowney",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 4.9,
+   "dk": 3.5,
+   "edge": 1.4,
+   "side": "Over"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 2.8,
+   "dk": 2.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 3.3,
+   "dk": 2.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "REB",
+   "model": 2.1,
+   "dk": 2.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 3.3,
+   "dk": 3.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 3.5,
+   "dk": 2.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Naz Reid",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 2.4,
+   "dk": 2.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 3.3,
+   "dk": 2.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Mikel Brown Jr.",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 1.6,
+   "dk": 1.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Julius Randle",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Noah Clowney",
+   "team": "BKN",
+   "game": "CHA@BKN",
+   "stat": "3PM",
+   "model": 0.6,
+   "dk": 0.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 8.0,
+   "dk": 7.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 5.3,
+   "dk": 6.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 3.8,
+   "dk": 3.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 3.5,
+   "dk": 3.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Tre Jones",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 3.0,
+   "dk": 2.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 1.6,
+   "dk": 2.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "AST",
+   "model": 2.1,
+   "dk": 1.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "BLK",
+   "model": 1.3,
+   "dk": 1.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "BLK",
+   "model": 0.7,
+   "dk": 0.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 25.8,
+   "dk": 24.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 21.6,
+   "dk": 19.5,
+   "edge": 2.1,
+   "side": "Over"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 19.8,
+   "dk": 19.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 20.8,
+   "dk": 19.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 17.4,
+   "dk": 17.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 12.5,
+   "dk": 12.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 9.0,
+   "dk": 12.5,
+   "edge": -3.5,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 12.1,
+   "dk": 10.5,
+   "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 6.1,
+   "dk": 10.5,
+   "edge": -4.4,
+   "side": "Under"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 8.9,
+   "dk": 9.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Tre Jones",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 10.2,
+   "dk": 8.5,
+   "edge": 1.7,
+   "side": "Over"
+  },
+  {
+   "player": "Landry Shamet",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PTS",
+   "model": 10.3,
+   "dk": 8.5,
+   "edge": 1.8,
+   "side": "Over"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 39.2,
+   "dk": 36.5,
+   "edge": 2.7,
+   "side": "Over"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 33.8,
+   "dk": 35.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 30.3,
+   "dk": 28.5,
+   "edge": 1.8,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 22.3,
+   "dk": 26.5,
+   "edge": -4.2,
+   "side": "Under"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 24.3,
+   "dk": 24.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 25.6,
+   "dk": 24.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 19.8,
+   "dk": 21.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 23.1,
+   "dk": 19.5,
+   "edge": 3.6,
+   "side": "Over"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 18.6,
+   "dk": 19.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 10.3,
+   "dk": 15.5,
+   "edge": -5.2,
+   "side": "Under"
+  },
+  {
+   "player": "Tre Jones",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "PRA",
+   "model": 16.1,
+   "dk": 14.5,
+   "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 14.1,
+   "dk": 12.5,
+   "edge": 1.6,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 7.2,
+   "dk": 7.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 8.9,
+   "dk": 7.5,
+   "edge": 1.4,
+   "side": "Over"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 6.7,
+   "dk": 6.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 5.3,
+   "dk": 6.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 5.6,
+   "dk": 4.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 4.3,
+   "dk": 4.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 2.7,
+   "dk": 3.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 2.6,
+   "dk": 3.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Tre Jones",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "REB",
+   "model": 2.9,
+   "dk": 2.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 2.4,
+   "dk": 2.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Norman Powell",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "OG Anunoby",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.9,
+   "dk": 2.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Landry Shamet",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 2.3,
+   "dk": 1.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 2.6,
+   "dk": 1.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.3,
+   "dk": 1.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.9,
+   "dk": 1.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 0.9,
+   "dk": 1.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "game": "CHI@NYK",
+   "stat": "3PM",
+   "model": 1.0,
+   "dk": 1.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 7.4,
+   "dk": 7.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 5.7,
+   "dk": 6.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 5.6,
+   "dk": 4.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 5.5,
+   "dk": 4.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 4.0,
+   "dk": 4.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "AST",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Zach Edey",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "BLK",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "BLK",
+   "model": 0.9,
+   "dk": 0.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 28.5,
+   "dk": 22.5,
+   "edge": 6.0,
+   "side": "Over"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 21.3,
+   "dk": 22.5,
+   "edge": -1.2,
+   "side": "Under"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 18.3,
+   "dk": 17.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 17.5,
+   "dk": 17.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 12.9,
+   "dk": 13.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Aaron Nesmith",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 12.4,
+   "dk": 12.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 9.5,
+   "dk": 10.5,
+   "edge": -1.0,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 12.9,
+   "dk": 10.5,
+   "edge": 2.4,
+   "side": "Over"
+  },
+  {
+   "player": "Kelly Oubre Jr.",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 9.2,
+   "dk": 9.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Zach Edey",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 6.8,
+   "dk": 8.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PTS",
+   "model": 9.9,
+   "dk": 7.5,
+   "edge": 2.4,
+   "side": "Over"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 32.9,
+   "dk": 33.5,
+   "edge": -0.6,
+   "side": "Under"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 37.7,
+   "dk": 32.5,
+   "edge": 5.2,
+   "side": "Over"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 33.3,
+   "dk": 32.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 27.8,
+   "dk": 29.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 24.0,
+   "dk": 23.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "PRA",
+   "model": 18.9,
+   "dk": 14.5,
+   "edge": 4.4,
+   "side": "Over"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 10.2,
+   "dk": 9.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Zach Edey",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 7.2,
+   "dk": 8.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 8.6,
+   "dk": 7.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 7.5,
+   "dk": 6.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 3.6,
+   "dk": 3.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 3.5,
+   "dk": 3.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 2.2,
+   "dk": 2.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "REB",
+   "model": 3.6,
+   "dk": 2.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Ty Jerome",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.3,
+   "dk": 2.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Aaron Nesmith",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.0,
+   "dk": 1.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 1.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 1.4,
+   "dk": 1.5,
+   "edge": -0.1,
+   "side": "Under"
+  },
+  {
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 1.2,
+   "dk": 1.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 2.1,
+   "dk": 1.5,
+   "edge": 0.6,
+   "side": "Over"
+  },
+  {
+   "player": "Kelly Oubre Jr.",
+   "team": "IND",
+   "game": "IND@MEM",
+   "stat": "3PM",
+   "model": 1.0,
+   "dk": 1.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 6.0,
+   "dk": 5.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 5.3,
+   "dk": 5.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 3.3,
+   "dk": 3.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 5.2,
+   "dk": 3.5,
+   "edge": 1.7,
+   "side": "Over"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 3.5,
+   "dk": 2.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 2.7,
+   "dk": 2.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Derik Queen",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "AST",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 16.5,
+   "dk": 21.5,
+   "edge": -5.0,
+   "side": "Under"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 19.7,
+   "dk": 20.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 21.8,
+   "dk": 20.5,
+   "edge": 1.3,
+   "side": "Over"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 18.1,
+   "dk": 18.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 15.4,
+   "dk": 16.5,
+   "edge": -1.1,
+   "side": "Under"
+  },
+  {
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 14.0,
+   "dk": 13.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 14.0,
+   "dk": 13.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Saddiq Bey",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 16.6,
+   "dk": 13.5,
+   "edge": 3.1,
+   "side": "Over"
+  },
+  {
+   "player": "Ace Bailey",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 12.8,
+   "dk": 13.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Derik Queen",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 12.7,
+   "dk": 9.5,
+   "edge": 3.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 8.3,
+   "dk": 8.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Karlo Matkovic",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 11.2,
+   "dk": 8.5,
+   "edge": 2.7,
+   "side": "Over"
+  },
+  {
+   "player": "Brice Sensabaugh",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PTS",
+   "model": 9.6,
+   "dk": 8.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 29.2,
+   "dk": 30.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 29.8,
+   "dk": 29.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 24.1,
+   "dk": 29.5,
+   "edge": -5.4,
+   "side": "Under"
+  },
+  {
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 29.8,
+   "dk": 29.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 23.5,
+   "dk": 24.5,
+   "edge": -1.0,
+   "side": "Under"
+  },
+  {
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 21.7,
+   "dk": 22.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 23.7,
+   "dk": 21.5,
+   "edge": 2.2,
+   "side": "Over"
+  },
+  {
+   "player": "Derik Queen",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "PRA",
+   "model": 23.0,
+   "dk": 18.5,
+   "edge": 4.5,
+   "side": "Over"
+  },
+  {
+   "player": "Derik Queen",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 7.7,
+   "dk": 6.5,
+   "edge": 1.2,
+   "side": "Over"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 5.8,
+   "dk": 6.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Jaxson Hayes",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 6.3,
+   "dk": 6.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Ace Bailey",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 7.8,
+   "dk": 5.5,
+   "edge": 2.3,
+   "side": "Over"
+  },
+  {
+   "player": "Karlo Matkovic",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 5.0,
+   "dk": 5.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Zion Williamson",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 5.3,
+   "dk": 5.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 5.7,
+   "dk": 5.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 4.6,
+   "dk": 4.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Saddiq Bey",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 4.0,
+   "dk": 4.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 4.3,
+   "dk": 3.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 4.6,
+   "dk": 3.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "REB",
+   "model": 4.2,
+   "dk": 3.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 2.2,
+   "dk": 2.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 2.6,
+   "dk": 2.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Keyonte George",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 2.1,
+   "dk": 2.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Ace Bailey",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Darryn Peterson",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Saddiq Bey",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 0.7,
+   "dk": 1.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 1.1,
+   "dk": 1.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Brice Sensabaugh",
+   "team": "UTA",
+   "game": "UTA@NOP",
+   "stat": "3PM",
+   "model": 1.9,
+   "dk": 1.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 6.2,
+   "dk": 6.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 4.0,
+   "dk": 6.5,
+   "edge": -2.5,
+   "side": "Under"
+  },
+  {
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 5.3,
+   "dk": 5.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 3.6,
+   "dk": 3.5,
+   "edge": 0.1,
+   "side": "Over"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 3.5,
+   "dk": 3.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 2.4,
+   "dk": 3.5,
+   "edge": -1.1,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Caruso",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 3.6,
+   "dk": 2.5,
+   "edge": 1.1,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "AST",
+   "model": 1.7,
+   "dk": 2.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "BLK",
+   "model": 1.7,
+   "dk": 1.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Aday Mara",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "BLK",
+   "model": 1.8,
+   "dk": 1.5,
+   "edge": 0.3,
+   "side": "Over"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "BLK",
+   "model": 1.1,
+   "dk": 1.5,
+   "edge": -0.4,
+   "side": "Under"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 28.7,
+   "dk": 31.5,
+   "edge": -2.8,
+   "side": "Under"
+  },
+  {
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 21.0,
+   "dk": 23.5,
+   "edge": -2.5,
+   "side": "Under"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 17.8,
+   "dk": 18.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 15.7,
+   "dk": 16.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 18.3,
+   "dk": 16.5,
+   "edge": 1.8,
+   "side": "Over"
+  },
+  {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 14.7,
+   "dk": 13.5,
+   "edge": 1.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jared McCain",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 10.8,
+   "dk": 12.5,
+   "edge": -1.7,
+   "side": "Under"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 9.2,
+   "dk": 10.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Sam Merrill",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 8.2,
+   "dk": 9.5,
+   "edge": -1.3,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Caruso",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 8.9,
+   "dk": 8.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Aday Mara",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 7.0,
+   "dk": 8.5,
+   "edge": -1.5,
+   "side": "Under"
+  },
+  {
+   "player": "Kenrich Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 7.0,
+   "dk": 7.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PTS",
+   "model": 3.1,
+   "dk": 6.5,
+   "edge": -3.4,
+   "side": "Under"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 37.0,
+   "dk": 42.5,
+   "edge": -5.5,
+   "side": "Under"
+  },
+  {
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 31.6,
+   "dk": 33.5,
+   "edge": -1.9,
+   "side": "Under"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 29.7,
+   "dk": 29.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 26.6,
+   "dk": 28.5,
+   "edge": -1.9,
+   "side": "Under"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 25.1,
+   "dk": 26.5,
+   "edge": -1.4,
+   "side": "Under"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 21.7,
+   "dk": 25.5,
+   "edge": -3.8,
+   "side": "Under"
+  },
+  {
+   "player": "Jared McCain",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 16.4,
+   "dk": 18.5,
+   "edge": -2.1,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Caruso",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 17.0,
+   "dk": 15.5,
+   "edge": 1.5,
+   "side": "Over"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "PRA",
+   "model": 8.9,
+   "dk": 15.5,
+   "edge": -6.6,
+   "side": "Under"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 10.2,
+   "dk": 10.5,
+   "edge": -0.3,
+   "side": "Under"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 7.8,
+   "dk": 8.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 8.7,
+   "dk": 8.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Aday Mara",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 6.0,
+   "dk": 6.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 4.2,
+   "dk": 6.5,
+   "edge": -2.3,
+   "side": "Under"
+  },
+  {
+   "player": "Kenrich Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 4.0,
+   "dk": 4.5,
+   "edge": -0.5,
+   "side": "Under"
+  },
+  {
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 5.2,
+   "dk": 4.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 4.7,
+   "dk": 4.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 4.3,
+   "dk": 3.5,
+   "edge": 0.8,
+   "side": "Over"
+  },
+  {
+   "player": "Alex Caruso",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 4.5,
+   "dk": 3.5,
+   "edge": 1.0,
+   "side": "Over"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 3.7,
+   "dk": 3.5,
+   "edge": 0.2,
+   "side": "Over"
+  },
+  {
+   "player": "Jared McCain",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 3.4,
+   "dk": 2.5,
+   "edge": 0.9,
+   "side": "Over"
+  },
+  {
+   "player": "Sam Merrill",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "REB",
+   "model": 3.0,
+   "dk": 2.5,
+   "edge": 0.5,
+   "side": "Over"
+  },
+  {
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "James Harden",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 2.5,
+   "dk": 2.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Jared McCain",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 1.6,
+   "dk": 2.5,
+   "edge": -0.9,
+   "side": "Under"
+  },
+  {
+   "player": "Sam Merrill",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 1.7,
+   "dk": 2.5,
+   "edge": -0.8,
+   "side": "Under"
+  },
+  {
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 2.3,
+   "dk": 2.5,
+   "edge": -0.2,
+   "side": "Under"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 0.8,
+   "dk": 1.5,
+   "edge": -0.7,
+   "side": "Under"
+  },
+  {
+   "player": "Alex Caruso",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 1.9,
+   "dk": 1.5,
+   "edge": 0.4,
+   "side": "Over"
+  },
+  {
+   "player": "Kenrich Williams",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 1.5,
+   "dk": 1.5,
+   "edge": 0.0,
+   "side": "Under"
+  },
+  {
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 2.2,
+   "dk": 1.5,
+   "edge": 0.7,
+   "side": "Over"
+  },
+  {
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "game": "CLE@OKC",
+   "stat": "3PM",
+   "model": 0.6,
+   "dk": 1.5,
+   "edge": -0.9,
+   "side": "Under"
+  }
+ ],
  "teams": {
   "ATL": "Atlanta Hawks",
   "BOS": "Boston Celtics",
@@ -35,8 +4735,681 @@
   "UTA": "Utah Jazz",
   "WAS": "Washington Wizards"
  },
- "injuries": [],
- "injuries_updated": "waiting for first update",
+ "injuries": [
+  {
+   "player": "Jock Landale",
+   "team": "ATL",
+   "status": "Out",
+   "reason": "Left Hip",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "status": "Day-To-Day",
+   "reason": "Left Ankle",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Mouhamed Gueye",
+   "team": "ATL",
+   "status": "Out",
+   "reason": "Left Foot",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Henri Veesaar",
+   "team": "ATL",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "status": "Day-To-Day",
+   "reason": "Right Shoulder",
+   "game": "MIL@BOS"
+  },
+  {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "status": "Day-To-Day",
+   "reason": "Rest",
+   "game": "MIL@BOS"
+  },
+  {
+   "player": "Devin Carter",
+   "team": "BOS",
+   "status": "Out",
+   "reason": "Illness",
+   "game": "MIL@BOS"
+  },
+  {
+   "player": "Egor Demin",
+   "team": "BKN",
+   "status": "Out",
+   "reason": "Right Leg",
+   "game": "CHA@BKN"
+  },
+  {
+   "player": "Tyler Bilodeau",
+   "team": "BKN",
+   "status": "Out",
+   "reason": "Right Shoulder",
+   "game": "CHA@BKN"
+  },
+  {
+   "player": "Kon Knueppel",
+   "team": "CHA",
+   "status": "Out",
+   "reason": "Left Hamstring",
+   "game": "CHA@BKN"
+  },
+  {
+   "player": "Coby White",
+   "team": "CHA",
+   "status": "Day-To-Day",
+   "reason": "Left Calf",
+   "game": "CHA@BKN"
+  },
+  {
+   "player": "Grant Williams",
+   "team": "CHA",
+   "status": "Out",
+   "reason": "Right Hamstring",
+   "game": "CHA@BKN"
+  },
+  {
+   "player": "Nic Claxton",
+   "team": "CHI",
+   "status": "Out",
+   "reason": "Not Specified Hamstring",
+   "game": "CHI@NYK"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "status": "Day-To-Day",
+   "reason": "Finger",
+   "game": "CHI@NYK"
+  },
+  {
+   "player": "Jaylon Tyson",
+   "team": "CLE",
+   "status": "Out",
+   "reason": "Right Ankle",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "status": "Out",
+   "reason": "Right Hamstring",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Max Christie",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Hip",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Santi Aldama",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Tarik Biberovic",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Heel",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Dereck Lively II",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Sergio de Larrea",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Cameron Johnson",
+   "team": "DEN",
+   "status": "Day-To-Day",
+   "reason": "Ankle",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Alpha Diallo",
+   "team": "DEN",
+   "status": "Day-To-Day",
+   "reason": "Right Wrist",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Spencer Jones",
+   "team": "DEN",
+   "status": "Out",
+   "reason": "Not Specified Hamstring",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Julian Strawther",
+   "team": "DEN",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "status": "Out",
+   "reason": "Right Hip",
+   "game": "PHI@DET"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "status": "Out",
+   "reason": "Right Hamstring",
+   "game": "PHI@DET"
+  },
+  {
+   "player": "Brandon Williams",
+   "team": "GSW",
+   "status": "Day-To-Day",
+   "reason": "Left Quadriceps",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "status": "Day-To-Day",
+   "reason": "Knee",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Al Horford",
+   "team": "GSW",
+   "status": "Day-To-Day",
+   "reason": "Rest",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Kristaps Porzingis",
+   "team": "GSW",
+   "status": "Out",
+   "reason": "Illness",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Moses Moody",
+   "team": "GSW",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Jimmy Butler III",
+   "team": "GSW",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Clint Capela",
+   "team": "HOU",
+   "status": "Day-To-Day",
+   "reason": "Right Ankle",
+   "game": "MIN@HOU"
+  },
+  {
+   "player": "Steven Adams",
+   "team": "HOU",
+   "status": "Out",
+   "reason": "Right Calf",
+   "game": "MIN@HOU"
+  },
+  {
+   "player": "Ivica Zubac",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Left Ankle",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Kelly Oubre Jr.",
+   "team": "IND",
+   "status": "Day-To-Day",
+   "reason": "Left Knee",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Obi Toppin",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Back",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "T.J. McConnell",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Right Hamstring",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Johnny Furphy",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Ben Sheppard",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Tyrese Haliburton",
+   "team": "IND",
+   "status": "Out",
+   "reason": "Left Hamstring",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "MIA@LAC"
+  },
+  {
+   "player": "Brandon Ingram",
+   "team": "LAC",
+   "status": "Out",
+   "reason": "Right Achilles",
+   "game": "MIA@LAC"
+  },
+  {
+   "player": "Bradley Beal",
+   "team": "LAC",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "MIA@LAC"
+  },
+  {
+   "player": "Jordan Miller",
+   "team": "LAC",
+   "status": "Out",
+   "reason": "Left Shoulder",
+   "game": "MIA@LAC"
+  },
+  {
+   "player": "Adou Thiero",
+   "team": "LAL",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "LAL@SAC"
+  },
+  {
+   "player": "Quinten Post",
+   "team": "MEM",
+   "status": "Day-To-Day",
+   "reason": "Right Ankle",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "status": "Out",
+   "reason": "Back",
+   "game": "IND@MEM"
+  },
+  {
+   "player": "Myron Gardner",
+   "team": "MIA",
+   "status": "Day-To-Day",
+   "reason": "Right Quadriceps",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "status": "Day-To-Day",
+   "reason": "Right Wrist",
+   "game": "MIA@GSW"
+  },
+  {
+   "player": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "status": "Day-To-Day",
+   "reason": "Left Hip",
+   "game": "MIN@HOU"
+  },
+  {
+   "player": "Anthony Edwards",
+   "team": "MIN",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "MIN@HOU"
+  },
+  {
+   "player": "Donte DiVincenzo",
+   "team": "MIN",
+   "status": "Out",
+   "reason": "Right Achilles",
+   "game": "MIN@HOU"
+  },
+  {
+   "player": "Jordan Poole",
+   "team": "NOP",
+   "status": "Out",
+   "reason": "Left Ankle",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "status": "Day-To-Day",
+   "reason": "Knee",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NOP",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Josh Hart",
+   "team": "NYK",
+   "status": "Day-To-Day",
+   "reason": "Ankle",
+   "game": "CHI@NYK"
+  },
+  {
+   "player": "Nikola Topic",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Back",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Thomas Sorber",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Knee",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "status": "Day-To-Day",
+   "reason": "Back",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Cason Wallace",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Left Shoulder",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Chet Holmgren",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Jalen Williams",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Left Leg",
+   "game": "CLE@OKC"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "status": "Day-To-Day",
+   "reason": "Rest",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Jonathan Isaac",
+   "team": "ORL",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Paolo Banchero",
+   "team": "ORL",
+   "status": "Out",
+   "reason": "Right Ankle",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Noah Penda",
+   "team": "ORL",
+   "status": "Out",
+   "reason": "Right Hamstring",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Izaiyah Nelson",
+   "team": "ORL",
+   "status": "Out",
+   "reason": "Left Ankle",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Dominick Barlow",
+   "team": "PHI",
+   "status": "Out",
+   "reason": "Not Specified Back",
+   "game": "PHI@DET"
+  },
+  {
+   "player": "Ariel Hukporti",
+   "team": "PHI",
+   "status": "Out",
+   "reason": "Right Achilles",
+   "game": "PHI@DET"
+  },
+  {
+   "player": "Jordan Goodwin",
+   "team": "PHX",
+   "status": "Day-To-Day",
+   "reason": "Left Calf",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Rasheer Fleming",
+   "team": "PHX",
+   "status": "Day-To-Day",
+   "reason": "Left Ankle",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Mark Williams",
+   "team": "PHX",
+   "status": "Out",
+   "reason": "Left Shoulder",
+   "game": "ORL@PHX"
+  },
+  {
+   "player": "Ja Morant",
+   "team": "POR",
+   "status": "Out",
+   "reason": "Left Hamstring",
+   "game": "POR@PHX"
+  },
+  {
+   "player": "Shaedon Sharpe",
+   "team": "POR",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "POR@PHX"
+  },
+  {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "status": "Day-To-Day",
+   "reason": "Left Ankle",
+   "game": "LAL@SAC"
+  },
+  {
+   "player": "Maxime Raynaud",
+   "team": "SAC",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "LAL@SAC"
+  },
+  {
+   "player": "Keegan Murray",
+   "team": "SAC",
+   "status": "Out",
+   "reason": "Ankle",
+   "game": "LAL@SAC"
+  },
+  {
+   "player": "Ben Simmons",
+   "team": "SAC",
+   "status": "Out",
+   "reason": "Right Achilles",
+   "game": "LAL@SAC"
+  },
+  {
+   "player": "Tobias Harris",
+   "team": "SAS",
+   "status": "Out",
+   "reason": "Left Calf",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Jayden Quaintance",
+   "team": "SAS",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Jakob Poeltl",
+   "team": "TOR",
+   "status": "Day-To-Day",
+   "reason": "Left Shoulder",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Nate Bittle",
+   "team": "TOR",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "TOR@DEN"
+  },
+  {
+   "player": "Jusuf Nurkic",
+   "team": "UTA",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Mo Bamba",
+   "team": "UTA",
+   "status": "Day-To-Day",
+   "reason": "Right Ankle",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Jaren Jackson Jr.",
+   "team": "UTA",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Trey Alexander",
+   "team": "UTA",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "UTA@NOP"
+  },
+  {
+   "player": "Anthony Gill",
+   "team": "WAS",
+   "status": "Day-To-Day",
+   "reason": "Back",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Alex Sarr",
+   "team": "WAS",
+   "status": "Day-To-Day",
+   "reason": "Left Knee",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Reece Beekman",
+   "team": "WAS",
+   "status": "Out",
+   "reason": "Shoulder",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Tristan Vukcevic",
+   "team": "WAS",
+   "status": "Out",
+   "reason": "Left Hip",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Justin Champagnie",
+   "team": "WAS",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "ATL@WAS"
+  },
+  {
+   "player": "Jamir Watkins",
+   "team": "WAS",
+   "status": "Out",
+   "reason": "Left Knee",
+   "game": "ATL@WAS"
+  }
+ ],
+ "injuries_updated": "11/04 10:39 AM ET",
  "residuals": {
   "player": {},
   "team": [],
@@ -45,10 +5418,360 @@
   "alpha": 0.45
  },
  "model_notes": [
-  "Waiting for the first automatic update."
+  "Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
+  "Adjustments: opponent defense (capped +/-5%), home court for games; injured players skipped",
+  "Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now 0.45)",
+  "Benchmark: DraftKings via ESPN (games) and The Odds API (props)",
+  "Bets are scored at flat 1 unit, -110 (win +0.91, loss -1)"
  ],
- "prediction_history": [],
- "notes": "Waiting for the first automatic update.",
+ "prediction_history": [
+  {
+   "timestamp": "2026-11-04T10:39",
+   "games": [
+    {
+     "id": "PHI@DET",
+     "matchup": "PHI @ DET",
+     "model_spread": -3.6,
+     "model_total": 220.7,
+     "dk_spread": "-2.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@WAS",
+     "matchup": "ATL @ WAS",
+     "model_spread": -2.5,
+     "model_total": 225.1,
+     "dk_spread": "+2.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "MIL@BOS",
+     "matchup": "MIL @ BOS",
+     "model_spread": -6.7,
+     "model_total": 228.2,
+     "dk_spread": "-11.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CHA@BKN",
+     "matchup": "CHA @ BKN",
+     "model_spread": -3.1,
+     "model_total": 220.0,
+     "dk_spread": "+3.5",
+     "dk_total": 212.5
+    },
+    {
+     "id": "CHI@NYK",
+     "matchup": "CHI @ NYK",
+     "model_spread": -6.4,
+     "model_total": 226.7,
+     "dk_spread": "-11.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "IND@MEM",
+     "matchup": "IND @ MEM",
+     "model_spread": -6.3,
+     "model_total": 228.4,
+     "dk_spread": "-6.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "UTA@NOP",
+     "matchup": "UTA @ NOP",
+     "model_spread": -5.5,
+     "model_total": 230.1,
+     "dk_spread": "-6.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "CLE@OKC",
+     "matchup": "CLE @ OKC",
+     "model_spread": -1.5,
+     "model_total": 226.3,
+     "dk_spread": "-3.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIN@HOU",
+     "matchup": "MIN @ HOU",
+     "model_spread": -2.7,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "TOR@DEN",
+     "matchup": "TOR @ DEN",
+     "model_spread": -0.0,
+     "model_total": 228.2,
+     "dk_spread": "-4.5",
+     "dk_total": 230.5
+    },
+    {
+     "id": "POR@PHX",
+     "matchup": "POR @ PHX",
+     "model_spread": 2.1,
+     "model_total": 229.0,
+     "dk_spread": "+3.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "DAL@SAS",
+     "matchup": "DAL @ SAS",
+     "model_spread": -4.5,
+     "model_total": 226.1,
+     "dk_spread": "-12.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "LAL@SAC",
+     "matchup": "LAL @ SAC",
+     "model_spread": 2.8,
+     "model_total": 231.3,
+     "dk_spread": "+12.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@LAC",
+     "matchup": "MIA @ LAC",
+     "model_spread": -1.9,
+     "model_total": 229.6,
+     "dk_spread": "+4.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.4,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Jaylin Williams",
+     "stat": "PRA",
+     "model": 8.9,
+     "dk": 15.5,
+     "edge": -6.6
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 28.5,
+     "dk": 22.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PRA",
+     "model": 19.6,
+     "dk": 25.5,
+     "edge": -5.9
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 37.0,
+     "dk": 42.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PRA",
+     "model": 24.1,
+     "dk": 29.5,
+     "edge": -5.4
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 36.7,
+     "dk": 31.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PRA",
+     "model": 10.3,
+     "dk": 15.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 37.7,
+     "dk": 32.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PTS",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PTS",
+     "model": 11.6,
+     "dk": 16.5,
+     "edge": -4.9
+    },
+    {
+     "player": "John Collins",
+     "stat": "PTS",
+     "model": 7.8,
+     "dk": 12.5,
+     "edge": -4.7
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PRA",
+     "model": 34.8,
+     "dk": 39.5,
+     "edge": -4.7
+    },
+    {
+     "player": "Dennis Schroder",
+     "stat": "PRA",
+     "model": 19.0,
+     "dk": 14.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PRA",
+     "model": 23.0,
+     "dk": 18.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PTS",
+     "model": 6.1,
+     "dk": 10.5,
+     "edge": -4.4
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PRA",
+     "model": 18.9,
+     "dk": 14.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PRA",
+     "model": 19.8,
+     "dk": 15.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Josh Giddey",
+     "stat": "PRA",
+     "model": 22.3,
+     "dk": 26.5,
+     "edge": -4.2
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PTS",
+     "model": 14.5,
+     "dk": 10.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PTS",
+     "model": 27.4,
+     "dk": 23.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Payton Pritchard",
+     "stat": "PRA",
+     "model": 20.7,
+     "dk": 24.5,
+     "edge": -3.8
+    },
+    {
+     "player": "Isaiah Hartenstein",
+     "stat": "PRA",
+     "model": 21.7,
+     "dk": 25.5,
+     "edge": -3.8
+    },
+    {
+     "player": "Jalen Smith",
+     "stat": "PRA",
+     "model": 23.1,
+     "dk": 19.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Josh Giddey",
+     "stat": "PTS",
+     "model": 9.0,
+     "dk": 12.5,
+     "edge": -3.5
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PTS",
+     "model": 3.1,
+     "dk": 6.5,
+     "edge": -3.4
+    },
+    {
+     "player": "Dyson Daniels",
+     "stat": "PRA",
+     "model": 19.3,
+     "dk": 22.5,
+     "edge": -3.2
+    },
+    {
+     "player": "Dennis Schroder",
+     "stat": "PTS",
+     "model": 10.7,
+     "dk": 7.5,
+     "edge": 3.2
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PTS",
+     "model": 12.7,
+     "dk": 9.5,
+     "edge": 3.2
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PTS",
+     "model": 22.4,
+     "dk": 25.5,
+     "edge": -3.1
+    },
+    {
+     "player": "Onyeka Okongwu",
+     "stat": "PRA",
+     "model": 22.4,
+     "dk": 25.5,
+     "edge": -3.1
+    }
+   ]
+  }
+ ],
+ "notes": "Model data updates automatically each day.",
  "settled_bets": [],
  "record": {
   "wins": 0,
