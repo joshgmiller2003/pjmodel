@@ -4,5 +4,6 @@
  "calls": [],
  "remaining": null,
  "history": [],
- "adjust": {"cycle": "2026-11-01", "used": 498, "note": "credits used on Nov 4 while the site was being built, before tracking existed"}
+ "adjust": null,
+ "note": "Plan upgraded Nov 4; the 498 credits used earlier that day were on the old plan, so this cycle starts at 0."
 }
