@@ -1,0 +1,49 @@
+{
+ "month": "2026-11",
+ "updated": "2026-11-04 01:11 PM ET",
+ "count": 2,
+ "bets": [
+  {
+   "id": "potd|2026-11-04",
+   "source": "Pick of the Day",
+   "date": "2026-11-04",
+   "game": "MIN@HOU",
+   "market": "Prop",
+   "pick": "Jaden McDaniels Over 2.5 AST",
+   "price": -120,
+   "edge": 1.0,
+   "confidence": 94.8,
+   "result": null,
+   "status": "Pending",
+   "actual": null,
+   "units": null,
+   "why": "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge) | Went over the line in 7 of his last 8 games (5/5 in the last 5) | Averaging 4.2 over the last 5 and 3.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Not on the injury report at pick time",
+   "picked_at": "2026-11-04 01:11 PM ET",
+   "graded_at": null
+  },
+  {
+   "id": "ladder|1|1|2026-11-04",
+   "source": "Ladder Challenge",
+   "date": "2026-11-04",
+   "game": "MIN@HOU",
+   "market": "Prop",
+   "pick": "Jaden McDaniels Over 7.5 RA",
+   "price": -134,
+   "edge": 2.1,
+   "confidence": 92.1,
+   "attempt": 1,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 7.46,
+   "bankroll_after": null,
+   "win_chance": 83.6,
+   "result": null,
+   "status": "Pending",
+   "actual": null,
+   "units": null,
+   "why": "Highest win chance on the board at a ladder-friendly price: 83.6% to win, +46% expected value | Model projects 9.6 RA vs a line of 7.5 (+2.1, 28% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 9.8 over the last 5 and 9.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Not on the injury report at pick time",
+   "picked_at": "2026-11-04 01:11 PM ET",
+   "graded_at": null
+  }
+ ]
+}

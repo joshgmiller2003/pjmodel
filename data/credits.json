@@ -1,9 +1,34 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "used_today": 0,
- "calls": [],
- "remaining": null,
- "history": [],
+ "calls": [
+  {
+   "time": "01:11 PM",
+   "call": "game lines",
+   "cost": 0
+  },
+  {
+   "time": "01:11 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "01:11 PM",
+   "call": "event list",
+   "cost": 0
+  }
+ ],
+ "remaining": 2,
+ "history": [
+  {
+   "date": "2026-11-04",
+   "used": 0,
+   "limit": 150
+  }
+ ],
  "adjust": null,
- "note": "Plan upgraded Nov 4; the 498 credits used earlier that day were on the old plan, so this cycle starts at 0."
+ "limit": 150,
+ "days_to_reset": 30,
+ "month_used": 0,
+ "month_limit": 5000
 }

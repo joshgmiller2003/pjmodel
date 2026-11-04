@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T16:55:29Z",
+ "generated_at": "2026-11-04T18:11:29Z",
  "season": "2026-27",
  "games": [
   {
@@ -17,8 +17,8 @@
    "dk": {
     "spread": "-2.5",
     "total": 219.5,
-    "ml_away": "+120",
-    "ml_home": "-142"
+    "ml_away": "+114",
+    "ml_home": "-135"
    },
    "status": "Upcoming",
    "rest": {
@@ -42,8 +42,8 @@
     "ml_away": 0.42
    },
    "dk": {
-    "spread": "+2.5",
-    "total": 232.5,
+    "spread": "+3.5",
+    "total": 231.5,
     "ml_away": "-154",
     "ml_home": "+130"
    },
@@ -52,8 +52,8 @@
     "away": 1,
     "home": 1
    },
-   "spread_edge": 5.0,
-   "total_edge": -7.4,
+   "spread_edge": 6.0,
+   "total_edge": -6.4,
    "note": "Model WAS -2.5, total 225.1; leans WAS vs the market spread."
   },
   {
@@ -69,18 +69,18 @@
     "ml_away": 0.29
    },
    "dk": {
-    "spread": "-11.5",
-    "total": 223.5,
-    "ml_away": "+424",
-    "ml_home": "-567"
+    "spread": "-10.5",
+    "total": 221.5,
+    "ml_away": "+360",
+    "ml_home": "-467"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": -4.8,
-   "total_edge": 4.7,
+   "spread_edge": -3.8,
+   "total_edge": 6.7,
    "note": "Model BOS -6.7, total 228.2; leans MIL vs the market spread."
   },
   {
@@ -97,7 +97,7 @@
    },
    "dk": {
     "spread": "+3.5",
-    "total": 213.5,
+    "total": 212.5,
     "ml_away": "-169",
     "ml_home": "+142"
    },
@@ -107,7 +107,7 @@
     "home": 1
    },
    "spread_edge": 6.6,
-   "total_edge": 6.5,
+   "total_edge": 7.5,
    "note": "Model BKN -3.1, total 220; leans BKN vs the market spread."
   },
   {
@@ -150,19 +150,19 @@
     "ml_away": 0.3
    },
    "dk": {
-    "spread": "-6.5",
+    "spread": "-5.5",
     "total": 228.5,
-    "ml_away": "+191",
-    "ml_home": "-230"
+    "ml_away": "+184",
+    "ml_home": "-222"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": -0.2,
+   "spread_edge": 0.8,
    "total_edge": -0.1,
-   "note": "Model and market are close; no strong spread lean."
+   "note": "Model MEM -6.3, total 228.4; leans MEM vs the market spread."
   },
   {
    "id": "UTA@NOP",
@@ -177,7 +177,7 @@
     "ml_away": 0.32
    },
    "dk": {
-    "spread": "-5.5",
+    "spread": "-6.5",
     "total": 232.5,
     "ml_away": "+191",
     "ml_home": "-230"
@@ -187,9 +187,9 @@
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0.0,
+   "spread_edge": -1.0,
    "total_edge": -2.4,
-   "note": "Model and market are close; no strong spread lean."
+   "note": "Model NOP -5.5, total 230.1; leans UTA vs the market spread."
   },
   {
    "id": "CLE@OKC",
@@ -232,9 +232,9 @@
    },
    "dk": {
     "spread": "-7.5",
-    "total": 220.5,
-    "ml_away": "+235",
-    "ml_home": "-288"
+    "total": 219.5,
+    "ml_away": "+227",
+    "ml_home": "-278"
    },
    "status": "Upcoming",
    "rest": {
@@ -242,7 +242,7 @@
     "home": 1
    },
    "spread_edge": -4.8,
-   "total_edge": 6.0,
+   "total_edge": 7.0,
    "note": "Model HOU -2.7, total 226.5; leans MIN vs the market spread."
   },
   {
@@ -340,9 +340,9 @@
    },
    "dk": {
     "spread": "+12.5",
-    "total": 234.5,
-    "ml_away": "-600",
-    "ml_home": "+446"
+    "total": 233.5,
+    "ml_away": "-620",
+    "ml_home": "+455"
    },
    "status": "Upcoming",
    "rest": {
@@ -350,7 +350,7 @@
     "home": 1
    },
    "spread_edge": 9.7,
-   "total_edge": -3.2,
+   "total_edge": -2.2,
    "note": "Model SAC +2.8, total 231.3; leans SAC vs the market spread."
   },
   {
@@ -15127,17 +15127,17 @@
    "game": "ATL@WAS"
   },
   {
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "status": "Out",
+   "reason": "Rest",
+   "game": "MIL@BOS"
+  },
+  {
    "player": "Payton Pritchard",
    "team": "BOS",
    "status": "Day-To-Day",
    "reason": "Right Shoulder",
-   "game": "MIL@BOS"
-  },
-  {
-   "player": "Jayson Tatum",
-   "team": "BOS",
-   "status": "Day-To-Day",
-   "reason": "Rest",
    "game": "MIL@BOS"
   },
   {
@@ -15162,10 +15162,10 @@
    "game": "CHA@BKN"
   },
   {
-   "player": "Kon Knueppel",
+   "player": "Grant Williams",
    "team": "CHA",
    "status": "Out",
-   "reason": "Left Hamstring",
+   "reason": "Right Hamstring",
    "game": "CHA@BKN"
   },
   {
@@ -15173,13 +15173,6 @@
    "team": "CHA",
    "status": "Day-To-Day",
    "reason": "Left Calf",
-   "game": "CHA@BKN"
-  },
-  {
-   "player": "Grant Williams",
-   "team": "CHA",
-   "status": "Out",
-   "reason": "Right Hamstring",
    "game": "CHA@BKN"
   },
   {
@@ -15211,17 +15204,17 @@
    "game": "CLE@OKC"
   },
   {
-   "player": "Max Christie",
-   "team": "DAL",
-   "status": "Out",
-   "reason": "Right Hip",
-   "game": "DAL@SAS"
-  },
-  {
    "player": "Santi Aldama",
    "team": "DAL",
    "status": "Out",
    "reason": "Right Knee",
+   "game": "DAL@SAS"
+  },
+  {
+   "player": "Max Christie",
+   "team": "DAL",
+   "status": "Out",
+   "reason": "Right Hip",
    "game": "DAL@SAS"
   },
   {
@@ -15288,6 +15281,13 @@
    "game": "PHI@DET"
   },
   {
+   "player": "Kristaps Porzingis",
+   "team": "GSW",
+   "status": "Out",
+   "reason": "Illness",
+   "game": "MIA@GSW"
+  },
+  {
    "player": "Brandon Williams",
    "team": "GSW",
    "status": "Day-To-Day",
@@ -15306,13 +15306,6 @@
    "team": "GSW",
    "status": "Day-To-Day",
    "reason": "Rest",
-   "game": "MIA@GSW"
-  },
-  {
-   "player": "Kristaps Porzingis",
-   "team": "GSW",
-   "status": "Out",
-   "reason": "Illness",
    "game": "MIA@GSW"
   },
   {
@@ -15454,6 +15447,13 @@
    "status": "Day-To-Day",
    "reason": "Right Wrist",
    "game": "MIA@GSW"
+  },
+  {
+   "player": "Kam Jones",
+   "team": "MIL",
+   "status": "Day-To-Day",
+   "reason": "Right Ankle",
+   "game": "MIL@BOS"
   },
   {
    "player": "Terrence Shannon Jr.",
@@ -15729,6 +15729,13 @@
    "game": "UTA@NOP"
   },
   {
+   "player": "Bilal Coulibaly",
+   "team": "WAS",
+   "status": "Day-To-Day",
+   "reason": "Illness",
+   "game": "ATL@WAS"
+  },
+  {
    "player": "Anthony Gill",
    "team": "WAS",
    "status": "Day-To-Day",
@@ -15771,7 +15778,7 @@
    "game": "ATL@WAS"
   }
  ],
- "injuries_updated": "11/04 11:55 AM ET",
+ "injuries_updated": "11/04 01:11 PM ET",
  "residuals": {
   "player": {},
   "team": [],
@@ -18201,6 +18208,351 @@
      "edge": -4.8
     }
    ]
+  },
+  {
+   "timestamp": "2026-11-04T13:11",
+   "games": [
+    {
+     "id": "PHI@DET",
+     "matchup": "PHI @ DET",
+     "model_spread": -3.6,
+     "model_total": 220.7,
+     "dk_spread": "-2.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@WAS",
+     "matchup": "ATL @ WAS",
+     "model_spread": -2.5,
+     "model_total": 225.1,
+     "dk_spread": "+3.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "MIL@BOS",
+     "matchup": "MIL @ BOS",
+     "model_spread": -6.7,
+     "model_total": 228.2,
+     "dk_spread": "-10.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "CHA@BKN",
+     "matchup": "CHA @ BKN",
+     "model_spread": -3.1,
+     "model_total": 220.0,
+     "dk_spread": "+3.5",
+     "dk_total": 212.5
+    },
+    {
+     "id": "CHI@NYK",
+     "matchup": "CHI @ NYK",
+     "model_spread": -6.4,
+     "model_total": 226.7,
+     "dk_spread": "-12.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "IND@MEM",
+     "matchup": "IND @ MEM",
+     "model_spread": -6.3,
+     "model_total": 228.4,
+     "dk_spread": "-5.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "UTA@NOP",
+     "matchup": "UTA @ NOP",
+     "model_spread": -5.5,
+     "model_total": 230.1,
+     "dk_spread": "-6.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "CLE@OKC",
+     "matchup": "CLE @ OKC",
+     "model_spread": -1.5,
+     "model_total": 226.3,
+     "dk_spread": "-3.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIN@HOU",
+     "matchup": "MIN @ HOU",
+     "model_spread": -2.7,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "TOR@DEN",
+     "matchup": "TOR @ DEN",
+     "model_spread": -0.0,
+     "model_total": 228.2,
+     "dk_spread": "-4.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "POR@PHX",
+     "matchup": "POR @ PHX",
+     "model_spread": 2.1,
+     "model_total": 229.0,
+     "dk_spread": "+3.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "DAL@SAS",
+     "matchup": "DAL @ SAS",
+     "model_spread": -4.5,
+     "model_total": 226.1,
+     "dk_spread": "-12.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "LAL@SAC",
+     "matchup": "LAL @ SAC",
+     "model_spread": 2.8,
+     "model_total": 231.3,
+     "dk_spread": "+12.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "MIA@LAC",
+     "matchup": "MIA @ LAC",
+     "model_spread": -1.9,
+     "model_total": 229.6,
+     "dk_spread": "+5.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.4,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Nikola Jokic",
+     "stat": "PRA",
+     "model": 40.2,
+     "dk": 47.5,
+     "edge": -7.3
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 56.5,
+     "dk": 49.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 48.3,
+     "dk": 41.5,
+     "edge": 6.8
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PRA",
+     "model": 8.9,
+     "dk": 15.5,
+     "edge": -6.6
+    },
+    {
+     "player": "Jaylin Williams",
+     "stat": "PR",
+     "model": 7.3,
+     "dk": 13.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 37.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PRA",
+     "model": 13.3,
+     "dk": 19.5,
+     "edge": -6.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 28.5,
+     "dk": 22.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PRA",
+     "model": 19.6,
+     "dk": 25.5,
+     "edge": -5.9
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 48.4,
+     "dk": 42.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 20.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PA",
+     "model": 32.7,
+     "dk": 38.5,
+     "edge": -5.8
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 40.2,
+     "dk": 34.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Scoot Henderson",
+     "stat": "PA",
+     "model": 10.9,
+     "dk": 16.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 26.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 37.0,
+     "dk": 42.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PRA",
+     "model": 24.1,
+     "dk": 29.5,
+     "edge": -5.4
+    },
+    {
+     "player": "Marcus Smart",
+     "stat": "PRA",
+     "model": 16.8,
+     "dk": 11.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 36.7,
+     "dk": 31.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PRA",
+     "model": 10.3,
+     "dk": 15.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 37.7,
+     "dk": 32.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PR",
+     "model": 22.3,
+     "dk": 27.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PA",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Lauri Markkanen",
+     "stat": "PTS",
+     "model": 16.5,
+     "dk": 21.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Derrick White",
+     "stat": "PTS",
+     "model": 11.6,
+     "dk": 16.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Nikola Jokic",
+     "stat": "PA",
+     "model": 30.6,
+     "dk": 35.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Trevon Brazile",
+     "stat": "PR",
+     "model": 14.4,
+     "dk": 9.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Payton Pritchard",
+     "stat": "PRA",
+     "model": 20.7,
+     "dk": 25.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PA",
+     "model": 7.7,
+     "dk": 12.5,
+     "edge": -4.8
+    },
+    {
+     "player": "Mikal Bridges",
+     "stat": "PR",
+     "model": 8.7,
+     "dk": 13.5,
+     "edge": -4.8
+    }
+   ]
   }
  ],
  "notes": "Model data updates automatically each day.",
@@ -18759,8 +19111,11 @@
     "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86,
-   "picked_at": "2026-11-04 11:55 AM ET"
+   "candidates_considered": 88,
+   "p_model": 67.9,
+   "p_win": 75.7,
+   "ev": 38.8,
+   "picked_at": "2026-11-04 01:11 PM ET"
   }
  ],
  "potd_alts": [
@@ -18819,7 +19174,10 @@
     "Minutes steady: 31 per game over the last 5 (31 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 74.2,
+   "p_win": 79.5,
+   "ev": 60.6
   },
   {
    "date": "2026-11-04",
@@ -18876,7 +19234,10 @@
     "Minutes steady: 21 per game over the last 5 (18 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 73.6,
+   "p_win": 79.2,
+   "ev": 46.9
   },
   {
    "date": "2026-11-04",
@@ -18929,7 +19290,10 @@
     "MIN would have covered +7.5 in 7 of their last 8 games (4/5 in the last 5)",
     "MIN average margin: +4.2 over the last 5, +11.4 over the last 8"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 65.5,
+   "p_win": 74.3,
+   "ev": 41.8
   },
   {
    "date": "2026-11-04",
@@ -18986,7 +19350,10 @@
     "Minutes steady: 24 per game over the last 5 (24 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 75.7,
+   "p_win": 75.4,
+   "ev": 28.5
   },
   {
    "date": "2026-11-04",
@@ -19043,7 +19410,10 @@
     "Minutes steady: 36 per game over the last 5 (38 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 71.5,
+   "p_win": 82.9,
+   "ev": 56.3
   },
   {
    "date": "2026-11-04",
@@ -19100,9 +19470,120 @@
     "Minutes steady: 26 per game over the last 5 (26 over the last 8)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 86
+   "candidates_considered": 88,
+   "p_model": 70.8,
+   "p_win": 72.5,
+   "ev": 33.9
   }
  ],
+ "ladder": {
+  "start": 10.0,
+  "goal": 1000.0,
+  "attempt": 1,
+  "bankroll": 10.0,
+  "attempts": [],
+  "attempt_started": "2026-11-04",
+  "steps": [
+   {
+    "type": "Prop",
+    "label": "Jaden McDaniels Over 7.5 RA",
+    "game": "MIN@HOU",
+    "eid": "401909930",
+    "time": "8:30 PM ET",
+    "home": "HOU",
+    "away": "MIN",
+    "side": "Over",
+    "line": 7.5,
+    "price": -134,
+    "model": 9.6,
+    "edge": 2.1,
+    "hits": {
+     "l5": [
+      4,
+      5
+     ],
+     "l10": [
+      7,
+      8
+     ],
+     "l15": [
+      7,
+      8
+     ]
+    },
+    "reasons": [
+     "Model projects 9.6 RA vs a line of 7.5 (+2.1, 28% edge)",
+     "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
+     "Averaging 9.8 over the last 5 and 9.5 over the last 8",
+     "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
+     "Not on the injury report at pick time"
+    ],
+    "p_win": 83.6,
+    "p_model": 80.9,
+    "ev": 46.0,
+    "score": 92.1,
+    "player": "Jaden McDaniels",
+    "team": "MIN",
+    "stat": "RA",
+    "date": "2026-11-04",
+    "attempt": 1,
+    "day": 1,
+    "stake": 10.0,
+    "to_win": 7.46,
+    "picked_at": "2026-11-04 01:11 PM ET",
+    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 83.6% to win, +46% expected value"
+   }
+  ]
+ },
+ "alt_ladders": [],
+ "alt_date": null,
+ "credits": {
+  "limit": 150,
+  "used_today": 0,
+  "remaining": 2,
+  "allowed_now": 0,
+  "skipped": [
+   "props PHI@DET",
+   "props ATL@WAS",
+   "props MIL@BOS",
+   "props CHA@BKN",
+   "props CHI@NYK",
+   "props IND@MEM",
+   "props UTA@NOP",
+   "props CLE@OKC",
+   "props MIN@HOU",
+   "props TOR@DEN",
+   "props POR@PHX",
+   "props DAL@SAS",
+   "props LAL@SAC",
+   "props MIA@LAC",
+   "alt lines MIN@HOU",
+   "alt lines CHA@BKN",
+   "alt lines LAL@SAC"
+  ],
+  "slot": "morning",
+  "calls": [
+   {
+    "time": "01:11 PM",
+    "call": "game lines",
+    "cost": 0
+   },
+   {
+    "time": "01:11 PM",
+    "call": "event list",
+    "cost": 0
+   },
+   {
+    "time": "01:11 PM",
+    "call": "event list",
+    "cost": 0
+   }
+  ],
+  "history": [],
+  "days_to_reset": 30,
+  "month_used": 0,
+  "month_limit": 5000
+ },
  "futures": {
   "title": [
    {
@@ -19289,5 +19770,89 @@
   ],
   "book": "FanDuel",
   "updated": "11/04 11:43 AM ET"
+ },
+ "records": {
+  "summary": {
+   "All": {
+    "Pick of the Day": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
+     "units": 0.0
+    },
+    "Ladder Challenge": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
+     "units": 0.0
+    }
+   },
+   "2026-11": {
+    "Pick of the Day": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
+     "units": 0.0
+    },
+    "Ladder Challenge": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
+     "units": 0.0
+    }
+   }
+  },
+  "bets": [
+   {
+    "id": "potd|2026-11-04",
+    "source": "Pick of the Day",
+    "date": "2026-11-04",
+    "game": "MIN@HOU",
+    "market": "Prop",
+    "pick": "Jaden McDaniels Over 2.5 AST",
+    "price": -120,
+    "edge": 1.0,
+    "confidence": 94.8,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge) | Went over the line in 7 of his last 8 games (5/5 in the last 5) | Averaging 4.2 over the last 5 and 3.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Not on the injury report at pick time",
+    "picked_at": "2026-11-04 01:11 PM ET",
+    "graded_at": null
+   },
+   {
+    "id": "ladder|1|1|2026-11-04",
+    "source": "Ladder Challenge",
+    "date": "2026-11-04",
+    "game": "MIN@HOU",
+    "market": "Prop",
+    "pick": "Jaden McDaniels Over 7.5 RA",
+    "price": -134,
+    "edge": 2.1,
+    "confidence": 92.1,
+    "attempt": 1,
+    "day": 1,
+    "stake": 10.0,
+    "to_win": 7.46,
+    "bankroll_after": null,
+    "win_chance": 83.6,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Highest win chance on the board at a ladder-friendly price: 83.6% to win, +46% expected value | Model projects 9.6 RA vs a line of 7.5 (+2.1, 28% edge) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 9.8 over the last 5 and 9.5 over the last 8 | Minutes steady: 35 per game over the last 5 (33 over the last 8) | Not on the injury report at pick time",
+    "picked_at": "2026-11-04 01:11 PM ET",
+    "graded_at": null
+   }
+  ]
  }
 }

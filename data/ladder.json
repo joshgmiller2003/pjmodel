@@ -1,0 +1,59 @@
+{
+ "start": 10.0,
+ "goal": 1000.0,
+ "attempt": 1,
+ "bankroll": 10.0,
+ "steps": [
+  {
+   "type": "Prop",
+   "label": "Jaden McDaniels Over 7.5 RA",
+   "game": "MIN@HOU",
+   "eid": "401909930",
+   "time": "8:30 PM ET",
+   "home": "HOU",
+   "away": "MIN",
+   "side": "Over",
+   "line": 7.5,
+   "price": -134,
+   "model": 9.6,
+   "edge": 2.1,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "reasons": [
+    "Model projects 9.6 RA vs a line of 7.5 (+2.1, 28% edge)",
+    "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 9.8 over the last 5 and 9.5 over the last 8",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 8)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 83.6,
+   "p_model": 80.9,
+   "ev": 46.0,
+   "score": 92.1,
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "RA",
+   "date": "2026-11-04",
+   "attempt": 1,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 7.46,
+   "picked_at": "2026-11-04 01:11 PM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 83.6% to win, +46% expected value"
+  }
+ ],
+ "attempts": [],
+ "attempt_started": "2026-11-04"
+}
