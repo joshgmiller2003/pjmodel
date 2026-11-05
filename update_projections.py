@@ -1348,6 +1348,90 @@ def bet_key(b):
     return ("P", norm(b["player"])) if b.get("player") else ("G", b.get("game"), b.get("type"))
 
 
+def step_keys(step):
+    """bet_key of every bet in a ladder step (each leg of a parlay step)."""
+    if not step:
+        return set()
+    return {bet_key(l) for l in step.get("legs") or [step]} - {None}
+
+
+def step_eids(step):
+    return [l["eid"] for l in step.get("legs") or [step] if l.get("eid")]
+
+
+def american(dec):
+    return int(round((dec - 1) * 100)) if dec >= 2 else int(round(-100 / (dec - 1)))
+
+
+# Multi-pick ladder steps: allowed, never required. A 2-3 leg parlay (each leg from a different game) replaces the
+# single bet only when it gives a better chance of finishing the ladder. Model win chances run hot (see calibration),
+# so both options are compared on win chances shrunk toward 50%, which costs parlays more than singles.
+PARLAY_SHRINK = 0.7          # 0.5 + (p - 0.5) * 0.7
+PARLAY_MIN_WIN = 0.55        # shrunk chance the whole parlay hits
+PARLAY_LEG_MIN = 70          # every leg's own win chance (%)
+PARLAY_MARGIN = 1.05         # must beat the single by 5% to be worth the extra legs
+
+
+def _shrunk(p_pct):
+    return 0.5 + (p_pct / 100 - 0.5) * PARLAY_SHRINK
+
+
+def ladder_efficiency(p, dec):
+    """ln(payout) / -ln(win chance): higher means fewer, safer steps to the goal (better odds of finishing)."""
+    return math.log(dec) / -math.log(p) if 0 < p < 1 and dec > 1 else 0.0
+
+
+def ladder_parlay(cands, avoid, single):
+    from itertools import combinations
+    best_leg = {}
+    for c in cands:
+        if c.get("ev", -1) <= 0 or c.get("p_win", 0) < PARLAY_LEG_MIN or not (-300 <= c["price"] <= 120) or bet_key(c) in avoid:
+            continue
+        cur = best_leg.get(c["eid"])
+        if cur is None or (c["p_win"], c["ev"]) > (cur["p_win"], cur["ev"]):
+            best_leg[c["eid"]] = c                       # one leg per game, so the legs don't move together
+    pool = sorted(best_leg.values(), key=lambda c: (-c["p_win"], -c["ev"]))[:8]
+    best, best_eff = None, 0.0
+    for n in (2, 3):
+        for legs in combinations(pool, n):
+            p = math.prod(_shrunk(l["p_win"]) for l in legs)
+            dec = math.prod(decimal(l["price"]) for l in legs)
+            if p < PARLAY_MIN_WIN or p * dec <= 1:
+                continue
+            e = ladder_efficiency(p, dec)
+            if e > best_eff:
+                best, best_eff = legs, e
+    if not best:
+        return None
+    single_eff = ladder_efficiency(_shrunk(single["p_win"]), decimal(single["price"])) if single else 0.0
+    if best_eff <= single_eff * PARLAY_MARGIN:
+        return None
+    return best, best_eff, single_eff
+
+
+LEG_KEYS = ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price", "model", "edge", "edge_pct",
+            "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "player", "team", "stat")
+
+
+def grade_parlay(st, plog):
+    """A parlay step wins only if every leg wins. A pushed or voided leg drops out and the payout shrinks."""
+    grade_potd(st["legs"], plog)
+    res = [l.get("result") for l in st["legs"]]
+    if "L" in res:
+        st["result"] = "L"
+    elif all(res):
+        live = [l for l in st["legs"] if l["result"] == "W"]
+        if live:
+            st["result"] = "W"
+            st["price"] = american(math.prod(decimal(l["price"]) for l in live))
+        else:
+            st["result"] = "P"
+    else:
+        return
+    st["actual"] = " · ".join(f"{l['label']}: {l.get('actual') or ''} {'✓' if l.get('result') == 'W' else '✗' if l.get('result') == 'L' else '(push)' if l.get('result') == 'P' else '…'}".strip() for l in st["legs"])
+    st["graded_at"] = datetime.now(ET).strftime("%Y-%m-%d %I:%M %p ET")
+
+
 def ladder_pick(cands, avoid=()):
     """Safest bet with a real payout: price -200 to +120, positive expected value. Highest win chance wins.
     Never the same play as today's Pick of the Day (avoid), so the two give people two different bets."""
@@ -1362,7 +1446,10 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
     lad.setdefault("attempts", []); lad.setdefault("attempt_started", t_iso)
     stamp = now.strftime("%Y-%m-%d %I:%M %p ET")
     # 1. grade finished steps, oldest first, and move the bankroll
-    grade_potd(lad["steps"], plog)
+    grade_potd([x for x in lad["steps"] if x.get("type") != "Parlay"], plog)
+    for x in lad["steps"]:
+        if x.get("type") == "Parlay" and not x.get("result"):
+            grade_parlay(x, plog)
     stale = (now.date() - timedelta(days=3)).isoformat()
     for st in lad["steps"]:
         if not st.get("result") and st["date"] < stale:           # postponed / never graded: void it
@@ -1392,27 +1479,44 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
     if pending_old:
         log("ladder: waiting on an earlier step to be graded")
         return lad
-    locked = bool(today) and bool(today.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == today["eid"]), True))
+    status = {g["event_id"]: g["status"] for g in slate}
+    locked = bool(today) and bool(today.get("result") or any(status.get(e, "Final") != "Upcoming" for e in step_eids(today)))
     if today and locked:
         today.setdefault("locked_at", stamp)
         return lad
     lad["steps"] = [x for x in lad["steps"] if x["date"] != t_iso]
     pick = ladder_pick(cands, avoid)
     prev_step = today
+    combo = ladder_parlay(cands, avoid, pick)
+    if combo:
+        legs, eff, eff1 = combo
+        legs = sorted(legs, key=lambda l: next((i for i, g in enumerate(slate) if g["event_id"] == l["eid"]), 99))
+        dec = math.prod(decimal(l["price"]) for l in legs)
+        p_raw = math.prod(l["p_win"] / 100 for l in legs)
+        pick = {"type": "Parlay", "label": " + ".join(l["label"] for l in legs), "legs": [{k: l[k] for k in LEG_KEYS if k in l} for l in legs],
+                "game": " / ".join(l["game"] for l in legs), "eid": legs[0]["eid"], "time": legs[0]["time"],
+                "home": legs[0]["home"], "away": legs[0]["away"], "side": None, "line": None, "price": american(dec),
+                "p_win": rnd(p_raw * 100, 1), "p_model": rnd(math.prod(l.get("p_model", l["p_win"]) / 100 for l in legs) * 100, 1),
+                "ev": rnd((p_raw * dec - 1) * 100, 1), "score": rnd(min(l.get("score", 0) for l in legs), 1),
+                "reasons": [f"Leg {i + 1}: {l['label']} ({fmt_px(l['price'])}): {l['p_win']:g}% to win" + (f". {l['reasons'][0]}" if l.get("reasons") else "")
+                            for i, l in enumerate(legs)],
+                "why_parlay": f"{len(legs)} picks from different games beat the best single bet for finishing the ladder "
+                              f"({eff:.2f} vs {eff1:.2f} on shrunk win chances)"}
     if pick:
         if not lad.get("attempt_started"):
             lad["attempt_started"] = t_iso
         day = 1 + sum(1 for x in lad["steps"] if x["attempt"] == lad["attempt"])
         stake = lad["bankroll"]
         step = {k: pick[k] for k in ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price",
-                                     "model", "edge", "edge_pct", "hits", "chart", "reasons", "p_win", "p_model", "ev", "score")
+                                     "model", "edge", "edge_pct", "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "legs")
                 if k in pick}
         for k in ("player", "team", "stat"):
             if k in pick:
                 step[k] = pick[k]
         step.update({"date": t_iso, "attempt": lad["attempt"], "day": day, "stake": stake,
                      "to_win": rnd(stake * (decimal(pick["price"]) - 1), 2), "picked_at": stamp,
-                     "why_ladder": f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value"})
+                     "why_ladder": (f"Multi-pick step. {pick['why_parlay']}: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value" if pick.get("legs") else
+                                    f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value")})
         lad["steps"].insert(0, carry_open(step, prev_step))
         log(f"ladder: attempt {lad['attempt']} day {day}, ${stake:g} on {pick['label']} ({fmt_px(pick['price'])})")
     else:
@@ -2116,9 +2220,11 @@ def main():
     # unless today's ladder step already locked (its game tipped first): then the Pick of the Day steps around it.
     lad_state = load(LADDER_PATH, {})
     lad_today = next((x for x in lad_state.get("steps", []) if x["date"] == t_iso), None)
-    lad_locked = bool(lad_today) and bool(lad_today.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == lad_today["eid"]), True))
-    if pick and lad_locked and bet_key(pick) == bet_key(lad_today):
-        pick = next((c for c in all_cands if bet_key(c) != bet_key(lad_today)), None)
+    st_now = {g["event_id"]: g["status"] for g in slate}
+    lad_locked = bool(lad_today) and bool(lad_today.get("result") or any(st_now.get(e, "Final") != "Upcoming" for e in step_eids(lad_today)))
+    lad_keys = step_keys(lad_today) if lad_locked else set()
+    if pick and bet_key(pick) in lad_keys:
+        pick = next((c for c in all_cands if bet_key(c) not in lad_keys), None)
         new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)] if pick else new_alts
         log("potd: stepped around today's locked ladder bet")
     if not locked:
@@ -2130,7 +2236,7 @@ def main():
     # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
     potd_today = next((h for h in potd_hist if h["date"] == t_iso), None)
     ladder = run_ladder(lad_state, plog, all_cands, slate, t_iso, now, avoid={bet_key(potd_today)} - {None})
-    track_clv(potd_hist[:5] + ladder["steps"][:5], games, props, slate, now)
+    track_clv(potd_hist[:5] + [x for s in ladder["steps"][:5] for x in (s.get("legs") or [s])], games, props, slate, now)
     streaks = streaks_and_badges(potd_hist, ladder, (prev.get("streaks") or {}).get("badges"))
 
     # 3d. Alt-line ladders: lowest spending priority, morning run only, for the games of the best props
