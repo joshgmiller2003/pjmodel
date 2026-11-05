@@ -553,8 +553,10 @@ nav button:first-child { margin-left: -13px; }
     <div class="section-title">Pick Log <small>Every pick the site makes, saved with its result. Sort and filter with one click</small>
       <button class="btn" style="margin-left:auto;" onclick="plDownload()">Download CSV</button></div>
     <div class="filters" id="pl-source"></div>
+    <div class="filters" id="pl-group"></div>
     <div class="filters">
       <select id="pl-month"></select>
+      <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option></select>
       <select id="pl-type"><option value="all">All bet types</option><option>Prop</option><option>Spread</option><option>Total</option><option>Moneyline</option></select>
       <select id="pl-stat"><option value="all">All stats</option></select>
       <select id="pl-result"><option value="all">All results</option><option>Won</option><option>Lost</option><option>Push</option><option>Pending</option></select>
@@ -571,6 +573,8 @@ nav button:first-child { margin-left: -13px; }
     <div class="section-title">Records <small>Every bet the site makes, saved permanently and graded automatically</small>
       <button class="btn" style="margin-left:auto;" onclick="downloadRecords()">Download CSV</button></div>
     <div class="card table-wrap" style="margin-bottom:16px;"><table id="rec-summary"></table></div>
+    <div class="section-title" style="margin-top:4px;">Model bets by category <small>"Plays" count each player once per game, so PR, PRA and RA on the same player don't stack up the record</small></div>
+    <div class="card table-wrap" style="margin-bottom:16px;"><table id="rec-cats"></table><p class="note" id="rec-cats-note" style="margin:10px 12px;"></p></div>
     <div id="rec-badges" style="margin-bottom:16px;"></div>
     <div class="filters" id="rec-source"></div>
     <div class="filters">
@@ -1201,6 +1205,76 @@ function clvBadge(r) {
   const txt = c.line ? (c.line > 0 ? "+" : "") + c.line + " pts" : (c.price > 0 ? "+" : "") + c.price + "%";
   return ` <span class="badge" title="Closing line value: ${r.open && r.open[0] != null ? "took " + r.open[0] + " (" + fmtPrice(r.open[1]) + ")" : "opened"} · ${c.final ? "closed" : "now"} ${r.close && r.close[0] != null ? r.close[0] + " (" + fmtPrice(r.close[1]) + ")" : ""}" style="background:${c.beat ? "rgba(46,204,113,0.14)" : "rgba(255,255,255,0.06)"};color:${c.beat ? "var(--good)" : "var(--muted)"};">CLV ${txt}</span>`;
 }
+// ---------- Categories and "plays" (one per player per game) ----------
+// PR, PA, RA and PRA on the same player in the same game tend to all hit or all miss together, so counting
+// every one of them as its own bet makes the record swing far more than it should. A "play" is every model
+// bet on one player in one game (or one game line); it is graded by its strongest bet (highest confidence, else biggest edge for its line).
+const COMBO_STATS = new Set(["PR", "PA", "RA", "PRA"]);
+function betCat(r) {
+  const t = r.type || r.market;
+  if (t !== "Prop") return "Game lines";
+  return COMBO_STATS.has(r.stat) ? "Combo props" : "Single-stat props";
+}
+function playKey(r) { return r.player ? `${r.date}|${r.game}|P|${r.player}` : `${r.date}|${r.game}|G|${r.type || r.market}`; }
+function playRank(a, b) {
+  // strongest bet = highest confidence, then win chance, then edge relative to the line (so PRA's bigger numbers don't win by default)
+  const rel = r => r.edge_pct != null ? Math.abs(r.edge_pct) : (r.edge != null && r.line ? Math.abs(r.edge / r.line) * 100 : 0);
+  const A = [a.confidence ?? -1, a.win_chance ?? -1, rel(a)], B = [b.confidence ?? -1, b.win_chance ?? -1, rel(b)];
+  for (let i = 0; i < 3; i++) if (A[i] !== B[i]) return B[i] - A[i];
+  return 0;
+}
+function collapsePlays(rows) {
+  const out = [], groups = new Map();
+  rows.forEach(r => {
+    if (r.source !== "Model bet") { out.push(r); return; }      // Pick of the Day and ladder are already one per day
+    const k = playKey(r);
+    if (!groups.has(k)) { groups.set(k, []); out.push(k); }
+    groups.get(k).push(r);
+  });
+  return out.map(x => {
+    if (typeof x !== "string") return x;
+    const legs = groups.get(x), main = legs.slice().sort(playRank)[0];
+    const g = legs.filter(l => l.result === "W" || l.result === "L");
+    const outcome = g.length < 2 ? null : g.every(l => l.result === "W") ? "Swept" : g.every(l => l.result === "L") ? "All lost" : "Split";
+    return {...main, legs, others: legs.filter(l => l !== main), outcome};
+  });
+}
+function tally(list) {
+  const graded = list.filter(r => r.result && r.units != null);
+  return {w: list.filter(r => r.result === "W").length, l: list.filter(r => r.result === "L").length, p: list.filter(r => r.result === "P").length,
+          pend: list.filter(r => !r.result).length, n: graded.length, u: Math.round(graded.reduce((t, r) => t + r.units, 0) * 100) / 100};
+}
+function stackSummary(model) {
+  const s = {Swept: 0, "All lost": 0, Split: 0};
+  collapsePlays(model).forEach(p => { if (p.outcome) s[p.outcome]++; });
+  return s;
+}
+async function renderRecCats() {
+  const R = DATA.records || {};
+  const months = R.months && R.months.length ? R.months : [...new Set(recRows().map(r => r.date.slice(0, 7)))];
+  let all = [];
+  for (const m of months) all = all.concat(await plLoad(m));
+  const model = all.filter(r => r.source === "Model bet");
+  const sign = v => (v > 0 ? "+" : "") + v;
+  const cell = t => { const wl = t.w + t.l;
+    return `<td>${t.w}-${t.l}${t.p ? "-" + t.p : ""}</td><td>${wl ? Math.round(100 * t.w / wl) + "%" : "–"}</td><td class="stat ${t.u > 0 ? "positive" : t.u < 0 ? "negative" : ""}">${t.n ? sign(t.u) + "u" : "–"}</td>`; };
+  const row = (name, list, note, strong) => { const plays = collapsePlays(list);
+    return `<tr${strong ? ' style="border-top:2px solid var(--line, rgba(255,255,255,0.12));"' : ""}><td><strong>${name}</strong>${note ? `<div class="team" style="font-size:11px;">${note}</div>` : ""}</td>
+      <td>${list.length}</td>${cell(tally(list))}<td><strong>${plays.length}</strong></td>${cell(tally(plays))}</tr>`; };
+  const of = c => model.filter(r => betCat(r) === c);
+  document.getElementById("rec-cats").innerHTML = `<thead><tr><th>Category</th><th>Bets</th><th>Record</th><th>Win %</th><th>Units</th>
+      <th style="border-left:1px solid rgba(255,255,255,0.08);">Plays</th><th>Record</th><th>Win %</th><th>Units</th></tr></thead><tbody>` +
+    row("Single-stat props", of("Single-stat props"), "PTS, REB, AST, 3PM, STL, BLK") +
+    row("Combo props", of("Combo props"), "PR, PA, RA, PRA: these overlap the most") +
+    row("Game lines", of("Game lines"), "Spreads, totals, moneylines") +
+    row("All model bets", model, "one play per player per game, across every stat", true) + "</tbody>";
+  const st = stackSummary(model), n = st.Swept + st["All lost"] + st.Split;
+  const per = model.length && collapsePlays(model).length ? Math.round(10 * model.length / collapsePlays(model).length) / 10 : 0;
+  document.getElementById("rec-cats-note").innerHTML = n ? `Model bets average <strong>${per}</strong> bets per player per game. Of the ${n} graded player-games with 2+ bets:
+    <strong class="positive">${st.Swept} all won</strong>, <strong class="negative">${st["All lost"]} all lost</strong>, ${st.Split} split.
+    The <strong>Plays</strong> columns grade each one once, by its strongest bet (highest confidence, else biggest edge for its line), so they are the fairer record. Pick of the Day and the ladder are one bet a day and aren't affected.` : "";
+}
+
 var recSource = "all";
 function recRows() {
   const R = DATA.records;
@@ -1271,6 +1345,7 @@ function renderBankroll() {
   });
   if (!list.length) html += '<tr><td colspan="7" class="note" style="padding:22px;text-align:center;">No bets in this view yet.</td></tr>';
   document.getElementById("rec-table").innerHTML = html + "</tbody>";
+  renderRecCats();
   document.querySelectorAll("#rec-table .rec-row").forEach(r => r.onclick = () => { const w = document.querySelector(`#rec-table .rec-why[data-i="${r.dataset.i}"]`); w.style.display = w.style.display === "none" ? "" : "none"; });
 }
 function downloadRecords() {
@@ -1311,7 +1386,7 @@ function renderModel() {
 }
 
 // ---------- Pick Log ----------
-var PL = {src: "all", sort: "date", dir: -1, shown: 100, month: null, cache: {}, rows: []};
+var PL = {src: "all", sort: "date", dir: -1, shown: 100, month: null, cache: {}, rows: [], plays: false};
 const PL_SORTS = [["date", "Date"], ["edge", "Biggest edge"], ["edgepct", "Edge %"], ["conf", "Confidence"], ["win", "Win chance"],
   ["price", "Price"], ["units", "Units"], ["clv", "CLV"], ["player", "Player / team"], ["stat", "Stat"], ["result", "Result"]];
 function plVal(r, k) {
@@ -1344,7 +1419,7 @@ async function renderPickLog() {
   const mSel = document.getElementById("pl-month");
   if (!mSel.options.length) {
     mSel.innerHTML = months.map(m => `<option value="${m}">${new Date(m + "-15").toLocaleDateString([], {month: "long", year: "numeric"})}</option>`).join("");
-    ["pl-month", "pl-type", "pl-stat", "pl-result", "pl-dir"].forEach(id => document.getElementById(id).onchange = () => { PL.shown = 100; renderPickLog(); });
+    ["pl-month", "pl-cat", "pl-type", "pl-stat", "pl-result", "pl-dir"].forEach(id => document.getElementById(id).onchange = () => { PL.shown = 100; renderPickLog(); });
     document.getElementById("pl-q").oninput = () => { PL.shown = 100; plDraw(); };
     document.getElementById("pl-more").onclick = () => { PL.shown += 100; plDraw(); };
   }
@@ -1355,9 +1430,10 @@ async function renderPickLog() {
   plDraw();
 }
 function plFiltered() {
+  const cat = document.getElementById("pl-cat").value;
   const t = document.getElementById("pl-type").value, st = document.getElementById("pl-stat").value, res = document.getElementById("pl-result").value,
         dir = document.getElementById("pl-dir").value, q = document.getElementById("pl-q").value.trim().toLowerCase();
-  return PL.rows.filter(r => (PL.src === "all" || r.source === PL.src)
+  return PL.rows.filter(r => (PL.src === "all" || r.source === PL.src) && (cat === "all" || betCat(r) === cat)
     && (t === "all" || (r.type || r.market) === t) && (st === "all" || (r.stat || r.type) === st)
     && (res === "all" || r.status === res) && (dir === "all" || r.dir === dir)
     && (!q || [r.player, r.team, r.opp, r.pick, r.game].filter(Boolean).join(" ").toLowerCase().includes(q)));
@@ -1372,7 +1448,11 @@ function plDraw() {
     `<button data-k="${k}" class="${k === PL.sort ? "active" : ""}">${l}${k === PL.sort ? (PL.dir < 0 ? " ↓" : " ↑") : ""}</button>`).join("");
   const setSort = k => { if (PL.sort === k) PL.dir = -PL.dir; else { PL.sort = k; PL.dir = (k === "player" || k === "stat" || k === "result") ? 1 : -1; } PL.shown = 100; plDraw(); };
   document.querySelectorAll("#pl-sort button").forEach(b => b.onclick = () => setSort(b.dataset.k));
-  const list = plFiltered().slice().sort((a, b) => {
+  document.getElementById("pl-group").innerHTML = `<span class="note" style="margin-right:4px;">Count</span>` +
+    [[false, "Every bet"], [true, "One play per player per game"]].map(([k, l]) => `<button data-k="${k}" class="${k === PL.plays ? "active" : ""}">${l}</button>`).join("");
+  document.querySelectorAll("#pl-group button").forEach(b => b.onclick = () => { PL.plays = b.dataset.k === "true"; PL.shown = 100; plDraw(); });
+  const base = PL.plays ? collapsePlays(plFiltered()) : plFiltered();
+  const list = base.slice().sort((a, b) => {
     const va = plVal(a, PL.sort), vb = plVal(b, PL.sort);
     if (va == null && vb == null) return 0; if (va == null) return 1; if (vb == null) return -1;
     return (va < vb ? -1 : va > vb ? 1 : 0) * PL.dir;
@@ -1384,7 +1464,9 @@ function plDraw() {
   document.getElementById("pl-kpis").innerHTML = `
     <div class="kpi"><div class="l">Picks in view</div><div class="v">${list.length.toLocaleString()}</div><div class="s">${list.filter(r => !r.result).length} pending</div></div>
     <div class="kpi"><div class="l">Record</div><div class="v">${w}-${g.length - w}</div><div class="s">${g.length ? Math.round(100 * w / g.length) + "% win rate" : "graded after games finish"}</div></div>
-    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${ur.length ? sign(u) : "–"}</div><div class="s">${ur.length ? "ROI " + sign(Math.round(1000 * u / ur.length) / 10) + "% · 1u per pick" : "ladder tracked in $"}</div></div>`;
+    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${ur.length ? sign(u) : "–"}</div><div class="s">${ur.length ? "ROI " + sign(Math.round(1000 * u / ur.length) / 10) + "% · 1u per " + (PL.plays ? "play" : "pick") : "ladder tracked in $"}</div></div>
+    ${PL.plays ? (() => { const s = {Swept: 0, "All lost": 0, Split: 0}; list.forEach(p => { if (p.outcome) s[p.outcome]++; });
+      return `<div class="kpi"><div class="l">Same-player stacks</div><div class="v"><span class="positive">${s.Swept}</span> · <span class="negative">${s["All lost"]}</span> · ${s.Split}</div><div class="s">all won · all lost · split</div></div>`; })() : ""}`;
   const cols = [["date", "Date"], [null, "Type"], ["player", "Pick"], ["stat", "Stat"], [null, "Side"], [null, "Line"], ["price", "Price"], [null, "Model"], ["edge", "Edge"], ["conf", "Conf."], ["result", "Result"], [null, "Final"], ["units", "Units / $"], ["clv", "CLV"]];
   const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : "Ladder"}</span>`;
   const BK = {fanduel: "FanDuel", betmgm: "BetMGM", williamhill_us: "Caesars", espnbet: "ESPN BET", fanatics: "Fanatics", betrivers: "BetRivers", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX"};
@@ -1397,7 +1479,7 @@ function plDraw() {
     const best = r.best && r.best[0] != null && r.best[0] !== r.price ? `<div class="team" style="font-size:11px;">best ${fmtPrice(r.best[0])} ${BK[r.best[1]] || r.best[1]}</div>` : "";
     html += `<tr class="pl-row" data-i="${i}" style="cursor:pointer;">
       <td class="team" style="font-size:12px;white-space:nowrap;">${r.date.slice(5)}</td><td>${tag(r.source)}</td>
-      <td><strong>${who}</strong><div class="team" style="font-size:11.5px;">${(r.game || "").replace(/\s*@\s*/, " @ ")}${r.source === "Ladder Challenge" ? " · #" + r.attempt + " day " + r.day : ""}</div></td>
+      <td><strong>${who}</strong><div class="team" style="font-size:11.5px;">${(r.game || "").replace(/\s*@\s*/, " @ ")}${r.source === "Ladder Challenge" ? " · #" + r.attempt + " day " + r.day : ""}</div>${r.others && r.others.length ? `<div class="team" style="font-size:11px;margin-top:2px;" title="Other bets on this player in this game. The play is graded by the strongest bet only.">+ ${r.others.map(o => `${o.stat || o.type} ${o.dir ? o.dir[0] : ""}${o.line != null ? " " + o.line : ""} <span class="${o.result === "W" ? "positive" : o.result === "L" ? "negative" : ""}">${o.result === "W" ? "✓" : o.result === "L" ? "✗" : o.result === "P" ? "push" : "…"}</span>`).join(" · ")}${r.outcome ? ` <span class="badge" style="margin-left:4px;">${r.outcome}</span>` : ""}</div>` : ""}</td>
       <td><span class="stat-tag">${r.stat || r.type || "–"}</span></td><td>${r.dir || "–"}</td>
       <td class="stat">${r.line != null ? (r.type === "Spread" ? sign(r.line) : r.line) : "–"}</td>
       <td class="stat price">${r.price != null ? fmtPrice(r.price) : "–"}${best}</td>
@@ -1415,7 +1497,7 @@ function plDraw() {
   document.querySelectorAll("#pl-table .pl-row").forEach(r => r.onclick = () => { const x = document.querySelector(`#pl-table .pl-why[data-i="${r.dataset.i}"]`); x.style.display = x.style.display === "none" ? "" : "none"; });
   const more = document.getElementById("pl-more"); more.style.display = list.length > PL.shown ? "" : "none";
   more.textContent = `Show 100 more (${(list.length - PL.shown).toLocaleString()} left)`;
-  document.getElementById("pl-note").innerHTML = `Saved in your repo under <code>data/records/</code>, one file per month. Every Pick of the Day, ladder step and model pick (props with an edge of 0.8+, spreads and totals with 1+) is saved the moment it is made and graded automatically after the game. Model picks are 1 unit at the DraftKings price; ladder steps are in dollars. Click a row for the reasoning, or a column header to sort.`;
+  document.getElementById("pl-note").innerHTML = `Saved in your repo under <code>data/records/</code>, one file per month. Every Pick of the Day, ladder step and model pick (props with an edge of 0.8+, spreads and totals with 1+) is saved the moment it is made and graded automatically after the game. Model picks are 1 unit at the DraftKings price; ladder steps are in dollars. <strong>One play per player per game</strong> rolls PR, PRA, RA and every other bet on the same player that game into one row, graded by its strongest bet, so overlapping bets don't inflate the record. Click a row for the reasoning, or a column header to sort.`;
 }
 function plDownload() {
   const list = window._plList || [];
