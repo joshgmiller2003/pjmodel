@@ -1174,6 +1174,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
         cands.append({**base(g, row), "type": "Prop", "player": p["player"], "team": p["team"], "stat": p["stat"],
                       "side": side, "line": p["dk"], "price": price, "model": p["model"], "edge": p["edge"],
                       "edge_pct": rnd(epct * 100, 1), "label": f"{p['player']} {side} {p['dk']:g} {p['stat']}",
+                      "best": p.get("best_over" if over else "best_under"),
                       "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
                       "chart": {"vals": vals[:10][::-1], "line": p["dk"], "side": side, "label": p["stat"]},
                       "score": score_of(a5 / n5, a10 / n10, a15 / n15, epct / 0.25),
@@ -1483,7 +1484,7 @@ def ladder_parlay(cands, avoid, single):
 
 
 LEG_KEYS = ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price", "model", "edge", "edge_pct",
-            "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "player", "team", "stat")
+            "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "player", "team", "stat", "best")
 
 
 def grade_parlay(st, plog):
@@ -1583,7 +1584,7 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=(), avoid_games=()):
         day = 1 + sum(1 for x in lad["steps"] if x["attempt"] == lad["attempt"])
         stake = lad["bankroll"]
         step = {k: pick[k] for k in ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price",
-                                     "model", "edge", "edge_pct", "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "legs")
+                                     "model", "edge", "edge_pct", "hits", "chart", "reasons", "p_win", "p_model", "ev", "score", "legs", "best")
                 if k in pick}
         for k in ("player", "team", "stat"):
             if k in pick:
