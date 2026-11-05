@@ -11,6 +11,11 @@ on:
     # ESPN and re-pick with the saved lines, so a pick whose player is ruled out gets swapped before tip-off.
     - cron: "30 23,0,1,2,3 * * *"
   workflow_dispatch:        # run by hand from the Actions tab any time
+    inputs:
+      off_daily_cap:
+        description: "One time only: keep this run's credits off today's daily cap (they still count toward the month)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -89,6 +94,7 @@ jobs:
           ODDS_API_KEY: ${{ env.ODDS_API_KEY || secrets.ODDS_API_KEY1 || secrets.ODDS_API_KEY }}
           # 1 on the free tip-off checks: the script makes no Odds API calls at all
           NO_PAID_CALLS: ${{ needs.gate.outputs.free == 'true' && '1' || '' }}
+          OFF_DAILY_CAP: ${{ github.event.inputs.off_daily_cap == 'true' && '1' || '' }}
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '250' }}
           MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5500' }}
