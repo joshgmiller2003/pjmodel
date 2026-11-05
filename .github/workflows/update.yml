@@ -48,13 +48,35 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Pick the Odds API key with the most credits left
+        env:
+          K1: ${{ secrets.ODDS_API_KEY1 }}
+          K2: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          # Free balance check on both plans' keys (the events list costs 0 credits); use the one with more left.
+          best=""; best_rem=-1; bi=0; i=0
+          for k in "$K1" "$K2"; do
+            i=$((i+1)); [ -z "$k" ] && continue
+            rem=$(curl -s -D - -o /dev/null "https://api.the-odds-api.com/v4/sports/basketball_nba/events?apiKey=$k" \
+                  | tr -d '\r' | awk -F': ' 'tolower($1)=="x-requests-remaining"{print int($2)}')
+            echo "key $i: ${rem:-unavailable} credits left"
+            if [ -n "$rem" ] && [ "$rem" -gt "$best_rem" ]; then best="$k"; best_rem=$rem; bi=$i; fi
+          done
+          if [ -n "$best" ]; then
+            echo "::add-mask::$best"
+            echo "ODDS_API_KEY=$best" >> "$GITHUB_ENV"
+            echo "using key $bi"
+            # the daily share of the plan is based on the key actually in use
+            python -c "import json,sys;p='data/credits.json';d=json.load(open(p));d['remaining']=int(sys.argv[1]);json.dump(d,open(p,'w'),indent=1)" "$best_rem" || true
+          fi
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run model
         env:
-          # Uses the newer key (ODDS_API_KEY1) when it exists, otherwise the original one.
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY1 || secrets.ODDS_API_KEY }}
+          # The key picked above (most credits left); falls back to ODDS_API_KEY1, then ODDS_API_KEY.
+          ODDS_API_KEY: ${{ env.ODDS_API_KEY || secrets.ODDS_API_KEY1 || secrets.ODDS_API_KEY }}
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '250' }}
           MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5500' }}
