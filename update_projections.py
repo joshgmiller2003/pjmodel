@@ -1766,6 +1766,14 @@ def odds_alt_lines(games_for_alt, slate):
     return out
 
 
+# Alt-line value is easy to overstate: a projection far from DraftKings' main line, or a hot streak over 7-8
+# games, makes long shots look like steals. So the projection is pulled halfway to the main line, cards where
+# they disagree by more than BET_EDGE_PCT_MAX are skipped (the model is probably missing news), and the recent
+# hit rate is smoothed with ALT_HIT_PRIOR games' worth of the model's own number.
+ALT_ANCHOR = 0.5
+ALT_HIT_PRIOR = 10
+
+
 def build_alt_ladders(alt, slate, idx, props, injuries):
     gm = {g["event_id"]: g for g in slate}
     hurt = {norm(i["player"]) for i in injuries if i["status"].lower() == "out"}
@@ -1779,14 +1787,18 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
                 continue
             vals = [STAT_VAL[stat](r) for r in hist[::-1]][:15]
             pr = next((v for (pl, st), v in proj.items() if norm(pl) == norm(player) and st == stat), None)
-            mean = pr["model"] if pr else sum(vals[:10]) / len(vals[:10])
+            raw_mean = pr["model"] if pr else sum(vals[:10]) / len(vals[:10])
+            main = pr["dk"] if pr else None
+            if main and abs(raw_mean - main) / main > BET_EDGE_PCT_MAX:
+                continue
+            mean = main + (raw_mean - main) * ALT_ANCHOR if main else raw_mean
             ladder = []
             for line, price in rungs:
                 if price < -1000 or price > 3000:
                     continue
                 pm = prob_over(stat, mean, line, vals)
                 hit = sum(1 for v in vals if v > line)
-                p = 0.6 * pm + 0.4 * hit / len(vals)
+                p = 0.6 * pm + 0.4 * (hit + ALT_HIT_PRIOR * pm) / (len(vals) + ALT_HIT_PRIOR)
                 imp = implied(price)
                 ladder.append({"line": line, "price": price, "implied": rnd(imp * 100, 1), "p": rnd(p * 100, 1),
                                "hit": [hit, len(vals)], "ev": rnd((p * decimal(price) - 1) * 100, 1)})
@@ -1803,7 +1815,7 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
                 pick = [safe] + ([max(mids, key=lambda r: r["ev"])] if mids else []) + ([max(longs, key=lambda r: r["ev"])] if longs else [])
             best = max(ladder, key=lambda r: r["ev"])
             out.append({"player": player, "team": hist[-1]["t"], "game": g["id"] if g else "", "time": g["time"] if g else "",
-                        "stat": stat, "model": rnd(mean, 1), "main_line": pr["dk"] if pr else None,
+                        "stat": stat, "model": rnd(mean, 1), "model_raw": rnd(raw_mean, 1), "main_line": pr["dk"] if pr else None,
                         "avg5": rnd(sum(vals[:5]) / len(vals[:5]), 1), "avg15": rnd(sum(vals) / len(vals), 1),
                         "last10": vals[:10][::-1], "rungs": ladder, "suggested": [r["line"] for r in pick],
                         "best_ev": best["ev"], "value_rungs": len(value)})
