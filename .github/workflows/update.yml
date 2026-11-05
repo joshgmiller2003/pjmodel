@@ -7,6 +7,9 @@ on:
     - cron: "0 5,6 * * *"
     - cron: "0 15,16 * * *"
     - cron: "0 22,23 * * *"
+    # Free tip-off checks at about 7, 8, 9 and 10 PM ET: no Odds API calls (0 credits). They reload injuries from
+    # ESPN and re-pick with the saved lines, so a pick whose player is ruled out gets swapped before tip-off.
+    - cron: "30 23,0,1,2,3 * * *"
   workflow_dispatch:        # run by hand from the Actions tab any time
 
 permissions:
@@ -21,12 +24,22 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       go: ${{ steps.check.outputs.go }}
+      free: ${{ steps.check.outputs.free }}
     steps:
       - id: check
         run: |
           H=$(TZ=America/New_York date +%H)
           D=$(TZ=America/New_York date +%F)
           echo "ET hour is $H on $D"
+          if [ "${{ github.event.schedule }}" = "30 23,0,1,2,3 * * *" ]; then
+            # free tip-off check: only 7-10 PM ET, and never a paid run
+            if [ "$H" = "19" ] || [ "$H" = "20" ] || [ "$H" = "21" ] || [ "$H" = "22" ]; then
+              echo "Free tip-off check"; echo "go=true" >> "$GITHUB_OUTPUT"; echo "free=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "go=false" >> "$GITHUB_OUTPUT"
+            fi
+            exit 0
+          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "01" ] || [ "$H" = "11" ] || [ "$H" = "18" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"
           else
@@ -45,6 +58,7 @@ jobs:
           python-version: "3.12"
 
       - name: Pick the Odds API key with the most credits left
+        if: needs.gate.outputs.free != 'true'
         env:
           K1: ${{ secrets.ODDS_API_KEY1 }}
           K2: ${{ secrets.ODDS_API_KEY }}
@@ -73,6 +87,8 @@ jobs:
         env:
           # The key picked above (most credits left); falls back to ODDS_API_KEY1, then ODDS_API_KEY.
           ODDS_API_KEY: ${{ env.ODDS_API_KEY || secrets.ODDS_API_KEY1 || secrets.ODDS_API_KEY }}
+          # 1 on the free tip-off checks: the script makes no Odds API calls at all
+          NO_PAID_CALLS: ${{ needs.gate.outputs.free == 'true' && '1' || '' }}
           # Hard cap on Odds API credits per day (ET). Change it under Settings > Secrets and variables > Actions > Variables.
           DAILY_CREDIT_LIMIT: ${{ vars.DAILY_CREDIT_LIMIT || '250' }}
           MONTHLY_CREDIT_LIMIT: ${{ vars.MONTHLY_CREDIT_LIMIT || '5500' }}
