@@ -346,6 +346,25 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 .lad-next { text-align: right; }
 @media (max-width: 720px) { .lad-next { text-align: left; } .lad-bank { font-size: 38px; } }
 .rung-row.sug td { background: rgba(92,200,255,0.08); }
+.alt-help { padding: 16px 18px; margin-bottom: 14px; }
+.alt-help-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 12px; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.alt-help-grid strong { color: var(--ink); display: block; margin-bottom: 2px; }
+.alt-num { width: 22px; height: 22px; border-radius: 50%; background: rgba(92,200,255,0.15); color: var(--accent2); font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; }
+.alt-slip { display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: 8px; padding: 0 18px 12px; }
+.alt-slip .leg { background: var(--bg); border: 1px solid var(--border-soft); border-radius: 10px; padding: 10px; }
+.alt-slip .role { font-size: 10.5px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
+.alt-slip .ln { font-size: 18px; font-weight: 800; margin-top: 4px; }
+.alt-card table th, .alt-card table td { padding: 8px 7px; font-size: 12.5px; }
+.alt-card table th { font-size: 10.5px; }
+@media (max-width: 520px) {
+  .alt-slip { grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 0 12px 10px; }
+  .alt-slip .leg { padding: 8px 6px; }
+  .alt-slip .ln { font-size: 15px; }
+  .alt-slip .ln .price { display: block; }
+  .alt-card table th, .alt-card table td { padding: 7px 4px; font-size: 11.5px; }
+  .alt-card .hide-sm { display: none; }
+}
+.alt-sub { font-size: 11.5px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); padding: 6px 18px 6px; }
 .date-row td { background: var(--surface-2); color: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .3px; padding: 8px 18px !important; }
 .seed-line td { border-bottom: 2px dashed var(--border) !important; }
 @media (max-width: 900px) {
@@ -526,9 +545,22 @@ nav button:first-child { margin-left: -13px; }
       <p class="note" style="margin-top:12px;" id="lad-rules"></p>
     </div>
     <div id="ladder-alt" style="display:none;">
+      <details class="card alt-help" id="alt-help" open>
+        <summary style="cursor:pointer;font-weight:800;font-size:15px;">How alt-line ladders work <span class="note" style="font-weight:400;">(tap to hide)</span></summary>
+        <div class="alt-help-grid">
+          <div><div class="alt-num">1</div><strong>Pick one player and stat.</strong> DraftKings sells the same stat at many lines: 8+ rebounds pays little, 17+ rebounds pays a lot. Each line is a <em>rung</em>.</div>
+          <div><div class="alt-num">2</div><strong>Split one stake across 2-3 rungs.</strong> A safe rung he usually clears, a middle rung, and a long shot. They are separate bets, not a parlay, so each rung pays on its own.</div>
+          <div><div class="alt-num">3</div><strong>The safe rung protects you.</strong> If he has a normal night, the safe rung gets most of your stake back. If he has a big night, every rung hits and the long shot pays several times your stake.</div>
+          <div><div class="alt-num">4</div><strong>Only rungs with value.</strong> We only suggest rungs where our chance is higher than the book's (positive EV). The "What happens" table on each card shows exactly what you win or lose at every result.</div>
+        </div>
+        <div class="note" style="margin-top:10px;"><strong>Reading a rung:</strong> <em>Book says</em> is the chance the odds imply · <em>We say</em> is our chance (model projection blended with his recent games) · <em>Edge</em> is ours minus the book's · <em>Recent</em> is how often he cleared it lately · <em>EV</em> is the average return per bet over the long run.</div>
+      </details>
+      <div class="filters" style="align-items:center;"><span class="note">Example stake</span>
+        <select id="alt-stake"><option value="10" selected>$10</option><option value="20">$20</option><option value="50">$50</option><option value="100">$100</option></select>
+        <span class="note">split 50% / 30% / 20% across the suggested rungs</span></div>
       <div class="filters" id="alt-stats"></div>
-      <div class="game-grid" id="alt-board" style="grid-template-columns:repeat(auto-fill,minmax(380px,1fr));"></div>
-      <p class="note" style="margin-top:12px;">Each rung is an alternate line at DraftKings. Book % is the chance the price implies; Model % blends the model's projection with the player's last 15 games. Rungs where Model % beats Book % are value (positive EV). The suggested ladder spreads one stake across the best value rungs, for example 50% on the safest rung, 30% on the middle and 20% on the long shot, so one hit covers part of the misses and a big night pays a lot.</p>
+      <div class="game-grid" id="alt-board" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr));"></div>
+      <p class="note" style="margin-top:12px;">Each rung is an alternate line at DraftKings. Book says = the chance the price implies; We say = the model's projection blended with the player's recent games. Rungs where we beat the book have value (positive EV). The suggested ladder splits one stake across the best value rungs (50% safe, 30% middle, 20% long shot; 60/40 with two rungs), so a normal night gets most of the stake back and a big night pays a lot. Payouts shown are at DraftKings' price and round to the cent. For entertainment only; win chances are estimates.</p>
     </div>
   </section>
 
@@ -1926,6 +1958,27 @@ function renderLadderChallenge() {
       : '<tr><td colspan="5" class="note" style="padding:18px;">No finished attempts yet.</td></tr>') + "</tbody>";
   document.getElementById("lad-rules").textContent = `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day (never the Pick of the Day itself). Some days the step is 2-3 picks from different games instead, but only when that gives a better chance of finishing the ladder; every leg must win. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`;
 }
+// ---------- Alt-line ladder helpers ----------
+const ALT_ROLES = [["Safe", "var(--good)"], ["Middle", "var(--accent2)"], ["Long shot", "var(--gold)"]];
+function altSplit(n) { return n >= 3 ? [0.5, 0.3, 0.2] : n === 2 ? [0.6, 0.4] : [1]; }
+function altDec(px) { return 1 + (px > 0 ? px / 100 : 100 / -px); }
+function altMoney(v) { return (v < 0 ? "-$" : "$") + Math.abs(v).toFixed(2).replace(/\.00$/, ""); }
+function altBars(vals, lines) {
+  if (!vals || !vals.length) return "";
+  const W = 420, H = 150, top = 16, bottom = 118;
+  const max = Math.max(...vals, ...lines.map(l => l.line)) * 1.12 || 1;
+  const y = v => top + (bottom - top) * (max - v) / max, bw = W / vals.length;
+  let c = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;">`;
+  vals.forEach((v, i) => {
+    const n = lines.filter(l => v > l.line).length, x = i * bw + bw * 0.18, w = bw * 0.64;
+    const col = n === 0 ? "var(--bad)" : lines[n - 1].color;
+    c += `<rect x="${x}" y="${y(v)}" width="${w}" height="${Math.max(1, bottom - y(v))}" rx="3" fill="${col}" opacity="0.85"/>` +
+         `<text x="${x + w / 2}" y="${y(v) - 4}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>`;
+  });
+  lines.forEach(l => { c += `<line x1="0" x2="${W}" y1="${y(l.line)}" y2="${y(l.line)}" stroke="${l.color}" stroke-dasharray="5 4" stroke-width="1.4"/>`; });
+  c += `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">Last ${vals.length} games, oldest → newest · bar color = highest rung he cleared</text></svg>`;
+  return c;
+}
 function renderAltLadders() {
   const all = DATA.alt_ladders || [];
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
@@ -1936,26 +1989,59 @@ function renderAltLadders() {
   const list = all.filter(a => fresh && (altStat === "all" || a.stat === altStat));
   const board = document.getElementById("alt-board");
   if (!list.length) { board.innerHTML = `<div class="card"><div class="note">${fresh ? "No ladders for this stat today." : "Alt-line ladders load with the 11 AM ET update for the day's best games."}</div></div>`; return; }
+  const stakeSel = document.getElementById("alt-stake");
+  if (stakeSel && !stakeSel.onchange) stakeSel.onchange = renderAltLadders;
+  const stake = +(stakeSel ? stakeSel.value : 10) || 10;
   board.innerHTML = list.map(a => {
     const sug = new Set(a.suggested || []);
     const inj = injuryFor(a.player);
-    return `<div class="card table-wrap">
+    const stat = STAT_NAMES[a.stat] || a.stat;
+    const legs = a.rungs.filter(r => sug.has(r.line)).sort((x, y) => x.line - y.line);
+    const split = altSplit(legs.length);
+    legs.forEach((r, i) => { r.role = ALT_ROLES[legs.length === 2 && i === 1 ? 2 : i] || ALT_ROLES[2]; r.stake = Math.round(stake * split[i] * 100) / 100; r.ret = Math.round(r.stake * altDec(r.price) * 100) / 100; });
+    // outcome bands: he finishes below the first rung, between rungs, or above the last one
+    const bands = [];
+    if (legs.length) {
+      const need = legs.map(r => Math.ceil(r.line));
+      bands.push({txt: `${need[0] - 1} or fewer`, hits: 0, p: 100 - legs[0].p});
+      legs.forEach((r, i) => bands.push({txt: i + 1 < legs.length ? (need[i + 1] - 1 > need[i] ? `${need[i]}–${need[i + 1] - 1}` : `${need[i]}`) : `${need[i]}+`, hits: i + 1,
+        p: Math.max(0, r.p - (i + 1 < legs.length ? legs[i + 1].p : 0))}));
+      bands.forEach(b => { b.net = Math.round((legs.slice(0, b.hits).reduce((t, r) => t + r.ret, 0) - stake) * 100) / 100; });
+    }
+    const evAll = legs.length ? Math.round(bands.reduce((t, b) => t + b.p / 100 * b.net, 0) * 100) / 100 : 0;
+    return `<div class="card table-wrap alt-card">
       <div style="padding:16px 18px 8px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
         <div><div class="matchup" style="font-size:16px;">${a.player}${inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}">${inj.status}</span>` : ""}</div>
         <div class="time">${a.team} · ${a.game.replace("@", " @ ")} · ${a.time}</div></div>
         <span class="stat-tag">${STAT_NAMES[a.stat] || a.stat}</span>
       </div>
-      <div style="padding:0 18px 8px;display:flex;gap:16px;flex-wrap:wrap;" class="team">
-        <span>Model <strong style="color:var(--ink);">${a.model}</strong></span><span>L5 avg <strong style="color:var(--ink);">${a.avg5}</strong></span><span>L15 avg <strong style="color:var(--ink);">${a.avg15}</strong></span>${a.main_line != null ? `<span>Main line <strong style="color:var(--ink);">${a.main_line}</strong></span>` : ""}
+      <div style="padding:0 18px 10px;display:flex;gap:16px;flex-wrap:wrap;" class="team">
+        <span title="What the model expects tonight">We project <strong style="color:var(--ink);">${a.model}</strong></span><span>Last 5 avg <strong style="color:var(--ink);">${a.avg5}</strong></span><span>Last ${a.rungs[0] ? a.rungs[0].hit[1] : 15} avg <strong style="color:var(--ink);">${a.avg15}</strong></span>${a.main_line != null ? `<span title="DraftKings' regular line">Main line <strong style="color:var(--ink);">${a.main_line}</strong></span>` : ""}
       </div>
-      <table><thead><tr><th>Rung</th><th>Odds</th><th>Book %</th><th>Model %</th><th>L15 hit</th><th>EV</th></tr></thead><tbody>
-      ${a.rungs.map(r => `<tr class="rung-row ${sug.has(r.line) ? "sug" : ""}">
-        <td style="white-space:nowrap;"><strong>${Math.ceil(r.line)}+</strong>${sug.has(r.line) ? ' <span class="badge rest" style="background:rgba(92,200,255,0.15);color:var(--accent2);">Ladder</span>' : ""}</td>
-        <td class="stat">${fmtPrice(r.price)}</td><td class="stat team">${r.implied}%</td>
-        <td class="stat"><strong>${r.p}%</strong></td><td class="stat team">${r.hit[0]}/${r.hit[1]}</td>
-        <td class="stat ${r.ev > 0 ? "positive" : "negative"}">${r.ev > 0 ? "+" : ""}${r.ev}%</td></tr>`).join("")}
+      ${legs.length ? `<div class="alt-sub">Suggested ladder · ${altMoney(stake)} total</div>
+      <div class="alt-slip">${legs.map(r => `<div class="leg" style="border-color:${r.role[1]};">
+          <div class="role" style="color:${r.role[1]};">${r.role[0]}</div>
+          <div class="ln">${Math.ceil(r.line)}+ <span class="price" style="font-size:13px;">${fmtPrice(r.price)}</span></div>
+          <div class="team" style="font-size:11.5px;margin-top:3px;">${stat}</div>
+          <div style="font-size:12.5px;margin-top:6px;">Bet <strong>${altMoney(r.stake)}</strong> → returns <strong class="positive">${altMoney(r.ret)}</strong></div>
+          <div class="team" style="font-size:11.5px;margin-top:2px;">${Math.round(r.p)}% chance · cleared ${r.hit[0]} of last ${r.hit[1]}</div></div>`).join("")}</div>
+      <div style="padding:0 18px 6px;">${altBars((a.last10 || []).slice(-10), legs.map(r => ({line: r.line, color: r.role[1]})))}</div>
+      <div class="alt-sub">What happens tonight</div>
+      <table style="margin-bottom:4px;"><thead><tr><th>If he gets</th><th class="hide-sm">Rungs hit</th><th>Chance</th><th>You end up</th></tr></thead><tbody>
+        ${bands.map(b => `<tr><td><strong>${b.txt}</strong> <span class="team" style="font-size:11px;">${a.stat}</span></td><td class="stat team hide-sm">${b.hits ? legs.slice(0, b.hits).map(r => r.role[0]).join(" + ") : "none"}</td>
+          <td class="stat">${Math.round(b.p)}%</td><td class="stat ${b.net > 0 ? "positive" : b.net < 0 ? "negative" : ""}"><strong>${b.net > 0 ? "+" : ""}${altMoney(b.net)}</strong></td></tr>`).join("")}
       </tbody></table>
-      <div class="note" style="padding:10px 18px 14px;">${sug.size ? `Suggested ladder: ${[...sug].map(l => Math.ceil(l) + "+").join(" → ")}` : "No rung shows value tonight. Pass, or play the main line."}</div>
+      <div class="note" style="padding:4px 18px 10px;">Average result over the long run: <strong class="${evAll >= 0 ? "positive" : "negative"}">${evAll >= 0 ? "+" : ""}${altMoney(evAll)}</strong> per ${altMoney(stake)} ladder, using our chances.</div>` : `<div class="note" style="padding:0 18px 10px;">No rung shows value tonight, so there's no suggested ladder. Pass, or play the main line.</div>`}
+      <div class="alt-sub">Every rung</div>
+      <table><thead><tr><th>Rung</th><th>Odds</th><th title="Chance the DraftKings price implies">Book says</th><th title="Our chance: model projection blended with recent games">We say</th><th title="We say minus book says">Edge</th><th title="How often he cleared this line lately" class="hide-sm">Recent</th><th title="Average return per bet over the long run">EV</th></tr></thead><tbody>
+      ${a.rungs.map(r => { const e = Math.round((r.p - r.implied) * 10) / 10, lg = legs.find(x => x.line === r.line);
+        return `<tr class="rung-row ${lg ? "sug" : ""}">
+        <td style="white-space:nowrap;"><strong>${Math.ceil(r.line)}+</strong>${lg ? ` <span class="badge" style="background:rgba(255,255,255,0.06);color:${lg.role[1]};">${lg.role[0]}</span>` : ""}</td>
+        <td class="stat">${fmtPrice(r.price)}</td><td class="stat team">${r.implied}%</td>
+        <td class="stat"><strong>${r.p}%</strong></td><td class="stat ${e > 0 ? "positive" : "negative"}">${e > 0 ? "+" : ""}${e}</td><td class="stat team hide-sm">${r.hit[0]}/${r.hit[1]}</td>
+        <td class="stat ${r.ev > 0 ? "positive" : "negative"}">${r.ev > 0 ? "+" : ""}${r.ev}%</td></tr>`; }).join("")}
+      </tbody></table>
+      <div class="note" style="padding:10px 18px 14px;">Highlighted rungs make up the suggested ladder. Green edge = we think he clears it more often than DraftKings does.</div>
     </div>`;
   }).join("");
 }
