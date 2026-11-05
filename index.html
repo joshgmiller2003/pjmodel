@@ -1619,7 +1619,7 @@ function renderCalibration() {
       : '<tr><td colspan="6" class="note" style="padding:18px;text-align:center;">No graded picks yet.</td></tr>') + "</tbody>";
   const rule = C.pause_rule || {min_bets: 150, roi: -8};
   document.getElementById("mkt-paused").innerHTML = Object.keys(P).length
-    ? `<strong style="color:var(--bad);">Paused:</strong> ${Object.entries(P).map(([k, v]) => `${k} (${v}% ROI)`).join(", ")}. These are left out of Pick of the Day and the ladder until they recover.`
+    ? `<strong style="color:var(--bad);">Paused:</strong> ${Object.entries(P).map(([k, v]) => `${k} (${typeof v === "number" ? v + "% ROI" : v})`).join("; ")}. These are left out of Pick of the Day and the ladder until they recover.`
     : `Auto-pause: a market with ${rule.min_bets}+ graded leans and an ROI of ${rule.roi}% or worse is left out of Pick of the Day and the ladder until it recovers. Nothing is paused right now.`;
 }
 
