@@ -1489,15 +1489,17 @@ def grade_parlay(st, plog):
     st["graded_at"] = datetime.now(ET).strftime("%Y-%m-%d %I:%M %p ET")
 
 
-def ladder_pick(cands, avoid=()):
+def ladder_pick(cands, avoid=(), avoid_games=()):
     """Safest bet with a real payout: price -200 to +120, positive expected value. Highest win chance wins.
-    Never the same play as today's Pick of the Day (avoid), so the two give people two different bets."""
+    Never the same play as today's Pick of the Day (avoid), and from a different game than the Pick of the Day
+    whenever one qualifies (avoid_games), so one bad game can't sink both. Same game only as a fallback."""
     pool = [c for c in cands if -200 <= c["price"] <= 120 and c.get("ev", -1) > 0 and bet_key(c) not in avoid]
     pool.sort(key=lambda c: (-c["p_win"], -c["ev"]))
-    return pool[0] if pool else None
+    other = [c for c in pool if c.get("eid") not in avoid_games]
+    return (other or pool or [None])[0]
 
 
-def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
+def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=(), avoid_games=()):
     lad.setdefault("start", LADDER_START); lad.setdefault("goal", LADDER_GOAL)
     lad.setdefault("attempt", 1); lad.setdefault("bankroll", lad["start"]); lad.setdefault("steps", [])
     lad.setdefault("attempts", []); lad.setdefault("attempt_started", t_iso)
@@ -1542,9 +1544,9 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
         today.setdefault("locked_at", stamp)
         return lad
     lad["steps"] = [x for x in lad["steps"] if x["date"] != t_iso]
-    pick = ladder_pick(cands, avoid)
+    pick = ladder_pick(cands, avoid, avoid_games)
     prev_step = today
-    combo = ladder_parlay(cands, avoid, pick)
+    combo = ladder_parlay([c for c in cands if c.get("eid") not in avoid_games], avoid, pick)
     if combo:
         legs, eff, eff1 = combo
         legs = sorted(legs, key=lambda l: next((i for i, g in enumerate(slate) if g["event_id"] == l["eid"]), 99))
@@ -2390,7 +2392,8 @@ def main():
             potd_hist.insert(0, carry_open(pick, todays))
     # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
     potd_today = next((h for h in potd_hist if h["date"] == t_iso), None)
-    ladder = run_ladder(lad_state, plog, all_cands, slate, t_iso, now, avoid={bet_key(potd_today)} - {None})
+    ladder = run_ladder(lad_state, plog, all_cands, slate, t_iso, now, avoid={bet_key(potd_today)} - {None},
+                        avoid_games={potd_today["eid"]} if potd_today and potd_today.get("eid") else set())
     track_clv(potd_hist[:5] + [x for s in ladder["steps"][:5] for x in (s.get("legs") or [s])], games, props, slate, now)
     streaks = streaks_and_badges(potd_hist, ladder, (prev.get("streaks") or {}).get("badges"))
 
