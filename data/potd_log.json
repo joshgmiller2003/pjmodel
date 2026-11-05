@@ -2,6 +2,76 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-05",
+   "eid": "401909937",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "home": "GSW",
+   "away": "MIA",
+   "type": "Spread",
+   "team": "MIA",
+   "side": "Cover",
+   "line": 6.5,
+   "price": -110,
+   "model": -4.2,
+   "edge": 2.3,
+   "edge_pct": null,
+   "label": "MIA +6.5",
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     5,
+     8
+    ],
+    "l15": [
+     5,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     -25,
+     -17,
+     -5,
+     -4,
+     12,
+     20,
+     -21,
+     1
+    ],
+    "line": -6.5,
+    "side": "Over",
+    "label": "MIA margin"
+   },
+   "score": 62.7,
+   "reasons": [
+    "Model has MIA losing by 4.2; the line is MIA +6.5 (2.3-point edge)",
+    "MIA would have covered +6.5 in 5 of their last 8 games (4/5 in the last 5)",
+    "MIA average margin: +1.6 over the last 5, -4.9 over the last 8",
+    "MIA on a back-to-back",
+    "GSW on 2 days rest"
+   ],
+   "candidates_considered": 2,
+   "p_model": 57.6,
+   "p_win": 59.6,
+   "ev": 13.8,
+   "picked_at": "2026-11-05 01:52 AM ET",
+   "open_line": 6.5,
+   "open_price": -110,
+   "close_line": 6.5,
+   "close_price": -110,
+   "close_at": "2026-11-05 01:52 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-04",
    "eid": "401909925",
    "game": "CHA@BKN",
@@ -73,8 +143,12 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "W",
+   "actual": "9 RA",
+   "units": 1.02,
+   "graded_at": "2026-11-05 01:52 AM ET"
   }
  ]
 }

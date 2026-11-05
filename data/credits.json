@@ -1,25 +1,14 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "used_today": 0,
- "calls": [
-  {
-   "time": "01:11 PM",
-   "call": "game lines",
-   "cost": 0
-  },
-  {
-   "time": "01:11 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "01:11 PM",
-   "call": "event list",
-   "cost": 0
-  }
- ],
+ "calls": [],
  "remaining": 2,
  "history": [
+  {
+   "date": "2026-11-05",
+   "used": 0,
+   "limit": 250
+  },
   {
    "date": "2026-11-04",
    "used": 0,
@@ -27,8 +16,8 @@
   }
  ],
  "adjust": null,
- "limit": 150,
- "days_to_reset": 30,
+ "limit": 250,
+ "days_to_reset": 29,
  "month_used": 0,
- "month_limit": 5000
+ "month_limit": 5500
 }

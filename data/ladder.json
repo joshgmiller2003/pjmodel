@@ -2,8 +2,66 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 1,
- "bankroll": 10.0,
+ "bankroll": 17.46,
  "steps": [
+  {
+   "type": "Total",
+   "label": "ORL @ PHX Over 223.5",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "home": "PHX",
+   "away": "ORL",
+   "side": "Over",
+   "line": 223.5,
+   "price": -110,
+   "model": 227.7,
+   "edge": 4.2,
+   "hits": {
+    "l5": [
+     7,
+     10
+    ],
+    "l10": [
+     8,
+     13
+    ],
+    "l15": [
+     8,
+     13
+    ]
+   },
+   "reasons": [
+    "Model total 227.7 vs a line of 223.5 (4.2-point edge)",
+    "8 of the two teams' last 13 games went over 223.5",
+    "PHX games average 243.8 total points over the last 5; ORL games 215.6",
+    "ORL on 2 days rest",
+    "PHX on a back-to-back"
+   ],
+   "p_win": 60.5,
+   "p_model": 59.8,
+   "ev": 15.5,
+   "score": 58.6,
+   "team": "PHX",
+   "date": "2026-11-05",
+   "attempt": 1,
+   "day": 2,
+   "stake": 17.46,
+   "to_win": 15.87,
+   "picked_at": "2026-11-05 01:52 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 60.5% to win, +15.5% expected value",
+   "open_line": 223.5,
+   "open_price": -110,
+   "close_line": 223.5,
+   "close_price": -110,
+   "close_at": "2026-11-05 01:52 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
   {
    "type": "Prop",
    "label": "Jaden McDaniels Over 7.5 RA",
@@ -65,8 +123,14 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "W",
+   "actual": "12 RA",
+   "units": 0.75,
+   "graded_at": "2026-11-05 01:52 AM ET",
+   "applied": true,
+   "bankroll_after": 17.46
   }
  ],
  "attempts": [],

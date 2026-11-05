@@ -1,57 +1,57 @@
 {
- "updated": "2026-11-04 07:05 PM ET",
+ "updated": "2026-11-05 01:52 AM ET",
  "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
  "by_month": {
   "All": {
    "Pick of the Day": {
-    "bets": 1,
-    "won": 0,
+    "bets": 2,
+    "won": 1,
     "lost": 0,
     "push": 0,
     "pending": 1,
-    "units": 0.0
+    "units": 1.02
    },
    "Ladder Challenge": {
-    "bets": 1,
-    "won": 0,
+    "bets": 2,
+    "won": 1,
     "lost": 0,
     "push": 0,
     "pending": 1,
     "units": 0.0
    },
    "Model bet": {
-    "bets": 650,
-    "won": 0,
-    "lost": 0,
-    "push": 0,
-    "pending": 650,
-    "units": 0.0
+    "bets": 653,
+    "won": 329,
+    "lost": 304,
+    "push": 17,
+    "pending": 3,
+    "units": -25.68
    }
   },
   "2026-11": {
    "Pick of the Day": {
-    "bets": 1,
-    "won": 0,
+    "bets": 2,
+    "won": 1,
     "lost": 0,
     "push": 0,
     "pending": 1,
-    "units": 0.0
+    "units": 1.02
    },
    "Ladder Challenge": {
-    "bets": 1,
-    "won": 0,
+    "bets": 2,
+    "won": 1,
     "lost": 0,
     "push": 0,
     "pending": 1,
     "units": 0.0
    },
    "Model bet": {
-    "bets": 650,
-    "won": 0,
-    "lost": 0,
-    "push": 0,
-    "pending": 650,
-    "units": 0.0
+    "bets": 653,
+    "won": 329,
+    "lost": 304,
+    "push": 17,
+    "pending": 3,
+    "units": -25.68
    }
   }
  }
