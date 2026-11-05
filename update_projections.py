@@ -1647,53 +1647,79 @@ def _status(r):
     return "Pending" if not r else {"W": "Won", "L": "Lost", "P": "Push"}.get(r, r)
 
 
-def ledger_rows(settled_bets, potd_hist, ladder):
-    rows = []
-    for b in settled_bets:
-        rows.append({"id": f"model|{b['date']}|{b['game']}|{b['market']}|{b['side']}", "source": "Model bet",
-                     "date": b["date"], "game": b["game"], "market": b["market"], "pick": b["side"],
-                     "price": b.get("price"), "edge": b.get("edge"), "result": b.get("result"),
-                     "status": _status(b.get("result")), "actual": b.get("actual"), "units": b.get("units"),
-                     "why": f"Model edge of {b.get('edge')} vs the DraftKings line"})
+LEDGER_FIELDS = ("player", "team", "opp", "stat", "dir", "line", "price", "model", "edge")
+
+
+def _pick_fields(h):
+    """Structured fields for a Pick of the Day / ladder entry, so every record sorts and filters the same way."""
+    t = h.get("type", "Prop")
+    team = h.get("team")
+    opp = (h.get("away") if team == h.get("home") else h.get("home")) if team and t != "Total" else None
+    return {"type": t, "player": h.get("player"), "team": team if t != "Total" else None, "opp": opp,
+            "stat": h.get("stat") if t == "Prop" else t, "dir": h.get("side"), "line": h.get("line"),
+            "price": h.get("price"), "model": h.get("model"), "edge": h.get("edge"), "edge_pct": h.get("edge_pct"),
+            "best": (h.get("best_over") if h.get("side") == "Over" else h.get("best_under")) if t == "Prop" else None}
+
+
+def model_row(b):
+    r = b.get("result")
+    return {"id": f"model|{b['date']}|{b['game']}|{b.get('key') or b['side']}", "source": "Model bet",
+            "date": b["date"], "game": b["game"], "market": b.get("market"), "type": b.get("type") or ("Prop" if b.get("market") == "Player Prop" else b.get("market")),
+            "pick": b["side"], **{k: b.get(k) for k in LEDGER_FIELDS},
+            "result": r, "status": _status(r), "actual": b.get("actual"), "units": b.get("units"),
+            "why": f"Model {b.get('model')} vs DraftKings {b.get('line')} (edge {b.get('edge')})" if b.get("line") is not None else f"Model edge of {b.get('edge')} vs the DraftKings line"}
+
+
+def ledger_rows(settled_bets, potd_hist, ladder, pending_bets=()):
+    rows = [model_row(b) for b in pending_bets] + [model_row(b) for b in settled_bets]
     for h in potd_hist:
         rows.append({"id": f"potd|{h['date']}", "source": "Pick of the Day", "date": h["date"], "game": h["game"],
                      "market": h.get("type", "Prop"), "pick": h.get("label") or f"{h.get('player')} {h.get('side')} {h.get('line')} {h.get('stat')}",
-                     "price": h.get("price"), "edge": h.get("edge"), "confidence": h.get("score"),
+                     **_pick_fields(h), "confidence": h.get("score"), "win_chance": h.get("p_win"),
                      "result": h.get("result"), "status": _status(h.get("result")), "actual": h.get("actual"),
-                     "units": h.get("units"), "why": " | ".join(h.get("reasons") or []),
+                     "units": h.get("units"), "why": " | ".join(x for x in (h.get("reasons") or []) if x),
                      "picked_at": h.get("picked_at"), "graded_at": h.get("graded_at"), "clv": h.get("clv"),
                      "open": [h.get("open_line"), h.get("open_price")], "close": [h.get("close_line"), h.get("close_price")]})
     for st in ladder.get("steps", []):
         r = st.get("result")
         rows.append({"id": f"ladder|{st['attempt']}|{st['day']}|{st['date']}", "source": "Ladder Challenge",
                      "date": st["date"], "game": st["game"], "market": st.get("type", "Prop"), "pick": st.get("label"),
-                     "price": st.get("price"), "edge": st.get("edge"), "confidence": st.get("score"),
+                     **_pick_fields(st), "confidence": st.get("score"),
                      "attempt": st["attempt"], "day": st["day"], "stake": st.get("stake"), "to_win": st.get("to_win"),
                      "bankroll_after": st.get("bankroll_after"), "win_chance": st.get("p_win"),
                      "result": r, "status": _status(r), "actual": st.get("actual"),
                      "units": (rnd(st["stake"] * (decimal(st["price"]) - 1), 2) if r == "W" else -st["stake"] if r == "L" else 0.0) if r else None,
-                     "why": " | ".join([st.get("why_ladder", "")] + (st.get("reasons") or [])).strip(" |"),
+                     "why": " | ".join([st.get("why_ladder", "")] + [x for x in (st.get("reasons") or []) if x]).strip(" |"),
                      "picked_at": st.get("picked_at"), "graded_at": st.get("graded_at"), "clv": st.get("clv"),
                      "open": [st.get("open_line"), st.get("open_price")], "close": [st.get("close_line"), st.get("close_price")]})
     return rows
 
 
-def update_ledger(settled_bets, potd_hist, ladder, now):
-    """Upsert every bet into data/records/bets_YYYY-MM.json (never deletes) and rebuild summary.json."""
+def update_ledger(settled_bets, potd_hist, ladder, now, pending_bets=(), open_games=()):
+    """Upsert every bet into data/records/bets_YYYY-MM.json and rebuild summary.json. Graded bets are never
+    deleted. The one exception: a Pending model pick on a game that has not tipped, which the latest lines
+    no longer support, is taken back off (it was never a bet)."""
     RECORDS_DIR.mkdir(parents=True, exist_ok=True)
     by_month = {}
-    for r in ledger_rows(settled_bets, potd_hist, ladder):
+    live_ids = {model_row(b)["id"] for b in pending_bets}
+    open_games = set(open_games)
+    for r in ledger_rows(settled_bets, potd_hist, ladder, pending_bets):
         by_month.setdefault(r["date"][:7], []).append(r)
+    for (d, gl) in open_games:
+        by_month.setdefault(d[:7], [])
     for month, rows in by_month.items():
         path = RECORDS_DIR / f"bets_{month}.json"
         cur = {x["id"]: x for x in load(path, {"bets": []}).get("bets", [])}
+        for k in [k for k, x in cur.items() if x.get("source") == "Model bet" and not x.get("result")
+                  and (x["date"], x["game"]) in open_games and k not in live_ids]:
+            del cur[k]
         for r in rows:
             cur[r["id"]] = {**cur.get(r["id"], {}), **{k: v for k, v in r.items() if v is not None or k not in cur.get(r["id"], {})}}
         order = {"Pick of the Day": 0, "Ladder Challenge": 1, "Model bet": 2}
         bets = sorted(cur.values(), key=lambda x: (x["date"], -order.get(x["source"], 9)), reverse=True)
         save(path, {"month": month, "updated": now.strftime("%Y-%m-%d %I:%M %p ET"), "count": len(bets), "bets": bets}, indent=1)
     # summary across every month on disk
-    summary, recent = {}, []
+    summary, recent, model_n = {}, [], [0]
     for f in sorted(RECORDS_DIR.glob("bets_*.json"), reverse=True):
         data = load(f, {"bets": []})
         for b in data["bets"]:
@@ -1703,12 +1729,18 @@ def update_ledger(settled_bets, potd_hist, ladder, now):
                 t[{"W": "won", "L": "lost", "P": "push"}.get(b.get("result"), "pending")] += 1
                 if b["source"] != "Ladder Challenge":
                     t["units"] = rnd(t["units"] + (b.get("units") or 0), 2)
-        if len(recent) < 600:
-            recent += data["bets"][:600 - len(recent)]
+        # the page gets every Pick of the Day and ladder step plus the newest 300 model picks;
+        # the Pick Log tab loads whole months from data/records/ when it needs more
+        recent += [b for b in data["bets"] if b["source"] != "Model bet"]
+        if model_n[0] < 300:
+            mb = [b for b in data["bets"] if b["source"] == "Model bet"][:300 - model_n[0]]
+            recent += mb; model_n[0] += len(mb)
     save(RECORDS_DIR / "summary.json", {"updated": now.strftime("%Y-%m-%d %I:%M %p ET"),
                                         "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
                                         "by_month": summary}, indent=1)
-    return {"summary": summary, "bets": recent}
+    recent.sort(key=lambda b: (b["date"], {"Pick of the Day": 2, "Ladder Challenge": 1}.get(b["source"], 0)), reverse=True)
+    months = sorted({f.stem[5:] for f in RECORDS_DIR.glob("bets_*.json")}, reverse=True)
+    return {"summary": summary, "bets": recent, "months": months}
 
 
 CALIB_PATH = ROOT / "data" / "calibration.json"
@@ -1744,6 +1776,68 @@ def paused_markets(cal):
     return out
 
 
+def _px(v):
+    try:
+        return int(num(v)) if v not in (None, "N/A") else None
+    except (TypeError, ValueError):
+        return None
+
+
+def prop_bet(p, label, date):
+    """One model prop pick in the shape the records store (same shape before and after grading)."""
+    over = p["model"] > p["dk"]
+    return {"key": f'{p["player"]}|{p["stat"]}', "date": date, "game": label, "type": "Prop", "market": "Player Prop",
+            "player": p["player"], "team": p.get("team"), "opp": p.get("opp"), "stat": p["stat"],
+            "dir": "Over" if over else "Under", "line": p["dk"], "price": p.get("over") if over else p.get("under"),
+            "model": p["model"], "edge": rnd(p["model"] - p["dk"]),
+            "side": f'{p["player"]} {"Over" if over else "Under"} {p["dk"]:g} {p["stat"]}'}
+
+
+def game_bets(g, label, date):
+    """Model spread / total picks for one game (g has home, away, model, dk)."""
+    dk, out = g.get("dk") or {}, []
+    try:
+        hs = float(dk["spread"])
+    except (KeyError, TypeError, ValueError):
+        return out
+    sedge = hs - g["model"]["spread"]
+    if abs(sedge) >= BET_EDGE_GAME:
+        hp = sedge > 0
+        team, opp = (g["home"], g["away"]) if hp else (g["away"], g["home"])
+        line = hs if hp else -hs
+        out.append({"key": "Spread", "date": date, "game": label, "type": "Spread", "market": "Spread", "team": team, "opp": opp,
+                    "stat": "Spread", "dir": "Cover", "line": line, "price": _px(dk.get("spread_px_home" if hp else "spread_px_away")),
+                    "model": rnd(-g["model"]["spread"] if hp else g["model"]["spread"]), "edge": rnd(sedge),
+                    "side": f"{team} {sgn(line)}", "_hp": hp, "_hs": hs})
+    try:
+        tl = float(dk["total"])
+    except (KeyError, TypeError, ValueError):
+        return out
+    if tl and abs(g["model"]["total"] - tl) >= BET_EDGE_GAME:
+        ov = g["model"]["total"] > tl
+        out.append({"key": "Total", "date": date, "game": label, "type": "Total", "market": "Total", "team": None, "opp": None,
+                    "stat": "Total", "dir": "Over" if ov else "Under", "line": tl, "price": _px(dk.get("over_px" if ov else "under_px")),
+                    "model": g["model"]["total"], "edge": rnd(g["model"]["total"] - tl),
+                    "side": f'{"Over" if ov else "Under"} {tl:g}'})
+    return out
+
+
+def pending_model_bets(props, games):
+    """Every model pick on games that have not tipped yet, saved to the records as Pending right away.
+    Same rule as grading: props with an edge of BET_EDGE_PROP+, spreads/totals with BET_EDGE_GAME+."""
+    rows = []
+    up = {r["id"]: r for r in games if r.get("status") == "Upcoming"}
+    for r in up.values():
+        rows += game_bets(r, f'{r["away"]} @ {r["home"]}', r["date"])
+    for p in props:
+        r = up.get(p["game"])
+        if r and p.get("dk") and abs(p["model"] - p["dk"]) >= BET_EDGE_PROP:
+            rows.append(prop_bet(p, f'{r["away"]} @ {r["home"]}', r["date"]))
+    for b in rows:
+        b.pop("_hp", None); b.pop("_hs", None)
+    return rows
+
+
 def settle(pending, plog, state, cal=None):
     """Score frozen predictions for games that have finished. Updates state in place."""
     names = {}
@@ -1763,12 +1857,16 @@ def settle(pending, plog, state, cal=None):
         if dk:
             hs = float(dk["spread"])
             sedge = hs - pg["model"]["spread"]            # >0: model likes home more than market
-            if abs(sedge) >= BET_EDGE_GAME:
-                home_pick = sedge > 0
-                cover = margin + hs
-                res = "P" if cover == 0 else ("W" if (cover > 0) == home_pick else "L")
-                side = f'{pg["home"]} {dk["spread"]}' if home_pick else f'{pg["away"]} {sgn(-hs)}'
-                bets.append(("Spread", side, rnd(sedge), res, f"{lg['away_pts']}-{lg['home_pts']}"))
+            for b in game_bets(pg, label, lg["date"]):
+                if b["type"] == "Spread":
+                    cover = margin + hs
+                    res = "P" if cover == 0 else ("W" if (cover > 0) == b["_hp"] else "L")
+                    act = f"{lg['away_pts']}-{lg['home_pts']}"
+                else:
+                    res = "P" if total == b["line"] else ("W" if (total > b["line"]) == (b["dir"] == "Over") else "L")
+                    act = f"Total {total}"
+                b.pop("_hp", None); b.pop("_hs", None)
+                bets.append({**b, "result": res, "actual": act})
             if cal is not None and sedge:
                 hp = sedge > 0
                 mm = -pg["model"]["spread"] if hp else pg["model"]["spread"]          # model margin for our side
@@ -1778,10 +1876,6 @@ def settle(pending, plog, state, cal=None):
                     calib_record(cal, "Spread", phi((mm + ln) / GAME_SD), "W" if (cov > 0) == hp else "L",
                                  dk.get("spread_px_home" if hp else "spread_px_away"))
             tedge = pg["model"]["total"] - dk["total"]
-            if abs(tedge) >= BET_EDGE_GAME:
-                over = tedge > 0
-                res = "P" if total == dk["total"] else ("W" if (total > dk["total"]) == over else "L")
-                bets.append(("Total", f'{"Over" if over else "Under"} {dk["total"]:g}', rnd(tedge), res, f"Total {total}"))
             if cal is not None and tedge and total != dk["total"]:
                 ov = tedge > 0
                 po = 1 - phi((dk["total"] - pg["model"]["total"]) / 17.0)
@@ -1790,6 +1884,9 @@ def settle(pending, plog, state, cal=None):
         for p in pending["props"].get(eid, []):
             row = names[eid].get(norm(p["player"]))
             if not row:
+                # did not play: the pick is void (refunded at the book), so it is closed out as a push
+                if abs(p["model"] - p["dk"]) >= BET_EDGE_PROP:
+                    bets.append({**prop_bet(p, label, lg["date"]), "result": "P", "actual": "Did not play (void)"})
                 continue
             actual = {"PTS": row["pts"], "REB": row["reb"], "AST": row["ast"], "3PM": row["tpm"],
                       "BLK": row["blk"], "STL": row["stl"], "PRA": row["pts"] + row["reb"] + row["ast"],
@@ -1806,23 +1903,18 @@ def settle(pending, plog, state, cal=None):
                 calib_record(cal, p["stat"], p["p_over"] if lean_over else 1 - p["p_over"],
                              "W" if (actual > p["dk"]) == lean_over else "L", p.get("over") if lean_over else p.get("under"))
             if abs(edge) >= BET_EDGE_PROP:
-                over = edge > 0
-                res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == over else "L")
-                price = p.get("over") if over else p.get("under")
-                bets.append(("Player Prop", f'{p["player"]} {"Over" if over else "Under"} {p["dk"]:g} {p["stat"]}',
-                             rnd(edge), res, f'{actual:g} {p["stat"]}', price, p["stat"]))
+                b = prop_bet(p, label, lg["date"])
+                res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == (b["dir"] == "Over") else "L")
+                bets.append({**b, "result": res, "actual": f'{actual:g} {p["stat"]}'})
         if dk:
             state["accuracy"].insert(0, {"date": lg["date"], "game": label, "model_spread": pg["model"]["spread"],
                                          "dk_spread": float(dk["spread"]), "actual_margin": margin,
                                          "model_total": pg["model"]["total"], "dk_total": dk["total"], "actual_total": total})
         for bet in bets:
-            market, side, edge, res, actual = bet[:5]
-            price = bet[5] if len(bet) > 5 else None
-            stat = bet[6] if len(bet) > 6 else market
+            res, price = bet["result"], bet.get("price")
             win = (price / 100 if price and price > 0 else 100 / -price if price else WIN_UNITS)
             units = rnd(win, 2) if res == "W" else (-1.0 if res == "L" else 0.0)
-            state["settled_bets"].insert(0, {"date": lg["date"], "game": label, "market": market, "side": side, "stat": stat,
-                                             "edge": edge, "result": res, "units": rnd(units, 2), "actual": actual, "price": price})
+            state["settled_bets"].insert(0, {**bet, "units": rnd(units, 2)})
             rec = state["record"]
             rec["wins"] += res == "W"
             rec["losses"] += res == "L"
@@ -2100,7 +2192,9 @@ def main():
     CREDITS.save()
     ladder["steps"] = ladder["steps"][:1000]
     save(LADDER_PATH, ladder, indent=1)
-    records = update_ledger(state.get("new_bets", []) + state["settled_bets"], potd_hist, ladder, now)
+    open_bets = pending_model_bets(props, games)
+    open_games = {(r["date"], f'{r["away"]} @ {r["home"]}') for r in games if r.get("status") == "Upcoming"}
+    records = update_ledger(state.get("new_bets", []) + state["settled_bets"], potd_hist, ladder, now, open_bets, open_games)
     data["records"] = records
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
