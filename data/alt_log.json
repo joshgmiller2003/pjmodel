@@ -1,0 +1,749 @@
+{
+ "note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
+ "ladders": [
+  {
+   "id": "2026-11-05|Yaxel Lendeborg|PTS",
+   "date": "2026-11-05",
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "stat": "PTS",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 18.5,
+   "model": 20.8,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -159,
+     "p": 62.5,
+     "stake": 0.5
+    },
+    {
+     "line": 19.5,
+     "price": 100,
+     "p": 54.1,
+     "stake": 0.3
+    },
+    {
+     "line": 29.5,
+     "price": 840,
+     "p": 20.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Yaxel Lendeborg|AST",
+   "date": "2026-11-05",
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "stat": "AST",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -124,
+     "p": 56.9,
+     "stake": 0.6
+    },
+    {
+     "line": 4.5,
+     "price": 157,
+     "p": 40.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Yaxel Lendeborg|REB",
+   "date": "2026-11-05",
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "stat": "REB",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 7.5,
+   "model": 7.6,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": 104,
+     "p": 49.2,
+     "stake": 0.6
+    },
+    {
+     "line": 8.5,
+     "price": 170,
+     "p": 37.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Wendell Carter Jr|PTS",
+   "date": "2026-11-05",
+   "player": "Wendell Carter Jr",
+   "team": "ORL",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 12.5,
+   "model": 13.8,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -139,
+     "p": 58.6,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 161,
+     "p": 46.1,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 583,
+     "p": 27.0,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Wendell Carter Jr|REB",
+   "date": "2026-11-05",
+   "player": "Wendell Carter Jr",
+   "team": "ORL",
+   "stat": "REB",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 8.5,
+   "model": 9.7,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -227,
+     "p": 74.1,
+     "stake": 0.6
+    },
+    {
+     "line": 8.5,
+     "price": -139,
+     "p": 64.1,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Tristan da Silva|PTS",
+   "date": "2026-11-05",
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 12.5,
+   "model": 14.3,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -246,
+     "p": 75.5,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 146,
+     "p": 48.1,
+     "stake": 0.3
+    },
+    {
+     "line": 17.5,
+     "price": 288,
+     "p": 33.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Stephen Curry|PTS",
+   "date": "2026-11-05",
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "stat": "PTS",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 27.5,
+   "model": 30.8,
+   "rungs": [
+    {
+     "line": 24.5,
+     "price": -191,
+     "p": 73.8,
+     "stake": 0.5
+    },
+    {
+     "line": 29.5,
+     "price": 130,
+     "p": 55.4,
+     "stake": 0.3
+    },
+    {
+     "line": 34.5,
+     "price": 311,
+     "p": 30.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Stephen Curry|3PM",
+   "date": "2026-11-05",
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "stat": "3PM",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 4.5,
+   "model": 4.9,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -200,
+     "p": 68.8,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 108,
+     "p": 53.6,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 216,
+     "p": 36.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Stephen Curry|REB",
+   "date": "2026-11-05",
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "stat": "REB",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -119,
+     "p": 56.5,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 180,
+     "p": 37.4,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 366,
+     "p": 23.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Miles Bridges|PTS",
+   "date": "2026-11-05",
+   "player": "Miles Bridges",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 16.5,
+   "model": 17.4,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -170,
+     "p": 72.0,
+     "stake": 0.6
+    },
+    {
+     "line": 16.5,
+     "price": -104,
+     "p": 57.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Miles Bridges|REB",
+   "date": "2026-11-05",
+   "player": "Miles Bridges",
+   "team": "PHX",
+   "stat": "REB",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.7,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -171,
+     "p": 68.0,
+     "stake": 0.6
+    },
+    {
+     "line": 6.5,
+     "price": 108,
+     "p": 52.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Khaman Maluach|PTS",
+   "date": "2026-11-05",
+   "player": "Khaman Maluach",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.5,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -143,
+     "p": 61.5,
+     "stake": 0.6
+    },
+    {
+     "line": 6.5,
+     "price": 109,
+     "p": 49.5,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Jamal Cain|PTS",
+   "date": "2026-11-05",
+   "player": "Jamal Cain",
+   "team": "ORL",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.8,
+   "rungs": [
+    {
+     "line": 6.5,
+     "price": 102,
+     "p": 51.2,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 144,
+     "p": 44.5,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 269,
+     "p": 29.5,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Giannis Antetokounmpo|REB",
+   "date": "2026-11-05",
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "stat": "REB",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 10.5,
+   "model": 11.5,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -207,
+     "p": 71.8,
+     "stake": 0.5
+    },
+    {
+     "line": 11.5,
+     "price": 108,
+     "p": 52.8,
+     "stake": 0.3
+    },
+    {
+     "line": 13.5,
+     "price": 242,
+     "p": 30.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Draymond Green|AST",
+   "date": "2026-11-05",
+   "player": "Draymond Green",
+   "team": "GSW",
+   "stat": "AST",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.8,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -161,
+     "p": 70.3,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 112,
+     "p": 52.4,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 336,
+     "p": 23.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Dillon Brooks|AST",
+   "date": "2026-11-05",
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "stat": "AST",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.8,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 125,
+     "p": 51.6,
+     "stake": 0.6
+    },
+    {
+     "line": 4.5,
+     "price": 750,
+     "p": 17.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Dillon Brooks|PTS",
+   "date": "2026-11-05",
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 15.5,
+   "model": 16.4,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -153,
+     "p": 69.7,
+     "stake": 0.6
+    },
+    {
+     "line": 15.5,
+     "price": -122,
+     "p": 56.9,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Devin Booker|PTS",
+   "date": "2026-11-05",
+   "player": "Devin Booker",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "ORL@PHX",
+   "eid": "401909936",
+   "time": "9:00 PM ET",
+   "main_line": 25.5,
+   "model": 24.9,
+   "rungs": [
+    {
+     "line": 29.5,
+     "price": 193,
+     "p": 36.1,
+     "stake": 0.6
+    },
+    {
+     "line": 34.5,
+     "price": 489,
+     "p": 22.7,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|De'Anthony Melton|PTS",
+   "date": "2026-11-05",
+   "player": "De'Anthony Melton",
+   "team": "GSW",
+   "stat": "PTS",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 10.5,
+   "model": 11.3,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": 120,
+     "p": 47.1,
+     "stake": 0.6
+    },
+    {
+     "line": 19.5,
+     "price": 870,
+     "p": 19.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Davion Mitchell|AST",
+   "date": "2026-11-05",
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "stat": "AST",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 7.5,
+   "model": 8.0,
+   "rungs": [
+    {
+     "line": 6.5,
+     "price": -191,
+     "p": 69.8,
+     "stake": 0.5
+    },
+    {
+     "line": 8.5,
+     "price": 144,
+     "p": 44.6,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 238,
+     "p": 34.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Davion Mitchell|PTS",
+   "date": "2026-11-05",
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "stat": "PTS",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 12.5,
+   "model": 13.8,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -162,
+     "p": 67.9,
+     "stake": 0.6
+    },
+    {
+     "line": 12.5,
+     "price": -125,
+     "p": 61.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Brandin Podziemski|AST",
+   "date": "2026-11-05",
+   "player": "Brandin Podziemski",
+   "team": "GSW",
+   "stat": "AST",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 4.5,
+   "model": 5.0,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -181,
+     "p": 73.1,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 119,
+     "p": 58.3,
+     "stake": 0.3
+    },
+    {
+     "line": 7.5,
+     "price": 930,
+     "p": 14.3,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Brandin Podziemski|PTS",
+   "date": "2026-11-05",
+   "player": "Brandin Podziemski",
+   "team": "GSW",
+   "stat": "PTS",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 16.5,
+   "model": 17.6,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -171,
+     "p": 76.3,
+     "stake": 0.6
+    },
+    {
+     "line": 16.5,
+     "price": -104,
+     "p": 63.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  },
+  {
+   "id": "2026-11-05|Brandin Podziemski|3PM",
+   "date": "2026-11-05",
+   "player": "Brandin Podziemski",
+   "team": "GSW",
+   "stat": "3PM",
+   "game": "MIA@GSW",
+   "eid": "401909937",
+   "time": "10:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.6,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -209,
+     "p": 74.8,
+     "stake": 0.5
+    },
+    {
+     "line": 2.5,
+     "price": 141,
+     "p": 48.4,
+     "stake": 0.3
+    },
+    {
+     "line": 3.5,
+     "price": 349,
+     "p": 24.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-05 02:21 PM ET",
+   "updated_at": "2026-11-05 02:21 PM ET"
+  }
+ ]
+}
