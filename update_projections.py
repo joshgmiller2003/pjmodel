@@ -1254,7 +1254,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
         # moneyline
         for team, opp, p_win, px in ((H, A, row["model"]["ml_home"], ml_num(dk.get("ml_home"))),
                                      (A, H, row["model"]["ml_away"], ml_num(dk.get("ml_away")))):
-            if px is None or not (-250 <= px <= 250):
+            if px is None or not (-250 <= px <= 250) or "Moneyline" in (paused or {}):
                 continue
             imp = implied(px)
             edge = p_win - imp
@@ -1934,10 +1934,25 @@ def calib_record(cal, market, p, res, price):
     r["n"] += 1; r["w"] += win; r["p"] = rnd(r["p"] + p, 3); r["units"] = rnd(r["units"] + units, 2)
 
 
-def paused_markets(cal):
+ACC_MIN_GAMES = 10   # game lines need this many compared games before the accuracy pause can kick in
+ACC_WINDOW = 40      # ... measured over the most recent games
+
+
+def paused_markets(cal, accuracy=None):
     """#8 auto-pause: markets with a big enough sample that keep losing are left out of Pick of the Day and
-    the ladder until they recover. Shown on the Model tab."""
+    the ladder until they recover. Game lines are also paused while the model misses actual results by more
+    than DraftKings does (a spread or total pick only makes sense if the model beats the market's number).
+    Moneylines use the same margin model as spreads, so they pause with them. Shown on the Model tab."""
     out = {}
+    acc = (accuracy or [])[:ACC_WINDOW]
+    if len(acc) >= ACC_MIN_GAMES:
+        miss = lambda f: sum(abs(f(x)) for x in acc) / len(acc)
+        ms, ds = miss(lambda x: -x["model_spread"] - x["actual_margin"]), miss(lambda x: -x["dk_spread"] - x["actual_margin"])
+        mt, dt = miss(lambda x: x["model_total"] - x["actual_total"]), miss(lambda x: x["dk_total"] - x["actual_total"])
+        if ms > ds:
+            out["Spread"] = out["Moneyline"] = f"model misses the margin by {ms:.1f} pts vs DraftKings {ds:.1f} (last {len(acc)} games)"
+        if mt > dt:
+            out["Total"] = f"model misses the total by {mt:.1f} pts vs DraftKings {dt:.1f} (last {len(acc)} games)"
     for mk, r in (cal or {}).get("markets", {}).items():
         if r["n"] >= PAUSE_MIN_BETS:
             roi = 100 * r["units"] / r["n"]
@@ -2341,7 +2356,7 @@ def main():
     potd_alts = prev.get("potd_alts", []) if locked else []
     if todays and locked and not todays.get("locked_at"):
         todays["locked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
-    paused = paused_markets(cal)
+    paused = paused_markets(cal, state["accuracy"])
     pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso, paused)
     add_win_probs(all_cands)
     # Pick of the Day and the ladder are always two different plays. The Pick of the Day gets first choice,
@@ -2417,7 +2432,7 @@ def main():
                             "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers",
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers. Spreads, totals and moneylines are also paused while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
                             "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"],
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
