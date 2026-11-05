@@ -27,6 +27,7 @@ LOG_PATH = ROOT / "data" / "player_log.json"
 PENDING_PATH = ROOT / "data" / "pending.json"
 POTD_LOG = ROOT / "data" / "potd_log.json"      # permanent record of every Pick of the Day
 LADDER_PATH = ROOT / "data" / "ladder.json"     # ladder challenge: every step, every attempt
+ALT_LOG = ROOT / "data" / "alt_log.json"         # every suggested alt-line ladder, graded after the game
 RECORDS_DIR = ROOT / "data" / "records"         # permanent bet ledger: one file per month + a summary
 LADDER_START = float(os.environ.get("LADDER_START", "10") or 10)
 LADDER_GOAL = float(os.environ.get("LADDER_GOAL", "1000") or 1000)
@@ -40,6 +41,9 @@ ET = ZoneInfo("America/New_York")
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 ODDS = "https://api.the-odds-api.com/v4/sports/basketball_nba"
 ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
+# Free tip-off checks (7-10 PM ET): no Odds API calls at all. Injuries and box scores come from ESPN (free) and
+# the lines saved at the last paid run are reused, so a pick whose player is ruled out can be swapped for free.
+TIP_CHECK = os.environ.get("NO_PAID_CALLS", "") == "1"
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
 DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "250") or 250)   # hard cap per ET day (unused credits roll forward)
 MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5500") or 5500)  # this site's share of the plan
@@ -146,7 +150,7 @@ class Credits:
         return max(0, left_today)
 
     def spend(self, url, est, label, **params):
-        if not ODDS_KEY:
+        if not ODDS_KEY or TIP_CHECK:
             return None
         if est > self.allowance():
             self.skipped.append(label)
@@ -1716,7 +1720,7 @@ def send_alerts(slot, potd_hist, ladder, streaks, slate, t_iso, now):
                                       f"Stake ${step['stake']:g} to win ${step['to_win']:g}"))
         if discord_post({"username": "PJ MODEL", "content": f"Today's picks are up: {SITE_URL}", "embeds": embeds}):
             st.update(pick_date=t_iso, pick_label=pick["label"], step_label=(step or {}).get("label"))
-    elif slot == "pretip" and pick and st.get("pick_date") == t_iso and not pick.get("result"):
+    elif slot in ("pretip", "tipcheck") and pick and st.get("pick_date") == t_iso and not pick.get("result"):
         live = next((g["status"] != "Upcoming" for g in slate if g["event_id"] == pick.get("eid")), False)
         if not live and pick["label"] != st.get("pick_label"):
             if discord_post({"username": "PJ MODEL", "content": "Pick of the Day updated with the latest lines and injuries:",
@@ -1828,7 +1832,7 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
                 mids = [r for r in value if safe["price"] < r["price"] < 200 and r["line"] > safe["line"]]
                 pick = [safe] + ([max(mids, key=lambda r: r["ev"])] if mids else []) + ([max(longs, key=lambda r: r["ev"])] if longs else [])
             best = max(ladder, key=lambda r: r["ev"])
-            out.append({"player": player, "team": hist[-1]["t"], "game": g["id"] if g else "", "time": g["time"] if g else "",
+            out.append({"player": player, "team": hist[-1]["t"], "game": g["id"] if g else "", "eid": eid, "time": g["time"] if g else "",
                         "stat": stat, "model": rnd(mean, 1), "model_raw": rnd(raw_mean, 1), "main_line": pr["dk"] if pr else None,
                         "avg5": rnd(sum(vals[:5]) / len(vals[:5]), 1), "avg15": rnd(sum(vals) / len(vals), 1),
                         "last10": vals[:10][::-1], "rungs": ladder, "suggested": [r["line"] for r in pick],
@@ -1866,8 +1870,81 @@ def model_row(b):
             "why": f"Model {b.get('model')} vs DraftKings {b.get('line')} (edge {b.get('edge')})" if b.get("line") is not None else f"Model edge of {b.get('edge')} vs the DraftKings line"}
 
 
-def ledger_rows(settled_bets, potd_hist, ladder, pending_bets=()):
-    rows = [model_row(b) for b in pending_bets] + [model_row(b) for b in settled_bets]
+ALT_SPLIT = {1: [1.0], 2: [0.6, 0.4], 3: [0.5, 0.3, 0.2]}   # same split the Alt-Line page shows
+
+
+def track_alt_ladders(alt_ladders, alt_date, slate, plog, now):
+    """Save each day's suggested alt-line ladders (1 unit split across the rungs, as the page shows) and grade
+    them after the game. A ladder can change until its game tips off; then it is locked. Returns the log."""
+    store = load(ALT_LOG, {"note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
+                           "ladders": []})
+    L = store["ladders"]
+    status = {g["event_id"]: g["status"] for g in slate}
+    stamp = now.strftime("%Y-%m-%d %I:%M %p ET")
+    upcoming = lambda x: status.get(x.get("eid"), "Final") == "Upcoming"
+    if alt_ladders and alt_date:
+        live = set()
+        by_game = {g["id"]: g["event_id"] for g in slate}
+        for a in alt_ladders:
+            a.setdefault("eid", by_game.get(a.get("game")))         # ladders saved before eid was stored
+            if not a.get("suggested") or not a.get("eid"):
+                continue
+            key = f"{alt_date}|{a['player']}|{a['stat']}"
+            live.add(key)
+            cur = next((x for x in L if x["id"] == key), None)
+            if cur and (cur.get("result") or not upcoming(cur)):
+                continue                                           # locked at tip-off
+            rungs = sorted([r for r in a["rungs"] if r["line"] in a["suggested"]], key=lambda r: r["line"])[:3]
+            split = ALT_SPLIT[len(rungs)]
+            entry = {"id": key, "date": alt_date, "player": a["player"], "team": a.get("team"), "stat": a["stat"],
+                     "game": a["game"], "eid": a["eid"], "time": a.get("time"), "main_line": a.get("main_line"), "model": a.get("model"),
+                     "rungs": [{"line": r["line"], "price": r["price"], "p": r["p"], "stake": split[i]} for i, r in enumerate(rungs)],
+                     "saved_at": (cur or {}).get("saved_at", stamp), "updated_at": stamp}
+            if cur:
+                L[L.index(cur)] = entry
+            else:
+                L.append(entry)
+        # a ladder that was dropped by a later rebuild, before its game tipped, was never a bet
+        L[:] = [x for x in L if x.get("result") or x["date"] != alt_date or x["id"] in live or not upcoming(x)]
+    stale = (now.date() - timedelta(days=3)).isoformat()
+    for x in L:
+        if x.get("result"):
+            continue
+        g = plog["games"].get(x["eid"])
+        if not g:
+            if x["date"] < stale:
+                x.update(result="P", actual="No result (void)", units=0.0, graded_at=stamp)
+            continue
+        row = next((r for r in g["players"] if norm(r["n"]) == norm(x["player"])), None)
+        if row is None:
+            x.update(result="P", actual="Did not play (void)", units=0.0, hit=0, graded_at=stamp)
+            continue
+        v = STAT_VAL[x["stat"]](row)
+        hits = [r for r in x["rungs"] if v > r["line"]]
+        units = rnd(sum(r["stake"] * decimal(r["price"]) for r in hits) - 1, 2)
+        x.update(value=v, hit=len(hits), units=units, result="W" if units > 0 else "L" if units < 0 else "P",
+                 actual=f"{v:g} {x['stat']} · {len(hits)} of {len(x['rungs'])} rungs hit", graded_at=stamp)
+    L.sort(key=lambda x: (x["date"], x["player"]), reverse=True)
+    save(ALT_LOG, store, indent=1)
+    return L
+
+
+def alt_row(x):
+    names = ["Safe", "Middle", "Long shot"] if len(x["rungs"]) == 3 else ["Safe", "Long shot"] if len(x["rungs"]) == 2 else ["Single"]
+    r = x.get("result")
+    return {"id": f"alt|{x['id']}", "source": "Alt Ladder", "date": x["date"], "game": x["game"], "market": "Alt Ladder",
+            "type": "Alt Ladder", "player": x["player"], "team": x.get("team"), "stat": x["stat"], "dir": "Over",
+            "line": x["rungs"][0]["line"] if x["rungs"] else None, "price": None, "model": x.get("model"),
+            "pick": f"{x['player']} {x['stat']} ladder: " + " / ".join(f"{math.ceil(r['line'])}+ ({fmt_px(r['price'])})" for r in x["rungs"]),
+            "win_chance": x["rungs"][0]["p"] if x["rungs"] else None, "result": r, "status": _status(r),
+            "actual": x.get("actual"), "units": x.get("units"),
+            "why": " | ".join(f"{n}: {math.ceil(r['line'])}+ {x['stat']} at {fmt_px(r['price'])}, {round(r['stake'] * 100)}% of the stake, our chance {r['p']:g}%"
+                              for n, r in zip(names, x["rungs"])),
+            "picked_at": x.get("saved_at"), "graded_at": x.get("graded_at")}
+
+
+def ledger_rows(settled_bets, potd_hist, ladder, pending_bets=(), alt_log=()):
+    rows = [model_row(b) for b in pending_bets] + [model_row(b) for b in settled_bets] + [alt_row(x) for x in alt_log if x.get("rungs")]
     for h in potd_hist:
         rows.append({"id": f"potd|{h['date']}", "source": "Pick of the Day", "date": h["date"], "game": h["game"],
                      "market": h.get("type", "Prop"), "pick": h.get("label") or f"{h.get('player')} {h.get('side')} {h.get('line')} {h.get('stat')}",
@@ -1891,7 +1968,7 @@ def ledger_rows(settled_bets, potd_hist, ladder, pending_bets=()):
     return rows
 
 
-def update_ledger(settled_bets, potd_hist, ladder, now, pending_bets=(), open_games=()):
+def update_ledger(settled_bets, potd_hist, ladder, now, pending_bets=(), open_games=(), alt_log=()):
     """Upsert every bet into data/records/bets_YYYY-MM.json and rebuild summary.json. Graded bets are never
     deleted. The one exception: a Pending model pick on a game that has not tipped, which the latest lines
     no longer support, is taken back off (it was never a bet)."""
@@ -1899,7 +1976,8 @@ def update_ledger(settled_bets, potd_hist, ladder, now, pending_bets=(), open_ga
     by_month = {}
     live_ids = {model_row(b)["id"] for b in pending_bets}
     open_games = set(open_games)
-    for r in ledger_rows(settled_bets, potd_hist, ladder, pending_bets):
+    live_alt = {f"alt|{x['id']}" for x in alt_log}
+    for r in ledger_rows(settled_bets, potd_hist, ladder, pending_bets, alt_log):
         by_month.setdefault(r["date"][:7], []).append(r)
     for (d, gl) in open_games:
         by_month.setdefault(d[:7], [])
@@ -1909,6 +1987,8 @@ def update_ledger(settled_bets, potd_hist, ladder, now, pending_bets=(), open_ga
         for k in [k for k, x in cur.items() if x.get("source") == "Model bet" and not x.get("result")
                   and (x["date"], x["game"]) in open_games and k not in live_ids]:
             del cur[k]
+        for k in [k for k, x in cur.items() if x.get("source") == "Alt Ladder" and not x.get("result") and k not in live_alt]:
+            del cur[k]                                    # dropped before tip-off: never a bet
         for r in rows:
             cur[r["id"]] = {**cur.get(r["id"], {}), **{k: v for k, v in r.items() if v is not None or k not in cur.get(r["id"], {})}}
         order = {"Pick of the Day": 0, "Ladder Challenge": 1, "Model bet": 2}
@@ -2212,7 +2292,7 @@ def main():
     now = datetime.now(ET)
     global CREDITS
     CREDITS = Credits(now)
-    slot = "overnight" if now.hour < 6 else ("pretip" if now.hour >= 17 else "morning")
+    slot = "tipcheck" if TIP_CHECK else "overnight" if now.hour < 6 else ("pretip" if now.hour >= 17 else "morning")
     log(f"run slot: {slot}; daily credit limit {DAILY_CREDIT_LIMIT}, used so far today {CREDITS.state['used_today']}")
     today = now.date()
     prev = load(OUT, {})
@@ -2281,16 +2361,16 @@ def main():
     upcoming = [g for g in slate if g["status"] == "Upcoming"]
     # Spend in priority order: game lines (3) -> props for today's games, earliest tip first -> futures (once a day).
     # Overnight runs skip props: most lines are not posted yet and they move before tip-off.
-    if upcoming and slot != "overnight" and ODDS_KEY:
+    if upcoming and slot not in ("overnight", "tipcheck") and ODDS_KEY:
         CREDITS.spend(f"{ODDS}/events", 0, "balance check")   # free call: reads the key's real balance before any paid call
-    gml = odds_game_lines() if (upcoming and slot != "overnight") else {}   # 1 AM lines move before anyone bets them
+    gml = odds_game_lines() if (upcoming and slot not in ("overnight", "tipcheck")) else {}   # 1 AM lines move before anyone bets them
     def tip(g):
         m = re.match(r"(\d+):(\d+) (AM|PM)", g["time"])
         return (int(m.group(1)) % 12 + (12 if m.group(3) == "PM" else 0)) * 60 + int(m.group(2)) if m else 9999
     todays_up = sorted([g for g in upcoming if g["date"] == t_iso], key=tip)
     if gml:   # props only for games whose game lines are posted (props come out after them)
         todays_up = [g for g in todays_up if (NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])) in gml] or todays_up
-    prop_lines = odds_props(todays_up, idx) if (todays_up and slot != "overnight") else {}
+    prop_lines = odds_props(todays_up, idx) if (todays_up and slot not in ("overnight", "tipcheck")) else {}
     for g in upcoming:
         hit = gml.get((NAME_FIX.get(g["names"][g["away"]], g["names"][g["away"]]), NAME_FIX.get(g["names"][g["home"]], g["names"][g["home"]])))
         if hit:
@@ -2308,6 +2388,8 @@ def main():
             model, dk = frozen["model"], frozen.get("dk")        # lines frozen at tip-off
         else:
             model, dk = model_game(g, ratings, lg), g["_lines"]
+            if slot == "tipcheck" and frozen and frozen.get("dk"):
+                dk = frozen["dk"]                                # free check: keep the lines from the last paid run
             if dk:
                 dk = {k: v for k, v in dk.items() if k != "provider"}
             pending["games"][eid] = {"away": g["away"], "home": g["home"], "date": g["date"],
@@ -2448,6 +2530,7 @@ def main():
         if built:
             alt_ladders, alt_date = built, t_iso
 
+    alt_log = track_alt_ladders(alt_ladders, alt_date, slate, plog, now)
     log("potd: " + (potd_hist[0]["label"] + f" ({potd_hist[0]['type']})" if potd_hist and potd_hist[0]["date"] == t_iso else "none today"))
 
     # 4. fading learning rate
@@ -2511,7 +2594,7 @@ def main():
     save(LADDER_PATH, ladder, indent=1)
     open_bets = pending_model_bets(props, games)
     open_games = {(r["date"], f'{r["away"]} @ {r["home"]}') for r in games if r.get("status") == "Upcoming"}
-    records = update_ledger(state.get("new_bets", []) + state["settled_bets"], potd_hist, ladder, now, open_bets, open_games)
+    records = update_ledger(state.get("new_bets", []) + state["settled_bets"], potd_hist, ladder, now, open_bets, open_games, alt_log)
     data["records"] = records
     save(POTD_LOG, {"note": "Every Pick of the Day with its reasons and result. Never trimmed.", "picks": potd_hist}, indent=1)
     save(OUT, data, indent=1)
