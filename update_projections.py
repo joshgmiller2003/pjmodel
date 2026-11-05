@@ -66,7 +66,10 @@ SHRINK_K = 8         # pseudo-games of league-average shrinkage for team ratings
 GAME_SD = 12.0       # NBA single-game margin standard deviation
 RES_BETA = 0.30      # how fast residuals adapt
 BET_EDGE_GAME = 1.0  # min edge to count a game bet
-BET_EDGE_PROP = 0.8  # min edge to count a prop bet
+BET_EDGE_PROP = 0.8  # min edge to count a prop bet (points), plus the share-of-line rules below
+BET_EDGE_PCT_OVER = 0.08   # Over: edge must be 8%+ of the line (0.8 on a 30.5 PRA line is noise)
+BET_EDGE_PCT_UNDER = 0.12  # Under: 12%+, since small-edge Unders have lost the most
+BET_EDGE_PCT_MAX = 0.35    # an edge past 35% of the line usually means the model is missing news: skip it
 WIN_UNITS = 0.91     # +1 unit risked at -110
 
 
@@ -1989,8 +1992,13 @@ def game_bets(g, label, date):
 
 
 def prop_qualifies(p):
-    """Does this prop's edge clear the bar to count as a model bet?"""
-    return bool(p.get("dk")) and abs(p["model"] - p["dk"]) >= BET_EDGE_PROP
+    """Does this prop's edge clear the bar to count as a model bet? Big enough in points AND as a share of
+    the line (stricter for Unders), but not so big that the model is probably missing news."""
+    if not p.get("dk"):
+        return False
+    e = p["model"] - p["dk"]
+    rel = abs(e) / p["dk"]
+    return abs(e) >= BET_EDGE_PROP and (BET_EDGE_PCT_OVER if e > 0 else BET_EDGE_PCT_UNDER) <= rel <= BET_EDGE_PCT_MAX
 
 
 def select_prop_bets(props):
@@ -2013,7 +2021,7 @@ def select_prop_bets(props):
 
 def pending_model_bets(props, games):
     """Every model pick on games that have not tipped yet, saved to the records as Pending right away.
-    Same rule as grading: props with an edge of BET_EDGE_PROP+, spreads/totals with BET_EDGE_GAME+."""
+    Same rule as grading: props that pass prop_qualifies (one side per player), spreads/totals with BET_EDGE_GAME+."""
     rows = []
     up = {r["id"]: r for r in games if r.get("status") == "Upcoming"}
     for r in up.values():
