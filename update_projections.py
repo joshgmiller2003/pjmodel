@@ -1835,6 +1835,7 @@ def model_row(b):
     return {"id": f"model|{b['date']}|{b['game']}|{b.get('key') or b['side']}", "source": "Model bet",
             "date": b["date"], "game": b["game"], "market": b.get("market"), "type": b.get("type") or ("Prop" if b.get("market") == "Player Prop" else b.get("market")),
             "pick": b["side"], **{k: b.get(k) for k in LEDGER_FIELDS},
+            "confidence": b.get("confidence"), "win_chance": b.get("win_chance"), "price_book": b.get("price_book"),
             "result": r, "status": _status(r), "actual": b.get("actual"), "units": b.get("units"),
             "why": f"Model {b.get('model')} vs DraftKings {b.get('line')} (edge {b.get('edge')})" if b.get("line") is not None else f"Model edge of {b.get('edge')} vs the DraftKings line"}
 
@@ -1955,10 +1956,12 @@ def _px(v):
 def prop_bet(p, label, date):
     """One model prop pick in the shape the records store (same shape before and after grading)."""
     over = p["model"] > p["dk"]
+    px, book = bet_price(p, over)
     return {"key": f'{p["player"]}|{p["stat"]}', "date": date, "game": label, "type": "Prop", "market": "Player Prop",
             "player": p["player"], "team": p.get("team"), "opp": p.get("opp"), "stat": p["stat"],
-            "dir": "Over" if over else "Under", "line": p["dk"], "price": p.get("over") if over else p.get("under"),
+            "dir": "Over" if over else "Under", "line": p["dk"], "price": px, "price_book": book,
             "model": p["model"], "edge": rnd(p["model"] - p["dk"]),
+            "confidence": p.get("conf"), "win_chance": p.get("win_chance"), "win_raw": p.get("win_raw"), "hits": p.get("hits"),
             "side": f'{p["player"]} {"Over" if over else "Under"} {p["dk"]:g} {p["stat"]}'}
 
 
@@ -1991,11 +1994,40 @@ def game_bets(g, label, date):
     return out
 
 
+def prop_strength(p, hist):
+    """Confidence (0-100, same formula as Pick of the Day: recent hit rates + edge size) and calibrated win
+    chance for a prop's lean side, from games before tonight only. Saved on the prop when it is picked."""
+    if not p.get("dk") or p.get("p_over") is None:
+        return
+    over = p["model"] > p["dk"]
+    vals = [STAT_VAL[p["stat"]](r) for r in (hist or [])[::-1] if r["min"] >= 5] if p["stat"] in STAT_VAL else []
+    ok = (lambda v: v > p["dk"]) if over else (lambda v: v < p["dk"])
+    (a5, n5), (a10, n10), (a15, n15) = _rate(vals, ok, 5), _rate(vals, ok, 10), _rate(vals, ok, 15)
+    if not n15:
+        return
+    rel = abs(p["model"] - p["dk"]) / p["dk"]
+    p["hits"] = {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]}
+    p["conf"] = rnd((0.55 * (0.5 * a10 / n10 + 0.25 * a5 / n5 + 0.25 * a15 / n15) + 0.45 * min(rel / 0.25, 1)) * 100, 1)
+    pm = p["p_over"] if over else 1 - p["p_over"]
+    raw = 0.6 * pm + 0.4 * a15 / n15
+    p["win_raw"] = rnd(raw * 100, 1)
+    p["win_chance"] = rnd(calibrate(raw) * 100, 1)
+
+
+def bet_price(p, over):
+    """DraftKings price for the side, else the best price at another book: (price, book)."""
+    px = p.get("over") if over else p.get("under")
+    if px is not None:
+        return px, "draftkings"
+    best = p.get("best_over" if over else "best_under")
+    return (best[0], best[1]) if best and best[0] is not None else (None, None)
+
+
 def prop_qualifies(p):
     """Does this prop's edge clear the bar to count as a model bet? Big enough in points AND as a share of
     the line (stricter for Unders), but not so big that the model is probably missing news."""
-    if not p.get("dk"):
-        return False
+    if not p.get("dk") or bet_price(p, p["model"] > p["dk"])[0] is None:
+        return False                                   # no price anywhere: it can't be bet, so it isn't one
     e = p["model"] - p["dk"]
     rel = abs(e) / p["dk"]
     return abs(e) >= BET_EDGE_PROP and (BET_EDGE_PCT_OVER if e > 0 else BET_EDGE_PCT_UNDER) <= rel <= BET_EDGE_PCT_MAX
@@ -2294,6 +2326,7 @@ def main():
                              sched=proj["_sched"], sched_notes=proj["_sched_notes"],
                              p_over=p_over_for(p["stat"], p["model"], p["dk"], hist))
         for p in pending["props"].get(eid, []):
+            prop_strength(p, idx.get(norm(p["player"])))
             e = rnd(p["model"] - p["dk"])
             props.append({**p, "edge": e, "side": "Over" if e > 0 else "Under"})
 
