@@ -558,6 +558,7 @@ nav button:first-child { margin-left: -13px; }
       <div class="filters" style="align-items:center;"><span class="note">Example stake</span>
         <select id="alt-stake"><option value="10" selected>$10</option><option value="20">$20</option><option value="50">$50</option><option value="100">$100</option></select>
         <span class="note">split 50% / 30% / 20% across the suggested rungs</span></div>
+      <div class="kpis" id="alt-record" style="margin-bottom:14px;"></div>
       <div class="filters" id="alt-stats"></div>
       <div class="game-grid" id="alt-board" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr));"></div>
       <p class="note" style="margin-top:12px;">Each rung is an alternate line at DraftKings. Book says = the chance the price implies; We say = the model's projection blended with the player's recent games. Rungs where we beat the book have value (positive EV). The suggested ladder splits one stake across the best value rungs (50% safe, 30% middle, 20% long shot; 60/40 with two rungs), so a normal night gets most of the stake back and a big night pays a lot. Payouts shown are at DraftKings' price and round to the cent. For entertainment only; win chances are estimates.</p>
@@ -589,7 +590,7 @@ nav button:first-child { margin-left: -13px; }
     <div class="filters">
       <select id="pl-month"></select>
       <select id="pl-era" title="Model bet rules were tightened on Nov 5. Pick the current rules to see if the changes are working."><option value="all">All time</option><option value="new">Current rules (Nov 5 on)</option></select>
-      <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option><option>Multi-pick</option></select>
+      <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option><option>Multi-pick</option><option>Alt ladders</option></select>
       <select id="pl-type"><option value="all">All bet types</option><option>Prop</option><option>Spread</option><option>Total</option><option>Moneyline</option></select>
       <select id="pl-stat"><option value="all">All stats</option></select>
       <select id="pl-result"><option value="all">All results</option><option>Won</option><option>Lost</option><option>Push</option><option>Pending</option></select>
@@ -1250,6 +1251,7 @@ const COMBO_STATS = new Set(["PR", "PA", "RA", "PRA"]);
 function betCat(r) {
   const t = r.type || r.market;
   if (t === "Parlay") return "Multi-pick";
+  if (t === "Alt Ladder") return "Alt ladders";
   if (t !== "Prop") return "Game lines";
   return COMBO_STATS.has(r.stat) ? "Combo props" : "Single-stat props";
 }
@@ -1327,7 +1329,7 @@ function renderBankroll() {
   const rows = recRows();
   const sign = v => (v > 0 ? "+" : "") + v;
   const S = (DATA.records && DATA.records.summary && DATA.records.summary.All) || null;
-  const sources = ["Pick of the Day", "Ladder Challenge", "Model bet"];
+  const sources = ["Pick of the Day", "Ladder Challenge", "Alt Ladder", "Model bet"];
   const agg = src => {
     if (S && S[src]) return S[src];
     const a = rows.filter(r => r.source === src);
@@ -1338,7 +1340,7 @@ function renderBankroll() {
       return `<tr><td><strong>${src === "Model bet" ? "Model bets" : src}</strong></td><td>${t.bets}</td><td>${t.won}-${t.lost}${t.push ? "-" + t.push : ""}</td><td>${wl ? Math.round(100 * t.won / wl) + "%" : "–"}</td><td>${t.pending}</td>
       <td class="stat ${lad ? "" : t.units > 0 ? "positive" : t.units < 0 ? "negative" : ""}">${lad ? "Attempt #" + DATA.ladder.attempt + " · " + money(DATA.ladder.bankroll) : (wl ? sign(t.units) + "u" : "–")}</td></tr>`; }).join("") + "</tbody>";
   // filters
-  document.getElementById("rec-source").innerHTML = [["all", "All records"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder Challenge"], ["Model bet", "Model bets"]]
+  document.getElementById("rec-source").innerHTML = [["all", "All records"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder Challenge"], ["Alt Ladder", "Alt-line ladders"], ["Model bet", "Model bets"]]
     .map(([k, l]) => `<button data-k="${k}" class="${k === recSource ? "active" : ""}">${l} <span style="opacity:.6;">${k === "all" ? rows.length : rows.filter(r => r.source === k).length}</span></button>`).join("");
   document.querySelectorAll("#rec-source button").forEach(b => b.onclick = () => { recSource = b.dataset.k; renderBankroll(); });
   const months = [...new Set(rows.map(r => r.date.slice(0, 7)))];
@@ -1367,7 +1369,7 @@ function renderBankroll() {
       return `<div class="kpi"><div class="l">Beat the close</div><div class="v ${c.length && bt / c.length >= 0.5 ? "positive" : ""}">${c.length ? bt + "/" + c.length : "–"}</div><div class="s">${c.length ? "avg " + sign(al) + " pts, " + sign(ap) + "% price" : "measured once games tip"}</div></div>`; })()}
     <div class="kpi"><div class="l">Streak</div><div class="v ${/^W/.test(streak) ? "positive" : /^L/.test(streak) ? "negative" : ""}">${streak}</div><div class="s">in this view</div></div>`;
   // grouped table
-  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : "Ladder"}</span>`;
+  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : "Ladder"}</span>`;
   let html = `<thead><tr><th>Type</th><th>Pick</th><th>Game</th><th>Market</th><th>Result</th><th>Final</th><th>Units / $</th></tr></thead><tbody>`, last = "", i = 0;
   list.slice(0, 400).forEach(r => {
     if (r.date !== last) { last = r.date; html += `<tr class="date-row"><td colspan="7">${new Date(r.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "long", day: "numeric", year: "numeric"})}</td></tr>`; }
@@ -1479,7 +1481,7 @@ function plFiltered() {
 function plDraw() {
   const sign = v => (v > 0 ? "+" : "") + v;
   const all = PL.rows;
-  document.getElementById("pl-source").innerHTML = [["all", "All picks"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder"], ["Model bet", "Model picks"]]
+  document.getElementById("pl-source").innerHTML = [["all", "All picks"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder"], ["Alt Ladder", "Alt ladders"], ["Model bet", "Model picks"]]
     .map(([k, l]) => `<button data-k="${k}" class="${k === PL.src ? "active" : ""}">${l} <span style="opacity:.6;">${(k === "all" ? all.length : all.filter(r => r.source === k).length).toLocaleString()}</span></button>`).join("");
   document.querySelectorAll("#pl-source button").forEach(b => b.onclick = () => { PL.src = b.dataset.k; PL.shown = 100; plDraw(); });
   document.getElementById("pl-sort").innerHTML = `<span class="note" style="margin-right:4px;">Sort by</span>` + PL_SORTS.map(([k, l]) =>
@@ -1506,7 +1508,7 @@ function plDraw() {
     ${PL.plays ? (() => { const s = {Swept: 0, "All lost": 0, Split: 0}; list.forEach(p => { if (p.outcome) s[p.outcome]++; });
       return `<div class="kpi"><div class="l">Same-player stacks</div><div class="v"><span class="positive">${s.Swept}</span> · <span class="negative">${s["All lost"]}</span> · ${s.Split}</div><div class="s">all won · all lost · split</div></div>`; })() : ""}`;
   const cols = [["date", "Date"], [null, "Type"], ["player", "Pick"], ["stat", "Stat"], [null, "Side"], [null, "Line"], ["price", "Price"], [null, "Model"], ["edge", "Edge"], ["conf", "Conf."], ["result", "Result"], [null, "Final"], ["units", "Units / $"], ["clv", "CLV"]];
-  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : "Ladder"}</span>`;
+  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : "Ladder"}</span>`;
   const BK = {fanduel: "FanDuel", betmgm: "BetMGM", williamhill_us: "Caesars", espnbet: "ESPN BET", fanatics: "Fanatics", betrivers: "BetRivers", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX"};
   let html = `<thead><tr>${cols.map(([k, l]) => k ? `<th data-k="${k}" style="cursor:pointer;white-space:nowrap;" title="Sort by ${l}">${l}${PL.sort === k ? (PL.dir < 0 ? " ↓" : " ↑") : ""}</th>` : `<th>${l}</th>`).join("")}</tr></thead><tbody>`;
   list.slice(0, PL.shown).forEach((r, i) => {
@@ -1990,7 +1992,22 @@ function altBars(vals, lines) {
   c += `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">Last ${vals.length} games, oldest → newest · bar color = highest rung he cleared</text></svg>`;
   return c;
 }
+function renderAltRecord() {
+  const el = document.getElementById("alt-record"); if (!el) return;
+  const rows = recRows().filter(r => r.source === "Alt Ladder");
+  const g = rows.filter(r => r.result === "W" || r.result === "L"), w = g.filter(r => r.result === "W").length;
+  const graded = rows.filter(r => r.result && r.units != null), u = Math.round(graded.reduce((t, r) => t + r.units, 0) * 100) / 100;
+  const sign = v => (v > 0 ? "+" : "") + v;
+  const last = g.slice(0, 10).map(r => `<span class="${r.result === "W" ? "positive" : "negative"}" title="${r.pick}: ${r.actual || ""}">${r.result}</span>`).join(" ");
+  el.innerHTML = rows.length ? `
+    <div class="kpi"><div class="l">Alt ladder record</div><div class="v">${w}-${g.length - w}</div><div class="s">${g.length ? Math.round(100 * w / g.length) + "% finished up" : "graded after games finish"}</div></div>
+    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${graded.length ? sign(u) : "–"}</div><div class="s">${graded.length ? "1u per ladder · ROI " + sign(Math.round(1000 * u / graded.length) / 10) + "%" : "1 unit per ladder"}</div></div>
+    <div class="kpi"><div class="l">Pending</div><div class="v">${rows.filter(r => !r.result).length}</div><div class="s">saved, waiting on tip-off</div></div>
+    <div class="kpi"><div class="l">Last 10</div><div class="v" style="font-size:16px;letter-spacing:2px;">${last || "–"}</div><div class="s">W = finished up money</div></div>`
+    : `<div class="note">Every suggested ladder is now saved and graded (1 unit split 50/30/20 across its rungs). The record starts with tonight's games.</div>`;
+}
 function renderAltLadders() {
+  renderAltRecord();
   const all = DATA.alt_ladders || [];
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
   const fresh = DATA.alt_date === today;
