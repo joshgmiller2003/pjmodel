@@ -553,7 +553,7 @@ nav button:first-child { margin-left: -13px; }
           <div><div class="alt-num">3</div><strong>The safe rung protects you.</strong> If he has a normal night, the safe rung gets most of your stake back. If he has a big night, every rung hits and the long shot pays several times your stake.</div>
           <div><div class="alt-num">4</div><strong>Only rungs with value.</strong> We only suggest rungs where our chance is higher than the book's (positive EV). The "What happens" table on each card shows exactly what you win or lose at every result.</div>
         </div>
-        <div class="note" style="margin-top:10px;"><strong>Reading a rung:</strong> <em>Book says</em> is the chance the odds imply · <em>We say</em> is our chance (model projection blended with his recent games) · <em>Edge</em> is ours minus the book's · <em>Recent</em> is how often he cleared it lately · <em>EV</em> is the average return per bet over the long run.</div>
+        <div class="note" style="margin-top:10px;"><strong>Reading a rung:</strong> <em>Book says</em> is the chance the odds imply · <em>We say</em> is our chance (our projection, pulled halfway toward DraftKings' main line to stay honest, blended with his recent games) · <em>Edge</em> is ours minus the book's · <em>Recent</em> is how often he cleared it lately · <em>EV</em> is the average return per bet over the long run.</div>
       </details>
       <div class="filters" style="align-items:center;"><span class="note">Example stake</span>
         <select id="alt-stake"><option value="10" selected>$10</option><option value="20">$20</option><option value="50">$50</option><option value="100">$100</option></select>
@@ -2016,7 +2016,7 @@ function renderAltLadders() {
         <span class="stat-tag">${STAT_NAMES[a.stat] || a.stat}</span>
       </div>
       <div style="padding:0 18px 10px;display:flex;gap:16px;flex-wrap:wrap;" class="team">
-        <span title="What the model expects tonight">We project <strong style="color:var(--ink);">${a.model}</strong></span><span>Last 5 avg <strong style="color:var(--ink);">${a.avg5}</strong></span><span>Last ${a.rungs[0] ? a.rungs[0].hit[1] : 15} avg <strong style="color:var(--ink);">${a.avg15}</strong></span>${a.main_line != null ? `<span title="DraftKings' regular line">Main line <strong style="color:var(--ink);">${a.main_line}</strong></span>` : ""}
+        <span title="${a.model_raw != null && a.model_raw !== a.model ? "Model says " + a.model_raw + "; pulled halfway to DraftKings' main line" : "What the model expects tonight"}">We project <strong style="color:var(--ink);">${a.model}</strong></span><span>Last 5 avg <strong style="color:var(--ink);">${a.avg5}</strong></span><span>Last ${a.rungs[0] ? a.rungs[0].hit[1] : 15} avg <strong style="color:var(--ink);">${a.avg15}</strong></span>${a.main_line != null ? `<span title="DraftKings' regular line">Main line <strong style="color:var(--ink);">${a.main_line}</strong></span>` : ""}
       </div>
       ${legs.length ? `<div class="alt-sub">Suggested ladder · ${altMoney(stake)} total</div>
       <div class="alt-slip">${legs.map(r => `<div class="leg" style="border-color:${r.role[1]};">
