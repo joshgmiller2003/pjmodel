@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T16:27:48Z",
+ "generated_at": "2026-11-05T17:01:19Z",
  "season": "2026-27",
  "games": [
   {
@@ -15,8 +15,8 @@
     "ml_away": 0.43
    },
    "dk": {
-    "ml_home": "-110",
-    "ml_away": "-108",
+    "ml_home": "-114",
+    "ml_away": "-104",
     "spread": "-1.5",
     "spread_px_home": -101,
     "spread_px_away": -120,
@@ -331,6 +331,10 @@
    "dk": 6.5,
    "over": -119,
    "under": -111,
+   "best_over": [
+    -118,
+    "fanduel"
+   ],
    "best_under": [
     105,
     "betparx"
@@ -373,12 +377,12 @@
    "over": -154,
    "under": 117,
    "best_over": [
-    -141,
+    -143,
     "betparx"
    ],
    "best_under": [
-    118,
-    "fanduel"
+    120,
+    "betmgm"
    ],
    "edge": -0.3,
    "side": "Under",
@@ -420,11 +424,11 @@
    "over": 113,
    "under": -149,
    "best_over": [
-    123,
+    114,
     "betparx"
    ],
    "best_under": [
-    -132,
+    -130,
     "fanduel"
    ],
    "edge": 0.5,
@@ -506,11 +510,15 @@
    ],
    "p_over": 0.308,
    "dk": 3.5,
-   "over": -109,
-   "under": -121,
+   "over": -105,
+   "under": -126,
    "best_over": [
     105,
     "betmgm"
+   ],
+   "best_under": [
+    -124,
+    "betparx"
    ],
    "edge": -0.7,
    "side": "Under",
@@ -629,14 +637,14 @@
    ],
    "p_over": 0.826,
    "dk": 2.5,
-   "over": -118,
-   "under": -112,
+   "over": -114,
+   "under": -116,
    "best_over": [
-    -112,
+    -110,
     "betparx"
    ],
    "best_under": [
-    -104,
+    -102,
     "fanduel"
    ],
    "edge": 2.0,
@@ -677,11 +685,11 @@
    ],
    "p_over": 0.577,
    "dk": 2.5,
-   "over": 104,
-   "under": -136,
-   "best_under": [
-    -125,
-    "espnbet"
+   "over": -108,
+   "under": -122,
+   "best_over": [
+    100,
+    "betmgm"
    ],
    "edge": 0.5,
    "side": "Over",
@@ -762,8 +770,8 @@
    ],
    "p_over": 0.669,
    "dk": 1.5,
-   "over": -136,
-   "under": 103,
+   "over": -131,
+   "under": 100,
    "best_over": [
     -130,
     "espnbet"
@@ -810,8 +818,8 @@
    "over": -118,
    "under": -108,
    "best_over": [
-    -109,
-    "ballybet"
+    -108,
+    "betparx"
    ],
    "edge": -1.2,
    "side": "Under",
@@ -853,10 +861,6 @@
    "dk": 23.5,
    "over": -106,
    "under": -120,
-   "best_over": [
-    102,
-    "fanduel"
-   ],
    "edge": -1.3,
    "side": "Under",
    "tiers": {
@@ -898,12 +902,12 @@
    "over": -113,
    "under": -113,
    "best_over": [
-    -107,
-    "betparx"
+    -111,
+    "betmgm"
    ],
    "best_under": [
     -110,
-    "fanduel"
+    "espnbet"
    ],
    "edge": 0.4,
    "side": "Over",
@@ -943,7 +947,7 @@
    "over": -115,
    "under": -111,
    "best_over": [
-    -107,
+    -106,
     "ballybet"
    ],
    "edge": 1.7,
@@ -984,12 +988,12 @@
    "over": -106,
    "under": -121,
    "best_over": [
-    -104,
-    "fanduel"
+    -105,
+    "betmgm"
    ],
    "best_under": [
     -120,
-    "hardrockbet"
+    "espnbet"
    ],
    "edge": 0.7,
    "side": "Over",
@@ -1161,11 +1165,11 @@
    ],
    "p_over": 0.68,
    "dk": 11.5,
-   "over": -109,
-   "under": -117,
-   "best_under": [
+   "over": -116,
+   "under": -110,
+   "best_over": [
     -110,
-    "hardrockbet"
+    "ballybet"
    ],
    "edge": 3.7,
    "side": "Over",
@@ -1206,7 +1210,7 @@
    "under": -110,
    "best_over": [
     -110,
-    "betmgm"
+    "espnbet"
    ],
    "edge": -3.8,
    "side": "Under",
@@ -1249,12 +1253,12 @@
    "over": -118,
    "under": -108,
    "best_over": [
-    -108,
-    "ballybet"
+    -107,
+    "betparx"
    ],
    "best_under": [
-    -102,
-    "fanduel"
+    100,
+    "espnbet"
    ],
    "edge": -0.9,
    "side": "Under",
@@ -1293,6 +1297,10 @@
    "dk": 6.5,
    "over": -124,
    "under": -103,
+   "best_under": [
+    100,
+    "espnbet"
+   ],
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -1331,10 +1339,10 @@
    ],
    "p_over": 0.556,
    "dk": 6.5,
-   "over": -104,
-   "under": -122,
+   "over": -105,
+   "under": -121,
    "best_over": [
-    102,
+    106,
     "fanduel"
    ],
    "edge": 0.7,
@@ -1375,8 +1383,8 @@
    "over": -127,
    "under": -101,
    "best_over": [
-    -108,
-    "fanduel"
+    -110,
+    "ballybet"
    ],
    "edge": 0.9,
    "side": "Over",
@@ -1411,15 +1419,11 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.443,
-   "dk": 30.5,
-   "over": -125,
-   "under": -105,
-   "best_over": [
-    -112,
-    "ballybet"
-   ],
-   "edge": -1.9,
+   "p_over": 0.413,
+   "dk": 31.5,
+   "over": -106,
+   "under": -124,
+   "edge": -2.9,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -1432,7 +1436,7 @@
      0
     ],
     "soft": [
-     1,
+     2,
      3
     ]
    }
@@ -1460,12 +1464,8 @@
    "over": -107,
    "under": -123,
    "best_over": [
-    -105,
-    "hardrockbet"
-   ],
-   "best_under": [
-    -122,
-    "betparx"
+    -104,
+    "fanduel"
    ],
    "edge": 1.2,
    "side": "Over",
@@ -1503,28 +1503,24 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.468,
-   "dk": 24.5,
-   "over": -105,
-   "under": -126,
-   "best_over": [
-    100,
-    "ballybet"
-   ],
+   "p_over": 0.514,
+   "dk": 23.5,
+   "over": -126,
+   "under": -104,
    "best_under": [
-    -120,
-    "fanduel"
+    -103,
+    "betparx"
    ],
-   "edge": -0.7,
-   "side": "Under",
+   "edge": 0.3,
+   "side": "Over",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     2,
+     0,
      2
     ],
     "mid": [
-     3,
+     1,
      3
     ],
     "soft": [
@@ -1555,11 +1551,7 @@
    "over": -117,
    "under": -112,
    "best_over": [
-    102,
-    "ballybet"
-   ],
-   "best_under": [
-    -106,
+    -112,
     "fanduel"
    ],
    "edge": 4.0,
@@ -1600,8 +1592,8 @@
    "over": -115,
    "under": -115,
    "best_over": [
-    -107,
-    "ballybet"
+    -106,
+    "fanduel"
    ],
    "edge": 2.0,
    "side": "Over",
@@ -1641,7 +1633,7 @@
    "over": -111,
    "under": -118,
    "best_over": [
-    -104,
+    -102,
     "fanduel"
    ],
    "edge": -2.8,
@@ -1682,8 +1674,8 @@
    "over": -115,
    "under": -115,
    "best_over": [
-    -114,
-    "fanduel"
+    -110,
+    "ballybet"
    ],
    "best_under": [
     -114,
@@ -1730,7 +1722,7 @@
    "over": -107,
    "under": -122,
    "best_over": [
-    105,
+    107,
     "ballybet"
    ],
    "edge": 4.0,
@@ -1771,15 +1763,11 @@
    ],
    "p_over": 0.649,
    "dk": 13.5,
-   "over": -110,
-   "under": -120,
+   "over": -117,
+   "under": -112,
    "best_over": [
-    -106,
-    "fanduel"
-   ],
-   "best_under": [
-    -115,
-    "hardrockbet"
+    -103,
+    "ballybet"
    ],
    "edge": 2.9,
    "side": "Over",
@@ -1819,8 +1807,8 @@
    "over": -109,
    "under": -120,
    "best_under": [
-    -115,
-    "espnbet"
+    -114,
+    "fanduel"
    ],
    "edge": -3.7,
    "side": "Under",
@@ -1867,7 +1855,7 @@
     "ballybet"
    ],
    "best_under": [
-    -120,
+    -114,
     "fanduel"
    ],
    "edge": -1.0,
@@ -1948,15 +1936,11 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.441,
-   "dk": 29.5,
-   "over": -123,
-   "under": -107,
-   "best_over": [
-    -111,
-    "betmgm"
-   ],
-   "edge": -2.2,
+   "p_over": 0.414,
+   "dk": 30.5,
+   "over": -106,
+   "under": -125,
+   "edge": -3.2,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -1997,8 +1981,8 @@
    "over": -117,
    "under": -113,
    "best_over": [
-    -104,
-    "fanduel"
+    -109,
+    "ballybet"
    ],
    "edge": -0.5,
    "side": "Under",
@@ -2036,24 +2020,24 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.521,
-   "dk": 24.5,
-   "over": -126,
-   "under": -104,
-   "best_over": [
-    -113,
-    "ballybet"
+   "p_over": 0.468,
+   "dk": 25.5,
+   "over": -104,
+   "under": -126,
+   "best_under": [
+    -125,
+    "espnbet"
    ],
-   "edge": 0.4,
-   "side": "Over",
+   "edge": -0.6,
+   "side": "Under",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     0,
+     2,
      2
     ],
     "mid": [
-     1,
+     2,
      3
     ],
     "soft": [
@@ -2083,7 +2067,7 @@
    "under": -127,
    "best_under": [
     -125,
-    "betmgm"
+    "espnbet"
    ],
    "edge": 1.6,
    "side": "Over",
@@ -2123,12 +2107,12 @@
    "over": -112,
    "under": -118,
    "best_over": [
-    -109,
+    -106,
     "ballybet"
    ],
    "best_under": [
-    -114,
-    "fanduel"
+    -115,
+    "hardrockbet"
    ],
    "edge": 1.3,
    "side": "Over",
@@ -2141,6 +2125,45 @@
     "mid": [
      1,
      2
+    ],
+    "soft": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "opp": "PHX",
+   "game": "ORL@PHX",
+   "stat": "PR",
+   "model": 23.7,
+   "base": 23.7,
+   "matchup": 2.4,
+   "injury": 4.8,
+   "inj_out": [
+    "Jalen Suggs"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.644,
+   "dk": 20.5,
+   "over": -110,
+   "under": -120,
+   "edge": 3.2,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     0,
+     0
+    ],
+    "mid": [
+     2,
+     3
     ],
     "soft": [
      1,
@@ -2168,10 +2191,14 @@
    ],
    "p_over": 0.792,
    "dk": 20.5,
-   "over": -107,
-   "under": -123,
+   "over": -110,
+   "under": -120,
+   "best_over": [
+    -107,
+    "ballybet"
+   ],
    "best_under": [
-    -114,
+    -108,
     "fanduel"
    ],
    "edge": 5.6,
@@ -2189,49 +2216,6 @@
     "soft": [
      0,
      0
-    ]
-   }
-  },
-  {
-   "player": "Anthony Black",
-   "team": "ORL",
-   "opp": "PHX",
-   "game": "ORL@PHX",
-   "stat": "PR",
-   "model": 23.7,
-   "base": 23.7,
-   "matchup": 2.4,
-   "injury": 4.8,
-   "inj_out": [
-    "Jalen Suggs"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.644,
-   "dk": 20.5,
-   "over": -104,
-   "under": -127,
-   "best_under": [
-    -125,
-    "espnbet"
-   ],
-   "edge": 3.2,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     0,
-     0
-    ],
-    "mid": [
-     2,
-     3
-    ],
-    "soft": [
-     1,
-     1
     ]
    }
   },
@@ -2299,7 +2283,7 @@
    "over": -128,
    "under": -103,
    "best_over": [
-    -108,
+    -106,
     "ballybet"
    ],
    "edge": 3.7,
@@ -2340,7 +2324,7 @@
    "over": -102,
    "under": -128,
    "best_over": [
-    102,
+    100,
     "ballybet"
    ],
    "edge": -5.5,
@@ -2381,8 +2365,8 @@
    "over": -111,
    "under": -118,
    "best_over": [
-    -105,
-    "betmgm"
+    -102,
+    "fanduel"
    ],
    "edge": 1.6,
    "side": "Over",
@@ -2422,11 +2406,15 @@
    ],
    "p_over": 0.276,
    "dk": 11.5,
-   "over": -120,
-   "under": -110,
+   "over": -115,
+   "under": -114,
    "best_over": [
     -103,
     "ballybet"
+   ],
+   "best_under": [
+    -112,
+    "fanduel"
    ],
    "edge": -1.6,
    "side": "Under",
@@ -2467,7 +2455,11 @@
    "under": -118,
    "best_over": [
     100,
-    "espnbet"
+    "ballybet"
+   ],
+   "best_under": [
+    -112,
+    "fanduel"
    ],
    "edge": 0.7,
    "side": "Over",
@@ -2507,11 +2499,11 @@
    ],
    "p_over": 0.586,
    "dk": 36.5,
-   "over": -117,
-   "under": -112,
+   "over": -113,
+   "under": -117,
    "best_over": [
     -110,
-    "espnbet"
+    "fanduel"
    ],
    "edge": 2.1,
    "side": "Over",
@@ -2588,15 +2580,11 @@
    ],
    "p_over": 0.464,
    "dk": 28.5,
-   "over": -116,
-   "under": -113,
+   "over": -121,
+   "under": -109,
    "best_over": [
     -105,
-    "ballybet"
-   ],
-   "best_under": [
-    -110,
-    "espnbet"
+    "betmgm"
    ],
    "edge": -0.8,
    "side": "Under",
@@ -2672,15 +2660,15 @@
    ],
    "p_over": 0.654,
    "dk": 24.5,
-   "over": -113,
-   "under": -117,
+   "over": -119,
+   "under": -111,
    "best_over": [
     -110,
-    "hardrockbet"
+    "fanduel"
    ],
    "best_under": [
-    -112,
-    "fanduel"
+    -110,
+    "espnbet"
    ],
    "edge": 4.2,
    "side": "Over",
@@ -2720,8 +2708,8 @@
    "over": -107,
    "under": -123,
    "best_over": [
-    -105,
-    "espnbet"
+    -104,
+    "ballybet"
    ],
    "edge": -3.5,
    "side": "Under",
@@ -2760,8 +2748,12 @@
    "dk": 22.5,
    "over": -118,
    "under": -112,
+   "best_over": [
+    -114,
+    "ballybet"
+   ],
    "best_under": [
-    -106,
+    -108,
     "fanduel"
    ],
    "edge": 2.2,
@@ -2802,11 +2794,15 @@
    ],
    "p_over": 0.755,
    "dk": 22.5,
-   "over": -105,
-   "under": -125,
+   "over": -109,
+   "under": -121,
+   "best_over": [
+    -103,
+    "ballybet"
+   ],
    "best_under": [
-    -120,
-    "espnbet"
+    -118,
+    "fanduel"
    ],
    "edge": 4.7,
    "side": "Over",
@@ -2846,11 +2842,11 @@
    ],
    "p_over": 0.666,
    "dk": 18.5,
-   "over": -128,
-   "under": -103,
+   "over": -122,
+   "under": -107,
    "best_over": [
-    -107,
-    "betparx"
+    -105,
+    "ballybet"
    ],
    "edge": 4.0,
    "side": "Over",
@@ -2894,7 +2890,7 @@
     "betmgm"
    ],
    "best_under": [
-    -102,
+    -104,
     "fanduel"
    ],
    "edge": -4.5,
@@ -2932,15 +2928,15 @@
    ],
    "p_over": 0.748,
    "dk": 15.5,
-   "over": -108,
-   "under": -122,
+   "over": -104,
+   "under": -127,
    "best_over": [
     100,
     "betmgm"
    ],
    "best_under": [
-    -120,
-    "betparx"
+    -125,
+    "espnbet"
    ],
    "edge": 3.1,
    "side": "Over",
@@ -2980,10 +2976,10 @@
    ],
    "p_over": 0.298,
    "dk": 14.5,
-   "over": -106,
-   "under": -125,
+   "over": -110,
+   "under": -120,
    "best_over": [
-    106,
+    107,
     "ballybet"
    ],
    "edge": -1.7,
@@ -3024,11 +3020,11 @@
    ],
    "p_over": 0.75,
    "dk": 8.5,
-   "over": -113,
-   "under": -117,
+   "over": -109,
+   "under": -121,
    "best_under": [
-    -107,
-    "williamhill_us"
+    100,
+    "fanduel"
    ],
    "edge": 2.3,
    "side": "Over",
@@ -3068,7 +3064,7 @@
    "over": -103,
    "under": -128,
    "best_over": [
-    102,
+    105,
     "ballybet"
    ],
    "best_under": [
@@ -3113,10 +3109,14 @@
    ],
    "p_over": 0.535,
    "dk": 6.5,
-   "over": 102,
-   "under": -134,
+   "over": 113,
+   "under": -149,
    "best_over": [
-    115,
+    120,
+    "ballybet"
+   ],
+   "best_under": [
+    -145,
     "espnbet"
    ],
    "edge": 0.4,
@@ -3157,7 +3157,7 @@
    "over": -111,
    "under": -118,
    "best_over": [
-    100,
+    102,
     "fanduel"
    ],
    "edge": 0.3,
@@ -3242,15 +3242,11 @@
    ],
    "p_over": 0.577,
    "dk": 4.5,
-   "over": -109,
-   "under": -121,
+   "over": -120,
+   "under": -109,
    "best_over": [
-    102,
+    -110,
     "ballybet"
-   ],
-   "best_under": [
-    -114,
-    "fanduel"
    ],
    "edge": 0.6,
    "side": "Over",
@@ -3267,50 +3263,6 @@
     "soft": [
      0,
      0
-    ]
-   }
-  },
-  {
-   "player": "Tristan da Silva",
-   "team": "ORL",
-   "opp": "PHX",
-   "game": "ORL@PHX",
-   "stat": "REB",
-   "model": 4.0,
-   "base": 4.0,
-   "matchup": 1.7,
-   "injury": 11.5,
-   "inj_out": [
-    "Jalen Suggs",
-    "Paolo Banchero"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.371,
-   "dk": 4.5,
-   "over": -104,
-   "under": -126,
-   "best_over": [
-    110,
-    "betmgm"
-   ],
-   "edge": -0.5,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     3,
-     3
-    ],
-    "mid": [
-     2,
-     2
-    ],
-    "soft": [
-     1,
-     2
     ]
    }
   },
@@ -3334,10 +3286,10 @@
    ],
    "p_over": 0.352,
    "dk": 4.5,
-   "over": 107,
-   "under": -140,
+   "over": -111,
+   "under": -118,
    "best_over": [
-    122,
+    120,
     "fanduel"
    ],
    "edge": -0.6,
@@ -3354,6 +3306,54 @@
     ],
     "soft": [
      2,
+     2
+    ]
+   }
+  },
+  {
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "opp": "PHX",
+   "game": "ORL@PHX",
+   "stat": "REB",
+   "model": 4.0,
+   "base": 4.0,
+   "matchup": 1.7,
+   "injury": 11.5,
+   "inj_out": [
+    "Jalen Suggs",
+    "Paolo Banchero"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.371,
+   "dk": 4.5,
+   "over": 104,
+   "under": -137,
+   "best_over": [
+    110,
+    "ballybet"
+   ],
+   "best_under": [
+    -130,
+    "espnbet"
+   ],
+   "edge": -0.5,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     3,
+     3
+    ],
+    "mid": [
+     2,
+     2
+    ],
+    "soft": [
+     1,
      2
     ]
    }
@@ -3378,7 +3378,7 @@
    "over": -158,
    "under": 119,
    "best_over": [
-    -148,
+    -143,
     "ballybet"
    ],
    "edge": -0.6,
@@ -3418,10 +3418,6 @@
    "dk": 3.5,
    "over": -155,
    "under": 117,
-   "best_over": [
-    -150,
-    "espnbet"
-   ],
    "best_under": [
     125,
     "betmgm"
@@ -3550,8 +3546,8 @@
    ],
    "p_over": 0.404,
    "dk": 2.5,
-   "over": -137,
-   "under": 104,
+   "over": -129,
+   "under": -102,
    "best_over": [
     -105,
     "espnbet"
@@ -3592,15 +3588,19 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.718,
-   "dk": 13.5,
-   "over": 103,
-   "under": -136,
+   "p_over": 0.781,
+   "dk": 12.5,
+   "over": -130,
+   "under": -101,
    "best_over": [
-    106,
-    "ballybet"
+    -125,
+    "betmgm"
    ],
-   "edge": 2.9,
+   "best_under": [
+    100,
+    "espnbet"
+   ],
+   "edge": 3.9,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -3638,8 +3638,8 @@
    ],
    "p_over": 0.691,
    "dk": 10.5,
-   "over": -108,
-   "under": -122,
+   "over": -106,
+   "under": -124,
    "best_under": [
     -114,
     "fanduel"
@@ -3683,7 +3683,7 @@
    "under": -130,
    "best_over": [
     105,
-    "betmgm"
+    "ballybet"
    ],
    "best_under": [
     -125,
@@ -3763,10 +3763,10 @@
    ],
    "p_over": 0.616,
    "dk": 8.5,
-   "over": -125,
-   "under": -106,
+   "over": -132,
+   "under": 100,
    "best_over": [
-    -112,
+    -129,
     "ballybet"
    ],
    "best_under": [
@@ -3788,6 +3788,46 @@
     "soft": [
      0,
      0
+    ]
+   }
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "opp": "PHX",
+   "game": "ORL@PHX",
+   "stat": "RA",
+   "model": 6.8,
+   "base": 6.8,
+   "matchup": -2.6,
+   "injury": 9.2,
+   "inj_out": [
+    "Jalen Suggs",
+    "Paolo Banchero"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.262,
+   "dk": 8.5,
+   "over": 110,
+   "under": -145,
+   "edge": -1.7,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     1,
+     1
+    ],
+    "mid": [
+     4,
+     5
+    ],
+    "soft": [
+     1,
+     1
     ]
    }
   },
@@ -3816,7 +3856,7 @@
    ],
    "best_under": [
     110,
-    "fanduel"
+    "espnbet"
    ],
    "edge": 2.2,
    "side": "Over",
@@ -3833,50 +3873,6 @@
     "soft": [
      1,
      2
-    ]
-   }
-  },
-  {
-   "player": "Desmond Bane",
-   "team": "ORL",
-   "opp": "PHX",
-   "game": "ORL@PHX",
-   "stat": "RA",
-   "model": 6.8,
-   "base": 6.8,
-   "matchup": -2.6,
-   "injury": 9.2,
-   "inj_out": [
-    "Jalen Suggs",
-    "Paolo Banchero"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.397,
-   "dk": 7.5,
-   "over": -135,
-   "under": 103,
-   "best_over": [
-    -120,
-    "ballybet"
-   ],
-   "edge": -0.7,
-   "side": "Under",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     2,
-     5
-    ],
-    "soft": [
-     1,
-     1
     ]
    }
   },
@@ -3945,7 +3941,7 @@
    "over": -126,
    "under": -104,
    "best_over": [
-    -114,
+    -112,
     "fanduel"
    ],
    "edge": -0.1,
@@ -3963,50 +3959,6 @@
     "soft": [
      1,
      1
-    ]
-   }
-  },
-  {
-   "player": "Tristan da Silva",
-   "team": "ORL",
-   "opp": "PHX",
-   "game": "ORL@PHX",
-   "stat": "RA",
-   "model": 6.3,
-   "base": 6.3,
-   "matchup": 5.0,
-   "injury": 12.8,
-   "inj_out": [
-    "Jalen Suggs",
-    "Paolo Banchero"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.478,
-   "dk": 6.5,
-   "over": 104,
-   "under": -137,
-   "best_over": [
-    114,
-    "fanduel"
-   ],
-   "edge": -0.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     3,
-     3
-    ],
-    "mid": [
-     1,
-     2
-    ],
-    "soft": [
-     1,
-     2
     ]
    }
   },
@@ -4052,6 +4004,54 @@
    }
   },
   {
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "opp": "PHX",
+   "game": "ORL@PHX",
+   "stat": "RA",
+   "model": 6.3,
+   "base": 6.3,
+   "matchup": 5.0,
+   "injury": 12.8,
+   "inj_out": [
+    "Jalen Suggs",
+    "Paolo Banchero"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.478,
+   "dk": 6.5,
+   "over": 112,
+   "under": -148,
+   "best_over": [
+    114,
+    "fanduel"
+   ],
+   "best_under": [
+    -145,
+    "espnbet"
+   ],
+   "edge": -0.2,
+   "side": "Under",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     3,
+     3
+    ],
+    "mid": [
+     1,
+     2
+    ],
+    "soft": [
+     1,
+     2
+    ]
+   }
+  },
+  {
    "player": "Jase Richardson",
    "team": "ORL",
    "opp": "PHX",
@@ -4071,11 +4071,11 @@
    ],
    "p_over": 0.449,
    "dk": 5.5,
-   "over": 103,
-   "under": -136,
+   "over": 101,
+   "under": -133,
    "best_over": [
-    116,
-    "fanduel"
+    120,
+    "espnbet"
    ],
    "edge": -0.3,
    "side": "Under",
@@ -4117,9 +4117,9 @@
    "dk": 2.5,
    "over": -170,
    "under": 128,
-   "best_over": [
-    -165,
-    "ballybet"
+   "best_under": [
+    130,
+    "betparx"
    ],
    "edge": 1.8,
    "side": "Over",
@@ -4329,12 +4329,8 @@
    "dk": 1.5,
    "over": -153,
    "under": 116,
-   "best_over": [
-    -152,
-    "ballybet"
-   ],
    "best_under": [
-    122,
+    120,
     "fanduel"
    ],
    "edge": -0.4,
@@ -4510,8 +4506,8 @@
    "over": -176,
    "under": 133,
    "best_over": [
-    -160,
-    "hardrockbet"
+    -165,
+    "espnbet"
    ],
    "edge": 0.4,
    "side": "Over",
@@ -4548,10 +4544,10 @@
    ],
    "p_over": 0.614,
    "dk": 7.5,
-   "over": -112,
-   "under": -117,
+   "over": -109,
+   "under": -121,
    "best_under": [
-    -112,
+    -110,
     "fanduel"
    ],
    "edge": 1.0,
@@ -4636,8 +4632,8 @@
    ],
    "p_over": 0.362,
    "dk": 6.5,
-   "over": 115,
-   "under": -151,
+   "over": 116,
+   "under": -153,
    "best_over": [
     118,
     "fanduel"
@@ -4683,11 +4679,11 @@
    ],
    "p_over": 0.577,
    "dk": 4.5,
-   "over": -123,
-   "under": -107,
-   "best_under": [
-    -104,
-    "fanduel"
+   "over": -129,
+   "under": -102,
+   "best_over": [
+    -122,
+    "williamhill_us"
    ],
    "edge": 0.6,
    "side": "Over",
@@ -4726,14 +4722,10 @@
    ],
    "p_over": 0.809,
    "dk": 3.5,
-   "over": -161,
-   "under": 122,
-   "best_over": [
-    -155,
-    "betmgm"
-   ],
+   "over": -154,
+   "under": 117,
    "best_under": [
-    130,
+    126,
     "fanduel"
    ],
    "edge": 2.1,
@@ -4771,15 +4763,15 @@
    ],
    "p_over": 0.527,
    "dk": 3.5,
-   "over": -143,
-   "under": 109,
+   "over": -142,
+   "under": 108,
    "best_over": [
-    -125,
-    "betparx"
+    -121,
+    "betrivers"
    ],
    "best_under": [
-    112,
-    "williamhill_us"
+    110,
+    "hardrockbet"
    ],
    "edge": 0.3,
    "side": "Over",
@@ -4817,14 +4809,14 @@
    "p_over": 0.506,
    "dk": 3.5,
    "over": -132,
-   "under": 100,
+   "under": 101,
    "best_over": [
-    -112,
-    "betrivers"
+    -128,
+    "fanduel"
    ],
    "best_under": [
-    110,
-    "hardrockbet"
+    108,
+    "williamhill_us"
    ],
    "edge": 0.2,
    "side": "Over",
@@ -4870,7 +4862,7 @@
     "betmgm"
    ],
    "best_under": [
-    108,
+    110,
     "betrivers"
    ],
    "edge": 0.9,
@@ -4910,11 +4902,15 @@
    ],
    "p_over": 0.482,
    "dk": 2.5,
-   "over": 113,
-   "under": -149,
+   "over": 118,
+   "under": -156,
    "best_over": [
     120,
     "fanduel"
+   ],
+   "best_under": [
+    -150,
+    "espnbet"
    ],
    "edge": 0.1,
    "side": "Over",
@@ -4949,19 +4945,15 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.466,
-   "dk": 28.5,
-   "over": -116,
-   "under": -109,
+   "p_over": 0.409,
+   "dk": 29.5,
+   "over": -106,
+   "under": -120,
    "best_over": [
-    -114,
-    "betrivers"
+    -104,
+    "fanduel"
    ],
-   "best_under": [
-    -105,
-    "hardrockbet"
-   ],
-   "edge": -0.6,
+   "edge": -1.6,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -4974,7 +4966,7 @@
      2
     ],
     "soft": [
-     2,
+     3,
      3
     ]
    }
@@ -4996,19 +4988,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.814,
-   "dk": 26.5,
-   "over": -121,
-   "under": -106,
+   "p_over": 0.781,
+   "dk": 27.5,
+   "over": -111,
+   "under": -115,
    "best_over": [
-    -115,
-    "betmgm"
+    -110,
+    "espnbet"
    ],
-   "best_under": [
-    -105,
-    "fanatics"
-   ],
-   "edge": 7.6,
+   "edge": 6.6,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -5043,11 +5031,11 @@
    ],
    "p_over": 0.453,
    "dk": 21.5,
-   "over": -120,
-   "under": -106,
-   "best_over": [
-    -106,
-    "betrivers"
+   "over": -106,
+   "under": -121,
+   "best_under": [
+    -105,
+    "espnbet"
    ],
    "edge": -1.2,
    "side": "Under",
@@ -5084,15 +5072,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.672,
-   "dk": 18.5,
-   "over": -116,
-   "under": -110,
-   "best_under": [
-    -104,
-    "fanduel"
+   "p_over": 0.637,
+   "dk": 19.5,
+   "over": -111,
+   "under": -115,
+   "best_over": [
+    100,
+    "williamhill_us"
    ],
-   "edge": 4.6,
+   "edge": 3.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -5127,11 +5115,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.609,
-   "dk": 17.5,
-   "over": -104,
-   "under": -123,
-   "edge": 1.3,
+   "p_over": 0.688,
+   "dk": 16.5,
+   "over": -108,
+   "under": -118,
+   "best_over": [
+    -105,
+    "betmgm"
+   ],
+   "edge": 2.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -5144,7 +5136,7 @@
      2
     ],
     "soft": [
-     2,
+     3,
      3
     ]
    }
@@ -5167,7 +5159,7 @@
    "p_over": 0.681,
    "dk": 12.5,
    "over": -123,
-   "under": -103,
+   "under": -104,
    "best_over": [
     -105,
     "betmgm"
@@ -5210,11 +5202,11 @@
    "over": -122,
    "under": -104,
    "best_over": [
-    -108,
+    -112,
     "betrivers"
    ],
    "best_under": [
-    100,
+    102,
     "fanduel"
    ],
    "edge": -2.0,
@@ -5252,11 +5244,15 @@
    ],
    "p_over": 0.713,
    "dk": 12.5,
-   "over": -120,
-   "under": -107,
+   "over": -115,
+   "under": -111,
    "best_over": [
     -111,
     "betmgm"
+   ],
+   "best_under": [
+    -107,
+    "williamhill_us"
    ],
    "edge": 2.6,
    "side": "Over",
@@ -5293,11 +5289,15 @@
    ],
    "p_over": 0.184,
    "dk": 12.5,
-   "over": -105,
-   "under": -122,
+   "over": -101,
+   "under": -126,
    "best_over": [
     100,
     "fanduel"
+   ],
+   "best_under": [
+    -125,
+    "espnbet"
    ],
    "edge": -4.4,
    "side": "Under",
@@ -5336,11 +5336,11 @@
    ],
    "p_over": 0.569,
    "dk": 10.5,
-   "over": -103,
-   "under": -123,
-   "best_under": [
-    -120,
-    "espnbet"
+   "over": -109,
+   "under": -117,
+   "best_over": [
+    -105,
+    "hardrockbet"
    ],
    "edge": 1.6,
    "side": "Over",
@@ -5379,11 +5379,11 @@
    ],
    "p_over": 0.567,
    "dk": 7.5,
-   "over": -114,
-   "under": -112,
+   "over": -118,
+   "under": -108,
    "best_over": [
     -110,
-    "betrivers"
+    "fanduel"
    ],
    "edge": 0.6,
    "side": "Over",
@@ -5400,45 +5400,6 @@
     "soft": [
      1,
      1
-    ]
-   }
-  },
-  {
-   "player": "Will Richard",
-   "team": "GSW",
-   "opp": "MIA",
-   "game": "MIA@GSW",
-   "stat": "PTS",
-   "model": 6.7,
-   "base": 6.7,
-   "matchup": 3.4,
-   "injury": 3.8,
-   "inj_out": [
-    "Gui Santos"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.653,
-   "dk": 5.5,
-   "over": -124,
-   "under": -103,
-   "edge": 1.2,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     0,
-     0
-    ],
-    "soft": [
-     3,
-     5
     ]
    }
   },
@@ -5461,10 +5422,10 @@
    ],
    "p_over": 0.147,
    "dk": 5.5,
-   "over": -105,
-   "under": -121,
+   "over": -103,
+   "under": -124,
    "best_under": [
-    -109,
+    -107,
     "betrivers"
    ],
    "edge": -2.1,
@@ -5500,15 +5461,15 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.462,
-   "dk": 34.5,
-   "over": -124,
-   "under": -106,
-   "best_over": [
-    -115,
-    "betrivers"
+   "p_over": 0.415,
+   "dk": 35.5,
+   "over": -114,
+   "under": -115,
+   "best_under": [
+    -114,
+    "fanduel"
    ],
-   "edge": -0.8,
+   "edge": -1.8,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -5543,15 +5504,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.78,
-   "dk": 31.5,
-   "over": -121,
-   "under": -109,
-   "best_over": [
+   "p_over": 0.749,
+   "dk": 32.5,
+   "over": -108,
+   "under": -122,
+   "best_under": [
     -118,
-    "betrivers"
+    "fanduel"
    ],
-   "edge": 7.7,
+   "edge": 6.7,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -5586,15 +5547,15 @@
    ],
    "p_over": 0.438,
    "dk": 25.5,
-   "over": -119,
-   "under": -111,
+   "over": -109,
+   "under": -120,
    "best_over": [
-    -115,
-    "hardrockbet"
+    -105,
+    "betrivers"
    ],
    "best_under": [
-    -110,
-    "espnbet"
+    -112,
+    "fanduel"
    ],
    "edge": -1.6,
    "side": "Under",
@@ -5631,19 +5592,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.662,
-   "dk": 22.5,
-   "over": -121,
-   "under": -109,
+   "p_over": 0.631,
+   "dk": 23.5,
+   "over": -110,
+   "under": -120,
    "best_over": [
-    -120,
-    "espnbet"
+    -107,
+    "betrivers"
    ],
-   "best_under": [
-    -104,
-    "fanduel"
-   ],
-   "edge": 5.0,
+   "edge": 4.0,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -5657,45 +5614,6 @@
     ],
     "soft": [
      2,
-     3
-    ]
-   }
-  },
-  {
-   "player": "Brandin Podziemski",
-   "team": "GSW",
-   "opp": "MIA",
-   "game": "MIA@GSW",
-   "stat": "PA",
-   "model": 24.4,
-   "base": 24.4,
-   "matchup": 4.7,
-   "injury": 3.8,
-   "inj_out": [
-    "Gui Santos"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.683,
-   "dk": 21.5,
-   "over": -110,
-   "under": -119,
-   "edge": 2.9,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     0,
-     2
-    ],
-    "mid": [
-     1,
-     1
-    ],
-    "soft": [
-     3,
      3
     ]
    }
@@ -5717,10 +5635,10 @@
    ],
    "p_over": 0.7,
    "dk": 20.5,
-   "over": -117,
-   "under": -112,
+   "over": -112,
+   "under": -118,
    "best_over": [
-    -112,
+    -110,
     "betrivers"
    ],
    "best_under": [
@@ -5746,6 +5664,49 @@
    }
   },
   {
+   "player": "Brandin Podziemski",
+   "team": "GSW",
+   "opp": "MIA",
+   "game": "MIA@GSW",
+   "stat": "PA",
+   "model": 24.4,
+   "base": 24.4,
+   "matchup": 4.7,
+   "injury": 3.8,
+   "inj_out": [
+    "Gui Santos"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.739,
+   "dk": 20.5,
+   "over": -109,
+   "under": -120,
+   "best_under": [
+    -114,
+    "betparx"
+   ],
+   "edge": 3.9,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     1,
+     2
+    ],
+    "mid": [
+     1,
+     1
+    ],
+    "soft": [
+     3,
+     3
+    ]
+   }
+  },
+  {
    "player": "Pelle Larsson",
    "team": "MIA",
    "opp": "GSW",
@@ -5765,12 +5726,12 @@
    "over": -124,
    "under": -106,
    "best_over": [
-    -103,
+    -107,
     "betrivers"
    ],
    "best_under": [
-    100,
-    "fanduel"
+    -105,
+    "espnbet"
    ],
    "edge": -2.2,
    "side": "Under",
@@ -5809,11 +5770,11 @@
    ],
    "p_over": 0.585,
    "dk": 12.5,
-   "over": -120,
-   "under": -110,
-   "best_under": [
-    -108,
-    "fanduel"
+   "over": -129,
+   "under": -102,
+   "best_over": [
+    -120,
+    "espnbet"
    ],
    "edge": 2.2,
    "side": "Over",
@@ -5852,8 +5813,12 @@
    ],
    "p_over": 0.367,
    "dk": 11.5,
-   "over": -132,
-   "under": 100,
+   "over": -127,
+   "under": -103,
+   "best_over": [
+    -125,
+    "espnbet"
+   ],
    "edge": -0.9,
    "side": "Under",
    "tiers": {
@@ -5889,8 +5854,12 @@
    ],
    "p_over": 0.492,
    "dk": 40.5,
-   "over": -112,
-   "under": -117,
+   "over": -116,
+   "under": -113,
+   "best_over": [
+    -115,
+    "espnbet"
+   ],
    "best_under": [
     -110,
     "betmgm"
@@ -5930,11 +5899,15 @@
    ],
    "p_over": 0.391,
    "dk": 31.5,
-   "over": -122,
-   "under": -107,
+   "over": -113,
+   "under": -116,
    "best_over": [
-    -113,
+    -112,
     "betrivers"
+   ],
+   "best_under": [
+    -106,
+    "fanduel"
    ],
    "edge": -3.1,
    "side": "Under",
@@ -5971,19 +5944,15 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.782,
-   "dk": 30.5,
-   "over": -118,
-   "under": -112,
+   "p_over": 0.753,
+   "dk": 31.5,
+   "over": -111,
+   "under": -118,
    "best_over": [
-    -114,
-    "betrivers"
+    -106,
+    "fanduel"
    ],
-   "best_under": [
-    -105,
-    "hardrockbet"
-   ],
-   "edge": 8.2,
+   "edge": 7.2,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -6020,11 +5989,11 @@
    ],
    "p_over": 0.631,
    "dk": 26.5,
-   "over": -107,
-   "under": -123,
-   "best_under": [
-    -115,
-    "espnbet"
+   "over": -125,
+   "under": -105,
+   "best_over": [
+    -110,
+    "betmgm"
    ],
    "edge": 4.3,
    "side": "Over",
@@ -6061,11 +6030,19 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.616,
-   "dk": 22.5,
-   "over": -114,
-   "under": -116,
-   "edge": 1.8,
+   "p_over": 0.678,
+   "dk": 21.5,
+   "over": -118,
+   "under": -111,
+   "best_over": [
+    -110,
+    "betmgm"
+   ],
+   "best_under": [
+    -110,
+    "espnbet"
+   ],
+   "edge": 2.8,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -6141,11 +6118,15 @@
    ],
    "p_over": 0.139,
    "dk": 16.5,
-   "over": -104,
+   "over": -103,
    "under": -127,
    "best_over": [
-    105,
+    100,
     "betrivers"
+   ],
+   "best_under": [
+    -125,
+    "espnbet"
    ],
    "edge": -5.7,
    "side": "Under",
@@ -6182,11 +6163,15 @@
    ],
    "p_over": 0.557,
    "dk": 15.5,
-   "over": -109,
-   "under": -120,
+   "over": -108,
+   "under": -121,
    "best_over": [
-    -105,
-    "betrivers"
+    -106,
+    "fanduel"
+   ],
+   "best_under": [
+    -120,
+    "espnbet"
    ],
    "edge": 1.5,
    "side": "Over",
@@ -6223,12 +6208,8 @@
    ],
    "p_over": 0.589,
    "dk": 15.5,
-   "over": -107,
-   "under": -123,
-   "best_over": [
-    -105,
-    "betrivers"
-   ],
+   "over": -104,
+   "under": -127,
    "best_under": [
     -114,
     "fanduel"
@@ -6268,15 +6249,19 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.645,
-   "dk": 13.5,
-   "over": -122,
-   "under": -108,
+   "p_over": 0.607,
+   "dk": 14.5,
+   "over": -104,
+   "under": -126,
    "best_over": [
-    -120,
+    -103,
+    "betrivers"
+   ],
+   "best_under": [
+    -125,
     "espnbet"
    ],
-   "edge": 3.7,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -6289,7 +6274,7 @@
      4
     ],
     "soft": [
-     2,
+     1,
      3
     ]
    }
@@ -6311,28 +6296,24 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.59,
-   "dk": 10.5,
-   "over": -130,
-   "under": -101,
+   "p_over": 0.5,
+   "dk": 11.5,
+   "over": -103,
+   "under": -127,
    "best_over": [
-    -125,
-    "espnbet"
-   ],
-   "best_under": [
     100,
-    "hardrockbet"
+    "betrivers"
    ],
-   "edge": 1.0,
-   "side": "Over",
+   "edge": 0.0,
+   "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
+     3,
      4
     ],
     "mid": [
-     1,
+     3,
      4
     ],
     "soft": [
@@ -6360,14 +6341,14 @@
    ],
    "p_over": 0.253,
    "dk": 10.5,
-   "over": -128,
-   "under": -103,
+   "over": -125,
+   "under": -105,
    "best_over": [
     -120,
     "betmgm"
    ],
    "best_under": [
-    -102,
+    -104,
     "fanduel"
    ],
    "edge": -1.6,
@@ -6407,11 +6388,15 @@
    ],
    "p_over": 0.627,
    "dk": 8.5,
-   "over": -113,
-   "under": -117,
+   "over": -118,
+   "under": -112,
+   "best_over": [
+    -108,
+    "betrivers"
+   ],
    "best_under": [
-    100,
-    "fanduel"
+    -110,
+    "hardrockbet"
    ],
    "edge": 1.2,
    "side": "Over",
@@ -6446,15 +6431,19 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.486,
-   "dk": 46.5,
-   "over": -117,
-   "under": -112,
+   "p_over": 0.452,
+   "dk": 47.5,
+   "over": -108,
+   "under": -122,
+   "best_over": [
+    -106,
+    "fanduel"
+   ],
    "best_under": [
-    -105,
+    -120,
     "espnbet"
    ],
-   "edge": -0.4,
+   "edge": -1.4,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -6463,8 +6452,51 @@
      1
     ],
     "mid": [
-     1,
+     2,
      4
+    ],
+    "soft": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "opp": "MIA",
+   "game": "MIA@GSW",
+   "stat": "PRA",
+   "model": 43.8,
+   "base": 43.8,
+   "matchup": 4.6,
+   "injury": 3.7,
+   "inj_out": [
+    "Gui Santos"
+   ],
+   "sched": 1.5,
+   "sched_notes": [
+    "opponent on a back-to-back +1.5%"
+   ],
+   "p_over": 0.723,
+   "dk": 36.5,
+   "over": -110,
+   "under": -120,
+   "best_over": [
+    -105,
+    "hardrockbet"
+   ],
+   "edge": 7.3,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     0,
+     1
+    ],
+    "mid": [
+     2,
+     2
     ],
     "soft": [
      1,
@@ -6489,11 +6521,15 @@
    ],
    "p_over": 0.379,
    "dk": 35.5,
-   "over": -120,
-   "under": -109,
+   "over": -112,
+   "under": -117,
    "best_over": [
-    -107,
-    "betparx"
+    -105,
+    "espnbet"
+   ],
+   "best_under": [
+    -110,
+    "fanduel"
    ],
    "edge": -3.5,
    "side": "Under",
@@ -6510,49 +6546,6 @@
     "soft": [
      0,
      2
-    ]
-   }
-  },
-  {
-   "player": "Stephen Curry",
-   "team": "GSW",
-   "opp": "MIA",
-   "game": "MIA@GSW",
-   "stat": "PRA",
-   "model": 43.8,
-   "base": 43.8,
-   "matchup": 4.6,
-   "injury": 3.7,
-   "inj_out": [
-    "Gui Santos"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.75,
-   "dk": 35.5,
-   "over": -117,
-   "under": -113,
-   "best_over": [
-    -113,
-    "betrivers"
-   ],
-   "edge": 8.3,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     0,
-     1
-    ],
-    "mid": [
-     2,
-     2
-    ],
-    "soft": [
-     1,
-     3
     ]
    }
   },
@@ -6575,15 +6568,11 @@
    ],
    "p_over": 0.626,
    "dk": 30.5,
-   "over": -109,
-   "under": -121,
+   "over": -125,
+   "under": -105,
    "best_over": [
     -105,
     "betmgm"
-   ],
-   "best_under": [
-    -114,
-    "fanduel"
    ],
    "edge": 4.7,
    "side": "Over",
@@ -6620,15 +6609,19 @@
    "sched_notes": [
     "opponent on a back-to-back +1.5%"
    ],
-   "p_over": 0.671,
-   "dk": 26.5,
-   "over": -118,
-   "under": -111,
+   "p_over": 0.718,
+   "dk": 25.5,
+   "over": -122,
+   "under": -108,
    "best_over": [
-    -103,
-    "betrivers"
+    -111,
+    "betmgm"
    ],
-   "edge": 3.3,
+   "best_under": [
+    -104,
+    "fanduel"
+   ],
+   "edge": 4.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -6661,24 +6654,24 @@
    "sched_notes": [
     "back-to-back -3%"
    ],
-   "p_over": 0.606,
-   "dk": 23.5,
-   "over": -105,
-   "under": -125,
-   "best_under": [
-    -114,
-    "fanduel"
+   "p_over": 0.666,
+   "dk": 22.5,
+   "over": -123,
+   "under": -107,
+   "best_over": [
+    -120,
+    "betmgm"
    ],
-   "edge": 1.7,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     1,
+     2,
      3
     ],
     "mid": [
-     0,
+     1,
      2
     ],
     "soft": [
@@ -6707,12 +6700,12 @@
    "over": -120,
    "under": -109,
    "best_over": [
-    -106,
+    -108,
     "betrivers"
    ],
    "best_under": [
-    -102,
-    "fanduel"
+    -105,
+    "espnbet"
    ],
    "edge": -2.9,
    "side": "Under",
@@ -6749,10 +6742,10 @@
    ],
    "p_over": 0.152,
    "dk": 18.5,
-   "over": -106,
-   "under": -124,
+   "over": -103,
+   "under": -128,
    "best_over": [
-    105,
+    100,
     "betrivers"
    ],
    "edge": -5.6,
@@ -6792,11 +6785,15 @@
    ],
    "p_over": 0.364,
    "dk": 17.5,
-   "over": -115,
-   "under": -114,
+   "over": -113,
+   "under": -116,
    "best_over": [
-    -110,
-    "hardrockbet"
+    -112,
+    "fanduel"
+   ],
+   "best_under": [
+    -113,
+    "betrivers"
    ],
    "edge": -1.4,
    "side": "Under",
@@ -6834,10 +6831,10 @@
    "p_over": 0.536,
    "dk": 17.5,
    "over": -110,
-   "under": -119,
+   "under": -120,
    "best_over": [
     -106,
-    "betrivers"
+    "fanduel"
    ],
    "edge": 1.0,
    "side": "Over",
@@ -6876,10 +6873,14 @@
    ],
    "p_over": 0.618,
    "dk": 16.5,
-   "over": -108,
-   "under": -122,
+   "over": -117,
+   "under": -112,
+   "best_over": [
+    -114,
+    "betrivers"
+   ],
    "best_under": [
-    -112,
+    -110,
     "fanduel"
    ],
    "edge": 3.3,
@@ -6917,15 +6918,11 @@
    ],
    "p_over": 0.594,
    "dk": 11.5,
-   "over": -103,
-   "under": -128,
-   "best_over": [
-    100,
-    "betmgm"
-   ],
+   "over": 105,
+   "under": -139,
    "best_under": [
-    -120,
-    "hardrockbet"
+    -125,
+    "fanduel"
    ],
    "edge": 1.0,
    "side": "Over",
@@ -6967,6 +6964,10 @@
    "best_over": [
     114,
     "fanduel"
+   ],
+   "best_under": [
+    -140,
+    "espnbet"
    ],
    "edge": -2.4,
    "side": "Under",
@@ -7048,11 +7049,11 @@
    ],
    "p_over": 0.471,
    "dk": 5.5,
-   "over": 104,
-   "under": -137,
+   "over": 100,
+   "under": -132,
    "best_over": [
-    110,
-    "espnbet"
+    124,
+    "fanduel"
    ],
    "edge": 0.0,
    "side": "Under",
@@ -7091,8 +7092,8 @@
    ],
    "p_over": 0.471,
    "dk": 5.5,
-   "over": 115,
-   "under": -152,
+   "over": 110,
+   "under": -145,
    "best_over": [
     120,
     "hardrockbet"
@@ -7143,7 +7144,7 @@
     "williamhill_us"
    ],
    "best_under": [
-    112,
+    104,
     "betrivers"
    ],
    "edge": -0.2,
@@ -7188,7 +7189,7 @@
     "fanduel"
    ],
    "best_under": [
-    105,
+    110,
     "betrivers"
    ],
    "edge": -0.7,
@@ -7228,10 +7229,10 @@
    ],
    "p_over": 0.674,
    "dk": 3.5,
-   "over": -120,
-   "under": -110,
+   "over": -128,
+   "under": -103,
    "best_over": [
-    -110,
+    -109,
     "betrivers"
    ],
    "best_under": [
@@ -7275,14 +7276,14 @@
    ],
    "p_over": 0.749,
    "dk": 3.5,
-   "over": -103,
-   "under": -128,
+   "over": -106,
+   "under": -124,
    "best_over": [
-    102,
-    "betrivers"
+    -105,
+    "espnbet"
    ],
    "best_under": [
-    -108,
+    -110,
     "fanduel"
    ],
    "edge": 1.6,
@@ -7322,15 +7323,15 @@
    ],
    "p_over": 0.442,
    "dk": 3.5,
-   "over": 109,
-   "under": -144,
+   "over": 108,
+   "under": -142,
    "best_over": [
     110,
-    "betrivers"
+    "hardrockbet"
    ],
    "best_under": [
     -140,
-    "hardrockbet"
+    "espnbet"
    ],
    "edge": -0.1,
    "side": "Under",
@@ -7347,49 +7348,6 @@
     "soft": [
      2,
      2
-    ]
-   }
-  },
-  {
-   "player": "Will Richard",
-   "team": "GSW",
-   "opp": "MIA",
-   "game": "MIA@GSW",
-   "stat": "REB",
-   "model": 2.9,
-   "base": 2.9,
-   "matchup": 2.9,
-   "injury": 3.8,
-   "inj_out": [
-    "Gui Santos"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.554,
-   "dk": 2.5,
-   "over": -104,
-   "under": -127,
-   "best_over": [
-    115,
-    "espnbet"
-   ],
-   "edge": 0.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     0,
-     1
-    ],
-    "mid": [
-     3,
-     4
-    ],
-    "soft": [
-     1,
-     1
     ]
    }
   },
@@ -7413,7 +7371,7 @@
    "over": 110,
    "under": -145,
    "best_over": [
-    112,
+    114,
     "fanduel"
    ],
    "best_under": [
@@ -7455,15 +7413,15 @@
    ],
    "p_over": 0.269,
    "dk": 2.5,
-   "over": 120,
-   "under": -158,
+   "over": 128,
+   "under": -170,
    "best_over": [
     130,
     "fanduel"
    ],
    "best_under": [
-    -140,
-    "betmgm"
+    -139,
+    "betrivers"
    ],
    "edge": -0.7,
    "side": "Under",
@@ -7500,8 +7458,12 @@
    ],
    "p_over": 0.539,
    "dk": 17.5,
-   "over": -114,
-   "under": -115,
+   "over": -107,
+   "under": -123,
+   "best_over": [
+    -106,
+    "betrivers"
+   ],
    "best_under": [
     -110,
     "hardrockbet"
@@ -7541,8 +7503,8 @@
    ],
    "p_over": 0.282,
    "dk": 13.5,
-   "over": -129,
-   "under": -102,
+   "over": -133,
+   "under": 101,
    "best_over": [
     -115,
     "betmgm"
@@ -7633,6 +7595,10 @@
     110,
     "hardrockbet"
    ],
+   "best_under": [
+    -125,
+    "espnbet"
+   ],
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -7718,7 +7684,7 @@
     "betmgm"
    ],
    "best_under": [
-    -120,
+    -125,
     "fanduel"
    ],
    "edge": 1.5,
@@ -7758,11 +7724,11 @@
    ],
    "p_over": 0.617,
    "dk": 8.5,
-   "over": -108,
-   "under": -122,
+   "over": -115,
+   "under": -114,
    "best_over": [
-    -106,
-    "fanduel"
+    100,
+    "betrivers"
    ],
    "best_under": [
     -110,
@@ -7806,11 +7772,11 @@
    "over": -124,
    "under": -106,
    "best_over": [
-    -120,
-    "hardrockbet"
+    -117,
+    "betrivers"
    ],
    "best_under": [
-    -104,
+    -102,
     "fanduel"
    ],
    "edge": -0.4,
@@ -7850,11 +7816,11 @@
    ],
    "p_over": 0.767,
    "dk": 5.5,
-   "over": -136,
-   "under": 103,
+   "over": -134,
+   "under": 102,
    "best_over": [
-    -129,
-    "betrivers"
+    -130,
+    "espnbet"
    ],
    "best_under": [
     116,
@@ -7900,12 +7866,8 @@
    "over": 121,
    "under": -160,
    "best_over": [
-    125,
-    "espnbet"
-   ],
-   "best_under": [
-    -155,
-    "hardrockbet"
+    122,
+    "williamhill_us"
    ],
    "edge": 0.8,
    "side": "Over",
@@ -7942,8 +7904,8 @@
    ],
    "p_over": 0.826,
    "dk": 2.5,
-   "over": -168,
-   "under": 127,
+   "over": -164,
+   "under": 124,
    "best_under": [
     132,
     "fanduel"
@@ -7985,11 +7947,11 @@
    ],
    "p_over": 0.506,
    "dk": 2.5,
-   "over": 123,
-   "under": -163,
-   "best_over": [
-    140,
-    "fanduel"
+   "over": 144,
+   "under": -191,
+   "best_under": [
+    -175,
+    "betparx"
    ],
    "edge": 0.2,
    "side": "Over",
@@ -8028,11 +7990,15 @@
    ],
    "p_over": 0.769,
    "dk": 1.5,
-   "over": -194,
-   "under": 146,
+   "over": -180,
+   "under": 136,
    "best_over": [
     -165,
     "betmgm"
+   ],
+   "best_under": [
+    140,
+    "hardrockbet"
    ],
    "edge": 1.3,
    "side": "Over",
@@ -8117,8 +8083,8 @@
    "over": -110,
    "under": -120,
    "best_over": [
-    -108,
-    "ballybet"
+    -109,
+    "betrivers"
    ],
    "best_under": [
     -105,
@@ -8161,15 +8127,11 @@
    ],
    "p_over": 0.769,
    "dk": 1.5,
-   "over": 100,
-   "under": -131,
-   "best_over": [
-    102,
-    "betrivers"
-   ],
+   "over": 102,
+   "under": -134,
    "best_under": [
-    -125,
-    "espnbet"
+    -129,
+    "williamhill_us"
    ],
    "edge": 1.3,
    "side": "Over",
@@ -8208,15 +8170,15 @@
    ],
    "p_over": 0.373,
    "dk": 1.5,
-   "over": 123,
+   "over": 122,
    "under": -162,
    "best_over": [
-    128,
+    123,
     "betrivers"
    ],
    "best_under": [
-    -155,
-    "hardrockbet"
+    -154,
+    "fanduel"
    ],
    "edge": -0.2,
    "side": "Under",
@@ -8233,53 +8195,6 @@
     "soft": [
      2,
      3
-    ]
-   }
-  },
-  {
-   "player": "Will Richard",
-   "team": "GSW",
-   "opp": "MIA",
-   "game": "MIA@GSW",
-   "stat": "3PM",
-   "model": 1.3,
-   "base": 1.3,
-   "matchup": 6.0,
-   "injury": 3.8,
-   "inj_out": [
-    "Gui Santos"
-   ],
-   "sched": 1.5,
-   "sched_notes": [
-    "opponent on a back-to-back +1.5%"
-   ],
-   "p_over": 0.373,
-   "dk": 1.5,
-   "over": 161,
-   "under": -215,
-   "best_over": [
-    175,
-    "betrivers"
-   ],
-   "best_under": [
-    -213,
-    "williamhill_us"
-   ],
-   "edge": -0.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     1,
-     1
-    ],
-    "soft": [
-     2,
-     4
     ]
    }
   },
@@ -8303,7 +8218,7 @@
    "over": 165,
    "under": -220,
    "best_over": [
-    178,
+    174,
     "fanduel"
    ],
    "best_under": [
@@ -8832,7 +8747,7 @@
    "game": "WAS@ATL"
   }
  ],
- "injuries_updated": "11/05 11:27 AM ET",
+ "injuries_updated": "11/05 12:01 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 1.11,
@@ -13478,6 +13393,311 @@
      "model": 32.0,
      "dk": 35.5,
      "edge": -3.5
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-05T12:01",
+   "games": [
+    {
+     "id": "ORL@PHX",
+     "matchup": "ORL @ PHX",
+     "model_spread": -2.0,
+     "model_total": 227.7,
+     "dk_spread": "-1.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "MIA@GSW",
+     "matchup": "MIA @ GSW",
+     "model_spread": -4.2,
+     "model_total": 231.7,
+     "dk_spread": "-7.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "WAS@ATL",
+     "matchup": "WAS @ ATL",
+     "model_spread": -3.1,
+     "model_total": 225.1,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BOS@CHA",
+     "matchup": "BOS @ CHA",
+     "model_spread": 2.1,
+     "model_total": 220.6,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "PHI@CLE",
+     "matchup": "PHI @ CLE",
+     "model_spread": -1.3,
+     "model_total": 226.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "UTA@DAL",
+     "matchup": "UTA @ DAL",
+     "model_spread": -5.1,
+     "model_total": 226.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "OKC@MEM",
+     "matchup": "OKC @ MEM",
+     "model_spread": -4.7,
+     "model_total": 225.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "TOR@MIL",
+     "matchup": "TOR @ MIL",
+     "model_spread": 1.9,
+     "model_total": 229.3,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIN@NOP",
+     "matchup": "MIN @ NOP",
+     "model_spread": 0.1,
+     "model_total": 230.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "POR@LAL",
+     "matchup": "POR @ LAL",
+     "model_spread": -1.8,
+     "model_total": 230.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "SAS@SAC",
+     "matchup": "SAS @ SAC",
+     "model_spread": 3.3,
+     "model_total": 227.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Stephen Curry",
+     "stat": "PRA",
+     "model": 43.8,
+     "dk": 36.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Stephen Curry",
+     "stat": "PR",
+     "model": 38.7,
+     "dk": 31.5,
+     "edge": 7.2
+    },
+    {
+     "player": "Stephen Curry",
+     "stat": "PA",
+     "model": 39.2,
+     "dk": 32.5,
+     "edge": 6.7
+    },
+    {
+     "player": "Stephen Curry",
+     "stat": "PTS",
+     "model": 34.1,
+     "dk": 27.5,
+     "edge": 6.6
+    },
+    {
+     "player": "Andrew Wiggins",
+     "stat": "PR",
+     "model": 10.8,
+     "dk": 16.5,
+     "edge": -5.7
+    },
+    {
+     "player": "Wendell Carter Jr.",
+     "stat": "PR",
+     "model": 26.1,
+     "dk": 20.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Andrew Wiggins",
+     "stat": "PRA",
+     "model": 12.9,
+     "dk": 18.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Collin Gillespie",
+     "stat": "PR",
+     "model": 8.0,
+     "dk": 13.5,
+     "edge": -5.5
+    },
+    {
+     "player": "Wendell Carter Jr.",
+     "stat": "PRA",
+     "model": 27.2,
+     "dk": 22.5,
+     "edge": 4.7
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "stat": "PRA",
+     "model": 35.2,
+     "dk": 30.5,
+     "edge": 4.7
+    },
+    {
+     "player": "Klay Thompson",
+     "stat": "PTS",
+     "model": 17.1,
+     "dk": 12.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Collin Gillespie",
+     "stat": "PRA",
+     "model": 12.0,
+     "dk": 16.5,
+     "edge": -4.5
+    },
+    {
+     "player": "Andrew Wiggins",
+     "stat": "PTS",
+     "model": 8.1,
+     "dk": 12.5,
+     "edge": -4.4
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "stat": "PR",
+     "model": 30.8,
+     "dk": 26.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Brandin Podziemski",
+     "stat": "PRA",
+     "model": 29.8,
+     "dk": 25.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Anthony Black",
+     "stat": "PRA",
+     "model": 28.7,
+     "dk": 24.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Anthony Black",
+     "stat": "PA",
+     "model": 23.5,
+     "dk": 19.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PA",
+     "model": 18.5,
+     "dk": 14.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Devin Booker",
+     "stat": "PRA",
+     "model": 31.5,
+     "dk": 35.5,
+     "edge": -4.0
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PRA",
+     "model": 22.5,
+     "dk": 18.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "stat": "PA",
+     "model": 27.5,
+     "dk": 23.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "RA",
+     "model": 16.4,
+     "dk": 12.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Brandin Podziemski",
+     "stat": "PA",
+     "model": 24.4,
+     "dk": 20.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Collin Gillespie",
+     "stat": "PTS",
+     "model": 5.7,
+     "dk": 9.5,
+     "edge": -3.8
+    },
+    {
+     "player": "Oso Ighodaro",
+     "stat": "PA",
+     "model": 13.3,
+     "dk": 9.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PTS",
+     "model": 16.2,
+     "dk": 12.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Wendell Carter Jr.",
+     "stat": "PTS",
+     "model": 15.2,
+     "dk": 11.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Collin Gillespie",
+     "stat": "PA",
+     "model": 9.8,
+     "dk": 13.5,
+     "edge": -3.7
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PR",
+     "model": 20.2,
+     "dk": 16.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Yaxel Lendeborg",
+     "stat": "PTS",
+     "model": 23.1,
+     "dk": 19.5,
+     "edge": 3.6
     }
    ]
   }
@@ -24165,19 +24385,20 @@
     "Matchup vs GSW: -4.5% to his REB projection from their defense and pace (helps the under)",
     "GSW ranks among the top-10 defenses for REB; he went under 10.5 in 3 of 3 games against that tier",
     "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -140 at ESPN BET (DraftKings -142; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "candidates_considered": 28,
    "p_model": 80.6,
    "p_win": 88.4,
    "ev": 50.7,
-   "picked_at": "2026-11-05 11:27 AM ET",
+   "picked_at": "2026-11-05 12:01 PM ET",
    "open_line": 10.5,
    "open_price": -142,
    "first_picked_at": "2026-11-05 11:16 AM ET",
    "close_line": 10.5,
    "close_price": -142,
-   "close_at": "2026-11-05 11:27 AM ET",
+   "close_at": "2026-11-05 12:01 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -24322,6 +24543,7 @@
     "Matchup vs GSW: -1.2% to his PR projection from their defense and pace (helps the under)",
     "GSW ranks among the middle-10 defenses for PR; he went under 16.5 in 1 of 1 games against that tier",
     "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -125 at ESPN BET (DraftKings -127; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "candidates_considered": 28,
@@ -24406,7 +24628,7 @@
    "stat": "RA",
    "side": "Over",
    "line": 5.5,
-   "price": -136,
+   "price": -134,
    "model": 7.7,
    "edge": 2.2,
    "edge_pct": 40.0,
@@ -24450,77 +24672,13 @@
     "MIA ranks among the bottom-10 defenses for RA; he went over 5.5 in 1 of 1 games against that tier",
     "Teammate injury boost: Gui Santos out, +4.1% to his RA projection (extra minutes and usage)",
     "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
-    "Best price: -129 at BetRivers (DraftKings -136; the record is graded at DraftKings)",
+    "Best price: -130 at ESPN BET (DraftKings -134; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "candidates_considered": 28,
    "p_model": 76.7,
    "p_win": 76.0,
-   "ev": 31.9
-  },
-  {
-   "date": "2026-11-05",
-   "eid": "401909937",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "home": "GSW",
-   "away": "MIA",
-   "type": "Prop",
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "stat": "REB",
-   "side": "Under",
-   "line": 2.5,
-   "price": -158,
-   "model": 1.8,
-   "edge": -0.7,
-   "edge_pct": 28.0,
-   "label": "Klay Thompson Under 2.5 REB",
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     6,
-     8
-    ],
-    "l15": [
-     6,
-     8
-    ]
-   },
-   "chart": {
-    "vals": [
-     1.0,
-     2.0,
-     3.0,
-     1.0,
-     1.0,
-     0.0,
-     1.0,
-     5.0
-    ],
-    "line": 2.5,
-    "side": "Under",
-    "label": "REB"
-   },
-   "score": 86.9,
-   "reasons": [
-    "Model projects 1.8 REB vs a line of 2.5 (-0.7, 28% edge)",
-    "Went under the line in 6 of his last 8 games (4/5 in the last 5)",
-    "Averaging 1.6 over the last 5 and 1.8 over the last 8",
-    "Minutes steady: 24 per game over the last 5 (23 over the last 8)",
-    "Matchup vs GSW: neutral for REB (defense and pace about league average)",
-    "GSW ranks among the middle-10 defenses for REB; he went under 2.5 in 1 of 1 games against that tier",
-    "Game script / rest: back-to-back -3% (net -3%)",
-    "Best price: -140 at BetMGM (DraftKings -158; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 28,
-   "p_model": 73.1,
-   "p_win": 73.8,
-   "ev": 20.5
+   "ev": 32.7
   },
   {
    "date": "2026-11-05",
@@ -24644,6 +24802,62 @@
    "p_model": 60.8,
    "p_win": 61.5,
    "ev": 15.4
+  },
+  {
+   "date": "2026-11-05",
+   "eid": "401909936",
+   "game": "ORL@PHX",
+   "time": "9:00 PM ET",
+   "home": "PHX",
+   "away": "ORL",
+   "type": "Total",
+   "team": "PHX",
+   "side": "Over",
+   "line": 222.5,
+   "price": -111,
+   "model": 227.7,
+   "edge": 5.2,
+   "edge_pct": null,
+   "label": "ORL @ PHX Over 222.5",
+   "hits": {
+    "l5": [
+     7,
+     10
+    ],
+    "l10": [
+     8,
+     13
+    ],
+    "l15": [
+     8,
+     13
+    ]
+   },
+   "chart": {
+    "vals": [
+     207.5,
+     233.0,
+     233.5,
+     241.0,
+     217.0,
+     224.0
+    ],
+    "line": 222.5,
+    "side": "Over",
+    "label": "avg game total, both teams"
+   },
+   "score": 64.3,
+   "reasons": [
+    "Model total 227.7 vs a line of 222.5 (5.2-point edge)",
+    "8 of the two teams' last 13 games went over 222.5",
+    "PHX games average 243.8 total points over the last 5; ORL games 215.6",
+    "ORL on 2 days rest",
+    "PHX on a back-to-back"
+   ],
+   "candidates_considered": 28,
+   "p_model": 62.0,
+   "p_win": 61.8,
+   "ev": 17.5
   }
  ],
  "ladder": {
@@ -24667,6 +24881,7 @@
     "price": -127,
     "model": 10.8,
     "edge": -5.7,
+    "edge_pct": 34.5,
     "hits": {
      "l5": [
       4,
@@ -24681,6 +24896,21 @@
       8
      ]
     },
+    "chart": {
+     "vals": [
+      13.0,
+      16.0,
+      5.0,
+      15.0,
+      20.0,
+      14.0,
+      7.0,
+      7.0
+     ],
+     "line": 16.5,
+     "side": "Under",
+     "label": "PR"
+    },
     "reasons": [
      "Model projects 10.8 PR vs a line of 16.5 (-5.7, 35% edge)",
      "Went under the line in 7 of his last 8 games (4/5 in the last 5)",
@@ -24689,6 +24919,7 @@
      "Matchup vs GSW: -1.2% to his PR projection from their defense and pace (helps the under)",
      "GSW ranks among the middle-10 defenses for PR; he went under 16.5 in 1 of 1 games against that tier",
      "Game script / rest: back-to-back -3% (net -3%)",
+     "Best price: -125 at ESPN BET (DraftKings -127; the record is graded at DraftKings)",
      "Not on the injury report at pick time"
     ],
     "p_win": 86.7,
@@ -24703,13 +24934,14 @@
     "day": 2,
     "stake": 17.46,
     "to_win": 13.75,
-    "picked_at": "2026-11-05 11:27 AM ET",
+    "picked_at": "2026-11-05 12:01 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 86.7% to win, +55% expected value",
     "open_line": 16.5,
     "open_price": -127,
+    "first_picked_at": "2026-11-05 11:27 AM ET",
     "close_line": 16.5,
     "close_price": -127,
-    "close_at": "2026-11-05 11:27 AM ET",
+    "close_at": "2026-11-05 12:01 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -24813,146 +25045,146 @@
    "rungs": [
     {
      "line": 7.5,
-     "price": -650,
-     "implied": 86.7,
+     "price": -630,
+     "implied": 86.3,
      "p": 85.8,
      "hit": [
       6,
       8
      ],
-     "ev": -1.0
+     "ev": -0.6
     },
     {
      "line": 8.5,
-     "price": -377,
-     "implied": 79.0,
+     "price": -359,
+     "implied": 78.2,
      "p": 82.5,
      "hit": [
       6,
       8
      ],
-     "ev": 4.4
+     "ev": 5.5
     },
     {
      "line": 9.5,
-     "price": -235,
-     "implied": 70.1,
+     "price": -224,
+     "implied": 69.1,
      "p": 77.9,
      "hit": [
       6,
       8
      ],
-     "ev": 11.1
+     "ev": 12.7
     },
     {
      "line": 10.5,
-     "price": -154,
-     "implied": 60.6,
+     "price": -146,
+     "implied": 59.3,
      "p": 72.2,
      "hit": [
       6,
       8
      ],
-     "ev": 19.0
+     "ev": 21.6
     },
     {
      "line": 11.5,
-     "price": -103,
-     "implied": 50.7,
+     "price": 106,
+     "implied": 48.5,
      "p": 65.7,
      "hit": [
       6,
       8
      ],
-     "ev": 29.4
+     "ev": 35.2
     },
     {
      "line": 12.5,
-     "price": 143,
-     "implied": 41.2,
+     "price": 156,
+     "implied": 39.1,
      "p": 48.9,
      "hit": [
       4,
       8
      ],
-     "ev": 18.7
+     "ev": 25.1
     },
     {
      "line": 13.5,
-     "price": 210,
-     "implied": 32.3,
+     "price": 230,
+     "implied": 30.3,
      "p": 42.3,
      "hit": [
       4,
       8
      ],
-     "ev": 31.2
+     "ev": 39.7
     },
     {
      "line": 14.5,
-     "price": 309,
-     "implied": 24.4,
+     "price": 328,
+     "implied": 23.4,
      "p": 26.5,
      "hit": [
       2,
       8
      ],
-     "ev": 8.4
+     "ev": 13.4
     },
     {
      "line": 15.5,
-     "price": 455,
-     "implied": 18.0,
+     "price": 477,
+     "implied": 17.3,
      "p": 21.6,
      "hit": [
       2,
       8
      ],
-     "ev": 20.1
+     "ev": 24.9
     },
     {
      "line": 16.5,
-     "price": 660,
-     "implied": 13.2,
+     "price": 690,
+     "implied": 12.7,
      "p": 17.8,
      "hit": [
       2,
       8
      ],
-     "ev": 35.6
+     "ev": 40.9
     },
     {
      "line": 17.5,
-     "price": 920,
-     "implied": 9.8,
+     "price": 980,
+     "implied": 9.3,
      "p": 15.0,
      "hit": [
       2,
       8
      ],
-     "ev": 53.5
+     "ev": 62.5
     },
     {
      "line": 18.5,
-     "price": 1300,
-     "implied": 7.1,
+     "price": 1380,
+     "implied": 6.8,
      "p": 3.1,
      "hit": [
       0,
       8
      ],
-     "ev": -56.4
+     "ev": -54.0
     },
     {
      "line": 19.5,
-     "price": 1820,
-     "implied": 5.2,
+     "price": 1860,
+     "implied": 5.1,
      "p": 1.8,
      "hit": [
       0,
       8
      ],
-     "ev": -64.8
+     "ev": -64.0
     }
    ],
    "suggested": [
@@ -24960,8 +25192,169 @@
     11.5,
     17.5
    ],
-   "best_ev": 53.5,
+   "best_ev": 62.5,
    "value_rungs": 9
+  },
+  {
+   "player": "Wendell Carter Jr",
+   "team": "ORL",
+   "game": "ORL@PHX",
+   "time": "9:00 PM ET",
+   "stat": "REB",
+   "model": 10.8,
+   "main_line": 8.5,
+   "avg5": 9.2,
+   "avg15": 8.9,
+   "last10": [
+    7.0,
+    9.0,
+    10.0,
+    10.0,
+    7.0,
+    10.0,
+    9.0
+   ],
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -537,
+     "implied": 84.3,
+     "p": 97.5,
+     "hit": [
+      7,
+      7
+     ],
+     "ev": 15.6
+    },
+    {
+     "line": 6.5,
+     "price": -296,
+     "implied": 74.7,
+     "p": 94.8,
+     "hit": [
+      7,
+      7
+     ],
+     "ev": 26.8
+    },
+    {
+     "line": 7.5,
+     "price": -175,
+     "implied": 63.6,
+     "p": 79.2,
+     "hit": [
+      5,
+      7
+     ],
+     "ev": 24.4
+    },
+    {
+     "line": 8.5,
+     "price": -109,
+     "implied": 52.2,
+     "p": 73.6,
+     "hit": [
+      5,
+      7
+     ],
+     "ev": 41.0
+    },
+    {
+     "line": 9.5,
+     "price": 148,
+     "implied": 40.3,
+     "p": 55.4,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": 37.4
+    },
+    {
+     "line": 10.5,
+     "price": 232,
+     "implied": 30.1,
+     "p": 31.0,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 2.8
+    },
+    {
+     "line": 11.5,
+     "price": 366,
+     "implied": 21.5,
+     "p": 23.8,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 11.0
+    },
+    {
+     "line": 12.5,
+     "price": 570,
+     "implied": 14.9,
+     "p": 17.4,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 16.4
+    },
+    {
+     "line": 13.5,
+     "price": 850,
+     "implied": 10.5,
+     "p": 12.0,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 14.3
+    },
+    {
+     "line": 14.5,
+     "price": 1260,
+     "implied": 7.4,
+     "p": 7.9,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 7.6
+    },
+    {
+     "line": 15.5,
+     "price": 1860,
+     "implied": 5.1,
+     "p": 4.9,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": -3.2
+    },
+    {
+     "line": 16.5,
+     "price": 2500,
+     "implied": 3.8,
+     "p": 2.9,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": -23.7
+    }
+   ],
+   "suggested": [
+    7.5,
+    8.5,
+    12.5
+   ],
+   "best_ev": 41.0,
+   "value_rungs": 7
   },
   {
    "player": "Franz Wagner",
@@ -24985,47 +25378,47 @@
    "rungs": [
     {
      "line": 3.5,
-     "price": -890,
-     "implied": 89.9,
+     "price": -840,
+     "implied": 89.4,
      "p": 99.2,
      "hit": [
       7,
       7
      ],
-     "ev": 10.3
+     "ev": 11.0
     },
     {
      "line": 4.5,
-     "price": -407,
-     "implied": 80.3,
+     "price": -384,
+     "implied": 79.3,
      "p": 97.7,
      "hit": [
       7,
       7
      ],
-     "ev": 21.7
+     "ev": 23.2
     },
     {
      "line": 5.5,
-     "price": -213,
-     "implied": 68.1,
+     "price": -204,
+     "implied": 67.1,
      "p": 77.8,
      "hit": [
       4,
       7
      ],
-     "ev": 14.4
+     "ev": 16.0
     },
     {
      "line": 6.5,
-     "price": -120,
-     "implied": 54.5,
+     "price": -118,
+     "implied": 54.1,
      "p": 67.7,
      "hit": [
       3,
       7
      ],
-     "ev": 24.1
+     "ev": 25.1
     },
     {
      "line": 7.5,
@@ -25040,58 +25433,58 @@
     },
     {
      "line": 8.5,
-     "price": 235,
-     "implied": 29.9,
+     "price": 239,
+     "implied": 29.5,
      "p": 54.4,
      "hit": [
       3,
       7
      ],
-     "ev": 82.1
+     "ev": 84.3
     },
     {
      "line": 9.5,
-     "price": 382,
-     "implied": 20.7,
+     "price": 388,
+     "implied": 20.5,
      "p": 40.9,
      "hit": [
       2,
       7
      ],
-     "ev": 97.1
+     "ev": 99.6
     },
     {
      "line": 10.5,
-     "price": 610,
-     "implied": 14.1,
+     "price": 640,
+     "implied": 13.5,
      "p": 33.5,
      "hit": [
       2,
       7
      ],
-     "ev": 137.5
+     "ev": 147.5
     },
     {
      "line": 11.5,
-     "price": 980,
-     "implied": 9.3,
+     "price": 1020,
+     "implied": 8.9,
      "p": 21.2,
      "hit": [
       1,
       7
      ],
-     "ev": 129.4
+     "ev": 137.9
     },
     {
      "line": 12.5,
-     "price": 1520,
-     "implied": 6.2,
+     "price": 1560,
+     "implied": 6.0,
      "p": 10.3,
      "hit": [
       0,
       7
      ],
-     "ev": 67.3
+     "ev": 71.4
     },
     {
      "line": 13.5,
@@ -25121,8 +25514,8 @@
     7.5,
     10.5
    ],
-   "best_ev": 137.5,
-   "value_rungs": 7
+   "best_ev": 147.5,
+   "value_rungs": 6
   },
   {
    "player": "Tristan da Silva",
@@ -25253,285 +25646,6 @@
    "value_rungs": 6
   },
   {
-   "player": "Wendell Carter Jr",
-   "team": "ORL",
-   "game": "ORL@PHX",
-   "time": "9:00 PM ET",
-   "stat": "REB",
-   "model": 10.8,
-   "main_line": 8.5,
-   "avg5": 9.2,
-   "avg15": 8.9,
-   "last10": [
-    7.0,
-    9.0,
-    10.0,
-    10.0,
-    7.0,
-    10.0,
-    9.0
-   ],
-   "rungs": [
-    {
-     "line": 5.5,
-     "price": -573,
-     "implied": 85.1,
-     "p": 97.5,
-     "hit": [
-      7,
-      7
-     ],
-     "ev": 14.5
-    },
-    {
-     "line": 6.5,
-     "price": -311,
-     "implied": 75.7,
-     "p": 94.8,
-     "hit": [
-      7,
-      7
-     ],
-     "ev": 25.2
-    },
-    {
-     "line": 7.5,
-     "price": -185,
-     "implied": 64.9,
-     "p": 79.2,
-     "hit": [
-      5,
-      7
-     ],
-     "ev": 22.0
-    },
-    {
-     "line": 8.5,
-     "price": -113,
-     "implied": 53.1,
-     "p": 73.6,
-     "hit": [
-      5,
-      7
-     ],
-     "ev": 38.7
-    },
-    {
-     "line": 9.5,
-     "price": 141,
-     "implied": 41.5,
-     "p": 55.4,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": 33.5
-    },
-    {
-     "line": 10.5,
-     "price": 221,
-     "implied": 31.2,
-     "p": 31.0,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": -0.6
-    },
-    {
-     "line": 11.5,
-     "price": 345,
-     "implied": 22.5,
-     "p": 23.8,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 6.0
-    },
-    {
-     "line": 12.5,
-     "price": 530,
-     "implied": 15.9,
-     "p": 17.4,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 9.5
-    },
-    {
-     "line": 13.5,
-     "price": 810,
-     "implied": 11.0,
-     "p": 12.0,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 9.5
-    },
-    {
-     "line": 14.5,
-     "price": 1200,
-     "implied": 7.7,
-     "p": 7.9,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 2.8
-    },
-    {
-     "line": 15.5,
-     "price": 1760,
-     "implied": 5.4,
-     "p": 4.9,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": -8.1
-    },
-    {
-     "line": 16.5,
-     "price": 2400,
-     "implied": 4.0,
-     "p": 2.9,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": -26.6
-    }
-   ],
-   "suggested": [
-    7.5,
-    8.5,
-    12.5
-   ],
-   "best_ev": 38.7,
-   "value_rungs": 6
-  },
-  {
-   "player": "Yaxel Lendeborg",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "PTS",
-   "model": 23.1,
-   "main_line": 18.5,
-   "avg5": 23.2,
-   "avg15": 21.5,
-   "last10": [
-    12.0,
-    18.0,
-    26.0,
-    31.0,
-    26.0,
-    6.0,
-    37.0,
-    16.0
-   ],
-   "rungs": [
-    {
-     "line": 11.5,
-     "price": -820,
-     "implied": 89.1,
-     "p": 87.2,
-     "hit": [
-      7,
-      8
-     ],
-     "ev": -2.2
-    },
-    {
-     "line": 14.5,
-     "price": -317,
-     "implied": 76.0,
-     "p": 77.9,
-     "hit": [
-      6,
-      8
-     ],
-     "ev": 2.4
-    },
-    {
-     "line": 17.5,
-     "price": -148,
-     "implied": 59.7,
-     "p": 67.4,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 12.9
-    },
-    {
-     "line": 18.5,
-     "price": -116,
-     "implied": 53.7,
-     "p": 60.3,
-     "hit": [
-      4,
-      8
-     ],
-     "ev": 12.4
-    },
-    {
-     "line": 19.5,
-     "price": 108,
-     "implied": 48.1,
-     "p": 58.2,
-     "hit": [
-      4,
-      8
-     ],
-     "ev": 21.0
-    },
-    {
-     "line": 24.5,
-     "price": 310,
-     "implied": 24.4,
-     "p": 46.8,
-     "hit": [
-      4,
-      8
-     ],
-     "ev": 91.7
-    },
-    {
-     "line": 29.5,
-     "price": 870,
-     "implied": 10.3,
-     "p": 26.0,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 152.6
-    },
-    {
-     "line": 34.5,
-     "price": 2200,
-     "implied": 4.3,
-     "p": 13.1,
-     "hit": [
-      1,
-      8
-     ],
-     "ev": 200.5
-    }
-   ],
-   "suggested": [
-    17.5,
-    19.5,
-    29.5
-   ],
-   "best_ev": 200.5,
-   "value_rungs": 5
-  },
-  {
    "player": "Klay Thompson",
    "team": "MIA",
    "game": "MIA@GSW",
@@ -25554,102 +25668,102 @@
    "rungs": [
     {
      "line": 7.5,
-     "price": -514,
-     "implied": 83.7,
+     "price": -534,
+     "implied": 84.2,
      "p": 75.2,
      "hit": [
       5,
       8
      ],
-     "ev": -10.1
+     "ev": -10.7
     },
     {
      "line": 9.5,
-     "price": -264,
-     "implied": 72.5,
+     "price": -269,
+     "implied": 72.9,
      "p": 71.9,
      "hit": [
       5,
       8
      ],
-     "ev": -0.8
+     "ev": -1.4
     },
     {
      "line": 11.5,
-     "price": -158,
-     "implied": 61.2,
+     "price": -161,
+     "implied": 61.7,
      "p": 63.0,
      "hit": [
       4,
       8
      ],
-     "ev": 2.9
+     "ev": 2.2
     },
     {
      "line": 12.5,
-     "price": -124,
-     "implied": 55.4,
+     "price": -123,
+     "implied": 55.2,
      "p": 60.9,
      "hit": [
       4,
       8
      ],
-     "ev": 10.0
+     "ev": 10.4
     },
     {
      "line": 14.5,
-     "price": 130,
-     "implied": 43.5,
+     "price": 132,
+     "implied": 43.1,
      "p": 51.3,
      "hit": [
       3,
       8
      ],
-     "ev": 18.0
+     "ev": 19.0
     },
     {
      "line": 17.5,
-     "price": 255,
-     "implied": 28.2,
+     "price": 264,
+     "implied": 27.5,
      "p": 44.0,
      "hit": [
       3,
       8
      ],
-     "ev": 56.3
+     "ev": 60.2
     },
     {
      "line": 19.5,
-     "price": 388,
-     "implied": 20.5,
+     "price": 399,
+     "implied": 20.0,
      "p": 34.2,
      "hit": [
       2,
       8
      ],
-     "ev": 66.8
+     "ev": 70.5
     },
     {
      "line": 24.5,
-     "price": 1100,
-     "implied": 8.3,
+     "price": 1060,
+     "implied": 8.6,
      "p": 23.5,
      "hit": [
       2,
       8
      ],
-     "ev": 181.4
+     "ev": 172.0
     },
     {
      "line": 29.5,
-     "price": 2400,
-     "implied": 4.0,
+     "price": 2300,
+     "implied": 4.2,
      "p": 11.1,
      "hit": [
       1,
       8
      ],
-     "ev": 178.0
+     "ev": 166.8
     }
    ],
    "suggested": [
@@ -25657,8 +25771,1171 @@
     14.5,
     19.5
    ],
-   "best_ev": 181.4,
+   "best_ev": 172.0,
    "value_rungs": 5
+  },
+  {
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "PTS",
+   "model": 34.1,
+   "main_line": 27.5,
+   "avg5": 31.4,
+   "avg15": 30.0,
+   "last10": [
+    23.0,
+    24.0,
+    24.0,
+    44.0,
+    31.0,
+    34.0
+   ],
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -970,
+     "implied": 90.7,
+     "p": 98.5,
+     "hit": [
+      6,
+      6
+     ],
+     "ev": 8.6
+    },
+    {
+     "line": 19.5,
+     "price": -572,
+     "implied": 85.1,
+     "p": 97.4,
+     "hit": [
+      6,
+      6
+     ],
+     "ev": 14.4
+    },
+    {
+     "line": 24.5,
+     "price": -193,
+     "implied": 65.9,
+     "p": 72.2,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 9.6
+    },
+    {
+     "line": 27.5,
+     "price": -109,
+     "implied": 52.2,
+     "p": 66.8,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 28.2
+    },
+    {
+     "line": 29.5,
+     "price": 130,
+     "implied": 43.5,
+     "p": 62.3,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 43.3
+    },
+    {
+     "line": 34.5,
+     "price": 311,
+     "implied": 24.3,
+     "p": 35.5,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": 46.1
+    },
+    {
+     "line": 39.5,
+     "price": 740,
+     "implied": 11.9,
+     "p": 22.5,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": 88.7
+    },
+    {
+     "line": 44.5,
+     "price": 1680,
+     "implied": 5.6,
+     "p": 6.7,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": 18.8
+    }
+   ],
+   "suggested": [
+    24.5,
+    29.5,
+    39.5
+   ],
+   "best_ev": 88.7,
+   "value_rungs": 5
+  },
+  {
+   "player": "De'Anthony Melton",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "REB",
+   "model": 5.1,
+   "main_line": 3.5,
+   "avg5": 5.6,
+   "avg15": 4.5,
+   "last10": [
+    2.0,
+    1.0,
+    5.0,
+    4.0,
+    6.0,
+    5.0,
+    6.0,
+    7.0
+   ],
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -244,
+     "implied": 70.9,
+     "p": 83.0,
+     "hit": [
+      6,
+      8
+     ],
+     "ev": 17.0
+    },
+    {
+     "line": 3.5,
+     "price": -106,
+     "implied": 51.5,
+     "p": 74.9,
+     "hit": [
+      6,
+      8
+     ],
+     "ev": 45.6
+    },
+    {
+     "line": 4.5,
+     "price": 190,
+     "implied": 34.5,
+     "p": 59.6,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 72.9
+    },
+    {
+     "line": 5.5,
+     "price": 372,
+     "implied": 21.2,
+     "p": 39.1,
+     "hit": [
+      3,
+      8
+     ],
+     "ev": 84.5
+    },
+    {
+     "line": 6.5,
+     "price": 710,
+     "implied": 12.3,
+     "p": 20.2,
+     "hit": [
+      1,
+      8
+     ],
+     "ev": 63.3
+    },
+    {
+     "line": 7.5,
+     "price": 1300,
+     "implied": 7.1,
+     "p": 8.6,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": 21.0
+    },
+    {
+     "line": 8.5,
+     "price": 2100,
+     "implied": 4.5,
+     "p": 4.5,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -1.2
+    }
+   ],
+   "suggested": [
+    2.5,
+    4.5,
+    5.5
+   ],
+   "best_ev": 84.5,
+   "value_rungs": 5
+  },
+  {
+   "player": "Stephen Curry",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "3PM",
+   "model": 5.3,
+   "main_line": 4.5,
+   "avg5": 5.0,
+   "avg15": 4.5,
+   "last10": [
+    2.0,
+    3.0,
+    3.0,
+    6.0,
+    8.0,
+    5.0
+   ],
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -448,
+     "implied": 81.8,
+     "p": 87.2,
+     "hit": [
+      5,
+      6
+     ],
+     "ev": 6.7
+    },
+    {
+     "line": 3.5,
+     "price": -178,
+     "implied": 64.0,
+     "p": 66.5,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 3.8
+    },
+    {
+     "line": 4.5,
+     "price": 121,
+     "implied": 45.2,
+     "p": 56.6,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 25.1
+    },
+    {
+     "line": 5.5,
+     "price": 249,
+     "implied": 28.7,
+     "p": 39.5,
+     "hit": [
+      2,
+      6
+     ],
+     "ev": 37.9
+    },
+    {
+     "line": 6.5,
+     "price": 486,
+     "implied": 17.1,
+     "p": 23.6,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": 38.5
+    },
+    {
+     "line": 7.5,
+     "price": 930,
+     "implied": 9.7,
+     "p": 16.7,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": 71.6
+    },
+    {
+     "line": 8.5,
+     "price": 1660,
+     "implied": 5.7,
+     "p": 5.4,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": -5.5
+    },
+    {
+     "line": 9.5,
+     "price": 2700,
+     "implied": 3.6,
+     "p": 2.6,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": -26.0
+    }
+   ],
+   "suggested": [
+    3.5,
+    4.5,
+    7.5
+   ],
+   "best_ev": 71.6,
+   "value_rungs": 5
+  },
+  {
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "AST",
+   "model": 8.5,
+   "main_line": 7.5,
+   "avg5": 8.0,
+   "avg15": 8.2,
+   "last10": [
+    11.0,
+    5.0,
+    10.0,
+    2.0,
+    10.0,
+    11.0,
+    7.0,
+    10.0
+   ],
+   "rungs": [
+    {
+     "line": 4.5,
+     "price": -670,
+     "implied": 87.0,
+     "p": 90.5,
+     "hit": [
+      7,
+      8
+     ],
+     "ev": 4.1
+    },
+    {
+     "line": 5.5,
+     "price": -336,
+     "implied": 77.1,
+     "p": 81.0,
+     "hit": [
+      6,
+      8
+     ],
+     "ev": 5.1
+    },
+    {
+     "line": 6.5,
+     "price": -184,
+     "implied": 64.8,
+     "p": 74.6,
+     "hit": [
+      6,
+      8
+     ],
+     "ev": 15.2
+    },
+    {
+     "line": 7.5,
+     "price": -108,
+     "implied": 51.9,
+     "p": 61.9,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 19.1
+    },
+    {
+     "line": 8.5,
+     "price": 154,
+     "implied": 39.4,
+     "p": 53.6,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 36.2
+    },
+    {
+     "line": 9.5,
+     "price": 251,
+     "implied": 28.5,
+     "p": 45.8,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 60.8
+    },
+    {
+     "line": 10.5,
+     "price": 406,
+     "implied": 19.8,
+     "p": 24.2,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 22.4
+    },
+    {
+     "line": 11.5,
+     "price": 650,
+     "implied": 13.3,
+     "p": 9.1,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -31.9
+    },
+    {
+     "line": 12.5,
+     "price": 1060,
+     "implied": 8.6,
+     "p": 5.5,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -36.7
+    },
+    {
+     "line": 13.5,
+     "price": 1600,
+     "implied": 5.9,
+     "p": 3.1,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -47.6
+    },
+    {
+     "line": 14.5,
+     "price": 2300,
+     "implied": 4.2,
+     "p": 1.6,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -60.5
+    }
+   ],
+   "suggested": [
+    6.5,
+    8.5,
+    9.5
+   ],
+   "best_ev": 60.8,
+   "value_rungs": 5
+  },
+  {
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "PTS",
+   "model": 15.1,
+   "main_line": 12.5,
+   "avg5": 14.4,
+   "avg15": 15.4,
+   "last10": [
+    11.0,
+    18.0,
+    22.0,
+    21.0,
+    10.0,
+    15.0,
+    15.0,
+    11.0
+   ],
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -501,
+     "implied": 83.4,
+     "p": 97.0,
+     "hit": [
+      8,
+      8
+     ],
+     "ev": 16.3
+    },
+    {
+     "line": 9.5,
+     "price": -263,
+     "implied": 72.5,
+     "p": 93.2,
+     "hit": [
+      8,
+      8
+     ],
+     "ev": 28.7
+    },
+    {
+     "line": 11.5,
+     "price": -151,
+     "implied": 60.2,
+     "p": 71.9,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 19.5
+    },
+    {
+     "line": 12.5,
+     "price": -117,
+     "implied": 53.9,
+     "p": 67.8,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 25.7
+    },
+    {
+     "line": 14.5,
+     "price": 137,
+     "implied": 42.2,
+     "p": 58.1,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 37.7
+    },
+    {
+     "line": 17.5,
+     "price": 279,
+     "implied": 26.4,
+     "p": 33.1,
+     "hit": [
+      3,
+      8
+     ],
+     "ev": 25.5
+    },
+    {
+     "line": 19.5,
+     "price": 427,
+     "implied": 19.0,
+     "p": 20.2,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 6.7
+    },
+    {
+     "line": 24.5,
+     "price": 1200,
+     "implied": 7.7,
+     "p": 1.3,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -83.5
+    },
+    {
+     "line": 29.5,
+     "price": 2600,
+     "implied": 3.7,
+     "p": 0.1,
+     "hit": [
+      0,
+      8
+     ],
+     "ev": -98.5
+    }
+   ],
+   "suggested": [
+    11.5,
+    14.5,
+    17.5
+   ],
+   "best_ev": 37.7,
+   "value_rungs": 5
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "3PM",
+   "model": 2.8,
+   "main_line": 1.5,
+   "avg5": 2.4,
+   "avg15": 2.5,
+   "last10": [
+    1.0,
+    1.0,
+    6.0,
+    1.0,
+    2.0,
+    1.0,
+    6.0,
+    2.0
+   ],
+   "rungs": [
+    {
+     "line": 0.5,
+     "price": -940,
+     "implied": 90.4,
+     "p": 96.4,
+     "hit": [
+      8,
+      8
+     ],
+     "ev": 6.6
+    },
+    {
+     "line": 1.5,
+     "price": -186,
+     "implied": 65.0,
+     "p": 66.1,
+     "hit": [
+      4,
+      8
+     ],
+     "ev": 1.7
+    },
+    {
+     "line": 2.5,
+     "price": 159,
+     "implied": 38.6,
+     "p": 41.8,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 8.3
+    },
+    {
+     "line": 3.5,
+     "price": 420,
+     "implied": 19.2,
+     "p": 28.5,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 48.1
+    },
+    {
+     "line": 4.5,
+     "price": 990,
+     "implied": 9.2,
+     "p": 19.1,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 108.6
+    },
+    {
+     "line": 5.5,
+     "price": 2000,
+     "implied": 4.8,
+     "p": 13.9,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 192.0
+    }
+   ],
+   "suggested": [
+    1.5,
+    2.5,
+    4.5
+   ],
+   "best_ev": 192.0,
+   "value_rungs": 4
+  },
+  {
+   "player": "Wendell Carter Jr",
+   "team": "ORL",
+   "game": "ORL@PHX",
+   "time": "9:00 PM ET",
+   "stat": "PTS",
+   "model": 15.2,
+   "main_line": 11.5,
+   "avg5": 9.0,
+   "avg15": 12.4,
+   "last10": [
+    22.0,
+    20.0,
+    9.0,
+    3.0,
+    20.0,
+    7.0,
+    6.0
+   ],
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -417,
+     "implied": 80.7,
+     "p": 72.9,
+     "hit": [
+      4,
+      7
+     ],
+     "ev": -9.6
+    },
+    {
+     "line": 9.5,
+     "price": -214,
+     "implied": 68.2,
+     "p": 63.0,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": -7.6
+    },
+    {
+     "line": 11.5,
+     "price": -116,
+     "implied": 53.7,
+     "p": 57.9,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": 7.8
+    },
+    {
+     "line": 14.5,
+     "price": 195,
+     "implied": 33.9,
+     "p": 49.3,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": 45.3
+    },
+    {
+     "line": 17.5,
+     "price": 432,
+     "implied": 18.8,
+     "p": 40.3,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": 114.4
+    },
+    {
+     "line": 19.5,
+     "price": 720,
+     "implied": 12.2,
+     "p": 34.8,
+     "hit": [
+      3,
+      7
+     ],
+     "ev": 185.2
+    },
+    {
+     "line": 24.5,
+     "price": 2200,
+     "implied": 4.3,
+     "p": 7.2,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 66.4
+    }
+   ],
+   "suggested": [
+    11.5,
+    14.5,
+    19.5
+   ],
+   "best_ev": 185.2,
+   "value_rungs": 4
+  },
+  {
+   "player": "Klay Thompson",
+   "team": "MIA",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "3PM",
+   "model": 4.5,
+   "main_line": 2.5,
+   "avg5": 4.4,
+   "avg15": 3.9,
+   "last10": [
+    3.0,
+    2.0,
+    4.0,
+    2.0,
+    1.0,
+    7.0,
+    4.0,
+    8.0
+   ],
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -497,
+     "implied": 83.2,
+     "p": 91.3,
+     "hit": [
+      7,
+      8
+     ],
+     "ev": 9.7
+    },
+    {
+     "line": 2.5,
+     "price": -166,
+     "implied": 62.4,
+     "p": 74.6,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 19.5
+    },
+    {
+     "line": 3.5,
+     "price": 140,
+     "implied": 41.7,
+     "p": 59.5,
+     "hit": [
+      4,
+      8
+     ],
+     "ev": 42.7
+    },
+    {
+     "line": 4.5,
+     "price": 311,
+     "implied": 24.3,
+     "p": 38.1,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 56.5
+    },
+    {
+     "line": 5.5,
+     "price": 630,
+     "implied": 13.7,
+     "p": 27.8,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 103.1
+    },
+    {
+     "line": 6.5,
+     "price": 1240,
+     "implied": 7.5,
+     "p": 20.1,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 169.8
+    },
+    {
+     "line": 7.5,
+     "price": 2200,
+     "implied": 4.3,
+     "p": 10.2,
+     "hit": [
+      1,
+      8
+     ],
+     "ev": 134.5
+    }
+   ],
+   "suggested": [
+    2.5,
+    3.5,
+    5.5
+   ],
+   "best_ev": 169.8,
+   "value_rungs": 4
+  },
+  {
+   "player": "De'Anthony Melton",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "PTS",
+   "model": 12.1,
+   "main_line": 10.5,
+   "avg5": 10.0,
+   "avg15": 10.6,
+   "last10": [
+    0.0,
+    10.0,
+    25.0,
+    3.0,
+    8.0,
+    16.0,
+    21.0,
+    2.0
+   ],
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -591,
+     "implied": 85.5,
+     "p": 70.8,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": -17.3
+    },
+    {
+     "line": 7.5,
+     "price": -276,
+     "implied": 73.4,
+     "p": 66.5,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": -9.5
+    },
+    {
+     "line": 9.5,
+     "price": -147,
+     "implied": 59.5,
+     "p": 56.7,
+     "hit": [
+      4,
+      8
+     ],
+     "ev": -4.8
+    },
+    {
+     "line": 10.5,
+     "price": -110,
+     "implied": 52.4,
+     "p": 49.1,
+     "hit": [
+      3,
+      8
+     ],
+     "ev": -6.2
+    },
+    {
+     "line": 11.5,
+     "price": 119,
+     "implied": 45.7,
+     "p": 46.6,
+     "hit": [
+      3,
+      8
+     ],
+     "ev": 2.0
+    },
+    {
+     "line": 14.5,
+     "price": 266,
+     "implied": 27.3,
+     "p": 38.8,
+     "hit": [
+      3,
+      8
+     ],
+     "ev": 42.2
+    },
+    {
+     "line": 17.5,
+     "price": 571,
+     "implied": 14.9,
+     "p": 26.8,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 79.5
+    },
+    {
+     "line": 19.5,
+     "price": 920,
+     "implied": 9.8,
+     "p": 22.7,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 131.3
+    },
+    {
+     "line": 24.5,
+     "price": 2400,
+     "implied": 4.0,
+     "p": 10.4,
+     "hit": [
+      1,
+      8
+     ],
+     "ev": 159.2
+    }
+   ],
+   "suggested": [
+    11.5,
+    19.5
+   ],
+   "best_ev": 159.2,
+   "value_rungs": 4
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "PTS",
+   "model": 23.1,
+   "main_line": 19.5,
+   "avg5": 23.2,
+   "avg15": 21.5,
+   "last10": [
+    12.0,
+    18.0,
+    26.0,
+    31.0,
+    26.0,
+    6.0,
+    37.0,
+    16.0
+   ],
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -920,
+     "implied": 90.2,
+     "p": 87.2,
+     "hit": [
+      7,
+      8
+     ],
+     "ev": -3.3
+    },
+    {
+     "line": 14.5,
+     "price": -361,
+     "implied": 78.3,
+     "p": 77.9,
+     "hit": [
+      6,
+      8
+     ],
+     "ev": -0.6
+    },
+    {
+     "line": 17.5,
+     "price": -170,
+     "implied": 63.0,
+     "p": 67.4,
+     "hit": [
+      5,
+      8
+     ],
+     "ev": 7.0
+    },
+    {
+     "line": 19.5,
+     "price": -108,
+     "implied": 51.9,
+     "p": 58.2,
+     "hit": [
+      4,
+      8
+     ],
+     "ev": 12.1
+    },
+    {
+     "line": 24.5,
+     "price": 264,
+     "implied": 27.5,
+     "p": 46.8,
+     "hit": [
+      4,
+      8
+     ],
+     "ev": 70.2
+    },
+    {
+     "line": 29.5,
+     "price": 750,
+     "implied": 11.8,
+     "p": 26.0,
+     "hit": [
+      2,
+      8
+     ],
+     "ev": 121.4
+    },
+    {
+     "line": 34.5,
+     "price": 1840,
+     "implied": 5.2,
+     "p": 13.1,
+     "hit": [
+      1,
+      8
+     ],
+     "ev": 153.5
+    }
+   ],
+   "suggested": [
+    17.5,
+    19.5,
+    29.5
+   ],
+   "best_ev": 153.5,
+   "value_rungs": 4
   },
   {
    "player": "Brandin Podziemski",
@@ -25681,69 +26958,69 @@
    "rungs": [
     {
      "line": 2.5,
-     "price": -411,
-     "implied": 80.4,
+     "price": -392,
+     "implied": 79.7,
      "p": 88.4,
      "hit": [
       5,
       6
      ],
-     "ev": 9.9
+     "ev": 10.9
     },
     {
      "line": 3.5,
-     "price": -163,
-     "implied": 62.0,
+     "price": -155,
+     "implied": 60.8,
      "p": 75.2,
      "hit": [
       4,
       6
      ],
-     "ev": 21.4
+     "ev": 23.8
     },
     {
      "line": 4.5,
-     "price": 134,
-     "implied": 42.7,
+     "price": 138,
+     "implied": 42.0,
      "p": 66.1,
      "hit": [
       4,
       6
      ],
-     "ev": 54.8
+     "ev": 57.4
     },
     {
      "line": 5.5,
-     "price": 273,
-     "implied": 26.8,
+     "price": 281,
+     "implied": 26.2,
      "p": 49.3,
      "hit": [
       3,
       6
      ],
-     "ev": 83.8
+     "ev": 87.8
     },
     {
      "line": 6.5,
-     "price": 533,
-     "implied": 15.8,
+     "price": 541,
+     "implied": 15.6,
      "p": 26.5,
      "hit": [
       1,
       6
      ],
-     "ev": 67.4
+     "ev": 69.6
     },
     {
      "line": 7.5,
-     "price": 1000,
-     "implied": 9.1,
+     "price": 1020,
+     "implied": 8.9,
      "p": 18.8,
      "hit": [
       1,
       6
      ],
-     "ev": 107.3
+     "ev": 111.1
     },
     {
      "line": 8.5,
@@ -25771,990 +27048,9 @@
    "suggested": [
     3.5,
     4.5,
-    7.5
-   ],
-   "best_ev": 107.3,
-   "value_rungs": 5
-  },
-  {
-   "player": "Stephen Curry",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "PTS",
-   "model": 34.1,
-   "main_line": 26.5,
-   "avg5": 31.4,
-   "avg15": 30.0,
-   "last10": [
-    23.0,
-    24.0,
-    24.0,
-    44.0,
-    31.0,
-    34.0
-   ],
-   "rungs": [
-    {
-     "line": 17.5,
-     "price": -880,
-     "implied": 89.8,
-     "p": 98.5,
-     "hit": [
-      6,
-      6
-     ],
-     "ev": 9.6
-    },
-    {
-     "line": 19.5,
-     "price": -514,
-     "implied": 83.7,
-     "p": 97.4,
-     "hit": [
-      6,
-      6
-     ],
-     "ev": 16.3
-    },
-    {
-     "line": 24.5,
-     "price": -177,
-     "implied": 63.9,
-     "p": 72.2,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 13.0
-    },
-    {
-     "line": 26.5,
-     "price": -122,
-     "implied": 55.0,
-     "p": 68.8,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 25.2
-    },
-    {
-     "line": 29.5,
-     "price": 142,
-     "implied": 41.3,
-     "p": 62.3,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 50.8
-    },
-    {
-     "line": 34.5,
-     "price": 328,
-     "implied": 23.4,
-     "p": 35.5,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": 52.1
-    },
-    {
-     "line": 39.5,
-     "price": 780,
-     "implied": 11.4,
-     "p": 22.5,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": 97.7
-    },
-    {
-     "line": 44.5,
-     "price": 1720,
-     "implied": 5.5,
-     "p": 6.7,
-     "hit": [
-      0,
-      6
-     ],
-     "ev": 21.5
-    }
-   ],
-   "suggested": [
-    24.5,
-    29.5,
-    39.5
-   ],
-   "best_ev": 97.7,
-   "value_rungs": 5
-  },
-  {
-   "player": "De'Anthony Melton",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "REB",
-   "model": 5.1,
-   "main_line": 3.5,
-   "avg5": 5.6,
-   "avg15": 4.5,
-   "last10": [
-    2.0,
-    1.0,
-    5.0,
-    4.0,
-    6.0,
-    5.0,
-    6.0,
-    7.0
-   ],
-   "rungs": [
-    {
-     "line": 2.5,
-     "price": -241,
-     "implied": 70.7,
-     "p": 83.0,
-     "hit": [
-      6,
-      8
-     ],
-     "ev": 17.5
-    },
-    {
-     "line": 3.5,
-     "price": -105,
-     "implied": 51.2,
-     "p": 74.9,
-     "hit": [
-      6,
-      8
-     ],
-     "ev": 46.3
-    },
-    {
-     "line": 4.5,
-     "price": 197,
-     "implied": 33.7,
-     "p": 59.6,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 77.0
-    },
-    {
-     "line": 5.5,
-     "price": 396,
-     "implied": 20.2,
-     "p": 39.1,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 93.9
-    },
-    {
-     "line": 6.5,
-     "price": 750,
-     "implied": 11.8,
-     "p": 20.2,
-     "hit": [
-      1,
-      8
-     ],
-     "ev": 71.3
-    },
-    {
-     "line": 7.5,
-     "price": 1360,
-     "implied": 6.8,
-     "p": 8.6,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": 26.2
-    },
-    {
-     "line": 8.5,
-     "price": 2200,
-     "implied": 4.3,
-     "p": 4.5,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": 3.2
-    }
-   ],
-   "suggested": [
-    2.5,
-    4.5,
     5.5
    ],
-   "best_ev": 93.9,
-   "value_rungs": 5
-  },
-  {
-   "player": "Stephen Curry",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "3PM",
-   "model": 5.3,
-   "main_line": 4.5,
-   "avg5": 5.0,
-   "avg15": 4.5,
-   "last10": [
-    2.0,
-    3.0,
-    3.0,
-    6.0,
-    8.0,
-    5.0
-   ],
-   "rungs": [
-    {
-     "line": 2.5,
-     "price": -442,
-     "implied": 81.5,
-     "p": 87.2,
-     "hit": [
-      5,
-      6
-     ],
-     "ev": 7.0
-    },
-    {
-     "line": 3.5,
-     "price": -174,
-     "implied": 63.5,
-     "p": 66.5,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 4.7
-    },
-    {
-     "line": 4.5,
-     "price": 124,
-     "implied": 44.6,
-     "p": 56.6,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 26.8
-    },
-    {
-     "line": 5.5,
-     "price": 251,
-     "implied": 28.5,
-     "p": 39.5,
-     "hit": [
-      2,
-      6
-     ],
-     "ev": 38.7
-    },
-    {
-     "line": 6.5,
-     "price": 490,
-     "implied": 16.9,
-     "p": 23.6,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": 39.5
-    },
-    {
-     "line": 7.5,
-     "price": 950,
-     "implied": 9.5,
-     "p": 16.7,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": 74.9
-    },
-    {
-     "line": 8.5,
-     "price": 1660,
-     "implied": 5.7,
-     "p": 5.4,
-     "hit": [
-      0,
-      6
-     ],
-     "ev": -5.5
-    },
-    {
-     "line": 9.5,
-     "price": 2600,
-     "implied": 3.7,
-     "p": 2.6,
-     "hit": [
-      0,
-      6
-     ],
-     "ev": -28.6
-    }
-   ],
-   "suggested": [
-    3.5,
-    4.5,
-    7.5
-   ],
-   "best_ev": 74.9,
-   "value_rungs": 5
-  },
-  {
-   "player": "Davion Mitchell",
-   "team": "MIA",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "AST",
-   "model": 8.5,
-   "main_line": 7.5,
-   "avg5": 8.0,
-   "avg15": 8.2,
-   "last10": [
-    11.0,
-    5.0,
-    10.0,
-    2.0,
-    10.0,
-    11.0,
-    7.0,
-    10.0
-   ],
-   "rungs": [
-    {
-     "line": 4.5,
-     "price": -700,
-     "implied": 87.5,
-     "p": 90.5,
-     "hit": [
-      7,
-      8
-     ],
-     "ev": 3.5
-    },
-    {
-     "line": 5.5,
-     "price": -349,
-     "implied": 77.7,
-     "p": 81.0,
-     "hit": [
-      6,
-      8
-     ],
-     "ev": 4.2
-    },
-    {
-     "line": 6.5,
-     "price": -193,
-     "implied": 65.9,
-     "p": 74.6,
-     "hit": [
-      6,
-      8
-     ],
-     "ev": 13.3
-    },
-    {
-     "line": 7.5,
-     "price": -113,
-     "implied": 53.1,
-     "p": 61.9,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 16.6
-    },
-    {
-     "line": 8.5,
-     "price": 148,
-     "implied": 40.3,
-     "p": 53.6,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 33.0
-    },
-    {
-     "line": 9.5,
-     "price": 242,
-     "implied": 29.2,
-     "p": 45.8,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 56.7
-    },
-    {
-     "line": 10.5,
-     "price": 392,
-     "implied": 20.3,
-     "p": 24.2,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 19.1
-    },
-    {
-     "line": 11.5,
-     "price": 630,
-     "implied": 13.7,
-     "p": 9.1,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -33.7
-    },
-    {
-     "line": 12.5,
-     "price": 1000,
-     "implied": 9.1,
-     "p": 5.5,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -40.0
-    },
-    {
-     "line": 13.5,
-     "price": 1560,
-     "implied": 6.0,
-     "p": 3.1,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -48.8
-    },
-    {
-     "line": 14.5,
-     "price": 2200,
-     "implied": 4.3,
-     "p": 1.6,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -62.2
-    },
-    {
-     "line": 15.5,
-     "price": 2800,
-     "implied": 3.4,
-     "p": 0.8,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -75.9
-    }
-   ],
-   "suggested": [
-    6.5,
-    8.5,
-    9.5
-   ],
-   "best_ev": 56.7,
-   "value_rungs": 5
-  },
-  {
-   "player": "Davion Mitchell",
-   "team": "MIA",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "PTS",
-   "model": 15.1,
-   "main_line": 12.5,
-   "avg5": 14.4,
-   "avg15": 15.4,
-   "last10": [
-    11.0,
-    18.0,
-    22.0,
-    21.0,
-    10.0,
-    15.0,
-    15.0,
-    11.0
-   ],
-   "rungs": [
-    {
-     "line": 7.5,
-     "price": -492,
-     "implied": 83.1,
-     "p": 97.0,
-     "hit": [
-      8,
-      8
-     ],
-     "ev": 16.7
-    },
-    {
-     "line": 9.5,
-     "price": -270,
-     "implied": 73.0,
-     "p": 93.2,
-     "hit": [
-      8,
-      8
-     ],
-     "ev": 27.7
-    },
-    {
-     "line": 11.5,
-     "price": -154,
-     "implied": 60.6,
-     "p": 71.9,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 18.6
-    },
-    {
-     "line": 12.5,
-     "price": -119,
-     "implied": 54.3,
-     "p": 67.8,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 24.7
-    },
-    {
-     "line": 14.5,
-     "price": 136,
-     "implied": 42.4,
-     "p": 58.1,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 37.1
-    },
-    {
-     "line": 17.5,
-     "price": 272,
-     "implied": 26.9,
-     "p": 33.1,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 23.2
-    },
-    {
-     "line": 19.5,
-     "price": 421,
-     "implied": 19.2,
-     "p": 20.2,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 5.5
-    },
-    {
-     "line": 24.5,
-     "price": 1220,
-     "implied": 7.6,
-     "p": 1.3,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -83.3
-    },
-    {
-     "line": 29.5,
-     "price": 2700,
-     "implied": 3.6,
-     "p": 0.1,
-     "hit": [
-      0,
-      8
-     ],
-     "ev": -98.4
-    }
-   ],
-   "suggested": [
-    11.5,
-    14.5,
-    17.5
-   ],
-   "best_ev": 37.1,
-   "value_rungs": 5
-  },
-  {
-   "player": "Wendell Carter Jr",
-   "team": "ORL",
-   "game": "ORL@PHX",
-   "time": "9:00 PM ET",
-   "stat": "PTS",
-   "model": 15.2,
-   "main_line": 11.5,
-   "avg5": 9.0,
-   "avg15": 12.4,
-   "last10": [
-    22.0,
-    20.0,
-    9.0,
-    3.0,
-    20.0,
-    7.0,
-    6.0
-   ],
-   "rungs": [
-    {
-     "line": 5.5,
-     "price": -970,
-     "implied": 90.7,
-     "p": 87.6,
-     "hit": [
-      6,
-      7
-     ],
-     "ev": -3.3
-    },
-    {
-     "line": 7.5,
-     "price": -390,
-     "implied": 79.6,
-     "p": 72.9,
-     "hit": [
-      4,
-      7
-     ],
-     "ev": -8.4
-    },
-    {
-     "line": 9.5,
-     "price": -199,
-     "implied": 66.6,
-     "p": 63.0,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": -5.4
-    },
-    {
-     "line": 11.5,
-     "price": -109,
-     "implied": 52.2,
-     "p": 57.9,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": 11.0
-    },
-    {
-     "line": 14.5,
-     "price": 205,
-     "implied": 32.8,
-     "p": 49.3,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": 50.2
-    },
-    {
-     "line": 17.5,
-     "price": 448,
-     "implied": 18.2,
-     "p": 40.3,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": 120.8
-    },
-    {
-     "line": 19.5,
-     "price": 750,
-     "implied": 11.8,
-     "p": 34.8,
-     "hit": [
-      3,
-      7
-     ],
-     "ev": 195.6
-    },
-    {
-     "line": 24.5,
-     "price": 2300,
-     "implied": 4.2,
-     "p": 7.2,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 73.6
-    }
-   ],
-   "suggested": [
-    11.5,
-    19.5
-   ],
-   "best_ev": 195.6,
-   "value_rungs": 4
-  },
-  {
-   "player": "Klay Thompson",
-   "team": "MIA",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "3PM",
-   "model": 4.5,
-   "main_line": 2.5,
-   "avg5": 4.4,
-   "avg15": 3.9,
-   "last10": [
-    3.0,
-    2.0,
-    4.0,
-    2.0,
-    1.0,
-    7.0,
-    4.0,
-    8.0
-   ],
-   "rungs": [
-    {
-     "line": 1.5,
-     "price": -494,
-     "implied": 83.2,
-     "p": 91.3,
-     "hit": [
-      7,
-      8
-     ],
-     "ev": 9.8
-    },
-    {
-     "line": 2.5,
-     "price": -169,
-     "implied": 62.8,
-     "p": 74.6,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 18.7
-    },
-    {
-     "line": 3.5,
-     "price": 137,
-     "implied": 42.2,
-     "p": 59.5,
-     "hit": [
-      4,
-      8
-     ],
-     "ev": 40.9
-    },
-    {
-     "line": 4.5,
-     "price": 299,
-     "implied": 25.1,
-     "p": 38.1,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 51.9
-    },
-    {
-     "line": 5.5,
-     "price": 620,
-     "implied": 13.9,
-     "p": 27.8,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 100.3
-    },
-    {
-     "line": 6.5,
-     "price": 1220,
-     "implied": 7.6,
-     "p": 20.1,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 165.8
-    },
-    {
-     "line": 7.5,
-     "price": 2200,
-     "implied": 4.3,
-     "p": 10.2,
-     "hit": [
-      1,
-      8
-     ],
-     "ev": 134.5
-    }
-   ],
-   "suggested": [
-    2.5,
-    3.5,
-    5.5
-   ],
-   "best_ev": 165.8,
-   "value_rungs": 4
-  },
-  {
-   "player": "De'Anthony Melton",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "PTS",
-   "model": 12.1,
-   "main_line": 10.5,
-   "avg5": 10.0,
-   "avg15": 10.6,
-   "last10": [
-    0.0,
-    10.0,
-    25.0,
-    3.0,
-    8.0,
-    16.0,
-    21.0,
-    2.0
-   ],
-   "rungs": [
-    {
-     "line": 5.5,
-     "price": -545,
-     "implied": 84.5,
-     "p": 70.8,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": -16.2
-    },
-    {
-     "line": 7.5,
-     "price": -261,
-     "implied": 72.3,
-     "p": 66.5,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": -8.1
-    },
-    {
-     "line": 9.5,
-     "price": -139,
-     "implied": 58.2,
-     "p": 56.7,
-     "hit": [
-      4,
-      8
-     ],
-     "ev": -2.6
-    },
-    {
-     "line": 10.5,
-     "price": -103,
-     "implied": 50.7,
-     "p": 49.1,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": -3.2
-    },
-    {
-     "line": 11.5,
-     "price": 126,
-     "implied": 44.2,
-     "p": 46.6,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 5.2
-    },
-    {
-     "line": 14.5,
-     "price": 274,
-     "implied": 26.7,
-     "p": 38.8,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 45.3
-    },
-    {
-     "line": 17.5,
-     "price": 575,
-     "implied": 14.8,
-     "p": 26.8,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 80.6
-    },
-    {
-     "line": 19.5,
-     "price": 930,
-     "implied": 9.7,
-     "p": 22.7,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 133.6
-    },
-    {
-     "line": 24.5,
-     "price": 2400,
-     "implied": 4.0,
-     "p": 10.4,
-     "hit": [
-      1,
-      8
-     ],
-     "ev": 159.2
-    }
-   ],
-   "suggested": [
-    11.5,
-    19.5
-   ],
-   "best_ev": 159.2,
+   "best_ev": 111.1,
    "value_rungs": 4
   },
   {
@@ -26779,182 +27075,87 @@
    "rungs": [
     {
      "line": 1.5,
-     "price": -274,
-     "implied": 73.3,
+     "price": -283,
+     "implied": 73.9,
      "p": 88.3,
      "hit": [
       6,
       7
      ],
-     "ev": 20.6
+     "ev": 19.5
     },
     {
      "line": 2.5,
-     "price": -102,
-     "implied": 50.5,
+     "price": -105,
+     "implied": 51.2,
      "p": 67.7,
      "hit": [
       4,
       7
      ],
-     "ev": 34.0
+     "ev": 32.1
     },
     {
      "line": 3.5,
-     "price": 223,
-     "implied": 31.0,
+     "price": 220,
+     "implied": 31.2,
      "p": 55.7,
      "hit": [
       4,
       7
      ],
-     "ev": 79.8
+     "ev": 78.1
     },
     {
      "line": 4.5,
-     "price": 486,
-     "implied": 17.1,
+     "price": 471,
+     "implied": 17.5,
      "p": 32.5,
      "hit": [
       2,
       7
      ],
-     "ev": 90.6
+     "ev": 85.7
     },
     {
      "line": 5.5,
-     "price": 1000,
-     "implied": 9.1,
+     "price": 950,
+     "implied": 9.5,
      "p": 12.0,
      "hit": [
       0,
       7
      ],
-     "ev": 31.6
+     "ev": 25.6
     },
     {
      "line": 6.5,
-     "price": 1880,
-     "implied": 5.1,
+     "price": 1840,
+     "implied": 5.2,
      "p": 6.0,
      "hit": [
       0,
       7
      ],
-     "ev": 19.4
+     "ev": 17.0
+    },
+    {
+     "line": 7.5,
+     "price": 2800,
+     "implied": 3.4,
+     "p": 2.7,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": -21.0
     }
    ],
    "suggested": [
     2.5,
     4.5
    ],
-   "best_ev": 90.6,
-   "value_rungs": 4
-  },
-  {
-   "player": "Desmond Bane",
-   "team": "ORL",
-   "game": "ORL@PHX",
-   "time": "9:00 PM ET",
-   "stat": "3PM",
-   "model": 4.3,
-   "main_line": 2.5,
-   "avg5": 4.2,
-   "avg15": 3.6,
-   "last10": [
-    3.0,
-    1.0,
-    4.0,
-    2.0,
-    6.0,
-    5.0,
-    4.0
-   ],
-   "rungs": [
-    {
-     "line": 1.5,
-     "price": -505,
-     "implied": 83.5,
-     "p": 90.0,
-     "hit": [
-      6,
-      7
-     ],
-     "ev": 7.8
-    },
-    {
-     "line": 2.5,
-     "price": -170,
-     "implied": 63.0,
-     "p": 76.7,
-     "hit": [
-      5,
-      7
-     ],
-     "ev": 21.9
-    },
-    {
-     "line": 3.5,
-     "price": 139,
-     "implied": 41.8,
-     "p": 60.2,
-     "hit": [
-      4,
-      7
-     ],
-     "ev": 43.9
-    },
-    {
-     "line": 4.5,
-     "price": 309,
-     "implied": 24.4,
-     "p": 37.2,
-     "hit": [
-      2,
-      7
-     ],
-     "ev": 52.2
-    },
-    {
-     "line": 5.5,
-     "price": 660,
-     "implied": 13.2,
-     "p": 21.5,
-     "hit": [
-      1,
-      7
-     ],
-     "ev": 63.5
-    },
-    {
-     "line": 6.5,
-     "price": 1340,
-     "implied": 6.9,
-     "p": 8.7,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 24.6
-    },
-    {
-     "line": 7.5,
-     "price": 2400,
-     "implied": 4.0,
-     "p": 4.3,
-     "hit": [
-      0,
-      7
-     ],
-     "ev": 6.5
-    }
-   ],
-   "suggested": [
-    2.5,
-    3.5,
-    5.5
-   ],
-   "best_ev": 63.5,
+   "best_ev": 85.7,
    "value_rungs": 4
   },
   {
@@ -26978,58 +27179,58 @@
    "rungs": [
     {
      "line": 2.5,
-     "price": -288,
-     "implied": 74.2,
+     "price": -307,
+     "implied": 75.4,
      "p": 76.9,
      "hit": [
       4,
       6
      ],
-     "ev": 3.6
+     "ev": 2.0
     },
     {
      "line": 3.5,
-     "price": -121,
-     "implied": 54.8,
+     "price": -128,
+     "implied": 56.1,
      "p": 60.5,
      "hit": [
       3,
       6
      ],
-     "ev": 10.4
+     "ev": 7.7
     },
     {
      "line": 4.5,
-     "price": 176,
-     "implied": 36.2,
+     "price": 166,
+     "implied": 37.6,
      "p": 42.5,
      "hit": [
       2,
       6
      ],
-     "ev": 17.4
+     "ev": 13.2
     },
     {
      "line": 5.5,
-     "price": 349,
-     "implied": 22.3,
+     "price": 329,
+     "implied": 23.3,
      "p": 32.2,
      "hit": [
       2,
       6
      ],
-     "ev": 44.5
+     "ev": 38.1
     },
     {
      "line": 6.5,
-     "price": 670,
-     "implied": 13.0,
+     "price": 640,
+     "implied": 13.5,
      "p": 17.6,
      "hit": [
       1,
       6
      ],
-     "ev": 35.4
+     "ev": 30.1
     },
     {
      "line": 7.5,
@@ -27063,119 +27264,224 @@
    "value_rungs": 4
   },
   {
-   "player": "Dillon Brooks",
-   "team": "PHX",
+   "player": "Desmond Bane",
+   "team": "ORL",
    "game": "ORL@PHX",
    "time": "9:00 PM ET",
-   "stat": "REB",
-   "model": 4.4,
-   "main_line": 3.5,
-   "avg5": 4.4,
-   "avg15": 4.3,
+   "stat": "3PM",
+   "model": 4.3,
+   "main_line": 2.5,
+   "avg5": 4.2,
+   "avg15": 3.6,
    "last10": [
+    3.0,
+    1.0,
     4.0,
     2.0,
+    6.0,
     5.0,
-    1.0,
-    8.0,
-    6.0
+    4.0
    ],
    "rungs": [
     {
-     "line": 2.5,
-     "price": -368,
-     "implied": 78.6,
-     "p": 75.6,
+     "line": 1.5,
+     "price": -525,
+     "implied": 84.0,
+     "p": 90.0,
      "hit": [
-      4,
-      6
+      6,
+      7
      ],
-     "ev": -3.9
+     "ev": 7.1
+    },
+    {
+     "line": 2.5,
+     "price": -175,
+     "implied": 63.6,
+     "p": 76.7,
+     "hit": [
+      5,
+      7
+     ],
+     "ev": 20.6
     },
     {
      "line": 3.5,
-     "price": -151,
-     "implied": 60.2,
-     "p": 65.1,
+     "price": 140,
+     "implied": 41.7,
+     "p": 60.2,
+     "hit": [
+      4,
+      7
+     ],
+     "ev": 44.5
+    },
+    {
+     "line": 4.5,
+     "price": 310,
+     "implied": 24.4,
+     "p": 37.2,
+     "hit": [
+      2,
+      7
+     ],
+     "ev": 52.5
+    },
+    {
+     "line": 5.5,
+     "price": 650,
+     "implied": 13.3,
+     "p": 21.5,
+     "hit": [
+      1,
+      7
+     ],
+     "ev": 61.4
+    },
+    {
+     "line": 6.5,
+     "price": 1300,
+     "implied": 7.1,
+     "p": 8.7,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 21.1
+    },
+    {
+     "line": 7.5,
+     "price": 2400,
+     "implied": 4.0,
+     "p": 4.3,
+     "hit": [
+      0,
+      7
+     ],
+     "ev": 6.5
+    }
+   ],
+   "suggested": [
+    2.5,
+    3.5,
+    5.5
+   ],
+   "best_ev": 61.4,
+   "value_rungs": 4
+  },
+  {
+   "player": "Brandin Podziemski",
+   "team": "GSW",
+   "game": "MIA@GSW",
+   "time": "10:00 PM ET",
+   "stat": "PTS",
+   "model": 18.8,
+   "main_line": 16.5,
+   "avg5": 16.8,
+   "avg15": 17.0,
+   "last10": [
+    18.0,
+    18.0,
+    8.0,
+    21.0,
+    17.0,
+    20.0
+   ],
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -810,
+     "implied": 89.0,
+     "p": 91.9,
+     "hit": [
+      5,
+      6
+     ],
+     "ev": 3.2
+    },
+    {
+     "line": 11.5,
+     "price": -416,
+     "implied": 80.6,
+     "p": 89.7,
+     "hit": [
+      5,
+      6
+     ],
+     "ev": 11.3
+    },
+    {
+     "line": 14.5,
+     "price": -176,
+     "implied": 63.8,
+     "p": 82.5,
+     "hit": [
+      5,
+      6
+     ],
+     "ev": 29.4
+    },
+    {
+     "line": 16.5,
+     "price": -108,
+     "implied": 51.9,
+     "p": 74.6,
+     "hit": [
+      5,
+      6
+     ],
+     "ev": 43.7
+    },
+    {
+     "line": 17.5,
+     "price": 118,
+     "implied": 45.9,
+     "p": 63.2,
      "hit": [
       4,
       6
      ],
-     "ev": 8.2
+     "ev": 37.8
     },
     {
-     "line": 4.5,
-     "price": 137,
-     "implied": 42.2,
-     "p": 46.9,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 11.2
-    },
-    {
-     "line": 5.5,
-     "price": 272,
-     "implied": 26.9,
-     "p": 30.1,
+     "line": 19.5,
+     "price": 187,
+     "implied": 34.8,
+     "p": 39.8,
      "hit": [
       2,
       6
      ],
-     "ev": 12.1
+     "ev": 14.2
     },
     {
-     "line": 6.5,
-     "price": 521,
-     "implied": 16.1,
-     "p": 16.0,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": -0.3
-    },
-    {
-     "line": 7.5,
-     "price": 990,
-     "implied": 9.2,
-     "p": 11.4,
-     "hit": [
-      1,
-      6
-     ],
-     "ev": 24.1
-    },
-    {
-     "line": 8.5,
-     "price": 1720,
-     "implied": 5.5,
-     "p": 2.1,
+     "line": 24.5,
+     "price": 568,
+     "implied": 15.0,
+     "p": 6.8,
      "hit": [
       0,
       6
      ],
-     "ev": -60.9
+     "ev": -54.9
     },
     {
-     "line": 9.5,
-     "price": 2700,
-     "implied": 3.6,
-     "p": 0.9,
+     "line": 29.5,
+     "price": 1540,
+     "implied": 6.1,
+     "p": 0.7,
      "hit": [
       0,
       6
      ],
-     "ev": -75.0
+     "ev": -88.8
     }
    ],
    "suggested": [
-    3.5,
-    4.5,
-    7.5
+    14.5,
+    16.5
    ],
-   "best_ev": 24.1,
+   "best_ev": 43.7,
    "value_rungs": 4
   },
   {
@@ -27199,47 +27505,47 @@
    "rungs": [
     {
      "line": 9.5,
-     "price": -860,
-     "implied": 89.6,
+     "price": -830,
+     "implied": 89.2,
      "p": 90.1,
      "hit": [
       5,
       6
      ],
-     "ev": 0.5
+     "ev": 0.9
     },
     {
      "line": 11.5,
-     "price": -435,
-     "implied": 81.3,
+     "price": -421,
+     "implied": 80.8,
      "p": 86.8,
      "hit": [
       5,
       6
      ],
-     "ev": 6.8
+     "ev": 7.4
     },
     {
      "line": 14.5,
-     "price": -186,
-     "implied": 65.0,
+     "price": -184,
+     "implied": 64.8,
      "p": 78.5,
      "hit": [
       5,
       6
      ],
-     "ev": 20.7
+     "ev": 21.1
     },
     {
      "line": 16.5,
-     "price": -114,
-     "implied": 53.3,
+     "price": -113,
+     "implied": 53.1,
      "p": 64.0,
      "hit": [
       4,
       6
      ],
-     "ev": 20.2
+     "ev": 20.7
     },
     {
      "line": 17.5,
@@ -27254,43 +27560,170 @@
     },
     {
      "line": 19.5,
-     "price": 175,
-     "implied": 36.4,
+     "price": 177,
+     "implied": 36.1,
      "p": 37.7,
      "hit": [
       2,
       6
      ],
-     "ev": 3.6
+     "ev": 4.3
     },
     {
      "line": 24.5,
-     "price": 505,
-     "implied": 16.5,
+     "price": 520,
+     "implied": 16.1,
      "p": 7.4,
      "hit": [
       0,
       6
      ],
-     "ev": -55.4
+     "ev": -54.3
     },
     {
      "line": 29.5,
-     "price": 1400,
-     "implied": 6.7,
+     "price": 1440,
+     "implied": 6.5,
      "p": 1.1,
      "hit": [
       0,
       6
      ],
-     "ev": -83.2
+     "ev": -82.7
+    },
+    {
+     "line": 34.5,
+     "price": 3000,
+     "implied": 3.2,
+     "p": 0.1,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": -97.5
     }
    ],
    "suggested": [
     14.5,
     16.5
    ],
-   "best_ev": 20.7,
+   "best_ev": 21.1,
+   "value_rungs": 4
+  },
+  {
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "game": "ORL@PHX",
+   "time": "9:00 PM ET",
+   "stat": "REB",
+   "model": 4.4,
+   "main_line": 3.5,
+   "avg5": 4.4,
+   "avg15": 4.3,
+   "last10": [
+    4.0,
+    2.0,
+    5.0,
+    1.0,
+    8.0,
+    6.0
+   ],
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -372,
+     "implied": 78.8,
+     "p": 75.6,
+     "hit": [
+      4,
+      6
+     ],
+     "ev": -4.1
+    },
+    {
+     "line": 3.5,
+     "price": -156,
+     "implied": 60.9,
+     "p": 65.1,
+     "hit": [
+      4,
+      6
+     ],
+     "ev": 6.8
+    },
+    {
+     "line": 4.5,
+     "price": 133,
+     "implied": 42.9,
+     "p": 46.9,
+     "hit": [
+      3,
+      6
+     ],
+     "ev": 9.3
+    },
+    {
+     "line": 5.5,
+     "price": 267,
+     "implied": 27.2,
+     "p": 30.1,
+     "hit": [
+      2,
+      6
+     ],
+     "ev": 10.6
+    },
+    {
+     "line": 6.5,
+     "price": 502,
+     "implied": 16.6,
+     "p": 16.0,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": -3.4
+    },
+    {
+     "line": 7.5,
+     "price": 930,
+     "implied": 9.7,
+     "p": 11.4,
+     "hit": [
+      1,
+      6
+     ],
+     "ev": 17.2
+    },
+    {
+     "line": 8.5,
+     "price": 1640,
+     "implied": 5.7,
+     "p": 2.1,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": -62.6
+    },
+    {
+     "line": 9.5,
+     "price": 2600,
+     "implied": 3.7,
+     "p": 0.9,
+     "hit": [
+      0,
+      6
+     ],
+     "ev": -75.9
+    }
+   ],
+   "suggested": [
+    3.5,
+    4.5,
+    7.5
+   ],
+   "best_ev": 17.2,
    "value_rungs": 4
   },
   {
@@ -27314,69 +27747,69 @@
    "rungs": [
     {
      "line": 2.5,
-     "price": -258,
-     "implied": 72.1,
+     "price": -256,
+     "implied": 71.9,
      "p": 59.9,
      "hit": [
       2,
       6
      ],
-     "ev": -16.9
+     "ev": -16.7
     },
     {
      "line": 3.5,
-     "price": -112,
-     "implied": 52.8,
+     "price": -111,
+     "implied": 52.6,
      "p": 48.5,
      "hit": [
       2,
       6
      ],
-     "ev": -8.2
+     "ev": -7.8
     },
     {
      "line": 4.5,
-     "price": 185,
-     "implied": 35.1,
+     "price": 186,
+     "implied": 35.0,
      "p": 36.8,
      "hit": [
       2,
       6
      ],
-     "ev": 4.8
+     "ev": 5.2
     },
     {
      "line": 5.5,
-     "price": 356,
-     "implied": 21.9,
+     "price": 362,
+     "implied": 21.6,
      "p": 27.2,
      "hit": [
       2,
       6
      ],
-     "ev": 23.9
+     "ev": 25.5
     },
     {
      "line": 6.5,
-     "price": 680,
-     "implied": 12.8,
+     "price": 660,
+     "implied": 13.2,
      "p": 20.6,
      "hit": [
       2,
       6
      ],
-     "ev": 60.8
+     "ev": 56.7
     },
     {
      "line": 7.5,
-     "price": 1240,
-     "implied": 7.5,
+     "price": 1180,
+     "implied": 7.8,
      "p": 16.8,
      "hit": [
       2,
       6
      ],
-     "ev": 124.7
+     "ev": 114.7
     },
     {
      "line": 8.5,
@@ -27431,231 +27864,65 @@
    "rungs": [
     {
      "line": 0.5,
-     "price": -441,
-     "implied": 81.5,
+     "price": -435,
+     "implied": 81.3,
      "p": 86.4,
      "hit": [
       6,
-      8
-     ],
-     "ev": 5.9
-    },
-    {
-     "line": 1.5,
-     "price": 100,
-     "implied": 50.0,
-     "p": 71.1,
-     "hit": [
-      5,
-      8
-     ],
-     "ev": 42.3
-    },
-    {
-     "line": 2.5,
-     "price": 295,
-     "implied": 25.3,
-     "p": 46.8,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 85.0
-    },
-    {
-     "line": 3.5,
-     "price": 780,
-     "implied": 11.4,
-     "p": 33.5,
-     "hit": [
-      3,
-      8
-     ],
-     "ev": 194.7
-    },
-    {
-     "line": 4.5,
-     "price": 1720,
-     "implied": 5.5,
-     "p": 14.1,
-     "hit": [
-      1,
-      8
-     ],
-     "ev": 157.3
-    }
-   ],
-   "suggested": [
-    1.5,
-    3.5
-   ],
-   "best_ev": 194.7,
-   "value_rungs": 3
-  },
-  {
-   "player": "Yaxel Lendeborg",
-   "team": "GSW",
-   "game": "MIA@GSW",
-   "time": "10:00 PM ET",
-   "stat": "3PM",
-   "model": 2.8,
-   "main_line": 1.5,
-   "avg5": 2.4,
-   "avg15": 2.5,
-   "last10": [
-    1.0,
-    1.0,
-    6.0,
-    1.0,
-    2.0,
-    1.0,
-    6.0,
-    2.0
-   ],
-   "rungs": [
-    {
-     "line": 0.5,
-     "price": -980,
-     "implied": 90.7,
-     "p": 96.4,
-     "hit": [
-      8,
       8
      ],
      "ev": 6.2
     },
     {
      "line": 1.5,
-     "price": -198,
-     "implied": 66.4,
-     "p": 66.1,
+     "price": 102,
+     "implied": 49.5,
+     "p": 71.1,
      "hit": [
-      4,
+      5,
       8
      ],
-     "ev": -0.5
+     "ev": 43.7
     },
     {
      "line": 2.5,
-     "price": 149,
-     "implied": 40.2,
-     "p": 41.8,
+     "price": 307,
+     "implied": 24.6,
+     "p": 46.8,
      "hit": [
-      2,
+      3,
       8
      ],
-     "ev": 4.2
+     "ev": 90.6
     },
     {
      "line": 3.5,
-     "price": 384,
-     "implied": 20.7,
-     "p": 28.5,
+     "price": 810,
+     "implied": 11.0,
+     "p": 33.5,
      "hit": [
-      2,
+      3,
       8
      ],
-     "ev": 37.9
+     "ev": 204.7
     },
     {
      "line": 4.5,
-     "price": 910,
-     "implied": 9.9,
-     "p": 19.1,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 93.3
-    },
-    {
-     "line": 5.5,
-     "price": 1920,
-     "implied": 5.0,
-     "p": 13.9,
-     "hit": [
-      2,
-      8
-     ],
-     "ev": 180.9
-    }
-   ],
-   "suggested": [
-    2.5,
-    4.5
-   ],
-   "best_ev": 180.9,
-   "value_rungs": 3
-  },
-  {
-   "player": "Dillon Brooks",
-   "team": "PHX",
-   "game": "ORL@PHX",
-   "time": "9:00 PM ET",
-   "stat": "AST",
-   "model": 3.0,
-   "main_line": 2.5,
-   "avg5": 3.6,
-   "avg15": 3.0,
-   "last10": [
-    0.0,
-    5.0,
-    5.0,
-    2.0,
-    4.0,
-    2.0
-   ],
-   "rungs": [
-    {
-     "line": 2.5,
-     "price": 143,
-     "implied": 41.2,
-     "p": 54.6,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 32.7
-    },
-    {
-     "line": 3.5,
-     "price": 373,
-     "implied": 21.1,
-     "p": 41.2,
-     "hit": [
-      3,
-      6
-     ],
-     "ev": 94.7
-    },
-    {
-     "line": 4.5,
-     "price": 870,
-     "implied": 10.3,
-     "p": 24.4,
-     "hit": [
-      2,
-      6
-     ],
-     "ev": 136.9
-    },
-    {
-     "line": 5.5,
      "price": 1820,
      "implied": 5.2,
-     "p": 5.0,
+     "p": 14.1,
      "hit": [
-      0,
-      6
+      1,
+      8
      ],
-     "ev": -3.3
+     "ev": 171.5
     }
    ],
    "suggested": [
-    2.5,
-    4.5
+    1.5,
+    3.5
    ],
-   "best_ev": 136.9,
+   "best_ev": 204.7,
    "value_rungs": 3
   }
  ],
@@ -28394,37 +28661,12 @@
  },
  "credits": {
   "limit": 250,
-  "used_today": 55,
-  "remaining": 18730,
-  "allowed_now": 134,
+  "used_today": 82,
+  "remaining": 18695,
+  "allowed_now": 107,
   "skipped": [],
   "slot": "morning",
   "calls": [
-   {
-    "time": "11:16 AM",
-    "call": "balance check",
-    "cost": 0
-   },
-   {
-    "time": "11:16 AM",
-    "call": "game lines",
-    "cost": 3
-   },
-   {
-    "time": "11:16 AM",
-    "call": "event list",
-    "cost": 0
-   },
-   {
-    "time": "11:16 AM",
-    "call": "props ORL@PHX",
-    "cost": 8
-   },
-   {
-    "time": "11:16 AM",
-    "call": "props MIA@GSW",
-    "cost": 8
-   },
    {
     "time": "11:16 AM",
     "call": "championship odds",
@@ -28484,12 +28726,52 @@
     "time": "11:27 AM",
     "call": "alt lines ORL@PHX",
     "cost": 4
+   },
+   {
+    "time": "12:01 PM",
+    "call": "balance check",
+    "cost": 0
+   },
+   {
+    "time": "12:01 PM",
+    "call": "game lines",
+    "cost": 3
+   },
+   {
+    "time": "12:01 PM",
+    "call": "event list",
+    "cost": 0
+   },
+   {
+    "time": "12:01 PM",
+    "call": "props ORL@PHX",
+    "cost": 8
+   },
+   {
+    "time": "12:01 PM",
+    "call": "props MIA@GSW",
+    "cost": 8
+   },
+   {
+    "time": "12:01 PM",
+    "call": "event list",
+    "cost": 0
+   },
+   {
+    "time": "12:01 PM",
+    "call": "alt lines MIA@GSW",
+    "cost": 4
+   },
+   {
+    "time": "12:01 PM",
+    "call": "alt lines ORL@PHX",
+    "cost": 4
    }
   ],
   "history": [
    {
     "date": "2026-11-05",
-    "used": 28,
+    "used": 55,
     "limit": 250
    },
    {
@@ -28499,7 +28781,7 @@
    }
   ],
   "days_to_reset": 29,
-  "month_used": 55,
+  "month_used": 82,
   "month_limit": 5500
  },
  "futures": {
@@ -28709,11 +28991,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 770,
+     "bets": 772,
      "won": 329,
      "lost": 304,
      "push": 17,
-     "pending": 120,
+     "pending": 122,
      "units": -25.68
     }
    },
@@ -28735,11 +29017,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 770,
+     "bets": 772,
      "won": 329,
      "lost": 304,
      "push": 17,
-     "pending": 120,
+     "pending": 122,
      "units": -25.68
     }
    }
@@ -28770,8 +29052,8 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model projects 8.1 REB vs a line of 10.5 (-2.4, 23% edge) | Went under the line in 8 of his last 8 games (5/5 in the last 5) | Averaging 9.0 over the last 5 and 8.2 over the last 8 | Minutes steady: 34 per game over the last 5 (33 over the last 8) | Matchup vs GSW: -4.5% to his REB projection from their defense and pace (helps the under) | GSW ranks among the top-10 defenses for REB; he went under 10.5 in 3 of 3 games against that tier | Game script / rest: back-to-back -3% (net -3%) | Not on the injury report at pick time",
-    "picked_at": "2026-11-05 11:27 AM ET",
+    "why": "Model projects 8.1 REB vs a line of 10.5 (-2.4, 23% edge) | Went under the line in 8 of his last 8 games (5/5 in the last 5) | Averaging 9.0 over the last 5 and 8.2 over the last 8 | Minutes steady: 34 per game over the last 5 (33 over the last 8) | Matchup vs GSW: -4.5% to his REB projection from their defense and pace (helps the under) | GSW ranks among the top-10 defenses for REB; he went under 10.5 in 3 of 3 games against that tier | Game script / rest: back-to-back -3% (net -3%) | Best price: -140 at ESPN BET (DraftKings -142; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-05 12:01 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -28805,7 +29087,7 @@
     "price": -127,
     "model": 10.8,
     "edge": -5.7,
-    "edge_pct": null,
+    "edge_pct": 34.5,
     "best": null,
     "confidence": 92.1,
     "attempt": 1,
@@ -28818,8 +29100,8 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Highest win chance on the board at a ladder-friendly price: 86.7% to win, +55% expected value | Model projects 10.8 PR vs a line of 16.5 (-5.7, 35% edge) | Went under the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 12.6 over the last 5 and 12.1 over the last 8 | Minutes steady: 28 per game over the last 5 (26 over the last 8) | Matchup vs GSW: -1.2% to his PR projection from their defense and pace (helps the under) | GSW ranks among the middle-10 defenses for PR; he went under 16.5 in 1 of 1 games against that tier | Game script / rest: back-to-back -3% (net -3%) | Not on the injury report at pick time",
-    "picked_at": "2026-11-05 11:27 AM ET",
+    "why": "Highest win chance on the board at a ladder-friendly price: 86.7% to win, +55% expected value | Model projects 10.8 PR vs a line of 16.5 (-5.7, 35% edge) | Went under the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 12.6 over the last 5 and 12.1 over the last 8 | Minutes steady: 28 per game over the last 5 (26 over the last 8) | Matchup vs GSW: -1.2% to his PR projection from their defense and pace (helps the under) | GSW ranks among the middle-10 defenses for PR; he went under 16.5 in 1 of 1 games against that tier | Game script / rest: back-to-back -3% (net -3%) | Best price: -125 at ESPN BET (DraftKings -127; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-05 12:01 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -28942,7 +29224,7 @@
     "stat": "AST",
     "dir": "Over",
     "line": 2.5,
-    "price": -118,
+    "price": -114,
     "model": 4.5,
     "edge": 2.0,
     "result": null,
@@ -29103,7 +29385,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 11.5,
-    "price": -109,
+    "price": -116,
     "model": 15.2,
     "edge": 3.7,
     "result": null,
@@ -29211,21 +29493,21 @@
     "game": "ORL @ PHX",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Devin Booker Under 30.5 PA",
+    "pick": "Devin Booker Under 31.5 PA",
     "player": "Devin Booker",
     "team": "PHX",
     "opp": "ORL",
     "stat": "PA",
     "dir": "Under",
-    "line": 30.5,
-    "price": -105,
+    "line": 31.5,
+    "price": -124,
     "model": 28.6,
-    "edge": -1.9,
+    "edge": -2.9,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 28.6 vs DraftKings 30.5 (edge -1.9)"
+    "why": "Model 28.6 vs DraftKings 31.5 (edge -2.9)"
    },
    {
     "id": "model|2026-11-05|ORL @ PHX|Franz Wagner|PA",
@@ -29379,7 +29661,7 @@
     "stat": "PA",
     "dir": "Over",
     "line": 13.5,
-    "price": -110,
+    "price": -117,
     "model": 16.4,
     "edge": 2.9,
     "result": null,
@@ -29464,21 +29746,21 @@
     "game": "ORL @ PHX",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Devin Booker Under 29.5 PR",
+    "pick": "Devin Booker Under 30.5 PR",
     "player": "Devin Booker",
     "team": "PHX",
     "opp": "ORL",
     "stat": "PR",
     "dir": "Under",
-    "line": 29.5,
-    "price": -107,
+    "line": 30.5,
+    "price": -125,
     "model": 27.3,
-    "edge": -2.2,
+    "edge": -3.2,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 27.3 vs DraftKings 29.5 (edge -2.2)"
+    "why": "Model 27.3 vs DraftKings 30.5 (edge -3.2)"
    },
    {
     "id": "model|2026-11-05|ORL @ PHX|Miles Bridges|PR",
@@ -29540,7 +29822,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 20.5,
-    "price": -107,
+    "price": -110,
     "model": 26.1,
     "edge": 5.6,
     "result": null,
@@ -29586,7 +29868,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 20.5,
-    "price": -104,
+    "price": -110,
     "model": 23.7,
     "edge": 3.2,
     "result": null,
@@ -29678,7 +29960,7 @@
     "stat": "PR",
     "dir": "Under",
     "line": 11.5,
-    "price": -110,
+    "price": -114,
     "model": 9.9,
     "edge": -1.6,
     "result": null,
@@ -29701,7 +29983,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 36.5,
-    "price": -117,
+    "price": -113,
     "model": 38.6,
     "edge": 2.1,
     "result": null,
@@ -29747,7 +30029,7 @@
     "stat": "PRA",
     "dir": "Under",
     "line": 28.5,
-    "price": -113,
+    "price": -109,
     "model": 27.7,
     "edge": -0.8,
     "result": null,
@@ -29793,7 +30075,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 24.5,
-    "price": -113,
+    "price": -119,
     "model": 28.7,
     "edge": 4.2,
     "result": null,
@@ -29862,7 +30144,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 22.5,
-    "price": -105,
+    "price": -109,
     "model": 27.2,
     "edge": 4.7,
     "result": null,
@@ -29885,7 +30167,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 18.5,
-    "price": -128,
+    "price": -122,
     "model": 22.5,
     "edge": 4.0,
     "result": null,
@@ -29931,7 +30213,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 15.5,
-    "price": -108,
+    "price": -104,
     "model": 18.6,
     "edge": 3.1,
     "result": null,
@@ -29954,7 +30236,7 @@
     "stat": "PRA",
     "dir": "Under",
     "line": 14.5,
-    "price": -125,
+    "price": -120,
     "model": 12.8,
     "edge": -1.7,
     "result": null,
@@ -29977,7 +30259,7 @@
     "stat": "REB",
     "dir": "Over",
     "line": 8.5,
-    "price": -113,
+    "price": -109,
     "model": 10.8,
     "edge": 2.3,
     "result": null,
@@ -30039,21 +30321,21 @@
     "game": "ORL @ PHX",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Franz Wagner Over 13.5 RA",
+    "pick": "Franz Wagner Over 12.5 RA",
     "player": "Franz Wagner",
     "team": "ORL",
     "opp": "PHX",
     "stat": "RA",
     "dir": "Over",
-    "line": 13.5,
-    "price": 103,
+    "line": 12.5,
+    "price": -130,
     "model": 16.4,
-    "edge": 2.9,
+    "edge": 3.9,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 16.4 vs DraftKings 13.5 (edge 2.9)"
+    "why": "Model 16.4 vs DraftKings 12.5 (edge 3.9)"
    },
    {
     "id": "model|2026-11-05|ORL @ PHX|Wendell Carter Jr.|RA",
@@ -30069,7 +30351,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 10.5,
-    "price": -108,
+    "price": -106,
     "model": 12.0,
     "edge": 1.5,
     "result": null,
@@ -30115,7 +30397,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 8.5,
-    "price": -125,
+    "price": -132,
     "model": 10.1,
     "edge": 1.6,
     "result": null,
@@ -30276,7 +30558,7 @@
     "stat": "AST",
     "dir": "Over",
     "line": 7.5,
-    "price": -112,
+    "price": -109,
     "model": 8.5,
     "edge": 1.0,
     "result": null,
@@ -30299,7 +30581,7 @@
     "stat": "AST",
     "dir": "Over",
     "line": 3.5,
-    "price": -161,
+    "price": -154,
     "model": 5.6,
     "edge": 2.1,
     "result": null,
@@ -30338,21 +30620,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephen Curry Over 26.5 PTS",
+    "pick": "Stephen Curry Over 27.5 PTS",
     "player": "Stephen Curry",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PTS",
     "dir": "Over",
-    "line": 26.5,
-    "price": -121,
+    "line": 27.5,
+    "price": -111,
     "model": 34.1,
-    "edge": 7.6,
+    "edge": 6.6,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 34.1 vs DraftKings 26.5 (edge 7.6)"
+    "why": "Model 34.1 vs DraftKings 27.5 (edge 6.6)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Bam Adebayo|PTS",
@@ -30368,7 +30650,7 @@
     "stat": "PTS",
     "dir": "Under",
     "line": 21.5,
-    "price": -106,
+    "price": -121,
     "model": 20.3,
     "edge": -1.2,
     "result": null,
@@ -30384,21 +30666,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Yaxel Lendeborg Over 18.5 PTS",
+    "pick": "Yaxel Lendeborg Over 19.5 PTS",
     "player": "Yaxel Lendeborg",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PTS",
     "dir": "Over",
-    "line": 18.5,
-    "price": -116,
+    "line": 19.5,
+    "price": -111,
     "model": 23.1,
-    "edge": 4.6,
+    "edge": 3.6,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 23.1 vs DraftKings 18.5 (edge 4.6)"
+    "why": "Model 23.1 vs DraftKings 19.5 (edge 3.6)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Brandin Podziemski|PTS",
@@ -30407,21 +30689,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Brandin Podziemski Over 17.5 PTS",
+    "pick": "Brandin Podziemski Over 16.5 PTS",
     "player": "Brandin Podziemski",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PTS",
     "dir": "Over",
-    "line": 17.5,
-    "price": -104,
+    "line": 16.5,
+    "price": -108,
     "model": 18.8,
-    "edge": 1.3,
+    "edge": 2.3,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 18.8 vs DraftKings 17.5 (edge 1.3)"
+    "why": "Model 18.8 vs DraftKings 16.5 (edge 2.3)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Klay Thompson|PTS",
@@ -30483,7 +30765,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 12.5,
-    "price": -120,
+    "price": -115,
     "model": 15.1,
     "edge": 2.6,
     "result": null,
@@ -30506,7 +30788,7 @@
     "stat": "PTS",
     "dir": "Under",
     "line": 12.5,
-    "price": -122,
+    "price": -126,
     "model": 8.1,
     "edge": -4.4,
     "result": null,
@@ -30529,7 +30811,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 10.5,
-    "price": -103,
+    "price": -109,
     "model": 12.1,
     "edge": 1.6,
     "result": null,
@@ -30537,29 +30819,6 @@
     "actual": null,
     "units": null,
     "why": "Model 12.1 vs DraftKings 10.5 (edge 1.6)"
-   },
-   {
-    "id": "model|2026-11-05|MIA @ GSW|Will Richard|PTS",
-    "source": "Model bet",
-    "date": "2026-11-05",
-    "game": "MIA @ GSW",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Will Richard Over 5.5 PTS",
-    "player": "Will Richard",
-    "team": "GSW",
-    "opp": "MIA",
-    "stat": "PTS",
-    "dir": "Over",
-    "line": 5.5,
-    "price": -124,
-    "model": 6.7,
-    "edge": 1.2,
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 6.7 vs DraftKings 5.5 (edge 1.2)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Draymond Green|PTS",
@@ -30575,7 +30834,7 @@
     "stat": "PTS",
     "dir": "Under",
     "line": 5.5,
-    "price": -121,
+    "price": -124,
     "model": 3.4,
     "edge": -2.1,
     "result": null,
@@ -30591,21 +30850,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephen Curry Over 31.5 PA",
+    "pick": "Stephen Curry Over 32.5 PA",
     "player": "Stephen Curry",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PA",
     "dir": "Over",
-    "line": 31.5,
-    "price": -121,
+    "line": 32.5,
+    "price": -108,
     "model": 39.2,
-    "edge": 7.7,
+    "edge": 6.7,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 39.2 vs DraftKings 31.5 (edge 7.7)"
+    "why": "Model 39.2 vs DraftKings 32.5 (edge 6.7)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Bam Adebayo|PA",
@@ -30621,7 +30880,7 @@
     "stat": "PA",
     "dir": "Under",
     "line": 25.5,
-    "price": -111,
+    "price": -120,
     "model": 23.9,
     "edge": -1.6,
     "result": null,
@@ -30637,21 +30896,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Yaxel Lendeborg Over 22.5 PA",
+    "pick": "Yaxel Lendeborg Over 23.5 PA",
     "player": "Yaxel Lendeborg",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PA",
     "dir": "Over",
-    "line": 22.5,
-    "price": -121,
+    "line": 23.5,
+    "price": -110,
     "model": 27.5,
-    "edge": 5.0,
+    "edge": 4.0,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 27.5 vs DraftKings 22.5 (edge 5.0)"
+    "why": "Model 27.5 vs DraftKings 23.5 (edge 4.0)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Brandin Podziemski|PA",
@@ -30660,21 +30919,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Brandin Podziemski Over 21.5 PA",
+    "pick": "Brandin Podziemski Over 20.5 PA",
     "player": "Brandin Podziemski",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PA",
     "dir": "Over",
-    "line": 21.5,
-    "price": -110,
+    "line": 20.5,
+    "price": -109,
     "model": 24.4,
-    "edge": 2.9,
+    "edge": 3.9,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 24.4 vs DraftKings 21.5 (edge 2.9)"
+    "why": "Model 24.4 vs DraftKings 20.5 (edge 3.9)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Davion Mitchell|PA",
@@ -30690,7 +30949,7 @@
     "stat": "PA",
     "dir": "Over",
     "line": 20.5,
-    "price": -117,
+    "price": -112,
     "model": 23.6,
     "edge": 3.1,
     "result": null,
@@ -30736,7 +30995,7 @@
     "stat": "PA",
     "dir": "Over",
     "line": 12.5,
-    "price": -120,
+    "price": -129,
     "model": 14.7,
     "edge": 2.2,
     "result": null,
@@ -30759,7 +31018,7 @@
     "stat": "PA",
     "dir": "Under",
     "line": 11.5,
-    "price": 100,
+    "price": -103,
     "model": 10.6,
     "edge": -0.9,
     "result": null,
@@ -30782,7 +31041,7 @@
     "stat": "PR",
     "dir": "Under",
     "line": 31.5,
-    "price": -107,
+    "price": -116,
     "model": 28.4,
     "edge": -3.1,
     "result": null,
@@ -30798,21 +31057,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephen Curry Over 30.5 PR",
+    "pick": "Stephen Curry Over 31.5 PR",
     "player": "Stephen Curry",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PR",
     "dir": "Over",
-    "line": 30.5,
-    "price": -118,
+    "line": 31.5,
+    "price": -111,
     "model": 38.7,
-    "edge": 8.2,
+    "edge": 7.2,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 38.7 vs DraftKings 30.5 (edge 8.2)"
+    "why": "Model 38.7 vs DraftKings 31.5 (edge 7.2)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Yaxel Lendeborg|PR",
@@ -30828,7 +31087,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 26.5,
-    "price": -107,
+    "price": -125,
     "model": 30.8,
     "edge": 4.3,
     "result": null,
@@ -30844,21 +31103,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Brandin Podziemski Over 22.5 PR",
+    "pick": "Brandin Podziemski Over 21.5 PR",
     "player": "Brandin Podziemski",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PR",
     "dir": "Over",
-    "line": 22.5,
-    "price": -114,
+    "line": 21.5,
+    "price": -118,
     "model": 24.3,
-    "edge": 1.8,
+    "edge": 2.8,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 24.3 vs DraftKings 22.5 (edge 1.8)"
+    "why": "Model 24.3 vs DraftKings 21.5 (edge 2.8)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Pelle Larsson|PR",
@@ -30920,7 +31179,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 15.5,
-    "price": -109,
+    "price": -108,
     "model": 17.0,
     "edge": 1.5,
     "result": null,
@@ -30943,7 +31202,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 15.5,
-    "price": -107,
+    "price": -104,
     "model": 16.6,
     "edge": 1.1,
     "result": null,
@@ -30959,44 +31218,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Anthony Melton Over 13.5 PR",
+    "pick": "De'Anthony Melton Over 14.5 PR",
     "player": "De'Anthony Melton",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PR",
     "dir": "Over",
-    "line": 13.5,
-    "price": -122,
+    "line": 14.5,
+    "price": -104,
     "model": 17.2,
-    "edge": 3.7,
+    "edge": 2.7,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 17.2 vs DraftKings 13.5 (edge 3.7)"
-   },
-   {
-    "id": "model|2026-11-05|MIA @ GSW|Georges Niang|PR",
-    "source": "Model bet",
-    "date": "2026-11-05",
-    "game": "MIA @ GSW",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Georges Niang Over 10.5 PR",
-    "player": "Georges Niang",
-    "team": "GSW",
-    "opp": "MIA",
-    "stat": "PR",
-    "dir": "Over",
-    "line": 10.5,
-    "price": -130,
-    "model": 11.5,
-    "edge": 1.0,
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 11.5 vs DraftKings 10.5 (edge 1.0)"
+    "why": "Model 17.2 vs DraftKings 14.5 (edge 2.7)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Draymond Green|PR",
@@ -31012,7 +31248,7 @@
     "stat": "PR",
     "dir": "Under",
     "line": 10.5,
-    "price": -103,
+    "price": -105,
     "model": 8.9,
     "edge": -1.6,
     "result": null,
@@ -31035,7 +31271,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 8.5,
-    "price": -113,
+    "price": -118,
     "model": 9.7,
     "edge": 1.2,
     "result": null,
@@ -31058,7 +31294,7 @@
     "stat": "PRA",
     "dir": "Under",
     "line": 35.5,
-    "price": -109,
+    "price": -117,
     "model": 32.0,
     "edge": -3.5,
     "result": null,
@@ -31074,21 +31310,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephen Curry Over 35.5 PRA",
+    "pick": "Stephen Curry Over 36.5 PRA",
     "player": "Stephen Curry",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PRA",
     "dir": "Over",
-    "line": 35.5,
-    "price": -117,
+    "line": 36.5,
+    "price": -110,
     "model": 43.8,
-    "edge": 8.3,
+    "edge": 7.3,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 43.8 vs DraftKings 35.5 (edge 8.3)"
+    "why": "Model 43.8 vs DraftKings 36.5 (edge 7.3)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Yaxel Lendeborg|PRA",
@@ -31104,7 +31340,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 30.5,
-    "price": -109,
+    "price": -125,
     "model": 35.2,
     "edge": 4.7,
     "result": null,
@@ -31120,21 +31356,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Brandin Podziemski Over 26.5 PRA",
+    "pick": "Brandin Podziemski Over 25.5 PRA",
     "player": "Brandin Podziemski",
     "team": "GSW",
     "opp": "MIA",
     "stat": "PRA",
     "dir": "Over",
-    "line": 26.5,
-    "price": -118,
+    "line": 25.5,
+    "price": -122,
     "model": 29.8,
-    "edge": 3.3,
+    "edge": 4.3,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 29.8 vs DraftKings 26.5 (edge 3.3)"
+    "why": "Model 29.8 vs DraftKings 25.5 (edge 4.3)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Davion Mitchell|PRA",
@@ -31143,21 +31379,21 @@
     "game": "MIA @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Davion Mitchell Over 23.5 PRA",
+    "pick": "Davion Mitchell Over 22.5 PRA",
     "player": "Davion Mitchell",
     "team": "MIA",
     "opp": "GSW",
     "stat": "PRA",
     "dir": "Over",
-    "line": 23.5,
-    "price": -105,
+    "line": 22.5,
+    "price": -123,
     "model": 25.2,
-    "edge": 1.7,
+    "edge": 2.7,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 25.2 vs DraftKings 23.5 (edge 1.7)"
+    "why": "Model 25.2 vs DraftKings 22.5 (edge 2.7)"
    },
    {
     "id": "model|2026-11-05|MIA @ GSW|Pelle Larsson|PRA",
@@ -31196,7 +31432,7 @@
     "stat": "PRA",
     "dir": "Under",
     "line": 18.5,
-    "price": -124,
+    "price": -128,
     "model": 12.9,
     "edge": -5.6,
     "result": null,
@@ -31219,7 +31455,7 @@
     "stat": "PRA",
     "dir": "Under",
     "line": 17.5,
-    "price": -114,
+    "price": -116,
     "model": 16.1,
     "edge": -1.4,
     "result": null,
@@ -31265,7 +31501,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 16.5,
-    "price": -108,
+    "price": -117,
     "model": 19.8,
     "edge": 3.3,
     "result": null,
@@ -31288,7 +31524,7 @@
     "stat": "REB",
     "dir": "Over",
     "line": 11.5,
-    "price": -103,
+    "price": 105,
     "model": 12.5,
     "edge": 1.0,
     "result": null,
@@ -31334,7 +31570,7 @@
     "stat": "REB",
     "dir": "Over",
     "line": 3.5,
-    "price": -120,
+    "price": -128,
     "model": 4.6,
     "edge": 1.1,
     "result": null,
@@ -31357,7 +31593,7 @@
     "stat": "REB",
     "dir": "Over",
     "line": 3.5,
-    "price": -103,
+    "price": -106,
     "model": 5.1,
     "edge": 1.6,
     "result": null,
@@ -31403,7 +31639,7 @@
     "stat": "RA",
     "dir": "Under",
     "line": 13.5,
-    "price": -102,
+    "price": 101,
     "model": 11.8,
     "edge": -1.7,
     "result": null,
@@ -31472,7 +31708,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 8.5,
-    "price": -108,
+    "price": -115,
     "model": 9.8,
     "edge": 1.3,
     "result": null,
@@ -31495,7 +31731,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 5.5,
-    "price": -136,
+    "price": -134,
     "model": 7.7,
     "edge": 2.2,
     "result": null,
@@ -31518,7 +31754,7 @@
     "stat": "3PM",
     "dir": "Over",
     "line": 2.5,
-    "price": -168,
+    "price": -164,
     "model": 4.5,
     "edge": 2.0,
     "result": null,
@@ -31541,7 +31777,7 @@
     "stat": "3PM",
     "dir": "Over",
     "line": 1.5,
-    "price": -194,
+    "price": -180,
     "model": 2.8,
     "edge": 1.3,
     "result": null,
@@ -31564,7 +31800,7 @@
     "stat": "3PM",
     "dir": "Over",
     "line": 1.5,
-    "price": 100,
+    "price": 102,
     "model": 2.8,
     "edge": 1.3,
     "result": null,
@@ -31595,6 +31831,98 @@
     "actual": null,
     "units": null,
     "why": "Model 0.6 vs DraftKings 1.5 (edge -0.9)"
+   },
+   {
+    "id": "model|2026-11-05|ORL @ PHX|Desmond Bane|RA",
+    "source": "Model bet",
+    "date": "2026-11-05",
+    "game": "ORL @ PHX",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Desmond Bane Under 8.5 RA",
+    "player": "Desmond Bane",
+    "team": "ORL",
+    "opp": "PHX",
+    "stat": "RA",
+    "dir": "Under",
+    "line": 8.5,
+    "price": -145,
+    "model": 6.8,
+    "edge": -1.7,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 6.8 vs DraftKings 8.5 (edge -1.7)"
+   },
+   {
+    "id": "model|2026-11-05|MIA @ GSW|Giannis Antetokounmpo|PTS",
+    "source": "Model bet",
+    "date": "2026-11-05",
+    "game": "MIA @ GSW",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Giannis Antetokounmpo Under 29.5 PTS",
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "opp": "GSW",
+    "stat": "PTS",
+    "dir": "Under",
+    "line": 29.5,
+    "price": -120,
+    "model": 27.9,
+    "edge": -1.6,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 27.9 vs DraftKings 29.5 (edge -1.6)"
+   },
+   {
+    "id": "model|2026-11-05|MIA @ GSW|Giannis Antetokounmpo|PA",
+    "source": "Model bet",
+    "date": "2026-11-05",
+    "game": "MIA @ GSW",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Giannis Antetokounmpo Under 35.5 PA",
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "opp": "GSW",
+    "stat": "PA",
+    "dir": "Under",
+    "line": 35.5,
+    "price": -115,
+    "model": 33.7,
+    "edge": -1.8,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 33.7 vs DraftKings 35.5 (edge -1.8)"
+   },
+   {
+    "id": "model|2026-11-05|MIA @ GSW|Giannis Antetokounmpo|PRA",
+    "source": "Model bet",
+    "date": "2026-11-05",
+    "game": "MIA @ GSW",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Giannis Antetokounmpo Under 47.5 PRA",
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "opp": "GSW",
+    "stat": "PRA",
+    "dir": "Under",
+    "line": 47.5,
+    "price": -122,
+    "model": 46.1,
+    "edge": -1.4,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 46.1 vs DraftKings 47.5 (edge -1.4)"
    },
    {
     "id": "potd|2026-11-04",
@@ -35780,52 +36108,6 @@
     "actual": "29 PRA",
     "units": -1.0,
     "why": "Model 34.7 vs DraftKings 31.5 (edge 3.2)"
-   },
-   {
-    "id": "model|2026-11-04|CHA @ BKN|Michael Porter Jr.|PRA",
-    "source": "Model bet",
-    "date": "2026-11-04",
-    "game": "CHA @ BKN",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Michael Porter Jr. Over 29.5 PRA",
-    "player": "Michael Porter Jr.",
-    "team": "BKN",
-    "opp": "CHA",
-    "stat": "PRA",
-    "dir": "Over",
-    "line": 29.5,
-    "price": -124,
-    "model": 30.9,
-    "edge": 1.4,
-    "result": "W",
-    "status": "Won",
-    "actual": "36 PRA",
-    "units": 0.81,
-    "why": "Model 30.9 vs DraftKings 29.5 (edge 1.4)"
-   },
-   {
-    "id": "model|2026-11-04|CHA @ BKN|Day'Ron Sharpe|PRA",
-    "source": "Model bet",
-    "date": "2026-11-04",
-    "game": "CHA @ BKN",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Day'Ron Sharpe Under 17.5 PRA",
-    "player": "Day'Ron Sharpe",
-    "team": "BKN",
-    "opp": "CHA",
-    "stat": "PRA",
-    "dir": "Under",
-    "line": 17.5,
-    "price": -122,
-    "model": 16.2,
-    "edge": -1.3,
-    "result": "L",
-    "status": "Lost",
-    "actual": "19 PRA",
-    "units": -1.0,
-    "why": "Model 16.2 vs DraftKings 17.5 (edge -1.3)"
    }
   ],
   "months": [

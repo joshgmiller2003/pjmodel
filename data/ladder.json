@@ -17,6 +17,7 @@
    "price": -127,
    "model": 10.8,
    "edge": -5.7,
+   "edge_pct": 34.5,
    "hits": {
     "l5": [
      4,
@@ -31,6 +32,21 @@
      8
     ]
    },
+   "chart": {
+    "vals": [
+     13.0,
+     16.0,
+     5.0,
+     15.0,
+     20.0,
+     14.0,
+     7.0,
+     7.0
+    ],
+    "line": 16.5,
+    "side": "Under",
+    "label": "PR"
+   },
    "reasons": [
     "Model projects 10.8 PR vs a line of 16.5 (-5.7, 35% edge)",
     "Went under the line in 7 of his last 8 games (4/5 in the last 5)",
@@ -39,6 +55,7 @@
     "Matchup vs GSW: -1.2% to his PR projection from their defense and pace (helps the under)",
     "GSW ranks among the middle-10 defenses for PR; he went under 16.5 in 1 of 1 games against that tier",
     "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -125 at ESPN BET (DraftKings -127; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "p_win": 86.7,
@@ -53,13 +70,14 @@
    "day": 2,
    "stake": 17.46,
    "to_win": 13.75,
-   "picked_at": "2026-11-05 11:27 AM ET",
+   "picked_at": "2026-11-05 12:01 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 86.7% to win, +55% expected value",
    "open_line": 16.5,
    "open_price": -127,
+   "first_picked_at": "2026-11-05 11:27 AM ET",
    "close_line": 16.5,
    "close_price": -127,
-   "close_at": "2026-11-05 11:27 AM ET",
+   "close_at": "2026-11-05 12:01 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
