@@ -44,6 +44,8 @@ ODDS_KEY = os.environ.get("ODDS_API_KEY", "").strip()
 # Free tip-off checks (7-10 PM ET): no Odds API calls at all. Injuries and box scores come from ESPN (free) and
 # the lines saved at the last paid run are reused, so a pick whose player is ruled out can be swapped for free.
 TIP_CHECK = os.environ.get("NO_PAID_CALLS", "") == "1"
+# One-time manual runs can be kept off today's daily cap. Their credits still count toward the month.
+OFF_DAILY_CAP = os.environ.get("OFF_DAILY_CAP", "") == "1"
 MAX_PROP_EVENTS = int(os.environ.get("MAX_PROP_EVENTS", "30"))
 DAILY_CREDIT_LIMIT = int(os.environ.get("DAILY_CREDIT_LIMIT", "250") or 250)   # hard cap per ET day (unused credits roll forward)
 MONTHLY_CREDIT_LIMIT = int(os.environ.get("MONTHLY_CREDIT_LIMIT", "5500") or 5500)  # this site's share of the plan
@@ -137,15 +139,16 @@ class Credits:
 
     def allowance(self):
         """What is still allowed today: the daily cap, and never more than an even share of what is left in the plan."""
-        left_today = DAILY_CREDIT_LIMIT - self.state["used_today"]
+        u = self.state["used_today"] - self.state.get("off_cap", 0)     # credits that count against today's cap
+        left_today = DAILY_CREDIT_LIMIT - u
         # this site's monthly budget, spread evenly over the days left in the cycle
         month_left = MONTHLY_CREDIT_LIMIT - self.month_used()
-        site_share = (month_left + self.state["used_today"]) // self.days_to_reset() - self.state["used_today"]
+        site_share = (month_left + u) // self.days_to_reset() - u
         left_today = min(left_today, site_share, month_left)
         rem = self.state.get("remaining")
         if rem is not None:
             # even share of the plan: what was left at the start of today, split over the days until it resets
-            share = (int(rem) + self.state["used_today"]) // self.days_to_reset() - self.state["used_today"]
+            share = (int(rem) + u) // self.days_to_reset() - u
             left_today = min(left_today, share, int(rem))
         return max(0, left_today)
 
@@ -164,9 +167,11 @@ class Credits:
         cost = int(num(r.headers.get("x-requests-last", est)))
         rem = r.headers.get("x-requests-remaining")
         self.state["used_today"] += cost
+        if OFF_DAILY_CAP:
+            self.state["off_cap"] = self.state.get("off_cap", 0) + cost
         if rem is not None:
             self.state["remaining"] = int(num(rem))
-        self.state["calls"].append({"time": datetime.now(ET).strftime("%I:%M %p"), "call": label, "cost": cost})
+        self.state["calls"].append({"time": datetime.now(ET).strftime("%I:%M %p"), "call": label + (" (off daily cap)" if OFF_DAILY_CAP and cost else ""), "cost": cost})
         if r.status_code != 200:
             log(f"odds HTTP {r.status_code} for {label}")
             return None
