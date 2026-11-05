@@ -2380,10 +2380,24 @@ def main():
     st_now = {g["event_id"]: g["status"] for g in slate}
     lad_locked = bool(lad_today) and bool(lad_today.get("result") or any(st_now.get(e, "Final") != "Upcoming" for e in step_eids(lad_today)))
     lad_keys = step_keys(lad_today) if lad_locked else set()
-    if pick and bet_key(pick) in lad_keys:
-        pick = next((c for c in all_cands if bet_key(c) not in lad_keys), None)
-        new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)] if pick else new_alts
-        log("potd: stepped around today's locked ladder bet")
+    # The Pick of the Day must be a winning bet on average at honest (calibrated) win chances: the highest-scoring
+    # bet with positive expected value. If nothing on the board has value, there is no pick today, on purpose.
+    ev_ok = lambda c: c.get("ev", -1) > 0
+    if pick and (not ev_ok(pick) or bet_key(pick) in lad_keys):
+        why = "locked ladder bet" if bet_key(pick) in lad_keys else f"{pick['ev']:+g}% expected value at honest odds"
+        log(f"potd: passed on {pick['label']} ({why})")
+        pick = next((c for c in all_cands if ev_ok(c) and bet_key(c) not in lad_keys), None)
+    if pick:
+        new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)]
+        imp = implied(pick["price"]) * 100
+        pick["reasons"] = pick["reasons"][:1] + [f"Honest win chance {pick['p_win']:g}% vs {imp:.0f}% implied by {fmt_px(pick['price'])}: "
+                                                 f"{pick['ev']:+g}% expected value (raw model said {pick.get('p_win_raw', pick['p_win']):g}%)"] + pick["reasons"][1:]
+    top = CAL_MAP[-1][1] if CAL_MAP else None
+    board = {"date": t_iso, "qualified": len(all_cands), "positive": sum(1 for c in all_cands if ev_ok(c)),
+             "top_win": rnd(top * 100, 1) if top else None,
+             "note": ("The honest numbers currently say no bet beats the book's cut at normal prices; the model needs to "
+                      "prove itself on more graded games before it can pick again." if top and top * decimal(-110) <= 1 else None)}
+    log(f"board: {board['qualified']} qualifying bets, {board['positive']} with positive expected value")
     if not locked:
         potd_alts = new_alts
         potd_hist = [h for h in potd_hist if h["date"] != t_iso]
@@ -2452,7 +2466,7 @@ def main():
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
-            "potd_history": potd_hist[:400], "potd_alts": potd_alts,
+            "potd_history": potd_hist[:400], "potd_alts": potd_alts, "board": board,
             "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
             "streaks": streaks,
