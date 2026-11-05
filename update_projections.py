@@ -1315,8 +1315,60 @@ def prob_over(stat, mean, line, vals=None):
     return 1 - phi((line - mean) / sd)
 
 
+# ------------------------------------------------------------------ calibration (honest win chances)
+# The model's raw win chances run hot: picks it rated 80% have hit far less than that. Every win chance used to
+# rank or show a pick goes through this map, built from every graded model lean in data/calibration.json.
+# Thin buckets lean on the overall pattern (how much of the claimed edge has really shown up), and the map can
+# only go up as the raw chance goes up. It updates itself after every run as more leans are graded.
+CAL_K = 30
+CAL_MAP = []
+
+
+def build_cal_map(cal, market="ALL"):
+    rows = [r for _, r in sorted(((cal or {}).get("buckets", {}).get(market) or {}).items(), key=lambda kv: int(kv[0])) if r.get("n", 0) > 0]
+    if not rows:
+        return []
+    # share of the model's claimed edge (over 50%) that has actually shown up, across every lean
+    n, w, pp = sum(r["n"] for r in rows), sum(r["w"] for r in rows), sum(r["p"] for r in rows)
+    keep = max(0.0, min(1.0, (w - 0.5 * n) / (pp - 0.5 * n))) if pp - 0.5 * n > 1 else 1.0
+    pts = []
+    for r in rows:
+        pavg = r["p"] / r["n"]
+        prior = 0.5 + (pavg - 0.5) * keep         # thin buckets lean on the overall pattern, not the raw claim
+        pts.append([pavg, (r["w"] + CAL_K * prior) / (r["n"] + CAL_K), r["n"] + CAL_K])
+    merged = []                                   # pool adjacent violators: higher raw chance never maps lower
+    for x, y, w in pts:
+        merged.append([x * w, y * w, w])
+        while len(merged) > 1 and merged[-2][1] / merged[-2][2] > merged[-1][1] / merged[-1][2]:
+            a = merged.pop()
+            merged[-1] = [merged[-1][0] + a[0], merged[-1][1] + a[1], merged[-1][2] + a[2]]
+    return [(x / w, y / w) for x, y, w in merged]
+
+
+def calibrate(p, cmap=None):
+    """Raw chance (0-1) -> calibrated chance. Leans under 50% are mirrored."""
+    cmap = CAL_MAP if cmap is None else cmap
+    if not cmap or p is None:
+        return p
+    flip = p < 0.5
+    q = 1 - p if flip else p
+    if q <= cmap[0][0]:
+        x0, y0 = cmap[0]
+        y = 0.5 + (q - 0.5) * (y0 - 0.5) / (x0 - 0.5) if x0 > 0.5 else y0
+    elif q >= cmap[-1][0]:
+        y = cmap[-1][1]
+    else:
+        for (x0, y0), (x1, y1) in zip(cmap, cmap[1:]):
+            if x0 <= q <= x1:
+                y = y0 + (y1 - y0) * (q - x0) / (x1 - x0) if x1 > x0 else y1
+                break
+    y = max(0.3, min(0.97, y))
+    return 1 - y if flip else y
+
+
 def add_win_probs(cands):
-    """Attach p_win: 60% model distribution + 40% recent hit rate (shrinks small samples toward the model)."""
+    """Attach p_win: 60% model distribution + 40% recent hit rate (shrinks small samples toward the model), then
+    calibrated against how the model's leans have actually done (p_win_raw keeps the uncalibrated number)."""
     for c in cands:
         h = c["hits"]["l15"] if c["type"] == "Prop" else c["hits"]["l10"]
         hr = h[0] / h[1] if h[1] else 0.5
@@ -1331,7 +1383,9 @@ def add_win_probs(cands):
         else:
             pm = c["model"] / 100
         c["p_model"] = rnd(pm * 100, 1)
-        c["p_win"] = rnd((0.6 * pm + 0.4 * hr) * 100, 1)
+        raw = 0.6 * pm + 0.4 * hr
+        c["p_win_raw"] = rnd(raw * 100, 1)
+        c["p_win"] = rnd(calibrate(raw) * 100, 1)
         dec = 1 + (c["price"] / 100 if c["price"] > 0 else 100 / -c["price"])
         c["ev"] = rnd((c["p_win"] / 100 * dec - 1) * 100, 1)
 
@@ -1366,9 +1420,9 @@ def american(dec):
 # Multi-pick ladder steps: allowed, never required. A 2-3 leg parlay (each leg from a different game) replaces the
 # single bet only when it gives a better chance of finishing the ladder. Model win chances run hot (see calibration),
 # so both options are compared on win chances shrunk toward 50%, which costs parlays more than singles.
-PARLAY_SHRINK = 0.7          # 0.5 + (p - 0.5) * 0.7
-PARLAY_MIN_WIN = 0.55        # shrunk chance the whole parlay hits
-PARLAY_LEG_MIN = 70          # every leg's own win chance (%)
+PARLAY_SHRINK = 1.0          # win chances are calibrated now (see calibrate), so no extra shrink
+PARLAY_MIN_WIN = 0.45        # calibrated chance the whole parlay hits
+PARLAY_LEG_MIN = 60          # every leg's own calibrated win chance (%)
 PARLAY_MARGIN = 1.05         # must beat the single by 5% to be worth the extra legs
 
 
@@ -2072,6 +2126,9 @@ def main():
     cal = load(CALIB_PATH, {"note": "Every graded model lean (all posted props, spreads and totals), bucketed by the model's win chance.",
                             "buckets": {}, "markets": {}})
     settle(pending, plog, state, cal)
+    global CAL_MAP
+    CAL_MAP = build_cal_map(cal)
+    log("calibration map: " + ", ".join(f"{x * 100:.0f}%->{y * 100:.0f}%" for x, y in CAL_MAP))
     state["residuals"]["alpha"] = rnd(0.12 + 0.33 * math.exp(-state["residuals"]["games_learned"] / 60), 3)
 
     # 3. slate: yesterday..tomorrow
@@ -2289,7 +2346,8 @@ def main():
                             "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers"],
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers",
+                            "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"],
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
