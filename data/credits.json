@@ -1,12 +1,58 @@
 {
  "date": "2026-11-05",
- "used_today": 0,
- "calls": [],
- "remaining": 2,
+ "used_today": 28,
+ "calls": [
+  {
+   "time": "11:16 AM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "11:16 AM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "11:16 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:16 AM",
+   "call": "props ORL@PHX",
+   "cost": 8
+  },
+  {
+   "time": "11:16 AM",
+   "call": "props MIA@GSW",
+   "cost": 8
+  },
+  {
+   "time": "11:16 AM",
+   "call": "championship odds",
+   "cost": 1
+  },
+  {
+   "time": "11:16 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:16 AM",
+   "call": "alt lines MIA@GSW",
+   "cost": 4
+  },
+  {
+   "time": "11:16 AM",
+   "call": "alt lines ORL@PHX",
+   "cost": 4
+  }
+ ],
+ "remaining": 18757,
  "history": [
   {
    "date": "2026-11-05",
-   "used": 0,
+   "used": 28,
    "limit": 250
   },
   {
@@ -18,6 +64,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 29,
- "month_used": 0,
+ "month_used": 28,
  "month_limit": 5500
 }
