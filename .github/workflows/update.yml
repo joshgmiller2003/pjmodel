@@ -27,14 +27,6 @@ jobs:
           H=$(TZ=America/New_York date +%H)
           D=$(TZ=America/New_York date +%F)
           echo "ET hour is $H on $D"
-          # Paused for the rest of Nov 4 (owner's request). Normal schedule resumes Nov 5 at 1 AM ET.
-          if [ "$D" = "2026-11-04" ]; then
-            echo "Paused today"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          # Owner ran it by hand on Nov 5 just after 11 AM, so the scheduled 11 AM run that day is skipped.
-          if [ "$D" = "2026-11-05" ] && [ "$H" = "11" ] && [ "${{ github.event_name }}" = "schedule" ]; then
-            echo "Skipped: ran by hand instead"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
-          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "01" ] || [ "$H" = "11" ] || [ "$H" = "18" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"
           else
