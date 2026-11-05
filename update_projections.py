@@ -1341,14 +1341,22 @@ def decimal(price):
 
 
 # ------------------------------------------------------------------ ladder challenge
-def ladder_pick(cands):
-    """Safest bet with a real payout: price -200 to +120, positive expected value. Highest win chance wins."""
-    pool = [c for c in cands if -200 <= c["price"] <= 120 and c.get("ev", -1) > 0]
+def bet_key(b):
+    """What makes two picks 'the same play': the same player (any stat), or the same game bet type."""
+    if not b:
+        return None
+    return ("P", norm(b["player"])) if b.get("player") else ("G", b.get("game"), b.get("type"))
+
+
+def ladder_pick(cands, avoid=()):
+    """Safest bet with a real payout: price -200 to +120, positive expected value. Highest win chance wins.
+    Never the same play as today's Pick of the Day (avoid), so the two give people two different bets."""
+    pool = [c for c in cands if -200 <= c["price"] <= 120 and c.get("ev", -1) > 0 and bet_key(c) not in avoid]
     pool.sort(key=lambda c: (-c["p_win"], -c["ev"]))
     return pool[0] if pool else None
 
 
-def run_ladder(lad, plog, cands, slate, t_iso, now):
+def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
     lad.setdefault("start", LADDER_START); lad.setdefault("goal", LADDER_GOAL)
     lad.setdefault("attempt", 1); lad.setdefault("bankroll", lad["start"]); lad.setdefault("steps", [])
     lad.setdefault("attempts", []); lad.setdefault("attempt_started", t_iso)
@@ -1389,7 +1397,7 @@ def run_ladder(lad, plog, cands, slate, t_iso, now):
         today.setdefault("locked_at", stamp)
         return lad
     lad["steps"] = [x for x in lad["steps"] if x["date"] != t_iso]
-    pick = ladder_pick(cands)
+    pick = ladder_pick(cands, avoid)
     prev_step = today
     if pick:
         if not lad.get("attempt_started"):
@@ -2104,6 +2112,15 @@ def main():
     paused = paused_markets(cal)
     pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso, paused)
     add_win_probs(all_cands)
+    # Pick of the Day and the ladder are always two different plays. The Pick of the Day gets first choice,
+    # unless today's ladder step already locked (its game tipped first): then the Pick of the Day steps around it.
+    lad_state = load(LADDER_PATH, {})
+    lad_today = next((x for x in lad_state.get("steps", []) if x["date"] == t_iso), None)
+    lad_locked = bool(lad_today) and bool(lad_today.get("result") or next((g["status"] != "Upcoming" for g in slate if g["event_id"] == lad_today["eid"]), True))
+    if pick and lad_locked and bet_key(pick) == bet_key(lad_today):
+        pick = next((c for c in all_cands if bet_key(c) != bet_key(lad_today)), None)
+        new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)] if pick else new_alts
+        log("potd: stepped around today's locked ladder bet")
     if not locked:
         potd_alts = new_alts
         potd_hist = [h for h in potd_hist if h["date"] != t_iso]
@@ -2111,7 +2128,8 @@ def main():
             pick["picked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
             potd_hist.insert(0, carry_open(pick, todays))
     # 3c. Ladder challenge (uses the same qualifying bets, but picks the safest one with a real payout)
-    ladder = run_ladder(load(LADDER_PATH, {}), plog, all_cands, slate, t_iso, now)
+    potd_today = next((h for h in potd_hist if h["date"] == t_iso), None)
+    ladder = run_ladder(lad_state, plog, all_cands, slate, t_iso, now, avoid={bet_key(potd_today)} - {None})
     track_clv(potd_hist[:5] + ladder["steps"][:5], games, props, slate, now)
     streaks = streaks_and_badges(potd_hist, ladder, (prev.get("streaks") or {}).get("badges"))
 
