@@ -347,6 +347,14 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 @media (max-width: 720px) { .lad-next { text-align: left; } .lad-bank { font-size: 38px; } }
 .rung-row.sug td { background: rgba(92,200,255,0.08); }
 .alt-help { padding: 16px 18px; margin-bottom: 14px; }
+.best-px { display: inline-block; font-size: 12px; font-weight: 700; color: var(--good); background: var(--good-soft); border-radius: 999px; padding: 2px 9px; margin-left: 8px; vertical-align: middle; letter-spacing: 0; }
+.recap { padding: 14px 18px; margin: 14px 0 4px; }
+.recap-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+.recap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.recap-cell { background: var(--bg); border: 1px solid var(--border-soft); border-radius: 10px; padding: 10px 12px; }
+.recap-cell .l { font-size: 10.5px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; color: var(--muted); }
+.recap-cell .v { font-size: 13.5px; margin-top: 5px; line-height: 1.4; }
+.recap-cell .s { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
 .alt-help-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 12px; font-size: 13px; line-height: 1.5; color: var(--muted); }
 .alt-help-grid strong { color: var(--ink); display: block; margin-bottom: 2px; }
 .alt-num { width: 22px; height: 22px; border-radius: 50%; background: rgba(92,200,255,0.15); color: var(--accent2); font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px; }
@@ -437,6 +445,7 @@ nav button:first-child { margin-left: -13px; }
 <div class="container">
   <section id="games" class="tab">
     <div class="today-strip" id="today-strip"></div>
+    <div id="recap"></div>
     <div class="section-title">Tonight's games <small id="games-live-status">Connecting to live scores…</small></div>
     <div class="game-grid" id="games-board"></div>
   </section>
@@ -897,7 +906,50 @@ function renderGames() {
   renderTodayStrip();
 }
 function goTab(t) { const b = document.querySelector(`nav button[data-tab="${t}"]`); if (b) { b.click(); window.scrollTo({top: 0, behavior: "smooth"}); } }
+// ---------- Best price across sportsbooks (the record is still graded at DraftKings) ----------
+const BOOK_NAMES = {draftkings: "DraftKings", fanduel: "FanDuel", betmgm: "BetMGM", williamhill_us: "Caesars", espnbet: "ESPN BET",
+  fanatics: "Fanatics", betrivers: "BetRivers", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX"};
+function bestPrice(p) {
+  if (!p || p.price == null) return "";
+  let b = p.best;
+  if (!b && p.player && p.stat) {
+    const pr = (DATA.props || []).find(x => x.player === p.player && x.stat === p.stat && x.dk === p.line);
+    if (pr) b = pr[p.side === "Over" ? "best_over" : "best_under"];
+  }
+  if (!b || b[0] == null || b[0] <= p.price || b[1] === "draftkings") return "";
+  return ` <span class="best-px" title="DraftKings has ${fmtPrice(p.price)}. Picks are graded at DraftKings' price.">Best ${fmtPrice(b[0])} at ${BOOK_NAMES[b[1]] || b[1]}</span>`;
+}
+
+// ---------- Last night recap ----------
+function renderRecap() {
+  const el = document.getElementById("recap"); if (!el) return;
+  const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  const rows = recRows().filter(r => r.date < today);
+  const graded = rows.filter(r => r.result);
+  if (!graded.length) { el.innerHTML = ""; return; }
+  const day = graded.map(r => r.date).sort().pop();
+  const of = src => rows.filter(r => r.date === day && r.source === src);
+  const sign = v => (v > 0 ? "+" : "") + (Math.round(v * 100) / 100);
+  const pill = r => r.result ? `<span class="pill ${r.result === "W" ? "over" : r.result === "L" ? "under" : "pass"}" style="font-size:11px;">${r.result === "W" ? "WIN" : r.result === "L" ? "LOSS" : "PUSH"}</span>` : `<span class="pill pass" style="font-size:11px;">PENDING</span>`;
+  const potd = of("Pick of the Day")[0], lad = of("Ladder Challenge")[0], alts = of("Alt Ladder"), model = of("Model bet");
+  const ag = alts.filter(r => r.result === "W" || r.result === "L"), aw = ag.filter(r => r.result === "W").length;
+  const au = alts.filter(r => r.result && r.units != null).reduce((t, r) => t + r.units, 0);
+  const bestAlt = alts.filter(r => r.units != null).sort((a, b) => b.units - a.units)[0];
+  const plays = collapsePlays(model), pg = plays.filter(r => r.result === "W" || r.result === "L"), pw = pg.filter(r => r.result === "W").length;
+  const pu = plays.filter(r => r.result && r.units != null).reduce((t, r) => t + r.units, 0);
+  const cell = (title, body, sub) => `<div class="recap-cell"><div class="l">${title}</div><div class="v">${body}</div><div class="s">${sub || ""}</div></div>`;
+  el.innerHTML = `<div class="card recap">
+    <div class="recap-head"><strong>Last night</strong> <span class="note">${new Date(day + "T12:00").toLocaleDateString([], {weekday: "long", month: "short", day: "numeric"})}</span>
+      <a href="#" onclick="goTab('bankroll');return false;" style="margin-left:auto;font-size:12.5px;">All records ›</a></div>
+    <div class="recap-grid">
+      ${cell("Pick of the Day", potd ? `${pill(potd)} ${potd.pick}` : "No pick", potd ? (potd.actual || "") + (potd.units != null && potd.result ? " · " + sign(potd.units) + "u" : "") : "nothing had value")}
+      ${cell("Ladder", lad ? `${pill(lad)} ${lad.pick}` : "Rest day", lad ? (lad.actual || "") + (lad.result === "L" ? " · attempt ends" : lad.bankroll_after != null ? " · bankroll $" + lad.bankroll_after : "") : "bankroll waited")}
+      ${cell("Alt-line ladders", ag.length ? `<strong>${aw}-${ag.length - aw}</strong> · <span class="${au >= 0 ? "positive" : "negative"}">${sign(au)}u</span>` : alts.length ? "Pending" : "None tracked", bestAlt && bestAlt.units > 0 ? "Best: " + bestAlt.player + " " + bestAlt.stat + " (" + sign(bestAlt.units) + "u)" : "1 unit per ladder")}
+      ${cell("Model plays", pg.length ? `<strong>${pw}-${pg.length - pw}</strong> · <span class="${pu >= 0 ? "positive" : "negative"}">${sign(pu)}u</span>` : "–", "one per player per game")}
+    </div></div>`;
+}
 function renderTodayStrip() {
+  try { renderRecap(); } catch (e) {}
   const el = document.getElementById("today-strip"); if (!el) return;
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
   const potd = (DATA.potd_history || []).find(h => h.date === today);
@@ -1791,7 +1843,7 @@ function renderPotd() {
       <div class="who"><img class="team-logo" style="width:44px;height:44px;" src="${teamLogo(T.logo)}" alt="" onerror="this.style.display='none'">
         <div><div class="name">${T.name}${inj ? ` <span class="badge ${/out/i.test(inj.status) ? "out" : "inj"}" style="vertical-align:middle;">${inj.status}</span>` : ""}</div>
         <div class="team" style="font-size:13px;margin-top:3px;">${T.sub}</div></div></div>
-      <div class="bet">${T.bet}<span class="px">${fmtPrice(p.price)}</span></div>
+      <div class="bet">${T.bet}<span class="px">${fmtPrice(p.price)}</span>${bestPrice(p)}</div>
       <div class="potd-grid">
         <div>
           <div class="potd-stats">${potdTiles(p)}</div>
@@ -1927,7 +1979,7 @@ function renderLadderChallenge() {
   document.getElementById("lad-today").innerHTML = t ? `<div class="card" style="height:100%;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
       <div><div class="team" style="font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;">Today's step · Day ${t.day}</div>
-      <div style="font-size:22px;font-weight:800;margin-top:6px;letter-spacing:-0.4px;">${t.label} <span class="price" style="font-size:15px;">${fmtPrice(t.price)}</span></div>
+      <div style="font-size:22px;font-weight:800;margin-top:6px;letter-spacing:-0.4px;">${t.label} <span class="price" style="font-size:15px;">${fmtPrice(t.price)}</span>${t.legs ? "" : bestPrice(t)}</div>
       <div class="team" style="font-size:12.5px;margin-top:2px;">${t.legs ? `Multi-pick · ${t.legs.length} legs, all must win` : t.type} · ${t.game.replace(/@/g, " @ ")} · ${t.time}</div></div>
       ${t.result ? resultPill(t) : g && g.status === "Live" ? `<span class="pill pass">LIVE${g.score ? " " + g.score.away + "-" + g.score.home : ""}</span>` : `<span class="pill pass">${t.locked_at ? "Locked" : "Pending"}</span>`}
     </div>
@@ -1938,7 +1990,7 @@ function renderLadderChallenge() {
     </div>
     ${t.legs ? t.legs.map((l, i) => { const c = ladderChart(Object.assign({date: t.date}, l));
       return `<div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.07);">
-        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;"><div style="font-weight:700;">Leg ${i + 1}: ${l.label} <span class="price">${fmtPrice(l.price)}</span></div>${l.result ? resultPill(l) : ""}</div>
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;"><div style="font-weight:700;">Leg ${i + 1}: ${l.label} <span class="price">${fmtPrice(l.price)}</span>${bestPrice(l)}</div>${l.result ? resultPill(l) : ""}</div>
         <div class="team" style="font-size:12px;margin-top:2px;">${(l.game || "").replace("@", " @ ")} · ${l.time || ""} · ${l.p_win}% to win</div>
         ${c ? potdBars(c.vals, c.line, c.side) + `<div class="note" style="margin-top:4px;">${c.label || ""}</div>` : ""}
         ${l.player ? `<div style="margin-top:6px;"><button class="btn" onclick="openGameLog('${l.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>`; }).join("") : ""}
