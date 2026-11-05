@@ -1207,7 +1207,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
 
         # spread
         se = row.get("spread_edge", 0)
-        if 1.5 <= abs(se) <= 6 and "Spread" not in (paused or {}):
+        if 1.5 <= abs(se) <= 6 and "Spread" not in (paused or {}) and dk.get("spread_px_home" if se > 0 else "spread_px_away"):
             home_pick = se > 0
             team, opp = (H, A) if home_pick else (A, H)
             line = hs if home_pick else -hs
@@ -1228,7 +1228,7 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
 
         # total
         te = row.get("total_edge", 0)
-        if 3 <= abs(te) <= 12 and "Total" not in (paused or {}):
+        if 3 <= abs(te) <= 12 and "Total" not in (paused or {}) and dk.get("over_px" if te > 0 else "under_px"):
             over = te > 0
             line = float(dk["total"])
             price = dk.get("over_px" if over else "under_px") or -110
@@ -1325,6 +1325,18 @@ def prob_over(stat, mean, line, vals=None):
 # only go up as the raw chance goes up. It updates itself after every run as more leans are graded.
 CAL_K = 30
 CAL_MAP = []
+CAL_BLEND_MIN = 300   # graded leans on the blended win chance needed before the map switches to them
+
+
+def blend_record(cal, p, res):
+    """Grade the blended win chance (model + recent hit rate, the number picks are ranked on) so the
+    calibration map can be built from the exact number it is applied to."""
+    if res == "P" or p is None:
+        return
+    p = max(0.5, min(0.999, p))
+    b = str(min(90, int(p * 100) // 5 * 5))
+    r = cal.setdefault("blend", {}).setdefault(b, {"n": 0, "w": 0, "p": 0.0})
+    r["n"] += 1; r["w"] += res == "W"; r["p"] = rnd(r["p"] + p, 3)
 
 
 def build_cal_map(cal, market="ALL"):
@@ -2002,7 +2014,7 @@ def game_bets(g, label, date):
     except (KeyError, TypeError, ValueError):
         return out
     sedge = hs - g["model"]["spread"]
-    if abs(sedge) >= BET_EDGE_GAME:
+    if abs(sedge) >= BET_EDGE_GAME and _px(dk.get("spread_px_home" if sedge > 0 else "spread_px_away")) is not None:
         hp = sedge > 0
         team, opp = (g["home"], g["away"]) if hp else (g["away"], g["home"])
         line = hs if hp else -hs
@@ -2014,7 +2026,7 @@ def game_bets(g, label, date):
         tl = float(dk["total"])
     except (KeyError, TypeError, ValueError):
         return out
-    if tl and abs(g["model"]["total"] - tl) >= BET_EDGE_GAME:
+    if tl and abs(g["model"]["total"] - tl) >= BET_EDGE_GAME and _px(dk.get("over_px" if g["model"]["total"] > tl else "under_px")) is not None:
         ov = g["model"]["total"] > tl
         out.append({"key": "Total", "date": date, "game": label, "type": "Total", "market": "Total", "team": None, "opp": None,
                     "stat": "Total", "dir": "Over" if ov else "Under", "line": tl, "price": _px(dk.get("over_px" if ov else "under_px")),
@@ -2167,6 +2179,8 @@ def settle(pending, plog, state, cal=None):
                 lean_over = edge > 0
                 calib_record(cal, p["stat"], p["p_over"] if lean_over else 1 - p["p_over"],
                              "W" if (actual > p["dk"]) == lean_over else "L", p.get("over") if lean_over else p.get("under"))
+                if p.get("win_raw") is not None and (p["model"] > p["dk"]) == lean_over:
+                    blend_record(cal, p["win_raw"] / 100, "W" if (actual > p["dk"]) == lean_over else "L")
             if is_bet:
                 b = prop_bet(p, label, lg["date"])
                 res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == (b["dir"] == "Over") else "L")
@@ -2226,7 +2240,13 @@ def main():
                             "buckets": {}, "markets": {}})
     settle(pending, plog, state, cal)
     global CAL_MAP
-    CAL_MAP = build_cal_map(cal)
+    blend_n = sum(r["n"] for r in (cal.get("blend") or {}).values())
+    if blend_n >= CAL_BLEND_MIN:
+        CAL_MAP = build_cal_map({"buckets": {"ALL": cal["blend"]}})
+        log(f"calibration: built from {blend_n} graded blended win chances")
+    else:
+        CAL_MAP = build_cal_map(cal)
+        log(f"calibration: built from raw model leans ({blend_n}/{CAL_BLEND_MIN} blended win chances graded so far)")
     log("calibration map: " + ", ".join(f"{x * 100:.0f}%->{y * 100:.0f}%" for x, y in CAL_MAP))
     state["residuals"]["alpha"] = rnd(0.12 + 0.33 * math.exp(-state["residuals"]["games_learned"] / 60), 3)
 
@@ -2461,7 +2481,7 @@ def main():
                             "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-                            "Bets are scored at 1 unit risked at the posted DraftKings price (-110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers. Spreads, totals and moneylines are also paused while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (another book's price when DraftKings has none; a bet with no price anywhere isn't counted. Bets before Nov 5 used -110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers. Spreads, totals and moneylines are also paused while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
                             "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"],
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
