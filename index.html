@@ -556,7 +556,7 @@ nav button:first-child { margin-left: -13px; }
     <div class="filters" id="pl-group"></div>
     <div class="filters">
       <select id="pl-month"></select>
-      <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option></select>
+      <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option><option>Multi-pick</option></select>
       <select id="pl-type"><option value="all">All bet types</option><option>Prop</option><option>Spread</option><option>Total</option><option>Moneyline</option></select>
       <select id="pl-stat"><option value="all">All stats</option></select>
       <select id="pl-result"><option value="all">All results</option><option>Won</option><option>Lost</option><option>Push</option><option>Pending</option></select>
@@ -1212,6 +1212,7 @@ function clvBadge(r) {
 const COMBO_STATS = new Set(["PR", "PA", "RA", "PRA"]);
 function betCat(r) {
   const t = r.type || r.market;
+  if (t === "Parlay") return "Multi-pick";
   if (t !== "Prop") return "Game lines";
   return COMBO_STATS.has(r.stat) ? "Combo props" : "Single-stat props";
 }
@@ -1882,7 +1883,7 @@ function renderLadderChallenge() {
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
       <div><div class="team" style="font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;">Today's step · Day ${t.day}</div>
       <div style="font-size:22px;font-weight:800;margin-top:6px;letter-spacing:-0.4px;">${t.label} <span class="price" style="font-size:15px;">${fmtPrice(t.price)}</span></div>
-      <div class="team" style="font-size:12.5px;margin-top:2px;">${t.type} · ${t.game.replace("@", " @ ")} · ${t.time}</div></div>
+      <div class="team" style="font-size:12.5px;margin-top:2px;">${t.legs ? `Multi-pick · ${t.legs.length} legs, all must win` : t.type} · ${t.game.replace(/@/g, " @ ")} · ${t.time}</div></div>
       ${t.result ? resultPill(t) : g && g.status === "Live" ? `<span class="pill pass">LIVE${g.score ? " " + g.score.away + "-" + g.score.home : ""}</span>` : `<span class="pill pass">${t.locked_at ? "Locked" : "Pending"}</span>`}
     </div>
     <div class="potd-stats" style="margin-top:14px;">
@@ -1890,7 +1891,13 @@ function renderLadderChallenge() {
       <div class="market"><label>To win</label><div class="proj positive">${money(t.to_win)}</div><div class="dk">→ ${money(t.stake + t.to_win)}</div></div>
       <div class="market"><label>Win chance</label><div class="proj">${t.p_win}%</div><div class="dk">EV ${t.ev > 0 ? "+" : ""}${t.ev}%</div></div>
     </div>
-    ${(() => { const c = ladderChart(t); return c ? `<div style="margin-top:14px;">${potdBars(c.vals, c.line, c.side)}
+    ${t.legs ? t.legs.map((l, i) => { const c = ladderChart(Object.assign({date: t.date}, l));
+      return `<div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.07);">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;"><div style="font-weight:700;">Leg ${i + 1}: ${l.label} <span class="price">${fmtPrice(l.price)}</span></div>${l.result ? resultPill(l) : ""}</div>
+        <div class="team" style="font-size:12px;margin-top:2px;">${(l.game || "").replace("@", " @ ")} · ${l.time || ""} · ${l.p_win}% to win</div>
+        ${c ? potdBars(c.vals, c.line, c.side) + `<div class="note" style="margin-top:4px;">${c.label || ""}</div>` : ""}
+        ${l.player ? `<div style="margin-top:6px;"><button class="btn" onclick="openGameLog('${l.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>`; }).join("") : ""}
+    ${t.legs ? "" : (() => { const c = ladderChart(t); return c ? `<div style="margin-top:14px;">${potdBars(c.vals, c.line, c.side)}
       <div class="note" style="margin-top:4px;">${c.label || ""}</div>
       ${t.player ? `<div style="margin-top:8px;"><button class="btn" onclick="openGameLog('${t.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>` : ""; })()}
     <div style="font-weight:700;margin:14px 0 6px;">Why this step</div>
@@ -1917,7 +1924,7 @@ function renderLadderChallenge() {
   document.getElementById("lad-attempts").innerHTML = `<thead><tr><th>Attempt</th><th>Dates</th><th>Days</th><th>Peak</th><th>Result</th></tr></thead><tbody>` +
     (att.length ? att.map(a => `<tr><td><strong>#${a.attempt}</strong></td><td class="team" style="font-size:12px;">${a.start || ""} → ${a.end}</td><td class="stat">${a.days}</td><td class="stat"><strong>${money(a.peak)}</strong></td><td><span class="pill ${a.result === "Completed" ? "over" : "under"}">${a.result}</span></td></tr>`).join("")
       : '<tr><td colspan="5" class="note" style="padding:18px;">No finished attempts yet.</td></tr>') + "</tbody>";
-  document.getElementById("lad-rules").textContent = `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`;
+  document.getElementById("lad-rules").textContent = `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day (never the Pick of the Day itself). Some days the step is 2-3 picks from different games instead, but only when that gives a better chance of finishing the ladder; every leg must win. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`;
 }
 function renderAltLadders() {
   const all = DATA.alt_ladders || [];
