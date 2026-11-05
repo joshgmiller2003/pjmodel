@@ -1405,7 +1405,7 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=()):
         day = 1 + sum(1 for x in lad["steps"] if x["attempt"] == lad["attempt"])
         stake = lad["bankroll"]
         step = {k: pick[k] for k in ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "price",
-                                     "model", "edge", "hits", "reasons", "p_win", "p_model", "ev", "score")
+                                     "model", "edge", "edge_pct", "hits", "chart", "reasons", "p_win", "p_model", "ev", "score")
                 if k in pick}
         for k in ("player", "team", "stat"):
             if k in pick:
