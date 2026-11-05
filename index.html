@@ -588,6 +588,7 @@ nav button:first-child { margin-left: -13px; }
     <div class="filters" id="pl-group"></div>
     <div class="filters">
       <select id="pl-month"></select>
+      <select id="pl-era" title="Model bet rules were tightened on Nov 5. Pick the current rules to see if the changes are working."><option value="all">All time</option><option value="new">Current rules (Nov 5 on)</option></select>
       <select id="pl-cat"><option value="all">All categories</option><option>Single-stat props</option><option>Combo props</option><option>Game lines</option><option>Multi-pick</option></select>
       <select id="pl-type"><option value="all">All bet types</option><option>Prop</option><option>Spread</option><option>Total</option><option>Moneyline</option></select>
       <select id="pl-stat"><option value="all">All stats</option></select>
@@ -610,6 +611,7 @@ nav button:first-child { margin-left: -13px; }
     <div id="rec-badges" style="margin-bottom:16px;"></div>
     <div class="filters" id="rec-source"></div>
     <div class="filters">
+      <select id="rec-era" title="Model bet rules were tightened on Nov 5. Pick the current rules to see if the changes are working."><option value="all">All time</option><option value="new">Current rules (Nov 5 on)</option></select>
       <select id="rec-status"><option value="all">All results</option><option>Won</option><option>Lost</option><option>Push</option><option>Pending</option></select>
       <select id="rec-month"></select>
       <select id="rec-market"><option value="all">All markets</option></select>
@@ -1237,6 +1239,9 @@ function clvBadge(r) {
   const txt = c.line ? (c.line > 0 ? "+" : "") + c.line + " pts" : (c.price > 0 ? "+" : "") + c.price + "%";
   return ` <span class="badge" title="Closing line value: ${r.open && r.open[0] != null ? "took " + r.open[0] + " (" + fmtPrice(r.open[1]) + ")" : "opened"} · ${c.final ? "closed" : "now"} ${r.close && r.close[0] != null ? r.close[0] + " (" + fmtPrice(r.close[1]) + ")" : ""}" style="background:${c.beat ? "rgba(46,204,113,0.14)" : "rgba(255,255,255,0.06)"};color:${c.beat ? "var(--good)" : "var(--muted)"};">CLV ${txt}</span>`;
 }
+// Model bet rules changed on Nov 5 (one side per player, real edges only, confidence saved, honest win chances).
+const RULES_SINCE = "2026-11-05";
+function eraOk(r, id) { const el = document.getElementById(id); return !el || el.value === "all" || r.date >= RULES_SINCE; }
 // ---------- Categories and "plays" (one per player per game) ----------
 // PR, PA, RA and PRA on the same player in the same game tend to all hit or all miss together, so counting
 // every one of them as its own bet makes the record swing far more than it should. A "play" is every model
@@ -1287,7 +1292,7 @@ async function renderRecCats() {
   const months = R.months && R.months.length ? R.months : [...new Set(recRows().map(r => r.date.slice(0, 7)))];
   let all = [];
   for (const m of months) all = all.concat(await plLoad(m));
-  const model = all.filter(r => r.source === "Model bet");
+  const model = all.filter(r => r.source === "Model bet" && eraOk(r, "rec-era"));
   const sign = v => (v > 0 ? "+" : "") + v;
   const cell = t => { const wl = t.w + t.l;
     return `<td>${t.w}-${t.l}${t.p ? "-" + t.p : ""}</td><td>${wl ? Math.round(100 * t.w / wl) + "%" : "–"}</td><td class="stat ${t.u > 0 ? "positive" : t.u < 0 ? "negative" : ""}">${t.n ? sign(t.u) + "u" : "–"}</td>`; };
@@ -1305,7 +1310,7 @@ async function renderRecCats() {
   const per = model.length && collapsePlays(model).length ? Math.round(10 * model.length / collapsePlays(model).length) / 10 : 0;
   document.getElementById("rec-cats-note").innerHTML = n ? `Model bets average <strong>${per}</strong> bets per player per game. Of the ${n} graded player-games with 2+ bets:
     <strong class="positive">${st.Swept} all won</strong>, <strong class="negative">${st["All lost"]} all lost</strong>, ${st.Split} split.
-    The <strong>Plays</strong> columns grade each one once, by its strongest bet (highest confidence, else biggest edge for its line), so they are the fairer record. Pick of the Day and the ladder are one bet a day and aren't affected.` : "";
+    ${document.getElementById("rec-era") && document.getElementById("rec-era").value === "new" ? "Showing only bets made under the current rules (Nov 5 on). " : "Bets before Nov 5 were made under looser rules; switch to <em>Current rules</em> to see how the fixes are doing. "}The <strong>Plays</strong> columns grade each one once, by its strongest bet (highest confidence, else biggest edge for its line), so they are the fairer record. Pick of the Day and the ladder are one bet a day and aren't affected.` : "";
 }
 
 var recSource = "all";
@@ -1341,10 +1346,10 @@ function renderBankroll() {
   if (!mSel.options.length) {
     mSel.innerHTML = `<option value="all">All months</option>` + months.map(m => `<option value="${m}">${new Date(m + "-15").toLocaleDateString([], {month: "long", year: "numeric"})}</option>`).join("");
     [...new Set(rows.map(r => r.market))].forEach(x => { const o = document.createElement("option"); o.value = x; o.textContent = x; mk.appendChild(o); });
-    ["rec-status", "rec-month", "rec-market"].forEach(id => document.getElementById(id).onchange = renderBankroll);
+    ["rec-status", "rec-month", "rec-market", "rec-era"].forEach(id => document.getElementById(id).onchange = renderBankroll);
   }
   const st = document.getElementById("rec-status").value, mo = mSel.value, mt = mk.value;
-  const list = rows.filter(r => (recSource === "all" || r.source === recSource) && (st === "all" || r.status === st) && (mo === "all" || r.date.startsWith(mo)) && (mt === "all" || r.market === mt));
+  const list = rows.filter(r => eraOk(r, "rec-era") && (recSource === "all" || r.source === recSource) && (st === "all" || r.status === st) && (mo === "all" || r.date.startsWith(mo)) && (mt === "all" || r.market === mt));
   window._recList = list;
   document.getElementById("rec-count").textContent = `${list.length} bet${list.length === 1 ? "" : "s"}`;
   // KPIs for the current view
@@ -1452,7 +1457,7 @@ async function renderPickLog() {
   const mSel = document.getElementById("pl-month");
   if (!mSel.options.length) {
     mSel.innerHTML = months.map(m => `<option value="${m}">${new Date(m + "-15").toLocaleDateString([], {month: "long", year: "numeric"})}</option>`).join("");
-    ["pl-month", "pl-cat", "pl-type", "pl-stat", "pl-result", "pl-dir"].forEach(id => document.getElementById(id).onchange = () => { PL.shown = 100; renderPickLog(); });
+    ["pl-month", "pl-era", "pl-cat", "pl-type", "pl-stat", "pl-result", "pl-dir"].forEach(id => document.getElementById(id).onchange = () => { PL.shown = 100; renderPickLog(); });
     document.getElementById("pl-q").oninput = () => { PL.shown = 100; plDraw(); };
     document.getElementById("pl-more").onclick = () => { PL.shown += 100; plDraw(); };
   }
@@ -1466,7 +1471,7 @@ function plFiltered() {
   const cat = document.getElementById("pl-cat").value;
   const t = document.getElementById("pl-type").value, st = document.getElementById("pl-stat").value, res = document.getElementById("pl-result").value,
         dir = document.getElementById("pl-dir").value, q = document.getElementById("pl-q").value.trim().toLowerCase();
-  return PL.rows.filter(r => (PL.src === "all" || r.source === PL.src) && (cat === "all" || betCat(r) === cat)
+  return PL.rows.filter(r => eraOk(r, "pl-era") && (PL.src === "all" || r.source === PL.src) && (cat === "all" || betCat(r) === cat)
     && (t === "all" || (r.type || r.market) === t) && (st === "all" || (r.stat || r.type) === st)
     && (res === "all" || r.status === res) && (dir === "all" || r.dir === dir)
     && (!q || [r.player, r.team, r.opp, r.pick, r.game].filter(Boolean).join(" ").toLowerCase().includes(q)));
