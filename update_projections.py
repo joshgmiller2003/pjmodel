@@ -1988,6 +1988,29 @@ def game_bets(g, label, date):
     return out
 
 
+def prop_qualifies(p):
+    """Does this prop's edge clear the bar to count as a model bet?"""
+    return bool(p.get("dk")) and abs(p["model"] - p["dk"]) >= BET_EDGE_PROP
+
+
+def select_prop_bets(props):
+    """One direction per player per game. Betting Over on one of his stats and Under on another (say PTS Under
+    but PRA Over) mostly cancels out, so each player keeps only the side his edges point to overall
+    (summed as a share of each line). Returns the set of (player, stat) that count as bets."""
+    by_player = {}
+    for p in props:
+        if prop_qualifies(p):
+            by_player.setdefault(norm(p["player"]), []).append(p)
+    keep = set()
+    for pl, ps in by_player.items():
+        lean = sum((p["model"] - p["dk"]) / p["dk"] for p in ps if p["dk"])
+        over = lean >= 0
+        for p in ps:
+            if (p["model"] > p["dk"]) == over:
+                keep.add((pl, p["stat"]))
+    return keep
+
+
 def pending_model_bets(props, games):
     """Every model pick on games that have not tipped yet, saved to the records as Pending right away.
     Same rule as grading: props with an edge of BET_EDGE_PROP+, spreads/totals with BET_EDGE_GAME+."""
@@ -1995,10 +2018,15 @@ def pending_model_bets(props, games):
     up = {r["id"]: r for r in games if r.get("status") == "Upcoming"}
     for r in up.values():
         rows += game_bets(r, f'{r["away"]} @ {r["home"]}', r["date"])
+    by_game = {}
     for p in props:
-        r = up.get(p["game"])
-        if r and p.get("dk") and abs(p["model"] - p["dk"]) >= BET_EDGE_PROP:
-            rows.append(prop_bet(p, f'{r["away"]} @ {r["home"]}', r["date"]))
+        if up.get(p["game"]):
+            by_game.setdefault(p["game"], []).append(p)
+    for gid, ps in by_game.items():
+        r, keep = up[gid], select_prop_bets(ps)
+        for p in ps:
+            if (norm(p["player"]), p["stat"]) in keep:
+                rows.append(prop_bet(p, f'{r["away"]} @ {r["home"]}', r["date"]))
     for b in rows:
         b.pop("_hp", None); b.pop("_hs", None)
     return rows
@@ -2047,11 +2075,13 @@ def settle(pending, plog, state, cal=None):
                 po = 1 - phi((dk["total"] - pg["model"]["total"]) / 17.0)
                 calib_record(cal, "Total", po if ov else 1 - po, "W" if (total > dk["total"]) == ov else "L",
                              dk.get("over_px" if ov else "under_px"))
+        keep = select_prop_bets(pending["props"].get(eid, []))
         for p in pending["props"].get(eid, []):
             row = names[eid].get(norm(p["player"]))
+            is_bet = (norm(p["player"]), p["stat"]) in keep
             if not row:
                 # did not play: the pick is void (refunded at the book), so it is closed out as a push
-                if abs(p["model"] - p["dk"]) >= BET_EDGE_PROP:
+                if is_bet:
                     bets.append({**prop_bet(p, label, lg["date"]), "result": "P", "actual": "Did not play (void)"})
                 continue
             actual = {"PTS": row["pts"], "REB": row["reb"], "AST": row["ast"], "3PM": row["tpm"],
@@ -2068,7 +2098,7 @@ def settle(pending, plog, state, cal=None):
                 lean_over = edge > 0
                 calib_record(cal, p["stat"], p["p_over"] if lean_over else 1 - p["p_over"],
                              "W" if (actual > p["dk"]) == lean_over else "L", p.get("over") if lean_over else p.get("under"))
-            if abs(edge) >= BET_EDGE_PROP:
+            if is_bet:
                 b = prop_bet(p, label, lg["date"])
                 res = "P" if actual == p["dk"] else ("W" if (actual > p["dk"]) == (b["dir"] == "Over") else "L")
                 bets.append({**b, "result": res, "actual": f'{actual:g} {p["stat"]}'})
