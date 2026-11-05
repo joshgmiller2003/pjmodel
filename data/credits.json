@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "used_today": 109,
+ "used_today": 128,
  "calls": [
   {
    "time": "11:16 AM",
@@ -166,13 +166,38 @@
    "time": "02:21 PM",
    "call": "alt lines ORL@PHX (off daily cap)",
    "cost": 4
+  },
+  {
+   "time": "06:41 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "06:41 PM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "06:41 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "06:41 PM",
+   "call": "props ORL@PHX",
+   "cost": 8
+  },
+  {
+   "time": "06:41 PM",
+   "call": "props MIA@GSW",
+   "cost": 8
   }
  ],
- "remaining": 18530,
+ "remaining": 18431,
  "history": [
   {
    "date": "2026-11-05",
-   "used": 109,
+   "used": 128,
    "limit": 250
   },
   {
@@ -184,7 +209,7 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 29,
- "month_used": 109,
+ "month_used": 128,
  "month_limit": 5500,
  "off_cap": 27
 }
