@@ -1757,6 +1757,12 @@ function resultPill(h, extra) {
   if (!h.result) return `<span class="pill pass ${extra || ""}">Pending</span>`;
   return `<span class="pill ${extra || ""} ${h.result === "W" ? "over" : h.result === "L" ? "under" : "pass"}">${h.result === "W" ? "Win" : h.result === "L" ? "Loss" : "Push"}</span>`;
 }
+function boardNote(what) {
+  const B = DATA.board, today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
+  if (!B || B.date !== today || !B.qualified) return "";
+  if (B.note) return `<div class="note" style="margin-top:8px;">${B.note}</div>`;
+  return `<div class="note" style="margin-top:8px;">Tonight ${B.qualified} bet${B.qualified === 1 ? "" : "s"} passed the filters and ${B.positive} ${B.positive === 1 ? "has" : "have"} positive expected value at honest win chances${B.positive ? "" : `, so there is no ${what} today. That's on purpose: no pick beats a losing pick`}.</div>`;
+}
 function renderPotd() {
   const hist = (DATA.potd_history || []).map(potdNorm);
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
@@ -1765,7 +1771,7 @@ function renderPotd() {
   const sign = v => (v > 0 ? "+" : "") + v;
   document.getElementById("potd-meta").textContent = p ? `${p.type} · ${p.game.replace("@", " @ ")} · ${p.time}` : "";
   if (!p) {
-    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or nothing cleared every filter. The pick is chosen at each update (1 AM and 11 AM ET).</div></div>`;
+    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or nothing cleared every filter. The pick has to be a winning bet on average at honest win chances; it is chosen at each update (1 AM, 11 AM and 6 PM ET).</div>${boardNote("Pick of the Day")}</div>`;
   } else {
     const g = (DATA.games || []).find(x => x.id === p.game);
     const T = potdTitle(p);
@@ -1935,7 +1941,7 @@ function renderLadderChallenge() {
     <div style="font-weight:700;margin:14px 0 6px;">Why this step</div>
     <ul class="potd-why">${[t.why_ladder].concat(t.reasons || []).filter(Boolean).map(r => `<li>${r}</li>`).join("")}</ul>
     <div style="margin-top:12px;"><button class="btn" id="lad-share">Share today's step</button></div>
-  </div>` : `<div class="card" style="height:100%;"><div style="font-weight:700;margin-bottom:6px;">No step yet today</div><div class="note">${nextPickText()}. If nothing on the board is safe enough with a positive expected value, it's a rest day and the bankroll waits.</div></div>`;
+  </div>` : `<div class="card" style="height:100%;"><div style="font-weight:700;margin-bottom:6px;">No step yet today</div><div class="note">${nextPickText()}. If nothing on the board is safe enough with a positive expected value, it's a rest day and the bankroll waits.</div>${boardNote("ladder step")}</div>`;
   const sb = document.getElementById("lad-share");
   if (sb && t) sb.onclick = () => ladderShare(`PJ Model Ladder · Attempt #${t.attempt}, Day ${t.day}: ${money(start)} → ${money(t.stake)}. Today's step: ${t.label} (${fmtPrice(t.price)}).`);
   // climb table
