@@ -1772,9 +1772,42 @@ function renderHotCold() {
 }
 
 // ---------- Pick of the Day ----------
-function potdBars(vals, line, side) {
+// ---------- Matchups: opponent under each bar, and head-to-head history vs tonight's opponent ----------
+function barLabel(x, y, text, hl) {
+  const on = hl && text && text.replace(/^vs |^@ /, "") === hl;
+  return `<text x="${x}" y="${y}" fill="${on ? "var(--gold)" : "var(--muted)"}" font-size="9" font-weight="${on ? 800 : 400}" text-anchor="middle">${text || ""}</text>`;
+}
+function oppOf(x) { return x && x.team ? (x.team === x.home ? x.away : x.home) : null; }
+function recentOpps(player, beforeDate, n) {
+  const rs = player ? playerRows(player) : null;
+  if (!rs) return null;
+  return rs.filter(r => (!beforeDate || r.date < beforeDate) && r.min >= 5).slice(0, n).map(r => r.opp).reverse();
+}
+function chartOpps(chart, player, date) {
+  if (chart && chart.opps && chart.opps.length === chart.vals.length) return chart.opps;
+  const o = recentOpps(player, date, chart ? chart.vals.length : 0);
+  return o && o.length === chart.vals.length ? o : null;
+}
+function h2hGames(player, opp) { return ((DATA.h2h || {})[`${player}|${opp}`]) || null; }
+function h2hHeader(player, opp, vals, hitTest) {
+  const n = vals.length, hit = vals.filter(hitTest).length, avg = Math.round(vals.reduce((t, v) => t + v, 0) / n * 10) / 10;
+  return `<div style="font-weight:700;font-size:13px;margin:14px 0 2px;">vs ${opp}: last ${n} meeting${n === 1 ? "" : "s"} <span class="team" style="font-weight:400;">· ${hit}/${n} · avg ${avg}</span></div>`;
+}
+function h2hBlock(p) {
+  const opp = oppOf(p), f = STAT_FN[p.stat];
+  if (!p.player || !opp || !f) return "";
+  const gs = h2hGames(p.player, opp);
+  if (!gs) return "";
+  if (!gs.length) return `<div class="note" style="margin-top:10px;">No games vs ${opp} in the last four seasons.</div>`;
+  const rows = gs.slice().reverse(), vals = rows.map(f);
+  const ok = v => p.side === "Under" ? v < p.line : v > p.line;
+  return h2hHeader(p.player, opp, vals, ok) + potdBars(vals, p.line, p.side || "Over",
+    rows.map(g => new Date(g.date + "T12:00").toLocaleDateString([], {month: "short", year: "2-digit"})), null, `Every game vs ${opp} since the 2023-24 season, oldest → newest`);
+}
+function potdBars(vals, line, side, labels, hl, caption) {
   if (!vals || !vals.length) return "";
-  const W = 420, H = 150, top = 16, bottom = 120;
+  const lab = labels && labels.length === vals.length;
+  const W = 420, H = lab ? 164 : 150, top = 16, bottom = 120;
   const hi = Math.max(line, 0, ...vals), lo = Math.min(line, 0, ...vals);
   const pad = (hi - lo) * 0.12 || 1, max = hi + pad, min = lo < 0 ? lo - pad : 0;
   const y = v => top + (bottom - top) * (max - v) / (max - min), bw = W / vals.length;
@@ -1784,11 +1817,12 @@ function potdBars(vals, line, side) {
     const hit = side === "Over" ? v > line : v < line, x = i * bw + bw * 0.18, w = bw * 0.64;
     const y1 = y(Math.max(v, 0)), y2 = y(Math.min(v, 0));
     c += `<rect x="${x}" y="${y1}" width="${w}" height="${Math.max(1, y2 - y1)}" rx="3" fill="${hit ? "var(--good)" : "var(--bad)"}" opacity="0.85"/>` +
-         `<text x="${x + w / 2}" y="${v >= 0 ? y1 - 4 : y2 + 11}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>`;
+         `<text x="${x + w / 2}" y="${v >= 0 ? y1 - 4 : y2 + 11}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>` +
+         (lab ? barLabel(x + w / 2, bottom + 13, labels[i], hl) : "");
   });
   c += `<line x1="0" x2="${W}" y1="${y(line)}" y2="${y(line)}" stroke="var(--gold)" stroke-dasharray="5 4" stroke-width="1.5"/>` +
        `<text x="${W - 2}" y="${H - 6}" fill="var(--gold)" font-size="10" text-anchor="end">— Line ${line}</text>` +
-       `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">Last ${vals.length} games, oldest → newest</text></svg>`;
+       `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">${caption || `Last ${vals.length} games, oldest → newest`}</text></svg>`;
   return c;
 }
 function hitTxt(h) { return h ? `${h[0]}/${h[1]}` : "–"; }
@@ -1858,8 +1892,9 @@ function renderPotd() {
           <ul class="potd-why">${(p.reasons || []).map(r => `<li>${r}</li>`).join("")}</ul>
           <div class="note">Picked ${p.picked_at || p.date}${p.candidates_considered ? ` · best of ${p.candidates_considered} qualifying bets` : ""}</div>
         </div>
-        <div>${potdBars(p.chart.vals, p.chart.line, p.chart.side)}
-          <div class="note" style="margin-top:4px;">${p.chart.label || ""}</div>
+        <div>${potdBars(p.chart.vals, p.chart.line, p.chart.side, (chartOpps(p.chart, p.player, p.date) || []).map(o => o || ""), oppOf(p))}
+          <div class="note" style="margin-top:4px;">${p.chart.label || ""}${oppOf(p) ? ` · games vs ${oppOf(p)} in gold` : ""}</div>
+          ${h2hBlock(p)}
           ${p.player ? `<div style="margin-top:10px;"><button class="btn" onclick="openGameLog('${p.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}
         </div>
       </div></div>`;
@@ -1999,10 +2034,11 @@ function renderLadderChallenge() {
       return `<div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.07);">
         <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;"><div style="font-weight:700;">Leg ${i + 1}: ${l.label} <span class="price">${fmtPrice(l.price)}</span>${bestPrice(l)}</div>${l.result ? resultPill(l) : ""}</div>
         <div class="team" style="font-size:12px;margin-top:2px;">${(l.game || "").replace("@", " @ ")} · ${l.time || ""} · ${l.p_win}% to win</div>
-        ${c ? potdBars(c.vals, c.line, c.side) + `<div class="note" style="margin-top:4px;">${c.label || ""}</div>` : ""}
+        ${c ? potdBars(c.vals, c.line, c.side, (chartOpps(c, l.player, t.date) || []).map(o => o || ""), oppOf(l)) + `<div class="note" style="margin-top:4px;">${c.label || ""}</div>` + h2hBlock(l) : ""}
         ${l.player ? `<div style="margin-top:6px;"><button class="btn" onclick="openGameLog('${l.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>`; }).join("") : ""}
-    ${t.legs ? "" : (() => { const c = ladderChart(t); return c ? `<div style="margin-top:14px;">${potdBars(c.vals, c.line, c.side)}
-      <div class="note" style="margin-top:4px;">${c.label || ""}</div>
+    ${t.legs ? "" : (() => { const c = ladderChart(t); return c ? `<div style="margin-top:14px;">${potdBars(c.vals, c.line, c.side, (chartOpps(c, t.player, t.date) || []).map(o => o || ""), oppOf(t))}
+      <div class="note" style="margin-top:4px;">${c.label || ""}${oppOf(t) ? ` · games vs ${oppOf(t)} in gold` : ""}</div>
+      ${h2hBlock(t)}
       ${t.player ? `<div style="margin-top:8px;"><button class="btn" onclick="openGameLog('${t.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>` : ""; })()}
     <div style="font-weight:700;margin:14px 0 6px;">Why this step</div>
     <ul class="potd-why">${[t.why_ladder].concat(t.reasons || []).filter(Boolean).map(r => `<li>${r}</li>`).join("")}</ul>
@@ -2035,9 +2071,10 @@ const ALT_ROLES = [["Safe", "var(--good)"], ["Middle", "var(--accent2)"], ["Long
 function altSplit(n) { return n >= 3 ? [0.5, 0.3, 0.2] : n === 2 ? [0.6, 0.4] : [1]; }
 function altDec(px) { return 1 + (px > 0 ? px / 100 : 100 / -px); }
 function altMoney(v) { return (v < 0 ? "-$" : "$") + Math.abs(v).toFixed(2).replace(/\.00$/, ""); }
-function altBars(vals, lines) {
+function altBars(vals, lines, labels, hl, caption) {
   if (!vals || !vals.length) return "";
-  const W = 420, H = 150, top = 16, bottom = 118;
+  const lab = labels && labels.length === vals.length;
+  const W = 420, H = lab ? 164 : 150, top = 16, bottom = 118;
   const max = Math.max(...vals, ...lines.map(l => l.line)) * 1.12 || 1;
   const y = v => top + (bottom - top) * (max - v) / max, bw = W / vals.length;
   let c = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;">`;
@@ -2045,10 +2082,11 @@ function altBars(vals, lines) {
     const n = lines.filter(l => v > l.line).length, x = i * bw + bw * 0.18, w = bw * 0.64;
     const col = n === 0 ? "var(--bad)" : lines[n - 1].color;
     c += `<rect x="${x}" y="${y(v)}" width="${w}" height="${Math.max(1, bottom - y(v))}" rx="3" fill="${col}" opacity="0.85"/>` +
-         `<text x="${x + w / 2}" y="${y(v) - 4}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>`;
+         `<text x="${x + w / 2}" y="${y(v) - 4}" fill="var(--ink)" font-size="10" text-anchor="middle">${Math.round(v * 10) / 10}</text>` +
+         (lab ? barLabel(x + w / 2, bottom + 13, labels[i], hl) : "");
   });
   lines.forEach(l => { c += `<line x1="0" x2="${W}" y1="${y(l.line)}" y2="${y(l.line)}" stroke="${l.color}" stroke-dasharray="5 4" stroke-width="1.4"/>`; });
-  c += `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">Last ${vals.length} games, oldest → newest · bar color = highest rung he cleared</text></svg>`;
+  c += `<text x="0" y="${H - 6}" fill="var(--muted)" font-size="10">${caption || `Last ${vals.length} games, oldest → newest · bar color = highest rung he cleared`}</text></svg>`;
   return c;
 }
 // Each ladder's rungs in the same colors as the cards: Safe green, Middle blue, Long shot gold.
@@ -2129,7 +2167,16 @@ function renderAltLadders() {
           <div class="team" style="font-size:11.5px;margin-top:3px;">${stat}</div>
           <div style="font-size:12.5px;margin-top:6px;">Bet <strong>${altMoney(r.stake)}</strong> → returns <strong class="positive">${altMoney(r.ret)}</strong></div>
           <div class="team" style="font-size:11.5px;margin-top:2px;">${Math.round(r.p)}% chance · cleared ${r.hit[0]} of last ${r.hit[1]}</div></div>`).join("")}</div>
-      <div style="padding:0 18px 6px;">${altBars((a.last10 || []).slice(-10), legs.map(r => ({line: r.line, color: r.role[1]})))}</div>
+      ${(() => { const gm = (a.game || "").split("@"), opp = gm.length === 2 ? (a.team === gm[0] ? gm[1] : gm[0]) : null;
+        const vals = (a.last10 || []).slice(-10), lines = legs.map(r => ({line: r.line, color: r.role[1]}));
+        let opps = a.last10_opps && a.last10_opps.length ? a.last10_opps.slice(-10) : recentOpps(a.player, DATA.alt_date, vals.length);
+        if (!opps || opps.length !== vals.length) opps = null;
+        const gs = opp ? h2hGames(a.player, opp) : null, f = STAT_FN[a.stat];
+        let h = "";
+        if (gs && gs.length && f) { const rows = gs.slice().reverse(), hv = rows.map(f);
+          h = `<div style="padding:0 18px;">${h2hHeader(a.player, opp, hv, v => legs.length && v > legs[0].line).replace("· ", "· Safe rung ")}${altBars(hv, lines, rows.map(g => new Date(g.date + "T12:00").toLocaleDateString([], {month: "short", year: "2-digit"})), null, `Every game vs ${opp} since the 2023-24 season, oldest → newest`)}</div>`; }
+        else if (gs && opp) h = `<div class="note" style="padding:0 18px 6px;">No games vs ${opp} in the last four seasons.</div>`;
+        return `<div style="padding:0 18px 6px;">${altBars(vals, lines, opps, opp)}${opp && opps ? `<div class="note">games vs ${opp} in gold</div>` : ""}</div>` + h; })()}
       <div class="alt-sub">What happens tonight</div>
       <table style="margin-bottom:4px;"><thead><tr><th>If he gets</th><th class="hide-sm">Rungs hit</th><th>Chance</th><th>You end up</th></tr></thead><tbody>
         ${bands.map(b => `<tr><td><strong>${b.txt}</strong> <span class="team" style="font-size:11px;">${a.stat}</span></td><td class="stat team hide-sm">${b.hits ? legs.slice(0, b.hits).map(r => r.role[0]).join(" + ") : "none"}</td>
@@ -2432,7 +2479,7 @@ renderHotCold();
     if (name) { $("pl-search").value = name + " (" + P.players[name].team + ")"; render(); }
   }
   fetch("player_games.json?v=" + Date.now(), {cache: "no-store"}).then(function (r) { if (!r.ok) throw 0; return r.json(); })
-    .then(function (j) { P = j; window.PLAYER_GAMES = j; if (typeof renderHotCold === "function") renderHotCold(); try { if (DATA && DATA.ladder) renderLadderChallenge(); } catch (e) {} if (Object.keys(j.players || {}).length) init(); else throw 0; })
+    .then(function (j) { P = j; window.PLAYER_GAMES = j; if (typeof renderHotCold === "function") renderHotCold(); try { if (DATA && DATA.ladder) renderLadderChallenge(); } catch (e) {} try { renderPotd(); } catch (e) {} if (Object.keys(j.players || {}).length) init(); else throw 0; })
     .catch(function () { $("pl-meta").textContent = "Player data appears after the first update run."; });
 })();
 </script>
