@@ -431,23 +431,95 @@ INJ_CAP = 0.20       # injury boost can raise a stat by at most +20%
 def refresh_positions(today):
     """G/F/C for every player from ESPN team rosters (free, no Odds API). Once a day; keeps the old map on failure."""
     cur = load(POS_PATH, {"pos": {}})
-    if cur.get("updated") == today.isoformat() and cur.get("pos"):
+    if cur.get("updated") == today.isoformat() and cur.get("pos") and cur.get("ids"):
         return cur["pos"]
-    pos, ok = dict(cur.get("pos", {})), 0
+    pos, ids, ok = dict(cur.get("pos", {})), dict(cur.get("ids", {})), 0
     for t in TEAM_NAMES:
         j = get(f"{ESPN}/teams/{ESPN_TEAM.get(t, t.lower())}/roster")
         if not j:
             continue
         ok += 1
         for a in j.get("athletes", []):
+            if a.get("id") and a.get("displayName"):
+                ids[a["displayName"]] = str(a["id"])          # ESPN athlete id, for head-to-head game logs
             p = ((a.get("position") or {}).get("abbreviation") or "")[:1]
             if p in ("G", "F", "C"):
                 pos[a["displayName"]] = p
     if ok:
         save(POS_PATH, {"note": "Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-                        "updated": today.isoformat(), "pos": dict(sorted(pos.items()))}, indent=0)
+                        "updated": today.isoformat(), "pos": dict(sorted(pos.items())), "ids": dict(sorted(ids.items()))}, indent=0)
     log(f"positions: {len(pos)} players ({ok}/30 rosters refreshed)")
     return pos
+
+
+H2H_PATH = ROOT / "data" / "h2h.json"
+ESPN_ABBR = {"GS": "GSW", "NO": "NOP", "NY": "NYK", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
+H2H_GAMES = 8
+
+
+def h2h_games(name, opp, ids, cache, today):
+    """A player's last H2H_GAMES games against `opp`, this season and up to three before it, from ESPN game logs
+    (free, no Odds API). Cached per player and opponent for the day."""
+    key = f"{name}|{opp}"
+    hit = cache.get(key)
+    if hit and hit.get("date") == today.isoformat():
+        return hit["games"]
+    aid = ids.get(name)
+    if not aid:
+        return (hit or {}).get("games", [])
+    end_year = int(SEASON[:4]) + 1
+    games = []
+    for yr in range(end_year, end_year - 4, -1):
+        j = get(f"https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/{aid}/gamelog", season=yr)
+        if not j:
+            continue
+        labels, ev = j.get("labels") or [], j.get("events") or {}
+        col = lambda st, lab: st[labels.index(lab)] if lab in labels and labels.index(lab) < len(st) else None
+        rows = []
+        for stype in j.get("seasonTypes") or []:
+            if "Preseason" in (stype.get("displayName") or ""):
+                continue
+            for cat in stype.get("categories") or []:
+                for e in cat.get("events") or []:
+                    meta = ev.get(str(e.get("eventId"))) or {}
+                    o = (meta.get("opponent") or {}).get("abbreviation", "")
+                    if ESPN_ABBR.get(o, o) != opp:
+                        continue
+                    st = e.get("stats") or []
+                    try:
+                        three = col(st, "3PT")
+                        gd = meta.get("gameDate") or ""
+                        try:
+                            gd = datetime.fromisoformat(gd.replace("Z", "+00:00")).astimezone(ET).date().isoformat()
+                        except ValueError:
+                            gd = gd[:10]
+                        rows.append({"date": gd, "season": stype.get("displayName", ""),
+                                     "home": meta.get("atVs") == "vs", "min": num(col(st, "MIN")),
+                                     "pts": num(col(st, "PTS")), "reb": num(col(st, "REB")), "ast": num(col(st, "AST")),
+                                     "stl": num(col(st, "STL")), "blk": num(col(st, "BLK")),
+                                     "tpm": num(three.split("-")[0]) if three else 0.0})
+                    except (ValueError, TypeError, AttributeError):
+                        continue
+        games += sorted(rows, key=lambda r: r["date"], reverse=True)
+        if len(games) >= H2H_GAMES:
+            break
+    games = [g for g in games if g["min"] and g["min"] > 0][:H2H_GAMES]
+    cache[key] = {"date": today.isoformat(), "games": games}
+    return games
+
+
+def build_h2h(picks, today):
+    """Head-to-head history for every player in today's Pick of the Day, ladder step and alt-line ladders."""
+    ids = load(POS_PATH, {}).get("ids", {})
+    cache = load(H2H_PATH, {})
+    out = {}
+    for name, opp in picks:
+        if name and opp and f"{name}|{opp}" not in out:
+            out[f"{name}|{opp}"] = h2h_games(name, opp, ids, cache, today)
+    keep = {k: v for k, v in cache.items() if v.get("date", "") >= (today - timedelta(days=7)).isoformat()}
+    save(H2H_PATH, keep, indent=0)
+    log(f"head-to-head: {len(out)} player matchups, {sum(1 for v in out.values() if v)} with past games")
+    return out
 
 
 def team_defense(plog, pos=None):
@@ -1181,7 +1253,8 @@ def pick_of_the_day(props, games, slate, idx, plog, injuries, today_iso, paused=
                       "edge_pct": rnd(epct * 100, 1), "label": f"{p['player']} {side} {p['dk']:g} {p['stat']}",
                       "best": p.get("best_over" if over else "best_under"),
                       "hits": {"l5": [a5, n5], "l10": [a10, n10], "l15": [a15, n15]},
-                      "chart": {"vals": vals[:10][::-1], "line": p["dk"], "side": side, "label": p["stat"]},
+                      "chart": {"vals": vals[:10][::-1], "line": p["dk"], "side": side, "label": p["stat"],
+                                "opps": [r.get("opp") for r in rs[:10]][::-1]},
                       "score": score_of(a5 / n5, a10 / n10, a15 / n15, epct / 0.25),
                       "reasons": [f"Model projects {p['model']:g} {p['stat']} vs a line of {p['dk']:g} ({'+' if p['edge'] > 0 else ''}{p['edge']:g}, {round(epct * 100)}% edge)",
                                   f"Went {side.lower()} the line in {a10} of his last {n10} games ({a5}/{n5} in the last 5)",
@@ -1841,7 +1914,7 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
             out.append({"player": player, "team": hist[-1]["t"], "game": g["id"] if g else "", "eid": eid, "time": g["time"] if g else "",
                         "stat": stat, "model": rnd(mean, 1), "model_raw": rnd(raw_mean, 1), "main_line": pr["dk"] if pr else None,
                         "avg5": rnd(sum(vals[:5]) / len(vals[:5]), 1), "avg15": rnd(sum(vals) / len(vals), 1),
-                        "last10": vals[:10][::-1], "rungs": ladder, "suggested": [r["line"] for r in pick],
+                        "last10": vals[:10][::-1], "last10_opps": [r.get("opp") for r in hist[::-1]][:10][::-1], "rungs": ladder, "suggested": [r["line"] for r in pick],
                         "best_ev": best["ev"], "value_rungs": len(value)})
     out.sort(key=lambda x: (-x["value_rungs"], -x["best_ev"]))
     return out[:24]
@@ -2538,6 +2611,22 @@ def main():
             alt_ladders, alt_date = built, t_iso
 
     alt_log = track_alt_ladders(alt_ladders, alt_date, slate, plog, now)
+    opp_of = lambda x: (x.get("away") if x.get("team") == x.get("home") else x.get("home")) if x.get("team") else None
+    h2h_for = []
+    potd_t = next((h for h in potd_hist if h["date"] == t_iso), None)
+    step_t = next((x for x in ladder.get("steps", []) if x["date"] == t_iso), None)
+    for x in ([potd_t] if potd_t else []) + ((step_t.get("legs") or [step_t]) if step_t else []):
+        if x.get("player"):
+            h2h_for.append((x["player"], opp_of(x)))
+    for a in alt_ladders:
+        tm, gm = a.get("team"), (a.get("game") or "").split("@")
+        if len(gm) == 2:
+            h2h_for.append((a["player"], gm[1] if tm == gm[0] else gm[0]))
+    try:
+        h2h = build_h2h(h2h_for, now.date())
+    except Exception as e:                                   # never let a free extra break the run
+        log(f"head-to-head failed: {e}")
+        h2h = {}
     log("potd: " + (potd_hist[0]["label"] + f" ({potd_hist[0]['type']})" if potd_hist and potd_hist[0]["date"] == t_iso else "none today"))
 
     # 4. fading learning rate
@@ -2576,7 +2665,7 @@ def main():
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
             "accuracy": state["accuracy"], "standings": standings,
-            "potd_history": potd_hist[:400], "potd_alts": potd_alts, "board": board,
+            "potd_history": potd_hist[:400], "potd_alts": potd_alts, "board": board, "h2h": h2h,
             "ladder": {**{k: v for k, v in ladder.items() if k != "steps"}, "steps": ladder["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
             "streaks": streaks,
