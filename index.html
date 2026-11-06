@@ -2074,7 +2074,7 @@ function renderAltRecord() {
   const tally = {}; rows.filter(r => r.result).forEach(r => { const h = altHits(r); if (!h) return;
     h.roles.forEach((role, i) => { const t = tally[role] = tally[role] || [0, 0]; t[1]++; if (i < h.k) t[0]++; }); });
   const rungCard = role => { const t = tally[role]; if (!t) return "";
-    return `<div class="kpi" style="border-top:3px solid ${RUNG_COLORS[role]};"><div class="l" style="color:${RUNG_COLORS[role]};">${role}</div><div class="v" style="color:${RUNG_COLORS[role]};">${t[0]}-${t[1] - t[0]}</div><div class="s">${Math.round(100 * t[0] / t[1])}% of ${role.toLowerCase()} rungs hit</div></div>`; };
+    return `<div class="kpi" style="border-top:3px solid ${RUNG_COLORS[role]};"><div class="l" style="color:${RUNG_COLORS[role]};">${role}</div><div class="v" style="color:${RUNG_COLORS[role]};">${Math.round(100 * t[0] / t[1])}%</div><div class="s">hit rate · ${t[0]} of ${t[1]} ${role.toLowerCase()} rungs</div></div>`; };
   el.innerHTML = rows.length ? `
     ${["Safe", "Middle", "Long shot"].map(rungCard).join("") || `<div class="kpi"><div class="l">Rungs</div><div class="v">–</div><div class="s">graded after games finish</div></div>`}
     <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${graded.length ? sign(u) : "–"}</div><div class="s">${graded.length ? `1u per ladder · ${w}-${g.length - w} finished up` : "1 unit per ladder"}</div></div>
