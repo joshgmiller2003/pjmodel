@@ -348,9 +348,12 @@ tbody tr:hover td { background: rgba(255,255,255,0.025); }
 .rung-row.sug td { background: rgba(92,200,255,0.08); }
 .alt-help { padding: 16px 18px; margin-bottom: 14px; }
 .rung-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; border: 2px solid; margin: 0 1px; box-sizing: border-box; }
-.alt-last-row { display: flex; flex-wrap: wrap; gap: 10px; font-size: 13px; }
+.alt-last-row { display: flex; flex-wrap: wrap; gap: 8px 10px; font-size: 13px; }
 .alt-last { display: inline-flex; flex-direction: column; align-items: center; gap: 3px; font-weight: 800; }
 .rung-dots { display: inline-flex; }
+#alt-record { grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(0, 2.4fr); }
+#alt-record .alt-last-kpi { grid-column: auto; }
+@media (max-width: 900px) { #alt-record { grid-template-columns: repeat(2, minmax(0, 1fr)); } #alt-record .alt-last-kpi { grid-column: span 2; } }
 .best-px { display: inline-block; font-size: 12px; font-weight: 700; color: var(--good); background: var(--good-soft); border-radius: 999px; padding: 2px 9px; margin-left: 8px; vertical-align: middle; letter-spacing: 0; }
 .recap { padding: 14px 18px; margin: 14px 0 4px; }
 .recap-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 10px; }
@@ -2070,13 +2073,13 @@ function renderAltRecord() {
   // how often each rung hits, across every graded ladder
   const tally = {}; rows.filter(r => r.result).forEach(r => { const h = altHits(r); if (!h) return;
     h.roles.forEach((role, i) => { const t = tally[role] = tally[role] || [0, 0]; t[1]++; if (i < h.k) t[0]++; }); });
-  const rungRates = ["Safe", "Middle", "Long shot"].filter(k => tally[k]).map(k => `<span style="color:${RUNG_COLORS[k]};font-weight:800;">${k} ${tally[k][0]}/${tally[k][1]}</span>`).join(" · ");
+  const rungCard = role => { const t = tally[role]; if (!t) return "";
+    return `<div class="kpi" style="border-top:3px solid ${RUNG_COLORS[role]};"><div class="l" style="color:${RUNG_COLORS[role]};">${role}</div><div class="v" style="color:${RUNG_COLORS[role]};">${t[0]}-${t[1] - t[0]}</div><div class="s">${Math.round(100 * t[0] / t[1])}% of ${role.toLowerCase()} rungs hit</div></div>`; };
   el.innerHTML = rows.length ? `
-    <div class="kpi"><div class="l">Alt ladder record</div><div class="v">${w}-${g.length - w}</div><div class="s">${g.length ? Math.round(100 * w / g.length) + "% finished up" : "graded after games finish"}</div></div>
-    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${graded.length ? sign(u) : "–"}</div><div class="s">${graded.length ? "1u per ladder · ROI " + sign(Math.round(1000 * u / graded.length) / 10) + "%" : "1 unit per ladder"}</div></div>
+    ${["Safe", "Middle", "Long shot"].map(rungCard).join("") || `<div class="kpi"><div class="l">Rungs</div><div class="v">–</div><div class="s">graded after games finish</div></div>`}
+    <div class="kpi"><div class="l">Units</div><div class="v ${u >= 0 ? "positive" : "negative"}">${graded.length ? sign(u) : "–"}</div><div class="s">${graded.length ? `1u per ladder · ${w}-${g.length - w} finished up` : "1 unit per ladder"}</div></div>
     <div class="kpi"><div class="l">Pending</div><div class="v">${rows.filter(r => !r.result).length}</div><div class="s">saved, waiting on tip-off</div></div>
-    <div class="kpi"><div class="l">Rung hit rate</div><div class="v" style="font-size:14px;line-height:1.5;">${rungRates || "–"}</div><div class="s">how often each rung cleared</div></div>
-    <div class="kpi" style="grid-column:span 2;"><div class="l">Last 10 ladders</div><div class="v alt-last-row">${last || "–"}</div><div class="s"><span style="color:var(--good);">●</span> Safe <span style="color:var(--accent2);">●</span> Middle <span style="color:var(--gold);">●</span> Long shot · filled = hit · W/L = finished up or down</div></div>`
+    <div class="kpi alt-last-kpi"><div class="l">Last 10 ladders</div><div class="v alt-last-row">${last || "–"}</div><div class="s"><span style="color:var(--good);">●</span> Safe <span style="color:var(--accent2);">●</span> Middle <span style="color:var(--gold);">●</span> Long shot · filled = hit · W/L = finished up or down</div></div>`
     : `<div class="note">Every suggested ladder is now saved and graded (1 unit split 50/30/20 across its rungs). The record starts with tonight's games.</div>`;
 }
 function renderAltLadders() {
