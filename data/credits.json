@@ -1,18 +1,98 @@
 {
  "date": "2026-11-06",
- "used_today": 1,
+ "used_today": 88,
  "calls": [
   {
    "time": "01:52 AM",
    "call": "championship odds",
    "cost": 1
+  },
+  {
+   "time": "11:40 AM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "11:40 AM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "11:40 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props WAS@ATL",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props BOS@CHA",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props PHI@CLE",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props UTA@DAL",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props OKC@MEM",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props TOR@MIL",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props MIN@NOP",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props POR@LAL",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "props SAS@SAC",
+   "cost": 8
+  },
+  {
+   "time": "11:40 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:40 AM",
+   "call": "alt lines MIN@NOP",
+   "cost": 4
+  },
+  {
+   "time": "11:40 AM",
+   "call": "alt lines POR@LAL",
+   "cost": 4
+  },
+  {
+   "time": "11:40 AM",
+   "call": "alt lines WAS@ATL",
+   "cost": 4
   }
  ],
- "remaining": 18103,
+ "remaining": 17837,
  "history": [
   {
    "date": "2026-11-06",
-   "used": 1,
+   "used": 88,
    "limit": 250
   },
   {
@@ -29,6 +109,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 28,
- "month_used": 129,
+ "month_used": 216,
  "month_limit": 5500
 }

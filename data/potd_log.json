@@ -2,6 +2,85 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-06",
+   "eid": "401909293",
+   "game": "MIN@NOP",
+   "time": "8:00 PM ET",
+   "home": "NOP",
+   "away": "MIN",
+   "type": "Prop",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "AST",
+   "side": "Over",
+   "line": 2.5,
+   "price": -134,
+   "model": 3.5,
+   "edge": 1.0,
+   "edge_pct": 40.0,
+   "label": "Jaden McDaniels Over 2.5 AST",
+   "best": null,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     8,
+     9
+    ],
+    "l15": [
+     8,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     3.0,
+     3.0,
+     4.0,
+     4.0,
+     7.0,
+     3.0,
+     3.0,
+     4.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "AST"
+   },
+   "score": 95.4,
+   "reasons": [
+    "Model projects 3.5 AST vs a line of 2.5 (+1, 40% edge)",
+    "Honest win chance 60% vs 57% implied by -134: +4.8% expected value (raw model said 76.3%)",
+    "Went over the line in 8 of his last 9 games (5/5 in the last 5)",
+    "Averaging 4.2 over the last 5 and 3.6 over the last 9",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 9)",
+    "Matchup vs NOP: -7.4% to his AST projection from their defense and pace (works against the over)",
+    "NOP ranks among the top-10 defenses for AST; he went over 2.5 in 2 of 2 games against that tier",
+    "Teammate injury boost: Anthony Edwards out, +4.2% to his AST projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 171,
+   "p_model": 67.9,
+   "p_win_raw": 76.3,
+   "p_win": 60.0,
+   "ev": 4.8,
+   "picked_at": "2026-11-06 11:40 AM ET",
+   "open_line": 2.5,
+   "open_price": -134,
+   "close_line": 2.5,
+   "close_price": -134,
+   "close_at": "2026-11-06 11:40 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-05",
    "eid": "401909937",
    "game": "MIA@GSW",

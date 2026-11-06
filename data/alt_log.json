@@ -2,6 +2,774 @@
  "note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
  "ladders": [
   {
+   "id": "2026-11-06|Ziaire Williams|PTS",
+   "date": "2026-11-06",
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 7.5,
+   "model": 8.8,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -215,
+     "p": 94.2,
+     "stake": 0.6
+    },
+    {
+     "line": 7.5,
+     "price": -106,
+     "p": 75.9,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Walker Kessler|PTS",
+   "date": "2026-11-06",
+   "player": "Walker Kessler",
+   "team": "LAL",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 12.5,
+   "model": 13.9,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -247,
+     "p": 76.6,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 178,
+     "p": 48.2,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 650,
+     "p": 21.1,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Terrence Shannon Jr.|PTS",
+   "date": "2026-11-06",
+   "player": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "stat": "PTS",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 11.5,
+   "model": 12.6,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -189,
+     "p": 74.3,
+     "stake": 0.5
+    },
+    {
+     "line": 11.5,
+     "price": -107,
+     "p": 58.1,
+     "stake": 0.3
+    },
+    {
+     "line": 14.5,
+     "price": 200,
+     "p": 34.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Sidy Cissoko|PTS",
+   "date": "2026-11-06",
+   "player": "Sidy Cissoko",
+   "team": "POR",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.3,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -108,
+     "p": 57.0,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 190,
+     "p": 37.8,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 371,
+     "p": 22.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Rudy Gobert|REB",
+   "date": "2026-11-06",
+   "player": "Rudy Gobert",
+   "team": "MIN",
+   "stat": "REB",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 11.5,
+   "model": 12.1,
+   "rungs": [
+    {
+     "line": 10.5,
+     "price": -176,
+     "p": 65.6,
+     "stake": 0.6
+    },
+    {
+     "line": 12.5,
+     "price": 130,
+     "p": 44.7,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Robert Williams|PTS",
+   "date": "2026-11-06",
+   "player": "Robert Williams",
+   "team": "POR",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.9,
+   "rungs": [
+    {
+     "line": 6.5,
+     "price": 109,
+     "p": 52.4,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 138,
+     "p": 46.4,
+     "stake": 0.3
+    },
+    {
+     "line": 11.5,
+     "price": 554,
+     "p": 22.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Robert Williams|REB",
+   "date": "2026-11-06",
+   "player": "Robert Williams",
+   "team": "POR",
+   "stat": "REB",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.8,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -159,
+     "p": 70.3,
+     "stake": 0.6
+    },
+    {
+     "line": 7.5,
+     "price": 173,
+     "p": 39.7,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Quentin Grimes|PTS",
+   "date": "2026-11-06",
+   "player": "Quentin Grimes",
+   "team": "LAL",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 7.5,
+   "model": 7.5,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": 195,
+     "p": 37.4,
+     "stake": 0.6
+    },
+    {
+     "line": 14.5,
+     "price": 840,
+     "p": 13.9,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Onyeka Okongwu|REB",
+   "date": "2026-11-06",
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "stat": "REB",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 8.5,
+   "model": 9.7,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -172,
+     "p": 71.0,
+     "stake": 0.5
+    },
+    {
+     "line": 9.5,
+     "price": 147,
+     "p": 48.8,
+     "stake": 0.3
+    },
+    {
+     "line": 11.5,
+     "price": 347,
+     "p": 25.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Nickeil Alexander-Walker|3PM",
+   "date": "2026-11-06",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "stat": "3PM",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -194,
+     "p": 74.4,
+     "stake": 0.5
+    },
+    {
+     "line": 3.5,
+     "price": 122,
+     "p": 58.6,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 573,
+     "p": 21.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Nickeil Alexander-Walker|PTS",
+   "date": "2026-11-06",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "stat": "PTS",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 21.5,
+   "model": 22.3,
+   "rungs": [
+    {
+     "line": 21.5,
+     "price": -110,
+     "p": 54.2,
+     "stake": 0.5
+    },
+    {
+     "line": 24.5,
+     "price": 169,
+     "p": 40.3,
+     "stake": 0.3
+    },
+    {
+     "line": 29.5,
+     "price": 443,
+     "p": 19.5,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Matisse Thybulle|PTS",
+   "date": "2026-11-06",
+   "player": "Matisse Thybulle",
+   "team": "LAL",
+   "stat": "PTS",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.8,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -150,
+     "p": 62.6,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 103,
+     "p": 51.2,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 262,
+     "p": 30.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Kyshawn George|PTS",
+   "date": "2026-11-06",
+   "player": "Kyshawn George",
+   "team": "WAS",
+   "stat": "PTS",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 15.5,
+   "model": 17.5,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -131,
+     "p": 67.6,
+     "stake": 0.5
+    },
+    {
+     "line": 17.5,
+     "price": 148,
+     "p": 52.2,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 227,
+     "p": 39.5,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Jrue Holiday|REB",
+   "date": "2026-11-06",
+   "player": "Jrue Holiday",
+   "team": "POR",
+   "stat": "REB",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 4.5,
+   "model": 4.8,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -172,
+     "p": 73.1,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 120,
+     "p": 48.5,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 227,
+     "p": 33.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Jonathan Kuminga|AST",
+   "date": "2026-11-06",
+   "player": "Jonathan Kuminga",
+   "team": "MIN",
+   "stat": "AST",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.8,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 110,
+     "p": 55.6,
+     "stake": 0.6
+    },
+    {
+     "line": 4.5,
+     "price": 610,
+     "p": 18.7,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Jeremiah Fears|REB",
+   "date": "2026-11-06",
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "stat": "REB",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 4.5,
+   "model": 4.9,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -189,
+     "p": 72.6,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 111,
+     "p": 53.4,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 212,
+     "p": 36.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Jaden McDaniels|REB",
+   "date": "2026-11-06",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "REB",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.2,
+   "rungs": [
+    {
+     "line": 4.5,
+     "price": -225,
+     "p": 76.9,
+     "stake": 0.6
+    },
+    {
+     "line": 5.5,
+     "price": -121,
+     "p": 64.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Dyson Daniels|REB",
+   "date": "2026-11-06",
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "stat": "REB",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.5,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -234,
+     "p": 72.0,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 133,
+     "p": 47.0,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 221,
+     "p": 33.7,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Derik Queen|REB",
+   "date": "2026-11-06",
+   "player": "Derik Queen",
+   "team": "NOP",
+   "stat": "REB",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 7.5,
+   "model": 7.8,
+   "rungs": [
+    {
+     "line": 6.5,
+     "price": -149,
+     "p": 69.4,
+     "stake": 0.6
+    },
+    {
+     "line": 7.5,
+     "price": 110,
+     "p": 53.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Deni Avdija|AST",
+   "date": "2026-11-06",
+   "player": "Deni Avdija",
+   "team": "POR",
+   "stat": "AST",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.1,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -160,
+     "p": 68.9,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 116,
+     "p": 54.3,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 368,
+     "p": 28.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Dejounte Murray|PTS",
+   "date": "2026-11-06",
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "stat": "PTS",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 16.5,
+   "model": 17.5,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -200,
+     "p": 72.5,
+     "stake": 0.6
+    },
+    {
+     "line": 16.5,
+     "price": -124,
+     "p": 57.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Dejounte Murray|REB",
+   "date": "2026-11-06",
+   "player": "Dejounte Murray",
+   "team": "NOP",
+   "stat": "REB",
+   "game": "MIN@NOP",
+   "eid": "401909293",
+   "time": "8:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.3,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -131,
+     "p": 62.8,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 140,
+     "p": 43.6,
+     "stake": 0.3
+    },
+    {
+     "line": 7.5,
+     "price": 246,
+     "p": 31.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Damian Lillard|AST",
+   "date": "2026-11-06",
+   "player": "Damian Lillard",
+   "team": "POR",
+   "stat": "AST",
+   "game": "POR@LAL",
+   "eid": "401909294",
+   "time": "10:00 PM ET",
+   "main_line": 4.5,
+   "model": 4.8,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -201,
+     "p": 70.7,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 109,
+     "p": 50.8,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 219,
+     "p": 33.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
+   "id": "2026-11-06|Anthony Davis|PTS",
+   "date": "2026-11-06",
+   "player": "Anthony Davis",
+   "team": "WAS",
+   "stat": "PTS",
+   "game": "WAS@ATL",
+   "eid": "401909287",
+   "time": "7:00 PM ET",
+   "main_line": 22.5,
+   "model": 23.7,
+   "rungs": [
+    {
+     "line": 19.5,
+     "price": -197,
+     "p": 69.1,
+     "stake": 0.5
+    },
+    {
+     "line": 24.5,
+     "price": 142,
+     "p": 48.8,
+     "stake": 0.3
+    },
+    {
+     "line": 29.5,
+     "price": 380,
+     "p": 20.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-06 11:40 AM ET",
+   "updated_at": "2026-11-06 11:40 AM ET"
+  },
+  {
    "id": "2026-11-05|Yaxel Lendeborg|PTS",
    "date": "2026-11-05",
    "player": "Yaxel Lendeborg",

@@ -6,6 +6,90 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Cam Spencer Over 15.5 PRA",
+   "game": "OKC@MEM",
+   "eid": "401909291",
+   "time": "8:00 PM ET",
+   "home": "MEM",
+   "away": "OKC",
+   "side": "Over",
+   "line": 15.5,
+   "price": -105,
+   "model": 21.6,
+   "edge": 6.1,
+   "edge_pct": 39.4,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     6,
+     8
+    ],
+    "l15": [
+     6,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     8.0,
+     14.0,
+     16.0,
+     18.0,
+     22.0,
+     28.0,
+     21.0,
+     22.0
+    ],
+    "line": 15.5,
+    "side": "Over",
+    "label": "PRA"
+   },
+   "reasons": [
+    "Model projects 21.6 PRA vs a line of 15.5 (+6.1, 39% edge)",
+    "Went over the line in 6 of his last 8 games (5/5 in the last 5)",
+    "Averaging 22.2 over the last 5 and 18.6 over the last 8",
+    "Minutes steady: 22 per game over the last 5 (20 over the last 8)",
+    "Matchup vs OKC: -2.2% to his PRA projection from their defense and pace (works against the over)",
+    "OKC ranks among the middle-10 defenses for PRA; he went over 15.5 in 1 of 2 games against that tier",
+    "Teammate injury boost: Isaiah Stewart, Scotty Pippen Jr. out, +11.9% to his PRA projection (extra minutes and usage)",
+    "Best price: -104 at FanDuel (DraftKings -105; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 60.6,
+   "p_model": 84.3,
+   "ev": 18.3,
+   "score": 89.7,
+   "best": [
+    -104,
+    "fanduel"
+   ],
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "stat": "PRA",
+   "date": "2026-11-06",
+   "attempt": 1,
+   "day": 3,
+   "stake": 34.41,
+   "to_win": 32.77,
+   "picked_at": "2026-11-06 11:40 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 60.6% to win, +18.3% expected value",
+   "open_line": 15.5,
+   "open_price": -105,
+   "close_line": 15.5,
+   "close_price": -105,
+   "close_at": "2026-11-06 11:40 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Andrew Wiggins Under 16.5 PRA",
    "game": "MIA@GSW",
    "eid": "401909937",
