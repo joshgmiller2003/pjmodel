@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "used_today": 88,
+ "used_today": 175,
  "calls": [
   {
    "time": "01:52 AM",
@@ -86,13 +86,93 @@
    "time": "11:40 AM",
    "call": "alt lines WAS@ATL",
    "cost": 4
+  },
+  {
+   "time": "12:47 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "12:47 PM",
+   "call": "game lines (off daily cap)",
+   "cost": 3
+  },
+  {
+   "time": "12:47 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props WAS@ATL (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props BOS@CHA (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props PHI@CLE (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props UTA@DAL (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props OKC@MEM (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props TOR@MIL (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props MIN@NOP (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props POR@LAL (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "props SAS@SAC (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "12:47 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "12:47 PM",
+   "call": "alt lines MIN@NOP (off daily cap)",
+   "cost": 4
+  },
+  {
+   "time": "12:47 PM",
+   "call": "alt lines POR@LAL (off daily cap)",
+   "cost": 4
+  },
+  {
+   "time": "12:47 PM",
+   "call": "alt lines WAS@ATL (off daily cap)",
+   "cost": 4
   }
  ],
- "remaining": 17837,
+ "remaining": 17748,
  "history": [
   {
    "date": "2026-11-06",
-   "used": 88,
+   "used": 175,
    "limit": 250
   },
   {
@@ -109,6 +189,7 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 28,
- "month_used": 216,
- "month_limit": 5500
+ "month_used": 303,
+ "month_limit": 5500,
+ "off_cap": 87
 }

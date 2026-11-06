@@ -14,7 +14,7 @@
    "away": "OKC",
    "side": "Over",
    "line": 15.5,
-   "price": -105,
+   "price": -107,
    "model": 21.6,
    "edge": 6.1,
    "edge_pct": 39.4,
@@ -45,7 +45,17 @@
     ],
     "line": 15.5,
     "side": "Over",
-    "label": "PRA"
+    "label": "PRA",
+    "opps": [
+     "UTA",
+     "GSW",
+     "SAC",
+     "UTA",
+     "POR",
+     "SAC",
+     "NOP",
+     "IND"
+    ]
    },
    "reasons": [
     "Model projects 21.6 PRA vs a line of 15.5 (+6.1, 39% edge)",
@@ -55,12 +65,12 @@
     "Matchup vs OKC: -2.2% to his PRA projection from their defense and pace (works against the over)",
     "OKC ranks among the middle-10 defenses for PRA; he went over 15.5 in 1 of 2 games against that tier",
     "Teammate injury boost: Isaiah Stewart, Scotty Pippen Jr. out, +11.9% to his PRA projection (extra minutes and usage)",
-    "Best price: -104 at FanDuel (DraftKings -105; the record is graded at DraftKings)",
+    "Best price: -104 at FanDuel (DraftKings -107; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "p_win": 60.6,
    "p_model": 84.3,
-   "ev": 18.3,
+   "ev": 17.2,
    "score": 89.7,
    "best": [
     -104,
@@ -73,17 +83,18 @@
    "attempt": 1,
    "day": 3,
    "stake": 34.41,
-   "to_win": 32.77,
-   "picked_at": "2026-11-06 11:40 AM ET",
-   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 60.6% to win, +18.3% expected value",
+   "to_win": 32.16,
+   "picked_at": "2026-11-06 12:47 PM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 60.6% to win, +17.2% expected value",
    "open_line": 15.5,
    "open_price": -105,
+   "first_picked_at": "2026-11-06 11:40 AM ET",
    "close_line": 15.5,
-   "close_price": -105,
-   "close_at": "2026-11-06 11:40 AM ET",
+   "close_price": -107,
+   "close_at": "2026-11-06 12:47 PM ET",
    "clv": {
     "line": 0.0,
-    "price": 0.0,
+    "price": 0.5,
     "beat": false,
     "final": false
    }
