@@ -83,7 +83,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-05 10:16 PM ET"
+   "locked_at": "2026-11-05 10:16 PM ET",
+   "result": "W",
+   "actual": "30 PA",
+   "units": 0.92,
+   "graded_at": "2026-11-06 01:52 AM ET"
   },
   {
    "date": "2026-11-04",

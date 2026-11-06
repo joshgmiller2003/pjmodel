@@ -1,200 +1,20 @@
 {
- "date": "2026-11-05",
- "used_today": 128,
+ "date": "2026-11-06",
+ "used_today": 1,
  "calls": [
   {
-   "time": "11:16 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:16 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:16 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:16 AM",
-   "call": "props ORL@PHX",
-   "cost": 8
-  },
-  {
-   "time": "11:16 AM",
-   "call": "props MIA@GSW",
-   "cost": 8
-  },
-  {
-   "time": "11:16 AM",
+   "time": "01:52 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "11:16 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:16 AM",
-   "call": "alt lines MIA@GSW",
-   "cost": 4
-  },
-  {
-   "time": "11:16 AM",
-   "call": "alt lines ORL@PHX",
-   "cost": 4
-  },
-  {
-   "time": "11:27 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:27 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:27 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:27 AM",
-   "call": "props ORL@PHX",
-   "cost": 8
-  },
-  {
-   "time": "11:27 AM",
-   "call": "props MIA@GSW",
-   "cost": 8
-  },
-  {
-   "time": "11:27 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:27 AM",
-   "call": "alt lines MIA@GSW",
-   "cost": 4
-  },
-  {
-   "time": "11:27 AM",
-   "call": "alt lines ORL@PHX",
-   "cost": 4
-  },
-  {
-   "time": "12:01 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "12:01 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "12:01 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "12:01 PM",
-   "call": "props ORL@PHX",
-   "cost": 8
-  },
-  {
-   "time": "12:01 PM",
-   "call": "props MIA@GSW",
-   "cost": 8
-  },
-  {
-   "time": "12:01 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "12:01 PM",
-   "call": "alt lines MIA@GSW",
-   "cost": 4
-  },
-  {
-   "time": "12:01 PM",
-   "call": "alt lines ORL@PHX",
-   "cost": 4
-  },
-  {
-   "time": "02:21 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "02:21 PM",
-   "call": "game lines (off daily cap)",
-   "cost": 3
-  },
-  {
-   "time": "02:21 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "02:21 PM",
-   "call": "props ORL@PHX (off daily cap)",
-   "cost": 8
-  },
-  {
-   "time": "02:21 PM",
-   "call": "props MIA@GSW (off daily cap)",
-   "cost": 8
-  },
-  {
-   "time": "02:21 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "02:21 PM",
-   "call": "alt lines MIA@GSW (off daily cap)",
-   "cost": 4
-  },
-  {
-   "time": "02:21 PM",
-   "call": "alt lines ORL@PHX (off daily cap)",
-   "cost": 4
-  },
-  {
-   "time": "06:41 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:41 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:41 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:41 PM",
-   "call": "props ORL@PHX",
-   "cost": 8
-  },
-  {
-   "time": "06:41 PM",
-   "call": "props MIA@GSW",
-   "cost": 8
   }
  ],
- "remaining": 18431,
+ "remaining": 18103,
  "history": [
+  {
+   "date": "2026-11-06",
+   "used": 1,
+   "limit": 250
+  },
   {
    "date": "2026-11-05",
    "used": 128,
@@ -208,8 +28,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 29,
- "month_used": 128,
- "month_limit": 5500,
- "off_cap": 27
+ "days_to_reset": 28,
+ "month_used": 129,
+ "month_limit": 5500
 }
