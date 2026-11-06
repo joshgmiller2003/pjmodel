@@ -1946,7 +1946,8 @@ def alt_row(x):
             "actual": x.get("actual"), "units": x.get("units"),
             "why": " | ".join(f"{n}: {math.ceil(r['line'])}+ {x['stat']} at {fmt_px(r['price'])}, {round(r['stake'] * 100)}% of the stake, our chance {r['p']:g}%"
                               for n, r in zip(names, x["rungs"])),
-            "picked_at": x.get("saved_at"), "graded_at": x.get("graded_at")}
+            "picked_at": x.get("saved_at"), "graded_at": x.get("graded_at"),
+            "rungs_n": len(x["rungs"]), "rungs_hit": x.get("hit")}
 
 
 def ledger_rows(settled_bets, potd_hist, ladder, pending_bets=(), alt_log=()):
