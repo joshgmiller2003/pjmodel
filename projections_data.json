@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T01:29:16Z",
+ "generated_at": "2026-11-07T02:18:55Z",
  "season": "2026-27",
  "games": [
   {
@@ -33,8 +33,8 @@
    "total_edge": -2.4,
    "note": "Model ATL -3.1, total 225.1; leans WAS vs the market spread.",
    "score": {
-    "away": 74,
-    "home": 84
+    "away": 132,
+    "home": 137
    }
   },
   {
@@ -68,8 +68,8 @@
    "total_edge": 13.1,
    "note": "Model CHA +2.1, total 220.6; leans CHA vs the market spread.",
    "score": {
-    "away": 78,
-    "home": 45
+    "away": 118,
+    "home": 76
    }
   },
   {
@@ -103,8 +103,8 @@
    "total_edge": -5.1,
    "note": "Model CLE -1.3, total 226.4; leans CLE vs the market spread.",
    "score": {
-    "away": 41,
-    "home": 48
+    "away": 65,
+    "home": 73
    }
   },
   {
@@ -138,8 +138,8 @@
    "total_edge": 0.7,
    "note": "Model DAL -5.1, total 226.2; leans UTA vs the market spread.",
    "score": {
-    "away": 21,
-    "home": 19
+    "away": 57,
+    "home": 57
    }
   },
   {
@@ -173,8 +173,8 @@
    "total_edge": 1.1,
    "note": "Model MEM -4.7, total 225.6; leans MEM vs the market spread.",
    "score": {
-    "away": 30,
-    "home": 24
+    "away": 71,
+    "home": 49
    }
   },
   {
@@ -208,8 +208,8 @@
    "total_edge": 0.8,
    "note": "Model MIL +1.9, total 229.3; leans MIL vs the market spread.",
    "score": {
-    "away": 4,
-    "home": 15
+    "away": 51,
+    "home": 60
    }
   },
   {
@@ -243,8 +243,8 @@
    "total_edge": -0.3,
    "note": "Model NOP +0.1, total 230.2; leans NOP vs the market spread.",
    "score": {
-    "away": 25,
-    "home": 24
+    "away": 57,
+    "home": 51
    }
   },
   {
@@ -322,19 +322,19 @@
     "ml_away": 0.46
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+7.5",
+    "total": 228.5,
+    "ml_away": "-246",
+    "ml_home": "+203"
    },
    "status": "Upcoming",
    "rest": {
     "away": 2,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 8.8,
+   "total_edge": -1.3,
+   "note": "Model IND -1.3, total 227.2; leans IND vs the market spread."
   },
   {
    "id": "BKN@ATL",
@@ -430,19 +430,19 @@
     "ml_away": 0.31
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-6.5",
+    "total": 220.5,
+    "ml_away": "+199",
+    "ml_home": "-241"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -0.6,
+   "total_edge": 5.8,
+   "note": "Model GSW -5.9, total 226.3; leans ORL vs the market spread."
   },
   {
    "id": "HOU@PHX",
@@ -457,19 +457,19 @@
     "ml_away": 0.57
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+6.5",
+    "total": 222.5,
+    "ml_away": "-241",
+    "ml_home": "+199"
    },
    "status": "Upcoming",
    "rest": {
     "away": 2,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 4.3,
+   "total_edge": 5.9,
+   "note": "Model PHX +2.2, total 228.4; leans PHX vs the market spread."
   },
   {
    "id": "SAS@POR",
@@ -45374,7 +45374,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.419,
+   "p_over": 0.471,
    "dk": 5.5,
    "over": -102,
    "under": -130,
@@ -45397,8 +45397,8 @@
     ]
    },
    "conf": 21.0,
-   "win_raw": 49.9,
-   "win_chance": 50.1,
+   "win_raw": 46.7,
+   "win_chance": 51.1,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -45497,7 +45497,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.352,
+   "p_over": 0.41,
    "dk": 4.5,
    "over": 121,
    "under": -160,
@@ -45524,8 +45524,8 @@
     ]
    },
    "conf": 49.7,
-   "win_raw": 67.5,
-   "win_chance": 54.4,
+   "win_raw": 64.0,
+   "win_chance": 52.5,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -45682,7 +45682,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.377,
+   "p_over": 0.456,
    "dk": 2.5,
    "over": 103,
    "under": -135,
@@ -45709,8 +45709,8 @@
     ]
    },
    "conf": 28.9,
-   "win_raw": 57.4,
-   "win_chance": 51.5,
+   "win_raw": 52.6,
+   "win_chance": 48.6,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -45805,7 +45805,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.482,
+   "p_over": 0.5,
    "dk": 24.5,
    "over": -109,
    "under": -116,
@@ -45824,8 +45824,8 @@
     ]
    },
    "conf": 26.1,
-   "win_raw": 51.1,
-   "win_chance": 49.2,
+   "win_raw": 50.0,
+   "win_chance": 50.0,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -45862,7 +45862,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.592,
+   "p_over": 0.712,
    "dk": 19.5,
    "over": -125,
    "under": -102,
@@ -45885,8 +45885,8 @@
     ]
    },
    "conf": 84.9,
-   "win_raw": 70.5,
-   "win_chance": 56.4,
+   "win_raw": 77.7,
+   "win_chance": 60.2,
    "edge": 4.1,
    "side": "Over",
    "tiers": {
@@ -46101,7 +46101,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.578,
+   "p_over": 0.641,
    "dk": 13.5,
    "over": -127,
    "under": 100,
@@ -46124,8 +46124,8 @@
     ]
    },
    "conf": 60.6,
-   "win_raw": 59.7,
-   "win_chance": 51.6,
+   "win_raw": 63.5,
+   "win_chance": 52.2,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
@@ -46216,7 +46216,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.409,
+   "p_over": 0.452,
    "dk": 11.5,
    "over": -125,
    "under": -102,
@@ -46235,8 +46235,8 @@
     ]
    },
    "conf": 53.4,
-   "win_raw": 64.0,
-   "win_chance": 52.5,
+   "win_raw": 61.5,
+   "win_chance": 51.7,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -46387,7 +46387,7 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.612,
+   "p_over": 0.706,
    "dk": 8.5,
    "over": -110,
    "under": -116,
@@ -46414,8 +46414,8 @@
     ]
    },
    "conf": 68.4,
-   "win_raw": 56.7,
-   "win_chance": 51.1,
+   "win_raw": 62.4,
+   "win_chance": 51.7,
    "edge": 3.6,
    "side": "Over",
    "tiers": {
@@ -46510,7 +46510,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.534,
+   "p_over": 0.549,
    "dk": 30.5,
    "over": -114,
    "under": -116,
@@ -46529,8 +46529,8 @@
     ]
    },
    "conf": 44.5,
-   "win_raw": 57.0,
-   "win_chance": 51.3,
+   "win_raw": 57.9,
+   "win_chance": 51.6,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -46625,7 +46625,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.542,
+   "p_over": 0.662,
    "dk": 22.5,
    "over": -115,
    "under": -114,
@@ -46648,8 +46648,8 @@
     ]
    },
    "conf": 68.0,
-   "win_raw": 62.5,
-   "win_chance": 51.7,
+   "win_raw": 69.7,
+   "win_chance": 55.9,
    "edge": 3.6,
    "side": "Over",
    "tiers": {
@@ -46802,7 +46802,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.521,
+   "p_over": 0.587,
    "dk": 19.5,
    "over": -116,
    "under": -113,
@@ -46825,8 +46825,8 @@
     ]
    },
    "conf": 33.9,
-   "win_raw": 46.3,
-   "win_chance": 50.8,
+   "win_raw": 50.2,
+   "win_chance": 49.8,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -46863,7 +46863,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.357,
+   "p_over": 0.408,
    "dk": 16.5,
    "over": -109,
    "under": -120,
@@ -46886,8 +46886,8 @@
     ]
    },
    "conf": 71.4,
-   "win_raw": 72.9,
-   "win_chance": 57.9,
+   "win_raw": 69.8,
+   "win_chance": 56.0,
    "edge": -2.3,
    "side": "Under",
    "tiers": {
@@ -47044,7 +47044,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.479,
+   "p_over": 0.5,
    "dk": 28.5,
    "over": -108,
    "under": -122,
@@ -47063,8 +47063,8 @@
     ]
    },
    "conf": 26.1,
-   "win_raw": 51.3,
-   "win_chance": 49.1,
+   "win_raw": 50.0,
+   "win_chance": 50.0,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -47101,7 +47101,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.559,
+   "p_over": 0.633,
    "dk": 27.5,
    "over": -110,
    "under": -119,
@@ -47120,8 +47120,8 @@
     ]
    },
    "conf": 50.9,
-   "win_raw": 58.5,
-   "win_chance": 51.6,
+   "win_raw": 63.0,
+   "win_chance": 52.0,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -47158,7 +47158,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.555,
+   "p_over": 0.689,
    "dk": 23.5,
    "over": -105,
    "under": -125,
@@ -47177,8 +47177,8 @@
     ]
    },
    "conf": 77.0,
-   "win_raw": 68.3,
-   "win_chance": 55.0,
+   "win_raw": 76.3,
+   "win_chance": 60.0,
    "edge": 3.9,
    "side": "Over",
    "tiers": {
@@ -47453,7 +47453,7 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.559,
+   "p_over": 0.677,
    "dk": 14.5,
    "over": -126,
    "under": -104,
@@ -47476,8 +47476,8 @@
     ]
    },
    "conf": 76.3,
-   "win_raw": 58.5,
-   "win_chance": 51.6,
+   "win_raw": 65.6,
+   "win_chance": 53.4,
    "edge": 4.0,
    "side": "Over",
    "tiers": {
@@ -47570,7 +47570,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.323,
+   "p_over": 0.367,
    "dk": 14.5,
    "over": -115,
    "under": -115,
@@ -47597,8 +47597,8 @@
     ]
    },
    "conf": 72.5,
-   "win_raw": 69.2,
-   "win_chance": 55.6,
+   "win_raw": 66.6,
+   "win_chance": 53.9,
    "edge": -2.8,
    "side": "Under",
    "tiers": {
@@ -47749,7 +47749,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.528,
+   "p_over": 0.546,
    "dk": 34.5,
    "over": -109,
    "under": -121,
@@ -47768,8 +47768,8 @@
     ]
    },
    "conf": 43.6,
-   "win_raw": 56.7,
-   "win_chance": 51.1,
+   "win_raw": 57.8,
+   "win_chance": 51.6,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -47806,7 +47806,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.561,
+   "p_over": 0.632,
    "dk": 32.5,
    "over": -123,
    "under": -107,
@@ -47829,8 +47829,8 @@
     ]
    },
    "conf": 58.6,
-   "win_raw": 63.7,
-   "win_chance": 52.3,
+   "win_raw": 67.9,
+   "win_chance": 54.7,
    "edge": 3.5,
    "side": "Over",
    "tiers": {
@@ -47983,7 +47983,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.557,
+   "p_over": 0.682,
    "dk": 25.5,
    "over": -117,
    "under": -113,
@@ -48006,8 +48006,8 @@
     ]
    },
    "conf": 77.4,
-   "win_raw": 68.4,
-   "win_chance": 55.1,
+   "win_raw": 75.9,
+   "win_chance": 59.9,
    "edge": 4.3,
    "side": "Over",
    "tiers": {
@@ -48164,7 +48164,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.346,
+   "p_over": 0.396,
    "dk": 18.5,
    "over": -122,
    "under": -108,
@@ -48191,8 +48191,8 @@
     ]
    },
    "conf": 71.7,
-   "win_raw": 73.5,
-   "win_chance": 58.4,
+   "win_raw": 70.5,
+   "win_chance": 56.4,
    "edge": -2.6,
    "side": "Under",
    "tiers": {
@@ -48229,7 +48229,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.651,
+   "p_over": 0.715,
    "dk": 12.5,
    "over": -137,
    "under": 104,
@@ -48252,8 +48252,8 @@
     ]
    },
    "conf": 80.2,
-   "win_raw": 74.1,
-   "win_chance": 58.7,
+   "win_raw": 77.9,
+   "win_chance": 60.2,
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -48346,7 +48346,7 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.298,
+   "p_over": 0.458,
    "dk": 6.5,
    "over": 109,
    "under": -144,
@@ -48369,8 +48369,8 @@
     ]
    },
    "conf": 36.8,
-   "win_raw": 67.1,
-   "win_chance": 54.3,
+   "win_raw": 57.5,
+   "win_chance": 51.6,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -48824,7 +48824,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.66,
+   "p_over": 0.715,
    "dk": 2.5,
    "over": -157,
    "under": 119,
@@ -48847,8 +48847,8 @@
     ]
    },
    "conf": 86.9,
-   "win_raw": 69.6,
-   "win_chance": 55.8,
+   "win_raw": 72.9,
+   "win_chance": 58.0,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -48885,7 +48885,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.558,
+   "p_over": 0.629,
    "dk": 18.5,
    "over": -116,
    "under": -114,
@@ -48908,8 +48908,8 @@
     ]
    },
    "conf": 51.5,
-   "win_raw": 58.5,
-   "win_chance": 51.6,
+   "win_raw": 62.7,
+   "win_chance": 51.8,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -49313,7 +49313,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.34,
+   "p_over": 0.418,
    "dk": 6.5,
    "over": -116,
    "under": -114,
@@ -49336,8 +49336,8 @@
     ]
    },
    "conf": 51.6,
-   "win_raw": 68.2,
-   "win_chance": 54.9,
+   "win_raw": 63.5,
+   "win_chance": 52.2,
    "edge": -0.5,
    "side": "Under",
    "tiers": {
@@ -49374,7 +49374,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.518,
+   "p_over": 0.622,
    "dk": 5.5,
    "over": -106,
    "under": -124,
@@ -49397,8 +49397,8 @@
     ]
    },
    "conf": 54.2,
-   "win_raw": 56.1,
-   "win_chance": 50.7,
+   "win_raw": 62.3,
+   "win_chance": 51.7,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -49435,7 +49435,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.577,
+   "p_over": 0.599,
    "dk": 2.5,
    "over": -136,
    "under": 104,
@@ -49458,8 +49458,8 @@
     ]
    },
    "conf": 74.8,
-   "win_raw": 54.6,
-   "win_chance": 49.8,
+   "win_raw": 55.9,
+   "win_chance": 50.6,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -49496,7 +49496,7 @@
    "sched_notes": [
     "blowout risk (17.5-pt spread) -4%"
    ],
-   "p_over": 0.531,
+   "p_over": 0.62,
    "dk": 2.5,
    "over": -102,
    "under": -128,
@@ -49523,8 +49523,8 @@
     ]
    },
    "conf": 92.1,
-   "win_raw": 66.9,
-   "win_chance": 54.1,
+   "win_raw": 72.2,
+   "win_chance": 57.5,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -49733,7 +49733,7 @@
    "sched_notes": [
     "blowout minutes (17.5-pt spread) +3%"
    ],
-   "p_over": 0.507,
+   "p_over": 0.566,
    "dk": 1.5,
    "over": -141,
    "under": 107,
@@ -49760,8 +49760,8 @@
     ]
    },
    "conf": 62.3,
-   "win_raw": 41.8,
-   "win_chance": 48.4,
+   "win_raw": 45.4,
+   "win_chance": 50.2,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -50100,6 +50100,13 @@
    "status": "Out",
    "reason": "Right Hamstring",
    "game": "BOS@CHA"
+  },
+  {
+   "player": "Sam Merrill",
+   "team": "CLE",
+   "status": "Out",
+   "reason": "Right Elbow",
+   "game": "NYK@CLE"
   },
   {
    "player": "Jarrett Allen",
@@ -50564,7 +50571,7 @@
    "game": "WAS@OKC"
   }
  ],
- "injuries_updated": "11/06 08:29 PM ET",
+ "injuries_updated": "11/06 09:18 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 1.11,
@@ -58441,6 +58448,351 @@
      "model_total": 228.4,
      "dk_spread": "N/A",
      "dk_total": 0
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -2.8,
+     "model_total": 227.8,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 38.8,
+     "dk": 29.5,
+     "edge": 9.3
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 33.4,
+     "dk": 24.5,
+     "edge": 8.9
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 29.2,
+     "dk": 20.5,
+     "edge": 8.7
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PA",
+     "model": 34.6,
+     "dk": 26.5,
+     "edge": 8.1
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 23.5,
+     "edge": 7.8
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PRA",
+     "model": 33.0,
+     "dk": 25.5,
+     "edge": 7.5
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PA",
+     "model": 27.8,
+     "dk": 20.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PRA",
+     "model": 33.8,
+     "dk": 26.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PR",
+     "model": 27.2,
+     "dk": 20.5,
+     "edge": 6.7
+    },
+    {
+     "player": "Cedric Coward",
+     "stat": "PRA",
+     "model": 30.0,
+     "dk": 23.5,
+     "edge": 6.5
+    },
+    {
+     "player": "Cedric Coward",
+     "stat": "PR",
+     "model": 26.7,
+     "dk": 20.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PRA",
+     "model": 21.6,
+     "dk": 15.5,
+     "edge": 6.1
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PTS",
+     "model": 17.5,
+     "dk": 11.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PR",
+     "model": 21.4,
+     "dk": 15.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PA",
+     "model": 24.2,
+     "dk": 18.5,
+     "edge": 5.7
+    },
+    {
+     "player": "RJ Barrett",
+     "stat": "PRA",
+     "model": 31.8,
+     "dk": 37.5,
+     "edge": -5.7
+    },
+    {
+     "player": "Collin Murray-Boyles",
+     "stat": "PRA",
+     "model": 16.8,
+     "dk": 22.5,
+     "edge": -5.7
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PTS",
+     "model": 22.0,
+     "dk": 16.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PRA",
+     "model": 26.0,
+     "dk": 20.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PA",
+     "model": 18.8,
+     "dk": 13.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PRA",
+     "model": 22.8,
+     "dk": 17.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PTS",
+     "model": 21.7,
+     "dk": 16.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PRA",
+     "model": 25.6,
+     "dk": 20.5,
+     "edge": 5.1
+    },
+    {
+     "player": "RJ Barrett",
+     "stat": "PA",
+     "model": 25.4,
+     "dk": 30.5,
+     "edge": -5.1
+    },
+    {
+     "player": "Keyonte George",
+     "stat": "PTS",
+     "model": 25.5,
+     "dk": 20.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Keyonte George",
+     "stat": "PR",
+     "model": 29.5,
+     "dk": 24.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PA",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Jamal Shead",
+     "stat": "PTS",
+     "model": 5.6,
+     "dk": 10.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PR",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Damian Lillard",
+     "stat": "PRA",
+     "model": 33.4,
+     "dk": 28.5,
+     "edge": 4.9
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-06T21:18",
+   "games": [
+    {
+     "id": "WAS@ATL",
+     "matchup": "WAS @ ATL",
+     "model_spread": -3.1,
+     "model_total": 225.1,
+     "dk_spread": "-8.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "BOS@CHA",
+     "matchup": "BOS @ CHA",
+     "model_spread": 2.1,
+     "model_total": 220.6,
+     "dk_spread": "+10.5",
+     "dk_total": 207.5
+    },
+    {
+     "id": "PHI@CLE",
+     "matchup": "PHI @ CLE",
+     "model_spread": -1.3,
+     "model_total": 226.4,
+     "dk_spread": "+2.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "UTA@DAL",
+     "matchup": "UTA @ DAL",
+     "model_spread": -5.1,
+     "model_total": 226.2,
+     "dk_spread": "-6.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "OKC@MEM",
+     "matchup": "OKC @ MEM",
+     "model_spread": -4.7,
+     "model_total": 225.6,
+     "dk_spread": "+4.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "TOR@MIL",
+     "matchup": "TOR @ MIL",
+     "model_spread": 1.9,
+     "model_total": 229.3,
+     "dk_spread": "+4.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "MIN@NOP",
+     "matchup": "MIN @ NOP",
+     "model_spread": 0.1,
+     "model_total": 230.2,
+     "dk_spread": "+3.5",
+     "dk_total": 230.5
+    },
+    {
+     "id": "POR@LAL",
+     "matchup": "POR @ LAL",
+     "model_spread": -1.8,
+     "model_total": 230.5,
+     "dk_spread": "-3.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "SAS@SAC",
+     "matchup": "SAS @ SAC",
+     "model_spread": 3.3,
+     "model_total": 227.9,
+     "dk_spread": "+17.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "DEN@IND",
+     "matchup": "DEN @ IND",
+     "model_spread": -1.3,
+     "model_total": 227.2,
+     "dk_spread": "+7.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "BKN@ATL",
+     "matchup": "BKN @ ATL",
+     "model_spread": -4.6,
+     "model_total": 225.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "NYK@CLE",
+     "matchup": "NYK @ CLE",
+     "model_spread": -1.6,
+     "model_total": 226.3,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "WAS@OKC",
+     "matchup": "WAS @ OKC",
+     "model_spread": -2.6,
+     "model_total": 222.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "ORL@GSW",
+     "matchup": "ORL @ GSW",
+     "model_spread": -5.9,
+     "model_total": 226.3,
+     "dk_spread": "-6.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "HOU@PHX",
+     "matchup": "HOU @ PHX",
+     "model_spread": 2.2,
+     "model_total": 228.4,
+     "dk_spread": "+6.5",
+     "dk_total": 222.5
     },
     {
      "id": "SAS@POR",
@@ -82988,7 +83340,7 @@
     "model": 23.6,
     "edge": 4.1,
     "confidence": 84.9,
-    "win_chance": 56.4,
+    "win_chance": 60.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83040,7 +83392,7 @@
     "model": 15.7,
     "edge": 2.2,
     "confidence": 60.6,
-    "win_chance": 51.6,
+    "win_chance": 52.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83144,7 +83496,7 @@
     "model": 14.2,
     "edge": -2.3,
     "confidence": 71.4,
-    "win_chance": 57.9,
+    "win_chance": 56.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83222,7 +83574,7 @@
     "model": 18.5,
     "edge": 4.0,
     "confidence": 76.3,
-    "win_chance": 51.6,
+    "win_chance": 53.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83248,7 +83600,7 @@
     "model": 11.7,
     "edge": -2.8,
     "confidence": 72.5,
-    "win_chance": 55.6,
+    "win_chance": 53.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83300,7 +83652,7 @@
     "model": 15.9,
     "edge": -2.6,
     "confidence": 71.7,
-    "win_chance": 58.4,
+    "win_chance": 56.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -83326,7 +83678,7 @@
     "model": 14.8,
     "edge": 2.3,
     "confidence": 80.2,
-    "win_chance": 58.7,
+    "win_chance": 60.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86030,7 +86382,7 @@
     "model": 26.1,
     "edge": 3.6,
     "confidence": 68.0,
-    "win_chance": 51.7,
+    "win_chance": 55.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86056,7 +86408,7 @@
     "model": 21.2,
     "edge": 1.7,
     "confidence": 33.9,
-    "win_chance": 50.8,
+    "win_chance": 49.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86082,7 +86434,7 @@
     "model": 30.5,
     "edge": 3.0,
     "confidence": 50.9,
-    "win_chance": 51.6,
+    "win_chance": 52.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86108,7 +86460,7 @@
     "model": 27.4,
     "edge": 3.9,
     "confidence": 77.0,
-    "win_chance": 55.0,
+    "win_chance": 60.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86134,7 +86486,7 @@
     "model": 36.0,
     "edge": 3.5,
     "confidence": 58.6,
-    "win_chance": 52.3,
+    "win_chance": 54.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86160,7 +86512,7 @@
     "model": 29.8,
     "edge": 4.3,
     "confidence": 77.4,
-    "win_chance": 55.1,
+    "win_chance": 59.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -86186,7 +86538,7 @@
     "model": 20.3,
     "edge": 1.8,
     "confidence": 51.5,
-    "win_chance": 51.6,
+    "win_chance": 51.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
