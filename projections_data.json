@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T23:33:55Z",
+ "generated_at": "2026-11-07T01:29:16Z",
  "season": "2026-27",
  "games": [
   {
@@ -24,14 +24,18 @@
     "over_px": -112,
     "under_px": -108
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": -5.4,
    "total_edge": -2.4,
-   "note": "Model ATL -3.1, total 225.1; leans WAS vs the market spread."
+   "note": "Model ATL -3.1, total 225.1; leans WAS vs the market spread.",
+   "score": {
+    "away": 74,
+    "home": 84
+   }
   },
   {
    "id": "BOS@CHA",
@@ -55,14 +59,18 @@
     "over_px": -115,
     "under_px": -105
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 8.4,
    "total_edge": 13.1,
-   "note": "Model CHA +2.1, total 220.6; leans CHA vs the market spread."
+   "note": "Model CHA +2.1, total 220.6; leans CHA vs the market spread.",
+   "score": {
+    "away": 78,
+    "home": 45
+   }
   },
   {
    "id": "PHI@CLE",
@@ -86,14 +94,18 @@
     "over_px": -112,
     "under_px": -108
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 3.8,
    "total_edge": -5.1,
-   "note": "Model CLE -1.3, total 226.4; leans CLE vs the market spread."
+   "note": "Model CLE -1.3, total 226.4; leans CLE vs the market spread.",
+   "score": {
+    "away": 41,
+    "home": 48
+   }
   },
   {
    "id": "UTA@DAL",
@@ -117,14 +129,18 @@
     "over_px": -110,
     "under_px": -110
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": -1.4,
    "total_edge": 0.7,
-   "note": "Model DAL -5.1, total 226.2; leans UTA vs the market spread."
+   "note": "Model DAL -5.1, total 226.2; leans UTA vs the market spread.",
+   "score": {
+    "away": 21,
+    "home": 19
+   }
   },
   {
    "id": "OKC@MEM",
@@ -148,14 +164,18 @@
     "over_px": -105,
     "under_px": -115
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 9.2,
    "total_edge": 1.1,
-   "note": "Model MEM -4.7, total 225.6; leans MEM vs the market spread."
+   "note": "Model MEM -4.7, total 225.6; leans MEM vs the market spread.",
+   "score": {
+    "away": 30,
+    "home": 24
+   }
   },
   {
    "id": "TOR@MIL",
@@ -179,14 +199,18 @@
     "over_px": -113,
     "under_px": -107
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 2.6,
    "total_edge": 0.8,
-   "note": "Model MIL +1.9, total 229.3; leans MIL vs the market spread."
+   "note": "Model MIL +1.9, total 229.3; leans MIL vs the market spread.",
+   "score": {
+    "away": 4,
+    "home": 15
+   }
   },
   {
    "id": "MIN@NOP",
@@ -210,14 +234,18 @@
     "over_px": -112,
     "under_px": -108
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 3.4,
    "total_edge": -0.3,
-   "note": "Model NOP +0.1, total 230.2; leans NOP vs the market spread."
+   "note": "Model NOP +0.1, total 230.2; leans NOP vs the market spread.",
+   "score": {
+    "away": 25,
+    "home": 24
+   }
   },
   {
    "id": "POR@LAL",
@@ -45274,6 +45302,7 @@
    "matchup": -2.0,
    "injury": 0.3,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -45333,11 +45362,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "AST",
-   "model": 5.2,
-   "base": 5.9,
+   "model": 5.5,
+   "base": 6.2,
    "matchup": 0.2,
-   "injury": 1.3,
+   "injury": 6.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -45366,10 +45396,10 @@
      8
     ]
    },
-   "conf": 30.8,
+   "conf": 21.0,
    "win_raw": 49.9,
    "win_chance": 50.1,
-   "edge": -0.3,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -45455,11 +45485,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "AST",
-   "model": 3.9,
-   "base": 3.9,
+   "model": 4.2,
+   "base": 4.2,
    "matchup": -1.9,
-   "injury": 0.9,
+   "injury": 9.2,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -45492,10 +45523,10 @@
      7
     ]
    },
-   "conf": 61.7,
+   "conf": 49.7,
    "win_raw": 67.5,
    "win_chance": 54.4,
-   "edge": -0.6,
+   "edge": -0.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -45639,11 +45670,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "AST",
-   "model": 2.2,
-   "base": 2.4,
+   "model": 2.5,
+   "base": 2.7,
    "matchup": -1.9,
-   "injury": 1.7,
+   "injury": 11.4,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -45676,10 +45708,10 @@
      8
     ]
    },
-   "conf": 50.5,
+   "conf": 28.9,
    "win_raw": 57.4,
    "win_chance": 51.5,
-   "edge": -0.3,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -45694,66 +45726,6 @@
     "soft": [
      0,
      0
-    ]
-   }
-  },
-  {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "AST",
-   "model": 1.3,
-   "base": 1.3,
-   "matchup": 0.4,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.373,
-   "dk": 1.5,
-   "over": -107,
-   "under": -123,
-   "best_over": [
-    120,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     5,
-     8
-    ],
-    "l15": [
-     5,
-     8
-    ]
-   },
-   "conf": 55.3,
-   "win_raw": 62.6,
-   "win_chance": 51.8,
-   "edge": -0.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     1,
-     2
-    ],
-    "mid": [
-     3,
-     5
-    ],
-    "soft": [
-     1,
-     1
     ]
    }
   },
@@ -45821,11 +45793,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PTS",
-   "model": 24.1,
-   "base": 24.6,
+   "model": 24.5,
+   "base": 25.0,
    "matchup": -2.1,
-   "injury": 0.3,
+   "injury": 2.1,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -45850,10 +45823,10 @@
      8
     ]
    },
-   "conf": 29.1,
+   "conf": 26.1,
    "win_raw": 51.1,
    "win_chance": 49.2,
-   "edge": -0.4,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -45877,11 +45850,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PTS",
-   "model": 21.2,
-   "base": 21.5,
+   "model": 23.6,
+   "base": 23.9,
    "matchup": -2.1,
-   "injury": 1.7,
+   "injury": 13.3,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -45910,10 +45884,10 @@
      8
     ]
    },
-   "conf": 62.8,
+   "conf": 84.9,
    "win_raw": 70.5,
    "win_chance": 56.4,
-   "edge": 1.7,
+   "edge": 4.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -46115,11 +46089,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PTS",
-   "model": 14.7,
-   "base": 14.6,
+   "model": 15.7,
+   "base": 15.6,
    "matchup": 0.2,
-   "injury": 1.3,
+   "injury": 7.9,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -46148,75 +46123,15 @@
      8
     ]
    },
-   "conf": 47.3,
+   "conf": 60.6,
    "win_raw": 59.7,
    "win_chance": 51.6,
-   "edge": 1.2,
+   "edge": 2.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      4,
-     6
-    ],
-    "mid": [
-     1,
-     1
-    ],
-    "soft": [
-     0,
-     1
-    ]
-   }
-  },
-  {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "PTS",
-   "model": 13.6,
-   "base": 13.6,
-   "matchup": -0.1,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.552,
-   "dk": 12.5,
-   "over": 100,
-   "under": -127,
-   "best_under": [
-    -120,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     4,
-     8
-    ],
-    "l15": [
-     4,
-     8
-    ]
-   },
-   "conf": 47.5,
-   "win_raw": 53.1,
-   "win_chance": 48.9,
-   "edge": 1.1,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     3,
      6
     ],
     "mid": [
@@ -46289,11 +46204,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PTS",
-   "model": 9.6,
-   "base": 9.1,
+   "model": 10.5,
+   "base": 10.0,
    "matchup": -1.8,
-   "injury": 0.9,
+   "injury": 10.9,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -46318,10 +46234,10 @@
      7
     ]
    },
-   "conf": 67.5,
+   "conf": 53.4,
    "win_raw": 64.0,
    "win_chance": 52.5,
-   "edge": -1.9,
+   "edge": -1.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -46461,11 +46377,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PTS",
-   "model": 10.4,
-   "base": 11.0,
+   "model": 12.1,
+   "base": 12.7,
    "matchup": 0.2,
-   "injury": 3.5,
+   "injury": 20.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 0.0,
@@ -46496,10 +46413,10 @@
      8
     ]
    },
-   "conf": 63.6,
+   "conf": 68.4,
    "win_raw": 56.7,
    "win_chance": 51.1,
-   "edge": 1.9,
+   "edge": 3.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -46581,11 +46498,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PA",
-   "model": 31.4,
-   "base": 31.3,
+   "model": 31.8,
+   "base": 31.7,
    "matchup": -2.1,
-   "injury": 0.3,
+   "injury": 1.7,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -46610,10 +46528,10 @@
      8
     ]
    },
-   "conf": 42.1,
+   "conf": 44.5,
    "win_raw": 57.0,
    "win_chance": 51.3,
-   "edge": 0.9,
+   "edge": 1.3,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -46695,11 +46613,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PA",
-   "model": 23.4,
-   "base": 23.9,
+   "model": 26.1,
+   "base": 26.6,
    "matchup": -2.1,
-   "injury": 1.7,
+   "injury": 13.1,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -46728,10 +46647,10 @@
      8
     ]
    },
-   "conf": 46.4,
+   "conf": 68.0,
    "win_raw": 62.5,
    "win_chance": 51.7,
-   "edge": 0.9,
+   "edge": 3.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -46871,11 +46790,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PA",
-   "model": 19.9,
-   "base": 20.5,
+   "model": 21.2,
+   "base": 21.8,
    "matchup": 0.2,
-   "injury": 1.3,
+   "injury": 7.3,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -46904,10 +46824,10 @@
      8
     ]
    },
-   "conf": 21.9,
+   "conf": 33.9,
    "win_raw": 46.3,
    "win_chance": 50.8,
-   "edge": 0.4,
+   "edge": 1.7,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -46931,11 +46851,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PA",
-   "model": 12.9,
-   "base": 12.9,
+   "model": 14.2,
+   "base": 14.2,
    "matchup": -1.9,
-   "injury": 0.9,
+   "injury": 10.4,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -46964,10 +46885,10 @@
      7
     ]
    },
-   "conf": 85.6,
+   "conf": 71.4,
    "win_raw": 72.9,
    "win_chance": 57.9,
-   "edge": -3.6,
+   "edge": -2.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -47044,66 +46965,6 @@
    }
   },
   {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "PA",
-   "model": 14.9,
-   "base": 14.9,
-   "matchup": -0.0,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.566,
-   "dk": 13.5,
-   "over": -120,
-   "under": -110,
-   "best_over": [
-    -115,
-    "hardrockbet"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     4,
-     8
-    ],
-    "l15": [
-     4,
-     8
-    ]
-   },
-   "conf": 50.3,
-   "win_raw": 54.0,
-   "win_chance": 49.4,
-   "edge": 1.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     3,
-     5
-    ],
-    "mid": [
-     1,
-     3
-    ],
-    "soft": [
-     0,
-     0
-    ]
-   }
-  },
-  {
    "player": "Victor Wembanyama",
    "team": "SAS",
    "opp": "SAC",
@@ -47171,11 +47032,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PR",
-   "model": 28.0,
-   "base": 28.6,
+   "model": 28.5,
+   "base": 29.1,
    "matchup": -0.5,
-   "injury": 0.3,
+   "injury": 1.9,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -47200,10 +47062,10 @@
      8
     ]
    },
-   "conf": 29.3,
+   "conf": 26.1,
    "win_raw": 51.3,
    "win_chance": 49.1,
-   "edge": -0.5,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -47227,11 +47089,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PR",
-   "model": 28.8,
-   "base": 28.4,
+   "model": 30.5,
+   "base": 30.1,
    "matchup": -1.8,
-   "injury": 1.3,
+   "injury": 7.2,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -47256,10 +47119,10 @@
      8
     ]
    },
-   "conf": 39.8,
+   "conf": 50.9,
    "win_raw": 58.5,
    "win_chance": 51.6,
-   "edge": 1.3,
+   "edge": 3.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -47283,11 +47146,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PR",
-   "model": 24.6,
-   "base": 24.8,
+   "model": 27.4,
+   "base": 27.6,
    "matchup": -0.6,
-   "injury": 1.7,
+   "injury": 13.1,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -47312,10 +47176,10 @@
      8
     ]
    },
-   "conf": 55.5,
+   "conf": 77.0,
    "win_raw": 68.3,
    "win_chance": 55.0,
-   "edge": 1.1,
+   "edge": 3.9,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -47516,66 +47380,6 @@
    }
   },
   {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "PR",
-   "model": 18.0,
-   "base": 18.4,
-   "matchup": -1.1,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.572,
-   "dk": 16.5,
-   "over": -127,
-   "under": -103,
-   "best_over": [
-    -110,
-    "betparx"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     3,
-     8
-    ],
-    "l15": [
-     3,
-     8
-    ]
-   },
-   "conf": 40.1,
-   "win_raw": 49.3,
-   "win_chance": 50.5,
-   "edge": 1.5,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     2,
-     4
-    ],
-    "mid": [
-     1,
-     3
-    ],
-    "soft": [
-     0,
-     1
-    ]
-   }
-  },
-  {
    "player": "Devin Vassell",
    "team": "SAS",
    "opp": "SAC",
@@ -47639,11 +47443,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PR",
-   "model": 15.8,
-   "base": 16.8,
+   "model": 18.5,
+   "base": 19.5,
    "matchup": -1.4,
-   "injury": 3.5,
+   "injury": 20.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 0.0,
@@ -47670,10 +47475,10 @@
      8
     ]
    },
-   "conf": 47.4,
+   "conf": 76.3,
    "win_raw": 58.5,
    "win_chance": 51.6,
-   "edge": 1.3,
+   "edge": 4.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -47753,11 +47558,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PR",
-   "model": 10.7,
-   "base": 10.7,
+   "model": 11.7,
+   "base": 11.7,
    "matchup": -0.2,
-   "injury": 0.9,
+   "injury": 10.7,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -47790,10 +47596,10 @@
      7
     ]
    },
-   "conf": 82.7,
+   "conf": 72.5,
    "win_raw": 69.2,
    "win_chance": 55.6,
-   "edge": -3.8,
+   "edge": -2.8,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -47931,11 +47737,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PRA",
-   "model": 35.3,
-   "base": 35.3,
+   "model": 35.8,
+   "base": 35.8,
    "matchup": -0.8,
-   "injury": 0.3,
+   "injury": 1.6,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -47960,10 +47767,10 @@
      8
     ]
    },
-   "conf": 41.0,
+   "conf": 43.6,
    "win_raw": 56.7,
    "win_chance": 51.1,
-   "edge": 0.8,
+   "edge": 1.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -47987,11 +47794,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PRA",
-   "model": 34.1,
-   "base": 34.4,
+   "model": 36.0,
+   "base": 36.3,
    "matchup": -1.4,
-   "injury": 1.3,
+   "injury": 7.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -48020,10 +47828,10 @@
      8
     ]
    },
-   "conf": 48.0,
+   "conf": 58.6,
    "win_raw": 63.7,
    "win_chance": 52.3,
-   "edge": 1.6,
+   "edge": 3.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -48163,11 +47971,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PRA",
-   "model": 26.8,
-   "base": 27.2,
+   "model": 29.8,
+   "base": 30.2,
    "matchup": -0.7,
-   "injury": 1.7,
+   "injury": 13.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -48196,10 +48005,10 @@
      8
     ]
    },
-   "conf": 56.3,
+   "conf": 77.4,
    "win_raw": 68.4,
    "win_chance": 55.1,
-   "edge": 1.3,
+   "edge": 4.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -48343,11 +48152,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "PRA",
-   "model": 14.6,
-   "base": 14.6,
+   "model": 15.9,
+   "base": 15.9,
    "matchup": -0.7,
-   "injury": 0.9,
+   "injury": 10.3,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -48380,10 +48190,10 @@
      7
     ]
    },
-   "conf": 84.3,
+   "conf": 71.7,
    "win_raw": 73.5,
    "win_chance": 58.4,
-   "edge": -3.9,
+   "edge": -2.6,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -48402,76 +48212,17 @@
    }
   },
   {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "PRA",
-   "model": 19.7,
-   "base": 19.7,
-   "matchup": -1.0,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.557,
-   "dk": 18.5,
-   "over": -120,
-   "under": -110,
-   "best_over": [
-    -102,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     3,
-     8
-    ],
-    "l15": [
-     3,
-     8
-    ]
-   },
-   "conf": 35.4,
-   "win_raw": 48.4,
-   "win_chance": 51.1,
-   "edge": 1.2,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     3,
-     5
-    ],
-    "mid": [
-     0,
-     2
-    ],
-    "soft": [
-     0,
-     1
-    ]
-   }
-  },
-  {
    "player": "Domantas Sabonis",
    "team": "SAC",
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "REB",
-   "model": 14.1,
-   "base": 13.8,
+   "model": 14.8,
+   "base": 14.5,
    "matchup": -3.8,
-   "injury": 1.3,
+   "injury": 6.5,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -48500,10 +48251,10 @@
      8
     ]
    },
-   "conf": 70.1,
+   "conf": 80.2,
    "win_raw": 74.1,
    "win_chance": 58.7,
-   "edge": 1.6,
+   "edge": 2.3,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -48585,11 +48336,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "REB",
-   "model": 5.4,
-   "base": 5.8,
+   "model": 6.4,
+   "base": 6.8,
    "matchup": -4.3,
-   "injury": 3.5,
+   "injury": 20.0,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 0.0,
@@ -48616,10 +48368,10 @@
      8
     ]
    },
-   "conf": 64.5,
+   "conf": 36.8,
    "win_raw": 67.1,
    "win_chance": 54.3,
-   "edge": -1.1,
+   "edge": -0.1,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -48754,66 +48506,6 @@
     "soft": [
      0,
      2
-    ]
-   }
-  },
-  {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "REB",
-   "model": 4.4,
-   "base": 4.8,
-   "matchup": -3.8,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.449,
-   "dk": 4.5,
-   "over": -124,
-   "under": -106,
-   "best_over": [
-    -104,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     3,
-     8
-    ],
-    "l15": [
-     3,
-     8
-    ]
-   },
-   "conf": 25.0,
-   "win_raw": 48.1,
-   "win_chance": 51.4,
-   "edge": -0.1,
-   "side": "Under",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     2
-    ],
-    "mid": [
-     0,
-     2
-    ],
-    "soft": [
-     2,
-     4
     ]
    }
   },
@@ -49004,8 +48696,9 @@
    "model": 4.0,
    "base": 4.1,
    "matchup": 10.5,
-   "injury": 0.3,
+   "injury": 0.8,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49119,11 +48812,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "REB",
-   "model": 3.4,
-   "base": 3.3,
+   "model": 3.7,
+   "base": 3.6,
    "matchup": 10.7,
-   "injury": 1.7,
+   "injury": 11.9,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49155,7 +48849,7 @@
    "conf": 86.9,
    "win_raw": 69.6,
    "win_chance": 55.8,
-   "edge": 0.9,
+   "edge": 1.2,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -49179,11 +48873,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "RA",
-   "model": 19.3,
-   "base": 19.7,
+   "model": 20.3,
+   "base": 20.7,
    "matchup": -2.6,
-   "injury": 1.3,
+   "injury": 6.4,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49212,10 +48907,10 @@
      8
     ]
    },
-   "conf": 41.8,
+   "conf": 51.5,
    "win_raw": 58.5,
    "win_chance": 51.6,
-   "edge": 0.8,
+   "edge": 1.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -49486,8 +49181,9 @@
    "model": 11.3,
    "base": 10.8,
    "matchup": 2.4,
-   "injury": 0.3,
+   "injury": 0.5,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49605,11 +49301,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "RA",
-   "model": 5.5,
-   "base": 5.5,
+   "model": 6.0,
+   "base": 6.0,
    "matchup": 1.3,
-   "injury": 0.9,
+   "injury": 9.4,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -49638,10 +49335,10 @@
      7
     ]
    },
-   "conf": 65.4,
+   "conf": 51.6,
    "win_raw": 68.2,
    "win_chance": 54.9,
-   "edge": -1.0,
+   "edge": -0.5,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -49660,76 +49357,17 @@
    }
   },
   {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "RA",
-   "model": 6.1,
-   "base": 6.1,
-   "matchup": -2.9,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.428,
-   "dk": 6.5,
-   "over": -103,
-   "under": -128,
-   "best_over": [
-    110,
-    "hardrockbet"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     8
-    ],
-    "l15": [
-     5,
-     8
-    ]
-   },
-   "conf": 45.1,
-   "win_raw": 59.3,
-   "win_chance": 51.6,
-   "edge": -0.4,
-   "side": "Under",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     2
-    ],
-    "mid": [
-     4,
-     5
-    ],
-    "soft": [
-     0,
-     1
-    ]
-   }
-  },
-  {
    "player": "Zach LaVine",
    "team": "SAC",
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "RA",
-   "model": 5.6,
-   "base": 5.7,
+   "model": 6.2,
+   "base": 6.3,
    "matchup": 4.9,
-   "injury": 1.7,
+   "injury": 11.7,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49758,10 +49396,10 @@
      8
     ]
    },
-   "conf": 34.6,
+   "conf": 54.2,
    "win_raw": 56.1,
    "win_chance": 50.7,
-   "edge": 0.1,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -49785,11 +49423,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "3PM",
-   "model": 3.0,
-   "base": 3.0,
+   "model": 3.1,
+   "base": 3.1,
    "matchup": 1.9,
-   "injury": 0.3,
+   "injury": 5.2,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49818,10 +49457,10 @@
      8
     ]
    },
-   "conf": 67.6,
+   "conf": 74.8,
    "win_raw": 54.6,
    "win_chance": 49.8,
-   "edge": 0.5,
+   "edge": 0.6,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -49845,11 +49484,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "3PM",
-   "model": 2.8,
-   "base": 2.8,
+   "model": 3.2,
+   "base": 3.2,
    "matchup": 1.9,
-   "injury": 1.7,
+   "injury": 16.5,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": -4.0,
@@ -49882,10 +49522,10 @@
      8
     ]
    },
-   "conf": 68.7,
+   "conf": 92.1,
    "win_raw": 66.9,
    "win_chance": 54.1,
-   "edge": 0.3,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -50081,11 +49721,12 @@
    "opp": "SAS",
    "game": "SAS@SAC",
    "stat": "3PM",
-   "model": 1.7,
-   "base": 1.5,
+   "model": 1.9,
+   "base": 1.7,
    "matchup": 1.7,
-   "injury": 0.9,
+   "injury": 13.7,
    "inj_out": [
+    "De'Andre Hunter",
     "Keegan Murray"
    ],
    "sched": 3.0,
@@ -50118,10 +49759,10 @@
      7
     ]
    },
-   "conf": 41.3,
+   "conf": 62.3,
    "win_raw": 41.8,
    "win_chance": 48.4,
-   "edge": 0.2,
+   "edge": 0.4,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -50136,66 +49777,6 @@
     "soft": [
      1,
      1
-    ]
-   }
-  },
-  {
-   "player": "De'Andre Hunter",
-   "team": "SAC",
-   "opp": "SAS",
-   "game": "SAS@SAC",
-   "stat": "3PM",
-   "model": 1.9,
-   "base": 2.1,
-   "matchup": 0.1,
-   "injury": 3.2,
-   "inj_out": [
-    "Keegan Murray"
-   ],
-   "sched": -4.0,
-   "sched_notes": [
-    "blowout risk (17.5-pt spread) -4%"
-   ],
-   "p_over": 0.566,
-   "dk": 1.5,
-   "over": -138,
-   "under": 105,
-   "best_under": [
-    110,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     8
-    ],
-    "l15": [
-     5,
-     8
-    ]
-   },
-   "conf": 79.0,
-   "win_raw": 59.0,
-   "win_chance": 51.6,
-   "edge": 0.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     4,
-     6
-    ],
-    "mid": [
-     1,
-     2
-    ],
-    "soft": [
-     0,
-     0
     ]
    }
   },
@@ -50486,6 +50067,13 @@
    "game": "BKN@ATL"
   },
   {
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "status": "Day-To-Day",
+   "reason": "Right Groin",
+   "game": "BOS@CHA"
+  },
+  {
    "player": "Dennis Schroder",
    "team": "CHA",
    "status": "Out",
@@ -50514,24 +50102,17 @@
    "game": "BOS@CHA"
   },
   {
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "status": "Out",
+   "reason": "Right Knee",
+   "game": "NYK@CLE"
+  },
+  {
    "player": "Jaylon Tyson",
    "team": "CLE",
    "status": "Out",
    "reason": "Right Ankle",
-   "game": "NYK@CLE"
-  },
-  {
-   "player": "Peyton Watson",
-   "team": "CLE",
-   "status": "Day-To-Day",
-   "reason": "Right Hamstring",
-   "game": "NYK@CLE"
-  },
-  {
-   "player": "Jarrett Allen",
-   "team": "CLE",
-   "status": "Day-To-Day",
-   "reason": "Right Knee",
    "game": "NYK@CLE"
   },
   {
@@ -50560,13 +50141,6 @@
    "team": "DEN",
    "status": "Day-To-Day",
    "reason": "Back",
-   "game": "DEN@IND"
-  },
-  {
-   "player": "Spencer Jones",
-   "team": "DEN",
-   "status": "Out",
-   "reason": "Not Specified Hamstring",
    "game": "DEN@IND"
   },
   {
@@ -50822,17 +50396,17 @@
    "game": "PHI@CLE"
   },
   {
-   "player": "Jordan Goodwin",
-   "team": "PHX",
-   "status": "Day-To-Day",
-   "reason": "Left Calf",
-   "game": "HOU@PHX"
-  },
-  {
    "player": "Rasheer Fleming",
    "team": "PHX",
    "status": "Day-To-Day",
    "reason": "Left Ankle",
+   "game": "HOU@PHX"
+  },
+  {
+   "player": "Jordan Goodwin",
+   "team": "PHX",
+   "status": "Day-To-Day",
+   "reason": "Left Calf",
    "game": "HOU@PHX"
   },
   {
@@ -50866,7 +50440,7 @@
   {
    "player": "De'Andre Hunter",
    "team": "SAC",
-   "status": "Day-To-Day",
+   "status": "Out",
    "reason": "Illness",
    "game": "SAS@SAC"
   },
@@ -50906,31 +50480,17 @@
    "game": "SAS@POR"
   },
   {
-   "player": "Jakob Poeltl",
+   "player": "Scottie Barnes",
    "team": "TOR",
-   "status": "Day-To-Day",
-   "reason": "Left Shoulder",
+   "status": "Out",
+   "reason": "Left Groin",
    "game": "TOR@MIL"
   },
   {
    "player": "Immanuel Quickley",
    "team": "TOR",
-   "status": "Day-To-Day",
+   "status": "Out",
    "reason": "Right Hamstring",
-   "game": "TOR@MIL"
-  },
-  {
-   "player": "Scottie Barnes",
-   "team": "TOR",
-   "status": "Day-To-Day",
-   "reason": "Left Groin",
-   "game": "TOR@MIL"
-  },
-  {
-   "player": "Kyle Anderson",
-   "team": "TOR",
-   "status": "Day-To-Day",
-   "reason": "Illness",
    "game": "TOR@MIL"
   },
   {
@@ -51004,7 +50564,7 @@
    "game": "WAS@OKC"
   }
  ],
- "injuries_updated": "11/06 06:33 PM ET",
+ "injuries_updated": "11/06 08:29 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 1.11,
@@ -58416,6 +57976,351 @@
   },
   {
    "timestamp": "2026-11-06T18:33",
+   "games": [
+    {
+     "id": "WAS@ATL",
+     "matchup": "WAS @ ATL",
+     "model_spread": -3.1,
+     "model_total": 225.1,
+     "dk_spread": "-8.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "BOS@CHA",
+     "matchup": "BOS @ CHA",
+     "model_spread": 2.1,
+     "model_total": 220.6,
+     "dk_spread": "+10.5",
+     "dk_total": 207.5
+    },
+    {
+     "id": "PHI@CLE",
+     "matchup": "PHI @ CLE",
+     "model_spread": -1.3,
+     "model_total": 226.4,
+     "dk_spread": "+2.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "UTA@DAL",
+     "matchup": "UTA @ DAL",
+     "model_spread": -5.1,
+     "model_total": 226.2,
+     "dk_spread": "-6.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "OKC@MEM",
+     "matchup": "OKC @ MEM",
+     "model_spread": -4.7,
+     "model_total": 225.6,
+     "dk_spread": "+4.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "TOR@MIL",
+     "matchup": "TOR @ MIL",
+     "model_spread": 1.9,
+     "model_total": 229.3,
+     "dk_spread": "+4.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "MIN@NOP",
+     "matchup": "MIN @ NOP",
+     "model_spread": 0.1,
+     "model_total": 230.2,
+     "dk_spread": "+3.5",
+     "dk_total": 230.5
+    },
+    {
+     "id": "POR@LAL",
+     "matchup": "POR @ LAL",
+     "model_spread": -1.8,
+     "model_total": 230.5,
+     "dk_spread": "-3.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "SAS@SAC",
+     "matchup": "SAS @ SAC",
+     "model_spread": 3.3,
+     "model_total": 227.9,
+     "dk_spread": "+17.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "DEN@IND",
+     "matchup": "DEN @ IND",
+     "model_spread": -1.3,
+     "model_total": 227.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BKN@ATL",
+     "matchup": "BKN @ ATL",
+     "model_spread": -4.6,
+     "model_total": 225.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "NYK@CLE",
+     "matchup": "NYK @ CLE",
+     "model_spread": -1.6,
+     "model_total": 226.3,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "WAS@OKC",
+     "matchup": "WAS @ OKC",
+     "model_spread": -2.6,
+     "model_total": 222.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "ORL@GSW",
+     "matchup": "ORL @ GSW",
+     "model_spread": -5.9,
+     "model_total": 226.3,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "HOU@PHX",
+     "matchup": "HOU @ PHX",
+     "model_spread": 2.2,
+     "model_total": 228.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -2.8,
+     "model_total": 227.8,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Ty Jerome",
+     "stat": "PRA",
+     "model": 38.8,
+     "dk": 29.5,
+     "edge": 9.3
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PR",
+     "model": 33.4,
+     "dk": 24.5,
+     "edge": 8.9
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PTS",
+     "model": 29.2,
+     "dk": 20.5,
+     "edge": 8.7
+    },
+    {
+     "player": "Ty Jerome",
+     "stat": "PA",
+     "model": 34.6,
+     "dk": 26.5,
+     "edge": 8.1
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 23.5,
+     "edge": 7.8
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PRA",
+     "model": 33.0,
+     "dk": 25.5,
+     "edge": 7.5
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PA",
+     "model": 27.8,
+     "dk": 20.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PRA",
+     "model": 33.8,
+     "dk": 26.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PR",
+     "model": 27.2,
+     "dk": 20.5,
+     "edge": 6.7
+    },
+    {
+     "player": "Cedric Coward",
+     "stat": "PRA",
+     "model": 30.0,
+     "dk": 23.5,
+     "edge": 6.5
+    },
+    {
+     "player": "Cedric Coward",
+     "stat": "PR",
+     "model": 26.7,
+     "dk": 20.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PRA",
+     "model": 21.6,
+     "dk": 15.5,
+     "edge": 6.1
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PTS",
+     "model": 17.5,
+     "dk": 11.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PR",
+     "model": 21.4,
+     "dk": 15.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PA",
+     "model": 24.2,
+     "dk": 18.5,
+     "edge": 5.7
+    },
+    {
+     "player": "RJ Barrett",
+     "stat": "PRA",
+     "model": 31.8,
+     "dk": 37.5,
+     "edge": -5.7
+    },
+    {
+     "player": "Collin Murray-Boyles",
+     "stat": "PRA",
+     "model": 16.8,
+     "dk": 22.5,
+     "edge": -5.7
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PTS",
+     "model": 22.0,
+     "dk": 16.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PRA",
+     "model": 26.0,
+     "dk": 20.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PA",
+     "model": 18.8,
+     "dk": 13.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PRA",
+     "model": 22.8,
+     "dk": 17.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PTS",
+     "model": 21.7,
+     "dk": 16.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PRA",
+     "model": 25.6,
+     "dk": 20.5,
+     "edge": 5.1
+    },
+    {
+     "player": "RJ Barrett",
+     "stat": "PA",
+     "model": 25.4,
+     "dk": 30.5,
+     "edge": -5.1
+    },
+    {
+     "player": "Keyonte George",
+     "stat": "PTS",
+     "model": 25.5,
+     "dk": 20.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Keyonte George",
+     "stat": "PR",
+     "model": 29.5,
+     "dk": 24.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Grayson Allen",
+     "stat": "PA",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Jamal Shead",
+     "stat": "PTS",
+     "model": 5.6,
+     "dk": 10.5,
+     "edge": -4.9
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PR",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Damian Lillard",
+     "stat": "PRA",
+     "model": 33.4,
+     "dk": 28.5,
+     "edge": 4.9
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-06T20:29",
    "games": [
     {
      "id": "WAS@ATL",
@@ -70881,8 +70786,9 @@
     "line": 0.0,
     "price": 2.4,
     "beat": true,
-    "final": false
-   }
+    "final": true
+   },
+   "locked_at": "2026-11-06 08:29 PM ET"
   },
   {
    "date": "2026-11-05",
@@ -71521,8 +71427,8 @@
  ],
  "board": {
   "date": "2026-11-06",
-  "qualified": 165,
-  "positive": 100,
+  "qualified": 40,
+  "positive": 22,
   "top_win": 61.8,
   "note": null
  },
@@ -73214,8 +73120,9 @@
      "line": 0.0,
      "price": 0.0,
      "beat": false,
-     "final": false
-    }
+     "final": true
+    },
+    "locked_at": "2026-11-06 08:29 PM ET"
    },
    {
     "type": "Prop",
@@ -76718,7 +76625,7 @@
     "name": "Sharp",
     "desc": "Beat the closing line on 10 picks",
     "earned": null,
-    "progress": "0/10"
+    "progress": "1/10"
    }
   ]
  },
@@ -77365,22 +77272,22 @@
  },
  "clv": {
   "potd": {
-   "bets": 2,
-   "beat": 0,
+   "bets": 3,
+   "beat": 1,
    "avg_line": 0.0,
-   "avg_price": 0.0
+   "avg_price": 0.8
   },
   "ladder": {
-   "bets": 2,
+   "bets": 3,
    "beat": 0,
    "avg_line": 0.0,
    "avg_price": 0.0
   },
   "all": {
-   "bets": 4,
-   "beat": 0,
+   "bets": 6,
+   "beat": 1,
    "avg_line": 0.0,
-   "avg_price": 0.0
+   "avg_price": 0.4
   }
  },
  "credits": {
@@ -77389,7 +77296,7 @@
   "remaining": 17669,
   "allowed_now": 25,
   "skipped": [],
-  "slot": "pretip",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "12:47 PM",
@@ -77495,7 +77402,7 @@
   "history": [
    {
     "date": "2026-11-06",
-    "used": 175,
+    "used": 250,
     "limit": 250
    },
    {
@@ -77720,11 +77627,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 1028,
+     "bets": 1029,
      "won": 375,
      "lost": 337,
      "push": 17,
-     "pending": 299,
+     "pending": 300,
      "units": -18.97
     },
     "Alt Ladder": {
@@ -77754,11 +77661,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 1028,
+     "bets": 1029,
      "won": 375,
      "lost": 337,
      "push": 17,
-     "pending": 299,
+     "pending": 300,
      "units": -18.97
     },
     "Alt Ladder": {
@@ -77804,7 +77711,7 @@
      "line": 0.0,
      "price": 2.4,
      "beat": true,
-     "final": false
+     "final": true
     },
     "open": [
      2.5,
@@ -77852,7 +77759,7 @@
      "line": 0.0,
      "price": 0.0,
      "beat": false,
-     "final": false
+     "final": true
     },
     "open": [
      10.5,
@@ -83078,16 +82985,16 @@
     "dir": "Over",
     "line": 19.5,
     "price": -125,
-    "model": 21.2,
-    "edge": 1.7,
-    "confidence": 62.8,
+    "model": 23.6,
+    "edge": 4.1,
+    "confidence": 84.9,
     "win_chance": 56.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 21.2 vs DraftKings 19.5 (edge 1.7)"
+    "why": "Model 23.6 vs DraftKings 19.5 (edge 4.1)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Dylan Harper|PTS",
@@ -83130,16 +83037,16 @@
     "dir": "Over",
     "line": 13.5,
     "price": -127,
-    "model": 14.7,
-    "edge": 1.2,
-    "confidence": 47.3,
+    "model": 15.7,
+    "edge": 2.2,
+    "confidence": 60.6,
     "win_chance": 51.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 14.7 vs DraftKings 13.5 (edge 1.2)"
+    "why": "Model 15.7 vs DraftKings 13.5 (edge 2.2)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Devin Vassell|PTS",
@@ -83168,58 +83075,6 @@
     "why": "Model 9.4 vs DraftKings 12.5 (edge -3.1)"
    },
    {
-    "id": "model|2026-11-06|SAS @ SAC|De'Andre Hunter|PTS",
-    "source": "Model bet",
-    "date": "2026-11-06",
-    "game": "SAS @ SAC",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "De'Andre Hunter Over 12.5 PTS",
-    "player": "De'Andre Hunter",
-    "team": "SAC",
-    "opp": "SAS",
-    "stat": "PTS",
-    "dir": "Over",
-    "line": 12.5,
-    "price": 100,
-    "model": 13.6,
-    "edge": 1.1,
-    "confidence": 47.5,
-    "win_chance": 48.9,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 13.6 vs DraftKings 12.5 (edge 1.1)"
-   },
-   {
-    "id": "model|2026-11-06|SAS @ SAC|Malik Monk|PTS",
-    "source": "Model bet",
-    "date": "2026-11-06",
-    "game": "SAS @ SAC",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Malik Monk Under 11.5 PTS",
-    "player": "Malik Monk",
-    "team": "SAC",
-    "opp": "SAS",
-    "stat": "PTS",
-    "dir": "Under",
-    "line": 11.5,
-    "price": -102,
-    "model": 9.6,
-    "edge": -1.9,
-    "confidence": 67.5,
-    "win_chance": 52.5,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 9.6 vs DraftKings 11.5 (edge -1.9)"
-   },
-   {
     "id": "model|2026-11-06|SAS @ SAC|Keldon Johnson|PTS",
     "source": "Model bet",
     "date": "2026-11-06",
@@ -83244,32 +83099,6 @@
     "actual": null,
     "units": null,
     "why": "Model 8.2 vs DraftKings 10.5 (edge -2.3)"
-   },
-   {
-    "id": "model|2026-11-06|SAS @ SAC|Precious Achiuwa|PTS",
-    "source": "Model bet",
-    "date": "2026-11-06",
-    "game": "SAS @ SAC",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Precious Achiuwa Over 8.5 PTS",
-    "player": "Precious Achiuwa",
-    "team": "SAC",
-    "opp": "SAS",
-    "stat": "PTS",
-    "dir": "Over",
-    "line": 8.5,
-    "price": -110,
-    "model": 10.4,
-    "edge": 1.9,
-    "confidence": 63.6,
-    "win_chance": 51.1,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 10.4 vs DraftKings 8.5 (edge 1.9)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Victor Wembanyama|PA",
@@ -83312,42 +83141,16 @@
     "dir": "Under",
     "line": 16.5,
     "price": -120,
-    "model": 12.9,
-    "edge": -3.6,
-    "confidence": 85.6,
+    "model": 14.2,
+    "edge": -2.3,
+    "confidence": 71.4,
     "win_chance": 57.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 12.9 vs DraftKings 16.5 (edge -3.6)"
-   },
-   {
-    "id": "model|2026-11-06|SAS @ SAC|De'Andre Hunter|PA",
-    "source": "Model bet",
-    "date": "2026-11-06",
-    "game": "SAS @ SAC",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "De'Andre Hunter Over 13.5 PA",
-    "player": "De'Andre Hunter",
-    "team": "SAC",
-    "opp": "SAS",
-    "stat": "PA",
-    "dir": "Over",
-    "line": 13.5,
-    "price": -120,
-    "model": 14.9,
-    "edge": 1.4,
-    "confidence": 50.3,
-    "win_chance": 49.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 14.9 vs DraftKings 13.5 (edge 1.4)"
+    "why": "Model 14.2 vs DraftKings 16.5 (edge -2.3)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Victor Wembanyama|PR",
@@ -83416,16 +83219,16 @@
     "dir": "Over",
     "line": 14.5,
     "price": -126,
-    "model": 15.8,
-    "edge": 1.3,
-    "confidence": 47.4,
+    "model": 18.5,
+    "edge": 4.0,
+    "confidence": 76.3,
     "win_chance": 51.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 15.8 vs DraftKings 14.5 (edge 1.3)"
+    "why": "Model 18.5 vs DraftKings 14.5 (edge 4.0)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Malik Monk|PR",
@@ -83442,16 +83245,16 @@
     "dir": "Under",
     "line": 14.5,
     "price": -115,
-    "model": 10.7,
-    "edge": -3.8,
-    "confidence": 82.7,
+    "model": 11.7,
+    "edge": -2.8,
+    "confidence": 72.5,
     "win_chance": 55.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 10.7 vs DraftKings 14.5 (edge -3.8)"
+    "why": "Model 11.7 vs DraftKings 14.5 (edge -2.8)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Victor Wembanyama|PRA",
@@ -83494,16 +83297,16 @@
     "dir": "Under",
     "line": 18.5,
     "price": -108,
-    "model": 14.6,
-    "edge": -3.9,
-    "confidence": 84.3,
+    "model": 15.9,
+    "edge": -2.6,
+    "confidence": 71.7,
     "win_chance": 58.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 14.6 vs DraftKings 18.5 (edge -3.9)"
+    "why": "Model 15.9 vs DraftKings 18.5 (edge -2.6)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Domantas Sabonis|REB",
@@ -83520,16 +83323,16 @@
     "dir": "Over",
     "line": 12.5,
     "price": -137,
-    "model": 14.1,
-    "edge": 1.6,
-    "confidence": 70.1,
+    "model": 14.8,
+    "edge": 2.3,
+    "confidence": 80.2,
     "win_chance": 58.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 14.1 vs DraftKings 12.5 (edge 1.6)"
+    "why": "Model 14.8 vs DraftKings 12.5 (edge 2.3)"
    },
    {
     "id": "model|2026-11-06|SAS @ SAC|Victor Wembanyama|REB",
@@ -83660,32 +83463,6 @@
     "actual": null,
     "units": null,
     "why": "Model 11.3 vs DraftKings 9.5 (edge 1.8)"
-   },
-   {
-    "id": "model|2026-11-06|SAS @ SAC|Malik Monk|RA",
-    "source": "Model bet",
-    "date": "2026-11-06",
-    "game": "SAS @ SAC",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Malik Monk Under 6.5 RA",
-    "player": "Malik Monk",
-    "team": "SAC",
-    "opp": "SAS",
-    "stat": "RA",
-    "dir": "Under",
-    "line": 6.5,
-    "price": -114,
-    "model": 5.5,
-    "edge": -1.0,
-    "confidence": 65.4,
-    "win_chance": 54.9,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 5.5 vs DraftKings 6.5 (edge -1.0)"
    },
    {
     "id": "model|2026-11-06|POR @ LAL|Spread",
@@ -86236,30 +86013,186 @@
     "why": "Model 4.3 vs DraftKings 5.5 (edge -1.2)"
    },
    {
-    "id": "model|2026-11-06|SAS @ SAC|De'Andre Hunter|PR",
+    "id": "model|2026-11-06|SAS @ SAC|Zach LaVine|PA",
     "source": "Model bet",
     "date": "2026-11-06",
     "game": "SAS @ SAC",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Andre Hunter Over 16.5 PR",
-    "player": "De'Andre Hunter",
+    "pick": "Zach LaVine Over 22.5 PA",
+    "player": "Zach LaVine",
     "team": "SAC",
     "opp": "SAS",
-    "stat": "PR",
+    "stat": "PA",
     "dir": "Over",
-    "line": 16.5,
-    "price": -127,
-    "model": 18.0,
-    "edge": 1.5,
-    "confidence": 40.1,
-    "win_chance": 50.5,
+    "line": 22.5,
+    "price": -115,
+    "model": 26.1,
+    "edge": 3.6,
+    "confidence": 68.0,
+    "win_chance": 51.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 18.0 vs DraftKings 16.5 (edge 1.5)"
+    "why": "Model 26.1 vs DraftKings 22.5 (edge 3.6)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Domantas Sabonis|PA",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Domantas Sabonis Over 19.5 PA",
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "PA",
+    "dir": "Over",
+    "line": 19.5,
+    "price": -116,
+    "model": 21.2,
+    "edge": 1.7,
+    "confidence": 33.9,
+    "win_chance": 50.8,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 21.2 vs DraftKings 19.5 (edge 1.7)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Domantas Sabonis|PR",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Domantas Sabonis Over 27.5 PR",
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "PR",
+    "dir": "Over",
+    "line": 27.5,
+    "price": -110,
+    "model": 30.5,
+    "edge": 3.0,
+    "confidence": 50.9,
+    "win_chance": 51.6,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 30.5 vs DraftKings 27.5 (edge 3.0)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Zach LaVine|PR",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Zach LaVine Over 23.5 PR",
+    "player": "Zach LaVine",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "PR",
+    "dir": "Over",
+    "line": 23.5,
+    "price": -105,
+    "model": 27.4,
+    "edge": 3.9,
+    "confidence": 77.0,
+    "win_chance": 55.0,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 27.4 vs DraftKings 23.5 (edge 3.9)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Domantas Sabonis|PRA",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Domantas Sabonis Over 32.5 PRA",
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 32.5,
+    "price": -123,
+    "model": 36.0,
+    "edge": 3.5,
+    "confidence": 58.6,
+    "win_chance": 52.3,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 36.0 vs DraftKings 32.5 (edge 3.5)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Zach LaVine|PRA",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Zach LaVine Over 25.5 PRA",
+    "player": "Zach LaVine",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 25.5,
+    "price": -117,
+    "model": 29.8,
+    "edge": 4.3,
+    "confidence": 77.4,
+    "win_chance": 55.1,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 29.8 vs DraftKings 25.5 (edge 4.3)"
+   },
+   {
+    "id": "model|2026-11-06|SAS @ SAC|Domantas Sabonis|RA",
+    "source": "Model bet",
+    "date": "2026-11-06",
+    "game": "SAS @ SAC",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Domantas Sabonis Over 18.5 RA",
+    "player": "Domantas Sabonis",
+    "team": "SAC",
+    "opp": "SAS",
+    "stat": "RA",
+    "dir": "Over",
+    "line": 18.5,
+    "price": -116,
+    "model": 20.3,
+    "edge": 1.8,
+    "confidence": 51.5,
+    "win_chance": 51.6,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 20.3 vs DraftKings 18.5 (edge 1.8)"
    },
    {
     "id": "potd|2026-11-05",
@@ -86975,32 +86908,6 @@
     "graded_at": "2026-11-06 01:52 AM ET",
     "rungs_n": 3,
     "rungs_hit": 1
-   },
-   {
-    "id": "model|2026-11-05|ORL @ PHX|Total",
-    "source": "Model bet",
-    "date": "2026-11-05",
-    "game": "ORL @ PHX",
-    "market": "Total",
-    "type": "Total",
-    "pick": "Over 222.5",
-    "player": null,
-    "team": null,
-    "opp": null,
-    "stat": "Total",
-    "dir": "Over",
-    "line": 222.5,
-    "price": -114,
-    "model": 227.7,
-    "edge": 5.2,
-    "result": "L",
-    "status": "Lost",
-    "actual": "Total 221",
-    "units": -1.0,
-    "why": "Model 227.7 vs DraftKings 222.5 (edge 5.2)",
-    "confidence": null,
-    "win_chance": null,
-    "price_book": null
    },
    {
     "id": "potd|2026-11-04",

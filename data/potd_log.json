@@ -89,8 +89,9 @@
     "line": 0.0,
     "price": 2.4,
     "beat": true,
-    "final": false
-   }
+    "final": true
+   },
+   "locked_at": "2026-11-06 08:29 PM ET"
   },
   {
    "date": "2026-11-05",
