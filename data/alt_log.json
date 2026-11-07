@@ -2,6 +2,780 @@
  "note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
  "ladders": [
   {
+   "id": "2026-11-07|Victor Wembanyama|REB",
+   "date": "2026-11-07",
+   "player": "Victor Wembanyama",
+   "team": "SAS",
+   "stat": "REB",
+   "game": "SAS@POR",
+   "eid": "401909944",
+   "time": "10:00 PM ET",
+   "main_line": 11.5,
+   "model": 12.4,
+   "rungs": [
+    {
+     "line": 10.5,
+     "price": -181,
+     "p": 68.8,
+     "stake": 0.6
+    },
+    {
+     "line": 12.5,
+     "price": 125,
+     "p": 48.6,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Victor Wembanyama|PTS",
+   "date": "2026-11-07",
+   "player": "Victor Wembanyama",
+   "team": "SAS",
+   "stat": "PTS",
+   "game": "SAS@POR",
+   "eid": "401909944",
+   "time": "10:00 PM ET",
+   "main_line": 27.5,
+   "model": 28.1,
+   "rungs": [
+    {
+     "line": 29.5,
+     "price": 127,
+     "p": 45.7,
+     "stake": 0.6
+    },
+    {
+     "line": 39.5,
+     "price": 730,
+     "p": 20.1,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Toumani Camara|PTS",
+   "date": "2026-11-07",
+   "player": "Toumani Camara",
+   "team": "POR",
+   "stat": "PTS",
+   "game": "SAS@POR",
+   "eid": "401909944",
+   "time": "10:00 PM ET",
+   "main_line": 11.5,
+   "model": 13.3,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -186,
+     "p": 85.3,
+     "stake": 0.6
+    },
+    {
+     "line": 11.5,
+     "price": -107,
+     "p": 69.8,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Tari Eason|REB",
+   "date": "2026-11-07",
+   "player": "Tari Eason",
+   "team": "HOU",
+   "stat": "REB",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.0,
+   "rungs": [
+    {
+     "line": 4.5,
+     "price": -202,
+     "p": 69.9,
+     "stake": 0.5
+    },
+    {
+     "line": 5.5,
+     "price": -107,
+     "p": 56.7,
+     "stake": 0.3
+    },
+    {
+     "line": 7.5,
+     "price": 286,
+     "p": 27.7,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Reed Sheppard|PTS",
+   "date": "2026-11-07",
+   "player": "Reed Sheppard",
+   "team": "HOU",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 8.5,
+   "model": 9.8,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -144,
+     "p": 66.0,
+     "stake": 0.5
+    },
+    {
+     "line": 9.5,
+     "price": 133,
+     "p": 52.1,
+     "stake": 0.3
+    },
+    {
+     "line": 11.5,
+     "price": 223,
+     "p": 40.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Onyeka Okongwu|REB",
+   "date": "2026-11-07",
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "stat": "REB",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 8.5,
+   "model": 9.6,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": -150,
+     "p": 71.3,
+     "stake": 0.5
+    },
+    {
+     "line": 9.5,
+     "price": 171,
+     "p": 49.3,
+     "stake": 0.3
+    },
+    {
+     "line": 11.5,
+     "price": 408,
+     "p": 24.7,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Onyeka Okongwu|PTS",
+   "date": "2026-11-07",
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "stat": "PTS",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 13.5,
+   "model": 15.2,
+   "rungs": [
+    {
+     "line": 13.5,
+     "price": -105,
+     "p": 53.4,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 122,
+     "p": 46.9,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 408,
+     "p": 25.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Nolan Traore|PTS",
+   "date": "2026-11-07",
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "stat": "PTS",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 11.5,
+   "model": 12.7,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -181,
+     "p": 68.6,
+     "stake": 0.5
+    },
+    {
+     "line": 11.5,
+     "price": -102,
+     "p": 58.6,
+     "stake": 0.3
+    },
+    {
+     "line": 14.5,
+     "price": 217,
+     "p": 42.7,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Nickeil Alexander-Walker|3PM",
+   "date": "2026-11-07",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "stat": "3PM",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 3.5,
+   "model": 4.1,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -233,
+     "p": 76.1,
+     "stake": 0.5
+    },
+    {
+     "line": 3.5,
+     "price": 104,
+     "p": 60.9,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 482,
+     "p": 22.5,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Nickeil Alexander-Walker|PTS",
+   "date": "2026-11-07",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "stat": "PTS",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 20.5,
+   "model": 22.9,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -227,
+     "p": 74.2,
+     "stake": 0.5
+    },
+    {
+     "line": 24.5,
+     "price": 185,
+     "p": 43.6,
+     "stake": 0.3
+    },
+    {
+     "line": 29.5,
+     "price": 493,
+     "p": 20.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Miles Bridges|REB",
+   "date": "2026-11-07",
+   "player": "Miles Bridges",
+   "team": "PHX",
+   "stat": "REB",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.5,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -188,
+     "p": 77.0,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": -104,
+     "p": 63.1,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 490,
+     "p": 22.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Michael Porter Jr|3PM",
+   "date": "2026-11-07",
+   "player": "Michael Porter Jr",
+   "team": "BKN",
+   "stat": "3PM",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 3.5,
+   "model": 3.5,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -188,
+     "p": 69.9,
+     "stake": 0.5
+    },
+    {
+     "line": 3.5,
+     "price": 127,
+     "p": 50.1,
+     "stake": 0.3
+    },
+    {
+     "line": 4.5,
+     "price": 284,
+     "p": 27.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Michael Porter Jr|REB",
+   "date": "2026-11-07",
+   "player": "Michael Porter Jr",
+   "team": "BKN",
+   "stat": "REB",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 7.5,
+   "model": 8.0,
+   "rungs": [
+    {
+     "line": 6.5,
+     "price": -170,
+     "p": 69.3,
+     "stake": 0.5
+    },
+    {
+     "line": 8.5,
+     "price": 166,
+     "p": 41.8,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 273,
+     "p": 27.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Luguentz Dort|PTS",
+   "date": "2026-11-07",
+   "player": "Luguentz Dort",
+   "team": "ATL",
+   "stat": "PTS",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 10.5,
+   "model": 11.9,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -137,
+     "p": 61.3,
+     "stake": 0.5
+    },
+    {
+     "line": 10.5,
+     "price": -104,
+     "p": 56.1,
+     "stake": 0.3
+    },
+    {
+     "line": 14.5,
+     "price": 266,
+     "p": 28.1,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Kingston Flemings|PTS",
+   "date": "2026-11-07",
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "stat": "PTS",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 9.5,
+   "model": 9.6,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": 166,
+     "p": 38.6,
+     "stake": 0.6
+    },
+    {
+     "line": 17.5,
+     "price": 840,
+     "p": 13.6,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Jabari Smith Jr|PTS",
+   "date": "2026-11-07",
+   "player": "Jabari Smith Jr",
+   "team": "HOU",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 13.5,
+   "model": 15.2,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -217,
+     "p": 69.5,
+     "stake": 0.5
+    },
+    {
+     "line": 13.5,
+     "price": -125,
+     "p": 62.0,
+     "stake": 0.3
+    },
+    {
+     "line": 24.5,
+     "price": 1000,
+     "p": 14.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Jabari Smith Jr|3PM",
+   "date": "2026-11-07",
+   "player": "Jabari Smith Jr",
+   "team": "HOU",
+   "stat": "3PM",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.8,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 116,
+     "p": 53.5,
+     "stake": 0.6
+    },
+    {
+     "line": 3.5,
+     "price": 292,
+     "p": 31.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Fred VanVleet|PTS",
+   "date": "2026-11-07",
+   "player": "Fred VanVleet",
+   "team": "HOU",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 11.5,
+   "model": 12.9,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -118,
+     "p": 57.8,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 184,
+     "p": 41.3,
+     "stake": 0.3
+    },
+    {
+     "line": 17.5,
+     "price": 385,
+     "p": 26.1,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Dillon Brooks|PTS",
+   "date": "2026-11-07",
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 15.5,
+   "model": 16.8,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -146,
+     "p": 71.2,
+     "stake": 0.6
+    },
+    {
+     "line": 15.5,
+     "price": -115,
+     "p": 59.9,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Devin Booker|PTS",
+   "date": "2026-11-07",
+   "player": "Devin Booker",
+   "team": "PHX",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 24.5,
+   "model": 25.6,
+   "rungs": [
+    {
+     "line": 24.5,
+     "price": -103,
+     "p": 54.1,
+     "stake": 0.6
+    },
+    {
+     "line": 34.5,
+     "price": 596,
+     "p": 22.1,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Deni Avdija|AST",
+   "date": "2026-11-07",
+   "player": "Deni Avdija",
+   "team": "POR",
+   "stat": "AST",
+   "game": "SAS@POR",
+   "eid": "401909944",
+   "time": "10:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.4,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -176,
+     "p": 72.6,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 185,
+     "p": 44.5,
+     "stake": 0.3
+    },
+    {
+     "line": 10.5,
+     "price": 960,
+     "p": 15.1,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|C.J. McCollum|AST",
+   "date": "2026-11-07",
+   "player": "C.J. McCollum",
+   "team": "ATL",
+   "stat": "AST",
+   "game": "BKN@ATL",
+   "eid": "401909939",
+   "time": "7:30 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -244,
+     "p": 73.0,
+     "stake": 0.5
+    },
+    {
+     "line": 3.5,
+     "price": -104,
+     "p": 53.3,
+     "stake": 0.3
+    },
+    {
+     "line": 6.5,
+     "price": 790,
+     "p": 12.9,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Alperen Sengun|AST",
+   "date": "2026-11-07",
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "stat": "AST",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.5,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -219,
+     "p": 77.5,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": -125,
+     "p": 66.1,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 226,
+     "p": 37.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-07|Alperen Sengun|PTS",
+   "date": "2026-11-07",
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "stat": "PTS",
+   "game": "HOU@PHX",
+   "eid": "401909943",
+   "time": "9:00 PM ET",
+   "main_line": 20.5,
+   "model": 22.9,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -199,
+     "p": 78.2,
+     "stake": 0.5
+    },
+    {
+     "line": 20.5,
+     "price": -108,
+     "p": 64.4,
+     "stake": 0.3
+    },
+    {
+     "line": 24.5,
+     "price": 206,
+     "p": 39.4,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-07 11:26 AM ET",
+   "updated_at": "2026-11-07 11:26 AM ET"
+  },
+  {
    "id": "2026-11-06|Zion Williamson|PTS",
    "date": "2026-11-06",
    "player": "Zion Williamson",

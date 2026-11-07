@@ -2,6 +2,99 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-07",
+   "eid": "401909944",
+   "game": "SAS@POR",
+   "time": "10:00 PM ET",
+   "home": "POR",
+   "away": "SAS",
+   "type": "Prop",
+   "player": "Toumani Camara",
+   "team": "POR",
+   "stat": "3PM",
+   "side": "Over",
+   "line": 2.5,
+   "price": -116,
+   "model": 3.4,
+   "edge": 0.9,
+   "edge_pct": 36.0,
+   "label": "Toumani Camara Over 2.5 3PM",
+   "best": [
+    -106,
+    "ballybet"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     4.0,
+     5.0,
+     4.0,
+     3.0,
+     4.0,
+     3.0,
+     1.0,
+     4.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "3PM",
+    "opps": [
+     "PHX",
+     "SAC",
+     "LAL",
+     "MEM",
+     "UTA",
+     "DEN",
+     "PHX",
+     "LAL"
+    ]
+   },
+   "score": 92.1,
+   "reasons": [
+    "Model projects 3.4 3PM vs a line of 2.5 (+0.9, 36% edge)",
+    "Honest win chance 54.9% vs 54% implied by -116: +2.2% expected value (raw model said 74.6%)",
+    "Went over the line in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 3.0 over the last 5 and 3.5 over the last 8",
+    "Minutes steady: 30 per game over the last 5 (28 over the last 8)",
+    "Matchup vs SAS: -3.8% to his 3PM projection from their defense and pace (works against the over)",
+    "SAS ranks among the top-10 defenses for 3PM; he went over 2.5 in 1 of 1 games against that tier",
+    "Teammate injury boost: Ja Morant, Vit Krejci out, +5.7% to his 3PM projection (extra minutes and usage)",
+    "Game script / rest: back-to-back -3%, opponent on a back-to-back +1.5% (net -1.5%)",
+    "Best price: -106 at Bally Bet (DraftKings -116; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 68,
+   "p_model": 66.0,
+   "p_win_raw": 74.6,
+   "p_win": 54.9,
+   "ev": 2.2,
+   "picked_at": "2026-11-07 11:26 AM ET",
+   "open_line": 2.5,
+   "open_price": -116,
+   "close_line": 2.5,
+   "close_price": -116,
+   "close_at": "2026-11-07 11:26 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-06",
    "eid": "401909293",
    "game": "MIN@NOP",

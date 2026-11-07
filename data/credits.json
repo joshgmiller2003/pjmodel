@@ -1,18 +1,88 @@
 {
  "date": "2026-11-07",
- "used_today": 1,
+ "used_today": 72,
  "calls": [
   {
    "time": "01:37 AM",
    "call": "championship odds",
    "cost": 1
+  },
+  {
+   "time": "11:26 AM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "11:26 AM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "11:26 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props DEN@IND",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props BKN@ATL",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props NYK@CLE",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props WAS@OKC",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props ORL@GSW",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props HOU@PHX",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "props SAS@POR",
+   "cost": 8
+  },
+  {
+   "time": "11:26 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines SAS@POR",
+   "cost": 4
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines HOU@PHX",
+   "cost": 4
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines BKN@ATL",
+   "cost": 4
   }
  ],
- "remaining": 17419,
+ "remaining": 16817,
  "history": [
   {
    "date": "2026-11-07",
-   "used": 1,
+   "used": 72,
    "limit": 250
   },
   {
@@ -34,6 +104,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 27,
- "month_used": 379,
+ "month_used": 450,
  "month_limit": 5500
 }
