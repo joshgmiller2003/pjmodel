@@ -2882,5 +2882,22 @@
 "tpm":2.0
 }
 ]
+},
+"Jase Richardson|GSW":{
+"date":"2026-11-07",
+"games":[
+{
+"date":"2025-12-22",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":22.0,
+"pts":11.0,
+"reb":4.0,
+"ast":0.0,
+"stl":1.0,
+"blk":1.0,
+"tpm":1.0
+}
+]
 }
 }
