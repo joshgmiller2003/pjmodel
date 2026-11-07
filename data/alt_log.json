@@ -27,7 +27,13 @@
     }
    ],
    "saved_at": "2026-11-06 12:47 PM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 13.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "13 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Ziaire Williams|PTS",
@@ -55,7 +61,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 8.0,
+   "hit": 2,
+   "units": 0.57,
+   "result": "W",
+   "actual": "8 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Walker Kessler|PTS",
@@ -89,7 +101,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 16.0,
+   "hit": 2,
+   "units": 0.68,
+   "result": "W",
+   "actual": "16 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Terrence Shannon Jr.|PTS",
@@ -117,7 +135,12 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Sidy Cissoko|PTS",
@@ -151,7 +174,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 7.0,
+   "hit": 1,
+   "units": -0.05,
+   "result": "L",
+   "actual": "7 PTS \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Robert Williams|PTS",
@@ -185,7 +214,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 9.0,
+   "hit": 2,
+   "units": 0.75,
+   "result": "W",
+   "actual": "9 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Quentin Grimes|PTS",
@@ -213,7 +248,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Onyeka Okongwu|REB",
@@ -367,7 +408,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 PTS \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Kyshawn George|PTS",
@@ -441,7 +488,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Jrue Holiday|3PM",
@@ -475,7 +528,13 @@
     }
    ],
    "saved_at": "2026-11-06 12:47 PM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 3.0,
+   "hit": 2,
+   "units": 0.48,
+   "result": "W",
+   "actual": "3 3PM \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Jonathan Kuminga|AST",
@@ -503,7 +562,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 4.0,
+   "hit": 1,
+   "units": 0.27,
+   "result": "W",
+   "actual": "4 AST \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Jeremiah Fears|REB",
@@ -537,7 +602,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 5.0,
+   "hit": 2,
+   "units": 0.4,
+   "result": "W",
+   "actual": "5 REB \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Jeremiah Fears|AST",
@@ -571,7 +642,13 @@
     }
    ],
    "saved_at": "2026-11-06 12:47 PM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 5.0,
+   "hit": 2,
+   "units": 0.39,
+   "result": "W",
+   "actual": "5 AST \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Jalen Johnson|AST",
@@ -717,7 +794,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 4.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "4 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Deni Avdija|AST",
@@ -751,7 +834,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 09:18 PM ET"
+   "updated_at": "2026-11-06 09:18 PM ET",
+   "value": 11.0,
+   "hit": 3,
+   "units": 1.41,
+   "result": "W",
+   "actual": "11 AST \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Dejounte Murray|PTS",
@@ -779,7 +868,13 @@
     }
    ],
    "saved_at": "2026-11-06 11:40 AM ET",
-   "updated_at": "2026-11-06 06:33 PM ET"
+   "updated_at": "2026-11-06 06:33 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-07 01:37 AM ET"
   },
   {
    "id": "2026-11-06|Anthony Davis|PTS",
