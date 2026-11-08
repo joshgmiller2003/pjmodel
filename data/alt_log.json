@@ -185,7 +185,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Onyeka Okongwu|PTS",
@@ -219,7 +225,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 16.0,
+   "hit": 2,
+   "units": 0.64,
+   "result": "W",
+   "actual": "16 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Nolan Traore|PTS",
@@ -253,7 +265,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 19.0,
+   "hit": 3,
+   "units": 1.0,
+   "result": "W",
+   "actual": "19 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Nickeil Alexander-Walker|3PM",
@@ -287,7 +305,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 3PM \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Nickeil Alexander-Walker|PTS",
@@ -321,7 +345,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 20.0,
+   "hit": 1,
+   "units": -0.28,
+   "result": "L",
+   "actual": "20 PTS \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Miles Bridges|REB",
@@ -389,7 +419,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 3.0,
+   "hit": 1,
+   "units": -0.23,
+   "result": "L",
+   "actual": "3 3PM \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Michael Porter Jr|REB",
@@ -423,7 +459,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 9.0,
+   "hit": 2,
+   "units": 0.59,
+   "result": "W",
+   "actual": "9 REB \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Luguentz Dort|PTS",
@@ -457,7 +499,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 PTS \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Kingston Flemings|PTS",
@@ -485,7 +533,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 10.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "10 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Jabari Smith Jr|PTS",
@@ -705,7 +759,13 @@
     }
    ],
    "saved_at": "2026-11-07 11:26 AM ET",
-   "updated_at": "2026-11-07 06:31 PM ET"
+   "updated_at": "2026-11-07 06:31 PM ET",
+   "value": 3.0,
+   "hit": 1,
+   "units": -0.3,
+   "result": "L",
+   "actual": "3 AST \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-07 10:15 PM ET"
   },
   {
    "id": "2026-11-07|Alperen Sengun|AST",
