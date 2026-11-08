@@ -6,6 +6,96 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Josh Giddey Under 17.5 PR",
+   "game": "PHI@CHI",
+   "eid": "401909945",
+   "time": "3:30 PM ET",
+   "home": "CHI",
+   "away": "PHI",
+   "side": "Under",
+   "line": 17.5,
+   "price": -102,
+   "model": 14.0,
+   "edge": -3.5,
+   "edge_pct": 20.0,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     9.0,
+     10.0,
+     17.0,
+     12.0,
+     18.0,
+     17.0,
+     17.0,
+     11.0
+    ],
+    "line": 17.5,
+    "side": "Under",
+    "label": "PR",
+    "opps": [
+     "TOR",
+     "MIL",
+     "WAS",
+     "BOS",
+     "NYK",
+     "BOS",
+     "PHI",
+     "NYK"
+    ]
+   },
+   "reasons": [
+    "Model projects 14 PR vs a line of 17.5 (-3.5, 20% edge)",
+    "Went under the line in 7 of his last 8 games (4/5 in the last 5)",
+    "Averaging 15.0 over the last 5 and 13.9 over the last 8",
+    "Minutes steady: 28 per game over the last 5 (27 over the last 8)",
+    "Matchup vs PHI: neutral for PR (defense and pace about league average)",
+    "PHI ranks among the bottom-10 defenses for PR; he went under 17.5 in 3 of 4 games against that tier",
+    "Game script / rest: 3 days rest +1% (net +1%)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 56.5,
+   "p_model": 82.7,
+   "ev": 11.9,
+   "score": 83.1,
+   "best": null,
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "stat": "PR",
+   "date": "2026-11-08",
+   "attempt": 2,
+   "day": 2,
+   "stake": 17.94,
+   "to_win": 17.59,
+   "picked_at": "2026-11-08 11:26 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.5% to win, +11.9% expected value",
+   "open_line": 17.5,
+   "open_price": -102,
+   "close_line": 17.5,
+   "close_price": -102,
+   "close_at": "2026-11-08 11:26 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Jase Richardson Under 13.5 PR",
    "game": "ORL@GSW",
    "eid": "401909942",

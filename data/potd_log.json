@@ -2,6 +2,97 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-08",
+   "eid": "401909948",
+   "game": "BKN@DAL",
+   "time": "7:30 PM ET",
+   "home": "DAL",
+   "away": "BKN",
+   "type": "Prop",
+   "player": "Zaccharie Risacher",
+   "team": "DAL",
+   "stat": "REB",
+   "side": "Over",
+   "line": 3.5,
+   "price": 102,
+   "model": 4.8,
+   "edge": 1.3,
+   "edge_pct": 37.1,
+   "label": "Zaccharie Risacher Over 3.5 REB",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     9
+    ],
+    "l15": [
+     8,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     6.0,
+     6.0,
+     4.0,
+     8.0,
+     6.0,
+     6.0,
+     5.0,
+     1.0,
+     4.0
+    ],
+    "line": 3.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "HOU",
+     "IND",
+     "SAS",
+     "MIA",
+     "OKC",
+     "HOU",
+     "SAC",
+     "SAS",
+     "UTA"
+    ]
+   },
+   "score": 92.7,
+   "reasons": [
+    "Model projects 4.8 REB vs a line of 3.5 (+1.3, 37% edge)",
+    "Honest win chance 54.9% vs 50% implied by +102: +10.9% expected value (raw model said 77.9%)",
+    "Went over the line in 8 of his last 9 games (4/5 in the last 5)",
+    "Averaging 4.4 over the last 5 and 5.1 over the last 9",
+    "Minutes steady: 23 per game over the last 5 (26 over the last 9)",
+    "Matchup vs BKN: neutral for REB (defense and pace about league average)",
+    "BKN ranks among the top-10 defenses for REB; he went over 3.5 in 3 of 4 games against that tier",
+    "Teammate injury boost: Sergio de Larrea out, +2.3% to his REB projection (extra minutes and usage)",
+    "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 111,
+   "p_model": 70.6,
+   "p_win_raw": 77.9,
+   "p_win": 54.9,
+   "ev": 10.9,
+   "picked_at": "2026-11-08 11:26 AM ET",
+   "open_line": 3.5,
+   "open_price": 102,
+   "close_line": 3.5,
+   "close_price": 102,
+   "close_at": "2026-11-08 11:26 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-07",
    "eid": "401909944",
    "game": "SAS@POR",

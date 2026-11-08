@@ -2,6 +2,750 @@
  "note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
  "ladders": [
   {
+   "id": "2026-11-08|Zaccharie Risacher|AST",
+   "date": "2026-11-08",
+   "player": "Zaccharie Risacher",
+   "team": "DAL",
+   "stat": "AST",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": null,
+   "model": 1.6,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": 163,
+     "p": 45.8,
+     "stake": 0.6
+    },
+    {
+     "line": 2.5,
+     "price": 519,
+     "p": 18.7,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Terrence Shannon Jr.|AST",
+   "date": "2026-11-08",
+   "player": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "stat": "AST",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": null,
+   "model": 2.6,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -131,
+     "p": 72.5,
+     "stake": 0.6
+    },
+    {
+     "line": 3.5,
+     "price": 562,
+     "p": 26.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Saddiq Bey|AST",
+   "date": "2026-11-08",
+   "player": "Saddiq Bey",
+   "team": "NOP",
+   "stat": "AST",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": null,
+   "model": 2.1,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -132,
+     "p": 61.0,
+     "stake": 0.6
+    },
+    {
+     "line": 2.5,
+     "price": 218,
+     "p": 39.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Rui Hachimura|AST",
+   "date": "2026-11-08",
+   "player": "Rui Hachimura",
+   "team": "LAC",
+   "stat": "AST",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 1.5,
+   "model": 1.6,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": 135,
+     "p": 46.7,
+     "stake": 0.6
+    },
+    {
+     "line": 2.5,
+     "price": 422,
+     "p": 22.0,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|P.J. Washington|REB",
+   "date": "2026-11-08",
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "stat": "REB",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 6.5,
+   "model": 7.2,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -218,
+     "p": 71.8,
+     "stake": 0.5
+    },
+    {
+     "line": 7.5,
+     "price": 146,
+     "p": 46.1,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 248,
+     "p": 35.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Nolan Traore|PTS",
+   "date": "2026-11-08",
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 12.5,
+   "model": 14.7,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -155,
+     "p": 69.0,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 135,
+     "p": 53.9,
+     "stake": 0.3
+    },
+    {
+     "line": 17.5,
+     "price": 274,
+     "p": 28.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Naji Marshall|PTS",
+   "date": "2026-11-08",
+   "player": "Naji Marshall",
+   "team": "DAL",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 11.5,
+   "model": 12.2,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -192,
+     "p": 66.7,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 199,
+     "p": 38.2,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 680,
+     "p": 13.3,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Michael Porter Jr|PTS",
+   "date": "2026-11-08",
+   "player": "Michael Porter Jr",
+   "team": "BKN",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 21.5,
+   "model": 23.2,
+   "rungs": [
+    {
+     "line": 19.5,
+     "price": -178,
+     "p": 70.5,
+     "stake": 0.6
+    },
+    {
+     "line": 21.5,
+     "price": -119,
+     "p": 61.5,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Keyonte George|AST",
+   "date": "2026-11-08",
+   "player": "Keyonte George",
+   "team": "UTA",
+   "stat": "AST",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.2,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -137,
+     "p": 58.0,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 134,
+     "p": 42.9,
+     "stake": 0.3
+    },
+    {
+     "line": 8.5,
+     "price": 429,
+     "p": 22.5,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Julius Randle|AST",
+   "date": "2026-11-08",
+   "player": "Julius Randle",
+   "team": "BKN",
+   "stat": "AST",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 4.5,
+   "model": 5.0,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -215,
+     "p": 74.9,
+     "stake": 0.5
+    },
+    {
+     "line": 5.5,
+     "price": 196,
+     "p": 40.3,
+     "stake": 0.3
+    },
+    {
+     "line": 6.5,
+     "price": 381,
+     "p": 26.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Julius Randle|PTS",
+   "date": "2026-11-08",
+   "player": "Julius Randle",
+   "team": "BKN",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 20.5,
+   "model": 21.4,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -204,
+     "p": 73.8,
+     "stake": 0.6
+    },
+    {
+     "line": 19.5,
+     "price": -130,
+     "p": 62.5,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Jonathan Kuminga|AST",
+   "date": "2026-11-08",
+   "player": "Jonathan Kuminga",
+   "team": "MIN",
+   "stat": "AST",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.8,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 116,
+     "p": 56.4,
+     "stake": 0.6
+    },
+    {
+     "line": 4.5,
+     "price": 680,
+     "p": 18.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Jonathan Kuminga|REB",
+   "date": "2026-11-08",
+   "player": "Jonathan Kuminga",
+   "team": "MIN",
+   "stat": "REB",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": 6.5,
+   "model": 6.5,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -156,
+     "p": 62.5,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 116,
+     "p": 47.9,
+     "stake": 0.3
+    },
+    {
+     "line": 7.5,
+     "price": 201,
+     "p": 36.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Jeremiah Fears|PTS",
+   "date": "2026-11-08",
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "stat": "PTS",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 14.5,
+   "model": 16.2,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -118,
+     "p": 57.6,
+     "stake": 0.5
+    },
+    {
+     "line": 17.5,
+     "price": 174,
+     "p": 42.7,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 276,
+     "p": 31.2,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Jeremiah Fears|REB",
+   "date": "2026-11-08",
+   "player": "Jeremiah Fears",
+   "team": "NOP",
+   "stat": "REB",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 4.5,
+   "model": 4.8,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -180,
+     "p": 71.9,
+     "stake": 0.5
+    },
+    {
+     "line": 4.5,
+     "price": 116,
+     "p": 53.0,
+     "stake": 0.3
+    },
+    {
+     "line": 5.5,
+     "price": 222,
+     "p": 34.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Derrick Jones|PTS",
+   "date": "2026-11-08",
+   "player": "Derrick Jones",
+   "team": "LAC",
+   "stat": "PTS",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 11.5,
+   "model": 12.5,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -186,
+     "p": 81.2,
+     "stake": 0.6
+    },
+    {
+     "line": 11.5,
+     "price": -104,
+     "p": 59.3,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Daniel Gafford|PTS",
+   "date": "2026-11-08",
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 7.5,
+   "model": 8.0,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": 154,
+     "p": 39.5,
+     "stake": 0.6
+    },
+    {
+     "line": 14.5,
+     "price": 780,
+     "p": 17.2,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Daniel Gafford|AST",
+   "date": "2026-11-08",
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "stat": "AST",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": null,
+   "model": 1.9,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -103,
+     "p": 56.2,
+     "stake": 0.6
+    },
+    {
+     "line": 2.5,
+     "price": 294,
+     "p": 28.0,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Cooper Flagg|REB",
+   "date": "2026-11-08",
+   "player": "Cooper Flagg",
+   "team": "DAL",
+   "stat": "REB",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": 7.5,
+   "model": 7.6,
+   "rungs": [
+    {
+     "line": 7.5,
+     "price": 115,
+     "p": 47.0,
+     "stake": 0.5
+    },
+    {
+     "line": 8.5,
+     "price": 193,
+     "p": 35.6,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 327,
+     "p": 23.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Caleb Martin|PTS",
+   "date": "2026-11-08",
+   "player": "Caleb Martin",
+   "team": "DAL",
+   "stat": "PTS",
+   "game": "BKN@DAL",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "main_line": null,
+   "model": 4.6,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": 148,
+     "p": 41.9,
+     "stake": 0.6
+    },
+    {
+     "line": 7.5,
+     "price": 313,
+     "p": 28.1,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Brook Lopez|PTS",
+   "date": "2026-11-08",
+   "player": "Brook Lopez",
+   "team": "LAC",
+   "stat": "PTS",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 12.5,
+   "model": 14.4,
+   "rungs": [
+    {
+     "line": 9.5,
+     "price": -237,
+     "p": 76.7,
+     "stake": 0.5
+    },
+    {
+     "line": 14.5,
+     "price": 158,
+     "p": 49.5,
+     "stake": 0.3
+    },
+    {
+     "line": 19.5,
+     "price": 503,
+     "p": 22.6,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Brook Lopez|REB",
+   "date": "2026-11-08",
+   "player": "Brook Lopez",
+   "team": "LAC",
+   "stat": "REB",
+   "game": "NOP@LAC",
+   "eid": "401909950",
+   "time": "9:00 PM ET",
+   "main_line": 5.5,
+   "model": 6.0,
+   "rungs": [
+    {
+     "line": 4.5,
+     "price": -165,
+     "p": 68.2,
+     "stake": 0.5
+    },
+    {
+     "line": 5.5,
+     "price": 113,
+     "p": 55.1,
+     "stake": 0.3
+    },
+    {
+     "line": 7.5,
+     "price": 352,
+     "p": 26.1,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Ayo Dosunmu|PTS",
+   "date": "2026-11-08",
+   "player": "Ayo Dosunmu",
+   "team": "MIN",
+   "stat": "PTS",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": 18.5,
+   "model": 19.8,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -134,
+     "p": 59.4,
+     "stake": 0.6
+    },
+    {
+     "line": 18.5,
+     "price": -107,
+     "p": 54.4,
+     "stake": 0.4
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
+   "id": "2026-11-08|Ace Bailey|REB",
+   "date": "2026-11-08",
+   "player": "Ace Bailey",
+   "team": "UTA",
+   "stat": "REB",
+   "game": "UTA@MIN",
+   "eid": "401909947",
+   "time": "7:00 PM ET",
+   "main_line": 6.5,
+   "model": 7.1,
+   "rungs": [
+    {
+     "line": 5.5,
+     "price": -154,
+     "p": 72.4,
+     "stake": 0.5
+    },
+    {
+     "line": 6.5,
+     "price": 114,
+     "p": 54.2,
+     "stake": 0.3
+    },
+    {
+     "line": 9.5,
+     "price": 545,
+     "p": 18.8,
+     "stake": 0.2
+    }
+   ],
+   "saved_at": "2026-11-08 11:26 AM ET",
+   "updated_at": "2026-11-08 11:26 AM ET"
+  },
+  {
    "id": "2026-11-07|Victor Wembanyama|REB",
    "date": "2026-11-07",
    "player": "Victor Wembanyama",
