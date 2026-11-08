@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-07",
+"updated":"2026-11-08",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -428,6 +428,7 @@
 "Rayan Rupert":"G",
 "Reece Beekman":"G",
 "Reed Sheppard":"G",
+"Richie Saunders":"G",
 "Riley Minix":"F",
 "Robert Williams III":"C",
 "Rocco Zikarsky":"C",
@@ -591,6 +592,7 @@
 "Bronny James":"4683774",
 "Brook Lopez":"3448",
 "Brooks Barnhizer":"4684208",
+"Bruce Thornton":"5105837",
 "Bryce Hopkins":"4565698",
 "Bryce McGowens":"4576086",
 "Bub Carrington":"4845374",
@@ -952,6 +954,8 @@
 "Rayan Rupert":"5099752",
 "Reece Beekman":"4432187",
 "Reed Sheppard":"4711272",
+"Richie Saunders":"5105462",
+"Riley Minix":"5177362",
 "Robert Williams III":"4066211",
 "Rocco Zikarsky":"5157587",
 "Ron Harper Jr.":"4397251",

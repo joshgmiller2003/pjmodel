@@ -90,7 +90,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-07 10:15 PM ET"
+   "locked_at": "2026-11-07 10:15 PM ET",
+   "result": "L",
+   "actual": "4 PTS",
+   "units": -1.0,
+   "graded_at": "2026-11-08 01:38 AM ET"
   },
   {
    "date": "2026-11-06",

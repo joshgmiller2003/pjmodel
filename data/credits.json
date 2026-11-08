@@ -1,130 +1,20 @@
 {
- "date": "2026-11-07",
- "used_today": 123,
+ "date": "2026-11-08",
+ "used_today": 1,
  "calls": [
   {
-   "time": "01:37 AM",
+   "time": "01:38 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "11:26 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:26 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:26 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props DEN@IND",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props BKN@ATL",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props NYK@CLE",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props WAS@OKC",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props ORL@GSW",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props HOU@PHX",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "props SAS@POR",
-   "cost": 8
-  },
-  {
-   "time": "11:26 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:26 AM",
-   "call": "alt lines SAS@POR",
-   "cost": 4
-  },
-  {
-   "time": "11:26 AM",
-   "call": "alt lines HOU@PHX",
-   "cost": 4
-  },
-  {
-   "time": "11:26 AM",
-   "call": "alt lines BKN@ATL",
-   "cost": 4
-  },
-  {
-   "time": "06:31 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:31 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:31 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props BKN@ATL",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props NYK@CLE",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props WAS@OKC",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props ORL@GSW",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props HOU@PHX",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props SAS@POR",
-   "cost": 8
   }
  ],
- "remaining": 16478,
+ "remaining": 16044,
  "history": [
+  {
+   "date": "2026-11-08",
+   "used": 1,
+   "limit": 250
+  },
   {
    "date": "2026-11-07",
    "used": 123,
@@ -148,7 +38,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 27,
- "month_used": 501,
+ "days_to_reset": 26,
+ "month_used": 502,
  "month_limit": 5500
 }
