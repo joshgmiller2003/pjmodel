@@ -439,6 +439,7 @@ nav button:first-child { margin-left: -13px; }
   <button class="active" data-tab="games">Games</button>
   <button data-tab="potd">Pick of the Day</button>
   <button data-tab="ladders">Ladders</button>
+  <button data-tab="altparlay">Alt Parlay</button>
   <button data-tab="best">Best Bets</button>
   <button data-tab="props">Player Props</button>
   <button data-tab="parlays">Parlays</button>
@@ -542,6 +543,18 @@ nav button:first-child { margin-left: -13px; }
     <p class="note" style="margin-top:12px;">How it's picked: each update ranks every bet on today's board that hasn't tipped off, including player props, spreads, totals and moneylines. Every candidate must be backed by recent results (60%+ hit rate over the last 10 for props, spreads and totals; a winning record for moneylines), have a sane edge (props 6–40% of the line, spreads 1.5–6 pts, totals 3–12 pts, moneylines 4–20 points of win probability over the price), and a price no worse than -160 (-250 for moneylines). Props also need a healthy player with steady minutes. Score = 55% recent hit rate + 45% edge size. The pick locks at tip-off and is saved permanently in <code>data/potd_log.json</code> with its reasons and result.</p>
   </section>
 
+<section id="altparlay" class="tab" style="display:none;">
+    <div class="section-title">Alt Parlay <small>The ladder challenge, built only from alternate lines</small></div>
+    <div id="alp-hero"></div>
+    <div class="game-grid" style="grid-template-columns:repeat(auto-fill,minmax(520px,1fr));margin-top:16px;">
+      <div id="alp-today"></div>
+      <div class="card table-wrap"><div class="conf-head" id="alp-climb-head">This climb</div><table id="alp-climb"></table></div>
+    </div>
+    <div class="kpis" id="alp-kpis" style="margin-top:16px;"></div>
+    <div class="section-title" style="font-size:16px;margin-top:10px;">Past attempts</div>
+    <div class="card table-wrap"><table id="alp-attempts"></table></div>
+    <p class="note" style="margin-top:12px;" id="alp-rules"></p>
+  </section>
 <section id="ladders" class="tab" style="display:none;">
     <div class="section-title">Ladders <small id="ladder-sub">One bet a day, winnings roll forward</small></div>
     <div class="filters" id="ladder-mode">
@@ -938,7 +951,7 @@ function renderRecap() {
   const of = src => rows.filter(r => r.date === day && r.source === src);
   const sign = v => (v > 0 ? "+" : "") + (Math.round(v * 100) / 100);
   const pill = r => r.result ? `<span class="pill ${r.result === "W" ? "over" : r.result === "L" ? "under" : "pass"}" style="font-size:11px;">${r.result === "W" ? "WIN" : r.result === "L" ? "LOSS" : "PUSH"}</span>` : `<span class="pill pass" style="font-size:11px;">PENDING</span>`;
-  const potd = of("Pick of the Day")[0], lad = of("Ladder Challenge")[0], alts = of("Alt Ladder"), model = of("Model bet");
+  const potd = of("Pick of the Day")[0], lad = of("Ladder Challenge")[0], alp = of("Alt Parlay")[0], alts = of("Alt Ladder"), model = of("Model bet");
   const ag = alts.filter(r => r.result === "W" || r.result === "L"), aw = ag.filter(r => r.result === "W").length;
   const au = alts.filter(r => r.result && r.units != null).reduce((t, r) => t + r.units, 0);
   const bestAlt = alts.filter(r => r.units != null).sort((a, b) => b.units - a.units)[0];
@@ -951,10 +964,12 @@ function renderRecap() {
     <div class="recap-grid">
       ${cell("Pick of the Day", potd ? `${pill(potd)} ${potd.pick}` : "No pick", potd ? (potd.actual || "") + (potd.units != null && potd.result ? " · " + sign(potd.units) + "u" : "") : "nothing had value")}
       ${cell("Ladder", lad ? `${pill(lad)} ${lad.pick}` : "Rest day", lad ? (lad.actual || "") + (lad.result === "L" ? " · attempt ends" : lad.bankroll_after != null ? " · bankroll $" + lad.bankroll_after : "") : "bankroll waited")}
+      ${cell("Alt Parlay", alp ? `${pill(alp)} ${alp.pick}` : "Rest day", alp ? (alp.actual || "") + (alp.result === "L" ? " · attempt ends" : alp.bankroll_after != null ? " · bankroll $" + alp.bankroll_after : "") : "bankroll waited")}
       ${cell("Alt-line ladders", ag.length ? `<strong>${aw}-${ag.length - aw}</strong> · <span class="${au >= 0 ? "positive" : "negative"}">${sign(au)}u</span>` : alts.length ? "Pending" : "None tracked", bestAlt && bestAlt.units > 0 ? "Best: " + bestAlt.player + " " + bestAlt.stat + " (" + sign(bestAlt.units) + "u)" : "1 unit per ladder")}
       ${cell("Model plays", pg.length ? `<strong>${pw}-${pg.length - pw}</strong> · <span class="${pu >= 0 ? "positive" : "negative"}">${sign(pu)}u</span>` : "–", "one per player per game")}
     </div></div>`;
 }
+function isDollarLadder(src) { return src === "Ladder Challenge" || src === "Alt Parlay"; }
 function renderTodayStrip() {
   try { renderRecap(); } catch (e) {}
   const el = document.getElementById("today-strip"); if (!el) return;
@@ -970,6 +985,8 @@ function renderTodayStrip() {
   el.innerHTML = `
     <div class="ts hl" onclick="goTab('potd')"><div class="l">Pick of the Day <em>›</em></div><div class="v">${potd ? (potd.label || potd.player) + " " + fmtPrice(potd.price) : "Posts at 11 AM ET"}</div><div class="s">${potd ? (potd.result ? (potd.result === "W" ? "Won" : potd.result === "L" ? "Lost" : "Push") + " · " + (potd.actual || "") : "Confidence " + Math.round(potd.score) + " · " + (potd.type || "Prop")) : "Best bet on the board"}</div></div>
     <div class="ts" onclick="goTab('ladders')"><div class="l">Ladder Challenge <em>›</em></div><div class="v">${L ? m(bank) + (step ? " · Day " + step.day : "") : "Starts with the next update"}</div><div class="s">${step ? step.label + " " + fmtPrice(step.price) : L ? "Attempt #" + L.attempt + " · goal " + m(L.goal) : "$10 → $1,000, one bet a day"}</div></div>
+    ${(() => { const A = DATA.alt_ladder; if (!A) return ""; const st = (A.steps || []).find(x => x.date === today); const b = st && !st.result ? st.stake : A.bankroll;
+      return `<div class="ts" onclick="goTab('altparlay')"><div class="l">Alt Parlay <em>›</em></div><div class="v">${m(b)}${st ? " · Day " + st.day : ""}</div><div class="s">${st ? st.label + " " + fmtPrice(st.price) : "Attempt #" + A.attempt + " · rest day"}</div></div>`; })()}
     <div class="ts" onclick="goTab('props')"><div class="l">Player props <em>›</em></div><div class="v">${DATA.props.length.toLocaleString()} lines</div><div class="s">${strong} with an edge of 1+ · ${new Set(DATA.props.map(p => p.game)).size} games</div></div>
     <div class="ts" onclick="goTab('picklog')"><div class="l">Pick log <em>›</em></div><div class="v">${(() => { const A = ((DATA.records || {}).summary || {}).All || {}; return Object.values(A).reduce((t, x) => t + (x.bets || 0), 0).toLocaleString(); })()} picks saved</div><div class="s">${(() => { const A = ((DATA.records || {}).summary || {}).All || {}; const w = Object.values(A).reduce((t, x) => t + (x.won || 0), 0), l = Object.values(A).reduce((t, x) => t + (x.lost || 0), 0); return w + l ? w + "-" + l + " graded · sort any way" : "every pick, graded · sort any way"; })()}</div></div>
     <div class="ts" onclick="goTab('bankroll')"><div class="l">Slate &amp; records <em>›</em></div><div class="v">${g.length} game${g.length === 1 ? "" : "s"}${live ? " · " + live + " live" : ""}</div><div class="s">Model bets ${rec.wins || 0}-${rec.losses || 0} · ${(rec.units || 0) > 0 ? "+" : ""}${rec.units || 0}u</div></div>`;
@@ -1388,18 +1405,18 @@ function renderBankroll() {
   const rows = recRows();
   const sign = v => (v > 0 ? "+" : "") + v;
   const S = (DATA.records && DATA.records.summary && DATA.records.summary.All) || null;
-  const sources = ["Pick of the Day", "Ladder Challenge", "Alt Ladder", "Model bet"];
+  const sources = ["Pick of the Day", "Ladder Challenge", "Alt Parlay", "Alt Ladder", "Model bet"];
   const agg = src => {
     if (S && S[src]) return S[src];
     const a = rows.filter(r => r.source === src);
-    return {bets: a.length, won: a.filter(r => r.result === "W").length, lost: a.filter(r => r.result === "L").length, push: a.filter(r => r.result === "P").length, pending: a.filter(r => !r.result).length, units: Math.round(a.reduce((t, r) => t + (src === "Ladder Challenge" ? 0 : (r.units || 0)), 0) * 100) / 100};
+    return {bets: a.length, won: a.filter(r => r.result === "W").length, lost: a.filter(r => r.result === "L").length, push: a.filter(r => r.result === "P").length, pending: a.filter(r => !r.result).length, units: Math.round(a.reduce((t, r) => t + (isDollarLadder(src) ? 0 : (r.units || 0)), 0) * 100) / 100};
   };
   document.getElementById("rec-summary").innerHTML = `<thead><tr><th>All-time</th><th>Bets</th><th>Record</th><th>Win %</th><th>Pending</th><th>Result</th></tr></thead><tbody>` +
-    sources.map(src => { const t = agg(src); const wl = t.won + t.lost; const lad = src === "Ladder Challenge" && DATA.ladder;
+    sources.map(src => { const t = agg(src); const wl = t.won + t.lost; const lad = (src === "Ladder Challenge" && DATA.ladder) || (src === "Alt Parlay" && DATA.alt_ladder);
       return `<tr><td><strong>${src === "Model bet" ? "Model bets" : src}</strong></td><td>${t.bets}</td><td>${t.won}-${t.lost}${t.push ? "-" + t.push : ""}</td><td>${wl ? Math.round(100 * t.won / wl) + "%" : "–"}</td><td>${t.pending}</td>
-      <td class="stat ${lad ? "" : t.units > 0 ? "positive" : t.units < 0 ? "negative" : ""}">${lad ? "Attempt #" + DATA.ladder.attempt + " · " + money(DATA.ladder.bankroll) : (wl ? sign(t.units) + "u" : "–")}</td></tr>`; }).join("") + "</tbody>";
+      <td class="stat ${lad ? "" : t.units > 0 ? "positive" : t.units < 0 ? "negative" : ""}">${lad ? "Attempt #" + lad.attempt + " · " + money(lad.bankroll) : (wl ? sign(t.units) + "u" : "–")}</td></tr>`; }).join("") + "</tbody>";
   // filters
-  document.getElementById("rec-source").innerHTML = [["all", "All records"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder Challenge"], ["Alt Ladder", "Alt-line ladders"], ["Model bet", "Model bets"]]
+  document.getElementById("rec-source").innerHTML = [["all", "All records"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder Challenge"], ["Alt Parlay", "Alt Parlay"], ["Alt Ladder", "Alt-line ladders"], ["Model bet", "Model bets"]]
     .map(([k, l]) => `<button data-k="${k}" class="${k === recSource ? "active" : ""}">${l} <span style="opacity:.6;">${k === "all" ? rows.length : rows.filter(r => r.source === k).length}</span></button>`).join("");
   document.querySelectorAll("#rec-source button").forEach(b => b.onclick = () => { recSource = b.dataset.k; renderBankroll(); });
   const months = [...new Set(rows.map(r => r.date.slice(0, 7)))];
@@ -1415,7 +1432,7 @@ function renderBankroll() {
   document.getElementById("rec-count").textContent = `${list.length} bet${list.length === 1 ? "" : "s"}`;
   // KPIs for the current view
   const g = list.filter(r => r.result === "W" || r.result === "L"), w = g.filter(r => r.result === "W").length;
-  const unitRows = list.filter(r => r.source !== "Ladder Challenge" && r.result);
+  const unitRows = list.filter(r => !isDollarLadder(r.source) && r.result);
   const u = Math.round(unitRows.reduce((t, r) => t + (r.units || 0), 0) * 100) / 100;
   let streak = "–"; if (g.length) { const r0 = g[0].result; let n = 0; for (const r of g) { if (r.result === r0) n++; else break; } streak = r0 + n; }
   document.getElementById("bankroll-kpis").innerHTML = `
@@ -1428,12 +1445,12 @@ function renderBankroll() {
       return `<div class="kpi"><div class="l">Beat the close</div><div class="v ${c.length && bt / c.length >= 0.5 ? "positive" : ""}">${c.length ? bt + "/" + c.length : "–"}</div><div class="s">${c.length ? "avg " + sign(al) + " pts, " + sign(ap) + "% price" : "measured once games tip"}</div></div>`; })()}
     <div class="kpi"><div class="l">Streak</div><div class="v ${/^W/.test(streak) ? "positive" : /^L/.test(streak) ? "negative" : ""}">${streak}</div><div class="s">in this view</div></div>`;
   // grouped table
-  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : "Ladder"}</span>`;
+  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : src === "Alt Parlay" ? "background:rgba(167,139,250,0.16);color:#a78bfa;" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : src === "Alt Parlay" ? "Alt Parlay" : "Ladder"}</span>`;
   let html = `<thead><tr><th>Type</th><th>Pick</th><th>Game</th><th>Market</th><th>Result</th><th>Final</th><th>Units / $</th></tr></thead><tbody>`, last = "", i = 0;
   list.slice(0, 400).forEach(r => {
     if (r.date !== last) { last = r.date; html += `<tr class="date-row"><td colspan="7">${new Date(r.date + "T12:00").toLocaleDateString([], {weekday: "long", month: "long", day: "numeric", year: "numeric"})}</td></tr>`; }
-    const money$ = r.source === "Ladder Challenge" ? (r.result === "W" ? `<span class="positive">+${money(r.units)}</span>` : r.result === "L" ? `<span class="negative">-${money(r.stake)}</span>` : `${money(r.stake || 0)} stake`) : (r.units != null && r.result ? `<span class="${r.units > 0 ? "positive" : r.units < 0 ? "negative" : ""}">${sign(r.units)}u</span>` : "–");
-    html += `<tr class="rec-row" data-i="${i}" style="cursor:pointer;"><td>${tag(r.source)}${r.source === "Ladder Challenge" ? `<div class="team" style="margin-top:3px;">#${r.attempt} · Day ${r.day}</div>` : ""}</td>
+    const money$ = isDollarLadder(r.source) ? (r.result === "W" ? `<span class="positive">+${money(r.units)}</span>` : r.result === "L" ? `<span class="negative">-${money(r.stake)}</span>` : `${money(r.stake || 0)} stake`) : (r.units != null && r.result ? `<span class="${r.units > 0 ? "positive" : r.units < 0 ? "negative" : ""}">${sign(r.units)}u</span>` : "–");
+    html += `<tr class="rec-row" data-i="${i}" style="cursor:pointer;"><td>${tag(r.source)}${isDollarLadder(r.source) ? `<div class="team" style="margin-top:3px;">#${r.attempt} · Day ${r.day}</div>` : ""}</td>
       <td><strong>${r.pick}</strong> ${r.price != null ? `<span class="price">${fmtPrice(r.price)}</span>` : ""}${clvBadge(r)}</td>
       <td class="team" style="font-size:12px;">${(r.game || "").replace(/\s*@\s*/, " @ ")}</td><td class="team" style="font-size:12px;">${r.market}</td>
       <td>${resultPill(r)}</td><td class="team" style="font-size:12px;">${r.actual || "–"}</td><td class="stat">${money$}</td></tr>
@@ -1490,7 +1507,7 @@ const PL_SORTS = [["date", "Date"], ["edge", "Biggest edge"], ["edgepct", "Edge 
   ["price", "Price"], ["units", "Units"], ["clv", "CLV"], ["player", "Player / team"], ["stat", "Stat"], ["result", "Result"]];
 function plVal(r, k) {
   switch (k) {
-    case "date": return r.date + (r.source === "Pick of the Day" ? "2" : r.source === "Ladder Challenge" ? "1" : "0");
+    case "date": return r.date + (r.source === "Pick of the Day" ? "2" : isDollarLadder(r.source) ? "1" : "0");
     case "edge": return r.edge == null ? null : Math.abs(r.edge);
     case "edgepct": return r.edge != null && r.line ? Math.abs(r.edge) / Math.abs(r.line) : (r.edge_pct != null ? r.edge_pct / 100 : null);
     case "conf": return r.confidence;
@@ -1540,7 +1557,7 @@ function plFiltered() {
 function plDraw() {
   const sign = v => (v > 0 ? "+" : "") + v;
   const all = PL.rows;
-  document.getElementById("pl-source").innerHTML = [["all", "All picks"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder"], ["Alt Ladder", "Alt ladders"], ["Model bet", "Model picks"]]
+  document.getElementById("pl-source").innerHTML = [["all", "All picks"], ["Pick of the Day", "Pick of the Day"], ["Ladder Challenge", "Ladder"], ["Alt Parlay", "Alt Parlay"], ["Alt Ladder", "Alt ladders"], ["Model bet", "Model picks"]]
     .map(([k, l]) => `<button data-k="${k}" class="${k === PL.src ? "active" : ""}">${l} <span style="opacity:.6;">${(k === "all" ? all.length : all.filter(r => r.source === k).length).toLocaleString()}</span></button>`).join("");
   document.querySelectorAll("#pl-source button").forEach(b => b.onclick = () => { PL.src = b.dataset.k; PL.shown = 100; plDraw(); });
   document.getElementById("pl-sort").innerHTML = `<span class="note" style="margin-right:4px;">Sort by</span>` + PL_SORTS.map(([k, l]) =>
@@ -1558,7 +1575,7 @@ function plDraw() {
   });
   window._plList = list;
   const g = list.filter(r => r.result === "W" || r.result === "L"), w = g.filter(r => r.result === "W").length;
-  const ur = list.filter(r => r.source !== "Ladder Challenge" && r.result && r.units != null);
+  const ur = list.filter(r => !isDollarLadder(r.source) && r.result && r.units != null);
   const u = Math.round(ur.reduce((t, r) => t + r.units, 0) * 100) / 100;
   document.getElementById("pl-kpis").innerHTML = `
     <div class="kpi"><div class="l">Picks in view</div><div class="v">${list.length.toLocaleString()}</div><div class="s">${list.filter(r => !r.result).length} pending</div></div>
@@ -1567,18 +1584,18 @@ function plDraw() {
     ${PL.plays ? (() => { const s = {Swept: 0, "All lost": 0, Split: 0}; list.forEach(p => { if (p.outcome) s[p.outcome]++; });
       return `<div class="kpi"><div class="l">Same-player stacks</div><div class="v"><span class="positive">${s.Swept}</span> · <span class="negative">${s["All lost"]}</span> · ${s.Split}</div><div class="s">all won · all lost · split</div></div>`; })() : ""}`;
   const cols = [["date", "Date"], [null, "Type"], ["player", "Pick"], ["stat", "Stat"], [null, "Side"], [null, "Line"], ["price", "Price"], [null, "Model"], ["edge", "Edge"], ["conf", "Conf."], ["result", "Result"], [null, "Final"], ["units", "Units / $"], ["clv", "CLV"]];
-  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : "Ladder"}</span>`;
+  const tag = src => `<span class="badge ${src === "Pick of the Day" ? "inj" : src === "Ladder Challenge" ? "rest" : "norm"}" style="${src === "Ladder Challenge" ? "background:rgba(92,200,255,0.14);color:var(--accent2);" : src === "Alt Ladder" ? "background:rgba(245,196,81,0.14);color:var(--gold);" : src === "Alt Parlay" ? "background:rgba(167,139,250,0.16);color:#a78bfa;" : ""}">${src === "Model bet" ? "Model" : src === "Pick of the Day" ? "POTD" : src === "Alt Ladder" ? "Alt" : src === "Alt Parlay" ? "Alt Parlay" : "Ladder"}</span>`;
   const BK = {fanduel: "FanDuel", betmgm: "BetMGM", williamhill_us: "Caesars", espnbet: "ESPN BET", fanatics: "Fanatics", betrivers: "BetRivers", hardrockbet: "Hard Rock", ballybet: "Bally Bet", betparx: "betPARX"};
   let html = `<thead><tr>${cols.map(([k, l]) => k ? `<th data-k="${k}" style="cursor:pointer;white-space:nowrap;" title="Sort by ${l}">${l}${PL.sort === k ? (PL.dir < 0 ? " ↓" : " ↑") : ""}</th>` : `<th>${l}</th>`).join("")}</tr></thead><tbody>`;
   list.slice(0, PL.shown).forEach((r, i) => {
     const who = r.player || (r.type === "Total" ? (r.game || "").replace(/\s*@\s*/, " @ ") : r.team) || r.pick;
-    const money$ = r.source === "Ladder Challenge" ? (r.result === "W" ? `<span class="positive">+$${r.units}</span>` : r.result === "L" ? `<span class="negative">-$${r.stake}</span>` : `$${r.stake || 0} stake`)
+    const money$ = isDollarLadder(r.source) ? (r.result === "W" ? `<span class="positive">+$${r.units}</span>` : r.result === "L" ? `<span class="negative">-$${r.stake}</span>` : `$${r.stake || 0} stake`)
       : (r.units != null && r.result ? `<span class="${r.units > 0 ? "positive" : r.units < 0 ? "negative" : ""}">${sign(r.units)}u</span>` : "–");
     const c = r.clv && r.clv.final ? `<span class="${r.clv.beat ? "positive" : ""}">${r.clv.line ? sign(r.clv.line) + " pts" : sign(r.clv.price) + "%"}</span>` : "–";
     const best = r.best && r.best[0] != null && r.best[0] !== r.price ? `<div class="team" style="font-size:11px;">best ${fmtPrice(r.best[0])} ${BK[r.best[1]] || r.best[1]}</div>` : "";
     html += `<tr class="pl-row" data-i="${i}" style="cursor:pointer;">
       <td class="team" style="font-size:12px;white-space:nowrap;">${r.date.slice(5)}</td><td>${tag(r.source)}</td>
-      <td><strong>${who}</strong><div class="team" style="font-size:11.5px;">${(r.game || "").replace(/\s*@\s*/, " @ ")}${r.source === "Ladder Challenge" ? " · #" + r.attempt + " day " + r.day : ""}</div>${r.others && r.others.length ? `<div class="team" style="font-size:11px;margin-top:2px;" title="Other bets on this player in this game. The play is graded by the strongest bet only.">+ ${r.others.map(o => `${o.stat || o.type} ${o.dir ? o.dir[0] : ""}${o.line != null ? " " + o.line : ""} <span class="${o.result === "W" ? "positive" : o.result === "L" ? "negative" : ""}">${o.result === "W" ? "✓" : o.result === "L" ? "✗" : o.result === "P" ? "push" : "…"}</span>`).join(" · ")}${r.outcome ? ` <span class="badge" style="margin-left:4px;">${r.outcome}</span>` : ""}</div>` : ""}</td>
+      <td><strong>${who}</strong><div class="team" style="font-size:11.5px;">${(r.game || "").replace(/\s*@\s*/, " @ ")}${isDollarLadder(r.source) ? " · #" + r.attempt + " day " + r.day : ""}</div>${r.others && r.others.length ? `<div class="team" style="font-size:11px;margin-top:2px;" title="Other bets on this player in this game. The play is graded by the strongest bet only.">+ ${r.others.map(o => `${o.stat || o.type} ${o.dir ? o.dir[0] : ""}${o.line != null ? " " + o.line : ""} <span class="${o.result === "W" ? "positive" : o.result === "L" ? "negative" : ""}">${o.result === "W" ? "✓" : o.result === "L" ? "✗" : o.result === "P" ? "push" : "…"}</span>`).join(" · ")}${r.outcome ? ` <span class="badge" style="margin-left:4px;">${r.outcome}</span>` : ""}</div>` : ""}</td>
       <td><span class="stat-tag">${r.stat || r.type || "–"}</span></td><td>${r.dir || "–"}</td>
       <td class="stat">${r.line != null ? (r.type === "Spread" ? sign(r.line) : r.line) : "–"}</td>
       <td class="stat price">${r.price != null ? fmtPrice(r.price) : "–"}${best}</td>
@@ -1678,7 +1695,7 @@ function renderCalibration() {
   const recs = recRows().filter(r => r.result === "W" || r.result === "L");
   const mk = r => { if ((r.market || "").match(/Prop/)) { const t = (r.pick || "").trim().split(" "); return t[t.length - 1]; } return r.market; };
   const agg = {};
-  recs.forEach(r => { const k = mk(r); const a = agg[k] = agg[k] || {n: 0, w: 0, u: 0, nu: 0}; a.n++; a.w += r.result === "W"; if (r.source !== "Ladder Challenge" && r.units != null) { a.u += r.units; a.nu++; } });
+  recs.forEach(r => { const k = mk(r); const a = agg[k] = agg[k] || {n: 0, w: 0, u: 0, nu: 0}; a.n++; a.w += r.result === "W"; if (!isDollarLadder(r.source) && r.units != null) { a.u += r.units; a.nu++; } });
   const A = Object.entries(agg).sort((a, b) => b[1].n - a[1].n);
   document.getElementById("mkt-picks").innerHTML = `<thead><tr><th>Market</th><th>Bets</th><th>Record</th><th>Win %</th><th>Units</th><th>ROI</th></tr></thead><tbody>` +
     (A.length ? A.map(([k, a]) => `<tr><td><span class="stat-tag">${k}</span></td><td class="stat">${a.n}</td><td class="stat">${a.w}-${a.n - a.w}</td><td class="stat">${Math.round(100 * a.w / a.n)}%</td><td class="stat ${a.u >= 0 ? "positive" : "negative"}">${a.nu ? sign(Math.round(a.u * 100) / 100) + "u" : "–"}</td><td class="stat">${a.nu ? sign(Math.round(1000 * a.u / a.nu) / 10) + "%" : "–"}</td></tr>`).join("")
@@ -1976,7 +1993,7 @@ function renderLadders() {
   document.getElementById("ladder-challenge").style.display = ladderMode === "challenge" ? "" : "none";
   document.getElementById("ladder-alt").style.display = ladderMode === "alt" ? "" : "none";
   document.getElementById("ladder-sub").textContent = ladderMode === "challenge" ? "One bet a day, winnings roll forward" : "Alternate lines for tonight's best spots";
-  renderLadderChallenge(); renderAltLadders();
+  renderLadderChallenge(); renderAltLadders(); try { renderAltParlay(); } catch (e) {}
 }
 // Same last-games chart as Pick of the Day. Newer steps save it; older ones are rebuilt from the game log.
 function ladderChart(t) {
@@ -1988,10 +2005,9 @@ function ladderChart(t) {
   const vals = rs.filter(r => r.date < t.date && r.min > 0).slice(0, 10).map(f).reverse();
   return vals.length ? {vals, line: t.line, side: t.side, label: t.stat} : null;
 }
-function renderLadderChallenge() {
-  const L = DATA.ladder;
-  const hero = document.getElementById("lad-hero");
-  if (!L) { hero.innerHTML = '<div class="card"><div style="font-weight:700;">The ladder challenge starts with the next update.</div><div class="note">' + nextPickText() + '</div></div>'; return; }
+function renderLadderView(L, pre, cfg) {
+  const hero = document.getElementById(pre + "-hero");
+  if (!L) { hero.innerHTML = '<div class="card"><div style="font-weight:700;">' + cfg.empty + '</div><div class="note">' + nextPickText() + '</div></div>'; return; }
   const today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
   const steps = (L.steps || []).map(potdNorm);
   const cur = steps.filter(x => x.attempt === L.attempt).sort((a, b) => a.day - b.day);
@@ -2004,7 +2020,7 @@ function renderLadderChallenge() {
   const next = todayStep && !todayStep.result ? todayStep.stake + todayStep.to_win : null;
   hero.innerHTML = `<div class="card lad-hero">
     <div class="lad-top">
-      <div><div class="eyebrow" style="font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent2);">Ladder Challenge · Attempt #${L.attempt}</div>
+      <div><div class="eyebrow" style="font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent2);">${cfg.title} · Attempt #${L.attempt}</div>
         <div class="lad-bank" style="margin-top:10px;">${money(bank)}</div>
         <div class="team" style="font-size:13px;margin-top:6px;">Started at ${money(start)} · goal ${money(goal)} · ${cur.length ? "Day " + (todayStep && todayStep.attempt === L.attempt ? todayStep.day : cur.length + 1) : "Day 1"} · ${winsInRow} win${winsInRow === 1 ? "" : "s"} in a row</div></div>
       <div class="lad-next">${next ? `<div class="note">If today's step hits</div><div style="font-size:24px;font-weight:800;color:var(--good);">${money(next)}</div>` : ""}
@@ -2018,7 +2034,7 @@ function renderLadderChallenge() {
   // today's step
   const t = todayStep;
   const g = t ? (DATA.games || []).find(x => x.id === t.game) : null;
-  document.getElementById("lad-today").innerHTML = t ? `<div class="card" style="height:100%;">
+  document.getElementById(pre + "-today").innerHTML = t ? `<div class="card" style="height:100%;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;">
       <div><div class="team" style="font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;">Today's step · Day ${t.day}</div>
       <div style="font-size:22px;font-weight:800;margin-top:6px;letter-spacing:-0.4px;">${t.label} <span class="price" style="font-size:15px;">${fmtPrice(t.price)}</span>${t.legs ? "" : bestPrice(t)}</div>
@@ -2042,13 +2058,13 @@ function renderLadderChallenge() {
       ${t.player ? `<div style="margin-top:8px;"><button class="btn" onclick="openGameLog('${t.player.replace(/'/g, "\\'")}')">Full game log →</button></div>` : ""}</div>` : ""; })()}
     <div style="font-weight:700;margin:14px 0 6px;">Why this step</div>
     <ul class="potd-why">${[t.why_ladder].concat(t.reasons || []).filter(Boolean).map(r => `<li>${r}</li>`).join("")}</ul>
-    <div style="margin-top:12px;"><button class="btn" id="lad-share">Share today's step</button></div>
-  </div>` : `<div class="card" style="height:100%;"><div style="font-weight:700;margin-bottom:6px;">No step yet today</div><div class="note">${nextPickText()}. If nothing on the board is safe enough with a positive expected value, it's a rest day and the bankroll waits.</div>${boardNote("ladder step")}</div>`;
-  const sb = document.getElementById("lad-share");
-  if (sb && t) sb.onclick = () => ladderShare(`PJ Model Ladder · Attempt #${t.attempt}, Day ${t.day}: ${money(start)} → ${money(t.stake)}. Today's step: ${t.label} (${fmtPrice(t.price)}).`);
+    <div style="margin-top:12px;"><button class="btn" id="${pre}-share">Share today's step</button></div>
+  </div>` : `<div class="card" style="height:100%;"><div style="font-weight:700;margin-bottom:6px;">No step yet today</div><div class="note">${nextPickText()}. ${cfg.rest}</div>${cfg.board ? boardNote("ladder step") : ""}</div>`;
+  const sb = document.getElementById(pre + "-share");
+  if (sb && t) sb.onclick = () => ladderShare(`PJ Model ${cfg.title} · Attempt #${t.attempt}, Day ${t.day}: ${money(start)} → ${money(t.stake)}. Today's step: ${t.label} (${fmtPrice(t.price)}).`);
   // climb table
-  document.getElementById("lad-climb-head").textContent = `Attempt #${L.attempt} so far`;
-  document.getElementById("lad-climb").innerHTML = `<thead><tr><th>Day</th><th>Bet</th><th>Stake</th><th>Result</th><th>Bankroll</th></tr></thead><tbody>` +
+  document.getElementById(pre + "-climb-head").textContent = `Attempt #${L.attempt} so far`;
+  document.getElementById(pre + "-climb").innerHTML = `<thead><tr><th>Day</th><th>Bet</th><th>Stake</th><th>Result</th><th>Bankroll</th></tr></thead><tbody>` +
     (cur.length ? cur.slice().reverse().map(x => `<tr><td class="stat">${x.day}<div class="team">${x.date.slice(5)}</div></td><td><strong>${x.label}</strong> <span class="price">${fmtPrice(x.price)}</span><div class="team">${x.actual || x.type}</div></td><td class="stat">${money(x.stake)}</td><td>${resultPill(x)}</td><td class="stat"><strong>${x.bankroll_after != null ? money(x.bankroll_after) : "–"}</strong></td></tr>`).join("")
       : '<tr><td colspan="5" class="note" style="padding:18px;">Fresh start. Day 1 is the next pick.</td></tr>') + "</tbody>";
   // stats
@@ -2056,16 +2072,24 @@ function renderLadderChallenge() {
   const allSteps = steps.filter(x => x.result === "W" || x.result === "L");
   const sw = allSteps.filter(x => x.result === "W").length;
   const best = att.concat(cur.length ? [{peak: Math.max(L.bankroll, ...cur.map(x => x.bankroll_after || 0)), days: cur.length}] : []).reduce((b, a) => a.peak > (b ? b.peak : 0) ? a : b, null);
-  document.getElementById("lad-kpis").innerHTML = `
+  document.getElementById(pre + "-kpis").innerHTML = `
     <div class="kpi"><div class="l">Best climb</div><div class="v">${best ? money(best.peak) : money(start)}</div><div class="s">${best ? best.days + " day" + (best.days === 1 ? "" : "s") : "no steps yet"}</div></div>
     <div class="kpi"><div class="l">Ladders completed</div><div class="v">${att.filter(a => a.result === "Completed").length}</div><div class="s">reached ${money(goal)}</div></div>
     <div class="kpi"><div class="l">Attempts</div><div class="v">${L.attempt}</div><div class="s">current is #${L.attempt}</div></div>
     <div class="kpi"><div class="l">Step hit rate</div><div class="v">${allSteps.length ? Math.round(100 * sw / allSteps.length) + "%" : "–"}</div><div class="s">${sw}-${allSteps.length - sw} all time</div></div>`;
-  document.getElementById("lad-attempts").innerHTML = `<thead><tr><th>Attempt</th><th>Dates</th><th>Days</th><th>Peak</th><th>Result</th></tr></thead><tbody>` +
+  document.getElementById(pre + "-attempts").innerHTML = `<thead><tr><th>Attempt</th><th>Dates</th><th>Days</th><th>Peak</th><th>Result</th></tr></thead><tbody>` +
     (att.length ? att.map(a => `<tr><td><strong>#${a.attempt}</strong></td><td class="team" style="font-size:12px;">${a.start || ""} → ${a.end}</td><td class="stat">${a.days}</td><td class="stat"><strong>${money(a.peak)}</strong></td><td><span class="pill ${a.result === "Completed" ? "over" : "under"}">${a.result}</span></td></tr>`).join("")
       : '<tr><td colspan="5" class="note" style="padding:18px;">No finished attempts yet.</td></tr>') + "</tbody>";
-  document.getElementById("lad-rules").textContent = `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day (never the Pick of the Day itself). Some days the step is 2-3 picks from different games instead, but only when that gives a better chance of finishing the ladder; every leg must win. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`;
+  document.getElementById(pre + "-rules").textContent = cfg.rules(start, goal);
 }
+const LADDER_CFG = {title: "Ladder Challenge", board: true, empty: "The ladder challenge starts with the next update.",
+  rest: "If nothing on the board is safe enough with a positive expected value, it's a rest day and the bankroll waits.",
+  rules: (start, goal) => `How it works: start with ${money(start)} and put the whole bankroll on one bet a day. A win rolls everything into the next day; a loss ends the attempt and the next one starts over at ${money(start)}; a push carries the bankroll forward. Each step is the bet with the highest win chance on today's board at a price between -200 and +120 with positive expected value, chosen from the same qualifying bets as Pick of the Day (never the Pick of the Day itself). Some days the step is 2-3 picks from different games instead, but only when that gives a better chance of finishing the ladder; every leg must win. The step can update until its game tips off, then it locks. Every step and attempt is saved permanently. Reaching ${money(goal)} completes the ladder.`};
+const ALT_PARLAY_CFG = {title: "Alt Parlay", board: false, empty: "The Alt Parlay ladder starts with the next update that has alt lines (11 AM ET).",
+  rest: "Steps come only from today's alt lines (posted at the 11 AM ET update). If no alt line or alt-line parlay is likely enough to hit with positive value at a ladder price, it's a rest day and the bankroll waits.",
+  rules: (start, goal) => `How it works: the same challenge as the Ladder, kept completely separate. Start with ${money(start)} and put the whole bankroll on one play a day; a win rolls everything into the next day, a loss ends the attempt and the next one starts over at ${money(start)}, a push carries the bankroll forward. Every play comes from DraftKings alternate lines: either one alt line (like 8+ points) or a 2-3 leg parlay of alt lines from different games. It picks the play with the highest chance to hit whose total price is between -200 and +120 and that wins money on average, trusting only half of our edge over the book. Nothing is guaranteed: these are our estimates. The play can update until its first game tips off, then it locks. Every step and attempt is saved permanently and counted in Records. Reaching ${money(goal)} completes the ladder.`};
+function renderLadderChallenge() { renderLadderView(DATA.ladder, "lad", LADDER_CFG); }
+function renderAltParlay() { renderLadderView(DATA.alt_ladder, "alp", ALT_PARLAY_CFG); }
 // ---------- Alt-line ladder helpers ----------
 const ALT_ROLES = [["Safe", "var(--good)"], ["Middle", "var(--accent2)"], ["Long shot", "var(--gold)"]];
 function altSplit(n) { return n >= 3 ? [0.5, 0.3, 0.2] : n === 2 ? [0.6, 0.4] : [1]; }
