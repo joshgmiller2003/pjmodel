@@ -74,7 +74,11 @@
      "score": 88.1,
      "player": "Julius Randle",
      "team": "BKN",
-     "stat": "AST"
+     "stat": "AST",
+     "result": "W",
+     "actual": "4 AST",
+     "units": 0.19,
+     "graded_at": "2026-11-08 10:14 PM ET"
     },
     {
      "type": "Prop",
