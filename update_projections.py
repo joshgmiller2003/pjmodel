@@ -1718,8 +1718,11 @@ def alt_ladder_cands(alt_ladders, slate):
 
 
 def _alt_adj(c):
+    """Win chance used to choose: the (already self-correcting) rung chance, with only part of the edge over the
+    book trusted. That part starts at half and grows to all of it as the alt-line map learns (400+ graded rungs)."""
     imp = implied(c["price"])
-    return imp + (c["p_win"] / 100 - imp) * ALT_LAD_KEEP
+    keep = ALT_LAD_KEEP + (1 - ALT_LAD_KEEP) * min(1.0, ALT_CAL_N / 400)
+    return imp + (c["p_win"] / 100 - imp) * keep
 
 
 def choose_alt_step(cands, slate):
@@ -1954,6 +1957,48 @@ def odds_alt_lines(games_for_alt, slate):
 ALT_ANCHOR = 0.5
 ALT_HIT_PRIOR = 10
 
+# Self-correcting alt-line chances. Every graded alt rung (hit or missed) is recorded against the chance we gave
+# it, in 5% buckets (calibration.json "alt"). Each run rebuilds a map from those results: if our 85% rungs only
+# hit 70%, future 85%s become ~70%. Thin buckets lean on our own number (ALT_CAL_K pseudo-rungs), so the map
+# starts gentle and gets stronger as results pile up. It can only go up as our raw chance goes up.
+ALT_CAL_K = 25
+ALT_CAL_MAP = []
+ALT_CAL_N = 0
+
+
+def alt_calib_record(cal, p, hit):
+    if p is None:
+        return
+    p = max(0.0, min(0.999, p))
+    b = str(min(95, int(p * 100) // 5 * 5))
+    r = cal.setdefault("alt", {}).setdefault(b, {"n": 0, "w": 0, "p": 0.0})
+    r["n"] += 1; r["w"] += bool(hit); r["p"] = rnd(r["p"] + p, 3)
+
+
+def build_alt_cal_map(cal):
+    rows = [r for _, r in sorted((cal.get("alt") or {}).items(), key=lambda kv: int(kv[0])) if r.get("n", 0) > 0]
+    merged = []
+    for r in rows:
+        x = r["p"] / r["n"]
+        y, w = (r["w"] + ALT_CAL_K * x) / (r["n"] + ALT_CAL_K), r["n"] + ALT_CAL_K
+        merged.append([x * w, y * w, w])
+        while len(merged) > 1 and merged[-2][1] / merged[-2][2] > merged[-1][1] / merged[-1][2]:
+            a = merged.pop()
+            merged[-1] = [merged[-1][0] + a[0], merged[-1][1] + a[1], merged[-1][2] + a[2]]
+    return [(x / w, y / w) for x, y, w in merged], sum(r["n"] for r in rows)
+
+
+def alt_calibrate(p):
+    """Raw alt-rung chance (0-1) -> what rungs like it have actually hit."""
+    m = ALT_CAL_MAP
+    if not m or p is None:
+        return p
+    pts = [(0.0, 0.0)] + m + [(1.0, 1.0)]
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        if x0 <= p <= x1:
+            return y0 + (y1 - y0) * (p - x0) / (x1 - x0) if x1 > x0 else y1
+    return p
+
 
 def build_alt_ladders(alt, slate, idx, props, injuries):
     gm = {g["event_id"]: g for g in slate}
@@ -1979,9 +2024,10 @@ def build_alt_ladders(alt, slate, idx, props, injuries):
                     continue
                 pm = prob_over(stat, mean, line, vals)
                 hit = sum(1 for v in vals if v > line)
-                p = 0.6 * pm + 0.4 * (hit + ALT_HIT_PRIOR * pm) / (len(vals) + ALT_HIT_PRIOR)
+                p_raw = 0.6 * pm + 0.4 * (hit + ALT_HIT_PRIOR * pm) / (len(vals) + ALT_HIT_PRIOR)
+                p = alt_calibrate(p_raw)
                 imp = implied(price)
-                ladder.append({"line": line, "price": price, "implied": rnd(imp * 100, 1), "p": rnd(p * 100, 1),
+                ladder.append({"line": line, "price": price, "implied": rnd(imp * 100, 1), "p": rnd(p * 100, 1), "p_raw": rnd(p_raw * 100, 1),
                                "hit": [hit, len(vals)], "ev": rnd((p * decimal(price) - 1) * 100, 1)})
             ladder = [r for r in ladder if 1 <= r["implied"] <= 95]
             if len(ladder) < 3:
@@ -2036,7 +2082,7 @@ def model_row(b):
 ALT_SPLIT = {1: [1.0], 2: [0.6, 0.4], 3: [0.5, 0.3, 0.2]}   # same split the Alt-Line page shows
 
 
-def track_alt_ladders(alt_ladders, alt_date, slate, plog, now):
+def track_alt_ladders(alt_ladders, alt_date, slate, plog, now, cal=None):
     """Save each day's suggested alt-line ladders (1 unit split across the rungs, as the page shows) and grade
     them after the game. A ladder can change until its game tips off; then it is locked. Returns the log."""
     store = load(ALT_LOG, {"note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
@@ -2062,6 +2108,7 @@ def track_alt_ladders(alt_ladders, alt_date, slate, plog, now):
             entry = {"id": key, "date": alt_date, "player": a["player"], "team": a.get("team"), "stat": a["stat"],
                      "game": a["game"], "eid": a["eid"], "time": a.get("time"), "main_line": a.get("main_line"), "model": a.get("model"),
                      "rungs": [{"line": r["line"], "price": r["price"], "p": r["p"], "stake": split[i]} for i, r in enumerate(rungs)],
+                     "all_rungs": [[r["line"], r["price"], r.get("p_raw", r["p"])] for r in a["rungs"]],
                      "saved_at": (cur or {}).get("saved_at", stamp), "updated_at": stamp}
             if cur:
                 L[L.index(cur)] = entry
@@ -2085,6 +2132,9 @@ def track_alt_ladders(alt_ladders, alt_date, slate, plog, now):
         v = STAT_VAL[x["stat"]](row)
         hits = [r for r in x["rungs"] if v > r["line"]]
         units = rnd(sum(r["stake"] * decimal(r["price"]) for r in hits) - 1, 2)
+        if cal is not None:                                   # teach the alt-line map: every rung, hit or missed
+            for line, _px, pr in x.get("all_rungs") or [[r["line"], None, r["p"]] for r in x["rungs"]]:
+                alt_calib_record(cal, pr / 100, v > line)
         x.update(value=v, hit=len(hits), units=units, result="W" if units > 0 else "L" if units < 0 else "P",
                  actual=f"{v:g} {x['stat']} · {len(hits)} of {len(x['rungs'])} rungs hit", graded_at=stamp)
     L.sort(key=lambda x: (x["date"], x["player"]), reverse=True)
@@ -2493,6 +2543,15 @@ def main():
         CAL_MAP = build_cal_map(cal)
         log(f"calibration: built from raw model leans ({blend_n}/{CAL_BLEND_MIN} blended win chances graded so far)")
     log("calibration map: " + ", ".join(f"{x * 100:.0f}%->{y * 100:.0f}%" for x, y in CAL_MAP))
+    global ALT_CAL_MAP, ALT_CAL_N
+    if not cal.get("alt_backfilled"):
+        for x in load(ALT_LOG, {}).get("ladders", []):
+            if x.get("result") in ("W", "L", "P") and x.get("value") is not None:
+                for r in x["rungs"]:
+                    alt_calib_record(cal, r["p"] / 100, x["value"] > r["line"])
+        cal["alt_backfilled"] = True
+    ALT_CAL_MAP, ALT_CAL_N = build_alt_cal_map(cal)
+    log(f"alt-line calibration: {ALT_CAL_N} graded rungs; " + ", ".join(f"{x * 100:.0f}%->{y * 100:.0f}%" for x, y in ALT_CAL_MAP))
     state["residuals"]["alpha"] = rnd(0.12 + 0.33 * math.exp(-state["residuals"]["games_learned"] / 60), 3)
 
     # 3. slate: yesterday..tomorrow
@@ -2695,7 +2754,7 @@ def main():
         if built:
             alt_ladders, alt_date = built, t_iso
 
-    alt_log = track_alt_ladders(alt_ladders, alt_date, slate, plog, now)
+    alt_log = track_alt_ladders(alt_ladders, alt_date, slate, plog, now, cal)
     # 3e. Alt Parlay ladder: separate challenge, picks only from today's alt lines (no extra Odds API calls)
     alt_lad = run_ladder(load(ALT_LADDER_PATH, {}), plog, alt_ladder_cands(alt_ladders if alt_date == t_iso else [], slate),
                          slate, t_iso, now, choose=choose_alt_step, tag="alt parlay")
@@ -2758,7 +2817,8 @@ def main():
             "alt_ladder": {**{k: v for k, v in alt_lad.items() if k != "steps"}, "steps": alt_lad["steps"][:120]},
             "alt_ladders": alt_ladders, "alt_date": alt_date,
             "streaks": streaks,
-            "calibration": {**cal, "paused": paused, "pause_rule": {"min_bets": PAUSE_MIN_BETS, "roi": PAUSE_ROI}},
+            "calibration": {**cal, "paused": paused, "pause_rule": {"min_bets": PAUSE_MIN_BETS, "roi": PAUSE_ROI},
+                            "alt_map": [[rnd(x * 100, 1), rnd(y * 100, 1)] for x, y in ALT_CAL_MAP], "alt_n": ALT_CAL_N},
             "clv": {"potd": clv_summary(potd_hist), "ladder": clv_summary(ladder["steps"]),
                     "all": clv_summary(potd_hist + ladder["steps"])},
             "credits": {"limit": DAILY_CREDIT_LIMIT, "used_today": CREDITS.state["used_today"], "remaining": CREDITS.state.get("remaining"),
