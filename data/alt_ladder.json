@@ -134,8 +134,9 @@
    "day": 2,
    "stake": 15.18,
    "to_win": 8.34,
-   "picked_at": "2026-11-09 11:53 AM ET",
-   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 82% to hit by our numbers (80% trusting only half our edge) at -182. The most likely winner on today's alt lines at a ladder price"
+   "picked_at": "2026-11-09 06:36 PM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 82% to hit by our numbers (80% trusting only half our edge) at -182. The most likely winner on today's alt lines at a ladder price",
+   "first_picked_at": "2026-11-09 11:53 AM ET"
   },
   {
    "type": "Parlay",

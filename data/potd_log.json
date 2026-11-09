@@ -14,14 +14,14 @@
    "stat": "REB",
    "side": "Over",
    "line": 6.5,
-   "price": -116,
+   "price": -119,
    "model": 8.6,
    "edge": 2.1,
    "edge_pct": 32.3,
    "label": "Cedric Coward Over 6.5 REB",
    "best": [
-    100,
-    "betrivers"
+    -106,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -65,31 +65,32 @@
    "score": 100.0,
    "reasons": [
     "Model projects 8.6 REB vs a line of 6.5 (+2.1, 32% edge)",
-    "Honest win chance 56.6% vs 54% implied by -116: +5.4% expected value (raw model said 85.3%)",
+    "Honest win chance 56.6% vs 54% implied by -119: +4.2% expected value (raw model said 85.3%)",
     "Went over the line in 8 of his last 8 games (5/5 in the last 5)",
     "Averaging 8.2 over the last 5 and 8.8 over the last 8",
     "Minutes steady: 27 per game over the last 5 (28 over the last 8)",
     "Matchup vs TOR: -6.5% to his REB projection from their defense and pace (works against the over)",
     "TOR ranks among the top-10 defenses for REB; he went over 6.5 in 2 of 2 games against that tier",
     "Teammate injury boost: Isaiah Stewart, Scotty Pippen Jr. out, +7.5% to his REB projection (extra minutes and usage)",
-    "Best price: +100 at BetRivers (DraftKings -116; the record is graded at DraftKings)",
+    "Best price: -106 at FanDuel (DraftKings -119; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 104,
+   "candidates_considered": 106,
    "p_model": 75.4,
    "p_win_raw": 85.3,
    "p_win": 56.6,
-   "ev": 5.4,
-   "picked_at": "2026-11-09 11:53 AM ET",
+   "ev": 4.2,
+   "picked_at": "2026-11-09 06:36 PM ET",
    "open_line": 6.5,
    "open_price": -116,
+   "first_picked_at": "2026-11-09 11:53 AM ET",
    "close_line": 6.5,
-   "close_price": -116,
-   "close_at": "2026-11-09 11:53 AM ET",
+   "close_price": -119,
+   "close_at": "2026-11-09 06:36 PM ET",
    "clv": {
     "line": 0.0,
-    "price": 0.0,
-    "beat": false,
+    "price": 0.6,
+    "beat": true,
     "final": false
    }
   },
