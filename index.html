@@ -551,6 +551,7 @@ nav button:first-child { margin-left: -13px; }
       <div class="card table-wrap"><div class="conf-head" id="alp-climb-head">This climb</div><table id="alp-climb"></table></div>
     </div>
     <div class="kpis" id="alp-kpis" style="margin-top:16px;"></div>
+    <div id="alp-learn"></div>
     <div class="section-title" style="font-size:16px;margin-top:10px;">Past attempts</div>
     <div class="card table-wrap"><table id="alp-attempts"></table></div>
     <p class="note" style="margin-top:12px;" id="alp-rules"></p>
@@ -2089,7 +2090,19 @@ const ALT_PARLAY_CFG = {title: "Alt Parlay", board: false, empty: "The Alt Parla
   rest: "Steps come only from today's alt lines (posted at the 11 AM ET update). If no alt line or alt-line parlay is likely enough to hit with positive value at a ladder price, it's a rest day and the bankroll waits.",
   rules: (start, goal) => `How it works: the same challenge as the Ladder, kept completely separate. Start with ${money(start)} and put the whole bankroll on one play a day; a win rolls everything into the next day, a loss ends the attempt and the next one starts over at ${money(start)}, a push carries the bankroll forward. Every play comes from DraftKings alternate lines: either one alt line (like 8+ points) or a 2-3 leg parlay of alt lines from different games. It picks the play with the highest chance to hit whose total price is between -200 and +120 and that wins money on average, trusting only half of our edge over the book. Nothing is guaranteed: these are our estimates. The play can update until its first game tips off, then it locks. Every step and attempt is saved permanently and counted in Records. Reaching ${money(goal)} completes the ladder.`};
 function renderLadderChallenge() { renderLadderView(DATA.ladder, "lad", LADDER_CFG); }
-function renderAltParlay() { renderLadderView(DATA.alt_ladder, "alp", ALT_PARLAY_CFG); }
+function renderAltParlay() { renderLadderView(DATA.alt_ladder, "alp", ALT_PARLAY_CFG); renderAltLearning(); }
+// How the alt-line chances are correcting themselves: every graded rung, by the chance we gave it.
+function renderAltLearning() {
+  const el = document.getElementById("alp-learn"); if (!el) return;
+  const C = DATA.calibration || {}, A = C.alt || {}, n = C.alt_n || 0;
+  const rows = Object.entries(A).map(([k, r]) => ({k: +k, n: r.n, said: 100 * r.p / r.n, hit: 100 * r.w / r.n})).filter(r => r.n).sort((a, b) => a.k - b.k);
+  if (!rows.length) { el.innerHTML = ""; return; }
+  const trust = Math.round(100 * (0.5 + 0.5 * Math.min(1, n / 400)));
+  el.innerHTML = `<div class="section-title" style="font-size:16px;margin-top:10px;">Getting smarter <small>every graded alt line teaches the model how often lines like it really hit</small></div>
+    <div class="card table-wrap"><table><thead><tr><th>We said</th><th>Rungs</th><th>Avg we said</th><th>Actually hit</th><th>Gap</th></tr></thead><tbody>` +
+    rows.map(r => { const gap = Math.round((r.hit - r.said) * 10) / 10; return `<tr><td>${r.k}–${r.k + 5}%</td><td class="stat">${r.n}</td><td class="stat team">${r.said.toFixed(1)}%</td><td class="stat"><strong>${r.hit.toFixed(1)}%</strong></td><td class="stat ${Math.abs(gap) < 3 ? "" : gap > 0 ? "positive" : "negative"}">${gap > 0 ? "+" : ""}${gap}</td></tr>`; }).join("") +
+    `</tbody></table><p class="note" style="margin:10px 12px;">${n} graded alt rungs so far. Each run rebuilds the chances from these results, so if a range keeps hitting less than we said, its future chances come down automatically (and up if it hits more). With few results a range barely moves; it leans harder on real results as they pile up. The Alt Parlay currently trusts ${trust}% of its edge over DraftKings, rising to 100% at 400 graded rungs.</p></div>`;
+}
 // ---------- Alt-line ladder helpers ----------
 const ALT_ROLES = [["Safe", "var(--good)"], ["Middle", "var(--accent2)"], ["Long shot", "var(--gold)"]];
 function altSplit(n) { return n >= 3 ? [0.5, 0.3, 0.2] : n === 2 ? [0.6, 0.4] : [1]; }
