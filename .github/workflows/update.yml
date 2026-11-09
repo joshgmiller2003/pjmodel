@@ -16,6 +16,10 @@ on:
         description: "One time only: keep this run's credits off today's daily cap (they still count toward the month)"
         type: boolean
         default: false
+      free_run:
+        description: "Free run: 0 credits. Re-picks with the lines already saved today (no Odds API calls)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,6 +48,9 @@ jobs:
               echo "go=false" >> "$GITHUB_OUTPUT"
             fi
             exit 0
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.free_run }}" = "true" ]; then
+            echo "Free run by hand"; echo "go=true" >> "$GITHUB_OUTPUT"; echo "free=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "01" ] || [ "$H" = "11" ] || [ "$H" = "18" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"
