@@ -1,7 +1,7 @@
 {
  "month": "2026-11",
- "updated": "2026-11-08 06:32 PM ET",
- "count": 1592,
+ "updated": "2026-11-08 07:20 PM ET",
+ "count": 1593,
  "bets": [
   {
    "id": "model|2026-11-09|DEN @ HOU|Spread",
@@ -133,7 +133,7 @@
    "actual": null,
    "units": null,
    "why": "Model projects 4.8 REB vs a line of 3.5 (+1.3, 37% edge) | Honest win chance 53.8% vs 49% implied by +103: +9.2% expected value (raw model said 77.9%) | Went over the line in 8 of his last 9 games (4/5 in the last 5) | Averaging 4.4 over the last 5 and 5.1 over the last 9 | Minutes steady: 23 per game over the last 5 (26 over the last 9) | Matchup vs BKN: neutral for REB (defense and pace about league average) | BKN ranks among the top-10 defenses for REB; he went over 3.5 in 3 of 4 games against that tier | Teammate injury boost: Sergio de Larrea out, +2.3% to his REB projection (extra minutes and usage) | Game script / rest: opponent on a back-to-back +1.5% (net +1.5%) | Best price: +114 at FanDuel (DraftKings +103; the record is graded at DraftKings) | Not on the injury report at pick time",
-   "picked_at": "2026-11-08 06:32 PM ET",
+   "picked_at": "2026-11-08 07:20 PM ET",
    "graded_at": null,
    "clv": {
     "line": 0.0,
@@ -196,6 +196,49 @@
    "close": [
     17.5,
     -102
+   ]
+  },
+  {
+   "id": "altlad|1|1|2026-11-08",
+   "source": "Alt Parlay",
+   "date": "2026-11-08",
+   "game": "BKN@DAL / NOP@LAC",
+   "market": "Parlay",
+   "pick": "Julius Randle 3+ AST + Derrick Jones 8+ PTS",
+   "type": "Parlay",
+   "player": null,
+   "team": null,
+   "opp": null,
+   "stat": "Parlay",
+   "dir": null,
+   "line": null,
+   "price": -193,
+   "model": null,
+   "edge": null,
+   "edge_pct": null,
+   "best": null,
+   "confidence": 88.1,
+   "attempt": 1,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 5.18,
+   "bankroll_after": null,
+   "win_chance": 84.0,
+   "result": null,
+   "status": "Pending",
+   "actual": null,
+   "units": null,
+   "why": "2-leg alt-line parlay, every leg from a different game: 84% to hit by our numbers (79% trusting only half our edge) at -193. The most likely winner on today's alt lines at a ladder price | Leg 1: Julius Randle 3+ AST (-533): 88.1% to win. Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value) | Leg 2: Derrick Jones 8+ PTS (-360): 95.4% to win. Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)",
+   "picked_at": "2026-11-08 07:20 PM ET",
+   "graded_at": null,
+   "clv": null,
+   "open": [
+    null,
+    null
+   ],
+   "close": [
+    null,
+    null
    ]
   },
   {

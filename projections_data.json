@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T23:32:36Z",
+ "generated_at": "2026-11-09T00:20:42Z",
  "season": "2026-27",
  "games": [
   {
@@ -70,8 +70,8 @@
    "total_edge": 4.3,
    "note": "Model DET -2.5, total 225.8; leans LAL vs the market spread.",
    "score": {
-    "away": 35,
-    "home": 14
+    "away": 61,
+    "home": 48
    }
   },
   {
@@ -96,14 +96,18 @@
     "over_px": -110,
     "under_px": -110
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": -4.2,
    "total_edge": 3.5,
-   "note": "Model MIN -8.3, total 226; leans UTA vs the market spread."
+   "note": "Model MIN -8.3, total 226; leans UTA vs the market spread.",
+   "score": {
+    "away": 12,
+    "home": 9
+   }
   },
   {
    "id": "BKN@DAL",
@@ -37569,7 +37573,7 @@
   {
    "player": "Gary Trent Jr.",
    "team": "MIL",
-   "status": "Day-To-Day",
+   "status": "Out",
    "reason": "Illness",
    "game": "BOS@MIL"
   },
@@ -37672,6 +37676,13 @@
    "game": "MEM@TOR"
   },
   {
+   "player": "Lauri Markkanen",
+   "team": "UTA",
+   "status": "Out",
+   "reason": "Right Wrist",
+   "game": "UTA@MIN"
+  },
+  {
    "player": "Jusuf Nurkic",
    "team": "UTA",
    "status": "Out",
@@ -37721,7 +37732,7 @@
    "game": "WAS@DET"
   }
  ],
- "injuries_updated": "11/08 06:32 PM ET",
+ "injuries_updated": "11/08 07:20 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 1.11,
@@ -48649,6 +48660,335 @@
   },
   {
    "timestamp": "2026-11-08T18:32",
+   "games": [
+    {
+     "id": "LAL@DET",
+     "matchup": "LAL @ DET",
+     "model_spread": -2.5,
+     "model_total": 225.8,
+     "dk_spread": "-4.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "UTA@MIN",
+     "matchup": "UTA @ MIN",
+     "model_spread": -8.3,
+     "model_total": 226.0,
+     "dk_spread": "-12.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "BKN@DAL",
+     "matchup": "BKN @ DAL",
+     "model_spread": -4.2,
+     "model_total": 224.5,
+     "dk_spread": "-7.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "BOS@MIL",
+     "matchup": "BOS @ MIL",
+     "model_spread": 3.6,
+     "model_total": 226.2,
+     "dk_spread": "+13.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "NOP@LAC",
+     "matchup": "NOP @ LAC",
+     "model_spread": -0.3,
+     "model_total": 229.4,
+     "dk_spread": "+1.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "MIA@SAC",
+     "matchup": "MIA @ SAC",
+     "model_spread": -0.3,
+     "model_total": 231.3,
+     "dk_spread": "+11.5",
+     "dk_total": 236.5
+    },
+    {
+     "id": "LAL@ATL",
+     "matchup": "LAL @ ATL",
+     "model_spread": -1.1,
+     "model_total": 231.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "CLE@CHA",
+     "matchup": "CLE @ CHA",
+     "model_spread": 2.4,
+     "model_total": 222.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "WAS@DET",
+     "matchup": "WAS @ DET",
+     "model_spread": -5.9,
+     "model_total": 221.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MEM@TOR",
+     "matchup": "MEM @ TOR",
+     "model_spread": -2.1,
+     "model_total": 228.6,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "IND@DAL",
+     "matchup": "IND @ DAL",
+     "model_spread": -3.7,
+     "model_total": 225.0,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "DEN@HOU",
+     "matchup": "DEN @ HOU",
+     "model_spread": -4.3,
+     "model_total": 226.0,
+     "dk_spread": "-8.5",
+     "dk_total": 217.5
+    },
+    {
+     "id": "SAS@PHX",
+     "matchup": "SAS @ PHX",
+     "model_spread": 2.1,
+     "model_total": 227.7,
+     "dk_spread": "+8.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "NOP@GSW",
+     "matchup": "NOP @ GSW",
+     "model_spread": -3.3,
+     "model_total": 231.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 47.0,
+     "dk": 40.5,
+     "edge": 6.5
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 54.0,
+     "dk": 47.5,
+     "edge": 6.5
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 39.7,
+     "dk": 33.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 46.7,
+     "dk": 40.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PA",
+     "model": 23.6,
+     "dk": 17.5,
+     "edge": 6.1
+    },
+    {
+     "player": "P.J. Washington",
+     "stat": "PR",
+     "model": 26.5,
+     "dk": 20.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PTS",
+     "model": 21.1,
+     "dk": 15.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PRA",
+     "model": 24.0,
+     "dk": 18.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Brook Lopez",
+     "stat": "PR",
+     "model": 22.9,
+     "dk": 17.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Jeremiah Fears",
+     "stat": "PA",
+     "model": 22.8,
+     "dk": 17.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Jeremiah Fears",
+     "stat": "PRA",
+     "model": 27.8,
+     "dk": 22.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Michael Porter Jr.",
+     "stat": "PR",
+     "model": 33.7,
+     "dk": 28.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PR",
+     "model": 19.7,
+     "dk": 14.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Josh Giddey",
+     "stat": "PRA",
+     "model": 21.5,
+     "dk": 26.5,
+     "edge": -5.0
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PRA",
+     "model": 25.5,
+     "dk": 20.5,
+     "edge": 5.0
+    },
+    {
+     "player": "P.J. Washington",
+     "stat": "PTS",
+     "model": 18.5,
+     "dk": 13.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PRA",
+     "model": 22.5,
+     "dk": 17.5,
+     "edge": 5.0
+    },
+    {
+     "player": "P.J. Washington",
+     "stat": "PRA",
+     "model": 27.4,
+     "dk": 22.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PA",
+     "model": 19.4,
+     "dk": 14.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PA",
+     "model": 15.4,
+     "dk": 10.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Derrick Jones Jr.",
+     "stat": "PR",
+     "model": 20.4,
+     "dk": 15.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Davion Mitchell",
+     "stat": "PA",
+     "model": 26.2,
+     "dk": 21.5,
+     "edge": 4.7
+    },
+    {
+     "player": "Terrence Shannon Jr.",
+     "stat": "PRA",
+     "model": 21.1,
+     "dk": 16.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PR",
+     "model": 23.0,
+     "dk": 18.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 26.0,
+     "dk": 21.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Michael Porter Jr.",
+     "stat": "PRA",
+     "model": 35.0,
+     "dk": 30.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Jeremiah Fears",
+     "stat": "PR",
+     "model": 22.9,
+     "dk": 18.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Davion Mitchell",
+     "stat": "PRA",
+     "model": 27.9,
+     "dk": 23.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Saddiq Bey",
+     "stat": "PR",
+     "model": 21.8,
+     "dk": 17.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Derik Queen",
+     "stat": "PTS",
+     "model": 12.7,
+     "dk": 8.5,
+     "edge": 4.2
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-08T19:20",
    "games": [
     {
      "id": "LAL@DET",
@@ -68412,18 +68752,18 @@
     "Best price: +114 at FanDuel (DraftKings +103; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
+   "candidates_considered": 70,
    "p_model": 70.6,
    "p_win_raw": 77.9,
    "p_win": 53.8,
    "ev": 9.2,
-   "picked_at": "2026-11-08 06:32 PM ET",
+   "picked_at": "2026-11-08 07:20 PM ET",
    "open_line": 3.5,
    "open_price": 102,
    "first_picked_at": "2026-11-08 11:26 AM ET",
    "close_line": 3.5,
    "close_price": 103,
-   "close_at": "2026-11-08 06:32 PM ET",
+   "close_at": "2026-11-08 07:20 PM ET",
    "clv": {
     "line": 0.0,
     "price": -0.2,
@@ -68866,7 +69206,7 @@
     "Best price: -140 at BetMGM (DraftKings -157; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
+   "candidates_considered": 70,
    "p_model": 75.7,
    "p_win_raw": 81.0,
    "p_win": 54.1,
@@ -68946,93 +69286,11 @@
     "Best price: +100 at betPARX (DraftKings -102; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
+   "candidates_considered": 70,
    "p_model": 59.9,
    "p_win_raw": 71.5,
    "p_win": 53.1,
    "ev": 5.2
-  },
-  {
-   "date": "2026-11-08",
-   "eid": "401909947",
-   "game": "UTA@MIN",
-   "time": "7:00 PM ET",
-   "home": "MIN",
-   "away": "UTA",
-   "type": "Prop",
-   "player": "Ace Bailey",
-   "team": "UTA",
-   "stat": "3PM",
-   "side": "Under",
-   "line": 1.5,
-   "price": 119,
-   "model": 1.1,
-   "edge": -0.4,
-   "edge_pct": 26.7,
-   "label": "Ace Bailey Under 1.5 3PM",
-   "best": [
-    135,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     7,
-     9
-    ],
-    "l15": [
-     7,
-     9
-    ]
-   },
-   "chart": {
-    "vals": [
-     2.0,
-     1.0,
-     1.0,
-     3.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     0.0
-    ],
-    "line": 1.5,
-    "side": "Under",
-    "label": "3PM",
-    "opps": [
-     "MEM",
-     "NOP",
-     "LAL",
-     "MEM",
-     "SAS",
-     "POR",
-     "SAS",
-     "NOP",
-     "DAL"
-    ]
-   },
-   "score": 90.8,
-   "reasons": [
-    "Model projects 1.1 3PM vs a line of 1.5 (-0.4, 27% edge)",
-    "Went under the line in 7 of his last 9 games (5/5 in the last 5)",
-    "Averaging 0.8 over the last 5 and 1.2 over the last 9",
-    "Minutes steady: 33 per game over the last 5 (30 over the last 9)",
-    "Matchup vs MIN: -1.6% to his 3PM projection from their defense and pace (helps the under)",
-    "MIN ranks among the top-10 defenses for 3PM; he went under 1.5 in 4 of 6 games against that tier",
-    "Teammate injury boost: Jaren Jackson Jr. out, +3.7% to his 3PM projection (extra minutes and usage)",
-    "Game script / rest: blowout risk (12.5-pt spread) -2.25% (net -2.2%)",
-    "Best price: +135 at BetMGM (DraftKings +119; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 88,
-   "p_model": 69.9,
-   "p_win_raw": 73.1,
-   "p_win": 53.3,
-   "ev": 16.7
   },
   {
    "date": "2026-11-08",
@@ -69105,7 +69363,7 @@
     "Teammate injury boost: Yves Missi out, +2.4% to his REB projection (extra minutes and usage)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
+   "candidates_considered": 70,
    "p_model": 67.4,
    "p_win_raw": 71.6,
    "p_win": 53.1,
@@ -69187,17 +69445,177 @@
     "Best price: -136 at BetRivers (DraftKings -140; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 88,
+   "candidates_considered": 70,
    "p_model": 77.9,
    "p_win_raw": 82.3,
    "p_win": 54.4,
    "ev": -6.7
+  },
+  {
+   "date": "2026-11-08",
+   "eid": "401909948",
+   "game": "BKN@DAL",
+   "time": "7:30 PM ET",
+   "home": "DAL",
+   "away": "BKN",
+   "type": "Prop",
+   "player": "Nolan Traore",
+   "team": "BKN",
+   "stat": "AST",
+   "side": "Under",
+   "line": 4.5,
+   "price": -128,
+   "model": 3.2,
+   "edge": -1.3,
+   "edge_pct": 28.9,
+   "label": "Nolan Traore Under 4.5 AST",
+   "best": [
+    -118,
+    "betrivers"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     9
+    ],
+    "l15": [
+     7,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     0.0,
+     0.0,
+     5.0,
+     3.0,
+     2.0,
+     6.0,
+     4.0,
+     2.0,
+     2.0
+    ],
+    "line": 4.5,
+    "side": "Under",
+    "label": "AST",
+    "opps": [
+     "CHA",
+     "CLE",
+     "IND",
+     "BOS",
+     "DET",
+     "IND",
+     "NYK",
+     "CHA",
+     "ATL"
+    ]
+   },
+   "score": 88.1,
+   "reasons": [
+    "Model projects 3.2 AST vs a line of 4.5 (-1.3, 29% edge)",
+    "Went under the line in 7 of his last 9 games (4/5 in the last 5)",
+    "Averaging 3.2 over the last 5 and 2.7 over the last 9",
+    "Minutes steady: 26 per game over the last 5 (22 over the last 9)",
+    "Matchup vs DAL: neutral for AST (defense and pace about league average)",
+    "DAL ranks among the middle-10 defenses for AST; he went under 4.5 in 2 of 2 games against that tier",
+    "Teammate injury boost: Egor Demin, Mikel Brown Jr. out, +20% to his AST projection (extra minutes and usage)",
+    "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -118 at BetRivers (DraftKings -128; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 70,
+   "p_model": 78.1,
+   "p_win_raw": 77.9,
+   "p_win": 53.8,
+   "ev": -4.2
+  },
+  {
+   "date": "2026-11-08",
+   "eid": "401909948",
+   "game": "BKN@DAL",
+   "time": "7:30 PM ET",
+   "home": "DAL",
+   "away": "BKN",
+   "type": "Prop",
+   "player": "Michael Porter Jr.",
+   "team": "BKN",
+   "stat": "REB",
+   "side": "Over",
+   "line": 6.5,
+   "price": -133,
+   "model": 8.8,
+   "edge": 2.3,
+   "edge_pct": 35.4,
+   "label": "Michael Porter Jr. Over 6.5 REB",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     9
+    ],
+    "l15": [
+     7,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     7.0,
+     9.0,
+     0.0,
+     12.0,
+     7.0,
+     9.0,
+     5.0,
+     10.0,
+     9.0
+    ],
+    "line": 6.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "CHA",
+     "CLE",
+     "IND",
+     "BOS",
+     "DET",
+     "IND",
+     "NYK",
+     "CHA",
+     "ATL"
+    ]
+   },
+   "score": 88.1,
+   "reasons": [
+    "Model projects 8.8 REB vs a line of 6.5 (+2.3, 35% edge)",
+    "Went over the line in 7 of his last 9 games (4/5 in the last 5)",
+    "Averaging 8.0 over the last 5 and 7.6 over the last 9",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 9)",
+    "Matchup vs DAL: +3.9% to his REB projection from their defense and pace (helps the over)",
+    "DAL ranks among the bottom-10 defenses for REB; he went over 6.5 in 3 of 3 games against that tier",
+    "Teammate injury boost: Egor Demin, Mikel Brown Jr. out, +9% to his REB projection (extra minutes and usage)",
+    "Game script / rest: back-to-back -3% (net -3%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 70,
+   "p_model": 77.4,
+   "p_win_raw": 77.6,
+   "p_win": 53.8,
+   "ev": -5.7
   }
  ],
  "board": {
   "date": "2026-11-08",
-  "qualified": 88,
-  "positive": 28,
+  "qualified": 70,
+  "positive": 19,
   "top_win": 58.0,
   "note": null
  },
@@ -70300,7 +70718,6 @@
     "tpm": 2.0
    }
   ],
-  "Michael Porter Jr|DAL": [],
   "Ayo Dosunmu|UTA": [
    {
     "date": "2026-03-18",
@@ -70498,8 +70915,7 @@
     "blk": 0.0,
     "tpm": 1.0
    }
-  ],
-  "Derrick Jones|NOP": []
+  ]
  },
  "ladder": {
   "start": 10.0,
@@ -70979,6 +71395,145 @@
     "graded_at": "2026-11-05 01:52 AM ET",
     "applied": true,
     "bankroll_after": 17.46
+   }
+  ]
+ },
+ "alt_ladder": {
+  "start": 10.0,
+  "goal": 1000.0,
+  "attempt": 1,
+  "bankroll": 10.0,
+  "attempts": [],
+  "attempt_started": "2026-11-08",
+  "steps": [
+   {
+    "type": "Parlay",
+    "label": "Julius Randle 3+ AST + Derrick Jones 8+ PTS",
+    "game": "BKN@DAL / NOP@LAC",
+    "eid": "401909948",
+    "time": "7:30 PM ET",
+    "home": "DAL",
+    "away": "BKN",
+    "side": null,
+    "line": null,
+    "price": -193,
+    "reasons": [
+     "Leg 1: Julius Randle 3+ AST (-533): 88.1% to win. Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value)",
+     "Leg 2: Derrick Jones 8+ PTS (-360): 95.4% to win. Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)"
+    ],
+    "p_win": 84.0,
+    "p_model": 84.0,
+    "ev": 27.5,
+    "score": 88.1,
+    "legs": [
+     {
+      "type": "Prop",
+      "label": "Julius Randle 3+ AST",
+      "game": "BKN@DAL",
+      "eid": "401909948",
+      "time": "7:30 PM ET",
+      "home": "DAL",
+      "away": "BKN",
+      "side": "Over",
+      "line": 2.5,
+      "price": -533,
+      "model": 5.0,
+      "chart": {
+       "vals": [
+        7.0,
+        5.0,
+        7.0,
+        4.0,
+        3.0,
+        6.0,
+        2.0,
+        4.0,
+        8.0
+       ],
+       "line": 2.5,
+       "side": "Over",
+       "label": "AST",
+       "opps": [
+        "CHA",
+        "CLE",
+        "IND",
+        "BOS",
+        "DET",
+        "IND",
+        "NYK",
+        "CHA",
+        "ATL"
+       ]
+      },
+      "reasons": [
+       "Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value)",
+       "Cleared 3+ in 8 of his last 9 games",
+       "We project 5.0 AST (DraftKings main line 4.5)"
+      ],
+      "p_win": 88.1,
+      "p_model": 88.1,
+      "ev": 4.7,
+      "score": 88.1,
+      "player": "Julius Randle",
+      "team": "BKN",
+      "stat": "AST"
+     },
+     {
+      "type": "Prop",
+      "label": "Derrick Jones 8+ PTS",
+      "game": "NOP@LAC",
+      "eid": "401909950",
+      "time": "9:00 PM ET",
+      "home": "LAC",
+      "away": "NOP",
+      "side": "Over",
+      "line": 7.5,
+      "price": -360,
+      "model": 12.5,
+      "chart": {
+       "vals": [
+        8.0,
+        16.0,
+        11.0,
+        15.0,
+        10.0,
+        9.0,
+        12.0
+       ],
+       "line": 7.5,
+       "side": "Over",
+       "label": "PTS",
+       "opps": [
+        "SAC",
+        "LAL",
+        "OKC",
+        "LAL",
+        "MIN",
+        "GSW",
+        "MIA"
+       ]
+      },
+      "reasons": [
+       "Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)",
+       "Cleared 8+ in 7 of his last 7 games",
+       "We project 12.5 PTS (DraftKings main line 11.5)"
+      ],
+      "p_win": 95.4,
+      "p_model": 95.4,
+      "ev": 21.9,
+      "score": 95.4,
+      "player": "Derrick Jones",
+      "team": "LAC",
+      "stat": "PTS"
+     }
+    ],
+    "date": "2026-11-08",
+    "attempt": 1,
+    "day": 1,
+    "stake": 10.0,
+    "to_win": 5.18,
+    "picked_at": "2026-11-08 07:20 PM ET",
+    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 84% to hit by our numbers (79% trusting only half our edge) at -193. The most likely winner on today's alt lines at a ladder price"
    }
   ]
  },
@@ -74784,6 +75339,89 @@
     "p": 20.015
    }
   },
+  "alt": {
+   "65": {
+    "n": 16,
+    "w": 12,
+    "p": 10.986
+   },
+   "45": {
+    "n": 15,
+    "w": 9,
+    "p": 7.178
+   },
+   "20": {
+    "n": 15,
+    "w": 2,
+    "p": 3.362
+   },
+   "85": {
+    "n": 1,
+    "w": 0,
+    "p": 0.853
+   },
+   "55": {
+    "n": 17,
+    "w": 10,
+    "p": 9.769
+   },
+   "25": {
+    "n": 9,
+    "w": 2,
+    "p": 2.474
+   },
+   "50": {
+    "n": 20,
+    "w": 11,
+    "p": 10.519
+   },
+   "40": {
+    "n": 10,
+    "w": 5,
+    "p": 4.245
+   },
+   "70": {
+    "n": 20,
+    "w": 13,
+    "p": 14.488
+   },
+   "75": {
+    "n": 9,
+    "w": 4,
+    "p": 6.911
+   },
+   "60": {
+    "n": 14,
+    "w": 7,
+    "p": 8.77
+   },
+   "35": {
+    "n": 11,
+    "w": 3,
+    "p": 4.123
+   },
+   "10": {
+    "n": 6,
+    "w": 0,
+    "p": 0.826
+   },
+   "30": {
+    "n": 9,
+    "w": 3,
+    "p": 2.929
+   },
+   "15": {
+    "n": 6,
+    "w": 0,
+    "p": 1.061
+   },
+   "90": {
+    "n": 1,
+    "w": 1,
+    "p": 0.942
+   }
+  },
+  "alt_backfilled": true,
   "paused": {
    "Spread": "model misses the margin by 12.1 pts vs DraftKings 10.1 (last 33 games)",
    "Moneyline": "model misses the margin by 12.1 pts vs DraftKings 10.1 (last 33 games)",
@@ -74794,7 +75432,66 @@
   "pause_rule": {
    "min_bets": 150,
    "roi": -8.0
-  }
+  },
+  "alt_map": [
+   [
+    13.8,
+    11.1
+   ],
+   [
+    17.7,
+    14.3
+   ],
+   [
+    22.4,
+    19.0
+   ],
+   [
+    27.5,
+    26.1
+   ],
+   [
+    32.5,
+    32.8
+   ],
+   [
+    37.5,
+    34.4
+   ],
+   [
+    42.4,
+    44.6
+   ],
+   [
+    47.9,
+    52.4
+   ],
+   [
+    52.6,
+    53.7
+   ],
+   [
+    57.5,
+    58.0
+   ],
+   [
+    62.6,
+    58.1
+   ],
+   [
+    72.4,
+    69.6
+   ],
+   [
+    85.3,
+    82.0
+   ],
+   [
+    94.2,
+    94.4
+   ]
+  ],
+  "alt_n": 179
  },
  "clv": {
   "potd": {
@@ -74822,7 +75519,7 @@
   "remaining": 15419,
   "allowed_now": 77,
   "skipped": [],
-  "slot": "pretip",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "11:26 AM",
@@ -74928,7 +75625,7 @@
   "history": [
    {
     "date": "2026-11-08",
-    "used": 72,
+    "used": 115,
     "limit": 250
    },
    {
@@ -75170,6 +75867,14 @@
      "pending": 0,
      "units": 0.0
     },
+    "Alt Parlay": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
+     "units": 0.0
+    },
     "Alt Ladder": {
      "bets": 96,
      "won": 34,
@@ -75202,6 +75907,14 @@
      "lost": 2,
      "push": 0,
      "pending": 0,
+     "units": 0.0
+    },
+    "Alt Parlay": {
+     "bets": 1,
+     "won": 0,
+     "lost": 0,
+     "push": 0,
+     "pending": 1,
      "units": 0.0
     },
     "Alt Ladder": {
@@ -75345,7 +76058,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 4.8 REB vs a line of 3.5 (+1.3, 37% edge) | Honest win chance 53.8% vs 49% implied by +103: +9.2% expected value (raw model said 77.9%) | Went over the line in 8 of his last 9 games (4/5 in the last 5) | Averaging 4.4 over the last 5 and 5.1 over the last 9 | Minutes steady: 23 per game over the last 5 (26 over the last 9) | Matchup vs BKN: neutral for REB (defense and pace about league average) | BKN ranks among the top-10 defenses for REB; he went over 3.5 in 3 of 4 games against that tier | Teammate injury boost: Sergio de Larrea out, +2.3% to his REB projection (extra minutes and usage) | Game script / rest: opponent on a back-to-back +1.5% (net +1.5%) | Best price: +114 at FanDuel (DraftKings +103; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-08 06:32 PM ET",
+    "picked_at": "2026-11-08 07:20 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -75408,6 +76121,49 @@
     "close": [
      17.5,
      -102
+    ]
+   },
+   {
+    "id": "altlad|1|1|2026-11-08",
+    "source": "Alt Parlay",
+    "date": "2026-11-08",
+    "game": "BKN@DAL / NOP@LAC",
+    "market": "Parlay",
+    "pick": "Julius Randle 3+ AST + Derrick Jones 8+ PTS",
+    "type": "Parlay",
+    "player": null,
+    "team": null,
+    "opp": null,
+    "stat": "Parlay",
+    "dir": null,
+    "line": null,
+    "price": -193,
+    "model": null,
+    "edge": null,
+    "edge_pct": null,
+    "best": null,
+    "confidence": 88.1,
+    "attempt": 1,
+    "day": 1,
+    "stake": 10.0,
+    "to_win": 5.18,
+    "bankroll_after": null,
+    "win_chance": 84.0,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "2-leg alt-line parlay, every leg from a different game: 84% to hit by our numbers (79% trusting only half our edge) at -193. The most likely winner on today's alt lines at a ladder price | Leg 1: Julius Randle 3+ AST (-533): 88.1% to win. Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value) | Leg 2: Derrick Jones 8+ PTS (-360): 95.4% to win. Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)",
+    "picked_at": "2026-11-08 07:20 PM ET",
+    "graded_at": null,
+    "clv": null,
+    "open": [
+     null,
+     null
+    ],
+    "close": [
+     null,
+     null
     ]
    },
    {

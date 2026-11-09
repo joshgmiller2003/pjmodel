@@ -1,0 +1,139 @@
+{
+ "start": 10.0,
+ "goal": 1000.0,
+ "attempt": 1,
+ "bankroll": 10.0,
+ "steps": [
+  {
+   "type": "Parlay",
+   "label": "Julius Randle 3+ AST + Derrick Jones 8+ PTS",
+   "game": "BKN@DAL / NOP@LAC",
+   "eid": "401909948",
+   "time": "7:30 PM ET",
+   "home": "DAL",
+   "away": "BKN",
+   "side": null,
+   "line": null,
+   "price": -193,
+   "reasons": [
+    "Leg 1: Julius Randle 3+ AST (-533): 88.1% to win. Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value)",
+    "Leg 2: Derrick Jones 8+ PTS (-360): 95.4% to win. Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)"
+   ],
+   "p_win": 84.0,
+   "p_model": 84.0,
+   "ev": 27.5,
+   "score": 88.1,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Julius Randle 3+ AST",
+     "game": "BKN@DAL",
+     "eid": "401909948",
+     "time": "7:30 PM ET",
+     "home": "DAL",
+     "away": "BKN",
+     "side": "Over",
+     "line": 2.5,
+     "price": -533,
+     "model": 5.0,
+     "chart": {
+      "vals": [
+       7.0,
+       5.0,
+       7.0,
+       4.0,
+       3.0,
+       6.0,
+       2.0,
+       4.0,
+       8.0
+      ],
+      "line": 2.5,
+      "side": "Over",
+      "label": "AST",
+      "opps": [
+       "CHA",
+       "CLE",
+       "IND",
+       "BOS",
+       "DET",
+       "IND",
+       "NYK",
+       "CHA",
+       "ATL"
+      ]
+     },
+     "reasons": [
+      "Alt line 3+ AST at -533: our chance 88.1% vs the book's 84.2% (+4.7% expected value)",
+      "Cleared 3+ in 8 of his last 9 games",
+      "We project 5.0 AST (DraftKings main line 4.5)"
+     ],
+     "p_win": 88.1,
+     "p_model": 88.1,
+     "ev": 4.7,
+     "score": 88.1,
+     "player": "Julius Randle",
+     "team": "BKN",
+     "stat": "AST"
+    },
+    {
+     "type": "Prop",
+     "label": "Derrick Jones 8+ PTS",
+     "game": "NOP@LAC",
+     "eid": "401909950",
+     "time": "9:00 PM ET",
+     "home": "LAC",
+     "away": "NOP",
+     "side": "Over",
+     "line": 7.5,
+     "price": -360,
+     "model": 12.5,
+     "chart": {
+      "vals": [
+       8.0,
+       16.0,
+       11.0,
+       15.0,
+       10.0,
+       9.0,
+       12.0
+      ],
+      "line": 7.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "SAC",
+       "LAL",
+       "OKC",
+       "LAL",
+       "MIN",
+       "GSW",
+       "MIA"
+      ]
+     },
+     "reasons": [
+      "Alt line 8+ PTS at -360: our chance 95.4% vs the book's 78.3% (+21.9% expected value)",
+      "Cleared 8+ in 7 of his last 7 games",
+      "We project 12.5 PTS (DraftKings main line 11.5)"
+     ],
+     "p_win": 95.4,
+     "p_model": 95.4,
+     "ev": 21.9,
+     "score": 95.4,
+     "player": "Derrick Jones",
+     "team": "LAC",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-08",
+   "attempt": 1,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 5.18,
+   "picked_at": "2026-11-08 07:20 PM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 84% to hit by our numbers (79% trusting only half our edge) at -193. The most likely winner on today's alt lines at a ladder price"
+  }
+ ],
+ "attempts": [],
+ "attempt_started": "2026-11-08"
+}
