@@ -6,6 +6,139 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Cedric Coward 5+ REB + Dylan Harper 12+ PTS",
+   "game": "MEM@TOR / SAS@PHX",
+   "eid": "401909955",
+   "time": "7:30 PM ET",
+   "home": "TOR",
+   "away": "MEM",
+   "side": null,
+   "line": null,
+   "price": -182,
+   "reasons": [
+    "Leg 1: Cedric Coward 5+ REB (-406): 88.3% to win. Alt line 5+ REB at -406: our chance 88.3% vs the book's 80.2% (+10% expected value)",
+    "Leg 2: Dylan Harper 12+ PTS (-410): 92.8% to win. Alt line 12+ PTS at -410: our chance 92.8% vs the book's 80.4% (+15.4% expected value)"
+   ],
+   "p_win": 81.9,
+   "p_model": 81.9,
+   "ev": 27.0,
+   "score": 88.3,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Cedric Coward 5+ REB",
+     "game": "MEM@TOR",
+     "eid": "401909955",
+     "time": "7:30 PM ET",
+     "home": "TOR",
+     "away": "MEM",
+     "side": "Over",
+     "line": 4.5,
+     "price": -406,
+     "model": 7.5,
+     "chart": {
+      "vals": [
+       7.0,
+       11.0,
+       11.0,
+       7.0,
+       7.0,
+       9.0,
+       9.0,
+       9.0
+      ],
+      "line": 4.5,
+      "side": "Over",
+      "label": "REB",
+      "opps": [
+       "UTA",
+       "SAC",
+       "UTA",
+       "POR",
+       "SAC",
+       "NOP",
+       "IND",
+       "OKC"
+      ]
+     },
+     "reasons": [
+      "Alt line 5+ REB at -406: our chance 88.3% vs the book's 80.2% (+10% expected value)",
+      "Cleared 5+ in 8 of his last 8 games",
+      "We project 7.5 REB (DraftKings main line 6.5)"
+     ],
+     "p_win": 88.3,
+     "p_model": 88.3,
+     "ev": 10.0,
+     "score": 88.3,
+     "player": "Cedric Coward",
+     "team": "MEM",
+     "stat": "REB"
+    },
+    {
+     "type": "Prop",
+     "label": "Dylan Harper 12+ PTS",
+     "game": "SAS@PHX",
+     "eid": "401909958",
+     "time": "9:00 PM ET",
+     "home": "PHX",
+     "away": "SAS",
+     "side": "Over",
+     "line": 11.5,
+     "price": -410,
+     "model": 17.1,
+     "chart": {
+      "vals": [
+       18.0,
+       20.0,
+       22.0,
+       13.0,
+       13.0,
+       25.0,
+       17.0,
+       21.0,
+       19.0,
+       13.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "OKC",
+       "HOU",
+       "DAL",
+       "SAC",
+       "UTA",
+       "MIN",
+       "UTA",
+       "DAL",
+       "SAC",
+       "POR"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -410: our chance 92.8% vs the book's 80.4% (+15.4% expected value)",
+      "Cleared 12+ in 10 of his last 10 games",
+      "We project 17.1 PTS (DraftKings main line 16.5)"
+     ],
+     "p_win": 92.8,
+     "p_model": 92.8,
+     "ev": 15.4,
+     "score": 92.8,
+     "player": "Dylan Harper",
+     "team": "SAS",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-09",
+   "attempt": 1,
+   "day": 2,
+   "stake": 15.18,
+   "to_win": 8.34,
+   "picked_at": "2026-11-09 11:53 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 82% to hit by our numbers (80% trusting only half our edge) at -182. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Julius Randle 3+ AST + Derrick Jones 8+ PTS",
    "game": "BKN@DAL / NOP@LAC",
    "eid": "401909948",

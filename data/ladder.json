@@ -6,6 +6,100 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Peyton Watson Over 6.5 RA",
+   "game": "CLE@CHA",
+   "eid": "401909953",
+   "time": "7:00 PM ET",
+   "home": "CHA",
+   "away": "CLE",
+   "side": "Over",
+   "line": 6.5,
+   "price": -114,
+   "model": 9.1,
+   "edge": 2.6,
+   "edge_pct": 40.0,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     8
+    ],
+    "l15": [
+     7,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     3.0,
+     7.0,
+     9.0,
+     8.0,
+     7.0,
+     8.0,
+     11.0,
+     9.0
+    ],
+    "line": 6.5,
+    "side": "Over",
+    "label": "RA",
+    "opps": [
+     "PHI",
+     "BKN",
+     "MIN",
+     "WAS",
+     "ATL",
+     "MIL",
+     "PHI",
+     "NYK"
+    ]
+   },
+   "reasons": [
+    "Model projects 9.1 RA vs a line of 6.5 (+2.6, 40% edge)",
+    "Went over the line in 7 of his last 8 games (5/5 in the last 5)",
+    "Averaging 8.6 over the last 5 and 7.8 over the last 8",
+    "Minutes steady: 26 per game over the last 5 (28 over the last 8)",
+    "Matchup vs CHA: neutral for RA (defense and pace about league average)",
+    "CHA ranks among the bottom-10 defenses for RA; he went over 6.5 in 3 of 4 games against that tier",
+    "Teammate injury boost: Jaylon Tyson, Sam Merrill out, +17.6% to his RA projection (extra minutes and usage)",
+    "Best price: -106 at FanDuel (DraftKings -114; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 57.1,
+   "p_model": 86.9,
+   "ev": 7.2,
+   "score": 94.8,
+   "best": [
+    -106,
+    "fanduel"
+   ],
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "stat": "RA",
+   "date": "2026-11-09",
+   "attempt": 3,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 8.77,
+   "picked_at": "2026-11-09 11:53 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.1% to win, +7.2% expected value",
+   "open_line": 6.5,
+   "open_price": -114,
+   "close_line": 6.5,
+   "close_price": -114,
+   "close_at": "2026-11-09 11:53 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Josh Giddey Under 17.5 PR",
    "game": "PHI@CHI",
    "eid": "401909945",
@@ -477,5 +571,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-09"
 }
