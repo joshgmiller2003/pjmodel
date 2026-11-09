@@ -144,7 +144,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 3.0,
+   "hit": 2,
+   "units": 1.33,
+   "result": "W",
+   "actual": "3 AST \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Rui Hachimura|AST",
@@ -194,7 +200,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": 0.41,
+   "result": "W",
+   "actual": "2 AST \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|P.J. Washington|REB",
@@ -879,7 +891,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 25.0,
+   "hit": 3,
+   "units": 1.5,
+   "result": "W",
+   "actual": "25 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Jeremiah Fears|REB",
@@ -955,7 +973,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 6.0,
+   "hit": 3,
+   "units": 1.07,
+   "result": "W",
+   "actual": "6 REB \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Derrick Jones|PTS",
@@ -1025,7 +1049,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 8.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "8 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Daniel Gafford|PTS",
@@ -1391,7 +1421,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 20.0,
+   "hit": 3,
+   "units": 1.69,
+   "result": "W",
+   "actual": "20 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Brook Lopez|REB",
@@ -1477,7 +1513,13 @@
     ]
    ],
    "saved_at": "2026-11-08 11:26 AM ET",
-   "updated_at": "2026-11-08 08:41 PM ET"
+   "updated_at": "2026-11-08 08:41 PM ET",
+   "value": 7.0,
+   "hit": 2,
+   "units": 0.44,
+   "result": "W",
+   "actual": "7 REB \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-09 01:59 AM ET"
   },
   {
    "id": "2026-11-08|Ayo Dosunmu|PTS",
