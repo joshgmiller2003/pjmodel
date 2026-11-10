@@ -5,6 +5,65 @@
  "bankroll": 23.52,
  "steps": [
   {
+   "type": "Prop",
+   "label": "Keaton Wagler 8+ PTS",
+   "game": "LAC@PHX",
+   "eid": "401909962",
+   "time": "9:00 PM ET",
+   "home": "PHX",
+   "away": "LAC",
+   "side": "Over",
+   "line": 7.5,
+   "price": -199,
+   "model": 10.6,
+   "chart": {
+    "vals": [
+     15.0,
+     13.0,
+     11.0,
+     21.0,
+     12.0,
+     7.0,
+     6.0,
+     11.0,
+     15.0
+    ],
+    "line": 7.5,
+    "side": "Over",
+    "label": "PTS",
+    "opps": [
+     "SAC",
+     "LAL",
+     "OKC",
+     "LAL",
+     "MIN",
+     "GSW",
+     "TOR",
+     "MIA",
+     "NOP"
+    ]
+   },
+   "reasons": [
+    "Alt line 8+ PTS at -199: our chance 72.1% vs the book's 66.6% (+8.4% expected value)",
+    "Cleared 8+ in 7 of his last 9 games",
+    "We project 10.6 PTS (DraftKings main line 9.5)"
+   ],
+   "p_win": 72.1,
+   "p_model": 72.1,
+   "ev": 8.4,
+   "score": 72.1,
+   "player": "Keaton Wagler",
+   "team": "LAC",
+   "stat": "PTS",
+   "date": "2026-11-10",
+   "attempt": 1,
+   "day": 3,
+   "stake": 23.52,
+   "to_win": 11.82,
+   "picked_at": "2026-11-10 11:39 AM ET",
+   "why_ladder": "Single alt line: 72.1% to hit by our numbers (72% trusting only half our edge) at -199, +8.4% expected value. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
    "type": "Parlay",
    "label": "Cedric Coward 5+ REB + Dylan Harper 12+ PTS",
    "game": "MEM@TOR / SAS@PHX",

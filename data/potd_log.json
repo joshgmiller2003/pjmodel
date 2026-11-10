@@ -2,6 +2,101 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-10",
+   "eid": "401909962",
+   "game": "LAC@PHX",
+   "time": "9:00 PM ET",
+   "home": "PHX",
+   "away": "LAC",
+   "type": "Prop",
+   "player": "Collin Gillespie",
+   "team": "PHX",
+   "stat": "PR",
+   "side": "Under",
+   "line": 12.5,
+   "price": -107,
+   "model": 9.0,
+   "edge": -3.5,
+   "edge_pct": 28.0,
+   "label": "Collin Gillespie Under 12.5 PR",
+   "best": [
+    -105,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     9
+    ],
+    "l15": [
+     7,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     15.0,
+     10.0,
+     19.0,
+     4.0,
+     5.0,
+     8.0,
+     10.0,
+     8.0
+    ],
+    "line": 12.5,
+    "side": "Under",
+    "label": "PR",
+    "opps": [
+     "POR",
+     "GSW",
+     "OKC",
+     "DEN",
+     "GSW",
+     "POR",
+     "ORL",
+     "HOU",
+     "SAS"
+    ]
+   },
+   "score": 90.8,
+   "reasons": [
+    "Model projects 9 PR vs a line of 12.5 (-3.5, 28% edge)",
+    "Honest win chance 53.7% vs 52% implied by -107: +3.9% expected value (raw model said 75.3%)",
+    "Went under the line in 7 of his last 9 games (5/5 in the last 5)",
+    "Averaging 7.0 over the last 5 and 8.9 over the last 9",
+    "Minutes steady: 23 per game over the last 5 (24 over the last 9)",
+    "Matchup vs LAC: +2.7% to his PR projection from their defense and pace (works against the under)",
+    "LAC ranks among the middle-10 defenses for PR; he went under 12.5 in 1 of 1 games against that tier",
+    "Teammate injury boost: Jordan Goodwin out, +6.4% to his PR projection (extra minutes and usage)",
+    "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -105 at BetMGM (DraftKings -107; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 97,
+   "p_model": 73.7,
+   "p_win_raw": 75.3,
+   "p_win": 53.7,
+   "ev": 3.9,
+   "picked_at": "2026-11-10 11:39 AM ET",
+   "open_line": 12.5,
+   "open_price": -107,
+   "close_line": 12.5,
+   "close_price": -107,
+   "close_at": "2026-11-10 11:39 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-09",
    "eid": "401909955",
    "game": "MEM@TOR",

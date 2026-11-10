@@ -6,6 +6,97 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Mikal Bridges Under 10.5 PTS",
+   "game": "MIL@NYK",
+   "eid": "401909960",
+   "time": "7:30 PM ET",
+   "home": "NYK",
+   "away": "MIL",
+   "side": "Under",
+   "line": 10.5,
+   "price": -105,
+   "model": 6.6,
+   "edge": -3.9,
+   "edge_pct": 37.1,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     9
+    ],
+    "l15": [
+     7,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     4.0,
+     0.0,
+     6.0,
+     12.0,
+     3.0,
+     12.0,
+     6.0,
+     7.0,
+     9.0
+    ],
+    "line": 10.5,
+    "side": "Under",
+    "label": "PTS",
+    "opps": [
+     "PHI",
+     "BOS",
+     "ORL",
+     "DET",
+     "CHI",
+     "PHI",
+     "BKN",
+     "CHI",
+     "CLE"
+    ]
+   },
+   "reasons": [
+    "Model projects 6.6 PTS vs a line of 10.5 (-3.9, 37% edge)",
+    "Went under the line in 7 of his last 9 games (4/5 in the last 5)",
+    "Averaging 7.4 over the last 5 and 6.6 over the last 9",
+    "Minutes steady: 22 per game over the last 5 (26 over the last 9)",
+    "Matchup vs MIL: +3.3% to his PTS projection from their defense and pace (works against the under)",
+    "MIL ranks among the bottom-10 defenses for PTS; no games against that tier yet",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 54.8,
+   "p_model": 83.5,
+   "ev": 7.0,
+   "score": 88.1,
+   "best": null,
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "stat": "PTS",
+   "date": "2026-11-10",
+   "attempt": 4,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 9.52,
+   "picked_at": "2026-11-10 11:39 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 54.8% to win, +7% expected value",
+   "open_line": 10.5,
+   "open_price": -105,
+   "close_line": 10.5,
+   "close_price": -105,
+   "close_at": "2026-11-10 11:39 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Peyton Watson Over 6.5 RA",
    "game": "CLE@CHA",
    "eid": "401909953",
@@ -583,5 +674,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-10"
 }
