@@ -75,7 +75,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 40.0,
+   "hit": 3,
+   "units": 2.43,
+   "result": "W",
+   "actual": "40 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Ty Jerome|PTS",
@@ -378,7 +384,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 7.0,
+   "hit": 1,
+   "units": 0.27,
+   "result": "W",
+   "actual": "7 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Naz Reid|REB",
@@ -645,7 +657,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Miles Bridges|PTS",
@@ -710,7 +728,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Khaman Maluach|REB",
@@ -790,7 +814,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": -0.1,
+   "result": "L",
+   "actual": "5 REB \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Julian Champagnie|3PM",
@@ -855,7 +885,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 3.0,
+   "hit": 2,
+   "units": 0.82,
+   "result": "W",
+   "actual": "3 3PM \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Ja'Kobe Walter|AST",
@@ -1125,7 +1161,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 17.0,
+   "hit": 1,
+   "units": -0.06,
+   "result": "L",
+   "actual": "17 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Donovan Mitchell|PTS",
@@ -1271,7 +1313,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Devin Vassell|PTS",
@@ -1346,7 +1394,12 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Devin Booker|PTS",
@@ -1416,7 +1469,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 32.0,
+   "hit": 1,
+   "units": 0.9,
+   "result": "W",
+   "actual": "32 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Collin Gillespie|AST",
@@ -1481,7 +1540,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 08:32 PM ET"
+   "updated_at": "2026-11-09 08:32 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 AST \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-10 01:45 AM ET"
   },
   {
    "id": "2026-11-09|Cedric Coward|REB",

@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 1,
- "bankroll": 15.18,
+ "bankroll": 23.52,
  "steps": [
   {
    "type": "Parlay",
@@ -130,7 +130,11 @@
      "score": 92.8,
      "player": "Dylan Harper",
      "team": "SAS",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "17 PTS",
+     "units": 0.24,
+     "graded_at": "2026-11-10 01:45 AM ET"
     }
    ],
    "date": "2026-11-09",
@@ -141,7 +145,12 @@
    "picked_at": "2026-11-09 06:36 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 82% to hit by our numbers (80% trusting only half our edge) at -182. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-09 11:53 AM ET",
-   "locked_at": "2026-11-09 08:32 PM ET"
+   "locked_at": "2026-11-09 08:32 PM ET",
+   "result": "W",
+   "actual": "Cedric Coward 5+ REB: 6 REB \u2713 \u00b7 Dylan Harper 12+ PTS: 17 PTS \u2713",
+   "graded_at": "2026-11-10 01:45 AM ET",
+   "applied": true,
+   "bankroll_after": 23.52
   },
   {
    "type": "Parlay",
