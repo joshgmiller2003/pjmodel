@@ -151,7 +151,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 27.0,
+   "hit": 2,
+   "units": 0.54,
+   "result": "W",
+   "actual": "27 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Scottie Barnes|PTS",
@@ -221,7 +227,12 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Peyton Watson|REB",
@@ -296,7 +307,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Oso Ighodaro|PTS",
@@ -456,7 +473,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 13.0,
+   "hit": 2,
+   "units": 1.05,
+   "result": "W",
+   "actual": "13 REB \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Moussa Diabate|PTS",
@@ -526,7 +549,12 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Miles Bridges|REB",
@@ -888,7 +916,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 0.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "0 AST \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Evan Mobley|AST",
@@ -954,7 +988,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 3.0,
+   "hit": 1,
+   "units": -0.27,
+   "result": "L",
+   "actual": "3 AST \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Evan Mobley|3PM",
@@ -1004,7 +1044,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": 0.55,
+   "result": "W",
+   "actual": "2 3PM \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Dylan Harper|PTS",
@@ -1149,7 +1195,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 11.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "11 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Dillon Brooks|PTS",
@@ -1520,7 +1572,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 6.0,
+   "hit": 1,
+   "units": -0.25,
+   "result": "L",
+   "actual": "6 REB \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Cedric Coward|PTS",
@@ -1595,7 +1653,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Cameron Boozer|REB",
@@ -1690,7 +1754,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-09|Cam Spencer|PTS",
@@ -1760,7 +1830,13 @@
     ]
    ],
    "saved_at": "2026-11-09 11:53 AM ET",
-   "updated_at": "2026-11-09 06:36 PM ET"
+   "updated_at": "2026-11-09 06:36 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
    "id": "2026-11-08|Zaccharie Risacher|AST",

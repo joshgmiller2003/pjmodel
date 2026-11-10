@@ -72,7 +72,11 @@
      "score": 88.3,
      "player": "Cedric Coward",
      "team": "MEM",
-     "stat": "REB"
+     "stat": "REB",
+     "result": "W",
+     "actual": "6 REB",
+     "units": 0.25,
+     "graded_at": "2026-11-09 10:12 PM ET"
     },
     {
      "type": "Prop",
