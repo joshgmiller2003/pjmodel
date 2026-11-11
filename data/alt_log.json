@@ -386,7 +386,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": 0.04,
+   "result": "W",
+   "actual": "2 AST \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Kyle Kuzma|PTS",
@@ -456,7 +462,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Kris Dunn|PTS",
@@ -776,7 +788,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 21.0,
+   "hit": 1,
+   "units": -0.15,
+   "result": "L",
+   "actual": "21 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Karl-Anthony Towns|3PM",
@@ -825,7 +843,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": 1.25,
+   "result": "W",
+   "actual": "2 3PM \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Josh Hart|3PM",
@@ -874,7 +898,12 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Franz Wagner|AST",
@@ -1552,7 +1581,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-10|Anthony Black|AST",
@@ -1732,7 +1767,13 @@
     ]
    ],
    "saved_at": "2026-11-10 11:39 AM ET",
-   "updated_at": "2026-11-10 06:31 PM ET"
+   "updated_at": "2026-11-10 06:31 PM ET",
+   "value": 14.0,
+   "hit": 2,
+   "units": 0.85,
+   "result": "W",
+   "actual": "14 REB \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-10 10:16 PM ET"
   },
   {
    "id": "2026-11-09|Victor Wembanyama|PTS",
