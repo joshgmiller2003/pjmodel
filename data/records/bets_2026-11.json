@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-10 06:31 PM ET",
+ "updated": "2026-11-10 08:32 PM ET",
  "count": 2091,
  "bets": [
   {
@@ -1075,7 +1075,7 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     19.5,
@@ -1117,7 +1117,7 @@
    "actual": null,
    "units": null,
    "why": "Highest win chance on the board at a ladder-friendly price: 54.6% to win, +4.2% expected value | Model projects 9.7 PR vs a line of 11.5 (-1.8, 16% edge) | Went under the line in 8 of his last 9 games (4/5 in the last 5) | Averaging 8.6 over the last 5 and 8.0 over the last 9 | Minutes steady: 29 per game over the last 5 (23 over the last 9) | Matchup vs SAC: +2.1% to his PR projection from their defense and pace (works against the under) | SAC ranks among the middle-10 defenses for PR; he went under 11.5 in 3 of 3 games against that tier | Teammate injury boost: Jalen Suggs, Paolo Banchero out, +8.9% to his PR projection (extra minutes and usage) | Best price: +102 at FanDuel (DraftKings -110; the record is graded at DraftKings) | Not on the injury report at pick time",
-   "picked_at": "2026-11-10 06:31 PM ET",
+   "picked_at": "2026-11-10 08:32 PM ET",
    "graded_at": null,
    "clv": {
     "line": 0.0,
@@ -1165,7 +1165,7 @@
    "actual": null,
    "units": null,
    "why": "Single alt line: 72.1% to hit by our numbers (72% trusting only half our edge) at -199, +8.4% expected value. The most likely winner on today's alt lines at a ladder price | Alt line 8+ PTS at -199: our chance 72.1% vs the book's 66.6% (+8.4% expected value) | Cleared 8+ in 7 of his last 9 games | We project 10.6 PTS (DraftKings main line 9.5)",
-   "picked_at": "2026-11-10 06:31 PM ET",
+   "picked_at": "2026-11-10 08:32 PM ET",
    "graded_at": null,
    "clv": null,
    "open": [
