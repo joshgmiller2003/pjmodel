@@ -8283,5 +8283,22 @@
 "tpm":1.0
 }
 ]
+},
+"Meleek Thomas|NYK":{
+"date":"2026-11-11",
+"games":[
+{
+"date":"2026-11-07",
+"season":"2026-27 Regular Season",
+"home":true,
+"min":24.0,
+"pts":9.0,
+"reb":4.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":3.0
+}
+]
 }
 }
