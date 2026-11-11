@@ -6,6 +6,102 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Josh Giddey Under 19.5 PR",
+   "game": "SAS@CHI",
+   "eid": "401909969",
+   "time": "8:00 PM ET",
+   "home": "CHI",
+   "away": "SAS",
+   "side": "Under",
+   "line": 19.5,
+   "price": -111,
+   "model": 16.2,
+   "edge": -3.3,
+   "edge_pct": 16.9,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     9
+    ],
+    "l15": [
+     8,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     9.0,
+     10.0,
+     17.0,
+     12.0,
+     18.0,
+     17.0,
+     17.0,
+     11.0,
+     26.0
+    ],
+    "line": 19.5,
+    "side": "Under",
+    "label": "PR",
+    "opps": [
+     "TOR",
+     "MIL",
+     "WAS",
+     "BOS",
+     "NYK",
+     "BOS",
+     "PHI",
+     "NYK",
+     "PHI"
+    ]
+   },
+   "reasons": [
+    "Model projects 16.2 PR vs a line of 19.5 (-3.3, 17% edge)",
+    "Went under the line in 8 of his last 9 games (4/5 in the last 5)",
+    "Averaging 17.8 over the last 5 and 15.2 over the last 9",
+    "Minutes steady: 30 per game over the last 5 (28 over the last 9)",
+    "Matchup vs SAS: +1.4% to his PR projection from their defense and pace (works against the under)",
+    "SAS ranks among the bottom-10 defenses for PR; he went under 19.5 in 5 of 6 games against that tier",
+    "Game script / rest: blowout risk (15.5-pt spread) -3.75% (net -3.7%)",
+    "Best price: -110 at ESPN BET (DraftKings -111; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 54.3,
+   "p_model": 73.2,
+   "ev": 3.2,
+   "score": 78.1,
+   "best": [
+    -110,
+    "espnbet"
+   ],
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "stat": "PR",
+   "date": "2026-11-11",
+   "attempt": 4,
+   "day": 2,
+   "stake": 19.09,
+   "to_win": 17.2,
+   "picked_at": "2026-11-11 11:42 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 54.3% to win, +3.2% expected value",
+   "open_line": 19.5,
+   "open_price": -111,
+   "close_line": 19.5,
+   "close_price": -111,
+   "close_at": "2026-11-11 11:42 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Jase Richardson Under 11.5 PR",
    "game": "ORL@SAC",
    "eid": "401909964",

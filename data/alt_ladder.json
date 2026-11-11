@@ -6,6 +6,65 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Ziaire Williams 8+ PTS",
+   "game": "LAL@MIL",
+   "eid": "401909971",
+   "time": "8:00 PM ET",
+   "home": "MIL",
+   "away": "LAL",
+   "side": "Over",
+   "line": 7.5,
+   "price": -159,
+   "model": 9.8,
+   "chart": {
+    "vals": [
+     9.0,
+     14.0,
+     11.0,
+     11.0,
+     9.0,
+     10.0,
+     8.0,
+     17.0,
+     12.0
+    ],
+    "line": 7.5,
+    "side": "Over",
+    "label": "PTS",
+    "opps": [
+     "GSW",
+     "LAC",
+     "UTA",
+     "POR",
+     "MIA",
+     "SAC",
+     "POR",
+     "DET",
+     "ATL"
+    ]
+   },
+   "reasons": [
+    "Alt line 8+ PTS at -159: our chance 76.7% vs the book's 61.4% (+24.9% expected value)",
+    "Cleared 8+ in 9 of his last 9 games",
+    "We project 9.8 PTS (DraftKings main line 8.5)"
+   ],
+   "p_win": 76.7,
+   "p_model": 76.7,
+   "ev": 24.9,
+   "score": 76.7,
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "stat": "PTS",
+   "date": "2026-11-11",
+   "attempt": 1,
+   "day": 4,
+   "stake": 35.34,
+   "to_win": 22.23,
+   "picked_at": "2026-11-11 11:42 AM ET",
+   "why_ladder": "Single alt line: 76.7% to hit by our numbers (77% trusting only half our edge) at -159, +24.9% expected value. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Prop",
    "label": "Keaton Wagler 8+ PTS",
    "game": "LAC@PHX",
    "eid": "401909962",

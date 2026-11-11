@@ -2,6 +2,96 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-11",
+   "eid": "401909971",
+   "game": "LAL@MIL",
+   "time": "8:00 PM ET",
+   "home": "MIL",
+   "away": "LAL",
+   "type": "Prop",
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "stat": "PTS",
+   "side": "Over",
+   "line": 8.5,
+   "price": -111,
+   "model": 11.2,
+   "edge": 2.7,
+   "edge_pct": 31.8,
+   "label": "Ziaire Williams Over 8.5 PTS",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     9
+    ],
+    "l15": [
+     8,
+     9
+    ]
+   },
+   "chart": {
+    "vals": [
+     9.0,
+     14.0,
+     11.0,
+     11.0,
+     9.0,
+     10.0,
+     8.0,
+     17.0,
+     12.0
+    ],
+    "line": 8.5,
+    "side": "Over",
+    "label": "PTS",
+    "opps": [
+     "GSW",
+     "LAC",
+     "UTA",
+     "POR",
+     "MIA",
+     "SAC",
+     "POR",
+     "DET",
+     "ATL"
+    ]
+   },
+   "score": 92.7,
+   "reasons": [
+    "Model projects 11.2 PTS vs a line of 8.5 (+2.7, 32% edge)",
+    "Honest win chance 55% vs 53% implied by -111: +4.5% expected value (raw model said 85.4%)",
+    "Went over the line in 8 of his last 9 games (4/5 in the last 5)",
+    "Averaging 11.2 over the last 5 and 11.2 over the last 9",
+    "Minutes steady: 21 per game over the last 5 (25 over the last 9)",
+    "Matchup vs MIL: +2.6% to his PTS projection from their defense and pace (helps the over)",
+    "MIL ranks among the bottom-10 defenses for PTS; he went over 8.5 in 2 of 2 games against that tier",
+    "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 194,
+   "p_model": 83.1,
+   "p_win_raw": 85.4,
+   "p_win": 55.0,
+   "ev": 4.5,
+   "picked_at": "2026-11-11 11:42 AM ET",
+   "open_line": 8.5,
+   "open_price": -111,
+   "close_line": 8.5,
+   "close_price": -111,
+   "close_at": "2026-11-11 11:42 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-10",
    "eid": "401909960",
    "game": "MIL@NYK",
