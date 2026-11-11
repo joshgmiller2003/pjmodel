@@ -1,125 +1,20 @@
 {
- "date": "2026-11-10",
- "used_today": 107,
+ "date": "2026-11-11",
+ "used_today": 1,
  "calls": [
   {
-   "time": "01:45 AM",
+   "time": "01:50 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "11:39 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:39 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:39 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props MIL@NYK",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props BOS@PHI",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props LAC@PHX",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props MIA@UTA",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props ORL@SAC",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "props OKC@POR",
-   "cost": 8
-  },
-  {
-   "time": "11:39 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:39 AM",
-   "call": "alt lines MIL@NYK",
-   "cost": 4
-  },
-  {
-   "time": "11:39 AM",
-   "call": "alt lines LAC@PHX",
-   "cost": 4
-  },
-  {
-   "time": "11:39 AM",
-   "call": "alt lines ORL@SAC",
-   "cost": 4
-  },
-  {
-   "time": "06:31 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:31 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:31 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props MIL@NYK",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props BOS@PHI",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props LAC@PHX",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props MIA@UTA",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props ORL@SAC",
-   "cost": 8
-  },
-  {
-   "time": "06:31 PM",
-   "call": "props OKC@POR",
-   "cost": 0
   }
  ],
- "remaining": 14929,
+ "remaining": 14908,
  "history": [
+  {
+   "date": "2026-11-11",
+   "used": 1,
+   "limit": 250
+  },
   {
    "date": "2026-11-10",
    "used": 107,
@@ -158,7 +53,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 24,
- "month_used": 870,
+ "days_to_reset": 23,
+ "month_used": 871,
  "month_limit": 5500
 }
