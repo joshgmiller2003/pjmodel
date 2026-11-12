@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-11",
+"updated":"2026-11-12",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -351,6 +351,7 @@
 "Mario Hezonja":"F",
 "Mark Williams":"C",
 "Marvin Bagley III":"F",
+"Mason Plumlee":"C",
 "Matas Buzelis":"F",
 "Matisse Thybulle":"G",
 "Max Christie":"G",
@@ -878,6 +879,7 @@
 "Mario Hezonja":"2995706",
 "Mark Williams":"4701232",
 "Marvin Bagley III":"4277848",
+"Mason Plumlee":"2488653",
 "Matas Buzelis":"4711294",
 "Matisse Thybulle":"3907498",
 "Max Christie":"4432582",

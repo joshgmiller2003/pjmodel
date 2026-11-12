@@ -69,7 +69,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 9.0,
+   "hit": 2,
+   "units": 0.73,
+   "result": "W",
+   "actual": "9 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Yaxel Lendeborg|PTS",
@@ -134,7 +140,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 25.0,
+   "hit": 2,
+   "units": 2.26,
+   "result": "W",
+   "actual": "25 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Yaxel Lendeborg|REB",
@@ -225,7 +237,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 10.0,
+   "hit": 3,
+   "units": 1.53,
+   "result": "W",
+   "actual": "10 REB \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Wendell Carter Jr|REB",
@@ -320,7 +338,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Wendell Carter Jr|PTS",
@@ -390,7 +414,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 9.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "9 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Tyler Herro|3PM",
@@ -455,7 +485,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Stephen Curry|3PM",
@@ -531,7 +567,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Sandro Mamukelashvili|3PM",
@@ -580,7 +622,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 1.47,
+   "result": "W",
+   "actual": "5 3PM \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Marcus Smart|PTS",
@@ -650,7 +698,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 6.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "6 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Luka Doncic|3PM",
@@ -725,7 +779,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": -0.12,
+   "result": "L",
+   "actual": "5 3PM \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Luka Doncic|AST",
@@ -805,7 +865,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 AST \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Luka Doncic|PTS",
@@ -869,7 +935,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 32.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "32 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Lauri Markkanen|3PM",
@@ -940,7 +1012,12 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Kyle Kuzma|REB",
@@ -1015,7 +1092,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Kyle Kuzma|3PM",
@@ -1064,7 +1147,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Jaime Jaquez Jr|3PM",
@@ -1113,7 +1202,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": 1.59,
+   "result": "W",
+   "actual": "2 3PM \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Georges Niang|PTS",
@@ -1178,7 +1273,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Georges Niang|REB",
@@ -1238,7 +1339,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 5.0,
+   "hit": 2,
+   "units": 1.52,
+   "result": "W",
+   "actual": "5 REB \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Draymond Green|AST",
@@ -1324,7 +1431,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 7.0,
+   "hit": 1,
+   "units": -0.22,
+   "result": "L",
+   "actual": "7 AST \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Brayden Burries|REB",
@@ -1404,7 +1517,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Brandin Podziemski|AST",
@@ -1470,7 +1589,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 4.0,
+   "hit": 2,
+   "units": 0.44,
+   "result": "W",
+   "actual": "4 AST \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Brandin Podziemski|PTS",
@@ -1546,7 +1671,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 22.0,
+   "hit": 3,
+   "units": 1.27,
+   "result": "W",
+   "actual": "22 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Austin Reaves|PTS",
@@ -1616,7 +1747,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 07:09 PM ET"
+   "updated_at": "2026-11-11 07:09 PM ET",
+   "value": 18.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "18 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-11|Al Horford|REB",
@@ -1687,7 +1824,13 @@
     ]
    ],
    "saved_at": "2026-11-11 11:42 AM ET",
-   "updated_at": "2026-11-11 08:43 PM ET"
+   "updated_at": "2026-11-11 08:43 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-12 01:52 AM ET"
   },
   {
    "id": "2026-11-10|Wendell Carter Jr|PTS",
