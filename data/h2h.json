@@ -9445,5 +9445,94 @@
 "tpm":4.0
 }
 ]
+},
+"Jamison Battle|PHI":{
+"date":"2026-11-12",
+"games":[
+{
+"date":"2026-01-12",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":8.0,
+"pts":3.0,
+"reb":2.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":1.0
+},
+{
+"date":"2026-01-11",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":15.0,
+"pts":5.0,
+"reb":2.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":0.0
+},
+{
+"date":"2025-11-19",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":3.0,
+"pts":2.0,
+"reb":0.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":0.0
+},
+{
+"date":"2025-03-30",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":25.0,
+"pts":16.0,
+"reb":7.0,
+"ast":1.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":4.0
+},
+{
+"date":"2025-03-12",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":38.0,
+"pts":11.0,
+"reb":8.0,
+"ast":1.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":3.0
+},
+{
+"date":"2025-02-11",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":9.0,
+"pts":3.0,
+"reb":1.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":1.0
+},
+{
+"date":"2024-10-25",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":15.0,
+"pts":12.0,
+"reb":6.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":2.0
+}
+]
 }
 }
