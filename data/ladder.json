@@ -6,6 +6,100 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Duncan Robinson Over 15.5 PTS",
+   "game": "DET@WAS",
+   "eid": "401909977",
+   "time": "7:00 PM ET",
+   "home": "WAS",
+   "away": "DET",
+   "side": "Over",
+   "line": 15.5,
+   "price": -109,
+   "model": 20.5,
+   "edge": 5.0,
+   "edge_pct": 32.3,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     7,
+     10
+    ]
+   },
+   "chart": {
+    "vals": [
+     21.0,
+     17.0,
+     21.0,
+     12.0,
+     13.0,
+     17.0,
+     24.0,
+     27.0,
+     12.0,
+     22.0
+    ],
+    "line": 15.5,
+    "side": "Over",
+    "label": "PTS",
+    "opps": [
+     "BOS",
+     "MIA",
+     "PHI",
+     "NYK",
+     "CHA",
+     "BKN",
+     "CHA",
+     "PHI",
+     "LAL",
+     "WAS"
+    ]
+   },
+   "reasons": [
+    "Model projects 20.5 PTS vs a line of 15.5 (+5, 32% edge)",
+    "Went over the line in 7 of his last 10 games (4/5 in the last 5)",
+    "Averaging 20.4 over the last 5 and 18.6 over the last 10",
+    "Minutes steady: 31 per game over the last 5 (31 over the last 10)",
+    "Matchup vs WAS: +3.3% to his PTS projection from their defense and pace (helps the over)",
+    "WAS ranks among the bottom-10 defenses for PTS; he went over 15.5 in 4 of 5 games against that tier",
+    "Teammate injury boost: Isaiah Joe, Jalen Duren out, +3.2% to his PTS projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 55.3,
+   "p_model": 83.0,
+   "ev": 6.0,
+   "score": 84.9,
+   "best": null,
+   "player": "Duncan Robinson",
+   "team": "DET",
+   "stat": "PTS",
+   "date": "2026-11-12",
+   "attempt": 4,
+   "day": 3,
+   "stake": 36.6,
+   "to_win": 33.58,
+   "picked_at": "2026-11-12 11:50 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 55.3% to win, +6% expected value",
+   "open_line": 15.5,
+   "open_price": -109,
+   "close_line": 15.5,
+   "close_price": -109,
+   "close_at": "2026-11-12 11:50 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Meleek Thomas Over 13.5 PRA",
    "game": "CLE@NYK",
    "eid": "401909967",

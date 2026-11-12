@@ -2,6 +2,99 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-12",
+   "eid": "401909978",
+   "game": "DAL@MIN",
+   "time": "8:00 PM ET",
+   "home": "MIN",
+   "away": "DAL",
+   "type": "Prop",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "RA",
+   "side": "Over",
+   "line": 8.5,
+   "price": -108,
+   "model": 10.7,
+   "edge": 2.2,
+   "edge_pct": 25.9,
+   "label": "Jaden McDaniels Over 8.5 RA",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     10,
+     11
+    ]
+   },
+   "chart": {
+    "vals": [
+     9.0,
+     9.0,
+     10.0,
+     11.0,
+     13.0,
+     6.0,
+     9.0,
+     12.0,
+     11.0,
+     9.0
+    ],
+    "line": 8.5,
+    "side": "Over",
+    "label": "RA",
+    "opps": [
+     "ORL",
+     "TOR",
+     "CLE",
+     "GSW",
+     "LAC",
+     "SAS",
+     "MIL",
+     "HOU",
+     "NOP",
+     "UTA"
+    ]
+   },
+   "score": 93.3,
+   "reasons": [
+    "Model projects 10.7 RA vs a line of 8.5 (+2.2, 26% edge)",
+    "Honest win chance 56.3% vs 52% implied by -108: +8.4% expected value (raw model said 84%)",
+    "Went over the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 9.4 over the last 5 and 9.8 over the last 11",
+    "Minutes steady: 36 per game over the last 5 (34 over the last 11)",
+    "Matchup vs DAL: +1% to his RA projection from their defense and pace (helps the over)",
+    "DAL ranks among the middle-10 defenses for RA; he went over 8.5 in 6 of 6 games against that tier",
+    "Teammate injury boost: Anthony Edwards out, +2.8% to his RA projection (extra minutes and usage)",
+    "Game script / rest: 3 days rest +1% (net +1%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 80,
+   "p_model": 79.5,
+   "p_win_raw": 84.0,
+   "p_win": 56.3,
+   "ev": 8.4,
+   "picked_at": "2026-11-12 11:50 AM ET",
+   "open_line": 8.5,
+   "open_price": -108,
+   "close_line": 8.5,
+   "close_price": -108,
+   "close_at": "2026-11-12 11:50 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-11",
    "eid": "401909971",
    "game": "LAL@MIL",

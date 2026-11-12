@@ -5,6 +5,143 @@
  "bankroll": 57.57,
  "steps": [
   {
+   "type": "Parlay",
+   "label": "Duncan Robinson 12+ PTS + Jaden McDaniels 12+ PTS",
+   "game": "DET@WAS / DAL@MIN",
+   "eid": "401909977",
+   "time": "7:00 PM ET",
+   "home": "WAS",
+   "away": "DET",
+   "side": null,
+   "line": null,
+   "price": -158,
+   "reasons": [
+    "Leg 1: Duncan Robinson 12+ PTS (-303): 87.4% to win. Alt line 12+ PTS at -303: our chance 87.4% vs the book's 75.2% (+16.3% expected value)",
+    "Leg 2: Jaden McDaniels 12+ PTS (-437): 91% to win. Alt line 12+ PTS at -437: our chance 91% vs the book's 81.4% (+11.9% expected value)"
+   ],
+   "p_win": 79.5,
+   "p_model": 79.5,
+   "ev": 30.0,
+   "score": 87.4,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Duncan Robinson 12+ PTS",
+     "game": "DET@WAS",
+     "eid": "401909977",
+     "time": "7:00 PM ET",
+     "home": "WAS",
+     "away": "DET",
+     "side": "Over",
+     "line": 11.5,
+     "price": -303,
+     "model": 18.0,
+     "chart": {
+      "vals": [
+       21.0,
+       17.0,
+       21.0,
+       12.0,
+       13.0,
+       17.0,
+       24.0,
+       27.0,
+       12.0,
+       22.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "BOS",
+       "MIA",
+       "PHI",
+       "NYK",
+       "CHA",
+       "BKN",
+       "CHA",
+       "PHI",
+       "LAL",
+       "WAS"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -303: our chance 87.4% vs the book's 75.2% (+16.3% expected value)",
+      "Cleared 12+ in 10 of his last 10 games",
+      "We project 18.0 PTS (DraftKings main line 15.5)"
+     ],
+     "p_win": 87.4,
+     "p_model": 87.4,
+     "ev": 16.3,
+     "score": 87.4,
+     "player": "Duncan Robinson",
+     "team": "DET",
+     "stat": "PTS"
+    },
+    {
+     "type": "Prop",
+     "label": "Jaden McDaniels 12+ PTS",
+     "game": "DAL@MIN",
+     "eid": "401909978",
+     "time": "8:00 PM ET",
+     "home": "MIN",
+     "away": "DAL",
+     "side": "Over",
+     "line": 11.5,
+     "price": -437,
+     "model": 17.8,
+     "chart": {
+      "vals": [
+       15.0,
+       14.0,
+       14.0,
+       19.0,
+       23.0,
+       19.0,
+       13.0,
+       14.0,
+       23.0,
+       16.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "ORL",
+       "TOR",
+       "CLE",
+       "GSW",
+       "LAC",
+       "SAS",
+       "MIL",
+       "HOU",
+       "NOP",
+       "UTA"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -437: our chance 91% vs the book's 81.4% (+11.9% expected value)",
+      "Cleared 12+ in 11 of his last 11 games",
+      "We project 17.8 PTS (DraftKings main line 16.5)"
+     ],
+     "p_win": 91.0,
+     "p_model": 91.0,
+     "ev": 11.9,
+     "score": 91.0,
+     "player": "Jaden McDaniels",
+     "team": "MIN",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-12",
+   "attempt": 1,
+   "day": 5,
+   "stake": 57.57,
+   "to_win": 36.44,
+   "picked_at": "2026-11-12 11:50 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 80% to hit by our numbers (80% trusting only half our edge) at -158. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
    "type": "Prop",
    "label": "Ziaire Williams 8+ PTS",
    "game": "LAL@MIL",
