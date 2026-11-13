@@ -1,105 +1,20 @@
 {
- "date": "2026-11-12",
- "used_today": 83,
+ "date": "2026-11-13",
+ "used_today": 1,
  "calls": [
   {
    "time": "01:52 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "11:50 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:50 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:50 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:50 AM",
-   "call": "props TOR@PHI",
-   "cost": 8
-  },
-  {
-   "time": "11:50 AM",
-   "call": "props DET@WAS",
-   "cost": 8
-  },
-  {
-   "time": "11:50 AM",
-   "call": "props DAL@MIN",
-   "cost": 8
-  },
-  {
-   "time": "11:50 AM",
-   "call": "props CHA@PHX",
-   "cost": 8
-  },
-  {
-   "time": "11:50 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:50 AM",
-   "call": "alt lines DAL@MIN",
-   "cost": 4
-  },
-  {
-   "time": "11:50 AM",
-   "call": "alt lines CHA@PHX",
-   "cost": 4
-  },
-  {
-   "time": "11:50 AM",
-   "call": "alt lines DET@WAS",
-   "cost": 4
-  },
-  {
-   "time": "06:39 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:39 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:39 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props TOR@PHI",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props DET@WAS",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props DAL@MIN",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props CHA@PHX",
-   "cost": 8
   }
  ],
- "remaining": 14187,
+ "remaining": 13999,
  "history": [
+  {
+   "date": "2026-11-13",
+   "used": 1,
+   "limit": 250
+  },
   {
    "date": "2026-11-12",
    "used": 83,
@@ -148,7 +63,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 22,
- "month_used": 1132,
+ "days_to_reset": 21,
+ "month_used": 1133,
  "month_limit": 5500
 }

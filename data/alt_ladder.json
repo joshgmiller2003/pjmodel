@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 1,
- "bankroll": 57.57,
+ "bankroll": 94.01,
  "steps": [
   {
    "type": "Parlay",
@@ -76,7 +76,11 @@
      "score": 87.4,
      "player": "Duncan Robinson",
      "team": "DET",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "13 PTS",
+     "units": 0.33,
+     "graded_at": "2026-11-13 01:52 AM ET"
     },
     {
      "type": "Prop",
@@ -130,7 +134,11 @@
      "score": 91.0,
      "player": "Jaden McDaniels",
      "team": "MIN",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "16 PTS",
+     "units": 0.23,
+     "graded_at": "2026-11-13 01:52 AM ET"
     }
    ],
    "date": "2026-11-12",
@@ -141,7 +149,12 @@
    "picked_at": "2026-11-12 07:06 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 80% to hit by our numbers (80% trusting only half our edge) at -158. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-12 11:50 AM ET",
-   "locked_at": "2026-11-12 08:38 PM ET"
+   "locked_at": "2026-11-12 08:38 PM ET",
+   "result": "W",
+   "actual": "Duncan Robinson 12+ PTS: 13 PTS \u2713 \u00b7 Jaden McDaniels 12+ PTS: 16 PTS \u2713",
+   "graded_at": "2026-11-13 01:52 AM ET",
+   "applied": true,
+   "bankroll_after": 94.01
   },
   {
    "type": "Prop",
