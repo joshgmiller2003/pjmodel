@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-12 08:38 PM ET",
+ "updated": "2026-11-12 10:13 PM ET",
  "count": 2612,
  "bets": [
   {
@@ -180,13 +180,13 @@
    "best": null,
    "confidence": 94.8,
    "win_chance": 55.6,
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "1 REB",
+   "units": 0.93,
    "why": "Model projects 1.6 REB vs a line of 2.5 (-0.9, 36% edge) | Honest win chance 55.6% vs 52% implied by -108: +7.1% expected value (raw model said 79.7%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 1.2 over the last 5 and 1.5 over the last 11 | Minutes steady: 23 per game over the last 5 (19 over the last 11) | Matchup vs PHI: +3.2% to his REB projection from their defense and pace (works against the under) | PHI ranks among the bottom-10 defenses for REB; he went under 2.5 in 3 of 4 games against that tier | Teammate injury boost: Scottie Barnes, Trayce Jackson-Davis out, +20% to his REB projection (extra minutes and usage) | Game script / rest: back-to-back -3% (net -3%) | Best price: +100 at BetMGM (DraftKings -108; the record is graded at DraftKings) | Not on the injury report at pick time",
    "picked_at": "2026-11-12 07:06 PM ET",
-   "graded_at": null,
+   "graded_at": "2026-11-12 10:13 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -313,10 +313,10 @@
    "confidence": null,
    "win_chance": null,
    "price_book": null,
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "112-123",
+   "units": -1.0,
    "why": "Model -1.9 vs DraftKings 7.5 (edge -5.6)"
   },
   {
@@ -443,10 +443,10 @@
    "confidence": 63.0,
    "win_chance": 54.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "27 PTS",
+   "units": 0.88,
    "why": "Model 28.3 vs DraftKings 24.5 (edge 3.8)"
   },
   {
@@ -469,10 +469,10 @@
    "confidence": 63.2,
    "win_chance": 51.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "6 PTS",
+   "units": -1.0,
    "why": "Model 12.7 vs DraftKings 10.5 (edge 2.2)"
   },
   {
@@ -495,10 +495,10 @@
    "confidence": 57.0,
    "win_chance": 52.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "6 PA",
+   "units": -1.0,
    "why": "Model 14.6 vs DraftKings 12.5 (edge 2.1)"
   },
   {
@@ -521,10 +521,10 @@
    "confidence": 72.0,
    "win_chance": 53.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "11 PR",
+   "units": -1.0,
    "why": "Model 17.7 vs DraftKings 14.5 (edge 3.2)"
   },
   {
@@ -547,10 +547,10 @@
    "confidence": 38.7,
    "win_chance": 50.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "36 PRA",
+   "units": 0.81,
    "why": "Model 27.6 vs DraftKings 25.5 (edge 2.1)"
   },
   {
@@ -573,10 +573,10 @@
    "confidence": 69.5,
    "win_chance": 54.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "11 PRA",
+   "units": -1.0,
    "why": "Model 19.8 vs DraftKings 16.5 (edge 3.3)"
   },
   {
@@ -599,10 +599,10 @@
    "confidence": 44.9,
    "win_chance": 50.0,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "8 REB",
+   "units": 1.1,
    "why": "Model 7.4 vs DraftKings 6.5 (edge 0.9)"
   },
   {
@@ -625,10 +625,10 @@
    "confidence": 77.2,
    "win_chance": 53.0,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "14 REB",
+   "units": 0.69,
    "why": "Model 7.1 vs DraftKings 5.5 (edge 1.6)"
   },
   {
@@ -651,10 +651,10 @@
    "confidence": 40.9,
    "win_chance": 49.6,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "19 RA",
+   "units": 1.07,
    "why": "Model 11.4 vs DraftKings 10.5 (edge 0.9)"
   },
   {
@@ -677,10 +677,10 @@
    "confidence": 55.8,
    "win_chance": 51.7,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "16 RA",
+   "units": 0.91,
    "why": "Model 11.6 vs DraftKings 9.5 (edge 2.1)"
   },
   {
@@ -703,10 +703,10 @@
    "confidence": 62.0,
    "win_chance": 51.9,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "10 RA",
+   "units": 0.72,
    "why": "Model 10.3 vs DraftKings 8.5 (edge 1.8)"
   },
   {
@@ -729,10 +729,10 @@
    "confidence": 82.5,
    "win_chance": 54.7,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "5 RA",
+   "units": -1.0,
    "why": "Model 7.0 vs DraftKings 5.5 (edge 1.5)"
   },
   {
@@ -2731,10 +2731,10 @@
    "confidence": 66.5,
    "win_chance": 51.0,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "5 AST",
+   "units": -1.0,
    "why": "Model 8.3 vs DraftKings 6.5 (edge 1.8)"
   },
   {
@@ -2757,10 +2757,10 @@
    "confidence": 50.5,
    "win_chance": 49.8,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "8 AST",
+   "units": 0.75,
    "why": "Model 6.4 vs DraftKings 5.5 (edge 0.9)"
   },
   {
@@ -2783,10 +2783,10 @@
    "confidence": 40.2,
    "win_chance": 50.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "15 PTS",
+   "units": 0.88,
    "why": "Model 15.2 vs DraftKings 13.5 (edge 1.7)"
   },
   {
@@ -2809,10 +2809,10 @@
    "confidence": 46.0,
    "win_chance": 49.3,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "17 PTS",
+   "units": 0.99,
    "why": "Model 10.9 vs DraftKings 9.5 (edge 1.4)"
   },
   {
@@ -2835,10 +2835,10 @@
    "confidence": 45.5,
    "win_chance": 50.9,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "5 PTS",
+   "units": -1.0,
    "why": "Model 8.5 vs DraftKings 7.5 (edge 1.0)"
   },
   {
@@ -2861,10 +2861,10 @@
    "confidence": 78.0,
    "win_chance": 53.3,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "6 PTS",
+   "units": -1.0,
    "why": "Model 3.7 vs DraftKings 5.5 (edge -1.8)"
   },
   {
@@ -2887,10 +2887,10 @@
    "confidence": 56.0,
    "win_chance": 53.7,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "35 PA",
+   "units": 0.89,
    "why": "Model 34.7 vs DraftKings 30.5 (edge 4.2)"
   },
   {
@@ -2913,10 +2913,10 @@
    "confidence": 54.2,
    "win_chance": 51.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "23 PA",
+   "units": 0.78,
    "why": "Model 19.5 vs DraftKings 16.5 (edge 3.0)"
   },
   {
@@ -2939,10 +2939,10 @@
    "confidence": 43.8,
    "win_chance": 50.3,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "10 PA",
+   "units": -1.0,
    "why": "Model 16.3 vs DraftKings 14.5 (edge 1.8)"
   },
   {
@@ -2965,10 +2965,10 @@
    "confidence": 57.2,
    "win_chance": 54.0,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "29 PR",
+   "units": 0.92,
    "why": "Model 32.0 vs DraftKings 28.5 (edge 3.5)"
   },
   {
@@ -2991,10 +2991,10 @@
    "confidence": 50.1,
    "win_chance": 50.7,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "23 PR",
+   "units": 0.79,
    "why": "Model 22.6 vs DraftKings 19.5 (edge 3.1)"
   },
   {
@@ -3017,10 +3017,10 @@
    "confidence": 43.8,
    "win_chance": 50.2,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "6 PR",
+   "units": -1.0,
    "why": "Model 11.8 vs DraftKings 10.5 (edge 1.3)"
   },
   {
@@ -3043,10 +3043,10 @@
    "confidence": 78.8,
    "win_chance": 53.7,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "11 PR",
+   "units": -1.0,
    "why": "Model 7.3 vs DraftKings 9.5 (edge -2.2)"
   },
   {
@@ -3069,10 +3069,10 @@
    "confidence": 51.0,
    "win_chance": 53.3,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "37 PRA",
+   "units": 0.91,
    "why": "Model 38.3 vs DraftKings 34.5 (edge 3.8)"
   },
   {
@@ -3095,10 +3095,10 @@
    "confidence": 47.5,
    "win_chance": 50.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "31 PRA",
+   "units": 0.9,
    "why": "Model 26.9 vs DraftKings 23.5 (edge 3.4)"
   },
   {
@@ -3121,10 +3121,10 @@
    "confidence": 35.0,
    "win_chance": 50.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "11 PRA",
+   "units": -1.0,
    "why": "Model 19.2 vs DraftKings 17.5 (edge 1.7)"
   },
   {
@@ -3147,10 +3147,10 @@
    "confidence": 70.5,
    "win_chance": 51.5,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "W",
+   "status": "Won",
+   "actual": "15 PRA",
+   "units": 0.84,
    "why": "Model 14.9 vs DraftKings 11.5 (edge 3.4)"
   },
   {
@@ -3173,10 +3173,10 @@
    "confidence": 66.4,
    "win_chance": 52.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "4 REB",
+   "units": -1.0,
    "why": "Model 10.4 vs DraftKings 8.5 (edge 1.9)"
   },
   {
@@ -3199,10 +3199,10 @@
    "confidence": 62.1,
    "win_chance": 52.4,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "5 REB",
+   "units": -1.0,
    "why": "Model 3.6 vs DraftKings 4.5 (edge -0.9)"
   },
   {
@@ -3225,10 +3225,10 @@
    "confidence": 80.0,
    "win_chance": 53.1,
    "price_book": "draftkings",
-   "result": null,
-   "status": "Pending",
-   "actual": null,
-   "units": null,
+   "result": "L",
+   "status": "Lost",
+   "actual": "6 RA",
+   "units": -1.0,
    "why": "Model 11.0 vs DraftKings 8.5 (edge 2.5)"
   },
   {

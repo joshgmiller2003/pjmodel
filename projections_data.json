@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T01:38:36Z",
+ "generated_at": "2026-11-13T03:13:57Z",
  "season": "2026-27",
  "games": [
   {
@@ -24,7 +24,7 @@
     "over_px": -110,
     "under_px": -109
    },
-   "status": "Live",
+   "status": "Final",
    "rest": {
     "away": 0,
     "home": 1
@@ -33,9 +33,11 @@
    "total_edge": 0.9,
    "note": "Model PHI -1.9, total 224.4; leans TOR vs the market spread.",
    "score": {
-    "away": 74,
-    "home": 79
-   }
+    "away": 112,
+    "home": 123
+   },
+   "actual_margin": 11,
+   "actual_total": 235
   },
   {
    "id": "DET@WAS",
@@ -68,8 +70,8 @@
    "total_edge": -0.2,
    "note": "Model WAS +1.7, total 222.3; leans WAS vs the market spread.",
    "score": {
-    "away": 88,
-    "home": 82
+    "away": 144,
+    "home": 140
    }
   },
   {
@@ -103,8 +105,8 @@
    "total_edge": 0.3,
    "note": "Model MIN -4.2, total 225.8; leans DAL vs the market spread.",
    "score": {
-    "away": 26,
-    "home": 34
+    "away": 91,
+    "home": 129
    }
   },
   {
@@ -129,14 +131,18 @@
     "over_px": -108,
     "under_px": -112
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 2,
     "home": 1
    },
    "spread_edge": -2.3,
    "total_edge": 8.3,
-   "note": "Model PHX -4.2, total 222.8; leans CHA vs the market spread."
+   "note": "Model PHX -4.2, total 222.8; leans CHA vs the market spread.",
+   "score": {
+    "away": 50,
+    "home": 55
+   }
   },
   {
    "id": "NYK@IND",
@@ -432,12 +438,12 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 66.5,
-   "win_raw": 57.9,
-   "win_chance": 51.0,
+   "conf": 66.1,
+   "win_raw": 56.7,
+   "win_chance": 50.6,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -448,7 +454,7 @@
     ],
     "mid": [
      2,
-     4
+     5
     ],
     "soft": [
      1,
@@ -492,17 +498,17 @@
      5
     ],
     "l10": [
-     3,
+     4,
      10
     ],
     "l15": [
-     4,
-     12
+     5,
+     13
     ]
    },
-   "conf": 50.5,
-   "win_raw": 50.3,
-   "win_chance": 49.8,
+   "conf": 54.0,
+   "win_raw": 52.3,
+   "win_chance": 49.2,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -516,8 +522,8 @@
      1
     ],
     "soft": [
-     2,
-     5
+     3,
+     6
     ]
    }
   },
@@ -557,17 +563,17 @@
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 52.1,
-   "win_raw": 59.9,
-   "win_chance": 51.6,
+   "conf": 53.5,
+   "win_raw": 61.2,
+   "win_chance": 52.1,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -577,8 +583,8 @@
      1
     ],
     "mid": [
-     2,
-     4
+     3,
+     5
     ],
     "soft": [
      4,
@@ -618,24 +624,24 @@
      5
     ],
     "l10": [
-     6,
+     7,
      10
     ],
     "l15": [
-     6,
-     10
+     7,
+     11
     ]
    },
-   "conf": 59.8,
-   "win_raw": 62.9,
-   "win_chance": 52.5,
+   "conf": 63.0,
+   "win_raw": 64.3,
+   "win_chance": 53.1,
    "edge": -0.6,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     3
+     3,
+     4
     ],
     "mid": [
      3,
@@ -679,7 +685,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
@@ -687,13 +693,13 @@
      10
     ],
     "l15": [
-     7,
-     11
+     8,
+     12
     ]
    },
-   "conf": 52.3,
-   "win_raw": 62.0,
-   "win_chance": 52.2,
+   "conf": 55.4,
+   "win_raw": 63.2,
+   "win_chance": 52.8,
    "edge": -0.4,
    "side": "Under",
    "tiers": {
@@ -707,8 +713,8 @@
      1
     ],
     "soft": [
-     3,
-     5
+     4,
+     6
     ]
    }
   },
@@ -744,7 +750,7 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
@@ -752,20 +758,20 @@
      10
     ],
     "l15": [
-     6,
-     11
+     7,
+     12
     ]
    },
-   "conf": 70.6,
-   "win_raw": 59.2,
-   "win_chance": 51.4,
+   "conf": 73.9,
+   "win_raw": 60.7,
+   "win_chance": 52.0,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     0,
-     2
+     1,
+     3
     ],
     "mid": [
      4,
@@ -813,13 +819,13 @@
      10
     ],
     "l15": [
-     3,
-     11
+     4,
+     12
     ]
    },
-   "conf": 58.6,
-   "win_raw": 48.3,
-   "win_chance": 50.9,
+   "conf": 59.5,
+   "win_raw": 50.7,
+   "win_chance": 49.5,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -833,8 +839,8 @@
      1
     ],
     "soft": [
-     1,
-     5
+     2,
+     6
     ]
    }
   },
@@ -866,7 +872,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
@@ -874,20 +880,20 @@
      10
     ],
     "l15": [
-     5,
-     10
+     6,
+     11
     ]
    },
-   "conf": 52.9,
-   "win_raw": 50.4,
-   "win_chance": 49.7,
+   "conf": 56.2,
+   "win_raw": 52.2,
+   "win_chance": 49.2,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
-     1
+     2,
+     2
     ],
     "mid": [
      2,
@@ -936,16 +942,16 @@
     ],
     "l10": [
      6,
-     9
+     10
     ],
     "l15": [
      6,
-     9
+     10
     ]
    },
-   "conf": 59.7,
-   "win_raw": 64.3,
-   "win_chance": 53.0,
+   "conf": 57.0,
+   "win_raw": 61.6,
+   "win_chance": 52.3,
    "edge": -0.2,
    "side": "Under",
    "tiers": {
@@ -960,7 +966,7 @@
     ],
     "soft": [
      2,
-     3
+     4
     ]
    }
   },
@@ -996,21 +1002,21 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
      8,
-     11
+     12
     ]
    },
-   "conf": 82.5,
-   "win_raw": 63.1,
-   "win_chance": 52.6,
+   "conf": 76.2,
+   "win_raw": 60.6,
+   "win_chance": 51.9,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -1021,7 +1027,7 @@
     ],
     "mid": [
      2,
-     4
+     5
     ],
     "soft": [
      5,
@@ -1065,28 +1071,28 @@
      10
     ],
     "l15": [
-     9,
-     12
+     10,
+     13
     ]
    },
-   "conf": 63.0,
-   "win_raw": 72.2,
-   "win_chance": 54.4,
+   "conf": 63.2,
+   "win_raw": 73.0,
+   "win_chance": 54.7,
    "edge": 3.8,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      1,
      3
     ],
     "mid": [
-     4,
-     4
+     5,
+     6
     ],
     "soft": [
      4,
-     5
+     4
     ]
    }
   },
@@ -1118,7 +1124,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -1127,27 +1133,27 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 27.3,
-   "win_raw": 46.2,
-   "win_chance": 50.3,
+   "conf": 24.1,
+   "win_raw": 45.0,
+   "win_chance": 49.9,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      1,
      3
     ],
     "mid": [
      2,
-     4
+     6
     ],
     "soft": [
      1,
-     4
+     3
     ]
    }
   },
@@ -1192,12 +1198,12 @@
     ],
     "l15": [
      7,
-     11
+     12
     ]
    },
-   "conf": 35.9,
-   "win_raw": 56.7,
-   "win_chance": 50.6,
+   "conf": 35.2,
+   "win_raw": 54.6,
+   "win_chance": 50.0,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -1212,7 +1218,7 @@
     ],
     "soft": [
      3,
-     6
+     7
     ]
    }
   },
@@ -1252,20 +1258,20 @@
      10
     ],
     "l15": [
-     7,
-     10
+     8,
+     11
     ]
    },
-   "conf": 59.1,
-   "win_raw": 65.6,
-   "win_chance": 53.3,
+   "conf": 59.5,
+   "win_raw": 66.7,
+   "win_chance": 53.7,
    "edge": -2.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     2
+     3,
+     3
     ],
     "mid": [
      2,
@@ -1309,24 +1315,24 @@
      5
     ],
     "l10": [
-     4,
-     9
+     5,
+     10
     ],
     "l15": [
-     4,
-     9
+     5,
+     10
     ]
    },
-   "conf": 32.6,
-   "win_raw": 51.3,
-   "win_chance": 49.1,
+   "conf": 34.9,
+   "win_raw": 53.5,
+   "win_chance": 49.6,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
-     4
+     2,
+     5
     ],
     "mid": [
      2,
@@ -1374,32 +1380,32 @@
      5
     ],
     "l10": [
-     3,
+     4,
      10
     ],
     "l15": [
-     3,
-     11
+     4,
+     12
     ]
    },
-   "conf": 40.2,
-   "win_raw": 49.8,
-   "win_chance": 50.1,
+   "conf": 43.8,
+   "win_raw": 52.3,
+   "win_chance": 49.2,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      0,
      2
     ],
     "mid": [
-     1,
-     4
+     2,
+     6
     ],
     "soft": [
      2,
-     5
+     4
     ]
    }
   },
@@ -1427,21 +1433,21 @@
    "under": -127,
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     4,
-     10
+     5,
+     11
     ]
    },
-   "conf": 26.2,
-   "win_raw": 46.4,
-   "win_chance": 50.4,
+   "conf": 32.4,
+   "win_raw": 48.6,
+   "win_chance": 51.1,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -1455,8 +1461,8 @@
      2
     ],
     "soft": [
-     3,
-     6
+     4,
+     7
     ]
    }
   },
@@ -1497,19 +1503,19 @@
     ],
     "l15": [
      5,
-     11
+     12
     ]
    },
-   "conf": 63.2,
-   "win_raw": 59.2,
-   "win_chance": 51.4,
+   "conf": 62.7,
+   "win_raw": 57.7,
+   "win_chance": 51.0,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      2,
-     4
+     5
     ],
     "mid": [
      2,
@@ -1549,21 +1555,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 34.7,
-   "win_raw": 57.0,
-   "win_chance": 50.7,
+   "conf": 38.8,
+   "win_raw": 58.4,
+   "win_chance": 51.2,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -1573,8 +1579,8 @@
      4
     ],
     "mid": [
-     3,
-     3
+     4,
+     4
     ],
     "soft": [
      1,
@@ -1610,36 +1616,36 @@
    ],
    "hits": {
     "l5": [
-     1,
+     2,
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     5,
-     12
+     6,
+     13
     ]
    },
-   "conf": 46.0,
-   "win_raw": 50.9,
+   "conf": 52.1,
+   "win_raw": 52.7,
    "win_chance": 49.3,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      1,
      3
     ],
     "mid": [
      2,
-     4
+     6
     ],
     "soft": [
-     2,
-     5
+     3,
+     4
     ]
    }
   },
@@ -1675,17 +1681,17 @@
      5
     ],
     "l10": [
-     5,
+     6,
      10
     ],
     "l15": [
-     6,
-     11
+     7,
+     12
     ]
    },
-   "conf": 77.3,
-   "win_raw": 71.9,
-   "win_chance": 54.3,
+   "conf": 80.5,
+   "win_raw": 73.4,
+   "win_chance": 54.8,
    "edge": 5.5,
    "side": "Over",
    "tiers": {
@@ -1699,8 +1705,8 @@
      2
     ],
     "soft": [
-     2,
-     6
+     3,
+     7
     ]
    }
   },
@@ -1741,19 +1747,19 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 45.5,
-   "win_raw": 48.8,
-   "win_chance": 50.9,
+   "conf": 45.1,
+   "win_raw": 47.6,
+   "win_chance": 50.8,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      0,
-     4
+     5
     ],
     "mid": [
      2,
@@ -1802,12 +1808,12 @@
     ],
     "l15": [
      6,
-     10
+     11
     ]
    },
-   "conf": 78.0,
-   "win_raw": 65.6,
-   "win_chance": 53.3,
+   "conf": 77.2,
+   "win_raw": 63.4,
+   "win_chance": 52.8,
    "edge": -1.8,
    "side": "Under",
    "tiers": {
@@ -1818,7 +1824,7 @@
     ],
     "mid": [
      3,
-     5
+     6
     ],
     "soft": [
      2,
@@ -1858,17 +1864,17 @@
      5
     ],
     "l10": [
-     6,
+     7,
      10
     ],
     "l15": [
-     8,
-     12
+     9,
+     13
     ]
    },
-   "conf": 56.0,
-   "win_raw": 67.8,
-   "win_chance": 53.7,
+   "conf": 59.1,
+   "win_raw": 68.9,
+   "win_chance": 54.0,
    "edge": 4.2,
    "side": "Over",
    "tiers": {
@@ -1882,8 +1888,8 @@
      6
     ],
     "soft": [
-     3,
-     4
+     4,
+     5
     ]
    }
   },
@@ -1915,7 +1921,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -1924,12 +1930,12 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 27.5,
-   "win_raw": 46.2,
-   "win_chance": 50.3,
+   "conf": 24.4,
+   "win_raw": 45.0,
+   "win_chance": 49.9,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -1944,7 +1950,7 @@
     ],
     "soft": [
      3,
-     4
+     5
     ]
    }
   },
@@ -1985,19 +1991,19 @@
     ],
     "l15": [
      6,
-     11
+     12
     ]
    },
-   "conf": 29.5,
-   "win_raw": 51.8,
-   "win_chance": 49.1,
+   "conf": 28.9,
+   "win_raw": 50.0,
+   "win_chance": 50.0,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      2,
-     3
+     4
     ],
     "mid": [
      1,
@@ -2045,20 +2051,20 @@
      10
     ],
     "l15": [
-     8,
-     10
+     9,
+     11
     ]
    },
-   "conf": 66.4,
-   "win_raw": 71.4,
-   "win_chance": 54.3,
+   "conf": 66.7,
+   "win_raw": 72.1,
+   "win_chance": 54.6,
    "edge": -3.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     3
+     3,
+     4
     ],
     "mid": [
      3,
@@ -2102,24 +2108,24 @@
      5
     ],
     "l10": [
-     4,
-     9
+     5,
+     10
     ],
     "l15": [
-     4,
-     9
+     5,
+     10
     ]
    },
-   "conf": 31.0,
-   "win_raw": 51.4,
-   "win_chance": 49.0,
+   "conf": 33.3,
+   "win_raw": 53.7,
+   "win_chance": 49.6,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     3
+     3,
+     4
     ],
     "mid": [
      0,
@@ -2163,13 +2169,13 @@
      10
     ],
     "l15": [
-     4,
-     11
+     5,
+     12
     ]
    },
-   "conf": 54.2,
-   "win_raw": 58.4,
-   "win_chance": 51.1,
+   "conf": 55.0,
+   "win_raw": 60.5,
+   "win_chance": 51.9,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -2183,8 +2189,8 @@
      6
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -2229,19 +2235,19 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 43.8,
-   "win_raw": 49.6,
-   "win_chance": 50.3,
+   "conf": 43.4,
+   "win_raw": 48.4,
+   "win_chance": 51.0,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      2,
-     4
+     5
     ],
     "mid": [
      0,
@@ -2281,28 +2287,28 @@
    ],
    "hits": {
     "l5": [
-     2,
+     1,
      5
     ],
     "l10": [
-     6,
+     5,
      10
     ],
     "l15": [
      6,
-     10
+     11
     ]
    },
-   "conf": 31.5,
-   "win_raw": 54.4,
-   "win_chance": 49.9,
+   "conf": 25.2,
+   "win_raw": 52.2,
+   "win_chance": 49.2,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     2
+     3
     ],
     "mid": [
      2,
@@ -2342,21 +2348,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 51.7,
-   "win_raw": 60.8,
-   "win_chance": 51.9,
+   "conf": 55.8,
+   "win_raw": 62.1,
+   "win_chance": 52.4,
    "edge": -1.3,
    "side": "Under",
    "tiers": {
@@ -2370,8 +2376,8 @@
      4
     ],
     "soft": [
-     0,
-     2
+     1,
+     3
     ]
    }
   },
@@ -2403,7 +2409,7 @@
    ],
    "hits": {
     "l5": [
-     2,
+     1,
      5
     ],
     "l10": [
@@ -2412,19 +2418,19 @@
     ],
     "l15": [
      6,
-     11
+     12
     ]
    },
-   "conf": 57.0,
-   "win_raw": 62.5,
-   "win_chance": 52.4,
+   "conf": 53.6,
+   "win_raw": 60.7,
+   "win_chance": 52.0,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      2,
-     4
+     5
     ],
     "mid": [
      1,
@@ -2476,24 +2482,24 @@
      10
     ],
     "l15": [
-     6,
-     10
+     7,
+     11
     ]
    },
-   "conf": 41.1,
-   "win_raw": 56.4,
-   "win_chance": 50.5,
+   "conf": 41.6,
+   "win_raw": 57.9,
+   "win_chance": 51.0,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
-    "tonight": "tough",
+    "tonight": "mid",
     "tough": [
      3,
      3
     ],
     "mid": [
-     0,
-     0
+     1,
+     1
     ],
     "soft": [
      3,
@@ -2525,7 +2531,7 @@
    "under": -108,
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -2534,16 +2540,16 @@
     ],
     "l15": [
      5,
-     11
+     12
     ]
    },
-   "conf": 36.8,
-   "win_raw": 52.5,
-   "win_chance": 49.3,
+   "conf": 33.5,
+   "win_raw": 51.0,
+   "win_chance": 49.2,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      1,
      2
@@ -2554,7 +2560,7 @@
     ],
     "soft": [
      1,
-     3
+     4
     ]
    }
   },
@@ -2594,13 +2600,13 @@
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 30.6,
-   "win_raw": 50.8,
-   "win_chance": 49.4,
+   "conf": 31.2,
+   "win_raw": 52.6,
+   "win_chance": 49.3,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -2614,8 +2620,8 @@
      3
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -2655,17 +2661,17 @@
      10
     ],
     "l15": [
-     9,
-     12
+     10,
+     13
     ]
    },
-   "conf": 57.2,
-   "win_raw": 70.1,
-   "win_chance": 54.0,
+   "conf": 57.4,
+   "win_raw": 70.9,
+   "win_chance": 54.4,
    "edge": 3.5,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      1,
      2
@@ -2675,8 +2681,8 @@
      6
     ],
     "soft": [
-     4,
-     4
+     5,
+     5
     ]
    }
   },
@@ -2716,17 +2722,17 @@
      5
     ],
     "l10": [
-     4,
-     9
+     5,
+     10
     ],
     "l15": [
-     4,
-     9
+     5,
+     10
     ]
    },
-   "conf": 32.6,
-   "win_raw": 51.7,
-   "win_chance": 49.0,
+   "conf": 34.9,
+   "win_raw": 53.9,
+   "win_chance": 49.7,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -2740,8 +2746,8 @@
      5
     ],
     "soft": [
-     0,
-     1
+     1,
+     2
     ]
    }
   },
@@ -2777,21 +2783,21 @@
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     4,
-     11
+     5,
+     12
     ]
    },
-   "conf": 50.1,
-   "win_raw": 57.0,
-   "win_chance": 50.7,
+   "conf": 53.6,
+   "win_raw": 59.1,
+   "win_chance": 51.4,
    "edge": 3.1,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      0,
      1
@@ -2801,8 +2807,8 @@
      6
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -2834,21 +2840,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 40.4,
-   "win_raw": 58.6,
-   "win_chance": 51.2,
+   "conf": 44.5,
+   "win_raw": 60.0,
+   "win_chance": 51.7,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -2858,8 +2864,8 @@
      5
     ],
     "mid": [
-     0,
-     0
+     1,
+     1
     ],
     "soft": [
      3,
@@ -2908,12 +2914,12 @@
     ],
     "l15": [
      3,
-     10
+     11
     ]
    },
-   "conf": 30.2,
-   "win_raw": 46.3,
-   "win_chance": 50.3,
+   "conf": 29.8,
+   "win_raw": 45.2,
+   "win_chance": 50.0,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -2928,7 +2934,7 @@
     ],
     "soft": [
      1,
-     4
+     5
     ]
    }
   },
@@ -2964,7 +2970,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -2973,12 +2979,12 @@
     ],
     "l15": [
      6,
-     11
+     12
     ]
    },
-   "conf": 72.0,
-   "win_raw": 66.5,
-   "win_chance": 53.4,
+   "conf": 68.6,
+   "win_raw": 64.7,
+   "win_chance": 53.3,
    "edge": 3.2,
    "side": "Over",
    "tiers": {
@@ -2993,7 +2999,7 @@
     ],
     "soft": [
      1,
-     2
+     3
     ]
    }
   },
@@ -3025,17 +3031,17 @@
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 70.5,
-   "win_raw": 61.0,
-   "win_chance": 51.9,
+   "conf": 73.9,
+   "win_raw": 62.8,
+   "win_chance": 52.7,
    "edge": 3.8,
    "side": "Over",
    "tiers": {
@@ -3049,8 +3055,8 @@
      3
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -3091,12 +3097,12 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 43.8,
-   "win_raw": 49.7,
-   "win_chance": 50.2,
+   "conf": 43.4,
+   "win_raw": 48.5,
+   "win_chance": 51.1,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -3111,7 +3117,7 @@
     ],
     "soft": [
      2,
-     2
+     3
     ]
    }
   },
@@ -3147,24 +3153,24 @@
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
      7,
-     10
+     11
     ]
    },
-   "conf": 78.8,
-   "win_raw": 67.8,
-   "win_chance": 53.7,
+   "conf": 75.2,
+   "win_raw": 65.3,
+   "win_chance": 53.4,
    "edge": -2.2,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     1
+     2
     ],
     "mid": [
      2,
@@ -3216,20 +3222,20 @@
      10
     ],
     "l15": [
-     8,
-     10
+     9,
+     11
     ]
    },
-   "conf": 54.1,
-   "win_raw": 66.7,
-   "win_chance": 53.5,
+   "conf": 54.4,
+   "win_raw": 67.5,
+   "win_chance": 53.8,
    "edge": -2.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     2
+     3,
+     3
     ],
     "mid": [
      3,
@@ -3273,17 +3279,17 @@
      5
     ],
     "l10": [
-     6,
+     7,
      10
     ],
     "l15": [
-     8,
-     12
+     9,
+     13
     ]
    },
-   "conf": 51.0,
-   "win_raw": 65.9,
-   "win_chance": 53.3,
+   "conf": 54.1,
+   "win_raw": 66.9,
+   "win_chance": 53.7,
    "edge": 3.8,
    "side": "Over",
    "tiers": {
@@ -3297,8 +3303,8 @@
      7
     ],
     "soft": [
-     2,
-     3
+     3,
+     4
     ]
    }
   },
@@ -3330,7 +3336,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -3339,12 +3345,12 @@
     ],
     "l15": [
      4,
-     11
+     12
     ]
    },
-   "conf": 27.4,
-   "win_raw": 46.2,
-   "win_chance": 50.3,
+   "conf": 24.2,
+   "win_raw": 45.0,
+   "win_chance": 49.9,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -3359,7 +3365,7 @@
     ],
     "soft": [
      1,
-     3
+     4
     ]
    }
   },
@@ -3399,20 +3405,20 @@
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 31.6,
-   "win_raw": 51.3,
-   "win_chance": 49.1,
+   "conf": 32.2,
+   "win_raw": 53.1,
+   "win_chance": 49.5,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     4
+     3,
+     5
     ],
     "mid": [
      1,
@@ -3456,17 +3462,17 @@
      5
     ],
     "l10": [
-     4,
-     9
+     5,
+     10
     ],
     "l15": [
-     4,
-     9
+     5,
+     10
     ]
    },
-   "conf": 38.7,
-   "win_raw": 55.0,
-   "win_chance": 50.1,
+   "conf": 40.9,
+   "win_raw": 57.2,
+   "win_chance": 50.8,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
@@ -3480,8 +3486,8 @@
      5
     ],
     "soft": [
-     0,
-     2
+     1,
+     3
     ]
    }
   },
@@ -3525,13 +3531,13 @@
      10
     ],
     "l15": [
-     4,
-     11
+     5,
+     12
     ]
    },
-   "conf": 47.5,
-   "win_raw": 56.1,
-   "win_chance": 50.4,
+   "conf": 48.3,
+   "win_raw": 58.2,
+   "win_chance": 51.2,
    "edge": 3.4,
    "side": "Over",
    "tiers": {
@@ -3545,8 +3551,8 @@
      7
     ],
     "soft": [
-     1,
-     3
+     2,
+     4
     ]
    }
   },
@@ -3578,21 +3584,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 50.6,
-   "win_raw": 61.4,
-   "win_chance": 52.1,
+   "conf": 54.7,
+   "win_raw": 62.7,
+   "win_chance": 52.6,
    "edge": -2.1,
    "side": "Under",
    "tiers": {
@@ -3606,8 +3612,8 @@
      4
     ],
     "soft": [
-     1,
-     3
+     2,
+     4
     ]
    }
   },
@@ -3648,19 +3654,19 @@
     ],
     "l15": [
      3,
-     10
+     11
     ]
    },
-   "conf": 27.1,
-   "win_raw": 45.7,
-   "win_chance": 50.1,
+   "conf": 26.7,
+   "win_raw": 44.6,
+   "win_chance": 49.8,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     3
+     4
     ],
     "mid": [
      1,
@@ -3709,12 +3715,12 @@
     ],
     "l15": [
      3,
-     11
+     12
     ]
    },
-   "conf": 35.0,
-   "win_raw": 45.5,
-   "win_chance": 50.1,
+   "conf": 34.7,
+   "win_raw": 44.6,
+   "win_chance": 49.8,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -3729,7 +3735,7 @@
     ],
     "soft": [
      1,
-     3
+     4
     ]
    }
   },
@@ -3761,7 +3767,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -3770,12 +3776,12 @@
     ],
     "l15": [
      7,
-     11
+     12
     ]
    },
-   "conf": 69.5,
-   "win_raw": 70.3,
-   "win_chance": 54.1,
+   "conf": 66.0,
+   "win_raw": 68.2,
+   "win_chance": 53.9,
    "edge": 3.3,
    "side": "Over",
    "tiers": {
@@ -3790,7 +3796,7 @@
     ],
     "soft": [
      1,
-     3
+     4
     ]
    }
   },
@@ -3822,24 +3828,24 @@
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 70.5,
-   "win_raw": 59.7,
-   "win_chance": 51.5,
+   "conf": 73.9,
+   "win_raw": 61.5,
+   "win_chance": 52.2,
    "edge": 3.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     3,
-     4
+     4,
+     5
     ],
     "mid": [
      1,
@@ -3883,17 +3889,17 @@
      5
     ],
     "l10": [
-     5,
+     4,
      10
     ],
     "l15": [
      5,
-     10
+     11
     ]
    },
-   "conf": 66.4,
-   "win_raw": 62.6,
-   "win_chance": 52.4,
+   "conf": 63.0,
+   "win_raw": 60.8,
+   "win_chance": 52.0,
    "edge": 1.9,
    "side": "Over",
    "tiers": {
@@ -3904,7 +3910,7 @@
     ],
     "mid": [
      0,
-     0
+     1
     ],
     "soft": [
      4,
@@ -3940,21 +3946,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     5,
-     9
+     6,
+     10
     ],
     "l15": [
-     5,
-     9
+     6,
+     10
     ]
    },
-   "conf": 30.5,
-   "win_raw": 54.4,
-   "win_chance": 49.9,
+   "conf": 35.1,
+   "win_raw": 56.2,
+   "win_chance": 50.5,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -3964,8 +3970,8 @@
      3
     ],
     "mid": [
-     1,
-     2
+     2,
+     3
     ],
     "soft": [
      2,
@@ -4005,21 +4011,21 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     5,
+     4,
      10
     ],
     "l15": [
      6,
-     11
+     12
     ]
    },
-   "conf": 43.3,
-   "win_raw": 54.8,
-   "win_chance": 50.0,
+   "conf": 37.2,
+   "win_raw": 53.0,
+   "win_chance": 49.4,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -4030,7 +4036,7 @@
     ],
     "mid": [
      2,
-     3
+     4
     ],
     "soft": [
      1,
@@ -4070,7 +4076,7 @@
    ],
    "hits": {
     "l5": [
-     0,
+     1,
      5
     ],
     "l10": [
@@ -4078,13 +4084,13 @@
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 44.9,
-   "win_raw": 54.7,
-   "win_chance": 50.0,
+   "conf": 48.3,
+   "win_raw": 56.5,
+   "win_chance": 50.6,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -4094,8 +4100,8 @@
      3
     ],
     "mid": [
-     2,
-     4
+     3,
+     5
     ],
     "soft": [
      3,
@@ -4139,13 +4145,13 @@
      10
     ],
     "l15": [
-     6,
-     11
+     7,
+     12
     ]
    },
-   "conf": 77.2,
-   "win_raw": 64.5,
-   "win_chance": 53.0,
+   "conf": 77.8,
+   "win_raw": 66.1,
+   "win_chance": 53.6,
    "edge": 1.6,
    "side": "Over",
    "tiers": {
@@ -4159,8 +4165,8 @@
      2
     ],
     "soft": [
-     3,
-     4
+     4,
+     5
     ]
    }
   },
@@ -4196,17 +4202,17 @@
      5
     ],
     "l10": [
-     4,
+     3,
      10
     ],
     "l15": [
      4,
-     10
+     11
     ]
    },
-   "conf": 41.6,
-   "win_raw": 50.2,
-   "win_chance": 49.9,
+   "conf": 38.4,
+   "win_raw": 48.7,
+   "win_chance": 51.0,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -4221,7 +4227,7 @@
     ],
     "soft": [
      2,
-     4
+     5
     ]
    }
   },
@@ -4253,28 +4259,28 @@
    ],
    "hits": {
     "l5": [
-     2,
+     1,
      5
     ],
     "l10": [
-     5,
+     4,
      10
     ],
     "l15": [
      5,
-     10
+     11
     ]
    },
-   "conf": 62.1,
-   "win_raw": 62.4,
-   "win_chance": 52.4,
+   "conf": 56.0,
+   "win_raw": 60.5,
+   "win_chance": 51.9,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      0,
-     1
+     2
     ],
     "mid": [
      3,
@@ -4326,13 +4332,13 @@
      10
     ],
     "l15": [
-     7,
-     11
+     8,
+     12
     ]
    },
-   "conf": 81.2,
-   "win_raw": 69.6,
-   "win_chance": 54.0,
+   "conf": 81.7,
+   "win_raw": 70.8,
+   "win_chance": 54.3,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -4346,8 +4352,8 @@
      5
     ],
     "soft": [
-     3,
-     4
+     4,
+     5
     ]
    }
   },
@@ -4383,21 +4389,21 @@
    ],
    "hits": {
     "l5": [
-     2,
+     1,
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
      8,
-     12
+     13
     ]
    },
-   "conf": 44.2,
-   "win_raw": 57.0,
-   "win_chance": 50.7,
+   "conf": 38.0,
+   "win_raw": 55.0,
+   "win_chance": 50.1,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -4408,7 +4414,7 @@
     ],
     "mid": [
      2,
-     4
+     5
     ],
     "soft": [
      3,
@@ -4452,17 +4458,17 @@
      5
     ],
     "l10": [
-     5,
-     9
+     6,
+     10
     ],
     "l15": [
-     5,
-     9
+     6,
+     10
     ]
    },
-   "conf": 69.9,
-   "win_raw": 58.5,
-   "win_chance": 51.2,
+   "conf": 71.8,
+   "win_raw": 60.3,
+   "win_chance": 51.8,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -4476,8 +4482,8 @@
      4
     ],
     "soft": [
-     1,
-     3
+     2,
+     4
     ]
    }
   },
@@ -4521,13 +4527,13 @@
      10
     ],
     "l15": [
-     9,
-     11
+     10,
+     12
     ]
    },
-   "conf": 94.8,
-   "win_raw": 79.7,
-   "win_chance": 55.6,
+   "conf": 95.0,
+   "win_raw": 80.3,
+   "win_chance": 55.9,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
@@ -4541,8 +4547,8 @@
      2
     ],
     "soft": [
-     3,
-     4
+     4,
+     5
     ]
    }
   },
@@ -4582,24 +4588,24 @@
      5
     ],
     "l10": [
-     5,
+     4,
      10
     ],
     "l15": [
      5,
-     10
+     11
     ]
    },
-   "conf": 36.8,
-   "win_raw": 54.1,
-   "win_chance": 49.8,
+   "conf": 33.4,
+   "win_raw": 52.3,
+   "win_chance": 49.2,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     2
+     3
     ],
     "mid": [
      1,
@@ -4643,35 +4649,35 @@
    ],
    "hits": {
     "l5": [
-     2,
+     1,
      5
     ],
     "l10": [
-     4,
+     3,
      10
     ],
     "l15": [
      5,
-     11
+     12
     ]
    },
-   "conf": 33.0,
-   "win_raw": 53.1,
-   "win_chance": 49.5,
+   "conf": 27.0,
+   "win_raw": 51.6,
+   "win_chance": 49.0,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      2,
      5
     ],
     "mid": [
-     2,
-     3
+     3,
+     4
     ],
     "soft": [
-     1,
+     0,
      3
     ]
    }
@@ -4704,21 +4710,21 @@
    ],
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
-     6,
-     9
+     7,
+     10
     ],
     "l15": [
-     6,
-     9
+     7,
+     10
     ]
    },
-   "conf": 51.2,
-   "win_raw": 61.4,
-   "win_chance": 52.1,
+   "conf": 55.3,
+   "win_raw": 62.7,
+   "win_chance": 52.6,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
@@ -4732,8 +4738,8 @@
      5
     ],
     "soft": [
-     1,
-     2
+     2,
+     3
     ]
    }
   },
@@ -4761,7 +4767,7 @@
    "under": -141,
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
@@ -4769,20 +4775,20 @@
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 40.9,
-   "win_raw": 53.4,
-   "win_chance": 49.6,
+   "conf": 44.3,
+   "win_raw": 55.2,
+   "win_chance": 50.2,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
-     3
+     2,
+     4
     ],
     "mid": [
      1,
@@ -4830,31 +4836,31 @@
      5
     ],
     "l10": [
-     2,
+     3,
      10
     ],
     "l15": [
-     2,
-     12
+     3,
+     13
     ]
    },
-   "conf": 24.7,
-   "win_raw": 42.3,
-   "win_chance": 49.1,
+   "conf": 28.3,
+   "win_raw": 44.9,
+   "win_chance": 49.9,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      0,
      6
     ],
     "mid": [
      2,
-     3
+     4
     ],
     "soft": [
-     0,
+     1,
      3
     ]
    }
@@ -4891,7 +4897,7 @@
    ],
    "hits": {
     "l5": [
-     0,
+     1,
      5
     ],
     "l10": [
@@ -4899,27 +4905,27 @@
      10
     ],
     "l15": [
-     4,
-     11
+     5,
+     12
     ]
    },
-   "conf": 55.8,
-   "win_raw": 60.1,
-   "win_chance": 51.7,
+   "conf": 59.3,
+   "win_raw": 62.3,
+   "win_chance": 52.5,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "soft",
     "tough": [
      2,
      5
     ],
     "mid": [
      0,
-     3
+     4
     ],
     "soft": [
-     2,
+     3,
      3
     ]
    }
@@ -4960,17 +4966,17 @@
      5
     ],
     "l10": [
-     4,
-     9
+     5,
+     10
     ],
     "l15": [
-     4,
-     9
+     5,
+     10
     ]
    },
-   "conf": 62.0,
-   "win_raw": 60.9,
-   "win_chance": 51.9,
+   "conf": 64.2,
+   "win_raw": 63.1,
+   "win_chance": 52.8,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -4984,8 +4990,8 @@
      6
     ],
     "soft": [
-     1,
-     3
+     2,
+     4
     ]
    }
   },
@@ -5026,12 +5032,12 @@
     ],
     "l15": [
      6,
-     11
+     12
     ]
    },
-   "conf": 80.0,
-   "win_raw": 64.6,
-   "win_chance": 53.1,
+   "conf": 79.4,
+   "win_raw": 62.8,
+   "win_chance": 52.6,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -5046,7 +5052,7 @@
     ],
     "soft": [
      2,
-     4
+     5
     ]
    }
   },
@@ -5086,24 +5092,24 @@
      5
     ],
     "l10": [
-     3,
+     2,
      10
     ],
     "l15": [
      3,
-     10
+     11
     ]
    },
-   "conf": 27.1,
-   "win_raw": 46.4,
-   "win_chance": 50.4,
+   "conf": 24.0,
+   "win_raw": 45.3,
+   "win_chance": 50.0,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     2
+     3
     ],
     "mid": [
      1,
@@ -5147,21 +5153,21 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
      8,
-     11
+     12
     ]
    },
-   "conf": 82.5,
-   "win_raw": 74.3,
-   "win_chance": 54.7,
+   "conf": 76.2,
+   "win_raw": 71.9,
+   "win_chance": 54.5,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -5176,7 +5182,7 @@
     ],
     "soft": [
      3,
-     4
+     5
     ]
    }
   },
@@ -5216,17 +5222,17 @@
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
      7,
-     12
+     13
     ]
    },
-   "conf": 78.7,
-   "win_raw": 59.3,
-   "win_chance": 51.4,
+   "conf": 75.4,
+   "win_raw": 57.5,
+   "win_chance": 50.9,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -5237,7 +5243,7 @@
     ],
     "mid": [
      2,
-     4
+     5
     ],
     "soft": [
      4,
@@ -5282,23 +5288,23 @@
     ],
     "l10": [
      4,
-     9
+     10
     ],
     "l15": [
      4,
-     9
+     10
     ]
    },
-   "conf": 48.2,
-   "win_raw": 55.2,
-   "win_chance": 50.1,
+   "conf": 46.3,
+   "win_raw": 53.4,
+   "win_chance": 49.6,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     2
+     3
     ],
     "mid": [
      3,
@@ -5347,19 +5353,19 @@
     ],
     "l15": [
      5,
-     11
+     12
     ]
    },
-   "conf": 30.0,
-   "win_raw": 47.1,
-   "win_chance": 50.6,
+   "conf": 29.4,
+   "win_raw": 45.6,
+   "win_chance": 50.1,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     3
+     4
     ],
     "mid": [
      3,
@@ -5403,21 +5409,21 @@
    ],
    "hits": {
     "l5": [
-     1,
+     2,
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     5,
-     12
+     6,
+     13
     ]
    },
-   "conf": 64.5,
-   "win_raw": 59.4,
-   "win_chance": 51.5,
+   "conf": 70.6,
+   "win_raw": 61.2,
+   "win_chance": 52.1,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -5427,8 +5433,8 @@
      2
     ],
     "mid": [
-     2,
-     4
+     3,
+     5
     ],
     "soft": [
      3,
@@ -5468,7 +5474,7 @@
    ],
    "hits": {
     "l5": [
-     4,
+     3,
      5
     ],
     "l10": [
@@ -5477,12 +5483,12 @@
     ],
     "l15": [
      7,
-     11
+     12
     ]
    },
-   "conf": 81.2,
-   "win_raw": 61.1,
-   "win_chance": 52.0,
+   "conf": 77.8,
+   "win_raw": 59.0,
+   "win_chance": 51.4,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -5493,7 +5499,7 @@
     ],
     "mid": [
      1,
-     4
+     5
     ],
     "soft": [
      4,
@@ -5529,7 +5535,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -5538,12 +5544,12 @@
     ],
     "l15": [
      5,
-     11
+     12
     ]
    },
-   "conf": 73.2,
-   "win_raw": 55.4,
-   "win_chance": 50.2,
+   "conf": 70.0,
+   "win_raw": 53.9,
+   "win_chance": 49.7,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -5554,7 +5560,7 @@
     ],
     "mid": [
      2,
-     4
+     5
     ],
     "soft": [
      3,
@@ -5598,17 +5604,17 @@
      5
     ],
     "l10": [
-     5,
+     6,
      10
     ],
     "l15": [
-     6,
-     11
+     7,
+     12
     ]
    },
-   "conf": 77.3,
-   "win_raw": 66.9,
-   "win_chance": 53.5,
+   "conf": 80.5,
+   "win_raw": 68.4,
+   "win_chance": 53.9,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -5622,8 +5628,8 @@
      3
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -5663,17 +5669,17 @@
      5
     ],
     "l10": [
-     6,
+     5,
      10
     ],
     "l15": [
      7,
-     11
+     12
     ]
    },
-   "conf": 33.5,
-   "win_raw": 58.9,
-   "win_chance": 51.3,
+   "conf": 30.0,
+   "win_raw": 56.8,
+   "win_chance": 50.7,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -5688,7 +5694,7 @@
     ],
     "soft": [
      3,
-     4
+     5
     ]
    }
   },
@@ -5729,19 +5735,19 @@
     ],
     "l15": [
      7,
-     10
+     11
     ]
    },
-   "conf": 82.1,
-   "win_raw": 78.6,
-   "win_chance": 55.5,
+   "conf": 81.2,
+   "win_raw": 76.1,
+   "win_chance": 55.2,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
      1,
-     2
+     3
     ],
     "mid": [
      4,
@@ -5781,28 +5787,28 @@
    ],
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
-     5,
+     6,
      10
     ],
     "l15": [
-     5,
-     11
+     6,
+     12
     ]
    },
-   "conf": 73.2,
-   "win_raw": 56.1,
-   "win_chance": 50.4,
+   "conf": 79.4,
+   "win_raw": 57.9,
+   "win_chance": 51.0,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
-     3
+     2,
+     4
     ],
     "mid": [
      2,
@@ -5846,24 +5852,24 @@
      5
     ],
     "l10": [
-     7,
+     8,
      10
     ],
     "l15": [
-     7,
-     10
+     8,
+     11
     ]
    },
-   "conf": 75.9,
-   "win_raw": 68.2,
-   "win_chance": 53.7,
+   "conf": 79.0,
+   "win_raw": 69.3,
+   "win_chance": 54.1,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     2
+     3,
+     3
     ],
     "mid": [
      4,
@@ -5918,7 +5924,7 @@
    },
    "conf": 54.5,
    "win_raw": 69.9,
-   "win_chance": 54.0,
+   "win_chance": 54.2,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -5977,7 +5983,7 @@
    },
    "conf": 62.6,
    "win_raw": 58.0,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": -1.5,
    "side": "Under",
    "tiers": {
@@ -6043,7 +6049,7 @@
    },
    "conf": 24.4,
    "win_raw": 42.3,
-   "win_chance": 49.1,
+   "win_chance": 49.0,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -6167,7 +6173,7 @@
    },
    "conf": 76.6,
    "win_raw": 58.5,
-   "win_chance": 51.1,
+   "win_chance": 51.2,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -6226,7 +6232,7 @@
    },
    "conf": 67.3,
    "win_raw": 65.6,
-   "win_chance": 53.3,
+   "win_chance": 53.5,
    "edge": -0.5,
    "side": "Under",
    "tiers": {
@@ -6292,7 +6298,7 @@
    },
    "conf": 44.3,
    "win_raw": 62.2,
-   "win_chance": 52.3,
+   "win_chance": 52.4,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -6351,7 +6357,7 @@
    },
    "conf": 35.8,
    "win_raw": 57.5,
-   "win_chance": 50.8,
+   "win_chance": 50.9,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -6412,7 +6418,7 @@
    },
    "conf": 82.1,
    "win_raw": 65.2,
-   "win_chance": 53.2,
+   "win_chance": 53.4,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -6470,7 +6476,7 @@
    },
    "conf": 71.0,
    "win_raw": 61.6,
-   "win_chance": 52.1,
+   "win_chance": 52.3,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -6535,7 +6541,7 @@
    },
    "conf": 93.1,
    "win_raw": 84.5,
-   "win_chance": 56.4,
+   "win_chance": 56.6,
    "edge": -0.7,
    "side": "Under",
    "tiers": {
@@ -6593,7 +6599,7 @@
    },
    "conf": 57.7,
    "win_raw": 66.7,
-   "win_chance": 53.5,
+   "win_chance": 53.7,
    "edge": -3.5,
    "side": "Under",
    "tiers": {
@@ -6652,7 +6658,7 @@
    },
    "conf": 60.9,
    "win_raw": 61.4,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -6725,11 +6731,11 @@
      4
     ],
     "mid": [
-     2,
+     3,
      6
     ],
     "soft": [
-     1,
+     0,
      2
     ]
    }
@@ -6836,7 +6842,7 @@
    },
    "conf": 84.9,
    "win_raw": 77.8,
-   "win_chance": 55.3,
+   "win_chance": 55.5,
    "edge": 5.0,
    "side": "Over",
    "tiers": {
@@ -6902,7 +6908,7 @@
    },
    "conf": 36.9,
    "win_raw": 49.1,
-   "win_chance": 50.6,
+   "win_chance": 50.7,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -6961,7 +6967,7 @@
    },
    "conf": 77.8,
    "win_raw": 66.6,
-   "win_chance": 53.5,
+   "win_chance": 53.6,
    "edge": 4.3,
    "side": "Over",
    "tiers": {
@@ -7079,7 +7085,7 @@
    },
    "conf": 41.0,
    "win_raw": 55.5,
-   "win_chance": 50.2,
+   "win_chance": 50.3,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -7274,11 +7280,11 @@
     ],
     "mid": [
      3,
-     6
+     5
     ],
     "soft": [
      1,
-     1
+     2
     ]
    }
   },
@@ -7445,7 +7451,7 @@
    },
    "conf": 50.2,
    "win_raw": 63.8,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": -3.2,
    "side": "Under",
    "tiers": {
@@ -7508,7 +7514,7 @@
    },
    "conf": 56.0,
    "win_raw": 58.1,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": -4.0,
    "side": "Under",
    "tiers": {
@@ -7567,7 +7573,7 @@
    },
    "conf": 59.0,
    "win_raw": 64.1,
-   "win_chance": 52.9,
+   "win_chance": 53.1,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -7629,7 +7635,7 @@
    },
    "conf": 26.7,
    "win_raw": 44.5,
-   "win_chance": 49.8,
+   "win_chance": 49.7,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -7688,7 +7694,7 @@
    },
    "conf": 48.3,
    "win_raw": 61.1,
-   "win_chance": 52.0,
+   "win_chance": 52.1,
    "edge": -2.1,
    "side": "Under",
    "tiers": {
@@ -7747,7 +7753,7 @@
    },
    "conf": 88.3,
    "win_raw": 73.8,
-   "win_chance": 54.7,
+   "win_chance": 54.8,
    "edge": 4.8,
    "side": "Over",
    "tiers": {
@@ -7813,7 +7819,7 @@
    },
    "conf": 84.9,
    "win_raw": 77.6,
-   "win_chance": 55.3,
+   "win_chance": 55.5,
    "edge": 5.4,
    "side": "Over",
    "tiers": {
@@ -7870,7 +7876,7 @@
    },
    "conf": 50.8,
    "win_raw": 65.2,
-   "win_chance": 53.2,
+   "win_chance": 53.4,
    "edge": -1.3,
    "side": "Under",
    "tiers": {
@@ -7931,7 +7937,7 @@
    },
    "conf": 59.1,
    "win_raw": 59.7,
-   "win_chance": 51.5,
+   "win_chance": 51.6,
    "edge": -2.1,
    "side": "Under",
    "tiers": {
@@ -8113,7 +8119,7 @@
    },
    "conf": 62.1,
    "win_raw": 65.0,
-   "win_chance": 53.2,
+   "win_chance": 53.4,
    "edge": 3.4,
    "side": "Over",
    "tiers": {
@@ -8175,7 +8181,7 @@
    },
    "conf": 52.5,
    "win_raw": 64.4,
-   "win_chance": 53.0,
+   "win_chance": 53.2,
    "edge": -3.3,
    "side": "Under",
    "tiers": {
@@ -8299,7 +8305,7 @@
    },
    "conf": 46.9,
    "win_raw": 59.9,
-   "win_chance": 51.6,
+   "win_chance": 51.7,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -8373,11 +8379,11 @@
     ],
     "mid": [
      2,
-     4
+     3
     ],
     "soft": [
      0,
-     3
+     4
     ]
    }
   },
@@ -8425,7 +8431,7 @@
    },
    "conf": 81.0,
    "win_raw": 68.7,
-   "win_chance": 53.8,
+   "win_chance": 54.0,
    "edge": 4.5,
    "side": "Over",
    "tiers": {
@@ -8491,7 +8497,7 @@
    },
    "conf": 36.6,
    "win_raw": 49.2,
-   "win_chance": 50.5,
+   "win_chance": 50.6,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -8552,7 +8558,7 @@
    },
    "conf": 45.2,
    "win_raw": 56.7,
-   "win_chance": 50.6,
+   "win_chance": 50.7,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -8614,7 +8620,7 @@
    },
    "conf": 84.9,
    "win_raw": 75.9,
-   "win_chance": 55.0,
+   "win_chance": 55.2,
    "edge": 4.9,
    "side": "Over",
    "tiers": {
@@ -8744,11 +8750,11 @@
     "tonight": "soft",
     "tough": [
      2,
-     4
+     3
     ],
     "mid": [
      2,
-     2
+     3
     ],
     "soft": [
      1,
@@ -8795,7 +8801,7 @@
    },
    "conf": 52.3,
    "win_raw": 55.6,
-   "win_chance": 50.2,
+   "win_chance": 50.3,
    "edge": -1.4,
    "side": "Under",
    "tiers": {
@@ -8806,11 +8812,11 @@
     ],
     "mid": [
      0,
-     4
+     3
     ],
     "soft": [
      2,
-     3
+     4
     ]
    }
   },
@@ -8857,7 +8863,7 @@
    },
    "conf": 51.7,
    "win_raw": 64.7,
-   "win_chance": 53.1,
+   "win_chance": 53.3,
    "edge": -4.1,
    "side": "Under",
    "tiers": {
@@ -8916,7 +8922,7 @@
    },
    "conf": 57.7,
    "win_raw": 63.8,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": 2.8,
    "side": "Over",
    "tiers": {
@@ -9159,7 +9165,7 @@
    },
    "conf": 76.9,
    "win_raw": 69.3,
-   "win_chance": 53.9,
+   "win_chance": 54.1,
    "edge": 4.9,
    "side": "Over",
    "tiers": {
@@ -9289,7 +9295,7 @@
    },
    "conf": 60.0,
    "win_raw": 63.5,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": -2.4,
    "side": "Under",
    "tiers": {
@@ -9355,7 +9361,7 @@
    },
    "conf": 73.5,
    "win_raw": 69.4,
-   "win_chance": 53.9,
+   "win_chance": 54.1,
    "edge": 4.3,
    "side": "Over",
    "tiers": {
@@ -9602,7 +9608,7 @@
    },
    "conf": 76.2,
    "win_raw": 70.3,
-   "win_chance": 54.1,
+   "win_chance": 54.3,
    "edge": 2.6,
    "side": "Over",
    "tiers": {
@@ -9660,7 +9666,7 @@
    },
    "conf": 75.0,
    "win_raw": 65.2,
-   "win_chance": 53.2,
+   "win_chance": 53.4,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -9786,7 +9792,7 @@
    },
    "conf": 78.0,
    "win_raw": 69.9,
-   "win_chance": 54.0,
+   "win_chance": 54.2,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
@@ -9852,7 +9858,7 @@
    },
    "conf": 49.7,
    "win_raw": 62.9,
-   "win_chance": 52.5,
+   "win_chance": 52.7,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -9974,7 +9980,7 @@
    },
    "conf": 46.3,
    "win_raw": 49.0,
-   "win_chance": 50.7,
+   "win_chance": 50.8,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -10102,7 +10108,7 @@
    },
    "conf": 46.5,
    "win_raw": 55.8,
-   "win_chance": 50.3,
+   "win_chance": 50.4,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -10161,7 +10167,7 @@
    },
    "conf": 68.8,
    "win_raw": 58.0,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -10223,7 +10229,7 @@
    },
    "conf": 80.3,
    "win_raw": 70.2,
-   "win_chance": 54.1,
+   "win_chance": 54.2,
    "edge": -0.6,
    "side": "Under",
    "tiers": {
@@ -10285,7 +10291,7 @@
    },
    "conf": 41.2,
    "win_raw": 58.7,
-   "win_chance": 51.2,
+   "win_chance": 51.3,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -10409,7 +10415,7 @@
    },
    "conf": 67.2,
    "win_raw": 64.3,
-   "win_chance": 53.0,
+   "win_chance": 53.2,
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -10482,11 +10488,11 @@
      5
     ],
     "mid": [
-     0,
+     1,
      3
     ],
     "soft": [
-     1,
+     0,
      4
     ]
    }
@@ -10538,7 +10544,7 @@
    },
    "conf": 51.6,
    "win_raw": 55.2,
-   "win_chance": 50.1,
+   "win_chance": 50.2,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
@@ -10601,7 +10607,7 @@
    },
    "conf": 61.6,
    "win_raw": 61.6,
-   "win_chance": 52.1,
+   "win_chance": 52.3,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -10724,7 +10730,7 @@
    },
    "conf": 84.9,
    "win_raw": 74.1,
-   "win_chance": 54.7,
+   "win_chance": 54.9,
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -10781,7 +10787,7 @@
    },
    "conf": 28.5,
    "win_raw": 50.6,
-   "win_chance": 49.6,
+   "win_chance": 49.5,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -10844,7 +10850,7 @@
    },
    "conf": 48.8,
    "win_raw": 60.0,
-   "win_chance": 51.6,
+   "win_chance": 51.7,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -10910,7 +10916,7 @@
    },
    "conf": 34.2,
    "win_raw": 55.2,
-   "win_chance": 50.1,
+   "win_chance": 50.2,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -10972,7 +10978,7 @@
    },
    "conf": 74.1,
    "win_raw": 61.4,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -11034,7 +11040,7 @@
    },
    "conf": 84.9,
    "win_raw": 76.5,
-   "win_chance": 55.1,
+   "win_chance": 55.3,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -11097,7 +11103,7 @@
    },
    "conf": 73.2,
    "win_raw": 65.6,
-   "win_chance": 53.3,
+   "win_chance": 53.5,
    "edge": -0.6,
    "side": "Under",
    "tiers": {
@@ -11160,7 +11166,7 @@
    },
    "conf": 89.9,
    "win_raw": 72.8,
-   "win_chance": 54.5,
+   "win_chance": 54.7,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -11222,7 +11228,7 @@
    },
    "conf": 73.9,
    "win_raw": 62.8,
-   "win_chance": 52.5,
+   "win_chance": 52.6,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -11345,7 +11351,7 @@
    },
    "conf": 33.5,
    "win_raw": 58.9,
-   "win_chance": 51.3,
+   "win_chance": 51.4,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -11404,7 +11410,7 @@
    },
    "conf": 100.0,
    "win_raw": 92.7,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
@@ -11644,7 +11650,7 @@
    },
    "conf": 84.0,
    "win_raw": 69.9,
-   "win_chance": 54.0,
+   "win_chance": 54.2,
    "edge": -0.2,
    "side": "Under",
    "tiers": {
@@ -11770,7 +11776,7 @@
    },
    "conf": 89.0,
    "win_raw": 75.4,
-   "win_chance": 54.9,
+   "win_chance": 55.1,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -11832,7 +11838,7 @@
    },
    "conf": 43.8,
    "win_raw": 60.9,
-   "win_chance": 51.9,
+   "win_chance": 52.0,
    "edge": -0.2,
    "side": "Under",
    "tiers": {
@@ -11892,7 +11898,7 @@
    },
    "conf": 41.5,
    "win_raw": 62.2,
-   "win_chance": 52.3,
+   "win_chance": 52.4,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -11948,7 +11954,7 @@
    },
    "conf": 98.8,
    "win_raw": 82.9,
-   "win_chance": 56.2,
+   "win_chance": 56.3,
    "edge": 1.6,
    "side": "Over",
    "tiers": {
@@ -12010,7 +12016,7 @@
    },
    "conf": 84.2,
    "win_raw": 74.8,
-   "win_chance": 54.8,
+   "win_chance": 55.0,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
@@ -12074,7 +12080,7 @@
    },
    "conf": 50.7,
    "win_raw": 55.8,
-   "win_chance": 50.3,
+   "win_chance": 50.4,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -12134,7 +12140,7 @@
    },
    "conf": 89.7,
    "win_raw": 76.1,
-   "win_chance": 55.0,
+   "win_chance": 55.2,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -12194,7 +12200,7 @@
    },
    "conf": 42.3,
    "win_raw": 59.5,
-   "win_chance": 51.5,
+   "win_chance": 51.6,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -12252,7 +12258,7 @@
    },
    "conf": 84.0,
    "win_raw": 67.4,
-   "win_chance": 53.6,
+   "win_chance": 53.8,
    "edge": -0.4,
    "side": "Under",
    "tiers": {
@@ -12308,7 +12314,7 @@
    },
    "conf": 100.0,
    "win_raw": 90.6,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -12366,7 +12372,7 @@
    },
    "conf": 78.5,
    "win_raw": 59.4,
-   "win_chance": 51.4,
+   "win_chance": 51.5,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -12424,7 +12430,7 @@
    },
    "conf": 51.9,
    "win_raw": 63.5,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -12486,7 +12492,7 @@
    },
    "conf": 57.4,
    "win_raw": 63.8,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": 3.7,
    "side": "Over",
    "tiers": {
@@ -12604,7 +12610,7 @@
    },
    "conf": 26.4,
    "win_raw": 48.5,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -12724,7 +12730,7 @@
    },
    "conf": 38.0,
    "win_raw": 52.4,
-   "win_chance": 49.3,
+   "win_chance": 49.2,
    "edge": 1.6,
    "side": "Over",
    "tiers": {
@@ -12784,7 +12790,7 @@
    },
    "conf": 34.8,
    "win_raw": 56.8,
-   "win_chance": 50.6,
+   "win_chance": 50.7,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -12846,7 +12852,7 @@
    },
    "conf": 65.4,
    "win_raw": 59.6,
-   "win_chance": 51.5,
+   "win_chance": 51.6,
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -12910,7 +12916,7 @@
    },
    "conf": 69.5,
    "win_raw": 66.9,
-   "win_chance": 53.5,
+   "win_chance": 53.7,
    "edge": 1.6,
    "side": "Over",
    "tiers": {
@@ -12966,7 +12972,7 @@
    },
    "conf": 47.2,
    "win_raw": 59.4,
-   "win_chance": 51.4,
+   "win_chance": 51.5,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -13024,7 +13030,7 @@
    },
    "conf": 61.5,
    "win_raw": 57.1,
-   "win_chance": 50.7,
+   "win_chance": 50.8,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -13082,7 +13088,7 @@
    },
    "conf": 77.2,
    "win_raw": 61.5,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 2.7,
    "side": "Over",
    "tiers": {
@@ -13138,7 +13144,7 @@
    },
    "conf": 100.0,
    "win_raw": 90.0,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": 2.4,
    "side": "Over",
    "tiers": {
@@ -13196,7 +13202,7 @@
    },
    "conf": 73.9,
    "win_raw": 61.5,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -13256,7 +13262,7 @@
    },
    "conf": 77.2,
    "win_raw": 68.6,
-   "win_chance": 53.8,
+   "win_chance": 54.0,
    "edge": 2.6,
    "side": "Over",
    "tiers": {
@@ -13314,7 +13320,7 @@
    },
    "conf": 71.8,
    "win_raw": 61.4,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 1.9,
    "side": "Over",
    "tiers": {
@@ -13374,7 +13380,7 @@
    },
    "conf": 73.9,
    "win_raw": 63.1,
-   "win_chance": 52.6,
+   "win_chance": 52.8,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -13385,11 +13391,11 @@
     ],
     "mid": [
      0,
-     2
+     1
     ],
     "soft": [
      3,
-     5
+     6
     ]
    }
   },
@@ -13432,7 +13438,7 @@
    },
    "conf": 58.6,
    "win_raw": 66.2,
-   "win_chance": 53.4,
+   "win_chance": 53.6,
    "edge": 4.8,
    "side": "Over",
    "tiers": {
@@ -13618,7 +13624,7 @@
    },
    "conf": 60.9,
    "win_raw": 61.3,
-   "win_chance": 52.0,
+   "win_chance": 52.2,
    "edge": 2.9,
    "side": "Over",
    "tiers": {
@@ -13862,7 +13868,7 @@
    },
    "conf": 83.0,
    "win_raw": 70.4,
-   "win_chance": 54.1,
+   "win_chance": 54.3,
    "edge": 2.8,
    "side": "Over",
    "tiers": {
@@ -13922,7 +13928,7 @@
    },
    "conf": 79.0,
    "win_raw": 67.8,
-   "win_chance": 53.7,
+   "win_chance": 53.8,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -13982,7 +13988,7 @@
    },
    "conf": 57.7,
    "win_raw": 63.8,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": -1.6,
    "side": "Under",
    "tiers": {
@@ -14040,7 +14046,7 @@
    },
    "conf": 77.2,
    "win_raw": 63.5,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": 3.2,
    "side": "Over",
    "tiers": {
@@ -14096,7 +14102,7 @@
    },
    "conf": 99.5,
    "win_raw": 87.2,
-   "win_chance": 56.9,
+   "win_chance": 57.0,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
@@ -14214,7 +14220,7 @@
    },
    "conf": 77.2,
    "win_raw": 70.2,
-   "win_chance": 54.1,
+   "win_chance": 54.2,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -14268,7 +14274,7 @@
    },
    "conf": 73.0,
    "win_raw": 66.0,
-   "win_chance": 53.4,
+   "win_chance": 53.5,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
@@ -14324,7 +14330,7 @@
    },
    "conf": 73.9,
    "win_raw": 60.3,
-   "win_chance": 51.7,
+   "win_chance": 51.8,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -14440,7 +14446,7 @@
    },
    "conf": 35.4,
    "win_raw": 48.6,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 1.9,
    "side": "Over",
    "tiers": {
@@ -14500,7 +14506,7 @@
    },
    "conf": 39.7,
    "win_raw": 59.9,
-   "win_chance": 51.6,
+   "win_chance": 51.7,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -14510,12 +14516,12 @@
      3
     ],
     "mid": [
-     3,
-     4
+     2,
+     3
     ],
     "soft": [
-     2,
-     4
+     3,
+     5
     ]
    }
   },
@@ -14639,11 +14645,11 @@
     ],
     "mid": [
      0,
-     4
+     3
     ],
     "soft": [
      3,
-     4
+     5
     ]
    }
   },
@@ -14694,11 +14700,11 @@
    "tiers": {
     "tonight": "tough",
     "tough": [
-     0,
+     1,
      3
     ],
     "mid": [
-     3,
+     2,
      4
     ],
     "soft": [
@@ -14810,7 +14816,7 @@
    },
    "conf": 59.9,
    "win_raw": 60.2,
-   "win_chance": 51.7,
+   "win_chance": 51.8,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -14868,7 +14874,7 @@
    },
    "conf": 53.5,
    "win_raw": 57.0,
-   "win_chance": 50.7,
+   "win_chance": 50.8,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -14928,7 +14934,7 @@
    },
    "conf": 64.3,
    "win_raw": 62.6,
-   "win_chance": 52.4,
+   "win_chance": 52.6,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
@@ -14938,12 +14944,12 @@
      2
     ],
     "mid": [
-     3,
-     3
+     2,
+     2
     ],
     "soft": [
-     0,
-     3
+     1,
+     4
     ]
    }
   },
@@ -14986,7 +14992,7 @@
    },
    "conf": 30.6,
    "win_raw": 51.7,
-   "win_chance": 49.1,
+   "win_chance": 49.0,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -15100,7 +15106,7 @@
    },
    "conf": 100.0,
    "win_raw": 89.1,
-   "win_chance": 57.2,
+   "win_chance": 57.4,
    "edge": 3.4,
    "side": "Over",
    "tiers": {
@@ -15160,7 +15166,7 @@
    },
    "conf": 77.2,
    "win_raw": 70.2,
-   "win_chance": 54.1,
+   "win_chance": 54.2,
    "edge": 4.7,
    "side": "Over",
    "tiers": {
@@ -15222,7 +15228,7 @@
    },
    "conf": 79.8,
    "win_raw": 71.0,
-   "win_chance": 54.2,
+   "win_chance": 54.4,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -15289,11 +15295,11 @@
     ],
     "mid": [
      1,
-     3
+     2
     ],
     "soft": [
      1,
-     3
+     4
     ]
    }
   },
@@ -15340,7 +15346,7 @@
    },
    "conf": 62.6,
    "win_raw": 69.4,
-   "win_chance": 53.9,
+   "win_chance": 54.1,
    "edge": 5.3,
    "side": "Over",
    "tiers": {
@@ -15594,7 +15600,7 @@
    },
    "conf": 37.2,
    "win_raw": 51.2,
-   "win_chance": 49.2,
+   "win_chance": 49.1,
    "edge": 3.3,
    "side": "Over",
    "tiers": {
@@ -15714,7 +15720,7 @@
    },
    "conf": 48.2,
    "win_raw": 61.3,
-   "win_chance": 52.0,
+   "win_chance": 52.2,
    "edge": -1.9,
    "side": "Under",
    "tiers": {
@@ -15888,7 +15894,7 @@
    },
    "conf": 74.2,
    "win_raw": 62.2,
-   "win_chance": 52.3,
+   "win_chance": 52.4,
    "edge": 3.6,
    "side": "Over",
    "tiers": {
@@ -15948,7 +15954,7 @@
    },
    "conf": 70.0,
    "win_raw": 65.5,
-   "win_chance": 53.3,
+   "win_chance": 53.5,
    "edge": 2.9,
    "side": "Over",
    "tiers": {
@@ -16062,7 +16068,7 @@
    },
    "conf": 99.6,
    "win_raw": 87.2,
-   "win_chance": 56.9,
+   "win_chance": 57.1,
    "edge": 3.1,
    "side": "Over",
    "tiers": {
@@ -16118,7 +16124,7 @@
    },
    "conf": 81.2,
    "win_raw": 73.3,
-   "win_chance": 54.6,
+   "win_chance": 54.8,
    "edge": 4.9,
    "side": "Over",
    "tiers": {
@@ -16172,7 +16178,7 @@
    },
    "conf": 79.8,
    "win_raw": 71.3,
-   "win_chance": 54.2,
+   "win_chance": 54.4,
    "edge": 3.2,
    "side": "Over",
    "tiers": {
@@ -16288,7 +16294,7 @@
    },
    "conf": 35.5,
    "win_raw": 53.0,
-   "win_chance": 49.5,
+   "win_chance": 49.4,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -16404,7 +16410,7 @@
    },
    "conf": 62.7,
    "win_raw": 60.8,
-   "win_chance": 51.9,
+   "win_chance": 52.0,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -16528,7 +16534,7 @@
    },
    "conf": 81.0,
    "win_raw": 74.2,
-   "win_chance": 54.7,
+   "win_chance": 54.9,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -16586,7 +16592,7 @@
    },
    "conf": 51.9,
    "win_raw": 59.9,
-   "win_chance": 51.6,
+   "win_chance": 51.7,
    "edge": -0.6,
    "side": "Under",
    "tiers": {
@@ -16704,7 +16710,7 @@
    },
    "conf": 42.8,
    "win_raw": 51.8,
-   "win_chance": 49.1,
+   "win_chance": 49.0,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -16828,7 +16834,7 @@
    },
    "conf": 77.2,
    "win_raw": 72.8,
-   "win_chance": 54.5,
+   "win_chance": 54.7,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -16884,7 +16890,7 @@
    },
    "conf": 81.7,
    "win_raw": 70.8,
-   "win_chance": 54.2,
+   "win_chance": 54.3,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -16946,7 +16952,7 @@
    },
    "conf": 46.6,
    "win_raw": 58.4,
-   "win_chance": 51.1,
+   "win_chance": 51.2,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -17008,7 +17014,7 @@
    },
    "conf": 70.0,
    "win_raw": 62.8,
-   "win_chance": 52.5,
+   "win_chance": 52.7,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -17072,7 +17078,7 @@
    },
    "conf": 94.8,
    "win_raw": 75.7,
-   "win_chance": 55.0,
+   "win_chance": 55.2,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -17130,7 +17136,7 @@
    },
    "conf": 86.5,
    "win_raw": 78.4,
-   "win_chance": 55.4,
+   "win_chance": 55.6,
    "edge": 1.5,
    "side": "Over",
    "tiers": {
@@ -17190,7 +17196,7 @@
    },
    "conf": 53.6,
    "win_raw": 65.8,
-   "win_chance": 53.3,
+   "win_chance": 53.5,
    "edge": -0.2,
    "side": "Under",
    "tiers": {
@@ -17312,7 +17318,7 @@
    },
    "conf": 70.1,
    "win_raw": 71.0,
-   "win_chance": 54.2,
+   "win_chance": 54.4,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
@@ -17376,7 +17382,7 @@
    },
    "conf": 40.3,
    "win_raw": 59.1,
-   "win_chance": 51.3,
+   "win_chance": 51.4,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -17386,12 +17392,12 @@
      3
     ],
     "mid": [
-     3,
-     5
+     2,
+     4
     ],
     "soft": [
-     2,
-     3
+     3,
+     4
     ]
    }
   },
@@ -17436,7 +17442,7 @@
    },
    "conf": 93.3,
    "win_raw": 84.1,
-   "win_chance": 56.3,
+   "win_chance": 56.5,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
@@ -17507,11 +17513,11 @@
     ],
     "mid": [
      2,
-     5
+     4
     ],
     "soft": [
      2,
-     3
+     4
     ]
    }
   },
@@ -17614,7 +17620,7 @@
    },
    "conf": 51.1,
    "win_raw": 59.0,
-   "win_chance": 51.3,
+   "win_chance": 51.4,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -17686,12 +17692,12 @@
      3
     ],
     "mid": [
-     2,
-     2
+     4,
+     4
     ],
     "soft": [
-     2,
-     4
+     0,
+     2
     ]
    }
   },
@@ -17738,7 +17744,7 @@
    },
    "conf": 52.9,
    "win_raw": 60.3,
-   "win_chance": 51.7,
+   "win_chance": 51.8,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -17796,7 +17802,7 @@
    },
    "conf": 83.1,
    "win_raw": 76.5,
-   "win_chance": 55.1,
+   "win_chance": 55.3,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -17910,7 +17916,7 @@
    },
    "conf": 70.5,
    "win_raw": 58.9,
-   "win_chance": 51.3,
+   "win_chance": 51.4,
    "edge": 2.0,
    "side": "Over",
    "tiers": {
@@ -17970,7 +17976,7 @@
    },
    "conf": 80.7,
    "win_raw": 63.1,
-   "win_chance": 52.6,
+   "win_chance": 52.7,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -18030,7 +18036,7 @@
    },
    "conf": 94.8,
    "win_raw": 83.6,
-   "win_chance": 56.3,
+   "win_chance": 56.5,
    "edge": 1.9,
    "side": "Over",
    "tiers": {
@@ -18040,12 +18046,12 @@
      1
     ],
     "mid": [
-     5,
-     5
+     4,
+     4
     ],
     "soft": [
-     1,
-     2
+     2,
+     3
     ]
    }
   },
@@ -18152,7 +18158,7 @@
    },
    "conf": 76.2,
    "win_raw": 60.7,
-   "win_chance": 51.8,
+   "win_chance": 52.0,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -18216,7 +18222,7 @@
    },
    "conf": 73.2,
    "win_raw": 58.3,
-   "win_chance": 51.1,
+   "win_chance": 51.2,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -18274,7 +18280,7 @@
    },
    "conf": 92.0,
    "win_raw": 74.2,
-   "win_chance": 54.7,
+   "win_chance": 54.9,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -18338,7 +18344,7 @@
    },
    "conf": 69.5,
    "win_raw": 57.7,
-   "win_chance": 50.9,
+   "win_chance": 51.0,
    "edge": 0.3,
    "side": "Over",
    "tiers": {
@@ -18460,7 +18466,7 @@
    },
    "conf": 38.1,
    "win_raw": 48.5,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -18524,7 +18530,7 @@
    },
    "conf": 23.7,
    "win_raw": 48.5,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -18584,7 +18590,7 @@
    },
    "conf": 92.0,
    "win_raw": 74.7,
-   "win_chance": 54.8,
+   "win_chance": 55.0,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -18640,7 +18646,7 @@
    },
    "conf": 81.7,
    "win_raw": 62.2,
-   "win_chance": 52.3,
+   "win_chance": 52.5,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -18700,7 +18706,7 @@
    },
    "conf": 86.9,
    "win_raw": 67.9,
-   "win_chance": 53.7,
+   "win_chance": 53.9,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -18870,7 +18876,7 @@
    },
    "conf": 86.2,
    "win_raw": 81.1,
-   "win_chance": 55.9,
+   "win_chance": 56.1,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -18989,7 +18995,7 @@
    },
    "conf": 76.2,
    "win_raw": 73.9,
-   "win_chance": 54.7,
+   "win_chance": 54.9,
    "edge": -0.8,
    "side": "Under",
    "tiers": {
@@ -19168,7 +19174,7 @@
    },
    "conf": 78.0,
    "win_raw": 63.6,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -19231,7 +19237,7 @@
    },
    "conf": 78.5,
    "win_raw": 63.9,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -19350,7 +19356,7 @@
    },
    "conf": 75.8,
    "win_raw": 71.7,
-   "win_chance": 54.3,
+   "win_chance": 54.5,
    "edge": -0.4,
    "side": "Under",
    "tiers": {
@@ -19469,7 +19475,7 @@
    },
    "conf": 83.5,
    "win_raw": 69.4,
-   "win_chance": 53.9,
+   "win_chance": 54.1,
    "edge": 1.0,
    "side": "Over",
    "tiers": {
@@ -19644,7 +19650,7 @@
    },
    "conf": 41.2,
    "win_raw": 51.0,
-   "win_chance": 49.3,
+   "win_chance": 49.2,
    "edge": 2.7,
    "side": "Over",
    "tiers": {
@@ -19713,12 +19719,12 @@
      7
     ],
     "mid": [
-     2,
-     2
+     3,
+     3
     ],
     "soft": [
-     2,
-     2
+     1,
+     1
     ]
    }
   },
@@ -19819,7 +19825,7 @@
    },
    "conf": 29.7,
    "win_raw": 47.6,
-   "win_chance": 50.7,
+   "win_chance": 50.8,
    "edge": -0.4,
    "side": "Under",
    "tiers": {
@@ -19878,7 +19884,7 @@
    },
    "conf": 100.0,
    "win_raw": 99.3,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": -5.6,
    "side": "Under",
    "tiers": {
@@ -19888,12 +19894,12 @@
      2
     ],
     "mid": [
-     1,
-     1
+     2,
+     2
     ],
     "soft": [
-     1,
-     1
+     0,
+     0
     ]
    }
   },
@@ -19934,7 +19940,7 @@
    },
    "conf": 67.8,
    "win_raw": 66.5,
-   "win_chance": 53.4,
+   "win_chance": 53.6,
    "edge": -2.3,
    "side": "Under",
    "tiers": {
@@ -19993,7 +19999,7 @@
    },
    "conf": 67.2,
    "win_raw": 62.4,
-   "win_chance": 52.4,
+   "win_chance": 52.5,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -20062,12 +20068,12 @@
      7
     ],
     "mid": [
-     1,
-     2
+     2,
+     3
     ],
     "soft": [
-     1,
-     2
+     0,
+     1
     ]
    }
   },
@@ -20223,7 +20229,7 @@
    },
    "conf": 83.5,
    "win_raw": 66.7,
-   "win_chance": 53.5,
+   "win_chance": 53.7,
    "edge": 2.4,
    "side": "Over",
    "tiers": {
@@ -20279,7 +20285,7 @@
    },
    "conf": 73.1,
    "win_raw": 67.1,
-   "win_chance": 53.5,
+   "win_chance": 53.7,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -20335,7 +20341,7 @@
    },
    "conf": 28.9,
    "win_raw": 50.6,
-   "win_chance": 49.6,
+   "win_chance": 49.5,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -20398,7 +20404,7 @@
    },
    "conf": 77.2,
    "win_raw": 68.9,
-   "win_chance": 53.8,
+   "win_chance": 54.0,
    "edge": 1.6,
    "side": "Over",
    "tiers": {
@@ -20699,7 +20705,7 @@
    },
    "conf": 86.2,
    "win_raw": 77.6,
-   "win_chance": 55.3,
+   "win_chance": 55.5,
    "edge": -4.7,
    "side": "Under",
    "tiers": {
@@ -20815,7 +20821,7 @@
    },
    "conf": 53.7,
    "win_raw": 60.6,
-   "win_chance": 51.8,
+   "win_chance": 51.9,
    "edge": -1.9,
    "side": "Under",
    "tiers": {
@@ -20874,7 +20880,7 @@
    },
    "conf": 22.9,
    "win_raw": 41.1,
-   "win_chance": 48.7,
+   "win_chance": 48.6,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -20934,7 +20940,7 @@
    },
    "conf": 16.7,
    "win_raw": 42.3,
-   "win_chance": 49.1,
+   "win_chance": 49.0,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -20993,7 +20999,7 @@
    },
    "conf": 70.6,
    "win_raw": 63.9,
-   "win_chance": 52.8,
+   "win_chance": 53.0,
    "edge": 2.3,
    "side": "Over",
    "tiers": {
@@ -21049,7 +21055,7 @@
    },
    "conf": 40.9,
    "win_raw": 53.7,
-   "win_chance": 49.7,
+   "win_chance": 49.6,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -21108,7 +21114,7 @@
    },
    "conf": 53.1,
    "win_raw": 61.3,
-   "win_chance": 52.0,
+   "win_chance": 52.1,
    "edge": 4.8,
    "side": "Over",
    "tiers": {
@@ -21228,7 +21234,7 @@
    },
    "conf": 36.3,
    "win_raw": 48.8,
-   "win_chance": 50.8,
+   "win_chance": 50.9,
    "edge": -2.3,
    "side": "Under",
    "tiers": {
@@ -21410,7 +21416,7 @@
    },
    "conf": 62.0,
    "win_raw": 63.5,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -21466,7 +21472,7 @@
    },
    "conf": 54.9,
    "win_raw": 59.4,
-   "win_chance": 51.4,
+   "win_chance": 51.5,
    "edge": -2.8,
    "side": "Under",
    "tiers": {
@@ -21525,7 +21531,7 @@
    },
    "conf": 100.0,
    "win_raw": 98.0,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": -5.2,
    "side": "Under",
    "tiers": {
@@ -21585,18 +21591,18 @@
    },
    "conf": 57.2,
    "win_raw": 64.7,
-   "win_chance": 53.1,
+   "win_chance": 53.3,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
-     2
+     3,
+     4
     ],
     "mid": [
-     4,
-     5
+     3,
+     3
     ],
     "soft": [
      1,
@@ -21763,7 +21769,7 @@
    },
    "conf": 28.9,
    "win_raw": 49.1,
-   "win_chance": 50.6,
+   "win_chance": 50.7,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -21819,7 +21825,7 @@
    },
    "conf": 60.4,
    "win_raw": 63.2,
-   "win_chance": 52.6,
+   "win_chance": 52.8,
    "edge": -1.2,
    "side": "Under",
    "tiers": {
@@ -21879,7 +21885,7 @@
    },
    "conf": 67.6,
    "win_raw": 63.5,
-   "win_chance": 52.7,
+   "win_chance": 52.9,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -21942,7 +21948,7 @@
    },
    "conf": 59.8,
    "win_raw": 58.5,
-   "win_chance": 51.2,
+   "win_chance": 51.3,
    "edge": 4.2,
    "side": "Over",
    "tiers": {
@@ -22002,7 +22008,7 @@
    },
    "conf": 31.7,
    "win_raw": 52.0,
-   "win_chance": 49.2,
+   "win_chance": 49.1,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -22236,7 +22242,7 @@
    },
    "conf": 33.5,
    "win_raw": 49.5,
-   "win_chance": 50.3,
+   "win_chance": 50.4,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -22295,7 +22301,7 @@
    },
    "conf": 78.1,
    "win_raw": 76.5,
-   "win_chance": 55.1,
+   "win_chance": 55.3,
    "edge": -4.2,
    "side": "Under",
    "tiers": {
@@ -22351,7 +22357,7 @@
    },
    "conf": 55.0,
    "win_raw": 61.6,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": -2.5,
    "side": "Under",
    "tiers": {
@@ -22414,7 +22420,7 @@
    },
    "conf": 45.8,
    "win_raw": 56.5,
-   "win_chance": 50.5,
+   "win_chance": 50.6,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -22473,7 +22479,7 @@
    },
    "conf": 19.3,
    "win_raw": 40.1,
-   "win_chance": 48.4,
+   "win_chance": 48.3,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -22533,7 +22539,7 @@
    },
    "conf": 48.6,
    "win_raw": 60.0,
-   "win_chance": 51.6,
+   "win_chance": 51.7,
    "edge": -0.7,
    "side": "Under",
    "tiers": {
@@ -22648,7 +22654,7 @@
    },
    "conf": 66.8,
    "win_raw": 60.4,
-   "win_chance": 51.7,
+   "win_chance": 51.9,
    "edge": 1.9,
    "side": "Over",
    "tiers": {
@@ -22711,7 +22717,7 @@
    },
    "conf": 71.8,
    "win_raw": 68.6,
-   "win_chance": 53.8,
+   "win_chance": 54.0,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -22767,7 +22773,7 @@
    },
    "conf": 35.8,
    "win_raw": 53.3,
-   "win_chance": 49.6,
+   "win_chance": 49.5,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -22827,7 +22833,7 @@
    },
    "conf": 60.4,
    "win_raw": 65.2,
-   "win_chance": 53.2,
+   "win_chance": 53.4,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -22883,7 +22889,7 @@
    },
    "conf": 26.1,
    "win_raw": 51.7,
-   "win_chance": 49.1,
+   "win_chance": 49.0,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -22946,7 +22952,7 @@
    },
    "conf": 74.5,
    "win_raw": 73.9,
-   "win_chance": 54.7,
+   "win_chance": 54.9,
    "edge": 3.0,
    "side": "Over",
    "tiers": {
@@ -23072,7 +23078,7 @@
    },
    "conf": 40.9,
    "win_raw": 49.8,
-   "win_chance": 50.1,
+   "win_chance": 50.2,
    "edge": 0.3,
    "side": "Over",
    "tiers": {
@@ -23132,7 +23138,7 @@
    },
    "conf": 38.1,
    "win_raw": 57.5,
-   "win_chance": 50.8,
+   "win_chance": 50.9,
    "edge": -0.1,
    "side": "Under",
    "tiers": {
@@ -23192,7 +23198,7 @@
    },
    "conf": 50.2,
    "win_raw": 58.4,
-   "win_chance": 51.1,
+   "win_chance": 51.2,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -23255,7 +23261,7 @@
    },
    "conf": 37.5,
    "win_raw": 61.3,
-   "win_chance": 52.0,
+   "win_chance": 52.2,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -23431,7 +23437,7 @@
    },
    "conf": 54.6,
    "win_raw": 61.4,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -23490,7 +23496,7 @@
    },
    "conf": 41.2,
    "win_raw": 62.6,
-   "win_chance": 52.4,
+   "win_chance": 52.6,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -23549,7 +23555,7 @@
    },
    "conf": 79.6,
    "win_raw": 70.5,
-   "win_chance": 54.1,
+   "win_chance": 54.3,
    "edge": 2.4,
    "side": "Over",
    "tiers": {
@@ -23612,7 +23618,7 @@
    },
    "conf": 53.6,
    "win_raw": 58.6,
-   "win_chance": 51.2,
+   "win_chance": 51.3,
    "edge": 1.8,
    "side": "Over",
    "tiers": {
@@ -23791,7 +23797,7 @@
    },
    "conf": 53.9,
    "win_raw": 66.6,
-   "win_chance": 53.5,
+   "win_chance": 53.7,
    "edge": -0.4,
    "side": "Under",
    "tiers": {
@@ -23970,7 +23976,7 @@
    },
    "conf": 52.4,
    "win_raw": 55.2,
-   "win_chance": 50.1,
+   "win_chance": 50.2,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -24331,7 +24337,7 @@
    },
    "conf": 78.0,
    "win_raw": 58.0,
-   "win_chance": 51.0,
+   "win_chance": 51.1,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -24391,7 +24397,7 @@
    },
    "conf": 91.8,
    "win_raw": 69.2,
-   "win_chance": 53.9,
+   "win_chance": 54.1,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -24451,7 +24457,7 @@
    },
    "conf": 73.1,
    "win_raw": 60.2,
-   "win_chance": 51.7,
+   "win_chance": 51.8,
    "edge": 0.3,
    "side": "Over",
    "tiers": {
@@ -24637,7 +24643,7 @@
    },
    "conf": 100.0,
    "win_raw": 94.6,
-   "win_chance": 57.3,
+   "win_chance": 57.5,
    "edge": -1.0,
    "side": "Under",
    "tiers": {
@@ -24756,7 +24762,7 @@
    },
    "conf": 82.1,
    "win_raw": 72.2,
-   "win_chance": 54.4,
+   "win_chance": 54.6,
    "edge": -0.5,
    "side": "Under",
    "tiers": {
@@ -24812,7 +24818,7 @@
    },
    "conf": 73.9,
    "win_raw": 61.5,
-   "win_chance": 52.1,
+   "win_chance": 52.2,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -25321,34 +25327,6 @@
    "game": "MIL@ORL"
   },
   {
-   "player": "LeBron James",
-   "team": "PHI",
-   "status": "Out",
-   "reason": "Back",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Dominick Barlow",
-   "team": "PHI",
-   "status": "Out",
-   "reason": "Not Specified Back",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Adem Bona",
-   "team": "PHI",
-   "status": "Out",
-   "reason": "Back",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Ariel Hukporti",
-   "team": "PHI",
-   "status": "Out",
-   "reason": "Right Achilles",
-   "game": "TOR@PHI"
-  },
-  {
    "player": "Mark Williams",
    "team": "PHX",
    "status": "Out",
@@ -25433,34 +25411,6 @@
    "game": "GSW@SAS"
   },
   {
-   "player": "Trayce Jackson-Davis",
-   "team": "TOR",
-   "status": "Out",
-   "reason": "Illness",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Scottie Barnes",
-   "team": "TOR",
-   "status": "Out",
-   "reason": "Left Groin",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Kawhi Leonard",
-   "team": "TOR",
-   "status": "Out",
-   "reason": "Left Knee",
-   "game": "TOR@PHI"
-  },
-  {
-   "player": "Nate Bittle",
-   "team": "TOR",
-   "status": "Out",
-   "reason": "Right Foot",
-   "game": "TOR@PHI"
-  },
-  {
    "player": "Trey Alexander",
    "team": "UTA",
    "status": "Out",
@@ -25487,6 +25437,13 @@
    "status": "Out",
    "reason": "Right Knee",
    "game": "UTA@HOU"
+  },
+  {
+   "player": "Bub Carrington",
+   "team": "WAS",
+   "status": "Out",
+   "reason": "Chest",
+   "game": "DET@WAS"
   },
   {
    "player": "Tristan Vukcevic",
@@ -25517,89 +25474,89 @@
    "game": "DET@WAS"
   }
  ],
- "injuries_updated": "11/12 08:38 PM ET",
+ "injuries_updated": "11/12 10:13 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 0.18,
    "LeBron James|AST": -1.55,
-   "Tyrese Maxey|AST": -0.12,
+   "Tyrese Maxey|AST": 0.4,
    "Ausar Thompson|AST": -0.99,
    "Daniss Jenkins|AST": 0.75,
-   "Joel Embiid|AST": -1.58,
-   "Jaylen Brown|AST": -0.86,
-   "VJ Edgecombe|AST": 0.42,
+   "Joel Embiid|AST": -1.5,
+   "Jaylen Brown|AST": -1.29,
+   "VJ Edgecombe|AST": 1.43,
    "Paul Reed|AST": -0.36,
    "Duncan Robinson|AST": -0.03,
    "Paul Reed|BLK": -0.3,
    "Joel Embiid|BLK": -0.24,
    "Cade Cunningham|PTS": -4.22,
-   "Tyrese Maxey|PTS": -3.25,
-   "Jaylen Brown|PTS": -0.82,
-   "Joel Embiid|PTS": -1.96,
+   "Tyrese Maxey|PTS": -2.91,
+   "Jaylen Brown|PTS": -2.4,
+   "Joel Embiid|PTS": -1.28,
    "LeBron James|PTS": -1.76,
    "Duncan Robinson|PTS": 0.45,
    "Paul Reed|PTS": -4.86,
    "John Collins|PTS": 5.1,
-   "VJ Edgecombe|PTS": -1.09,
+   "VJ Edgecombe|PTS": -0.91,
    "Ausar Thompson|PTS": -1.22,
    "Daniss Jenkins|PTS": 6.54,
-   "Anfernee Simons|PTS": -0.59,
+   "Anfernee Simons|PTS": 1.39,
    "Kevin Huerter|PTS": 4.62,
    "Javonte Green|PTS": -1.86,
    "Cade Cunningham|PA": -4.02,
-   "Tyrese Maxey|PA": -3.41,
-   "Jaylen Brown|PA": -1.65,
-   "Joel Embiid|PA": -3.57,
+   "Tyrese Maxey|PA": -2.54,
+   "Jaylen Brown|PA": -3.67,
+   "Joel Embiid|PA": -2.8,
    "LeBron James|PA": -3.32,
    "Duncan Robinson|PA": 0.39,
    "Paul Reed|PA": -5.22,
    "Ausar Thompson|PA": -2.24,
    "Daniss Jenkins|PA": 7.28,
-   "VJ Edgecombe|PA": -0.7,
+   "VJ Edgecombe|PA": 0.5,
    "Cade Cunningham|PR": -5.17,
-   "Joel Embiid|PR": -2.98,
-   "Tyrese Maxey|PR": -4.46,
-   "Jaylen Brown|PR": -1.71,
+   "Joel Embiid|PR": -3.98,
+   "Tyrese Maxey|PR": -4.32,
+   "Jaylen Brown|PR": -3.39,
    "LeBron James|PR": -1.96,
    "Paul Reed|PR": -3.78,
    "John Collins|PR": 5.04,
    "Ausar Thompson|PR": -0.75,
    "Duncan Robinson|PR": 0.21,
-   "VJ Edgecombe|PR": -2.88,
+   "VJ Edgecombe|PR": -2.11,
    "Daniss Jenkins|PR": 7.26,
    "Kevin Huerter|PR": -0.12,
    "Anfernee Simons|PR": -3.99,
    "Javonte Green|PR": -1.83,
    "Cade Cunningham|PRA": -5.0,
-   "Tyrese Maxey|PRA": -4.6,
-   "Joel Embiid|PRA": -4.55,
-   "Jaylen Brown|PRA": -2.57,
+   "Tyrese Maxey|PRA": -3.94,
+   "Joel Embiid|PRA": -5.46,
+   "Jaylen Brown|PRA": -4.71,
    "LeBron James|PRA": -3.54,
    "Paul Reed|PRA": -4.12,
    "Ausar Thompson|PRA": -1.76,
-   "VJ Edgecombe|PRA": -2.48,
+   "VJ Edgecombe|PRA": -0.69,
    "Duncan Robinson|PRA": 0.19,
    "Daniss Jenkins|PRA": 7.98,
    "Paul Reed|REB": 1.07,
-   "Joel Embiid|REB": -1.0,
+   "Joel Embiid|REB": -2.68,
    "Ausar Thompson|REB": 0.48,
    "John Collins|REB": -0.07,
-   "Jaylen Brown|REB": -0.9,
+   "Jaylen Brown|REB": -0.99,
    "LeBron James|REB": -0.2,
    "Cade Cunningham|REB": -0.98,
-   "VJ Edgecombe|REB": -1.79,
-   "Tyrese Maxey|REB": -1.2,
+   "VJ Edgecombe|REB": -1.19,
+   "Tyrese Maxey|REB": -1.44,
    "Javonte Green|REB": 0.03,
    "Daniss Jenkins|REB": 0.71,
    "Duncan Robinson|REB": -0.23,
    "Cade Cunningham|RA": -0.8,
    "LeBron James|RA": -1.78,
-   "Joel Embiid|RA": -2.6,
+   "Joel Embiid|RA": -4.19,
    "Ausar Thompson|RA": -0.52,
    "Paul Reed|RA": 0.75,
-   "Jaylen Brown|RA": -1.73,
-   "Tyrese Maxey|RA": -1.35,
-   "VJ Edgecombe|RA": -1.36,
+   "Jaylen Brown|RA": -2.26,
+   "Tyrese Maxey|RA": -1.06,
+   "VJ Edgecombe|RA": 0.28,
    "Daniss Jenkins|RA": 1.44,
    "Duncan Robinson|RA": -0.26,
    "Tyrese Maxey|STL": -0.51,
@@ -25610,14 +25567,14 @@
    "Cade Cunningham|STL": 0.12,
    "Jaylen Brown|STL": -0.06,
    "Duncan Robinson|3PM": 0.09,
-   "Tyrese Maxey|3PM": 0.23,
+   "Tyrese Maxey|3PM": -0.44,
    "Cade Cunningham|3PM": -1.15,
-   "Anfernee Simons|3PM": -0.5,
-   "VJ Edgecombe|3PM": -0.24,
-   "Jaylen Brown|3PM": -0.24,
+   "Anfernee Simons|3PM": 0.37,
+   "VJ Edgecombe|3PM": -0.53,
+   "Jaylen Brown|3PM": -0.8,
    "Kevin Huerter|3PM": 0.0,
    "Daniss Jenkins|3PM": 1.25,
-   "Joel Embiid|3PM": -0.0,
+   "Joel Embiid|3PM": -0.12,
    "Javonte Green|3PM": -0.45,
    "LeBron James|3PM": 0.14,
    "Trae Young|AST": -2.96,
@@ -26280,11 +26237,11 @@
    "Marcus Smart|3PM": -0.4,
    "Tari Eason|3PM": -0.18,
    "Nikola Jokic|AST": 0.15,
-   "Immanuel Quickley|AST": -0.66,
+   "Immanuel Quickley|AST": -0.52,
    "Jamal Murray|AST": 0.42,
    "Scottie Barnes|AST": 0.18,
-   "Jamal Shead|AST": 1.41,
-   "RJ Barrett|AST": 0.26,
+   "Jamal Shead|AST": 0.09,
+   "RJ Barrett|AST": 0.42,
    "Aaron Gordon|AST": -0.66,
    "Cameron Johnson|AST": -0.49,
    "Scottie Barnes|BLK": -0.21,
@@ -26292,60 +26249,60 @@
    "Nikola Jokic|PTS": 3.16,
    "Jamal Murray|PTS": 1.8,
    "Scottie Barnes|PTS": -2.73,
-   "RJ Barrett|PTS": -4.51,
-   "Immanuel Quickley|PTS": -4.22,
+   "RJ Barrett|PTS": -0.85,
+   "Immanuel Quickley|PTS": -0.64,
    "Aaron Gordon|PTS": -1.92,
    "Christian Braun|PTS": -3.6,
-   "Ja'Kobe Walter|PTS": -0.46,
+   "Ja'Kobe Walter|PTS": -2.36,
    "Cameron Johnson|PTS": 4.71,
-   "Collin Murray-Boyles|PTS": -0.28,
-   "Jamal Shead|PTS": 1.02,
-   "Jakob Poeltl|PTS": 3.15,
+   "Collin Murray-Boyles|PTS": 0.19,
+   "Jamal Shead|PTS": -0.28,
+   "Jakob Poeltl|PTS": 1.99,
    "Trevon Brazile|PTS": -0.39,
    "Nikola Jokic|PA": 3.29,
    "Jamal Murray|PA": 2.25,
    "Scottie Barnes|PA": -2.55,
-   "RJ Barrett|PA": -4.21,
-   "Immanuel Quickley|PA": -4.88,
+   "RJ Barrett|PA": -0.4,
+   "Immanuel Quickley|PA": -1.17,
    "Aaron Gordon|PA": -2.58,
    "Cameron Johnson|PA": 4.76,
-   "Jamal Shead|PA": 0.14,
+   "Jamal Shead|PA": -1.79,
    "Nikola Jokic|PR": 5.22,
    "Scottie Barnes|PR": -3.33,
    "Jamal Murray|PR": 0.79,
-   "RJ Barrett|PR": -5.28,
-   "Immanuel Quickley|PR": -4.98,
+   "RJ Barrett|PR": 0.65,
+   "Immanuel Quickley|PR": -1.3,
    "Aaron Gordon|PR": -3.06,
    "Christian Braun|PR": -3.15,
-   "Ja'Kobe Walter|PR": -0.91,
+   "Ja'Kobe Walter|PR": -2.71,
    "Cameron Johnson|PR": 3.84,
-   "Collin Murray-Boyles|PR": -1.1,
-   "Jakob Poeltl|PR": 4.44,
+   "Collin Murray-Boyles|PR": -2.27,
+   "Jakob Poeltl|PR": 2.0,
    "Trevon Brazile|PR": -0.3,
    "Nikola Jokic|PRA": 5.36,
    "Scottie Barnes|PRA": -3.15,
    "Jamal Murray|PRA": 1.21,
-   "RJ Barrett|PRA": -4.99,
-   "Immanuel Quickley|PRA": -5.62,
+   "RJ Barrett|PRA": 1.07,
+   "Immanuel Quickley|PRA": -1.8,
    "Aaron Gordon|PRA": -3.73,
    "Cameron Johnson|PRA": 3.88,
    "Nikola Jokic|REB": 2.07,
    "Scottie Barnes|REB": -0.6,
-   "RJ Barrett|REB": -0.77,
-   "Jakob Poeltl|REB": 1.28,
+   "RJ Barrett|REB": 1.47,
+   "Jakob Poeltl|REB": -0.03,
    "Aaron Gordon|REB": -1.15,
-   "Collin Murray-Boyles|REB": -0.8,
+   "Collin Murray-Boyles|REB": -2.45,
    "Jamal Murray|REB": -1.07,
    "Christian Braun|REB": 0.45,
    "Trevon Brazile|REB": 0.12,
-   "Ja'Kobe Walter|REB": -0.45,
+   "Ja'Kobe Walter|REB": -0.34,
    "Cameron Johnson|REB": -0.85,
-   "Immanuel Quickley|REB": -0.74,
+   "Immanuel Quickley|REB": -0.64,
    "Nikola Jokic|RA": 2.23,
    "Scottie Barnes|RA": -0.42,
    "Jamal Murray|RA": -0.62,
-   "RJ Barrett|RA": -0.51,
-   "Immanuel Quickley|RA": -1.4,
+   "RJ Barrett|RA": 1.89,
+   "Immanuel Quickley|RA": -1.16,
    "Aaron Gordon|RA": -1.84,
    "Cameron Johnson|RA": -0.81,
    "Scottie Barnes|STL": 0.21,
@@ -26354,10 +26311,10 @@
    "Ja'Kobe Walter|STL": -0.54,
    "Immanuel Quickley|STL": 0.27,
    "Jamal Murray|3PM": -0.3,
-   "Immanuel Quickley|3PM": -0.79,
-   "Ja'Kobe Walter|3PM": 0.29,
+   "Immanuel Quickley|3PM": -0.37,
+   "Ja'Kobe Walter|3PM": -0.25,
    "Cameron Johnson|3PM": 0.87,
-   "RJ Barrett|3PM": -0.89,
+   "RJ Barrett|3PM": 0.07,
    "Aaron Gordon|3PM": -0.52,
    "Nikola Jokic|3PM": -0.08,
    "Christian Braun|3PM": -0.65,
@@ -26900,34 +26857,34 @@
    "Svi Mykhailiuk|3PM": -0.24,
    "Jared McCain|AST": -0.11,
    "Kasparas Jakucionis|AST": -0.57,
-   "Ja'Kobe Walter|AST": -0.99,
-   "Collin Murray-Boyles|AST": 0.21,
+   "Ja'Kobe Walter|AST": -1.32,
+   "Collin Murray-Boyles|AST": 0.84,
    "Myles Turner|AST": 0.22,
    "AJ Green|AST": -0.85,
    "Kasparas Jakucionis|PTS": -1.26,
-   "Ja'Kobe Walter|PA": -1.14,
-   "Collin Murray-Boyles|PA": -0.2,
+   "Ja'Kobe Walter|PA": -3.47,
+   "Collin Murray-Boyles|PA": 0.94,
    "Myles Turner|PA": -3.04,
    "Kel'el Ware|PA": -1.82,
    "Kasparas Jakucionis|PA": -1.83,
    "AJ Green|PA": -2.35,
    "AJ Green|PR": -2.36,
    "Kasparas Jakucionis|PR": -2.07,
-   "Collin Murray-Boyles|PRA": -0.68,
-   "Ja'Kobe Walter|PRA": -1.28,
+   "Collin Murray-Boyles|PRA": -1.29,
+   "Ja'Kobe Walter|PRA": -3.63,
    "Myles Turner|PRA": -3.59,
    "Kel'el Ware|PRA": -3.64,
    "Kasparas Jakucionis|PRA": -2.64,
    "AJ Green|PRA": -3.21,
    "Jamal Shead|REB": -0.02,
    "Kasparas Jakucionis|REB": -0.81,
-   "Collin Murray-Boyles|RA": 0.08,
+   "Collin Murray-Boyles|RA": -1.14,
    "Kel'el Ware|RA": -1.92,
    "Myles Turner|RA": -0.35,
-   "Ja'Kobe Walter|RA": -1.33,
+   "Ja'Kobe Walter|RA": -1.62,
    "Kasparas Jakucionis|RA": -1.38,
    "AJ Green|RA": -1.71,
-   "Jamal Shead|3PM": 1.09,
+   "Jamal Shead|3PM": 0.79,
    "Kasparas Jakucionis|3PM": -0.18,
    "Collin Murray-Boyles|3PM": -0.21,
    "Trey Murphy III|AST": 0.1,
@@ -27070,17 +27027,17 @@
    "Reed Sheppard|3PM": -0.18,
    "Donovan Clingan|3PM": -0.29,
    "Keldon Johnson|3PM": -0.06,
-   "Dean Wade|PTS": -1.17,
+   "Dean Wade|PTS": -0.22,
    "Anfernee Simons|PA": -1.89,
    "Dean Wade|PA": -1.53,
-   "Dean Wade|PR": -1.92,
+   "Dean Wade|PR": -0.38,
    "Anfernee Simons|PRA": 1.61,
    "Dean Wade|PRA": -2.28,
-   "Dean Wade|REB": -0.75,
+   "Dean Wade|REB": -0.16,
    "Anfernee Simons|REB": 0.63,
    "Dean Wade|RA": -1.11,
    "Anfernee Simons|RA": 0.84,
-   "Dean Wade|3PM": -0.18,
+   "Dean Wade|3PM": 0.26,
    "Walker Kessler|AST": 1.16,
    "Matisse Thybulle|AST": -0.33,
    "Walker Kessler|PA": 2.16,
@@ -27155,19 +27112,19 @@
    "Coby White|REB": -0.15,
    "Coby White|RA": 1.83,
    "Coby White|3PM": -0.24,
-   "Jakob Poeltl|AST": 0.03,
-   "Jamison Battle|PTS": 1.5,
+   "Jakob Poeltl|AST": 0.53,
+   "Jamison Battle|PTS": 1.17,
    "Allen Graves|PTS": -0.54,
-   "Jakob Poeltl|PA": 0.85,
+   "Jakob Poeltl|PA": 0.9,
    "Jaylen Wells|PA": 0.69,
    "Zach Edey|PA": -0.33,
-   "Jamal Shead|PR": 3.45,
-   "Jamal Shead|PRA": 0.49,
-   "Jakob Poeltl|PRA": 1.53,
+   "Jamal Shead|PR": 0.92,
+   "Jamal Shead|PRA": -2.09,
+   "Jakob Poeltl|PRA": 0.47,
    "Zach Edey|PRA": -0.27,
    "Jaylen Wells|PRA": 1.05,
-   "Jamal Shead|RA": 0.75,
-   "Jakob Poeltl|RA": 0.68,
+   "Jamal Shead|RA": -0.92,
+   "Jakob Poeltl|RA": 0.06,
    "Zach Edey|RA": 0.0,
    "Jaylen Wells|RA": 0.24,
    "Ivica Zubac|PRA": 4.41,
@@ -27254,7 +27211,7 @@
    "Baylor Scheierman|PRA": 1.98,
    "Baylor Scheierman|REB": 0.81,
    "Baylor Scheierman|RA": 1.23,
-   "Jamison Battle|3PM": -0.36,
+   "Jamison Battle|3PM": -0.19,
    "Baylor Scheierman|3PM": 0.48,
    "Isaac Okoro|PTS": -1.98,
    "Luke Kornet|PTS": 1.02,
@@ -27308,17 +27265,20 @@
    "Georges Niang|RA": 0.0,
    "Al Horford|3PM": -0.36,
    "Kenrich Williams|AST": 0.15,
-   "Sidy Cissoko|3PM": 0.81
+   "Sidy Cissoko|3PM": 0.81,
+   "Jamison Battle|PR": -0.09,
+   "Jamison Battle|PRA": 0.03,
+   "Jamison Battle|REB": -0.18
   },
   "team": [],
-  "games_learned": 63,
+  "games_learned": 64,
   "history": [],
-  "alpha": 0.235
+  "alpha": 0.234
  },
  "model_notes": [
   "Base: projected minutes x recent per-minute rates (last 10 games, decay-weighted)",
   "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
-  "Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now 0.235)",
+  "Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now 0.234)",
   "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
   "Bets are scored at 1 unit risked at the posted DraftKings price (another book's price when DraftKings has none; a bet with no price anywhere isn't counted. Bets before Nov 5 used -110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers. Spreads, totals and moneylines are also paused while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
@@ -43995,10 +43955,1558 @@
      "edge": 3.5
     }
    ]
+  },
+  {
+   "timestamp": "2026-11-12T22:13",
+   "games": [
+    {
+     "id": "DET@WAS",
+     "matchup": "DET @ WAS",
+     "model_spread": 1.7,
+     "model_total": 222.3,
+     "dk_spread": "+10.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "DAL@MIN",
+     "matchup": "DAL @ MIN",
+     "model_spread": -4.2,
+     "model_total": 225.8,
+     "dk_spread": "-5.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "CHA@PHX",
+     "matchup": "CHA @ PHX",
+     "model_spread": -4.2,
+     "model_total": 222.8,
+     "dk_spread": "-6.5",
+     "dk_total": 214.5
+    },
+    {
+     "id": "NYK@IND",
+     "matchup": "NYK @ IND",
+     "model_spread": 0.4,
+     "model_total": 222.6,
+     "dk_spread": "+6.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "MIL@ORL",
+     "matchup": "MIL @ ORL",
+     "model_spread": -5.1,
+     "model_total": 225.9,
+     "dk_spread": "-9.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CLE@MIA",
+     "matchup": "CLE @ MIA",
+     "model_spread": -0.4,
+     "model_total": 230.5,
+     "dk_spread": "-1.5",
+     "dk_total": 237.5
+    },
+    {
+     "id": "ATL@CHI",
+     "matchup": "ATL @ CHI",
+     "model_spread": 2.6,
+     "model_total": 233.3,
+     "dk_spread": "+6.5",
+     "dk_total": 246.5
+    },
+    {
+     "id": "MEM@NOP",
+     "matchup": "MEM @ NOP",
+     "model_spread": 1.6,
+     "model_total": 231.9,
+     "dk_spread": "+4.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "UTA@HOU",
+     "matchup": "UTA @ HOU",
+     "model_spread": -8.4,
+     "model_total": 224.6,
+     "dk_spread": "-17.5",
+     "dk_total": 217.5
+    },
+    {
+     "id": "GSW@SAS",
+     "matchup": "GSW @ SAS",
+     "model_spread": -3.3,
+     "model_total": 228.1,
+     "dk_spread": "-13.5",
+     "dk_total": 218.5
+    },
+    {
+     "id": "POR@SAC",
+     "matchup": "POR @ SAC",
+     "model_spread": 3.5,
+     "model_total": 228.9,
+     "dk_spread": "+10.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "OKC@LAC",
+     "matchup": "OKC @ LAC",
+     "model_spread": 0.6,
+     "model_total": 225.1,
+     "dk_spread": "+7.5",
+     "dk_total": 221.5
+    }
+   ],
+   "props": [
+    {
+     "player": "Coby White",
+     "stat": "PTS",
+     "model": 8.9,
+     "dk": 14.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Jamison Battle",
+     "stat": "PTS",
+     "model": 13.0,
+     "dk": 7.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PA",
+     "model": 22.9,
+     "dk": 17.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PRA",
+     "model": 42.8,
+     "dk": 37.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Coby White",
+     "stat": "PR",
+     "model": 11.3,
+     "dk": 16.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PTS",
+     "model": 20.5,
+     "dk": 15.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PR",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PRA",
+     "model": 28.4,
+     "dk": 23.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Trey Lyles",
+     "stat": "PRA",
+     "model": 15.4,
+     "dk": 10.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PA",
+     "model": 23.3,
+     "dk": 18.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PA",
+     "model": 35.3,
+     "dk": 30.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PR",
+     "model": 33.3,
+     "dk": 28.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Trey Lyles",
+     "stat": "PR",
+     "model": 14.2,
+     "dk": 9.5,
+     "edge": 4.7
+    },
+    {
+     "player": "Coby White",
+     "stat": "PA",
+     "model": 13.8,
+     "dk": 18.5,
+     "edge": -4.7
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PR",
+     "model": 24.0,
+     "dk": 19.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PTS",
+     "model": 18.8,
+     "dk": 14.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PRA",
+     "model": 24.8,
+     "dk": 20.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PA",
+     "model": 34.7,
+     "dk": 30.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Ryan Kalkbrenner",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 10.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Coby White",
+     "stat": "PRA",
+     "model": 16.3,
+     "dk": 20.5,
+     "edge": -4.2
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PRA",
+     "model": 35.4,
+     "dk": 39.5,
+     "edge": -4.1
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PR",
+     "model": 35.6,
+     "dk": 31.5,
+     "edge": 4.1
+    },
+    {
+     "player": "Trae Young",
+     "stat": "PA",
+     "model": 21.5,
+     "dk": 25.5,
+     "edge": -4.0
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PRA",
+     "model": 35.5,
+     "dk": 31.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PTS",
+     "model": 28.3,
+     "dk": 24.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Jamison Battle",
+     "stat": "PR",
+     "model": 14.3,
+     "dk": 10.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 38.3,
+     "dk": 34.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PTS",
+     "model": 28.2,
+     "dk": 24.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Daniel Gafford",
+     "stat": "PRA",
+     "model": 18.1,
+     "dk": 14.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 28.5,
+     "edge": 3.5
+    }
+   ]
   }
  ],
  "notes": "Model data updates automatically each day.",
  "settled_bets": [
+  {
+   "key": "Ja'Kobe Walter|RA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Ja'Kobe Walter",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "RA",
+   "dir": "Over",
+   "line": 5.5,
+   "price": -131,
+   "price_book": "draftkings",
+   "model": 7.0,
+   "edge": 1.5,
+   "confidence": 82.5,
+   "win_chance": 54.7,
+   "win_raw": 74.3,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     8,
+     11
+    ]
+   },
+   "side": "Ja'Kobe Walter Over 5.5 RA",
+   "result": "L",
+   "actual": "5 RA",
+   "units": -1.0
+  },
+  {
+   "key": "Jamal Shead|RA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "RA",
+   "dir": "Over",
+   "line": 8.5,
+   "price": -133,
+   "price_book": "draftkings",
+   "model": 11.0,
+   "edge": 2.5,
+   "confidence": 80.0,
+   "win_chance": 53.1,
+   "win_raw": 64.6,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     6,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 8.5 RA",
+   "result": "L",
+   "actual": "6 RA",
+   "units": -1.0
+  },
+  {
+   "key": "Immanuel Quickley|RA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "RA",
+   "dir": "Over",
+   "line": 8.5,
+   "price": -139,
+   "price_book": "draftkings",
+   "model": 10.3,
+   "edge": 1.8,
+   "confidence": 62.0,
+   "win_chance": 51.9,
+   "win_raw": 60.9,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     9
+    ],
+    "l15": [
+     4,
+     9
+    ]
+   },
+   "side": "Immanuel Quickley Over 8.5 RA",
+   "result": "W",
+   "actual": "10 RA",
+   "units": 0.72
+  },
+  {
+   "key": "VJ Edgecombe|RA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "RA",
+   "dir": "Over",
+   "line": 9.5,
+   "price": -110,
+   "price_book": "draftkings",
+   "model": 11.6,
+   "edge": 2.1,
+   "confidence": 55.8,
+   "win_chance": 51.7,
+   "win_raw": 60.1,
+   "hits": {
+    "l5": [
+     0,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 9.5 RA",
+   "result": "W",
+   "actual": "16 RA",
+   "units": 0.91
+  },
+  {
+   "key": "RJ Barrett|RA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "RJ Barrett",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "RA",
+   "dir": "Over",
+   "line": 10.5,
+   "price": 107,
+   "price_book": "draftkings",
+   "model": 11.4,
+   "edge": 0.9,
+   "confidence": 40.9,
+   "win_chance": 49.6,
+   "win_raw": 53.4,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     11
+    ]
+   },
+   "side": "RJ Barrett Over 10.5 RA",
+   "result": "W",
+   "actual": "19 RA",
+   "units": 1.07
+  },
+  {
+   "key": "Dean Wade|REB",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Dean Wade",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "REB",
+   "dir": "Under",
+   "line": 4.5,
+   "price": -115,
+   "price_book": "draftkings",
+   "model": 3.6,
+   "edge": -0.9,
+   "confidence": 62.1,
+   "win_chance": 52.4,
+   "win_raw": 62.4,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     10
+    ]
+   },
+   "side": "Dean Wade Under 4.5 REB",
+   "result": "L",
+   "actual": "5 REB",
+   "units": -1.0
+  },
+  {
+   "key": "RJ Barrett|REB",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "RJ Barrett",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "REB",
+   "dir": "Over",
+   "line": 5.5,
+   "price": -145,
+   "price_book": "draftkings",
+   "model": 7.1,
+   "edge": 1.6,
+   "confidence": 77.2,
+   "win_chance": 53.0,
+   "win_raw": 64.5,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     6,
+     11
+    ]
+   },
+   "side": "RJ Barrett Over 5.5 REB",
+   "result": "W",
+   "actual": "14 REB",
+   "units": 0.69
+  },
+  {
+   "key": "VJ Edgecombe|REB",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "REB",
+   "dir": "Over",
+   "line": 6.5,
+   "price": 110,
+   "price_book": "draftkings",
+   "model": 7.4,
+   "edge": 0.9,
+   "confidence": 44.9,
+   "win_chance": 50.0,
+   "win_raw": 54.7,
+   "hits": {
+    "l5": [
+     0,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 6.5 REB",
+   "result": "W",
+   "actual": "8 REB",
+   "units": 1.1
+  },
+  {
+   "key": "Joel Embiid|REB",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Joel Embiid",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "REB",
+   "dir": "Over",
+   "line": 8.5,
+   "price": -135,
+   "price_book": "draftkings",
+   "model": 10.4,
+   "edge": 1.9,
+   "confidence": 66.4,
+   "win_chance": 52.4,
+   "win_raw": 62.6,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     10
+    ]
+   },
+   "side": "Joel Embiid Over 8.5 REB",
+   "result": "L",
+   "actual": "4 REB",
+   "units": -1.0
+  },
+  {
+   "key": "Jamison Battle|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamison Battle",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 11.5,
+   "price": -119,
+   "price_book": "draftkings",
+   "model": 14.9,
+   "edge": 3.4,
+   "confidence": 70.5,
+   "win_chance": 51.5,
+   "win_raw": 59.7,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     5,
+     11
+    ]
+   },
+   "side": "Jamison Battle Over 11.5 PRA",
+   "result": "W",
+   "actual": "15 PRA",
+   "units": 0.84
+  },
+  {
+   "key": "Ja'Kobe Walter|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Ja'Kobe Walter",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 16.5,
+   "price": -127,
+   "price_book": "draftkings",
+   "model": 19.8,
+   "edge": 3.3,
+   "confidence": 69.5,
+   "win_chance": 54.1,
+   "win_raw": 70.3,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     7,
+     11
+    ]
+   },
+   "side": "Ja'Kobe Walter Over 16.5 PRA",
+   "result": "L",
+   "actual": "11 PRA",
+   "units": -1.0
+  },
+  {
+   "key": "Jamal Shead|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 17.5,
+   "price": -102,
+   "price_book": "draftkings",
+   "model": 19.2,
+   "edge": 1.7,
+   "confidence": 35.0,
+   "win_chance": 50.1,
+   "win_raw": 45.5,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     3,
+     10
+    ],
+    "l15": [
+     3,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 17.5 PRA",
+   "result": "L",
+   "actual": "11 PRA",
+   "units": -1.0
+  },
+  {
+   "key": "VJ Edgecombe|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 23.5,
+   "price": -111,
+   "price_book": "draftkings",
+   "model": 26.9,
+   "edge": 3.4,
+   "confidence": 47.5,
+   "win_chance": 50.4,
+   "win_raw": 56.1,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 23.5 PRA",
+   "result": "W",
+   "actual": "31 PRA",
+   "units": 0.9
+  },
+  {
+   "key": "Immanuel Quickley|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Immanuel Quickley",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 25.5,
+   "price": -124,
+   "price_book": "draftkings",
+   "model": 27.6,
+   "edge": 2.1,
+   "confidence": 38.7,
+   "win_chance": 50.1,
+   "win_raw": 55.0,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     9
+    ],
+    "l15": [
+     4,
+     9
+    ]
+   },
+   "side": "Immanuel Quickley Over 25.5 PRA",
+   "result": "W",
+   "actual": "36 PRA",
+   "units": 0.81
+  },
+  {
+   "key": "Tyrese Maxey|PRA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PRA",
+   "dir": "Over",
+   "line": 34.5,
+   "price": -110,
+   "price_book": "draftkings",
+   "model": 38.3,
+   "edge": 3.8,
+   "confidence": 51.0,
+   "win_chance": 53.3,
+   "win_raw": 65.9,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     8,
+     12
+    ]
+   },
+   "side": "Tyrese Maxey Over 34.5 PRA",
+   "result": "W",
+   "actual": "37 PRA",
+   "units": 0.91
+  },
+  {
+   "key": "Dean Wade|PR",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Dean Wade",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PR",
+   "dir": "Under",
+   "line": 9.5,
+   "price": -106,
+   "price_book": "draftkings",
+   "model": 7.3,
+   "edge": -2.2,
+   "confidence": 78.8,
+   "win_chance": 53.7,
+   "win_raw": 67.8,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     7,
+     10
+    ]
+   },
+   "side": "Dean Wade Under 9.5 PR",
+   "result": "L",
+   "actual": "11 PR",
+   "units": -1.0
+  },
+  {
+   "key": "Jamal Shead|PR",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PR",
+   "dir": "Over",
+   "line": 10.5,
+   "price": -105,
+   "price_book": "draftkings",
+   "model": 11.8,
+   "edge": 1.3,
+   "confidence": 43.8,
+   "win_chance": 50.2,
+   "win_raw": 49.7,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 10.5 PR",
+   "result": "L",
+   "actual": "6 PR",
+   "units": -1.0
+  },
+  {
+   "key": "Ja'Kobe Walter|PR",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Ja'Kobe Walter",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PR",
+   "dir": "Over",
+   "line": 14.5,
+   "price": -129,
+   "price_book": "draftkings",
+   "model": 17.7,
+   "edge": 3.2,
+   "confidence": 72.0,
+   "win_chance": 53.4,
+   "win_raw": 66.5,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     6,
+     11
+    ]
+   },
+   "side": "Ja'Kobe Walter Over 14.5 PR",
+   "result": "L",
+   "actual": "11 PR",
+   "units": -1.0
+  },
+  {
+   "key": "VJ Edgecombe|PR",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PR",
+   "dir": "Over",
+   "line": 19.5,
+   "price": -126,
+   "price_book": "draftkings",
+   "model": 22.6,
+   "edge": 3.1,
+   "confidence": 50.1,
+   "win_chance": 50.7,
+   "win_raw": 57.0,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 19.5 PR",
+   "result": "W",
+   "actual": "23 PR",
+   "units": 0.79
+  },
+  {
+   "key": "Tyrese Maxey|PR",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PR",
+   "dir": "Over",
+   "line": 28.5,
+   "price": -109,
+   "price_book": "draftkings",
+   "model": 32.0,
+   "edge": 3.5,
+   "confidence": 57.2,
+   "win_chance": 54.0,
+   "win_raw": 70.1,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     9,
+     12
+    ]
+   },
+   "side": "Tyrese Maxey Over 28.5 PR",
+   "result": "W",
+   "actual": "29 PR",
+   "units": 0.92
+  },
+  {
+   "key": "Ja'Kobe Walter|PA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Ja'Kobe Walter",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PA",
+   "dir": "Over",
+   "line": 12.5,
+   "price": -121,
+   "price_book": "draftkings",
+   "model": 14.6,
+   "edge": 2.1,
+   "confidence": 57.0,
+   "win_chance": 52.4,
+   "win_raw": 62.5,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     6,
+     11
+    ]
+   },
+   "side": "Ja'Kobe Walter Over 12.5 PA",
+   "result": "L",
+   "actual": "6 PA",
+   "units": -1.0
+  },
+  {
+   "key": "Jamal Shead|PA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PA",
+   "dir": "Over",
+   "line": 14.5,
+   "price": -119,
+   "price_book": "draftkings",
+   "model": 16.3,
+   "edge": 1.8,
+   "confidence": 43.8,
+   "win_chance": 50.3,
+   "win_raw": 49.6,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 14.5 PA",
+   "result": "L",
+   "actual": "10 PA",
+   "units": -1.0
+  },
+  {
+   "key": "VJ Edgecombe|PA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PA",
+   "dir": "Over",
+   "line": 16.5,
+   "price": -128,
+   "price_book": "draftkings",
+   "model": 19.5,
+   "edge": 3.0,
+   "confidence": 54.2,
+   "win_chance": 51.1,
+   "win_raw": 58.4,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 16.5 PA",
+   "result": "W",
+   "actual": "23 PA",
+   "units": 0.78
+  },
+  {
+   "key": "Tyrese Maxey|PA",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PA",
+   "dir": "Over",
+   "line": 30.5,
+   "price": -112,
+   "price_book": "draftkings",
+   "model": 34.7,
+   "edge": 4.2,
+   "confidence": 56.0,
+   "win_chance": 53.7,
+   "win_raw": 67.8,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     8,
+     12
+    ]
+   },
+   "side": "Tyrese Maxey Over 30.5 PA",
+   "result": "W",
+   "actual": "35 PA",
+   "units": 0.89
+  },
+  {
+   "key": "Dean Wade|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Dean Wade",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PTS",
+   "dir": "Under",
+   "line": 5.5,
+   "price": -137,
+   "price_book": "draftkings",
+   "model": 3.7,
+   "edge": -1.8,
+   "confidence": 78.0,
+   "win_chance": 53.3,
+   "win_raw": 65.6,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     6,
+     10
+    ]
+   },
+   "side": "Dean Wade Under 5.5 PTS",
+   "result": "L",
+   "actual": "6 PTS",
+   "units": -1.0
+  },
+  {
+   "key": "Jamal Shead|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PTS",
+   "dir": "Over",
+   "line": 7.5,
+   "price": -128,
+   "price_book": "draftkings",
+   "model": 8.5,
+   "edge": 1.0,
+   "confidence": 45.5,
+   "win_chance": 50.9,
+   "win_raw": 48.8,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 7.5 PTS",
+   "result": "L",
+   "actual": "5 PTS",
+   "units": -1.0
+  },
+  {
+   "key": "Anfernee Simons|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PTS",
+   "dir": "Over",
+   "line": 9.5,
+   "price": -101,
+   "price_book": "draftkings",
+   "model": 10.9,
+   "edge": 1.4,
+   "confidence": 46.0,
+   "win_chance": 49.3,
+   "win_raw": 50.9,
+   "hits": {
+    "l5": [
+     1,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     5,
+     12
+    ]
+   },
+   "side": "Anfernee Simons Over 9.5 PTS",
+   "result": "W",
+   "actual": "17 PTS",
+   "units": 0.99
+  },
+  {
+   "key": "Ja'Kobe Walter|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Ja'Kobe Walter",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "PTS",
+   "dir": "Over",
+   "line": 10.5,
+   "price": -126,
+   "price_book": "draftkings",
+   "model": 12.7,
+   "edge": 2.2,
+   "confidence": 63.2,
+   "win_chance": 51.4,
+   "win_raw": 59.2,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     11
+    ]
+   },
+   "side": "Ja'Kobe Walter Over 10.5 PTS",
+   "result": "L",
+   "actual": "6 PTS",
+   "units": -1.0
+  },
+  {
+   "key": "VJ Edgecombe|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PTS",
+   "dir": "Over",
+   "line": 13.5,
+   "price": -114,
+   "price_book": "draftkings",
+   "model": 15.2,
+   "edge": 1.7,
+   "confidence": 40.2,
+   "win_chance": 50.1,
+   "win_raw": 49.8,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     3,
+     10
+    ],
+    "l15": [
+     3,
+     11
+    ]
+   },
+   "side": "VJ Edgecombe Over 13.5 PTS",
+   "result": "W",
+   "actual": "15 PTS",
+   "units": 0.88
+  },
+  {
+   "key": "Tyrese Maxey|PTS",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "PTS",
+   "dir": "Over",
+   "line": 24.5,
+   "price": -113,
+   "price_book": "draftkings",
+   "model": 28.3,
+   "edge": 3.8,
+   "confidence": 63.0,
+   "win_chance": 54.4,
+   "win_raw": 72.2,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     9,
+     12
+    ]
+   },
+   "side": "Tyrese Maxey Over 24.5 PTS",
+   "result": "W",
+   "actual": "27 PTS",
+   "units": 0.88
+  },
+  {
+   "key": "Tyrese Maxey|AST",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "TOR",
+   "stat": "AST",
+   "dir": "Over",
+   "line": 5.5,
+   "price": -133,
+   "price_book": "draftkings",
+   "model": 6.4,
+   "edge": 0.9,
+   "confidence": 50.5,
+   "win_chance": 49.8,
+   "win_raw": 50.3,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     3,
+     10
+    ],
+    "l15": [
+     4,
+     12
+    ]
+   },
+   "side": "Tyrese Maxey Over 5.5 AST",
+   "result": "W",
+   "actual": "8 AST",
+   "units": 0.75
+  },
+  {
+   "key": "Jamal Shead|AST",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Prop",
+   "market": "Player Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "AST",
+   "dir": "Over",
+   "line": 6.5,
+   "price": -113,
+   "price_book": "draftkings",
+   "model": 8.3,
+   "edge": 1.8,
+   "confidence": 66.5,
+   "win_chance": 51.0,
+   "win_raw": 57.9,
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     11
+    ]
+   },
+   "side": "Jamal Shead Over 6.5 AST",
+   "result": "L",
+   "actual": "5 AST",
+   "units": -1.0
+  },
+  {
+   "key": "Spread",
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "type": "Spread",
+   "market": "Spread",
+   "team": "TOR",
+   "opp": "PHI",
+   "stat": "Spread",
+   "dir": "Cover",
+   "line": 7.5,
+   "price": -104,
+   "model": -1.9,
+   "edge": -5.6,
+   "side": "TOR +7.5",
+   "result": "L",
+   "actual": "112-123",
+   "units": -1.0
+  },
   {
    "key": "Sidy Cissoko|RA",
    "date": "2026-11-11",
@@ -61345,1230 +62853,24 @@
    "result": "W",
    "actual": "19 PRA",
    "units": 0.94
-  },
-  {
-   "key": "VJ Edgecombe|PRA",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "VJ Edgecombe",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PRA",
-   "dir": "Over",
-   "line": 20.5,
-   "price": -115,
-   "price_book": "draftkings",
-   "model": 23.0,
-   "edge": 2.5,
-   "confidence": 61.8,
-   "win_chance": 52.9,
-   "win_raw": 68.1,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     7,
-     10
-    ]
-   },
-   "side": "VJ Edgecombe Over 20.5 PRA",
-   "result": "L",
-   "actual": "17 PRA",
-   "units": -1.0
-  },
-  {
-   "key": "Sam Hauser|PR",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Sam Hauser",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "PR",
-   "dir": "Over",
-   "line": 9.5,
-   "price": -104,
-   "price_book": "draftkings",
-   "model": 10.7,
-   "edge": 1.2,
-   "confidence": 55.7,
-   "win_chance": 51.9,
-   "win_raw": 60.9,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Sam Hauser Over 9.5 PR",
-   "result": "W",
-   "actual": "17 PR",
-   "units": 0.96
-  },
-  {
-   "key": "VJ Edgecombe|PR",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "VJ Edgecombe",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PR",
-   "dir": "Over",
-   "line": 17.5,
-   "price": -114,
-   "price_book": "draftkings",
-   "model": 19.9,
-   "edge": 2.4,
-   "confidence": 64.6,
-   "win_chance": 53.1,
-   "win_raw": 69.1,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     7,
-     10
-    ]
-   },
-   "side": "VJ Edgecombe Over 17.5 PR",
-   "result": "L",
-   "actual": "12 PR",
-   "units": -1.0
-  },
-  {
-   "key": "Tyrese Maxey|PR",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Tyrese Maxey",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PR",
-   "dir": "Over",
-   "line": 26.5,
-   "price": -119,
-   "price_book": "draftkings",
-   "model": 28.7,
-   "edge": 2.2,
-   "confidence": 56.4,
-   "win_chance": 53.2,
-   "win_raw": 69.9,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     8,
-     10
-    ],
-    "l15": [
-     9,
-     11
-    ]
-   },
-   "side": "Tyrese Maxey Over 26.5 PR",
-   "result": "L",
-   "actual": "25 PR",
-   "units": -1.0
-  },
-  {
-   "key": "VJ Edgecombe|PA",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "VJ Edgecombe",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PA",
-   "dir": "Over",
-   "line": 14.5,
-   "price": -118,
-   "price_book": "draftkings",
-   "model": 16.4,
-   "edge": 1.9,
-   "confidence": 56.6,
-   "win_chance": 52.2,
-   "win_raw": 62.9,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "VJ Edgecombe Over 14.5 PA",
-   "result": "L",
-   "actual": "13 PA",
-   "units": -1.0
-  },
-  {
-   "key": "Jaylen Brown|PA",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Jaylen Brown",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PA",
-   "dir": "Over",
-   "line": 24.5,
-   "price": -125,
-   "price_book": "draftkings",
-   "model": 26.8,
-   "edge": 2.3,
-   "confidence": 56.8,
-   "win_chance": 52.5,
-   "win_raw": 66.0,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     7,
-     10
-    ]
-   },
-   "side": "Jaylen Brown Over 24.5 PA",
-   "result": "L",
-   "actual": "15 PA",
-   "units": -1.0
-  },
-  {
-   "key": "Mitchell Robinson|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Mitchell Robinson",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 5.5,
-   "price": -105,
-   "price_book": "draftkings",
-   "model": 6.5,
-   "edge": 1.0,
-   "confidence": 63.9,
-   "win_chance": 51.8,
-   "win_raw": 59.5,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     9
-    ],
-    "l15": [
-     5,
-     9
-    ]
-   },
-   "side": "Mitchell Robinson Over 5.5 PTS",
-   "result": "L",
-   "actual": "2 PTS",
-   "units": -1.0
-  },
-  {
-   "key": "Sam Hauser|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Sam Hauser",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 6.5,
-   "price": 109,
-   "price_book": "draftkings",
-   "model": 7.7,
-   "edge": 1.2,
-   "confidence": 66.2,
-   "win_chance": 52.1,
-   "win_raw": 62.2,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Sam Hauser Over 6.5 PTS",
-   "result": "W",
-   "actual": "12 PTS",
-   "units": 1.09
-  },
-  {
-   "key": "Neemias Queta|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Neemias Queta",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 8.5,
-   "price": -124,
-   "price_book": "draftkings",
-   "model": 9.7,
-   "edge": 1.2,
-   "confidence": 54.3,
-   "win_chance": 51.4,
-   "win_raw": 56.3,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "Neemias Queta Over 8.5 PTS",
-   "result": "L",
-   "actual": "4 PTS",
-   "units": -1.0
-  },
-  {
-   "key": "VJ Edgecombe|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "VJ Edgecombe",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 11.5,
-   "price": -115,
-   "price_book": "draftkings",
-   "model": 13.4,
-   "edge": 1.9,
-   "confidence": 58.6,
-   "win_chance": 51.8,
-   "win_raw": 60.0,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "VJ Edgecombe Over 11.5 PTS",
-   "result": "L",
-   "actual": "8 PTS",
-   "units": -1.0
-  },
-  {
-   "key": "Paul George|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Paul George",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 17.5,
-   "price": -118,
-   "price_book": "draftkings",
-   "model": 19.3,
-   "edge": 1.8,
-   "confidence": 49.7,
-   "win_chance": 51.5,
-   "win_raw": 57.2,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     9
-    ],
-    "l15": [
-     5,
-     9
-    ]
-   },
-   "side": "Paul George Over 17.5 PTS",
-   "result": "W",
-   "actual": "36 PTS",
-   "units": 0.85
-  },
-  {
-   "key": "Tyrese Maxey|PTS",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Tyrese Maxey",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "PTS",
-   "dir": "Over",
-   "line": 22.5,
-   "price": -125,
-   "price_book": "draftkings",
-   "model": 25.0,
-   "edge": 2.5,
-   "confidence": 61.5,
-   "win_chance": 53.6,
-   "win_raw": 72.0,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     8,
-     10
-    ],
-    "l15": [
-     9,
-     11
-    ]
-   },
-   "side": "Tyrese Maxey Over 22.5 PTS",
-   "result": "W",
-   "actual": "24 PTS",
-   "units": 0.8
-  },
-  {
-   "key": "Joel Embiid|AST",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Joel Embiid",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "AST",
-   "dir": "Over",
-   "line": 3.5,
-   "price": -105,
-   "price_book": "draftkings",
-   "model": 4.4,
-   "edge": 0.9,
-   "confidence": 68.8,
-   "win_chance": 51.4,
-   "win_raw": 56.2,
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     4,
-     9
-    ],
-    "l15": [
-     4,
-     9
-    ]
-   },
-   "side": "Joel Embiid Over 3.5 AST",
-   "result": "L",
-   "actual": "1 AST",
-   "units": -1.0
-  },
-  {
-   "key": "Derrick White|AST",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Derrick White",
-   "team": "BOS",
-   "opp": "PHI",
-   "stat": "AST",
-   "dir": "Over",
-   "line": 4.5,
-   "price": -138,
-   "price_book": "draftkings",
-   "model": 5.4,
-   "edge": 0.9,
-   "confidence": 69.0,
-   "win_chance": 52.0,
-   "win_raw": 61.6,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Derrick White Over 4.5 AST",
-   "result": "L",
-   "actual": "3 AST",
-   "units": -1.0
-  },
-  {
-   "key": "Total",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Total",
-   "market": "Total",
-   "team": null,
-   "opp": null,
-   "stat": "Total",
-   "dir": "Over",
-   "line": 216.5,
-   "price": -115,
-   "model": 222.4,
-   "edge": 5.9,
-   "side": "Over 216.5",
-   "result": "W",
-   "actual": "Total 224",
-   "units": 0.87
-  },
-  {
-   "key": "Spread",
-   "date": "2026-11-10",
-   "game": "BOS @ PHI",
-   "type": "Spread",
-   "market": "Spread",
-   "team": "PHI",
-   "opp": "BOS",
-   "stat": "Spread",
-   "dir": "Cover",
-   "line": 1.5,
-   "price": -104,
-   "model": 0.2,
-   "edge": 1.7,
-   "side": "PHI +1.5",
-   "result": "L",
-   "actual": "123-101",
-   "units": -1.0
-  },
-  {
-   "key": "Jaime Jaquez Jr.|RA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Jaime Jaquez Jr.",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "RA",
-   "dir": "Under",
-   "line": 8.5,
-   "price": -120,
-   "price_book": "draftkings",
-   "model": 7.3,
-   "edge": -1.2,
-   "confidence": 54.3,
-   "win_chance": 51.7,
-   "win_raw": 57.1,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "Jaime Jaquez Jr. Under 8.5 RA",
-   "result": "W",
-   "actual": "8 RA",
-   "units": 0.83
-  },
-  {
-   "key": "Ryan Rollins|RA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Ryan Rollins",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "RA",
-   "dir": "Under",
-   "line": 9.5,
-   "price": -123,
-   "price_book": "draftkings",
-   "model": 7.8,
-   "edge": -1.7,
-   "confidence": 62.5,
-   "win_chance": 51.9,
-   "win_raw": 64.7,
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Ryan Rollins Under 9.5 RA",
-   "result": "W",
-   "actual": "7 RA",
-   "units": 0.81
-  },
-  {
-   "key": "Brayden Burries|REB",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Brayden Burries",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "REB",
-   "dir": "Over",
-   "line": 5.5,
-   "price": -144,
-   "price_book": "draftkings",
-   "model": 7.0,
-   "edge": 1.5,
-   "confidence": 69.8,
-   "win_chance": 51.8,
-   "win_raw": 57.9,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     4,
-     10
-    ]
-   },
-   "side": "Brayden Burries Over 5.5 REB",
-   "result": "L",
-   "actual": "3 REB",
-   "units": -1.0
-  },
-  {
-   "key": "Andre Drummond|REB",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Andre Drummond",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "REB",
-   "dir": "Over",
-   "line": 6.5,
-   "price": -114,
-   "price_book": "draftkings",
-   "model": 8.3,
-   "edge": 1.8,
-   "confidence": 83.5,
-   "win_chance": 52.8,
-   "win_raw": 70.0,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     6,
-     9
-    ],
-    "l15": [
-     6,
-     9
-    ]
-   },
-   "side": "Andre Drummond Over 6.5 REB",
-   "result": "W",
-   "actual": "14 REB",
-   "units": 0.88
-  },
-  {
-   "key": "Myles Turner|PRA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Myles Turner",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PRA",
-   "dir": "Under",
-   "line": 17.5,
-   "price": -116,
-   "price_book": "draftkings",
-   "model": 14.0,
-   "edge": -3.5,
-   "confidence": 62.1,
-   "win_chance": 51.9,
-   "win_raw": 61.9,
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "Myles Turner Under 17.5 PRA",
-   "result": "W",
-   "actual": "8 PRA",
-   "units": 0.86
-  },
-  {
-   "key": "Mikal Bridges|PRA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Mikal Bridges",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PRA",
-   "dir": "Under",
-   "line": 17.5,
-   "price": -114,
-   "price_book": "draftkings",
-   "model": 14.3,
-   "edge": -3.2,
-   "confidence": 68.7,
-   "win_chance": 52.4,
-   "win_raw": 68.3,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     9
-    ],
-    "l15": [
-     6,
-     9
-    ]
-   },
-   "side": "Mikal Bridges Under 17.5 PRA",
-   "result": "W",
-   "actual": "10 PRA",
-   "units": 0.88
-  },
-  {
-   "key": "Jaime Jaquez Jr.|PRA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Jaime Jaquez Jr.",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PRA",
-   "dir": "Under",
-   "line": 23.5,
-   "price": -117,
-   "price_book": "draftkings",
-   "model": 20.5,
-   "edge": -3.0,
-   "confidence": 54.6,
-   "win_chance": 51.8,
-   "win_raw": 58.2,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "Jaime Jaquez Jr. Under 23.5 PRA",
-   "result": "L",
-   "actual": "24 PRA",
-   "units": -1.0
-  },
-  {
-   "key": "Ryan Rollins|PRA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Ryan Rollins",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PRA",
-   "dir": "Under",
-   "line": 23.5,
-   "price": -116,
-   "price_book": "draftkings",
-   "model": 17.4,
-   "edge": -6.1,
-   "confidence": 84.9,
-   "win_chance": 54.8,
-   "win_raw": 80.8,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     7,
-     10
-    ]
-   },
-   "side": "Ryan Rollins Under 23.5 PRA",
-   "result": "W",
-   "actual": "21 PRA",
-   "units": 0.86
-  },
-  {
-   "key": "Karl-Anthony Towns|PRA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PRA",
-   "dir": "Over",
-   "line": 37.5,
-   "price": -109,
-   "price_book": "draftkings",
-   "model": 41.5,
-   "edge": 4.0,
-   "confidence": 35.7,
-   "win_chance": 51.6,
-   "win_raw": 52.3,
-   "hits": {
-    "l5": [
-     1,
-     5
-    ],
-    "l10": [
-     3,
-     9
-    ],
-    "l15": [
-     3,
-     9
-    ]
-   },
-   "side": "Karl-Anthony Towns Over 37.5 PRA",
-   "result": "W",
-   "actual": "40 PRA",
-   "units": 0.92
-  },
-  {
-   "key": "Andre Drummond|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Andre Drummond",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PR",
-   "dir": "Over",
-   "line": 11.5,
-   "price": -115,
-   "price_book": "draftkings",
-   "model": 13.4,
-   "edge": 1.9,
-   "confidence": 60.9,
-   "win_chance": 51.8,
-   "win_raw": 58.9,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     9
-    ],
-    "l15": [
-     5,
-     9
-    ]
-   },
-   "side": "Andre Drummond Over 11.5 PR",
-   "result": "W",
-   "actual": "16 PR",
-   "units": 0.87
-  },
-  {
-   "key": "Mikal Bridges|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Mikal Bridges",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PR",
-   "dir": "Under",
-   "line": 14.5,
-   "price": -114,
-   "price_book": "draftkings",
-   "model": 11.4,
-   "edge": -3.1,
-   "confidence": 74.2,
-   "win_chance": 52.6,
-   "win_raw": 69.4,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     9
-    ],
-    "l15": [
-     6,
-     9
-    ]
-   },
-   "side": "Mikal Bridges Under 14.5 PR",
-   "result": "W",
-   "actual": "9 PR",
-   "units": 0.88
-  },
-  {
-   "key": "Myles Turner|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Myles Turner",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PR",
-   "dir": "Under",
-   "line": 15.5,
-   "price": -108,
-   "price_book": "draftkings",
-   "model": 11.1,
-   "edge": -4.4,
-   "confidence": 75.2,
-   "win_chance": 52.9,
-   "win_raw": 70.7,
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Myles Turner Under 15.5 PR",
-   "result": "W",
-   "actual": "6 PR",
-   "units": 0.93
-  },
-  {
-   "key": "Ryan Rollins|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Ryan Rollins",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PR",
-   "dir": "Under",
-   "line": 18.5,
-   "price": -125,
-   "price_book": "draftkings",
-   "model": 13.7,
-   "edge": -4.8,
-   "confidence": 84.9,
-   "win_chance": 54.4,
-   "win_raw": 78.9,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     7,
-     10
-    ]
-   },
-   "side": "Ryan Rollins Under 18.5 PR",
-   "result": "L",
-   "actual": "19 PR",
-   "units": -1.0
-  },
-  {
-   "key": "Jaime Jaquez Jr.|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Jaime Jaquez Jr.",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PR",
-   "dir": "Under",
-   "line": 20.5,
-   "price": -124,
-   "price_book": "draftkings",
-   "model": 17.9,
-   "edge": -2.6,
-   "confidence": 54.5,
-   "win_chance": 51.8,
-   "win_raw": 57.6,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     5,
-     10
-    ]
-   },
-   "side": "Jaime Jaquez Jr. Under 20.5 PR",
-   "result": "L",
-   "actual": "21 PR",
-   "units": -1.0
-  },
-  {
-   "key": "Karl-Anthony Towns|PR",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Karl-Anthony Towns",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PR",
-   "dir": "Over",
-   "line": 33.5,
-   "price": -117,
-   "price_book": "draftkings",
-   "model": 38.2,
-   "edge": 4.7,
-   "confidence": 49.1,
-   "win_chance": 51.8,
-   "win_raw": 59.1,
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     4,
-     9
-    ],
-    "l15": [
-     4,
-     9
-    ]
-   },
-   "side": "Karl-Anthony Towns Over 33.5 PR",
-   "result": "W",
-   "actual": "37 PR",
-   "units": 0.85
-  },
-  {
-   "key": "Myles Turner|PA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Myles Turner",
-   "team": "MIL",
-   "opp": "NYK",
-   "stat": "PA",
-   "dir": "Under",
-   "line": 12.5,
-   "price": -127,
-   "price_book": "draftkings",
-   "model": 8.7,
-   "edge": -3.8,
-   "confidence": 78.0,
-   "win_chance": 52.5,
-   "win_raw": 68.4,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     6,
-     10
-    ]
-   },
-   "side": "Myles Turner Under 12.5 PA",
-   "result": "W",
-   "actual": "5 PA",
-   "units": 0.79
-  },
-  {
-   "key": "Mikal Bridges|PA",
-   "date": "2026-11-10",
-   "game": "MIL @ NYK",
-   "type": "Prop",
-   "market": "Player Prop",
-   "player": "Mikal Bridges",
-   "team": "NYK",
-   "opp": "MIL",
-   "stat": "PA",
-   "dir": "Under",
-   "line": 13.5,
-   "price": 100,
-   "price_book": "draftkings",
-   "model": 10.4,
-   "edge": -3.1,
-   "confidence": 84.4,
-   "win_chance": 53.8,
-   "win_raw": 75.6,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     9
-    ],
-    "l15": [
-     7,
-     9
-    ]
-   },
-   "side": "Mikal Bridges Under 13.5 PA",
-   "result": "W",
-   "actual": "5 PA",
-   "units": 1.0
   }
  ],
  "record": {
-  "wins": 1080,
-  "losses": 1140,
-  "units": -216.79
+  "wins": 1097,
+  "losses": 1156,
+  "units": -217.96
  },
  "accuracy": [
+  {
+   "date": "2026-11-12",
+   "game": "TOR @ PHI",
+   "model_spread": -1.9,
+   "dk_spread": -7.5,
+   "actual_margin": 11,
+   "model_total": 224.4,
+   "dk_total": 223.5,
+   "actual_total": 235
+  },
   {
    "date": "2026-11-11",
    "game": "OKC @ POR",
@@ -63223,18 +63525,18 @@
     {
      "team": "PHI",
      "name": "Philadelphia 76ers",
-     "w": 9,
+     "w": 10,
      "l": 3,
-     "pct": ".750",
-     "gb": "1",
+     "pct": ".769",
+     "gb": "0.5",
      "seed": 2,
-     "streak": "L1",
+     "streak": "W1",
      "l10": "7-3",
-     "home": "4-2",
+     "home": "5-2",
      "road": "5-1",
-     "ppg": "110.2",
-     "opp": "109.2",
-     "diff": "+1.0"
+     "ppg": "111.2",
+     "opp": "109.4",
+     "diff": "+1.8"
     },
     {
      "team": "DET",
@@ -63301,29 +63603,13 @@
      "diff": "+2.1"
     },
     {
-     "team": "TOR",
-     "name": "Toronto Raptors",
-     "w": 5,
-     "l": 6,
-     "pct": ".455",
-     "gb": "4.5",
-     "seed": 7,
-     "streak": "L2",
-     "l10": "4-6",
-     "home": "2-3",
-     "road": "3-3",
-     "ppg": "114.5",
-     "opp": "111.9",
-     "diff": "+2.6"
-    },
-    {
      "team": "MIA",
      "name": "Miami Heat",
      "w": 5,
      "l": 6,
      "pct": ".455",
      "gb": "4.5",
-     "seed": 8,
+     "seed": 7,
      "streak": "W2",
      "l10": "5-5",
      "home": "1-3",
@@ -63331,6 +63617,22 @@
      "ppg": "115.7",
      "opp": "120.0",
      "diff": "-4.3"
+    },
+    {
+     "team": "TOR",
+     "name": "Toronto Raptors",
+     "w": 5,
+     "l": 7,
+     "pct": ".417",
+     "gb": "5",
+     "seed": 8,
+     "streak": "L3",
+     "l10": "3-7",
+     "home": "2-3",
+     "road": "3-4",
+     "ppg": "114.3",
+     "opp": "112.8",
+     "diff": "+1.5"
     },
     {
      "team": "CHA",
@@ -63790,7 +64092,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-12 08:38 PM ET"
+   "locked_at": "2026-11-12 08:38 PM ET",
+   "result": "W",
+   "actual": "1 REB",
+   "units": 0.93,
+   "graded_at": "2026-11-12 10:13 PM ET"
   },
   {
    "date": "2026-11-11",
@@ -65033,9 +65339,9 @@
  ],
  "board": {
   "date": "2026-11-12",
-  "qualified": 14,
-  "positive": 4,
-  "top_win": 57.3,
+  "qualified": 0,
+  "positive": 0,
+  "top_win": 57.5,
   "note": null
  },
  "h2h": {
@@ -70915,14 +71221,14 @@
   "potd": {
    "current": {
     "type": "W",
-    "n": 2
+    "n": 3
    },
    "best_win": {
     "n": 3,
     "start": "2026-11-04",
     "end": "2026-11-06"
    },
-   "record": "6-2"
+   "record": "7-2"
   },
   "ladder": {
    "attempt": 4,
@@ -70971,7 +71277,7 @@
     "name": "Double Digits",
     "desc": "10 Pick of the Day wins",
     "earned": null,
-    "progress": "6/10"
+    "progress": "7/10"
    },
    {
     "id": "winning_month",
@@ -70979,7 +71285,7 @@
     "name": "Winning Month",
     "desc": "A month with 10+ graded picks at 55%+",
     "earned": null,
-    "progress": "best so far 6-2 (2026-11)"
+    "progress": "best so far 7-2 (2026-11)"
    },
    {
     "id": "climber",
@@ -71036,39 +71342,39 @@
   "buckets": {
    "ALL": {
     "50": {
-     "n": 1228,
-     "w": 597,
-     "p": 642.441
+     "n": 1243,
+     "w": 605,
+     "p": 650.251
     },
     "65": {
-     "n": 800,
-     "w": 444,
-     "p": 539.781
+     "n": 812,
+     "w": 451,
+     "p": 547.901
     },
     "55": {
-     "n": 1266,
-     "w": 654,
-     "p": 727.519
+     "n": 1293,
+     "w": 666,
+     "p": 742.994
     },
     "60": {
-     "n": 1046,
-     "w": 565,
-     "p": 653.221
+     "n": 1060,
+     "w": 576,
+     "p": 661.951
     },
     "70": {
-     "n": 524,
-     "w": 263,
-     "p": 379.305
+     "n": 538,
+     "w": 271,
+     "p": 389.385
     },
     "80": {
-     "n": 176,
-     "w": 86,
-     "p": 145.041
+     "n": 178,
+     "w": 87,
+     "p": 146.719
     },
     "75": {
-     "n": 330,
-     "w": 165,
-     "p": 254.465
+     "n": 334,
+     "w": 168,
+     "p": 257.513
     },
     "85": {
      "n": 47,
@@ -71088,9 +71394,9 @@
      "p": 7.383
     },
     "65": {
-     "n": 7,
+     "n": 8,
      "w": 4,
-     "p": 4.762
+     "p": 5.442
     },
     "60": {
      "n": 11,
@@ -71125,9 +71431,9 @@
    },
    "Total": {
     "50": {
-     "n": 21,
-     "w": 8,
-     "p": 10.94
+     "n": 22,
+     "w": 9,
+     "p": 11.461
     },
     "60": {
      "n": 8,
@@ -71162,19 +71468,19 @@
      "p": 60.634
     },
     "50": {
-     "n": 108,
-     "w": 55,
-     "p": 55.806
+     "n": 109,
+     "w": 56,
+     "p": 56.313
     },
     "55": {
-     "n": 150,
-     "w": 81,
-     "p": 86.416
+     "n": 152,
+     "w": 82,
+     "p": 87.536
     },
     "60": {
-     "n": 97,
-     "w": 58,
-     "p": 60.586
+     "n": 103,
+     "w": 63,
+     "p": 64.332
     },
     "75": {
      "n": 29,
@@ -71182,9 +71488,9 @@
      "p": 22.25
     },
     "70": {
-     "n": 49,
+     "n": 50,
      "w": 28,
-     "p": 35.473
+     "p": 36.195
     },
     "80": {
      "n": 16,
@@ -71236,34 +71542,34 @@
    },
    "PTS": {
     "50": {
-     "n": 187,
-     "w": 93,
-     "p": 98.541
+     "n": 191,
+     "w": 95,
+     "p": 100.602
     },
     "70": {
-     "n": 70,
-     "w": 33,
-     "p": 50.485
+     "n": 71,
+     "w": 34,
+     "p": 51.189
     },
     "60": {
-     "n": 148,
-     "w": 76,
-     "p": 92.251
+     "n": 150,
+     "w": 78,
+     "p": 93.527
     },
     "80": {
-     "n": 26,
-     "w": 12,
-     "p": 21.343
+     "n": 27,
+     "w": 13,
+     "p": 22.177
     },
     "65": {
-     "n": 129,
+     "n": 131,
      "w": 66,
-     "p": 86.956
+     "p": 88.333
     },
     "55": {
-     "n": 168,
-     "w": 90,
-     "p": 96.527
+     "n": 171,
+     "w": 92,
+     "p": 98.227
     },
     "75": {
      "n": 46,
@@ -71283,19 +71589,19 @@
    },
    "PA": {
     "55": {
-     "n": 145,
-     "w": 70,
-     "p": 83.075
+     "n": 148,
+     "w": 72,
+     "p": 84.79
     },
     "65": {
-     "n": 79,
-     "w": 42,
-     "p": 53.203
+     "n": 82,
+     "w": 44,
+     "p": 55.224
     },
     "50": {
-     "n": 158,
+     "n": 160,
      "w": 69,
-     "p": 82.922
+     "p": 83.957
     },
     "75": {
      "n": 34,
@@ -71308,9 +71614,9 @@
      "p": 72.307
     },
     "70": {
-     "n": 51,
-     "w": 25,
-     "p": 36.902
+     "n": 52,
+     "w": 26,
+     "p": 37.633
     },
     "80": {
      "n": 15,
@@ -71330,14 +71636,14 @@
    },
    "PR": {
     "50": {
-     "n": 177,
-     "w": 90,
-     "p": 92.974
+     "n": 180,
+     "w": 93,
+     "p": 94.59
     },
     "65": {
-     "n": 99,
-     "w": 54,
-     "p": 66.893
+     "n": 101,
+     "w": 55,
+     "p": 68.226
     },
     "60": {
      "n": 152,
@@ -71350,14 +71656,14 @@
      "p": 33.154
     },
     "55": {
-     "n": 177,
-     "w": 92,
-     "p": 101.654
+     "n": 181,
+     "w": 93,
+     "p": 103.949
     },
     "70": {
-     "n": 82,
-     "w": 37,
-     "p": 59.327
+     "n": 85,
+     "w": 39,
+     "p": 61.494
     },
     "80": {
      "n": 20,
@@ -71377,24 +71683,24 @@
    },
    "PRA": {
     "50": {
-     "n": 159,
+     "n": 160,
      "w": 78,
-     "p": 83.418
+     "p": 83.945
     },
     "70": {
-     "n": 56,
+     "n": 57,
      "w": 21,
-     "p": 40.548
+     "p": 41.296
     },
     "55": {
-     "n": 142,
-     "w": 69,
-     "p": 81.341
+     "n": 147,
+     "w": 72,
+     "p": 84.189
     },
     "60": {
-     "n": 115,
-     "w": 69,
-     "p": 71.796
+     "n": 116,
+     "w": 70,
+     "p": 72.416
     },
     "75": {
      "n": 24,
@@ -71402,9 +71708,9 @@
      "p": 18.551
     },
     "65": {
-     "n": 100,
-     "w": 52,
-     "p": 67.411
+     "n": 103,
+     "w": 55,
+     "p": 69.45
     },
     "80": {
      "n": 19,
@@ -71424,14 +71730,14 @@
    },
    "REB": {
     "50": {
-     "n": 162,
-     "w": 67,
-     "p": 84.39
+     "n": 164,
+     "w": 68,
+     "p": 85.433
     },
     "70": {
-     "n": 81,
-     "w": 48,
-     "p": 58.562
+     "n": 85,
+     "w": 50,
+     "p": 61.425
     },
     "65": {
      "n": 105,
@@ -71439,14 +71745,14 @@
      "p": 70.702
     },
     "55": {
-     "n": 172,
+     "n": 174,
      "w": 92,
-     "p": 98.629
+     "p": 99.749
     },
     "60": {
-     "n": 133,
-     "w": 71,
-     "p": 82.753
+     "n": 135,
+     "w": 73,
+     "p": 83.966
     },
     "85": {
      "n": 7,
@@ -71454,9 +71760,9 @@
      "p": 6.048
     },
     "75": {
-     "n": 52,
-     "w": 28,
-     "p": 40.222
+     "n": 53,
+     "w": 29,
+     "p": 41.005
     },
     "80": {
      "n": 23,
@@ -71476,14 +71782,14 @@
      "p": 53.249
     },
     "70": {
-     "n": 53,
-     "w": 26,
-     "p": 38.345
+     "n": 55,
+     "w": 27,
+     "p": 39.777
     },
     "55": {
-     "n": 123,
-     "w": 58,
-     "p": 70.484
+     "n": 129,
+     "w": 61,
+     "p": 73.968
     },
     "60": {
      "n": 144,
@@ -71496,9 +71802,9 @@
      "p": 9.848
     },
     "75": {
-     "n": 41,
-     "w": 23,
-     "p": 31.567
+     "n": 43,
+     "w": 24,
+     "p": 33.081
     },
     "85": {
      "n": 5,
@@ -71550,39 +71856,39 @@
    },
    "3PM": {
     "50": {
-     "n": 94,
+     "n": 95,
      "w": 52,
-     "p": 48.129
+     "p": 48.629
     },
     "55": {
-     "n": 145,
+     "n": 147,
      "w": 80,
-     "p": 84.145
+     "p": 85.338
     },
     "75": {
-     "n": 48,
-     "w": 25,
-     "p": 36.892
+     "n": 49,
+     "w": 26,
+     "p": 37.643
     },
     "70": {
-     "n": 57,
-     "w": 34,
-     "p": 41.476
+     "n": 58,
+     "w": 35,
+     "p": 42.189
     },
     "65": {
-     "n": 93,
-     "w": 65,
-     "p": 63.139
+     "n": 94,
+     "w": 66,
+     "p": 63.809
     },
     "60": {
-     "n": 104,
-     "w": 62,
-     "p": 65.405
+     "n": 107,
+     "w": 63,
+     "p": 67.28
     },
     "80": {
-     "n": 40,
+     "n": 41,
      "w": 28,
-     "p": 32.953
+     "p": 33.797
     },
     "85": {
      "n": 5,
@@ -71598,22 +71904,22 @@
   },
   "markets": {
    "Spread": {
-    "n": 63,
+    "n": 64,
     "w": 27,
-    "p": 40.879,
-    "units": -11.49
+    "p": 41.559,
+    "units": -12.49
    },
    "Total": {
-    "n": 62,
-    "w": 28,
-    "p": 36.117,
-    "units": -8.5
+    "n": 63,
+    "w": 29,
+    "p": 36.638,
+    "units": -7.59
    },
    "AST": {
-    "n": 546,
-    "w": 300,
-    "p": 340.488,
-    "units": -3.0
+    "n": 556,
+    "w": 307,
+    "p": 346.583,
+    "units": -0.53
    },
    "BLK": {
     "n": 23,
@@ -71622,40 +71928,40 @@
     "units": -3.85
    },
    "PTS": {
-    "n": 787,
-    "w": 402,
-    "p": 493.08,
-    "units": -31.53
+    "n": 800,
+    "w": 410,
+    "p": 501.032,
+    "units": -29.31
    },
    "PA": {
-    "n": 605,
-    "w": 296,
-    "p": 373.327,
-    "units": -51.86
+    "n": 614,
+    "w": 301,
+    "p": 378.829,
+    "units": -51.5
    },
    "PR": {
-    "n": 760,
-    "w": 380,
-    "p": 474.147,
-    "units": -51.3
+    "n": 772,
+    "w": 387,
+    "p": 481.558,
+    "units": -50.29
    },
    "PRA": {
-    "n": 619,
-    "w": 309,
-    "p": 382.335,
-    "units": -41.85
+    "n": 630,
+    "w": 316,
+    "p": 389.117,
+    "units": -39.9
    },
    "REB": {
-    "n": 735,
-    "w": 376,
-    "p": 460.34,
-    "units": -47.44
+    "n": 746,
+    "w": 382,
+    "p": 467.362,
+    "units": -47.41
    },
    "RA": {
-    "n": 591,
-    "w": 303,
-    "p": 369.808,
-    "units": -35.01
+    "n": 601,
+    "w": 308,
+    "p": 376.238,
+    "units": -35.68
    },
    "STL": {
     "n": 55,
@@ -71664,27 +71970,27 @@
     "units": -4.49
    },
    "3PM": {
-    "n": 591,
-    "w": 352,
-    "p": 381.35,
-    "units": 27.93
+    "n": 601,
+    "w": 356,
+    "p": 387.896,
+    "units": 24.94
    }
   },
   "blend": {
    "65": {
-    "n": 580,
-    "w": 300,
-    "p": 389.693
+    "n": 590,
+    "w": 307,
+    "p": 396.399
    },
    "50": {
-    "n": 1220,
-    "w": 597,
-    "p": 627.465
+    "n": 1252,
+    "w": 612,
+    "p": 643.862
    },
    "70": {
-    "n": 374,
-    "w": 176,
-    "p": 270.275
+    "n": 380,
+    "w": 180,
+    "p": 274.577
    },
    "80": {
     "n": 104,
@@ -71692,19 +71998,19 @@
     "p": 85.351
    },
    "55": {
-    "n": 878,
-    "w": 486,
-    "p": 504.985
+    "n": 898,
+    "w": 499,
+    "p": 516.505
    },
    "60": {
-    "n": 758,
-    "w": 432,
-    "p": 472.328
+    "n": 774,
+    "w": 441,
+    "p": 482.284
    },
    "75": {
-    "n": 197,
-    "w": 92,
-    "p": 151.926
+    "n": 199,
+    "w": 93,
+    "p": 153.509
    },
    "90": {
     "n": 19,
@@ -71821,10 +72127,10 @@
   },
   "alt_backfilled": true,
   "paused": {
-   "Spread": "model misses the margin by 13.4 pts vs DraftKings 11.0 (last 40 games)",
-   "Moneyline": "model misses the margin by 13.4 pts vs DraftKings 11.0 (last 40 games)",
-   "Total": "model misses the total by 13.0 pts vs DraftKings 12.6 (last 40 games)",
-   "PA": -8.6
+   "Spread": "model misses the margin by 13.6 pts vs DraftKings 11.0 (last 40 games)",
+   "Moneyline": "model misses the margin by 13.6 pts vs DraftKings 11.0 (last 40 games)",
+   "Total": "model misses the total by 13.0 pts vs DraftKings 12.7 (last 40 games)",
+   "PA": -8.4
   },
   "pause_rule": {
    "min_bets": 150,
@@ -72265,19 +72571,19 @@
    "All": {
     "Model bet": {
      "bets": 2398,
-     "won": 1080,
-     "lost": 1140,
+     "won": 1097,
+     "lost": 1156,
      "push": 31,
-     "pending": 147,
-     "units": -216.79
+     "pending": 114,
+     "units": -217.96
     },
     "Pick of the Day": {
      "bets": 9,
-     "won": 6,
+     "won": 7,
      "lost": 2,
      "push": 0,
-     "pending": 1,
-     "units": 3.43
+     "pending": 0,
+     "units": 4.36
     },
     "Ladder Challenge": {
      "bets": 9,
@@ -72307,19 +72613,19 @@
    "2026-11": {
     "Model bet": {
      "bets": 2398,
-     "won": 1080,
-     "lost": 1140,
+     "won": 1097,
+     "lost": 1156,
      "push": 31,
-     "pending": 147,
-     "units": -216.79
+     "pending": 114,
+     "units": -217.96
     },
     "Pick of the Day": {
      "bets": 9,
-     "won": 6,
+     "won": 7,
      "lost": 2,
      "push": 0,
-     "pending": 1,
-     "units": 3.43
+     "pending": 0,
+     "units": 4.36
     },
     "Ladder Challenge": {
      "bets": 9,
@@ -72525,13 +72831,13 @@
     "best": null,
     "confidence": 94.8,
     "win_chance": 55.6,
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "1 REB",
+    "units": 0.93,
     "why": "Model projects 1.6 REB vs a line of 2.5 (-0.9, 36% edge) | Honest win chance 55.6% vs 52% implied by -108: +7.1% expected value (raw model said 79.7%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 1.2 over the last 5 and 1.5 over the last 11 | Minutes steady: 23 per game over the last 5 (19 over the last 11) | Matchup vs PHI: +3.2% to his REB projection from their defense and pace (works against the under) | PHI ranks among the bottom-10 defenses for REB; he went under 2.5 in 3 of 4 games against that tier | Teammate injury boost: Scottie Barnes, Trayce Jackson-Davis out, +20% to his REB projection (extra minutes and usage) | Game script / rest: back-to-back -3% (net -3%) | Best price: +100 at BetMGM (DraftKings -108; the record is graded at DraftKings) | Not on the injury report at pick time",
     "picked_at": "2026-11-12 07:06 PM ET",
-    "graded_at": null,
+    "graded_at": "2026-11-12 10:13 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -73256,10 +73562,10 @@
     "confidence": null,
     "win_chance": null,
     "price_book": null,
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "112-123",
+    "units": -1.0,
     "why": "Model -1.9 vs DraftKings 7.5 (edge -5.6)"
    },
    {
@@ -73386,10 +73692,10 @@
     "confidence": 63.0,
     "win_chance": 54.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "27 PTS",
+    "units": 0.88,
     "why": "Model 28.3 vs DraftKings 24.5 (edge 3.8)"
    },
    {
@@ -73412,10 +73718,10 @@
     "confidence": 63.2,
     "win_chance": 51.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "6 PTS",
+    "units": -1.0,
     "why": "Model 12.7 vs DraftKings 10.5 (edge 2.2)"
    },
    {
@@ -73438,10 +73744,10 @@
     "confidence": 57.0,
     "win_chance": 52.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "6 PA",
+    "units": -1.0,
     "why": "Model 14.6 vs DraftKings 12.5 (edge 2.1)"
    },
    {
@@ -73464,10 +73770,10 @@
     "confidence": 72.0,
     "win_chance": 53.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "11 PR",
+    "units": -1.0,
     "why": "Model 17.7 vs DraftKings 14.5 (edge 3.2)"
    },
    {
@@ -73490,10 +73796,10 @@
     "confidence": 38.7,
     "win_chance": 50.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "36 PRA",
+    "units": 0.81,
     "why": "Model 27.6 vs DraftKings 25.5 (edge 2.1)"
    },
    {
@@ -73516,10 +73822,10 @@
     "confidence": 69.5,
     "win_chance": 54.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "11 PRA",
+    "units": -1.0,
     "why": "Model 19.8 vs DraftKings 16.5 (edge 3.3)"
    },
    {
@@ -73542,10 +73848,10 @@
     "confidence": 44.9,
     "win_chance": 50.0,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "8 REB",
+    "units": 1.1,
     "why": "Model 7.4 vs DraftKings 6.5 (edge 0.9)"
    },
    {
@@ -73568,10 +73874,10 @@
     "confidence": 77.2,
     "win_chance": 53.0,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "14 REB",
+    "units": 0.69,
     "why": "Model 7.1 vs DraftKings 5.5 (edge 1.6)"
    },
    {
@@ -73594,10 +73900,10 @@
     "confidence": 40.9,
     "win_chance": 49.6,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "19 RA",
+    "units": 1.07,
     "why": "Model 11.4 vs DraftKings 10.5 (edge 0.9)"
    },
    {
@@ -73620,10 +73926,10 @@
     "confidence": 55.8,
     "win_chance": 51.7,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "16 RA",
+    "units": 0.91,
     "why": "Model 11.6 vs DraftKings 9.5 (edge 2.1)"
    },
    {
@@ -73646,10 +73952,10 @@
     "confidence": 62.0,
     "win_chance": 51.9,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "10 RA",
+    "units": 0.72,
     "why": "Model 10.3 vs DraftKings 8.5 (edge 1.8)"
    },
    {
@@ -73672,10 +73978,10 @@
     "confidence": 82.5,
     "win_chance": 54.7,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "5 RA",
+    "units": -1.0,
     "why": "Model 7.0 vs DraftKings 5.5 (edge 1.5)"
    },
    {
@@ -75674,10 +75980,10 @@
     "confidence": 66.5,
     "win_chance": 51.0,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "5 AST",
+    "units": -1.0,
     "why": "Model 8.3 vs DraftKings 6.5 (edge 1.8)"
    },
    {
@@ -75700,10 +76006,10 @@
     "confidence": 50.5,
     "win_chance": 49.8,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "8 AST",
+    "units": 0.75,
     "why": "Model 6.4 vs DraftKings 5.5 (edge 0.9)"
    },
    {
@@ -75726,10 +76032,10 @@
     "confidence": 40.2,
     "win_chance": 50.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "15 PTS",
+    "units": 0.88,
     "why": "Model 15.2 vs DraftKings 13.5 (edge 1.7)"
    },
    {
@@ -75752,10 +76058,10 @@
     "confidence": 46.0,
     "win_chance": 49.3,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "17 PTS",
+    "units": 0.99,
     "why": "Model 10.9 vs DraftKings 9.5 (edge 1.4)"
    },
    {
@@ -75778,10 +76084,10 @@
     "confidence": 45.5,
     "win_chance": 50.9,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "5 PTS",
+    "units": -1.0,
     "why": "Model 8.5 vs DraftKings 7.5 (edge 1.0)"
    },
    {
@@ -75804,10 +76110,10 @@
     "confidence": 78.0,
     "win_chance": 53.3,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "6 PTS",
+    "units": -1.0,
     "why": "Model 3.7 vs DraftKings 5.5 (edge -1.8)"
    },
    {
@@ -75830,10 +76136,10 @@
     "confidence": 56.0,
     "win_chance": 53.7,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "35 PA",
+    "units": 0.89,
     "why": "Model 34.7 vs DraftKings 30.5 (edge 4.2)"
    },
    {
@@ -75856,10 +76162,10 @@
     "confidence": 54.2,
     "win_chance": 51.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "23 PA",
+    "units": 0.78,
     "why": "Model 19.5 vs DraftKings 16.5 (edge 3.0)"
    },
    {
@@ -75882,10 +76188,10 @@
     "confidence": 43.8,
     "win_chance": 50.3,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "10 PA",
+    "units": -1.0,
     "why": "Model 16.3 vs DraftKings 14.5 (edge 1.8)"
    },
    {
@@ -75908,10 +76214,10 @@
     "confidence": 57.2,
     "win_chance": 54.0,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "29 PR",
+    "units": 0.92,
     "why": "Model 32.0 vs DraftKings 28.5 (edge 3.5)"
    },
    {
@@ -75934,10 +76240,10 @@
     "confidence": 50.1,
     "win_chance": 50.7,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "23 PR",
+    "units": 0.79,
     "why": "Model 22.6 vs DraftKings 19.5 (edge 3.1)"
    },
    {
@@ -75960,10 +76266,10 @@
     "confidence": 43.8,
     "win_chance": 50.2,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "6 PR",
+    "units": -1.0,
     "why": "Model 11.8 vs DraftKings 10.5 (edge 1.3)"
    },
    {
@@ -75986,10 +76292,10 @@
     "confidence": 78.8,
     "win_chance": 53.7,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "11 PR",
+    "units": -1.0,
     "why": "Model 7.3 vs DraftKings 9.5 (edge -2.2)"
    },
    {
@@ -76012,10 +76318,10 @@
     "confidence": 51.0,
     "win_chance": 53.3,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "37 PRA",
+    "units": 0.91,
     "why": "Model 38.3 vs DraftKings 34.5 (edge 3.8)"
    },
    {
@@ -76038,10 +76344,10 @@
     "confidence": 47.5,
     "win_chance": 50.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "31 PRA",
+    "units": 0.9,
     "why": "Model 26.9 vs DraftKings 23.5 (edge 3.4)"
    },
    {
@@ -76064,10 +76370,10 @@
     "confidence": 35.0,
     "win_chance": 50.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "11 PRA",
+    "units": -1.0,
     "why": "Model 19.2 vs DraftKings 17.5 (edge 1.7)"
    },
    {
@@ -76090,10 +76396,10 @@
     "confidence": 70.5,
     "win_chance": 51.5,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "W",
+    "status": "Won",
+    "actual": "15 PRA",
+    "units": 0.84,
     "why": "Model 14.9 vs DraftKings 11.5 (edge 3.4)"
    },
    {
@@ -76116,10 +76422,10 @@
     "confidence": 66.4,
     "win_chance": 52.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "4 REB",
+    "units": -1.0,
     "why": "Model 10.4 vs DraftKings 8.5 (edge 1.9)"
    },
    {
@@ -76142,10 +76448,10 @@
     "confidence": 62.1,
     "win_chance": 52.4,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "5 REB",
+    "units": -1.0,
     "why": "Model 3.6 vs DraftKings 4.5 (edge -0.9)"
    },
    {
@@ -76168,10 +76474,10 @@
     "confidence": 80.0,
     "win_chance": 53.1,
     "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
+    "result": "L",
+    "status": "Lost",
+    "actual": "6 RA",
+    "units": -1.0,
     "why": "Model 11.0 vs DraftKings 8.5 (edge 2.5)"
    },
    {
