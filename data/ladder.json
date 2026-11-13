@@ -6,6 +6,96 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Anthony Black Over 20.5 PR",
+   "game": "MIL@ORL",
+   "eid": "401909297",
+   "time": "7:00 PM ET",
+   "home": "ORL",
+   "away": "MIL",
+   "side": "Over",
+   "line": 20.5,
+   "price": -108,
+   "model": 26.3,
+   "edge": 5.8,
+   "edge_pct": 28.3,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     6,
+     8
+    ],
+    "l15": [
+     6,
+     8
+    ]
+   },
+   "chart": {
+    "vals": [
+     21.0,
+     10.0,
+     23.0,
+     31.0,
+     17.0,
+     26.0,
+     33.0,
+     29.0
+    ],
+    "line": 20.5,
+    "side": "Over",
+    "label": "PR",
+    "opps": [
+     "NYK",
+     "TOR",
+     "TOR",
+     "BOS",
+     "PHX",
+     "GSW",
+     "SAC",
+     "UTA"
+    ]
+   },
+   "reasons": [
+    "Model projects 26.3 PR vs a line of 20.5 (+5.8, 28% edge)",
+    "Went over the line in 6 of his last 8 games (4/5 in the last 5)",
+    "Averaging 27.2 over the last 5 and 23.8 over the last 8",
+    "Minutes steady: 35 per game over the last 5 (32 over the last 8)",
+    "Matchup vs MIL: +2.1% to his PR projection from their defense and pace (helps the over)",
+    "MIL ranks among the bottom-10 defenses for PR; he went over 20.5 in 3 of 5 games against that tier",
+    "Teammate injury boost: Jalen Suggs out, +2.1% to his PR projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 53.8,
+   "p_model": 77.5,
+   "ev": 3.6,
+   "score": 86.9,
+   "best": null,
+   "player": "Anthony Black",
+   "team": "ORL",
+   "stat": "PR",
+   "date": "2026-11-13",
+   "attempt": 4,
+   "day": 4,
+   "stake": 77.59,
+   "to_win": 71.84,
+   "picked_at": "2026-11-13 11:42 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 53.8% to win, +3.6% expected value",
+   "open_line": 20.5,
+   "open_price": -108,
+   "close_line": 20.5,
+   "close_price": -108,
+   "close_at": "2026-11-13 11:42 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Terrence Shannon Jr. Over 4.5 RA",
    "game": "DAL@MIN",
    "eid": "401909978",

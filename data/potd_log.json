@@ -2,6 +2,98 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-13",
+   "eid": "401909302",
+   "game": "GSW@SAS",
+   "time": "9:30 PM ET",
+   "home": "SAS",
+   "away": "GSW",
+   "type": "Prop",
+   "player": "Draymond Green",
+   "team": "GSW",
+   "stat": "PTS",
+   "side": "Under",
+   "line": 5.5,
+   "price": -102,
+   "model": 3.9,
+   "edge": -1.6,
+   "edge_pct": 29.1,
+   "label": "Draymond Green Under 5.5 PTS",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     9,
+     10
+    ]
+   },
+   "chart": {
+    "vals": [
+     2.0,
+     5.0,
+     3.0,
+     3.0,
+     2.0,
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     7.0
+    ],
+    "line": 5.5,
+    "side": "Under",
+    "label": "PTS",
+    "opps": [
+     "LAL",
+     "MEM",
+     "DEN",
+     "MIN",
+     "LAL",
+     "PHX",
+     "MIA",
+     "ORL",
+     "NOP",
+     "HOU"
+    ]
+   },
+   "score": 93.1,
+   "reasons": [
+    "Model projects 3.9 PTS vs a line of 5.5 (-1.6, 29% edge)",
+    "Honest win chance 54.2% vs 50% implied by -102: +7.3% expected value (raw model said 83.3%)",
+    "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 3.4 over the last 5 and 3.2 over the last 10",
+    "Minutes steady: 25 per game over the last 5 (27 over the last 10)",
+    "Matchup vs SAS: -2.3% to his PTS projection from their defense and pace (helps the under)",
+    "SAS ranks among the top-10 defenses for PTS; he went under 5.5 in 4 of 5 games against that tier",
+    "Teammate injury boost: Brandon Williams, Stephen Curry out, +20% to his PTS projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 190,
+   "p_model": 78.8,
+   "p_win_raw": 83.3,
+   "p_win": 54.2,
+   "ev": 7.3,
+   "picked_at": "2026-11-13 11:42 AM ET",
+   "open_line": 5.5,
+   "open_price": -102,
+   "close_line": 5.5,
+   "close_price": -102,
+   "close_at": "2026-11-13 11:42 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-12",
    "eid": "401909976",
    "game": "TOR@PHI",

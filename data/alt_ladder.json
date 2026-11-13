@@ -6,6 +6,143 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Wendell Carter Jr 7+ REB + Aaron Wiggins 8+ PTS",
+   "game": "MIL@ORL / ATL@CHI",
+   "eid": "401909297",
+   "time": "7:00 PM ET",
+   "home": "ORL",
+   "away": "MIL",
+   "side": null,
+   "line": null,
+   "price": -198,
+   "reasons": [
+    "Leg 1: Wendell Carter Jr 7+ REB (-379): 80.4% to win. Alt line 7+ REB at -379: our chance 80.4% vs the book's 79.1% (+1.7% expected value)",
+    "Leg 2: Aaron Wiggins 8+ PTS (-524): 88.7% to win. Alt line 8+ PTS at -524: our chance 88.7% vs the book's 84% (+5.6% expected value)"
+   ],
+   "p_win": 71.3,
+   "p_model": 71.3,
+   "ev": 7.3,
+   "score": 80.4,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Wendell Carter Jr 7+ REB",
+     "game": "MIL@ORL",
+     "eid": "401909297",
+     "time": "7:00 PM ET",
+     "home": "ORL",
+     "away": "MIL",
+     "side": "Over",
+     "line": 6.5,
+     "price": -379,
+     "model": 9.7,
+     "chart": {
+      "vals": [
+       9.0,
+       10.0,
+       10.0,
+       7.0,
+       10.0,
+       9.0,
+       13.0,
+       11.0,
+       11.0,
+       7.0
+      ],
+      "line": 6.5,
+      "side": "Over",
+      "label": "REB",
+      "opps": [
+       "MIN",
+       "NYK",
+       "TOR",
+       "TOR",
+       "BOS",
+       "WAS",
+       "PHX",
+       "GSW",
+       "SAC",
+       "UTA"
+      ]
+     },
+     "reasons": [
+      "Alt line 7+ REB at -379: our chance 80.4% vs the book's 79.1% (+1.7% expected value)",
+      "Cleared 7+ in 11 of his last 11 games",
+      "We project 9.7 REB (DraftKings main line 8.5)"
+     ],
+     "p_win": 80.4,
+     "p_model": 80.4,
+     "ev": 1.7,
+     "score": 80.4,
+     "player": "Wendell Carter Jr",
+     "team": "ORL",
+     "stat": "REB"
+    },
+    {
+     "type": "Prop",
+     "label": "Aaron Wiggins 8+ PTS",
+     "game": "ATL@CHI",
+     "eid": "401909299",
+     "time": "8:00 PM ET",
+     "home": "CHI",
+     "away": "ATL",
+     "side": "Over",
+     "line": 7.5,
+     "price": -524,
+     "model": 13.8,
+     "chart": {
+      "vals": [
+       16.0,
+       12.0,
+       10.0,
+       20.0,
+       10.0,
+       7.0,
+       15.0,
+       19.0,
+       20.0,
+       15.0
+      ],
+      "line": 7.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "HOU",
+       "HOU",
+       "MIA",
+       "CLE",
+       "NOP",
+       "IND",
+       "WAS",
+       "WAS",
+       "BKN",
+       "LAL"
+      ]
+     },
+     "reasons": [
+      "Alt line 8+ PTS at -524: our chance 88.7% vs the book's 84% (+5.6% expected value)",
+      "Cleared 8+ in 11 of his last 12 games",
+      "We project 13.8 PTS (DraftKings main line 12.5)"
+     ],
+     "p_win": 88.7,
+     "p_model": 88.7,
+     "ev": 5.6,
+     "score": 88.7,
+     "player": "Aaron Wiggins",
+     "team": "ATL",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-13",
+   "attempt": 1,
+   "day": 6,
+   "stake": 94.01,
+   "to_win": 47.48,
+   "picked_at": "2026-11-13 11:42 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 71% to hit by our numbers (71% trusting only half our edge) at -198. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Duncan Robinson 12+ PTS + Jaden McDaniels 12+ PTS",
    "game": "DET@WAS / DAL@MIN",
    "eid": "401909977",
