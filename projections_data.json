@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T23:39:36Z",
+ "generated_at": "2026-11-13T00:06:01Z",
  "season": "2026-27",
  "games": [
   {
@@ -232,19 +232,19 @@
     "ml_away": 0.59
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+6.5",
+    "total": 246.5,
+    "ml_away": "-263",
+    "ml_home": "+216"
    },
    "status": "Upcoming",
    "rest": {
     "away": 3,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 3.9,
+   "total_edge": -13.2,
+   "note": "Model CHI +2.6, total 233.3; leans CHI vs the market spread."
   },
   {
    "id": "MEM@NOP",
@@ -259,19 +259,19 @@
     "ml_away": 0.55
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+4.5",
+    "total": 234.5,
+    "ml_away": "-141",
+    "ml_home": "+119"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 2.9,
+   "total_edge": -2.6,
+   "note": "Model NOP +1.6, total 231.9; leans NOP vs the market spread."
   },
   {
    "id": "UTA@HOU",
@@ -286,19 +286,19 @@
     "ml_away": 0.24
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-17.5",
+    "total": 217.5,
+    "ml_away": "+900",
+    "ml_home": "-1580"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -9.1,
+   "total_edge": 7.1,
+   "note": "Model HOU -8.4, total 224.6; leans UTA vs the market spread."
   },
   {
    "id": "GSW@SAS",
@@ -313,19 +313,19 @@
     "ml_away": 0.39
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-13.5",
+    "total": 218.5,
+    "ml_away": "+528",
+    "ml_home": "-750"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -10.2,
+   "total_edge": 9.6,
+   "note": "Model SAS -3.3, total 228.1; leans GSW vs the market spread."
   },
   {
    "id": "POR@SAC",
@@ -340,19 +340,19 @@
     "ml_away": 0.61
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+10.5",
+    "total": 229.5,
+    "ml_away": "-569",
+    "ml_home": "+426"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 7.0,
+   "total_edge": -0.6,
+   "note": "Model SAC +3.5, total 228.9; leans SAC vs the market spread."
   },
   {
    "id": "OKC@LAC",
@@ -367,19 +367,19 @@
     "ml_away": 0.52
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+7.5",
+    "total": 221.5,
+    "ml_away": "-276",
+    "ml_home": "+226"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 6.9,
+   "total_edge": 3.6,
+   "note": "Model LAC +0.6, total 225.1; leans LAC vs the market spread."
   }
  ],
  "props": [
@@ -25337,13 +25337,6 @@
    "game": "TOR@PHI"
   },
   {
-   "player": "Joel Embiid",
-   "team": "PHI",
-   "status": "Day-To-Day",
-   "reason": "Embiid (foot) remains questionable for Thursday's game against the Raptors, but ",
-   "game": "TOR@PHI"
-  },
-  {
    "player": "Ariel Hukporti",
    "team": "PHI",
    "status": "Out",
@@ -25519,7 +25512,7 @@
    "game": "DET@WAS"
   }
  ],
- "injuries_updated": "11/12 06:39 PM ET",
+ "injuries_updated": "11/12 07:06 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 0.18,
@@ -43141,6 +43134,327 @@
      "model_total": 225.1,
      "dk_spread": "N/A",
      "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Coby White",
+     "stat": "PTS",
+     "model": 8.9,
+     "dk": 14.5,
+     "edge": -5.6
+    },
+    {
+     "player": "Jamison Battle",
+     "stat": "PTS",
+     "model": 13.0,
+     "dk": 7.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PA",
+     "model": 22.9,
+     "dk": 17.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PRA",
+     "model": 42.8,
+     "dk": 37.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Coby White",
+     "stat": "PR",
+     "model": 11.3,
+     "dk": 16.5,
+     "edge": -5.2
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PTS",
+     "model": 20.5,
+     "dk": 15.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PR",
+     "model": 22.4,
+     "dk": 17.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PRA",
+     "model": 28.4,
+     "dk": 23.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Trey Lyles",
+     "stat": "PRA",
+     "model": 15.4,
+     "dk": 10.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PA",
+     "model": 23.3,
+     "dk": 18.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PA",
+     "model": 35.3,
+     "dk": 30.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PR",
+     "model": 33.3,
+     "dk": 28.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Trey Lyles",
+     "stat": "PR",
+     "model": 14.2,
+     "dk": 9.5,
+     "edge": 4.7
+    },
+    {
+     "player": "Coby White",
+     "stat": "PA",
+     "model": 13.8,
+     "dk": 18.5,
+     "edge": -4.7
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PR",
+     "model": 24.0,
+     "dk": 19.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PTS",
+     "model": 18.8,
+     "dk": 14.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Duncan Robinson",
+     "stat": "PRA",
+     "model": 24.8,
+     "dk": 20.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PA",
+     "model": 34.7,
+     "dk": 30.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Ryan Kalkbrenner",
+     "stat": "PR",
+     "model": 14.7,
+     "dk": 10.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Coby White",
+     "stat": "PRA",
+     "model": 16.3,
+     "dk": 20.5,
+     "edge": -4.2
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PRA",
+     "model": 35.4,
+     "dk": 39.5,
+     "edge": -4.1
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PR",
+     "model": 35.6,
+     "dk": 31.5,
+     "edge": 4.1
+    },
+    {
+     "player": "Trae Young",
+     "stat": "PA",
+     "model": 21.5,
+     "dk": 25.5,
+     "edge": -4.0
+    },
+    {
+     "player": "Naz Reid",
+     "stat": "PRA",
+     "model": 35.5,
+     "dk": 31.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PTS",
+     "model": 28.3,
+     "dk": 24.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Jamison Battle",
+     "stat": "PR",
+     "model": 14.3,
+     "dk": 10.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PRA",
+     "model": 38.3,
+     "dk": 34.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Cooper Flagg",
+     "stat": "PTS",
+     "model": 28.2,
+     "dk": 24.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Daniel Gafford",
+     "stat": "PRA",
+     "model": 18.1,
+     "dk": 14.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Tyrese Maxey",
+     "stat": "PR",
+     "model": 32.0,
+     "dk": 28.5,
+     "edge": 3.5
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-12T19:06",
+   "games": [
+    {
+     "id": "TOR@PHI",
+     "matchup": "TOR @ PHI",
+     "model_spread": -1.9,
+     "model_total": 224.4,
+     "dk_spread": "-7.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "DET@WAS",
+     "matchup": "DET @ WAS",
+     "model_spread": 1.7,
+     "model_total": 222.3,
+     "dk_spread": "+10.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "DAL@MIN",
+     "matchup": "DAL @ MIN",
+     "model_spread": -4.2,
+     "model_total": 225.8,
+     "dk_spread": "-5.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "CHA@PHX",
+     "matchup": "CHA @ PHX",
+     "model_spread": -4.2,
+     "model_total": 222.8,
+     "dk_spread": "-6.5",
+     "dk_total": 214.5
+    },
+    {
+     "id": "NYK@IND",
+     "matchup": "NYK @ IND",
+     "model_spread": 0.4,
+     "model_total": 222.6,
+     "dk_spread": "+6.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "MIL@ORL",
+     "matchup": "MIL @ ORL",
+     "model_spread": -5.1,
+     "model_total": 225.9,
+     "dk_spread": "-9.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CLE@MIA",
+     "matchup": "CLE @ MIA",
+     "model_spread": -0.4,
+     "model_total": 230.5,
+     "dk_spread": "-1.5",
+     "dk_total": 237.5
+    },
+    {
+     "id": "ATL@CHI",
+     "matchup": "ATL @ CHI",
+     "model_spread": 2.6,
+     "model_total": 233.3,
+     "dk_spread": "+6.5",
+     "dk_total": 246.5
+    },
+    {
+     "id": "MEM@NOP",
+     "matchup": "MEM @ NOP",
+     "model_spread": 1.6,
+     "model_total": 231.9,
+     "dk_spread": "+4.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "UTA@HOU",
+     "matchup": "UTA @ HOU",
+     "model_spread": -8.4,
+     "model_total": 224.6,
+     "dk_spread": "-17.5",
+     "dk_total": 217.5
+    },
+    {
+     "id": "GSW@SAS",
+     "matchup": "GSW @ SAS",
+     "model_spread": -3.3,
+     "model_total": 228.1,
+     "dk_spread": "-13.5",
+     "dk_total": 218.5
+    },
+    {
+     "id": "POR@SAC",
+     "matchup": "POR @ SAC",
+     "model_spread": 3.5,
+     "model_total": 228.9,
+     "dk_spread": "+10.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "OKC@LAC",
+     "matchup": "OKC @ LAC",
+     "model_spread": 0.6,
+     "model_total": 225.1,
+     "dk_spread": "+7.5",
+     "dk_total": 221.5
     }
    ],
    "props": [
@@ -63132,17 +63446,18 @@
     "Best price: +100 at BetMGM (DraftKings -108; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 78.3,
    "p_win_raw": 79.7,
    "p_win": 55.6,
    "ev": 7.1,
-   "picked_at": "2026-11-12 06:39 PM ET",
+   "picked_at": "2026-11-12 07:06 PM ET",
    "open_line": 2.5,
    "open_price": -108,
+   "first_picked_at": "2026-11-12 06:39 PM ET",
    "close_line": 2.5,
    "close_price": -108,
-   "close_at": "2026-11-12 06:39 PM ET",
+   "close_at": "2026-11-12 07:06 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -63977,7 +64292,7 @@
     "Best price: +110 at betPARX (DraftKings +106; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 67.9,
    "p_win_raw": 75.7,
    "p_win": 55.0,
@@ -64057,7 +64372,7 @@
     "Game script / rest: 3 days rest +1% (net +1%)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 79.5,
    "p_win_raw": 84.0,
    "p_win": 56.3,
@@ -64140,7 +64455,7 @@
     "Best price: -145 at ESPN BET (DraftKings -148; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 72.4,
    "p_win_raw": 75.4,
    "p_win": 54.9,
@@ -64219,7 +64534,7 @@
     "Teammate injury boost: Isaiah Joe, Jalen Duren out, +3.2% to his PTS projection (extra minutes and usage)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 83.0,
    "p_win_raw": 77.8,
    "p_win": 55.3,
@@ -64303,7 +64618,7 @@
     "Best price: -104 at FanDuel (DraftKings -107; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 76.8,
    "p_win_raw": 74.1,
    "p_win": 54.7,
@@ -64382,7 +64697,7 @@
     "Game script / rest: back-to-back -3% (net -3%)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 93,
+   "candidates_considered": 96,
    "p_model": 74.1,
    "p_win_raw": 69.9,
    "p_win": 54.0,
@@ -64391,8 +64706,8 @@
  ],
  "board": {
   "date": "2026-11-12",
-  "qualified": 93,
-  "positive": 36,
+  "qualified": 96,
+  "positive": 38,
   "top_win": 57.3,
   "note": null
  },
@@ -65685,13 +66000,14 @@
     "day": 3,
     "stake": 36.6,
     "to_win": 40.99,
-    "picked_at": "2026-11-12 06:39 PM ET",
+    "picked_at": "2026-11-12 07:06 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.3% to win, +19.4% expected value",
     "open_line": 4.5,
     "open_price": 112,
+    "first_picked_at": "2026-11-12 06:39 PM ET",
     "close_line": 4.5,
     "close_price": 112,
-    "close_at": "2026-11-12 06:39 PM ET",
+    "close_at": "2026-11-12 07:06 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -66598,7 +66914,7 @@
     "day": 5,
     "stake": 57.57,
     "to_win": 36.44,
-    "picked_at": "2026-11-12 06:39 PM ET",
+    "picked_at": "2026-11-12 07:06 PM ET",
     "why_ladder": "2-leg alt-line parlay, every leg from a different game: 80% to hit by our numbers (80% trusting only half our edge) at -158. The most likely winner on today's alt lines at a ladder price",
     "first_picked_at": "2026-11-12 11:50 AM ET"
    },
@@ -71279,7 +71595,7 @@
   "remaining": 14187,
   "allowed_now": 119,
   "skipped": [],
-  "slot": "pretip",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "01:52 AM",
@@ -71380,7 +71696,7 @@
   "history": [
    {
     "date": "2026-11-12",
-    "used": 48,
+    "used": 83,
     "limit": 250
    },
    {
@@ -71885,7 +72201,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 1.6 REB vs a line of 2.5 (-0.9, 36% edge) | Honest win chance 55.6% vs 52% implied by -108: +7.1% expected value (raw model said 79.7%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 1.2 over the last 5 and 1.5 over the last 11 | Minutes steady: 23 per game over the last 5 (19 over the last 11) | Matchup vs PHI: +3.2% to his REB projection from their defense and pace (works against the under) | PHI ranks among the bottom-10 defenses for REB; he went under 2.5 in 3 of 4 games against that tier | Teammate injury boost: Scottie Barnes, Trayce Jackson-Davis out, +20% to his REB projection (extra minutes and usage) | Game script / rest: back-to-back -3% (net -3%) | Best price: +100 at BetMGM (DraftKings -108; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-12 06:39 PM ET",
+    "picked_at": "2026-11-12 07:06 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -71933,7 +72249,7 @@
     "actual": null,
     "units": null,
     "why": "Highest win chance on the board at a ladder-friendly price: 56.3% to win, +19.4% expected value | Model projects 6.4 RA vs a line of 4.5 (+1.9, 42% edge) | Went over the line in 7 of his last 8 games (5/5 in the last 5) | Averaging 7.0 over the last 5 and 6.1 over the last 8 | Minutes steady: 21 per game over the last 5 (22 over the last 8) | Matchup vs DAL: -2.1% to his RA projection from their defense and pace (works against the over) | DAL ranks among the top-10 defenses for RA; he went over 4.5 in 1 of 1 games against that tier | Teammate injury boost: Anthony Edwards out, +8.6% to his RA projection (extra minutes and usage) | Game script / rest: 3 days rest +1% (net +1%) | Not on the injury report at pick time",
-    "picked_at": "2026-11-12 06:39 PM ET",
+    "picked_at": "2026-11-12 07:06 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -71981,7 +72297,7 @@
     "actual": null,
     "units": null,
     "why": "2-leg alt-line parlay, every leg from a different game: 80% to hit by our numbers (80% trusting only half our edge) at -158. The most likely winner on today's alt lines at a ladder price | Leg 1: Duncan Robinson 12+ PTS (-303): 87.4% to win. Alt line 12+ PTS at -303: our chance 87.4% vs the book's 75.2% (+16.3% expected value) | Leg 2: Jaden McDaniels 12+ PTS (-437): 91% to win. Alt line 12+ PTS at -437: our chance 91% vs the book's 81.4% (+11.9% expected value)",
-    "picked_at": "2026-11-12 06:39 PM ET",
+    "picked_at": "2026-11-12 07:06 PM ET",
     "graded_at": null,
     "clv": null,
     "open": [
