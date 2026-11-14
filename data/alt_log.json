@@ -199,7 +199,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 12.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "12 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|Victor Wembanyama|PTS",
@@ -338,7 +344,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 22.0,
+   "hit": 1,
+   "units": 2.17,
+   "result": "W",
+   "actual": "22 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|Jaime Jaquez Jr|3PM",
@@ -387,7 +399,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 1.25,
+   "result": "W",
+   "actual": "5 3PM \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|Franz Wagner|AST",
@@ -461,7 +479,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 12.0,
+   "hit": 1,
+   "units": 5.9,
+   "result": "W",
+   "actual": "12 AST \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|Desmond Bane|3PM",
@@ -531,7 +555,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 6.0,
+   "hit": 2,
+   "units": 1.24,
+   "result": "W",
+   "actual": "6 3PM \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|De'Anthony Melton|3PM",
@@ -736,7 +766,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 5.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "5 PTS \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-13 10:14 PM ET"
   },
   {
    "id": "2026-11-13|Aaron Wiggins|3PM",

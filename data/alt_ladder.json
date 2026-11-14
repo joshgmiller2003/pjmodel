@@ -76,7 +76,11 @@
      "score": 80.4,
      "player": "Wendell Carter Jr",
      "team": "ORL",
-     "stat": "REB"
+     "stat": "REB",
+     "result": "W",
+     "actual": "8 REB",
+     "units": 0.26,
+     "graded_at": "2026-11-13 10:14 PM ET"
     },
     {
      "type": "Prop",
