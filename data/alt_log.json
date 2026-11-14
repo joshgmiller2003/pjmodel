@@ -63,7 +63,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 08:33 PM ET"
+   "updated_at": "2026-11-13 08:33 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Will Richard|PTS",
@@ -129,7 +135,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 08:33 PM ET"
+   "updated_at": "2026-11-13 08:33 PM ET",
+   "value": 7.0,
+   "hit": 2,
+   "units": 0.52,
+   "result": "W",
+   "actual": "7 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Wendell Carter Jr|PTS",
@@ -275,7 +287,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 08:33 PM ET"
+   "updated_at": "2026-11-13 08:33 PM ET",
+   "value": 12.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "12 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Jaime Jaquez Jr|PTS",
@@ -626,7 +644,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 08:33 PM ET"
+   "updated_at": "2026-11-13 08:33 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Brandin Podziemski|PTS",
@@ -690,7 +714,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 08:33 PM ET"
+   "updated_at": "2026-11-13 08:33 PM ET",
+   "value": 8.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "8 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Anthony Black|PTS",
@@ -843,7 +873,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-13|Aaron Wiggins|PTS",
@@ -912,7 +948,13 @@
     ]
    ],
    "saved_at": "2026-11-13 11:42 AM ET",
-   "updated_at": "2026-11-13 06:37 PM ET"
+   "updated_at": "2026-11-13 06:37 PM ET",
+   "value": 9.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "9 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
    "id": "2026-11-12|Terrence Shannon Jr.|3PM",

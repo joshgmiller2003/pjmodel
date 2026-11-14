@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 1,
- "bankroll": 94.01,
+ "bankroll": 141.49,
  "steps": [
   {
    "type": "Parlay",
@@ -134,7 +134,11 @@
      "score": 88.7,
      "player": "Aaron Wiggins",
      "team": "ATL",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "9 PTS",
+     "units": 0.19,
+     "graded_at": "2026-11-14 01:39 AM ET"
     }
    ],
    "date": "2026-11-13",
@@ -145,7 +149,12 @@
    "picked_at": "2026-11-13 06:37 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 71% to hit by our numbers (71% trusting only half our edge) at -198. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-13 11:42 AM ET",
-   "locked_at": "2026-11-13 08:33 PM ET"
+   "locked_at": "2026-11-13 08:33 PM ET",
+   "result": "W",
+   "actual": "Wendell Carter Jr 7+ REB: 8 REB \u2713 \u00b7 Aaron Wiggins 8+ PTS: 9 PTS \u2713",
+   "graded_at": "2026-11-14 01:39 AM ET",
+   "applied": true,
+   "bankroll_after": 141.49
   },
   {
    "type": "Parlay",
