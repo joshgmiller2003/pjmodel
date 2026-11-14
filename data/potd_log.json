@@ -2,6 +2,103 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-14",
+   "eid": "401909983",
+   "game": "BKN@MEM",
+   "time": "8:00 PM ET",
+   "home": "MEM",
+   "away": "BKN",
+   "type": "Prop",
+   "player": "Jerami Grant",
+   "team": "MEM",
+   "stat": "3PM",
+   "side": "Over",
+   "line": 1.5,
+   "price": 116,
+   "model": 1.9,
+   "edge": 0.4,
+   "edge_pct": 26.7,
+   "label": "Jerami Grant Over 1.5 3PM",
+   "best": [
+    125,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     8,
+     12
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     3.0,
+     0.0,
+     1.0,
+     2.0,
+     2.0,
+     2.0,
+     3.0,
+     2.0,
+     3.0
+    ],
+    "line": 1.5,
+    "side": "Over",
+    "label": "3PM",
+    "opps": [
+     "SAC",
+     "UTA",
+     "POR",
+     "SAC",
+     "NOP",
+     "IND",
+     "OKC",
+     "TOR",
+     "DEN",
+     "NOP"
+    ]
+   },
+   "score": 87.2,
+   "reasons": [
+    "Model projects 1.9 3PM vs a line of 1.5 (+0.4, 27% edge)",
+    "Honest win chance 50.8% vs 46% implied by +116: +9.7% expected value (raw model said 60.6%)",
+    "Went over the line in 7 of his last 10 games (5/5 in the last 5)",
+    "Averaging 2.4 over the last 5 and 1.8 over the last 12",
+    "Minutes steady: 23 per game over the last 5 (24 over the last 12)",
+    "Matchup vs BKN: -1.5% to his 3PM projection from their defense and pace (works against the over)",
+    "BKN ranks among the middle-10 defenses for 3PM; he went over 1.5 in 3 of 5 games against that tier",
+    "Teammate injury boost: Scotty Pippen Jr. out, +1.3% to his 3PM projection (extra minutes and usage)",
+    "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: +125 at Hard Rock (DraftKings +116; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 78,
+   "p_model": 56.6,
+   "p_win_raw": 60.6,
+   "p_win": 50.8,
+   "ev": 9.7,
+   "picked_at": "2026-11-14 11:27 AM ET",
+   "open_line": 1.5,
+   "open_price": 116,
+   "close_line": 1.5,
+   "close_price": 116,
+   "close_at": "2026-11-14 11:27 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-13",
    "eid": "401909302",
    "game": "GSW@SAS",

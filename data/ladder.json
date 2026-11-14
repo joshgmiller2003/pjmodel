@@ -6,6 +6,104 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Ausar Thompson Over 7.5 REB",
+   "game": "DET@MIA",
+   "eid": "401909982",
+   "time": "8:00 PM ET",
+   "home": "MIA",
+   "away": "DET",
+   "side": "Over",
+   "line": 7.5,
+   "price": 108,
+   "model": 9.8,
+   "edge": 2.3,
+   "edge_pct": 30.7,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     6,
+     10
+    ]
+   },
+   "chart": {
+    "vals": [
+     11.0,
+     3.0,
+     6.0,
+     9.0,
+     8.0,
+     6.0,
+     17.0,
+     11.0,
+     5.0,
+     11.0
+    ],
+    "line": 7.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "BOS",
+     "MIA",
+     "NYK",
+     "CHA",
+     "BKN",
+     "CHA",
+     "PHI",
+     "LAL",
+     "WAS",
+     "WAS"
+    ]
+   },
+   "reasons": [
+    "Model projects 9.8 REB vs a line of 7.5 (+2.3, 31% edge)",
+    "Went over the line in 6 of his last 10 games (3/5 in the last 5)",
+    "Averaging 10.0 over the last 5 and 8.7 over the last 10",
+    "Minutes steady: 31 per game over the last 5 (29 over the last 10)",
+    "Matchup vs MIA: +2% to his REB projection from their defense and pace (helps the over)",
+    "MIA ranks among the bottom-10 defenses for REB; he went over 7.5 in 3 of 6 games against that tier",
+    "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
+    "Best price: +110 at Hard Rock (DraftKings +108; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 52.0,
+   "p_model": 76.1,
+   "ev": 8.2,
+   "score": 78.0,
+   "best": [
+    110,
+    "hardrockbet"
+   ],
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "stat": "REB",
+   "date": "2026-11-14",
+   "attempt": 4,
+   "day": 5,
+   "stake": 143.91,
+   "to_win": 155.42,
+   "picked_at": "2026-11-14 11:27 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 52% to win, +8.2% expected value",
+   "open_line": 7.5,
+   "open_price": 108,
+   "close_line": 7.5,
+   "close_price": 108,
+   "close_at": "2026-11-14 11:27 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Andrew Wiggins Under 18.5 PRA",
    "game": "CLE@MIA",
    "eid": "401909298",

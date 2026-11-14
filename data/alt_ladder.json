@@ -6,6 +6,143 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Davion Mitchell 10+ PTS + Jaden McDaniels 12+ PTS",
+   "game": "DET@MIA / CHI@MIN",
+   "eid": "401909982",
+   "time": "8:00 PM ET",
+   "home": "MIA",
+   "away": "DET",
+   "side": null,
+   "line": null,
+   "price": -198,
+   "reasons": [
+    "Leg 1: Davion Mitchell 10+ PTS (-362): 86.2% to win. Alt line 10+ PTS at -362: our chance 86.2% vs the book's 78.4% (+10% expected value)",
+    "Leg 2: Jaden McDaniels 12+ PTS (-559): 90.4% to win. Alt line 12+ PTS at -559: our chance 90.4% vs the book's 84.8% (+6.6% expected value)"
+   ],
+   "p_win": 77.9,
+   "p_model": 77.9,
+   "ev": 17.2,
+   "score": 86.2,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Davion Mitchell 10+ PTS",
+     "game": "DET@MIA",
+     "eid": "401909982",
+     "time": "8:00 PM ET",
+     "home": "MIA",
+     "away": "DET",
+     "side": "Over",
+     "line": 9.5,
+     "price": -362,
+     "model": 15.2,
+     "chart": {
+      "vals": [
+       22.0,
+       21.0,
+       10.0,
+       15.0,
+       15.0,
+       11.0,
+       22.0,
+       17.0,
+       19.0,
+       22.0
+      ],
+      "line": 9.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "CHA",
+       "DAL",
+       "ATL",
+       "IND",
+       "LAL",
+       "LAC",
+       "GSW",
+       "SAC",
+       "UTA",
+       "CLE"
+      ]
+     },
+     "reasons": [
+      "Alt line 10+ PTS at -362: our chance 86.2% vs the book's 78.4% (+10% expected value)",
+      "Cleared 10+ in 12 of his last 12 games",
+      "We project 15.2 PTS (DraftKings main line 13.5)"
+     ],
+     "p_win": 86.2,
+     "p_model": 86.2,
+     "ev": 10.0,
+     "score": 86.2,
+     "player": "Davion Mitchell",
+     "team": "MIA",
+     "stat": "PTS"
+    },
+    {
+     "type": "Prop",
+     "label": "Jaden McDaniels 12+ PTS",
+     "game": "CHI@MIN",
+     "eid": "401909984",
+     "time": "8:00 PM ET",
+     "home": "MIN",
+     "away": "CHI",
+     "side": "Over",
+     "line": 11.5,
+     "price": -559,
+     "model": 17.8,
+     "chart": {
+      "vals": [
+       14.0,
+       14.0,
+       19.0,
+       23.0,
+       19.0,
+       13.0,
+       14.0,
+       23.0,
+       16.0,
+       16.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "TOR",
+       "CLE",
+       "GSW",
+       "LAC",
+       "SAS",
+       "MIL",
+       "HOU",
+       "NOP",
+       "UTA",
+       "DAL"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -559: our chance 90.4% vs the book's 84.8% (+6.6% expected value)",
+      "Cleared 12+ in 12 of his last 12 games",
+      "We project 17.8 PTS (DraftKings main line 17.5)"
+     ],
+     "p_win": 90.4,
+     "p_model": 90.4,
+     "ev": 6.6,
+     "score": 90.4,
+     "player": "Jaden McDaniels",
+     "team": "MIN",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-14",
+   "attempt": 1,
+   "day": 7,
+   "stake": 141.49,
+   "to_win": 71.46,
+   "picked_at": "2026-11-14 11:27 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 78% to hit by our numbers (78% trusting only half our edge) at -198. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Wendell Carter Jr 7+ REB + Aaron Wiggins 8+ PTS",
    "game": "MIL@ORL / ATL@CHI",
    "eid": "401909297",
