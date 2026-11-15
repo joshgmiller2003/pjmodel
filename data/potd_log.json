@@ -2,6 +2,99 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-15",
+   "eid": "401909988",
+   "game": "SAS@UTA",
+   "time": "5:00 PM ET",
+   "home": "UTA",
+   "away": "SAS",
+   "type": "Prop",
+   "player": "Keyonte George",
+   "team": "UTA",
+   "stat": "AST",
+   "side": "Over",
+   "line": 5.5,
+   "price": -105,
+   "model": 7.1,
+   "edge": 1.6,
+   "edge_pct": 29.1,
+   "label": "Keyonte George Over 5.5 AST",
+   "best": null,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     8,
+     12
+    ]
+   },
+   "chart": {
+    "vals": [
+     10.0,
+     6.0,
+     3.0,
+     4.0,
+     0.0,
+     9.0,
+     9.0,
+     8.0,
+     7.0,
+     7.0
+    ],
+    "line": 5.5,
+    "side": "Over",
+    "label": "AST",
+    "opps": [
+     "LAL",
+     "MEM",
+     "SAS",
+     "POR",
+     "SAS",
+     "NOP",
+     "DAL",
+     "MIN",
+     "ORL",
+     "HOU"
+    ]
+   },
+   "score": 87.2,
+   "reasons": [
+    "Model projects 7.1 AST vs a line of 5.5 (+1.6, 29% edge)",
+    "Honest win chance 51.8% vs 51% implied by -105: +1.1% expected value (raw model said 69.4%)",
+    "Went over the line in 7 of his last 10 games (5/5 in the last 5)",
+    "Averaging 8.0 over the last 5 and 6.5 over the last 12",
+    "Minutes steady: 35 per game over the last 5 (33 over the last 12)",
+    "Matchup vs SAS: neutral for AST (defense and pace about league average)",
+    "SAS ranks among the middle-10 defenses for AST; he went over 5.5 in 0 of 2 games against that tier",
+    "Teammate injury boost: Jaxson Hayes, Lauri Markkanen out, +13.1% to his AST projection (extra minutes and usage)",
+    "Game script / rest: blowout risk (15.5-pt spread) -3.75% (net -3.7%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 134,
+   "p_model": 71.2,
+   "p_win_raw": 69.4,
+   "p_win": 51.8,
+   "ev": 1.1,
+   "picked_at": "2026-11-15 11:28 AM ET",
+   "open_line": 5.5,
+   "open_price": -105,
+   "close_line": 5.5,
+   "close_price": -105,
+   "close_at": "2026-11-15 11:28 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-14",
    "eid": "401909981",
    "game": "DAL@CLE",

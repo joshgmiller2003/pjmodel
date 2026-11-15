@@ -6,6 +6,143 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Walker Kessler 8+ REB + Aaron Wiggins 10+ PTS",
+   "game": "LAL@PHX / ATL@MIL",
+   "eid": "401909986",
+   "time": "4:00 PM ET",
+   "home": "PHX",
+   "away": "LAL",
+   "side": null,
+   "line": null,
+   "price": -152,
+   "reasons": [
+    "Leg 1: Walker Kessler 8+ REB (-579): 88.6% to win. Alt line 8+ REB at -579: our chance 88.6% vs the book's 85.3% (+3.9% expected value)",
+    "Leg 2: Aaron Wiggins 10+ PTS (-241): 74% to win. Alt line 10+ PTS at -241: our chance 74% vs the book's 70.7% (+4.8% expected value)"
+   ],
+   "p_win": 65.6,
+   "p_model": 65.6,
+   "ev": 8.8,
+   "score": 74.0,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Walker Kessler 8+ REB",
+     "game": "LAL@PHX",
+     "eid": "401909986",
+     "time": "4:00 PM ET",
+     "home": "PHX",
+     "away": "LAL",
+     "side": "Over",
+     "line": 7.5,
+     "price": -579,
+     "model": 12.4,
+     "chart": {
+      "vals": [
+       8.0,
+       9.0,
+       13.0,
+       15.0,
+       15.0,
+       8.0,
+       12.0,
+       16.0,
+       10.0,
+       11.0
+      ],
+      "line": 7.5,
+      "side": "Over",
+      "label": "REB",
+      "opps": [
+       "POR",
+       "LAC",
+       "GSW",
+       "TOR",
+       "MIA",
+       "SAC",
+       "POR",
+       "DET",
+       "ATL",
+       "MIL"
+      ]
+     },
+     "reasons": [
+      "Alt line 8+ REB at -579: our chance 88.6% vs the book's 85.3% (+3.9% expected value)",
+      "Cleared 8+ in 12 of his last 13 games",
+      "We project 12.4 REB (DraftKings main line 11.5)"
+     ],
+     "p_win": 88.6,
+     "p_model": 88.6,
+     "ev": 3.9,
+     "score": 88.6,
+     "player": "Walker Kessler",
+     "team": "LAL",
+     "stat": "REB"
+    },
+    {
+     "type": "Prop",
+     "label": "Aaron Wiggins 10+ PTS",
+     "game": "ATL@MIL",
+     "eid": "401909992",
+     "time": "8:00 PM ET",
+     "home": "MIL",
+     "away": "ATL",
+     "side": "Over",
+     "line": 9.5,
+     "price": -241,
+     "model": 13.8,
+     "chart": {
+      "vals": [
+       12.0,
+       10.0,
+       20.0,
+       10.0,
+       7.0,
+       15.0,
+       19.0,
+       20.0,
+       15.0,
+       9.0
+      ],
+      "line": 9.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "HOU",
+       "MIA",
+       "CLE",
+       "NOP",
+       "IND",
+       "WAS",
+       "WAS",
+       "BKN",
+       "LAL",
+       "CHI"
+      ]
+     },
+     "reasons": [
+      "Alt line 10+ PTS at -241: our chance 74% vs the book's 70.7% (+4.8% expected value)",
+      "Cleared 10+ in 11 of his last 13 games",
+      "We project 13.8 PTS (DraftKings main line 12.5)"
+     ],
+     "p_win": 74.0,
+     "p_model": 74.0,
+     "ev": 4.8,
+     "score": 74.0,
+     "player": "Aaron Wiggins",
+     "team": "ATL",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-15",
+   "attempt": 1,
+   "day": 8,
+   "stake": 212.95,
+   "to_win": 140.1,
+   "picked_at": "2026-11-15 11:28 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 66% to hit by our numbers (66% trusting only half our edge) at -152. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Davion Mitchell 10+ PTS + Jaden McDaniels 12+ PTS",
    "game": "DET@MIA / CHI@MIN",
    "eid": "401909982",
