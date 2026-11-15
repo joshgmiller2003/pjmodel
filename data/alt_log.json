@@ -63,7 +63,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 24.0,
+   "hit": 1,
+   "units": 0.56,
+   "result": "W",
+   "actual": "24 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-14 10:13 PM ET"
   },
   {
    "id": "2026-11-14|Klay Thompson|PTS",
@@ -316,7 +322,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 23.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "23 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-14 10:13 PM ET"
   },
   {
    "id": "2026-11-14|Jaden McDaniels|AST",

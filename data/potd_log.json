@@ -97,7 +97,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-14 08:40 PM ET"
+   "locked_at": "2026-11-14 08:40 PM ET",
+   "result": "W",
+   "actual": "6 RA",
+   "units": 0.91,
+   "graded_at": "2026-11-14 10:13 PM ET"
   },
   {
    "date": "2026-11-13",
