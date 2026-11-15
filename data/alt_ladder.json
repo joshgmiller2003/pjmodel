@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 1,
- "bankroll": 141.49,
+ "bankroll": 212.95,
  "steps": [
   {
    "type": "Parlay",
@@ -76,7 +76,11 @@
      "score": 86.2,
      "player": "Davion Mitchell",
      "team": "MIA",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "15 PTS",
+     "units": 0.28,
+     "graded_at": "2026-11-15 01:43 AM ET"
     },
     {
      "type": "Prop",
@@ -130,7 +134,11 @@
      "score": 90.4,
      "player": "Jaden McDaniels",
      "team": "MIN",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "18 PTS",
+     "units": 0.18,
+     "graded_at": "2026-11-15 01:43 AM ET"
     }
    ],
    "date": "2026-11-14",
@@ -141,7 +149,12 @@
    "picked_at": "2026-11-14 06:31 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 78% to hit by our numbers (78% trusting only half our edge) at -198. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-14 11:27 AM ET",
-   "locked_at": "2026-11-14 08:40 PM ET"
+   "locked_at": "2026-11-14 08:40 PM ET",
+   "result": "W",
+   "actual": "Davion Mitchell 10+ PTS: 15 PTS \u2713 \u00b7 Jaden McDaniels 12+ PTS: 18 PTS \u2713",
+   "graded_at": "2026-11-15 01:43 AM ET",
+   "applied": true,
+   "bankroll_after": 212.95
   },
   {
    "type": "Parlay",

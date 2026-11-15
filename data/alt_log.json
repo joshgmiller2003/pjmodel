@@ -138,7 +138,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 26.0,
+   "hit": 1,
+   "units": 2.38,
+   "result": "W",
+   "actual": "26 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Jonathan Kuminga|AST",
@@ -193,7 +199,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 AST \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|John Collins|PTS",
@@ -257,7 +269,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 8.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "8 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Jamal Murray|PTS",
@@ -387,7 +405,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 6.0,
+   "hit": 1,
+   "units": 0.46,
+   "result": "W",
+   "actual": "6 AST \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Davion Mitchell|PTS",
@@ -462,7 +486,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 15.0,
+   "hit": 2,
+   "units": 0.62,
+   "result": "W",
+   "actual": "15 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Daniss Jenkins|PTS",
@@ -532,7 +562,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 10.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "10 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Cade Cunningham|PTS",
@@ -596,7 +632,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 33.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "33 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Bam Adebayo|PTS",
@@ -661,7 +703,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 20.0,
+   "hit": 1,
+   "units": 0.5,
+   "result": "W",
+   "actual": "20 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-14|Ausar Thompson|REB",
@@ -757,7 +805,13 @@
     ]
    ],
    "saved_at": "2026-11-14 11:27 AM ET",
-   "updated_at": "2026-11-14 06:31 PM ET"
+   "updated_at": "2026-11-14 06:31 PM ET",
+   "value": 8.0,
+   "hit": 1,
+   "units": -0.16,
+   "result": "L",
+   "actual": "8 REB \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-15 01:43 AM ET"
   },
   {
    "id": "2026-11-13|Yaxel Lendeborg|PTS",
