@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "used_today": 88,
+ "used_today": 115,
  "calls": [
   {
    "time": "01:43 AM",
@@ -86,13 +86,43 @@
    "time": "11:28 AM",
    "call": "alt lines ATL@MIL",
    "cost": 4
+  },
+  {
+   "time": "06:41 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "06:41 PM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "06:41 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "06:41 PM",
+   "call": "props HOU@WAS",
+   "cost": 8
+  },
+  {
+   "time": "06:41 PM",
+   "call": "props ATL@MIL",
+   "cost": 8
+  },
+  {
+   "time": "06:42 PM",
+   "call": "props OKC@SAC",
+   "cost": 8
   }
  ],
- "remaining": 11426,
+ "remaining": 11177,
  "history": [
   {
    "date": "2026-11-15",
-   "used": 88,
+   "used": 115,
    "limit": 250
   },
   {
@@ -154,6 +184,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 19,
- "month_used": 1482,
+ "month_used": 1509,
  "month_limit": 5500
 }
