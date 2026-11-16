@@ -1,8 +1,8 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 1,
- "bankroll": 212.95,
+ "attempt": 2,
+ "bankroll": 10.0,
  "steps": [
   {
    "type": "Parlay",
@@ -134,7 +134,11 @@
      "score": 74.0,
      "player": "Aaron Wiggins",
      "team": "ATL",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "L",
+     "actual": "7 PTS",
+     "units": -1.0,
+     "graded_at": "2026-11-15 10:31 PM ET"
     }
    ],
    "date": "2026-11-15",
@@ -144,7 +148,12 @@
    "to_win": 140.1,
    "picked_at": "2026-11-15 11:28 AM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 66% to hit by our numbers (66% trusting only half our edge) at -152. The most likely winner on today's alt lines at a ladder price",
-   "locked_at": "2026-11-15 06:41 PM ET"
+   "locked_at": "2026-11-15 06:41 PM ET",
+   "result": "L",
+   "actual": "Walker Kessler 8+ REB: 12 REB \u2713 \u00b7 Aaron Wiggins 10+ PTS: 7 PTS \u2717",
+   "graded_at": "2026-11-15 10:31 PM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Parlay",
@@ -1028,6 +1037,15 @@
    "bankroll_after": 15.18
   }
  ],
- "attempts": [],
- "attempt_started": "2026-11-08"
+ "attempts": [
+  {
+   "attempt": 1,
+   "start": "2026-11-08",
+   "end": "2026-11-15",
+   "days": 8,
+   "peak": 212.95,
+   "result": "Busted"
+  }
+ ],
+ "attempt_started": null
 }
