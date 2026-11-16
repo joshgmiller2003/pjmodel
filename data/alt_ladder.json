@@ -76,7 +76,11 @@
      "score": 88.6,
      "player": "Walker Kessler",
      "team": "LAL",
-     "stat": "REB"
+     "stat": "REB",
+     "result": "W",
+     "actual": "12 REB",
+     "units": 0.17,
+     "graded_at": "2026-11-15 07:05 PM ET"
     },
     {
      "type": "Prop",
