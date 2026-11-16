@@ -10348,5 +10348,106 @@
 "tpm":3.0
 }
 ]
+},
+"Klay Thompson|HOU":{
+"date":"2026-11-16",
+"games":[
+{
+"date":"2026-01-31",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":28.0,
+"pts":9.0,
+"reb":2.0,
+"ast":0.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":3.0
+},
+{
+"date":"2026-01-03",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":22.0,
+"pts":9.0,
+"reb":3.0,
+"ast":1.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":2.0
+},
+{
+"date":"2025-11-03",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":18.0,
+"pts":5.0,
+"reb":3.0,
+"ast":3.0,
+"stl":0.0,
+"blk":1.0,
+"tpm":1.0
+},
+{
+"date":"2025-03-14",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":26.0,
+"pts":5.0,
+"reb":9.0,
+"ast":3.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":0.0
+},
+{
+"date":"2025-02-08",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":22.0,
+"pts":13.0,
+"reb":4.0,
+"ast":1.0,
+"stl":0.0,
+"blk":1.0,
+"tpm":1.0
+},
+{
+"date":"2025-01-01",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":32.0,
+"pts":16.0,
+"reb":5.0,
+"ast":1.0,
+"stl":1.0,
+"blk":0.0,
+"tpm":4.0
+},
+{
+"date":"2024-10-31",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":30.0,
+"pts":12.0,
+"reb":1.0,
+"ast":1.0,
+"stl":1.0,
+"blk":0.0,
+"tpm":2.0
+},
+{
+"date":"2024-04-04",
+"season":"2023-24 Regular Season",
+"home":false,
+"min":29.0,
+"pts":29.0,
+"reb":3.0,
+"ast":4.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":7.0
+}
+]
 }
 }

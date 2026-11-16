@@ -62,8 +62,9 @@
    "day": 1,
    "stake": 10.0,
    "to_win": 5.46,
-   "picked_at": "2026-11-16 11:31 AM ET",
-   "why_ladder": "Single alt line: 72% to hit by our numbers (72% trusting only half our edge) at -183, +11.4% expected value. The most likely winner on today's alt lines at a ladder price"
+   "picked_at": "2026-11-16 06:39 PM ET",
+   "why_ladder": "Single alt line: 72% to hit by our numbers (72% trusting only half our edge) at -183, +11.4% expected value. The most likely winner on today's alt lines at a ladder price",
+   "first_picked_at": "2026-11-16 11:31 AM ET"
   },
   {
    "type": "Parlay",
