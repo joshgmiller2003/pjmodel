@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-15",
+"updated":"2026-11-16",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -428,6 +428,7 @@
 "Quenton Jackson":"G",
 "Quinten Post":"C",
 "RJ Barrett":"F",
+"Rafael Castro":"F",
 "Rasheer Fleming":"F",
 "RayJ Dennis":"G",
 "Rayan Rupert":"G",
@@ -960,6 +961,7 @@
 "Quenton Jackson":"4592829",
 "Quinten Post":"4593016",
 "RJ Barrett":"4395625",
+"Rafael Castro":"4684443",
 "Rasheer Fleming":"5105977",
 "RayJ Dennis":"4431941",
 "Rayan Rupert":"5099752",

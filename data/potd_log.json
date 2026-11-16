@@ -2,6 +2,98 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-16",
+   "eid": "401910000",
+   "game": "GSW@NOP",
+   "time": "8:00 PM ET",
+   "home": "NOP",
+   "away": "GSW",
+   "type": "Prop",
+   "player": "Draymond Green",
+   "team": "GSW",
+   "stat": "PTS",
+   "side": "Under",
+   "line": 5.5,
+   "price": 105,
+   "model": 3.8,
+   "edge": -1.7,
+   "edge_pct": 30.9,
+   "label": "Draymond Green Under 5.5 PTS",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     10,
+     11
+    ]
+   },
+   "chart": {
+    "vals": [
+     5.0,
+     3.0,
+     3.0,
+     2.0,
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     7.0,
+     4.0
+    ],
+    "line": 5.5,
+    "side": "Under",
+    "label": "PTS",
+    "opps": [
+     "MEM",
+     "DEN",
+     "MIN",
+     "LAL",
+     "PHX",
+     "MIA",
+     "ORL",
+     "NOP",
+     "HOU",
+     "SAS"
+    ]
+   },
+   "score": 93.3,
+   "reasons": [
+    "Model projects 3.8 PTS vs a line of 5.5 (-1.7, 31% edge)",
+    "Honest win chance 51.5% vs 49% implied by +105: +5.6% expected value (raw model said 84.5%)",
+    "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 3.4 over the last 5 and 3.3 over the last 11",
+    "Minutes steady: 25 per game over the last 5 (26 over the last 11)",
+    "Matchup vs NOP: neutral for PTS (defense and pace about league average)",
+    "NOP ranks among the top-10 defenses for PTS; he went under 5.5 in 6 of 7 games against that tier",
+    "Teammate injury boost: Brandon Williams, Stephen Curry out, +18.2% to his PTS projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 108,
+   "p_model": 80.2,
+   "p_win_raw": 84.5,
+   "p_win": 51.5,
+   "ev": 5.6,
+   "picked_at": "2026-11-16 11:31 AM ET",
+   "open_line": 5.5,
+   "open_price": 105,
+   "close_line": 5.5,
+   "close_price": 105,
+   "close_at": "2026-11-16 11:31 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-15",
    "eid": "401909988",
    "game": "SAS@UTA",
