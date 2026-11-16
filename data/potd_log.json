@@ -93,7 +93,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-15 06:41 PM ET"
+   "locked_at": "2026-11-15 06:41 PM ET",
+   "result": "W",
+   "actual": "8 AST",
+   "units": 0.95,
+   "graded_at": "2026-11-15 08:52 PM ET"
   },
   {
    "date": "2026-11-14",
