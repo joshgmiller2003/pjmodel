@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 5,
- "bankroll": 10.0,
+ "bankroll": 20.3,
  "steps": [
   {
    "type": "Prop",
@@ -103,7 +103,13 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-16 08:44 PM ET"
+   "locked_at": "2026-11-16 08:44 PM ET",
+   "result": "W",
+   "actual": "5 3PM",
+   "units": 1.03,
+   "graded_at": "2026-11-16 10:14 PM ET",
+   "applied": true,
+   "bankroll_after": 20.3
   },
   {
    "type": "Prop",

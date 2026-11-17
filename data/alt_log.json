@@ -193,7 +193,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 10.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "10 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Tristan da Silva|PTS",
@@ -269,7 +275,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 13.0,
+   "hit": 2,
+   "units": 0.24,
+   "result": "W",
+   "actual": "13 PTS \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Sam Hauser|PTS",
@@ -328,7 +340,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 12.0,
+   "hit": 1,
+   "units": 0.48,
+   "result": "W",
+   "actual": "12 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Saddiq Bey|AST",
@@ -466,7 +484,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 13.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "13 REB \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Fred VanVleet|PTS",
@@ -541,7 +565,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 8.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "8 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Franz Wagner|PTS",
@@ -605,7 +635,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 21.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "21 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Derik Queen|PTS",
@@ -749,7 +785,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 16.0,
+   "hit": 2,
+   "units": 0.69,
+   "result": "W",
+   "actual": "16 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Davion Mitchell|REB",
@@ -798,7 +840,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 REB \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Bam Adebayo|PTS",
@@ -863,7 +911,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 4.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "4 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Anthony Black|AST",
@@ -939,7 +993,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 7.0,
+   "hit": 2,
+   "units": 0.44,
+   "result": "W",
+   "actual": "7 AST \u00b7 2 of 3 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-16|Anthony Black|PTS",
@@ -1014,7 +1074,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 20.0,
+   "hit": 2,
+   "units": 1.78,
+   "result": "W",
+   "actual": "20 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-16 10:14 PM ET"
   },
   {
    "id": "2026-11-15|Walker Kessler|PTS",
