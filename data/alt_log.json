@@ -69,7 +69,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 16.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "16 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-17 01:54 AM ET"
   },
   {
    "id": "2026-11-16|Will Richard|PTS",
@@ -128,7 +134,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 11.0,
+   "hit": 1,
+   "units": 0.52,
+   "result": "W",
+   "actual": "11 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-17 01:54 AM ET"
   },
   {
    "id": "2026-11-16|Wendell Carter Jr|PTS",
@@ -395,7 +407,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 3.0,
+   "hit": 1,
+   "units": 1.18,
+   "result": "W",
+   "actual": "3 AST \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-17 01:54 AM ET"
   },
   {
    "id": "2026-11-16|Giannis Antetokounmpo|REB",
@@ -710,7 +728,13 @@
     ]
    ],
    "saved_at": "2026-11-16 11:31 AM ET",
-   "updated_at": "2026-11-16 07:05 PM ET"
+   "updated_at": "2026-11-16 07:05 PM ET",
+   "value": 17.0,
+   "hit": 1,
+   "units": 0.69,
+   "result": "W",
+   "actual": "17 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-17 01:54 AM ET"
   },
   {
    "id": "2026-11-16|Davion Mitchell|PTS",

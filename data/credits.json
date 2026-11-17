@@ -1,145 +1,20 @@
 {
- "date": "2026-11-16",
- "used_today": 147,
+ "date": "2026-11-17",
+ "used_today": 1,
  "calls": [
   {
-   "time": "11:32 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:32 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:32 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props ORL@BOS",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props CHI@CLE",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props MEM@WAS",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props PHI@BKN",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props HOU@MIA",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props POR@MIN",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props GSW@NOP",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
-   "call": "props PHX@DEN",
-   "cost": 8
-  },
-  {
-   "time": "11:32 AM",
+   "time": "01:54 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "11:32 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:32 AM",
-   "call": "alt lines GSW@NOP",
-   "cost": 4
-  },
-  {
-   "time": "11:32 AM",
-   "call": "alt lines HOU@MIA",
-   "cost": 4
-  },
-  {
-   "time": "11:32 AM",
-   "call": "alt lines ORL@BOS",
-   "cost": 4
-  },
-  {
-   "time": "06:39 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:39 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:39 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props ORL@BOS",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props CHI@CLE",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props MEM@WAS",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props PHI@BKN",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props HOU@MIA",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props POR@MIN",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props GSW@NOP",
-   "cost": 8
-  },
-  {
-   "time": "06:39 PM",
-   "call": "props PHX@DEN",
-   "cost": 8
   }
  ],
- "remaining": 10884,
+ "remaining": 10837,
  "history": [
+  {
+   "date": "2026-11-17",
+   "used": 1,
+   "limit": 250
+  },
   {
    "date": "2026-11-16",
    "used": 147,
@@ -208,7 +83,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 18,
- "month_used": 1656,
+ "days_to_reset": 17,
+ "month_used": 1657,
  "month_limit": 5500
 }
