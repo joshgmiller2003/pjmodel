@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "used_today": 56,
+ "used_today": 99,
  "calls": [
   {
    "time": "01:54 AM",
@@ -66,13 +66,53 @@
    "time": "11:52 AM",
    "call": "alt lines NYK@TOR",
    "cost": 4
+  },
+  {
+   "time": "06:46 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "06:46 PM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "06:46 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "06:46 PM",
+   "call": "props NYK@TOR",
+   "cost": 8
+  },
+  {
+   "time": "06:46 PM",
+   "call": "props POR@MIN",
+   "cost": 8
+  },
+  {
+   "time": "06:46 PM",
+   "call": "props DET@SAS",
+   "cost": 8
+  },
+  {
+   "time": "06:46 PM",
+   "call": "props UTA@LAC",
+   "cost": 8
+  },
+  {
+   "time": "06:46 PM",
+   "call": "props CHA@LAL",
+   "cost": 8
   }
  ],
- "remaining": 10762,
+ "remaining": 10679,
  "history": [
   {
    "date": "2026-11-17",
-   "used": 56,
+   "used": 99,
    "limit": 250
   },
   {
@@ -144,6 +184,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 17,
- "month_used": 1712,
+ "month_used": 1755,
  "month_limit": 5500
 }

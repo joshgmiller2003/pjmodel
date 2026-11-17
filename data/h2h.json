@@ -10288,5 +10288,46 @@
 "tpm":2.0
 }
 ]
+},
+"Mo Bamba|LAC":{
+"date":"2026-11-17",
+"games":[
+{
+"date":"2025-03-11",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":15.0,
+"pts":0.0,
+"reb":7.0,
+"ast":0.0,
+"stl":0.0,
+"blk":1.0,
+"tpm":0.0
+},
+{
+"date":"2024-03-27",
+"season":"2023-24 Regular Season",
+"home":true,
+"min":19.0,
+"pts":12.0,
+"reb":11.0,
+"ast":0.0,
+"stl":0.0,
+"blk":2.0,
+"tpm":0.0
+},
+{
+"date":"2024-03-24",
+"season":"2023-24 Regular Season",
+"home":false,
+"min":22.0,
+"pts":5.0,
+"reb":7.0,
+"ast":1.0,
+"stl":0.0,
+"blk":2.0,
+"tpm":1.0
+}
+]
 }
 }
