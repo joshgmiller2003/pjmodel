@@ -6,6 +6,99 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Keldon Johnson Over 5.5 REB",
+   "game": "DET@SAS",
+   "eid": "401910004",
+   "time": "8:00 PM ET",
+   "home": "SAS",
+   "away": "DET",
+   "side": "Over",
+   "line": 5.5,
+   "price": 115,
+   "model": 6.9,
+   "edge": 1.4,
+   "edge_pct": 25.5,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     9,
+     14
+    ]
+   },
+   "chart": {
+    "vals": [
+     6.0,
+     6.0,
+     7.0,
+     5.0,
+     6.0,
+     7.0,
+     5.0,
+     6.0,
+     4.0,
+     10.0
+    ],
+    "line": 5.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "UTA",
+     "MIN",
+     "UTA",
+     "DAL",
+     "SAC",
+     "POR",
+     "PHX",
+     "CHI",
+     "GSW",
+     "UTA"
+    ]
+   },
+   "reasons": [
+    "Model projects 6.9 REB vs a line of 5.5 (+1.4, 25% edge)",
+    "Went over the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 6.4 over the last 5 and 5.9 over the last 14",
+    "Minutes steady: 27 per game over the last 5 (24 over the last 14)",
+    "Matchup vs DET: +5.9% to his REB projection from their defense and pace (helps the over)",
+    "DET ranks among the bottom-10 defenses for REB; he went over 5.5 in 1 of 3 games against that tier",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 51.6,
+   "p_model": 68.6,
+   "ev": 10.9,
+   "score": 81.3,
+   "best": null,
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "stat": "REB",
+   "date": "2026-11-17",
+   "attempt": 5,
+   "day": 2,
+   "stake": 20.3,
+   "to_win": 23.34,
+   "picked_at": "2026-11-17 11:51 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.6% to win, +10.9% expected value",
+   "open_line": 5.5,
+   "open_price": 115,
+   "close_line": 5.5,
+   "close_price": 115,
+   "close_at": "2026-11-17 11:51 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Klay Thompson Over 3.5 3PM",
    "game": "HOU@MIA",
    "eid": "401909998",

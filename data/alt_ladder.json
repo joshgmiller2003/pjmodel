@@ -5,6 +5,143 @@
  "bankroll": 15.46,
  "steps": [
   {
+   "type": "Parlay",
+   "label": "Jaden McDaniels 12+ PTS + Ziaire Williams 6+ PTS",
+   "game": "POR@MIN / CHA@LAL",
+   "eid": "401910003",
+   "time": "8:00 PM ET",
+   "home": "MIN",
+   "away": "POR",
+   "side": null,
+   "line": null,
+   "price": -196,
+   "reasons": [
+    "Leg 1: Jaden McDaniels 12+ PTS (-433): 86.9% to win. Alt line 12+ PTS at -433: our chance 86.9% vs the book's 81.2% (+6.9% expected value)",
+    "Leg 2: Ziaire Williams 6+ PTS (-439): 95.6% to win. Alt line 6+ PTS at -439: our chance 95.6% vs the book's 81.4% (+17.3% expected value)"
+   ],
+   "p_win": 83.1,
+   "p_model": 83.1,
+   "ev": 25.6,
+   "score": 86.9,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Jaden McDaniels 12+ PTS",
+     "game": "POR@MIN",
+     "eid": "401910003",
+     "time": "8:00 PM ET",
+     "home": "MIN",
+     "away": "POR",
+     "side": "Over",
+     "line": 11.5,
+     "price": -433,
+     "model": 16.6,
+     "chart": {
+      "vals": [
+       19.0,
+       23.0,
+       19.0,
+       13.0,
+       14.0,
+       23.0,
+       16.0,
+       16.0,
+       18.0,
+       13.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "GSW",
+       "LAC",
+       "SAS",
+       "MIL",
+       "HOU",
+       "NOP",
+       "UTA",
+       "DAL",
+       "CHI",
+       "POR"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -433: our chance 86.9% vs the book's 81.2% (+6.9% expected value)",
+      "Cleared 12+ in 14 of his last 14 games",
+      "We project 16.6 PTS (DraftKings main line 16.5)"
+     ],
+     "p_win": 86.9,
+     "p_model": 86.9,
+     "ev": 6.9,
+     "score": 86.9,
+     "player": "Jaden McDaniels",
+     "team": "MIN",
+     "stat": "PTS"
+    },
+    {
+     "type": "Prop",
+     "label": "Ziaire Williams 6+ PTS",
+     "game": "CHA@LAL",
+     "eid": "401910005",
+     "time": "11:00 PM ET",
+     "home": "LAL",
+     "away": "CHA",
+     "side": "Over",
+     "line": 5.5,
+     "price": -439,
+     "model": 10.7,
+     "chart": {
+      "vals": [
+       14.0,
+       11.0,
+       11.0,
+       9.0,
+       10.0,
+       8.0,
+       17.0,
+       12.0,
+       9.0,
+       6.0
+      ],
+      "line": 5.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "LAC",
+       "UTA",
+       "POR",
+       "MIA",
+       "SAC",
+       "POR",
+       "DET",
+       "ATL",
+       "MIL",
+       "PHX"
+      ]
+     },
+     "reasons": [
+      "Alt line 6+ PTS at -439: our chance 95.6% vs the book's 81.4% (+17.3% expected value)",
+      "Cleared 6+ in 11 of his last 11 games",
+      "We project 10.7 PTS (DraftKings main line 9.5)"
+     ],
+     "p_win": 95.6,
+     "p_model": 95.6,
+     "ev": 17.3,
+     "score": 95.6,
+     "player": "Ziaire Williams",
+     "team": "LAL",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-17",
+   "attempt": 2,
+   "day": 2,
+   "stake": 15.46,
+   "to_win": 7.89,
+   "picked_at": "2026-11-17 11:51 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 83% to hit by our numbers (83% trusting only half our edge) at -196. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
    "type": "Prop",
    "label": "Davion Mitchell 12+ PTS",
    "game": "HOU@MIA",

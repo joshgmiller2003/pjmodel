@@ -2,6 +2,97 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-17",
+   "eid": "401910002",
+   "game": "NYK@TOR",
+   "time": "7:30 PM ET",
+   "home": "TOR",
+   "away": "NYK",
+   "type": "Prop",
+   "player": "Jalen Brunson",
+   "team": "NYK",
+   "stat": "3PM",
+   "side": "Over",
+   "line": 2.5,
+   "price": 122,
+   "model": 3.3,
+   "edge": 0.8,
+   "edge_pct": 32.0,
+   "label": "Jalen Brunson Over 2.5 3PM",
+   "best": null,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     8,
+     13
+    ]
+   },
+   "chart": {
+    "vals": [
+     0.0,
+     6.0,
+     3.0,
+     4.0,
+     5.0,
+     3.0,
+     1.0,
+     3.0,
+     4.0,
+     3.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "3PM",
+    "opps": [
+     "DET",
+     "CHI",
+     "PHI",
+     "BKN",
+     "CHI",
+     "CLE",
+     "MIL",
+     "CLE",
+     "IND",
+     "TOR"
+    ]
+   },
+   "score": 86.5,
+   "reasons": [
+    "Model projects 3.3 3PM vs a line of 2.5 (+0.8, 32% edge)",
+    "Honest win chance 51% vs 45% implied by +122: +13.2% expected value (raw model said 63%)",
+    "Went over the line in 8 of his last 10 games (4/5 in the last 5)",
+    "Averaging 2.8 over the last 5 and 2.8 over the last 13",
+    "Minutes steady: 35 per game over the last 5 (34 over the last 13)",
+    "Matchup vs TOR: neutral for 3PM (defense and pace about league average)",
+    "TOR ranks among the middle-10 defenses for 3PM; he went over 2.5 in 6 of 8 games against that tier",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 58,
+   "p_model": 64.1,
+   "p_win_raw": 63.0,
+   "p_win": 51.0,
+   "ev": 13.2,
+   "picked_at": "2026-11-17 11:51 AM ET",
+   "open_line": 2.5,
+   "open_price": 122,
+   "close_line": 2.5,
+   "close_price": 122,
+   "close_at": "2026-11-17 11:51 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-16",
    "eid": "401910000",
    "game": "GSW@NOP",
