@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T23:46:54Z",
+ "generated_at": "2026-11-18T00:13:11Z",
  "season": "2026-27",
  "games": [
   {
@@ -224,19 +224,19 @@
     "ml_away": 0.29
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-12.5",
+    "total": 236.5,
+    "ml_away": "+539",
+    "ml_home": "-770"
    },
    "status": "Upcoming",
    "rest": {
     "away": 2,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -5.8,
+   "total_edge": -6.0,
+   "note": "Model MIA -6.7, total 230.5; leans MIL vs the market spread."
   },
   {
    "id": "PHI@ORL",
@@ -251,19 +251,19 @@
     "ml_away": 0.49
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+1.5",
+    "total": 223.5,
+    "ml_away": "-122",
+    "ml_home": "+103"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 1.9,
+   "total_edge": 1.3,
+   "note": "Model ORL -0.4, total 224.8; leans ORL vs the market spread."
   },
   {
    "id": "CHI@BKN",
@@ -278,19 +278,19 @@
     "ml_away": 0.38
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-2.5",
+    "total": 237.5,
+    "ml_away": "+128",
+    "ml_home": "-152"
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 1.2,
+   "total_edge": -5.4,
+   "note": "Model BKN -3.7, total 232.1; leans BKN vs the market spread."
   },
   {
    "id": "WAS@TOR",
@@ -29496,17 +29496,17 @@
    "game": "DET@NOP"
   },
   {
-   "player": "Jaylin Williams",
-   "team": "OKC",
-   "status": "Out",
-   "reason": "Back",
-   "game": "ATL@OKC"
-  },
-  {
    "player": "Thomas Sorber",
    "team": "OKC",
    "status": "Out",
    "reason": "Knee",
+   "game": "ATL@OKC"
+  },
+  {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Back",
    "game": "ATL@OKC"
   },
   {
@@ -29762,7 +29762,7 @@
    "game": "WAS@TOR"
   }
  ],
- "injuries_updated": "11/17 06:46 PM ET",
+ "injuries_updated": "11/17 07:13 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 0.47,
@@ -31744,351 +31744,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-06T20:29",
-   "games": [
-    {
-     "id": "WAS@ATL",
-     "matchup": "WAS @ ATL",
-     "model_spread": -3.1,
-     "model_total": 225.1,
-     "dk_spread": "-8.5",
-     "dk_total": 227.5
-    },
-    {
-     "id": "BOS@CHA",
-     "matchup": "BOS @ CHA",
-     "model_spread": 2.1,
-     "model_total": 220.6,
-     "dk_spread": "+10.5",
-     "dk_total": 207.5
-    },
-    {
-     "id": "PHI@CLE",
-     "matchup": "PHI @ CLE",
-     "model_spread": -1.3,
-     "model_total": 226.4,
-     "dk_spread": "+2.5",
-     "dk_total": 231.5
-    },
-    {
-     "id": "UTA@DAL",
-     "matchup": "UTA @ DAL",
-     "model_spread": -5.1,
-     "model_total": 226.2,
-     "dk_spread": "-6.5",
-     "dk_total": 225.5
-    },
-    {
-     "id": "OKC@MEM",
-     "matchup": "OKC @ MEM",
-     "model_spread": -4.7,
-     "model_total": 225.6,
-     "dk_spread": "+4.5",
-     "dk_total": 224.5
-    },
-    {
-     "id": "TOR@MIL",
-     "matchup": "TOR @ MIL",
-     "model_spread": 1.9,
-     "model_total": 229.3,
-     "dk_spread": "+4.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "MIN@NOP",
-     "matchup": "MIN @ NOP",
-     "model_spread": 0.1,
-     "model_total": 230.2,
-     "dk_spread": "+3.5",
-     "dk_total": 230.5
-    },
-    {
-     "id": "POR@LAL",
-     "matchup": "POR @ LAL",
-     "model_spread": -1.8,
-     "model_total": 230.5,
-     "dk_spread": "-3.5",
-     "dk_total": 231.5
-    },
-    {
-     "id": "SAS@SAC",
-     "matchup": "SAS @ SAC",
-     "model_spread": 3.3,
-     "model_total": 227.9,
-     "dk_spread": "+17.5",
-     "dk_total": 231.5
-    },
-    {
-     "id": "DEN@IND",
-     "matchup": "DEN @ IND",
-     "model_spread": -1.3,
-     "model_total": 227.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "BKN@ATL",
-     "matchup": "BKN @ ATL",
-     "model_spread": -4.6,
-     "model_total": 225.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "NYK@CLE",
-     "matchup": "NYK @ CLE",
-     "model_spread": -1.6,
-     "model_total": 226.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "WAS@OKC",
-     "matchup": "WAS @ OKC",
-     "model_spread": -2.6,
-     "model_total": 222.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "ORL@GSW",
-     "matchup": "ORL @ GSW",
-     "model_spread": -5.9,
-     "model_total": 226.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "HOU@PHX",
-     "matchup": "HOU @ PHX",
-     "model_spread": 2.2,
-     "model_total": 228.4,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "SAS@POR",
-     "matchup": "SAS @ POR",
-     "model_spread": -2.8,
-     "model_total": 227.8,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": [
-    {
-     "player": "Ty Jerome",
-     "stat": "PRA",
-     "model": 38.8,
-     "dk": 29.5,
-     "edge": 9.3
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PR",
-     "model": 33.4,
-     "dk": 24.5,
-     "edge": 8.9
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PTS",
-     "model": 29.2,
-     "dk": 20.5,
-     "edge": 8.7
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PA",
-     "model": 34.6,
-     "dk": 26.5,
-     "edge": 8.1
-    },
-    {
-     "player": "Naz Reid",
-     "stat": "PR",
-     "model": 31.3,
-     "dk": 23.5,
-     "edge": 7.8
-    },
-    {
-     "player": "Kyshawn George",
-     "stat": "PRA",
-     "model": 33.0,
-     "dk": 25.5,
-     "edge": 7.5
-    },
-    {
-     "player": "Kyshawn George",
-     "stat": "PA",
-     "model": 27.8,
-     "dk": 20.5,
-     "edge": 7.3
-    },
-    {
-     "player": "Naz Reid",
-     "stat": "PRA",
-     "model": 33.8,
-     "dk": 26.5,
-     "edge": 7.3
-    },
-    {
-     "player": "Kyshawn George",
-     "stat": "PR",
-     "model": 27.2,
-     "dk": 20.5,
-     "edge": 6.7
-    },
-    {
-     "player": "Cedric Coward",
-     "stat": "PRA",
-     "model": 30.0,
-     "dk": 23.5,
-     "edge": 6.5
-    },
-    {
-     "player": "Cedric Coward",
-     "stat": "PR",
-     "model": 26.7,
-     "dk": 20.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Cam Spencer",
-     "stat": "PRA",
-     "model": 21.6,
-     "dk": 15.5,
-     "edge": 6.1
-    },
-    {
-     "player": "Saddiq Bey",
-     "stat": "PTS",
-     "model": 17.5,
-     "dk": 11.5,
-     "edge": 6.0
-    },
-    {
-     "player": "Saddiq Bey",
-     "stat": "PR",
-     "model": 21.4,
-     "dk": 15.5,
-     "edge": 5.9
-    },
-    {
-     "player": "Naz Reid",
-     "stat": "PA",
-     "model": 24.2,
-     "dk": 18.5,
-     "edge": 5.7
-    },
-    {
-     "player": "RJ Barrett",
-     "stat": "PRA",
-     "model": 31.8,
-     "dk": 37.5,
-     "edge": -5.7
-    },
-    {
-     "player": "Collin Murray-Boyles",
-     "stat": "PRA",
-     "model": 16.8,
-     "dk": 22.5,
-     "edge": -5.7
-    },
-    {
-     "player": "Kyshawn George",
-     "stat": "PTS",
-     "model": 22.0,
-     "dk": 16.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Derik Queen",
-     "stat": "PRA",
-     "model": 26.0,
-     "dk": 20.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Saddiq Bey",
-     "stat": "PA",
-     "model": 18.8,
-     "dk": 13.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Saddiq Bey",
-     "stat": "PRA",
-     "model": 22.8,
-     "dk": 17.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Naz Reid",
-     "stat": "PTS",
-     "model": 21.7,
-     "dk": 16.5,
-     "edge": 5.2
-    },
-    {
-     "player": "Grayson Allen",
-     "stat": "PRA",
-     "model": 25.6,
-     "dk": 20.5,
-     "edge": 5.1
-    },
-    {
-     "player": "RJ Barrett",
-     "stat": "PA",
-     "model": 25.4,
-     "dk": 30.5,
-     "edge": -5.1
-    },
-    {
-     "player": "Keyonte George",
-     "stat": "PTS",
-     "model": 25.5,
-     "dk": 20.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Keyonte George",
-     "stat": "PR",
-     "model": 29.5,
-     "dk": 24.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Grayson Allen",
-     "stat": "PA",
-     "model": 22.4,
-     "dk": 17.5,
-     "edge": 4.9
-    },
-    {
-     "player": "Jamal Shead",
-     "stat": "PTS",
-     "model": 5.6,
-     "dk": 10.5,
-     "edge": -4.9
-    },
-    {
-     "player": "Derik Queen",
-     "stat": "PR",
-     "model": 22.4,
-     "dk": 17.5,
-     "edge": 4.9
-    },
-    {
-     "player": "Damian Lillard",
-     "stat": "PRA",
-     "model": 33.4,
-     "dk": 28.5,
-     "edge": 4.9
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-06T21:18",
    "games": [
@@ -49015,6 +48670,359 @@
      "model_total": 232.1,
      "dk_spread": "N/A",
      "dk_total": 0
+    },
+    {
+     "id": "WAS@TOR",
+     "matchup": "WAS @ TOR",
+     "model_spread": -5.2,
+     "model_total": 228.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "DET@NOP",
+     "matchup": "DET @ NOP",
+     "model_spread": 1.6,
+     "model_total": 230.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "ATL@OKC",
+     "matchup": "ATL @ OKC",
+     "model_spread": -3.4,
+     "model_total": 226.9,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "GSW@DAL",
+     "matchup": "GSW @ DAL",
+     "model_spread": -0.7,
+     "model_total": 227.3,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BOS@DEN",
+     "matchup": "BOS @ DEN",
+     "model_spread": 1.2,
+     "model_total": 224.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "UTA@LAL",
+     "matchup": "UTA @ LAL",
+     "model_spread": -8.3,
+     "model_total": 230.0,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "PHX@SAC",
+     "matchup": "PHX @ SAC",
+     "model_spread": 0.8,
+     "model_total": 228.6,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Luka Doncic",
+     "stat": "PRA",
+     "model": 61.0,
+     "dk": 52.5,
+     "edge": 8.5
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PA",
+     "model": 52.8,
+     "dk": 44.5,
+     "edge": 8.3
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PR",
+     "model": 52.6,
+     "dk": 44.5,
+     "edge": 8.1
+    },
+    {
+     "player": "Luka Doncic",
+     "stat": "PTS",
+     "model": 44.5,
+     "dk": 36.5,
+     "edge": 8.0
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 29.2,
+     "dk": 22.5,
+     "edge": 6.7
+    },
+    {
+     "player": "Jamal Shead",
+     "stat": "PA",
+     "model": 16.1,
+     "dk": 10.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PR",
+     "model": 23.1,
+     "dk": 17.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "RA",
+     "model": 17.1,
+     "dk": 11.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "stat": "PRA",
+     "model": 41.3,
+     "dk": 36.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PRA",
+     "model": 44.1,
+     "dk": 39.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Darryn Peterson",
+     "stat": "PRA",
+     "model": 34.1,
+     "dk": 29.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PR",
+     "model": 35.9,
+     "dk": 31.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PTS",
+     "model": 29.8,
+     "dk": 25.5,
+     "edge": 4.3
+    },
+    {
+     "player": "De'Aaron Fox",
+     "stat": "PRA",
+     "model": 18.4,
+     "dk": 22.5,
+     "edge": -4.1
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PRA",
+     "model": 27.5,
+     "dk": 23.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Jakob Poeltl",
+     "stat": "PR",
+     "model": 15.4,
+     "dk": 11.5,
+     "edge": 3.9
+    },
+    {
+     "player": "De'Aaron Fox",
+     "stat": "PA",
+     "model": 14.6,
+     "dk": 18.5,
+     "edge": -3.9
+    },
+    {
+     "player": "Scottie Barnes",
+     "stat": "PR",
+     "model": 31.3,
+     "dk": 27.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PA",
+     "model": 18.3,
+     "dk": 14.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PR",
+     "model": 22.3,
+     "dk": 18.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Ayo Dosunmu",
+     "stat": "PR",
+     "model": 27.2,
+     "dk": 23.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "stat": "PR",
+     "model": 37.1,
+     "dk": 33.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Javonte Green",
+     "stat": "PR",
+     "model": 6.9,
+     "dk": 10.5,
+     "edge": -3.6
+    },
+    {
+     "player": "Ziaire Williams",
+     "stat": "PA",
+     "model": 14.1,
+     "dk": 10.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Ayo Dosunmu",
+     "stat": "PTS",
+     "model": 22.0,
+     "dk": 18.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Ayo Dosunmu",
+     "stat": "PRA",
+     "model": 30.0,
+     "dk": 26.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Cade Cunningham",
+     "stat": "PA",
+     "model": 38.0,
+     "dk": 34.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Darryn Peterson",
+     "stat": "PA",
+     "model": 29.0,
+     "dk": 25.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Darryn Peterson",
+     "stat": "PR",
+     "model": 29.0,
+     "dk": 25.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Landry Shamet",
+     "stat": "PTS",
+     "model": 11.9,
+     "dk": 8.5,
+     "edge": 3.4
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-17T19:13",
+   "games": [
+    {
+     "id": "NYK@TOR",
+     "matchup": "NYK @ TOR",
+     "model_spread": -0.8,
+     "model_total": 223.1,
+     "dk_spread": "+2.5",
+     "dk_total": 215.5
+    },
+    {
+     "id": "POR@MIN",
+     "matchup": "POR @ MIN",
+     "model_spread": -3.9,
+     "model_total": 226.9,
+     "dk_spread": "-2.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "DET@SAS",
+     "matchup": "DET @ SAS",
+     "model_spread": -4.8,
+     "model_total": 226.2,
+     "dk_spread": "-9.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "UTA@LAC",
+     "matchup": "UTA @ LAC",
+     "model_spread": -4.5,
+     "model_total": 227.2,
+     "dk_spread": "-5.5",
+     "dk_total": 226.5
+    },
+    {
+     "id": "CHA@LAL",
+     "matchup": "CHA @ LAL",
+     "model_spread": -8.2,
+     "model_total": 225.0,
+     "dk_spread": "-7.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "MEM@CLE",
+     "matchup": "MEM @ CLE",
+     "model_spread": -0.0,
+     "model_total": 231.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "HOU@IND",
+     "matchup": "HOU @ IND",
+     "model_spread": 1.2,
+     "model_total": 227.2,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "MIL@MIA",
+     "matchup": "MIL @ MIA",
+     "model_spread": -6.7,
+     "model_total": 230.5,
+     "dk_spread": "-12.5",
+     "dk_total": 236.5
+    },
+    {
+     "id": "PHI@ORL",
+     "matchup": "PHI @ ORL",
+     "model_spread": -0.4,
+     "model_total": 224.8,
+     "dk_spread": "+1.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "CHI@BKN",
+     "matchup": "CHI @ BKN",
+     "model_spread": -3.7,
+     "model_total": 232.1,
+     "dk_spread": "-2.5",
+     "dk_total": 237.5
     },
     {
      "id": "WAS@TOR",
@@ -69298,12 +69306,13 @@
    "p_win_raw": 81.9,
    "p_win": 51.6,
    "ev": 2.7,
-   "picked_at": "2026-11-17 06:46 PM ET",
+   "picked_at": "2026-11-17 07:13 PM ET",
    "open_line": 9.5,
    "open_price": -101,
+   "first_picked_at": "2026-11-17 06:46 PM ET",
    "close_line": 9.5,
    "close_price": -101,
-   "close_at": "2026-11-17 06:46 PM ET",
+   "close_at": "2026-11-17 07:13 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
@@ -72348,14 +72357,14 @@
     "day": 2,
     "stake": 20.3,
     "to_win": 23.34,
-    "picked_at": "2026-11-17 06:46 PM ET",
+    "picked_at": "2026-11-17 07:13 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.6% to win, +10.9% expected value",
     "open_line": 5.5,
     "open_price": 115,
     "first_picked_at": "2026-11-17 11:51 AM ET",
     "close_line": 5.5,
     "close_price": 115,
-    "close_at": "2026-11-17 06:46 PM ET",
+    "close_at": "2026-11-17 07:13 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -73788,7 +73797,7 @@
     "day": 2,
     "stake": 15.46,
     "to_win": 7.89,
-    "picked_at": "2026-11-17 06:46 PM ET",
+    "picked_at": "2026-11-17 07:13 PM ET",
     "why_ladder": "2-leg alt-line parlay, every leg from a different game: 83% to hit by our numbers (83% trusting only half our edge) at -196. The most likely winner on today's alt lines at a ladder price",
     "first_picked_at": "2026-11-17 11:51 AM ET"
    },
@@ -79249,7 +79258,7 @@
   "remaining": 10679,
   "allowed_now": 127,
   "skipped": [],
-  "slot": "pretip",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "11:51 AM",
@@ -79355,7 +79364,7 @@
   "history": [
    {
     "date": "2026-11-17",
-    "used": 56,
+    "used": 99,
     "limit": 250
    },
    {
@@ -79729,7 +79738,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 7.6 REB vs a line of 9.5 (-1.9, 20% edge) | Honest win chance 51.6% vs 50% implied by -101: +2.7% expected value (raw model said 81.9%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 5.0 over the last 5 and 5.8 over the last 10 | Minutes steady: 22 per game over the last 5 (20 over the last 10) | Matchup vs LAC: +2.6% to his REB projection from their defense and pace (works against the under) | LAC ranks among the middle-10 defenses for REB; he went under 9.5 in 4 of 5 games against that tier | Teammate injury boost: Jaxson Hayes, Lauri Markkanen out, +20% to his REB projection (extra minutes and usage) | Not on the injury report at pick time",
-    "picked_at": "2026-11-17 06:46 PM ET",
+    "picked_at": "2026-11-17 07:13 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -79777,7 +79786,7 @@
     "actual": null,
     "units": null,
     "why": "Highest win chance on the board at a ladder-friendly price: 51.6% to win, +10.9% expected value | Model projects 6.9 REB vs a line of 5.5 (+1.4, 25% edge) | Went over the line in 7 of his last 10 games (3/5 in the last 5) | Averaging 6.4 over the last 5 and 5.9 over the last 14 | Minutes steady: 27 per game over the last 5 (24 over the last 14) | Matchup vs DET: +5.9% to his REB projection from their defense and pace (helps the over) | DET ranks among the bottom-10 defenses for REB; he went over 5.5 in 1 of 3 games against that tier | Best price: +128 at FanDuel (DraftKings +115; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-17 06:46 PM ET",
+    "picked_at": "2026-11-17 07:13 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -79825,7 +79834,7 @@
     "actual": null,
     "units": null,
     "why": "2-leg alt-line parlay, every leg from a different game: 83% to hit by our numbers (83% trusting only half our edge) at -196. The most likely winner on today's alt lines at a ladder price | Leg 1: Jaden McDaniels 12+ PTS (-433): 86.9% to win. Alt line 12+ PTS at -433: our chance 86.9% vs the book's 81.2% (+6.9% expected value) | Leg 2: Ziaire Williams 6+ PTS (-439): 95.6% to win. Alt line 6+ PTS at -439: our chance 95.6% vs the book's 81.4% (+17.3% expected value)",
-    "picked_at": "2026-11-17 06:46 PM ET",
+    "picked_at": "2026-11-17 07:13 PM ET",
     "graded_at": null,
     "clv": null,
     "open": [
