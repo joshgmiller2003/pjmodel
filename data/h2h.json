@@ -10218,5 +10218,58 @@
 "Darius Acuff Jr.|PHX":{
 "date":"2026-11-18",
 "games":[]
+},
+"De'Anthony Melton|DAL":{
+"date":"2026-11-18",
+"games":[
+{
+"date":"2026-03-23",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":23.0,
+"pts":0.0,
+"reb":6.0,
+"ast":5.0,
+"stl":3.0,
+"blk":0.0,
+"tpm":0.0
+},
+{
+"date":"2026-01-22",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":23.0,
+"pts":22.0,
+"reb":3.0,
+"ast":2.0,
+"stl":2.0,
+"blk":1.0,
+"tpm":1.0
+},
+{
+"date":"2025-12-25",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":24.0,
+"pts":16.0,
+"reb":3.0,
+"ast":3.0,
+"stl":1.0,
+"blk":1.0,
+"tpm":2.0
+},
+{
+"date":"2024-11-12",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":26.0,
+"pts":14.0,
+"reb":4.0,
+"ast":4.0,
+"stl":1.0,
+"blk":0.0,
+"tpm":2.0
+}
+]
 }
 }
