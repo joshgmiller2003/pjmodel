@@ -1,9 +1,146 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 2,
- "bankroll": 15.46,
+ "attempt": 3,
+ "bankroll": 10.0,
  "steps": [
+  {
+   "type": "Parlay",
+   "label": "Davion Mitchell 10+ PTS + Kyshawn George 12+ PTS",
+   "game": "MIL@MIA / WAS@TOR",
+   "eid": "401910009",
+   "time": "7:00 PM ET",
+   "home": "MIA",
+   "away": "MIL",
+   "side": null,
+   "line": null,
+   "price": -137,
+   "reasons": [
+    "Leg 1: Davion Mitchell 10+ PTS (-440): 90.4% to win. Alt line 10+ PTS at -440: our chance 90.4% vs the book's 81.5% (+11% expected value)",
+    "Leg 2: Kyshawn George 12+ PTS (-244): 71.7% to win. Alt line 12+ PTS at -244: our chance 71.7% vs the book's 70.9% (+1.1% expected value)"
+   ],
+   "p_win": 64.8,
+   "p_model": 64.8,
+   "ev": 12.1,
+   "score": 71.7,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Davion Mitchell 10+ PTS",
+     "game": "MIL@MIA",
+     "eid": "401910009",
+     "time": "7:00 PM ET",
+     "home": "MIA",
+     "away": "MIL",
+     "side": "Over",
+     "line": 9.5,
+     "price": -440,
+     "model": 15.2,
+     "chart": {
+      "vals": [
+       10.0,
+       15.0,
+       15.0,
+       11.0,
+       22.0,
+       17.0,
+       19.0,
+       22.0,
+       15.0,
+       16.0
+      ],
+      "line": 9.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "ATL",
+       "IND",
+       "LAL",
+       "LAC",
+       "GSW",
+       "SAC",
+       "UTA",
+       "CLE",
+       "DET",
+       "HOU"
+      ]
+     },
+     "reasons": [
+      "Alt line 10+ PTS at -440: our chance 90.4% vs the book's 81.5% (+11% expected value)",
+      "Cleared 10+ in 14 of his last 14 games",
+      "We project 15.2 PTS (DraftKings main line 14.5)"
+     ],
+     "p_win": 90.4,
+     "p_model": 90.4,
+     "ev": 11.0,
+     "score": 90.4,
+     "player": "Davion Mitchell",
+     "team": "MIA",
+     "stat": "PTS"
+    },
+    {
+     "type": "Prop",
+     "label": "Kyshawn George 12+ PTS",
+     "game": "WAS@TOR",
+     "eid": "401910012",
+     "time": "7:30 PM ET",
+     "home": "TOR",
+     "away": "WAS",
+     "side": "Over",
+     "line": 11.5,
+     "price": -244,
+     "model": 16.4,
+     "chart": {
+      "vals": [
+       12.0,
+       22.0,
+       25.0,
+       33.0,
+       14.0,
+       12.0,
+       25.0,
+       14.0,
+       11.0,
+       18.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "CHA",
+       "ORL",
+       "ATL",
+       "ATL",
+       "OKC",
+       "DET",
+       "IND",
+       "DET",
+       "HOU",
+       "MEM"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -244: our chance 71.7% vs the book's 70.9% (+1.1% expected value)",
+      "Cleared 12+ in 12 of his last 15 games",
+      "We project 16.4 PTS (DraftKings main line 14.5)"
+     ],
+     "p_win": 71.7,
+     "p_model": 71.7,
+     "ev": 1.1,
+     "score": 71.7,
+     "player": "Kyshawn George",
+     "team": "WAS",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-18",
+   "attempt": 3,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 7.3,
+   "picked_at": "2026-11-18 11:52 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 65% to hit by our numbers (65% trusting only half our edge) at -137. The most likely winner on today's alt lines at a ladder price"
+  },
   {
    "type": "Parlay",
    "label": "Jaden McDaniels 12+ PTS + Ziaire Williams 6+ PTS",
@@ -134,7 +271,11 @@
      "score": 95.6,
      "player": "Ziaire Williams",
      "team": "LAL",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "L",
+     "actual": "0 PTS",
+     "units": -1.0,
+     "graded_at": "2026-11-18 11:52 AM ET"
     }
    ],
    "date": "2026-11-17",
@@ -145,7 +286,12 @@
    "picked_at": "2026-11-17 07:13 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 83% to hit by our numbers (83% trusting only half our edge) at -196. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-17 11:51 AM ET",
-   "locked_at": "2026-11-17 08:48 PM ET"
+   "locked_at": "2026-11-17 08:48 PM ET",
+   "result": "L",
+   "actual": "Jaden McDaniels 12+ PTS: 22 PTS \u2713 \u00b7 Ziaire Williams 6+ PTS: 0 PTS \u2717",
+   "graded_at": "2026-11-18 11:52 AM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Prop",
@@ -1251,6 +1397,14 @@
  ],
  "attempts": [
   {
+   "attempt": 2,
+   "start": "2026-11-16",
+   "end": "2026-11-17",
+   "days": 2,
+   "peak": 15.46,
+   "result": "Busted"
+  },
+  {
    "attempt": 1,
    "start": "2026-11-08",
    "end": "2026-11-15",
@@ -1259,5 +1413,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": "2026-11-16"
+ "attempt_started": "2026-11-18"
 }

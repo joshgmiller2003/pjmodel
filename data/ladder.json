@@ -6,6 +6,103 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Tristan da Silva Over 2.5 3PM",
+   "game": "PHI@ORL",
+   "eid": "401910010",
+   "time": "7:00 PM ET",
+   "home": "ORL",
+   "away": "PHI",
+   "side": "Over",
+   "line": 2.5,
+   "price": 117,
+   "model": 3.5,
+   "edge": 1.0,
+   "edge_pct": 40.0,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     7,
+     11
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     5.0,
+     4.0,
+     2.0,
+     5.0,
+     2.0,
+     4.0,
+     5.0,
+     2.0,
+     3.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "3PM",
+    "opps": [
+     "MIN",
+     "NYK",
+     "TOR",
+     "TOR",
+     "BOS",
+     "WAS",
+     "PHX",
+     "GSW",
+     "MIL",
+     "BOS"
+    ]
+   },
+   "reasons": [
+    "Model projects 3.5 3PM vs a line of 2.5 (+1, 40% edge)",
+    "Went over the line in 6 of his last 10 games (3/5 in the last 5)",
+    "Averaging 3.2 over the last 5 and 3.4 over the last 11",
+    "Minutes steady: 33 per game over the last 5 (31 over the last 11)",
+    "Matchup vs PHI: +2.1% to his 3PM projection from their defense and pace (helps the over)",
+    "PHI ranks among the bottom-10 defenses for 3PM; he went over 2.5 in 4 of 6 games against that tier",
+    "Best price: +130 at Bally Bet (DraftKings +117; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 51.5,
+   "p_model": 67.9,
+   "ev": 11.8,
+   "score": 78.5,
+   "best": [
+    130,
+    "ballybet"
+   ],
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "stat": "3PM",
+   "date": "2026-11-18",
+   "attempt": 6,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 11.7,
+   "picked_at": "2026-11-18 11:52 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +11.8% expected value",
+   "open_line": 2.5,
+   "open_price": 117,
+   "close_line": 2.5,
+   "close_price": 117,
+   "close_at": "2026-11-18 11:52 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Keldon Johnson Over 5.5 REB",
    "game": "DET@SAS",
    "eid": "401910004",
@@ -1424,5 +1521,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-18"
 }

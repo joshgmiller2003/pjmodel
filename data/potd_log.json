@@ -8,26 +8,26 @@
    "time": "7:00 PM ET",
    "home": "CLE",
    "away": "MEM",
-   "type": "Moneyline",
+   "type": "Spread",
    "team": "MEM",
-   "side": "Win",
-   "line": 0,
-   "price": 171,
-   "model": 50.0,
-   "edge": 13.1,
+   "side": "Cover",
+   "line": 4.5,
+   "price": -104,
+   "model": 0.0,
+   "edge": 4.5,
    "edge_pct": null,
-   "label": "MEM ML",
+   "label": "MEM +4.5",
    "hits": {
     "l5": [
      4,
      5
     ],
     "l10": [
-     6,
+     8,
      10
     ],
     "l15": [
-     10,
+     12,
      14
     ]
    },
@@ -44,28 +44,28 @@
      19,
      16
     ],
-    "line": 0,
+    "line": -4.5,
     "side": "Over",
     "label": "MEM margin"
    },
-   "score": 82.3,
+   "score": 89.8,
    "reasons": [
-    "Model gives MEM a 50% chance to win; +171 implies 37% (13.1-point edge)",
-    "Honest win chance 49.3% vs 37% implied by +171: +33.6% expected value (raw model said 54%)",
-    "Expected value: +35.5% per unit at +171",
-    "MEM won 6 of their last 10 (4/5 in the last 5)"
+    "Model has MEM losing by 0.0; the line is MEM +4.5 (4.5-point edge)",
+    "Honest win chance 51.5% vs 51% implied by -104: +1% expected value (raw model said 70.8%)",
+    "MEM would have covered +4.5 in 8 of their last 10 games (4/5 in the last 5)",
+    "MEM average margin: +15.4 over the last 5, +9.4 over the last 14"
    ],
-   "candidates_considered": 3,
-   "p_model": 50.0,
-   "p_win_raw": 54.0,
-   "p_win": 49.3,
-   "ev": 33.6,
-   "picked_at": "2026-11-18 01:53 AM ET",
-   "open_line": 0,
-   "open_price": 171,
-   "close_line": 0,
-   "close_price": 171,
-   "close_at": "2026-11-18 01:53 AM ET",
+   "candidates_considered": 155,
+   "p_model": 64.6,
+   "p_win_raw": 70.8,
+   "p_win": 51.5,
+   "ev": 1.0,
+   "picked_at": "2026-11-18 11:52 AM ET",
+   "open_line": 4.5,
+   "open_price": -104,
+   "close_line": 4.5,
+   "close_price": -104,
+   "close_at": "2026-11-18 11:52 AM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
