@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-17 07:13 PM ET",
+ "updated": "2026-11-17 08:48 PM ET",
  "count": 3799,
  "bets": [
   {
@@ -29,7 +29,7 @@
    "actual": null,
    "units": null,
    "why": "Model projects 7.6 REB vs a line of 9.5 (-1.9, 20% edge) | Honest win chance 51.6% vs 50% implied by -101: +2.7% expected value (raw model said 81.9%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 5.0 over the last 5 and 5.8 over the last 10 | Minutes steady: 22 per game over the last 5 (20 over the last 10) | Matchup vs LAC: +2.6% to his REB projection from their defense and pace (works against the under) | LAC ranks among the middle-10 defenses for REB; he went under 9.5 in 4 of 5 games against that tier | Teammate injury boost: Jaxson Hayes, Lauri Markkanen out, +20% to his REB projection (extra minutes and usage) | Not on the injury report at pick time",
-   "picked_at": "2026-11-17 07:13 PM ET",
+   "picked_at": "2026-11-17 08:48 PM ET",
    "graded_at": null,
    "clv": {
     "line": 0.0,
@@ -83,7 +83,7 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     5.5,
