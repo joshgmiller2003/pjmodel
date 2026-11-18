@@ -76,7 +76,11 @@
      "score": 86.9,
      "player": "Jaden McDaniels",
      "team": "MIN",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "22 PTS",
+     "units": 0.23,
+     "graded_at": "2026-11-18 01:53 AM ET"
     },
     {
      "type": "Prop",

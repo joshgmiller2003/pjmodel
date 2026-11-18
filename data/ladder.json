@@ -1,8 +1,8 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 5,
- "bankroll": 20.3,
+ "attempt": 6,
+ "bankroll": 10.0,
  "steps": [
   {
    "type": "Prop",
@@ -101,7 +101,13 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-17 08:48 PM ET"
+   "locked_at": "2026-11-17 08:48 PM ET",
+   "result": "L",
+   "actual": "2 REB",
+   "units": -1.0,
+   "graded_at": "2026-11-18 01:53 AM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Prop",
@@ -1378,6 +1384,14 @@
  ],
  "attempts": [
   {
+   "attempt": 5,
+   "start": "2026-11-16",
+   "end": "2026-11-17",
+   "days": 2,
+   "peak": 20.3,
+   "result": "Busted"
+  },
+  {
    "attempt": 4,
    "start": "2026-11-10",
    "end": "2026-11-15",
@@ -1410,5 +1424,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": "2026-11-16"
+ "attempt_started": null
 }

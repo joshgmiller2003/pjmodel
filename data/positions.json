@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-17",
+"updated":"2026-11-18",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -260,6 +260,7 @@
 "John Tonje":"F",
 "Johni Broome":"F",
 "Johnny Furphy":"G",
+"Jonas Aidoo":"C",
 "Jonathan Isaac":"F",
 "Jonathan Kuminga":"F",
 "Jonathan Mogbo":"F",
@@ -793,6 +794,7 @@
 "John Tonje":"4593043",
 "Johni Broome":"4433569",
 "Johnny Furphy":"5157066",
+"Jonas Aidoo":"4684682",
 "Jonathan Isaac":"4065654",
 "Jonathan Kuminga":"4433247",
 "Jonathan Mogbo":"5107897",

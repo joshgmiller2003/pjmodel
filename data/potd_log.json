@@ -2,6 +2,78 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-18",
+   "eid": "401910007",
+   "game": "MEM@CLE",
+   "time": "7:00 PM ET",
+   "home": "CLE",
+   "away": "MEM",
+   "type": "Moneyline",
+   "team": "MEM",
+   "side": "Win",
+   "line": 0,
+   "price": 171,
+   "model": 50.0,
+   "edge": 13.1,
+   "edge_pct": null,
+   "label": "MEM ML",
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     10,
+     14
+    ]
+   },
+   "chart": {
+    "vals": [
+     21,
+     31,
+     -1,
+     -4,
+     -31,
+     16,
+     -5,
+     31,
+     19,
+     16
+    ],
+    "line": 0,
+    "side": "Over",
+    "label": "MEM margin"
+   },
+   "score": 82.3,
+   "reasons": [
+    "Model gives MEM a 50% chance to win; +171 implies 37% (13.1-point edge)",
+    "Honest win chance 49.3% vs 37% implied by +171: +33.6% expected value (raw model said 54%)",
+    "Expected value: +35.5% per unit at +171",
+    "MEM won 6 of their last 10 (4/5 in the last 5)"
+   ],
+   "candidates_considered": 3,
+   "p_model": 50.0,
+   "p_win_raw": 54.0,
+   "p_win": 49.3,
+   "ev": 33.6,
+   "picked_at": "2026-11-18 01:53 AM ET",
+   "open_line": 0,
+   "open_price": 171,
+   "close_line": 0,
+   "close_price": 171,
+   "close_at": "2026-11-18 01:53 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-17",
    "eid": "401910006",
    "game": "UTA@LAC",
@@ -91,8 +163,12 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "10 REB",
+   "units": -1.0,
+   "graded_at": "2026-11-18 01:53 AM ET"
   },
   {
    "date": "2026-11-16",

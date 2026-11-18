@@ -227,7 +227,13 @@
     ]
    ],
    "saved_at": "2026-11-17 11:51 AM ET",
-   "updated_at": "2026-11-17 07:13 PM ET"
+   "updated_at": "2026-11-17 07:13 PM ET",
+   "value": 6.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "6 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-18 01:53 AM ET"
   },
   {
    "id": "2026-11-17|Scottie Barnes|PTS",
@@ -869,7 +875,13 @@
     ]
    ],
    "saved_at": "2026-11-17 11:51 AM ET",
-   "updated_at": "2026-11-17 07:13 PM ET"
+   "updated_at": "2026-11-17 07:13 PM ET",
+   "value": 4.0,
+   "hit": 1,
+   "units": 0.45,
+   "result": "W",
+   "actual": "4 AST \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 01:53 AM ET"
   },
   {
    "id": "2026-11-17|Jaden McDaniels|REB",
@@ -938,7 +950,13 @@
     ]
    ],
    "saved_at": "2026-11-17 11:51 AM ET",
-   "updated_at": "2026-11-17 07:13 PM ET"
+   "updated_at": "2026-11-17 07:13 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 0.48,
+   "result": "W",
+   "actual": "5 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 01:53 AM ET"
   },
   {
    "id": "2026-11-17|Grayson Allen|PTS",
