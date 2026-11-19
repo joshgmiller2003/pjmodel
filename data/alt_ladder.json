@@ -5,6 +5,67 @@
  "bankroll": 17.3,
  "steps": [
   {
+   "type": "Prop",
+   "label": "Jaden McDaniels 3+ AST",
+   "game": "NYK@MIN",
+   "eid": "401910021",
+   "time": "8:00 PM ET",
+   "home": "MIN",
+   "away": "NYK",
+   "side": "Over",
+   "line": 2.5,
+   "price": -196,
+   "model": 3.9,
+   "chart": {
+    "vals": [
+     7.0,
+     3.0,
+     3.0,
+     4.0,
+     5.0,
+     3.0,
+     3.0,
+     6.0,
+     3.0,
+     4.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "AST",
+    "opps": [
+     "LAC",
+     "SAS",
+     "MIL",
+     "HOU",
+     "NOP",
+     "UTA",
+     "DAL",
+     "CHI",
+     "POR",
+     "POR"
+    ]
+   },
+   "reasons": [
+    "Alt line 3+ AST at -196: our chance 71.6% vs the book's 66.2% (+8.1% expected value)",
+    "Cleared 3+ in 14 of his last 15 games",
+    "We project 3.9 AST (DraftKings main line 3.5)"
+   ],
+   "p_win": 71.6,
+   "p_model": 71.6,
+   "ev": 8.1,
+   "score": 71.6,
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "AST",
+   "date": "2026-11-19",
+   "attempt": 3,
+   "day": 2,
+   "stake": 17.3,
+   "to_win": 8.83,
+   "picked_at": "2026-11-19 11:54 AM ET",
+   "why_ladder": "Single alt line: 71.6% to hit by our numbers (72% trusting only half our edge) at -196, +8.1% expected value. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
    "type": "Parlay",
    "label": "Davion Mitchell 10+ PTS + Kyshawn George 12+ PTS",
    "game": "MIL@MIA / WAS@TOR",

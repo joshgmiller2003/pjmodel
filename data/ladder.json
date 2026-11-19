@@ -6,6 +6,104 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Keldon Johnson Over 7.5 RA",
+   "game": "LAC@SAS",
+   "eid": "401910022",
+   "time": "8:00 PM ET",
+   "home": "SAS",
+   "away": "LAC",
+   "side": "Over",
+   "line": 7.5,
+   "price": 107,
+   "model": 9.3,
+   "edge": 1.8,
+   "edge_pct": 24.0,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     9,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     6.0,
+     8.0,
+     7.0,
+     12.0,
+     11.0,
+     8.0,
+     10.0,
+     8.0,
+     12.0,
+     3.0
+    ],
+    "line": 7.5,
+    "side": "Over",
+    "label": "RA",
+    "opps": [
+     "MIN",
+     "UTA",
+     "DAL",
+     "SAC",
+     "POR",
+     "PHX",
+     "CHI",
+     "GSW",
+     "UTA",
+     "DET"
+    ]
+   },
+   "reasons": [
+    "Model projects 9.3 RA vs a line of 7.5 (+1.8, 24% edge)",
+    "Went over the line in 7 of his last 10 games (4/5 in the last 5)",
+    "Averaging 8.2 over the last 5 and 7.9 over the last 15",
+    "Minutes steady: 25 per game over the last 5 (24 over the last 15)",
+    "Matchup vs LAC: +1.7% to his RA projection from their defense and pace (helps the over)",
+    "LAC ranks among the middle-10 defenses for RA; he went over 7.5 in 2 of 4 games against that tier",
+    "Teammate injury boost: Dylan Harper out, +10.5% to his RA projection (extra minutes and usage)",
+    "Best price: +110 at Hard Rock (DraftKings +107; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 51.1,
+   "p_model": 73.7,
+   "ev": 5.8,
+   "score": 81.7,
+   "best": [
+    110,
+    "hardrockbet"
+   ],
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "stat": "RA",
+   "date": "2026-11-19",
+   "attempt": 7,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 10.7,
+   "picked_at": "2026-11-19 11:54 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.1% to win, +5.8% expected value",
+   "open_line": 7.5,
+   "open_price": 107,
+   "close_line": 7.5,
+   "close_price": 107,
+   "close_at": "2026-11-19 11:54 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Tristan da Silva Over 2.5 3PM",
    "game": "PHI@ORL",
    "eid": "401910010",
@@ -1537,5 +1635,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-19"
 }
