@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 3,
- "bankroll": 10.0,
+ "bankroll": 17.3,
  "steps": [
   {
    "type": "Parlay",
@@ -76,7 +76,11 @@
      "score": 90.4,
      "player": "Davion Mitchell",
      "team": "MIA",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "24 PTS",
+     "units": 0.23,
+     "graded_at": "2026-11-18 10:18 PM ET"
     },
     {
      "type": "Prop",
@@ -130,7 +134,11 @@
      "score": 71.7,
      "player": "Kyshawn George",
      "team": "WAS",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "20 PTS",
+     "units": 0.41,
+     "graded_at": "2026-11-18 10:18 PM ET"
     }
    ],
    "date": "2026-11-18",
@@ -141,7 +149,12 @@
    "picked_at": "2026-11-18 07:15 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 65% to hit by our numbers (65% trusting only half our edge) at -137. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-18 11:52 AM ET",
-   "locked_at": "2026-11-18 08:45 PM ET"
+   "locked_at": "2026-11-18 08:45 PM ET",
+   "result": "W",
+   "actual": "Davion Mitchell 10+ PTS: 24 PTS \u2713 \u00b7 Kyshawn George 12+ PTS: 20 PTS \u2713",
+   "graded_at": "2026-11-18 10:18 PM ET",
+   "applied": true,
+   "bankroll_after": 17.3
   },
   {
    "type": "Parlay",

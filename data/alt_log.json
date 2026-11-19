@@ -182,7 +182,12 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Pelle Larsson|PTS",
@@ -251,7 +256,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 4.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "4 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Myles Turner|REB",
@@ -320,7 +331,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 0.52,
+   "result": "W",
+   "actual": "5 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Kyshawn George|PTS",
@@ -396,7 +413,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 20.0,
+   "hit": 3,
+   "units": 1.28,
+   "result": "W",
+   "actual": "20 PTS \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Dillon Brooks|3PM",
@@ -578,7 +601,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 24.0,
+   "hit": 1,
+   "units": 0.42,
+   "result": "W",
+   "actual": "24 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Bilal Coulibaly|REB",
@@ -637,7 +666,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 8.0,
+   "hit": 1,
+   "units": 2.2,
+   "result": "W",
+   "actual": "8 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Bam Adebayo|PTS",
@@ -696,7 +731,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 26.0,
+   "hit": 1,
+   "units": 4.62,
+   "result": "W",
+   "actual": "26 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Anthony Davis|PTS",
@@ -766,7 +807,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 25.0,
+   "hit": 1,
+   "units": 0.48,
+   "result": "W",
+   "actual": "25 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Alex Sarr|PTS",
@@ -831,7 +878,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 13.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "13 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-18|Alex Sarr|REB",
@@ -916,7 +969,13 @@
     ]
    ],
    "saved_at": "2026-11-18 11:52 AM ET",
-   "updated_at": "2026-11-18 07:15 PM ET"
+   "updated_at": "2026-11-18 07:15 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 REB \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-18 10:18 PM ET"
   },
   {
    "id": "2026-11-17|Ziaire Williams|AST",
