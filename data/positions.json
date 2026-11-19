@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-18",
+"updated":"2026-11-19",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -529,6 +529,7 @@
 "Zach Collins":"F",
 "Zach Edey":"C",
 "Zach LaVine":"G",
+"Zack Austin":"G",
 "Zeke Nnaji":"F",
 "Ziaire Williams":"F",
 "Zion Williamson":"F",
@@ -1063,6 +1064,7 @@
 "Zach Collins":"4066650",
 "Zach Edey":"4600663",
 "Zach LaVine":"3064440",
+"Zack Austin":"4702099",
 "Zeke Nnaji":"4431690",
 "Ziaire Williams":"4433137",
 "Zion Williamson":"4395628",

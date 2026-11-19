@@ -2,6 +2,78 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-19",
+   "eid": "401910021",
+   "game": "NYK@MIN",
+   "time": "8:00 PM ET",
+   "home": "MIN",
+   "away": "NYK",
+   "type": "Moneyline",
+   "team": "MIN",
+   "side": "Win",
+   "line": 0,
+   "price": 105,
+   "model": 62.0,
+   "edge": 13.2,
+   "edge_pct": null,
+   "label": "MIN ML",
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     26,
+     -10,
+     12,
+     10,
+     6,
+     15,
+     39,
+     -11,
+     8,
+     1
+    ],
+    "line": 0,
+    "side": "Over",
+    "label": "MIN margin"
+   },
+   "score": 88.1,
+   "reasons": [
+    "Model gives MIN a 62% chance to win; +105 implies 49% (13.2-point edge)",
+    "Honest win chance 51.1% vs 49% implied by +105: +4.8% expected value (raw model said 69.2%)",
+    "Expected value: +27.1% per unit at +105",
+    "MIN won 8 of their last 10 (4/5 in the last 5)"
+   ],
+   "candidates_considered": 1,
+   "p_model": 62.0,
+   "p_win_raw": 69.2,
+   "p_win": 51.1,
+   "ev": 4.8,
+   "picked_at": "2026-11-19 01:54 AM ET",
+   "open_line": 0,
+   "open_price": 105,
+   "close_line": 0,
+   "close_price": 105,
+   "close_at": "2026-11-19 01:54 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-18",
    "eid": "401910016",
    "game": "GSW@DAL",
@@ -97,7 +169,11 @@
     "beat": false,
     "final": true
    },
-   "locked_at": "2026-11-18 08:45 PM ET"
+   "locked_at": "2026-11-18 08:45 PM ET",
+   "result": "L",
+   "actual": "2 REB",
+   "units": -1.0,
+   "graded_at": "2026-11-19 01:54 AM ET"
   },
   {
    "date": "2026-11-17",
