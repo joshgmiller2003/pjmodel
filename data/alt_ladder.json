@@ -1,8 +1,8 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 3,
- "bankroll": 17.3,
+ "attempt": 4,
+ "bankroll": 10.0,
  "steps": [
   {
    "type": "Prop",
@@ -65,7 +65,13 @@
    "picked_at": "2026-11-19 07:07 PM ET",
    "why_ladder": "Single alt line: 71.6% to hit by our numbers (72% trusting only half our edge) at -196, +8.1% expected value. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-19 11:54 AM ET",
-   "locked_at": "2026-11-19 08:40 PM ET"
+   "locked_at": "2026-11-19 08:40 PM ET",
+   "result": "L",
+   "actual": "1 AST",
+   "units": -1.0,
+   "graded_at": "2026-11-20 01:53 AM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Parlay",
@@ -1475,6 +1481,14 @@
  ],
  "attempts": [
   {
+   "attempt": 3,
+   "start": "2026-11-18",
+   "end": "2026-11-19",
+   "days": 2,
+   "peak": 17.3,
+   "result": "Busted"
+  },
+  {
    "attempt": 2,
    "start": "2026-11-16",
    "end": "2026-11-17",
@@ -1491,5 +1505,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": "2026-11-18"
+ "attempt_started": null
 }
