@@ -2,6 +2,98 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-20",
+   "eid": "401909308",
+   "game": "TOR@DET",
+   "time": "7:30 PM ET",
+   "home": "DET",
+   "away": "TOR",
+   "type": "Prop",
+   "player": "Jamal Shead",
+   "team": "TOR",
+   "stat": "AST",
+   "side": "Over",
+   "line": 5.5,
+   "price": 121,
+   "model": 7.9,
+   "edge": 2.4,
+   "edge_pct": 43.6,
+   "label": "Jamal Shead Over 5.5 AST",
+   "best": null,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     6.0,
+     6.0,
+     6.0,
+     16.0,
+     11.0,
+     6.0,
+     5.0,
+     4.0,
+     6.0,
+     6.0
+    ],
+    "line": 5.5,
+    "side": "Over",
+    "label": "AST",
+    "opps": [
+     "LAL",
+     "LAC",
+     "DEN",
+     "MIL",
+     "MEM",
+     "BOS",
+     "PHI",
+     "NYK",
+     "NYK",
+     "WAS"
+    ]
+   },
+   "score": 84.4,
+   "reasons": [
+    "Model projects 7.9 AST vs a line of 5.5 (+2.4, 44% edge)",
+    "Honest win chance 51.1% vs 45% implied by +121: +12.9% expected value (raw model said 74.6%)",
+    "Went over the line in 8 of his last 10 games (3/5 in the last 5)",
+    "Averaging 5.4 over the last 5 and 6.5 over the last 15",
+    "Minutes steady: 23 per game over the last 5 (24 over the last 15)",
+    "Matchup vs DET: -5.2% to his AST projection from their defense and pace (works against the over)",
+    "DET ranks among the top-10 defenses for AST; he went over 5.5 in 4 of 6 games against that tier",
+    "Teammate injury boost: Collin Murray-Boyles, RJ Barrett out, +19.9% to his AST projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 144,
+   "p_model": 79.9,
+   "p_win_raw": 74.6,
+   "p_win": 51.1,
+   "ev": 12.9,
+   "picked_at": "2026-11-20 11:49 AM ET",
+   "open_line": 5.5,
+   "open_price": 121,
+   "close_line": 5.5,
+   "close_price": 121,
+   "close_at": "2026-11-20 11:49 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-19",
    "eid": "401910020",
    "game": "POR@MIL",

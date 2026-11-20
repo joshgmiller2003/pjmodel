@@ -5,6 +5,143 @@
  "bankroll": 10.0,
  "steps": [
   {
+   "type": "Parlay",
+   "label": "Tristan da Silva 2+ 3PM + Zion Williamson 15+ PTS",
+   "game": "ORL@BKN / NOP@OKC",
+   "eid": "401909306",
+   "time": "7:30 PM ET",
+   "home": "BKN",
+   "away": "ORL",
+   "side": null,
+   "line": null,
+   "price": -133,
+   "reasons": [
+    "Leg 1: Tristan da Silva 2+ 3PM (-255): 72.2% to win. Alt line 2+ 3PM at -255: our chance 72.2% vs the book's 71.8% (+0.5% expected value)",
+    "Leg 2: Zion Williamson 15+ PTS (-387): 85.2% to win. Alt line 15+ PTS at -387: our chance 85.2% vs the book's 79.5% (+7.2% expected value)"
+   ],
+   "p_win": 61.5,
+   "p_model": 61.5,
+   "ev": 7.8,
+   "score": 72.2,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Tristan da Silva 2+ 3PM",
+     "game": "ORL@BKN",
+     "eid": "401909306",
+     "time": "7:30 PM ET",
+     "home": "BKN",
+     "away": "ORL",
+     "side": "Over",
+     "line": 1.5,
+     "price": -255,
+     "model": 2.9,
+     "chart": {
+      "vals": [
+       5.0,
+       4.0,
+       2.0,
+       5.0,
+       2.0,
+       4.0,
+       5.0,
+       2.0,
+       3.0,
+       2.0
+      ],
+      "line": 1.5,
+      "side": "Over",
+      "label": "3PM",
+      "opps": [
+       "NYK",
+       "TOR",
+       "TOR",
+       "BOS",
+       "WAS",
+       "PHX",
+       "GSW",
+       "MIL",
+       "BOS",
+       "PHI"
+      ]
+     },
+     "reasons": [
+      "Alt line 2+ 3PM at -255: our chance 72.2% vs the book's 71.8% (+0.5% expected value)",
+      "Cleared 2+ in 11 of his last 12 games",
+      "We project 2.9 3PM (DraftKings main line 2.5)"
+     ],
+     "p_win": 72.2,
+     "p_model": 72.2,
+     "ev": 0.5,
+     "score": 72.2,
+     "player": "Tristan da Silva",
+     "team": "ORL",
+     "stat": "3PM"
+    },
+    {
+     "type": "Prop",
+     "label": "Zion Williamson 15+ PTS",
+     "game": "NOP@OKC",
+     "eid": "401909310",
+     "time": "8:00 PM ET",
+     "home": "OKC",
+     "away": "NOP",
+     "side": "Over",
+     "line": 14.5,
+     "price": -387,
+     "model": 21.5,
+     "chart": {
+      "vals": [
+       15.0,
+       25.0,
+       23.0,
+       13.0,
+       25.0,
+       29.0,
+       22.0,
+       24.0,
+       16.0,
+       24.0
+      ],
+      "line": 14.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "ATL",
+       "MEM",
+       "UTA",
+       "MIN",
+       "LAC",
+       "BKN",
+       "MEM",
+       "DEN",
+       "GSW",
+       "DET"
+      ]
+     },
+     "reasons": [
+      "Alt line 15+ PTS at -387: our chance 85.2% vs the book's 79.5% (+7.2% expected value)",
+      "Cleared 15+ in 14 of his last 15 games",
+      "We project 21.5 PTS (DraftKings main line 19.5)"
+     ],
+     "p_win": 85.2,
+     "p_model": 85.2,
+     "ev": 7.2,
+     "score": 85.2,
+     "player": "Zion Williamson",
+     "team": "NOP",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-20",
+   "attempt": 4,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 7.52,
+   "picked_at": "2026-11-20 11:49 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 62% to hit by our numbers (62% trusting only half our edge) at -133. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
    "type": "Prop",
    "label": "Jaden McDaniels 3+ AST",
    "game": "NYK@MIN",
@@ -1505,5 +1642,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-20"
 }

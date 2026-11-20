@@ -6,6 +6,103 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Trae Young Under 9.5 AST",
+   "game": "WAS@CHI",
+   "eid": "401909309",
+   "time": "8:00 PM ET",
+   "home": "CHI",
+   "away": "WAS",
+   "side": "Under",
+   "line": 9.5,
+   "price": 109,
+   "model": 8.5,
+   "edge": -1.0,
+   "edge_pct": 10.5,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     9.0,
+     6.0,
+     10.0,
+     3.0,
+     7.0,
+     4.0,
+     14.0,
+     8.0,
+     12.0,
+     8.0
+    ],
+    "line": 9.5,
+    "side": "Under",
+    "label": "AST",
+    "opps": [
+     "ORL",
+     "ATL",
+     "ATL",
+     "OKC",
+     "DET",
+     "IND",
+     "DET",
+     "HOU",
+     "MEM",
+     "TOR"
+    ]
+   },
+   "reasons": [
+    "Model projects 8.5 AST vs a line of 9.5 (-1, 11% edge)",
+    "Went under the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 9.2 over the last 5 and 8.6 over the last 15",
+    "Minutes steady: 34 per game over the last 5 (35 over the last 15)",
+    "Matchup vs CHI: +4.5% to his AST projection from their defense and pace (works against the under)",
+    "CHI ranks among the middle-10 defenses for AST; he went under 9.5 in 3 of 5 games against that tier",
+    "Best price: +110 at Hard Rock (DraftKings +109; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 51.1,
+   "p_model": 65.3,
+   "ev": 6.8,
+   "score": 55.6,
+   "best": [
+    110,
+    "hardrockbet"
+   ],
+   "player": "Trae Young",
+   "team": "WAS",
+   "stat": "AST",
+   "date": "2026-11-20",
+   "attempt": 7,
+   "day": 2,
+   "stake": 20.9,
+   "to_win": 22.78,
+   "picked_at": "2026-11-20 11:49 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.1% to win, +6.8% expected value",
+   "open_line": 9.5,
+   "open_price": 109,
+   "close_line": 9.5,
+   "close_price": 109,
+   "close_at": "2026-11-20 11:49 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Keldon Johnson Over 7.5 RA",
    "game": "LAC@SAS",
    "eid": "401910022",
