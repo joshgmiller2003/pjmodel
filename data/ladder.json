@@ -96,8 +96,9 @@
     "line": 0.0,
     "price": -0.5,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "locked_at": "2026-11-19 08:40 PM ET"
   },
   {
    "type": "Prop",

@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-19 07:07 PM ET",
+ "updated": "2026-11-19 08:40 PM ET",
  "count": 4337,
  "bets": [
   {
@@ -165,7 +165,7 @@
     "line": 0.0,
     "price": 0.2,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     4.5,
@@ -213,7 +213,7 @@
     "line": 0.0,
     "price": -0.5,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     7.5,
