@@ -76,7 +76,11 @@
      "score": 72.2,
      "player": "Tristan da Silva",
      "team": "ORL",
-     "stat": "3PM"
+     "stat": "3PM",
+     "result": "W",
+     "actual": "2 3PM",
+     "units": 0.39,
+     "graded_at": "2026-11-20 10:12 PM ET"
     },
     {
      "type": "Prop",

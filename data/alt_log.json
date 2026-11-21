@@ -134,7 +134,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 8.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "8 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Tristan da Silva|3PM",
@@ -194,7 +200,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Nolan Traore|3PM",
@@ -243,7 +255,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 0.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "0 3PM \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Julius Randle|3PM",
@@ -298,7 +316,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Franz Wagner|AST",
@@ -384,7 +408,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 7.0,
+   "hit": 1,
+   "units": -0.21,
+   "result": "L",
+   "actual": "7 AST \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Egor Demin|PTS",
@@ -454,7 +484,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 6.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "6 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-20|Anthony Black|REB",
@@ -518,7 +554,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 7.0,
+   "hit": 1,
+   "units": 4.07,
+   "result": "W",
+   "actual": "7 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-20 10:12 PM ET"
   },
   {
    "id": "2026-11-19|Terrence Shannon Jr.|PTS",
