@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-20 07:11 PM ET",
+ "updated": "2026-11-20 08:43 PM ET",
  "count": 4646,
  "bets": [
   {
@@ -29,7 +29,7 @@
    "actual": null,
    "units": null,
    "why": "Model projects 2.2 AST vs a line of 1.5 (+0.7, 47% edge) | Honest win chance 50.2% vs 50% implied by +101: +0.9% expected value (raw model said 60.1%) | Went over the line in 7 of his last 10 games (4/5 in the last 5) | Averaging 3.0 over the last 5 and 1.8 over the last 15 | Minutes steady: 30 per game over the last 5 (31 over the last 15) | Matchup vs SAC: -7.6% to his AST projection from their defense and pace (works against the over) | SAC ranks among the top-10 defenses for AST; he went over 1.5 in 3 of 7 games against that tier | Teammate injury boost: Austin Reaves out, +8.1% to his AST projection (extra minutes and usage) | Game script / rest: blowout risk (14.5-pt spread) -3.25% (net -3.2%) | Not on the injury report at pick time",
-   "picked_at": "2026-11-20 07:11 PM ET",
+   "picked_at": "2026-11-20 08:43 PM ET",
    "graded_at": null,
    "clv": {
     "line": 0.0,
@@ -83,7 +83,7 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     1.5,
