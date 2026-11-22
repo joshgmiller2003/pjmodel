@@ -1690,7 +1690,7 @@ function renderCalibration() {
   const M = Object.entries(C.markets || {}).sort((a, b) => b[1].n - a[1].n);
   const sign = v => (v > 0 ? "+" : "") + v;
   document.getElementById("mkt-leans").innerHTML = `<thead><tr><th>Market</th><th>Leans</th><th>Record</th><th>Hit %</th><th>Predicted</th><th>Units</th><th>ROI</th></tr></thead><tbody>` +
-    (M.length ? M.map(([k, r]) => { const roi = Math.round(1000 * r.units / r.n) / 10; return `<tr><td><span class="stat-tag">${k}</span>${P[k] != null ? ' <span class="badge out" title="Paused from Pick of the Day and the ladder">Paused</span>' : ""}</td><td class="stat">${r.n}</td><td class="stat">${r.w}-${r.n - r.w}</td><td class="stat">${(100 * r.w / r.n).toFixed(1)}%</td><td class="stat team">${(100 * r.p / r.n).toFixed(1)}%</td><td class="stat ${r.units >= 0 ? "positive" : "negative"}">${sign(Math.round(r.units * 10) / 10)}u</td><td class="stat ${roi >= 0 ? "positive" : "negative"}">${sign(roi)}%</td></tr>`; }).join("")
+    (M.length ? M.map(([k, r]) => { const roi = Math.round(1000 * r.units / r.n) / 10; return `<tr><td><span class="stat-tag">${k}</span>${P[k] != null ? ' <span class="badge out" title="Losing market (game lines are also left out of picks)">Paused</span>' : ""}</td><td class="stat">${r.n}</td><td class="stat">${r.w}-${r.n - r.w}</td><td class="stat">${(100 * r.w / r.n).toFixed(1)}%</td><td class="stat team">${(100 * r.p / r.n).toFixed(1)}%</td><td class="stat ${r.units >= 0 ? "positive" : "negative"}">${sign(Math.round(r.units * 10) / 10)}u</td><td class="stat ${roi >= 0 ? "positive" : "negative"}">${sign(roi)}%</td></tr>`; }).join("")
       : '<tr><td colspan="7" class="note" style="padding:18px;text-align:center;">Fills in once tonight\'s games are graded.</td></tr>') + "</tbody>";
   // site picks by market (from the permanent records)
   const recs = recRows().filter(r => r.result === "W" || r.result === "L");
@@ -1703,8 +1703,8 @@ function renderCalibration() {
       : '<tr><td colspan="6" class="note" style="padding:18px;text-align:center;">No graded picks yet.</td></tr>') + "</tbody>";
   const rule = C.pause_rule || {min_bets: 150, roi: -8};
   document.getElementById("mkt-paused").innerHTML = Object.keys(P).length
-    ? `<strong style="color:var(--bad);">Paused:</strong> ${Object.entries(P).map(([k, v]) => `${k} (${typeof v === "number" ? v + "% ROI" : v})`).join("; ")}. These are left out of Pick of the Day and the ladder until they recover.`
-    : `Auto-pause: a market with ${rule.min_bets}+ graded leans and an ROI of ${rule.roi}% or worse is left out of Pick of the Day and the ladder until it recovers. Nothing is paused right now.`;
+    ? `<strong style="color:var(--bad);">Paused:</strong> ${Object.entries(P).map(([k, v]) => `${k} (${typeof v === "number" ? v + "% ROI" : v})`).join("; ")}. Game lines listed here are left out of Pick of the Day and the ladder until they recover; props are flagged only, since picks learn from their own graded record.`
+    : `Auto-pause: a market with ${rule.min_bets}+ graded leans and an ROI of ${rule.roi}% or worse is flagged here. Nothing is paused right now.`;
 }
 
 // ---------- Credits ----------
@@ -1879,7 +1879,7 @@ function boardNote(what) {
   const B = DATA.board, today = new Date().toLocaleDateString("en-CA", {timeZone: "America/New_York"});
   if (!B || B.date !== today || !B.qualified) return "";
   if (B.note) return `<div class="note" style="margin-top:8px;">${B.note}</div>`;
-  return `<div class="note" style="margin-top:8px;">Tonight ${B.qualified} bet${B.qualified === 1 ? "" : "s"} passed the filters and ${B.positive} ${B.positive === 1 ? "has" : "have"} positive expected value at honest win chances${B.positive ? "" : `, so there is no ${what} today. That's on purpose: no pick beats a losing pick`}.</div>`;
+  return `<div class="note" style="margin-top:8px;">Tonight ${B.qualified} bet${B.qualified === 1 ? "" : "s"} passed the filters and ${B.positive} ${B.positive === 1 ? "has" : "have"} positive expected value${B.positive ? "" : `, so there is no ${what} today. That's on purpose: no pick beats a losing pick`}.</div>`;
 }
 function renderPotd() {
   const hist = (DATA.potd_history || []).map(potdNorm);
@@ -1889,7 +1889,7 @@ function renderPotd() {
   const sign = v => (v > 0 ? "+" : "") + v;
   document.getElementById("potd-meta").textContent = p ? `${p.type} · ${p.game.replace("@", " @ ")} · ${p.time}` : "";
   if (!p) {
-    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or nothing cleared every filter. The pick has to be a winning bet on average at honest win chances; it is chosen at each update (1 AM, 11 AM and 6 PM ET).</div>${boardNote("Pick of the Day")}</div>`;
+    hero.innerHTML = `<div class="card"><div style="font-weight:700;margin-bottom:6px;">No pick yet today</div><div class="note">Either there are no games today, lines aren't posted yet, or nothing cleared every filter. The pick has to be a winning bet on average, judged by how past picks have actually done; it is chosen at each update (1 AM, 11 AM and 6 PM ET).</div>${boardNote("Pick of the Day")}</div>`;
   } else {
     const g = (DATA.games || []).find(x => x.id === p.game);
     const T = potdTitle(p);

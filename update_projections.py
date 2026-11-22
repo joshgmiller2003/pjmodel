@@ -1467,9 +1467,50 @@ def calibrate(p, cmap=None):
     return 1 - y if flip else y
 
 
+# ------------------------------------------------------------------ pick trust (learns from its own picks)
+# Pick of the Day and both ladder steps are judged by how the model's OWN PICKS have done, not by every lean on
+# the board (most of those are bets it would never pick). After every graded pick it re-learns how much of the
+# model's edge to trust: picks hitting more than the model said -> more trust, less -> less. Starts from a
+# cautious prior worth PICK_TRUST_K picks, so a lucky or unlucky week only nudges it.
+PICK_TRUST_PRIOR = 0.35   # share of the model's edge over 50% trusted before any picks are graded
+PICK_TRUST_K = 30         # how many picks the prior is worth
+PICK_TRUST = {"s": PICK_TRUST_PRIOR, "n": 0, "w": 0, "raw": None}
+
+
+def _raw_of(b):
+    """The blended raw win chance (0-1) a pick was ranked on (rebuilt from model chance + hit rate if not saved)."""
+    if b.get("p_win_raw") is not None:
+        return b["p_win_raw"] / 100
+    if b.get("p_model") is None or not b.get("hits"):
+        return None
+    h = b["hits"].get("l15" if b.get("type") == "Prop" else "l10") or [0, 0]
+    hr = h[0] / h[1] if h[1] else 0.5
+    return 0.6 * b["p_model"] / 100 + 0.4 * hr
+
+
+def learn_pick_trust(potd_hist, ladder_steps):
+    graded = []
+    for b in list(potd_hist) + [l for s in ladder_steps for l in (s.get("legs") or [s])]:
+        raw = _raw_of(b)
+        if b.get("result") in ("W", "L") and raw is not None:
+            graded.append((max(raw, 1 - raw), b["result"] == "W"))
+    n, w = len(graded), sum(1 for _, x in graded if x)
+    edge = sum(r - 0.5 for r, _ in graded)
+    s = (w - 0.5 * n + PICK_TRUST_K * PICK_TRUST_PRIOR * 0.2) / (edge + PICK_TRUST_K * 0.2)
+    PICK_TRUST.update(s=max(0.0, min(1.0, s)), n=n, w=w, raw=rnd(100 * sum(r for r, _ in graded) / n, 1) if n else None)
+    log(f"pick trust: {w}-{n - w} on graded picks (model said {PICK_TRUST['raw']}% on average); trusting {PICK_TRUST['s'] * 100:.0f}% of its edge")
+
+
+def pick_chance(raw):
+    flip = raw < 0.5
+    q = 0.5 + (max(raw, 1 - raw) - 0.5) * PICK_TRUST["s"]
+    return 1 - q if flip else q
+
+
 def add_win_probs(cands):
     """Attach p_win: 60% model distribution + 40% recent hit rate (shrinks small samples toward the model), then
-    calibrated against how the model's leans have actually done (p_win_raw keeps the uncalibrated number)."""
+    scaled by how much of the model's edge its own graded picks have earned (see pick trust). p_win_raw keeps the
+    unscaled number and p_honest the all-leans calibrated one (shown for reference)."""
     for c in cands:
         h = c["hits"]["l15"] if c["type"] == "Prop" else c["hits"]["l10"]
         hr = h[0] / h[1] if h[1] else 0.5
@@ -1486,8 +1527,9 @@ def add_win_probs(cands):
         c["p_model"] = rnd(pm * 100, 1)
         raw = 0.6 * pm + 0.4 * hr
         c["p_win_raw"] = rnd(raw * 100, 1)
-        c["p_win"] = rnd(calibrate(raw) * 100, 1)
-        dec = 1 + (c["price"] / 100 if c["price"] > 0 else 100 / -c["price"])
+        c["p_honest"] = rnd(calibrate(raw) * 100, 1)
+        c["p_win"] = rnd(pick_chance(raw) * 100, 1)
+        dec =1 + (c["price"] / 100 if c["price"] > 0 else 100 / -c["price"])
         c["ev"] = rnd((c["p_win"] / 100 * dec - 1) * 100, 1)
 
 
@@ -2697,11 +2739,15 @@ def main():
     if todays and locked and not todays.get("locked_at"):
         todays["locked_at"] = now.strftime("%Y-%m-%d %I:%M %p ET")
     paused = paused_markets(cal, state["accuracy"])
-    pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso, paused)
+    # Picks only skip game lines while the model trails DraftKings on actual results; prop markets are no longer
+    # paused for picks, because picks now learn from their own record (pick trust) instead of every lean.
+    pick_paused = {k: v for k, v in paused.items() if isinstance(v, str)}
+    lad_state = load(LADDER_PATH, {})
+    learn_pick_trust([h for h in potd_hist if h["date"] < t_iso], [x for x in lad_state.get("steps", []) if x["date"] < t_iso])
+    pick, new_alts, all_cands = pick_of_the_day(props, games, slate, idx, plog, injuries, t_iso, pick_paused)
     add_win_probs(all_cands)
     # Pick of the Day and the ladder are always two different plays. The Pick of the Day gets first choice,
     # unless today's ladder step already locked (its game tipped first): then the Pick of the Day steps around it.
-    lad_state = load(LADDER_PATH, {})
     lad_today = next((x for x in lad_state.get("steps", []) if x["date"] == t_iso), None)
     st_now = {g["event_id"]: g["status"] for g in slate}
     lad_locked = bool(lad_today) and bool(lad_today.get("result") or any(st_now.get(e, "Final") != "Upcoming" for e in step_eids(lad_today)))
@@ -2716,13 +2762,14 @@ def main():
     if pick:
         new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)]
         imp = implied(pick["price"]) * 100
-        pick["reasons"] = pick["reasons"][:1] + [f"Honest win chance {pick['p_win']:g}% vs {imp:.0f}% implied by {fmt_px(pick['price'])}: "
-                                                 f"{pick['ev']:+g}% expected value (raw model said {pick.get('p_win_raw', pick['p_win']):g}%)"] + pick["reasons"][1:]
-    top = CAL_MAP[-1][1] if CAL_MAP else None
+        T = PICK_TRUST
+        rec = f"past picks went {T['w']}-{T['n'] - T['w']}, so it trusts {T['s'] * 100:.0f}% of the model's edge" if T["n"] else f"trusting {T['s'] * 100:.0f}% of the model's edge until picks are graded"
+        pick["reasons"] = pick["reasons"][:1] + [f"Win chance {pick['p_win']:g}% vs {imp:.0f}% implied by {fmt_px(pick['price'])}: "
+                                                 f"{pick['ev']:+g}% expected value (raw model said {pick.get('p_win_raw', pick['p_win']):g}%; {rec})"] + pick["reasons"][1:]
+    top = max([c["p_win"] for c in all_cands], default=None)
     board = {"date": t_iso, "qualified": len(all_cands), "positive": sum(1 for c in all_cands if ev_ok(c)),
-             "top_win": rnd(top * 100, 1) if top else None,
-             "note": ("The honest numbers currently say no bet beats the book's cut at normal prices; the model needs to "
-                      "prove itself on more graded games before it can pick again." if top and top * decimal(-110) <= 1 else None)}
+             "top_win": top, "trust": {k: PICK_TRUST[k] for k in ("s", "n", "w", "raw")},
+             "note": None}
     log(f"board: {board['qualified']} qualifying bets, {board['positive']} with positive expected value")
     if not locked:
         potd_alts = new_alts
@@ -2807,7 +2854,7 @@ def main():
                             "Adjustments: props scaled to the opponent's defense in that stat against the player's position (G/F/C, capped +/-10%) and the expected game pace (+/-5%), after removing the effect of defenses already faced; teammate injury boost hands an OUT player's minutes and usage to healthy teammates (capped +20%); small game-script and rest nudges (blowout risk past an 8-pt spread, back-to-backs, extra rest; capped +/-5% combined); home court for games; injured players skipped",
                             f"Residual layer: alpha fades from 0.45 toward 0.12 as games are learned (now {state['residuals']['alpha']})",
                             "Benchmark: DraftKings via The Odds API (games and props), ESPN as backup",
-                            "Bets are scored at 1 unit risked at the posted DraftKings price (another book's price when DraftKings has none; a bet with no price anywhere isn't counted. Bets before Nov 5 used -110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is paused from Pick of the Day and the ladder until it recovers. Spreads, totals and moneylines are also paused while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
+                            "Bets are scored at 1 unit risked at the posted DraftKings price (another book's price when DraftKings has none; a bet with no price anywhere isn't counted. Bets before Nov 5 used -110 when no price was posted). Calibration grades every model lean; a market with 150+ graded leans and an ROI of -8% or worse is flagged. Pick of the Day and the ladder learn from their own graded picks instead (pick trust: how much of the model's edge to believe, re-learned after every pick). Spreads, totals and moneylines are left out of picks while the model misses actual results by more than DraftKings does (last 40 games, 10+ needed)",
                             "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"],
             "prediction_history": state["prediction_history"], "notes": note,
             "settled_bets": state["settled_bets"], "record": state["record"],
