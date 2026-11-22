@@ -1910,7 +1910,7 @@ def _pick_embed(title, p, color, extra=None):
 
 def send_alerts(slot, potd_hist, ladder, streaks, slate, t_iso, now):
     """Morning run: post today's Pick of the Day and ladder step. 6 PM run: post again only if the pick changed.
-    1 AM run: post last night's results. Each message goes out once (data/alerts.json). Needs the
+    First run of the day: post last night's results. Each message goes out once (data/alerts.json). Needs the
     DISCORD_WEBHOOK_URL secret; without it this does nothing."""
     st = load(ALERTS_PATH, {})
     if not DISCORD_WEBHOOK:
@@ -1934,7 +1934,7 @@ def send_alerts(slot, potd_hist, ladder, streaks, slate, t_iso, now):
             if discord_post({"username": "PJ MODEL", "content": "Pick of the Day updated with the latest lines and injuries:",
                              "embeds": [_pick_embed("Updated Pick of the Day", pick, 0xFF7A1A, f"Replaces: {st.get('pick_label')}")]}):
                 st.update(pick_label=pick["label"])
-    elif slot == "overnight":
+    if slot in ("overnight", "morning"):   # results recap goes out with the first run of the day
         y = (now.date() - timedelta(days=1)).isoformat()
         if st.get("recap_date") != y:
             py = next((h for h in potd_hist if h["date"] == y and h.get("result")), None)
