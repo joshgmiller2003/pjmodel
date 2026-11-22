@@ -6,6 +6,143 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Davion Mitchell 10+ PTS + Pascal Siakam 15+ PTS",
+   "game": "OKC@MIA / IND@NYK",
+   "eid": "401910030",
+   "time": "6:00 PM ET",
+   "home": "MIA",
+   "away": "OKC",
+   "side": null,
+   "line": null,
+   "price": -183,
+   "reasons": [
+    "Leg 1: Davion Mitchell 10+ PTS (-408): 91.5% to win. Alt line 10+ PTS at -408: our chance 91.5% vs the book's 80.3% (+13.9% expected value)",
+    "Leg 2: Pascal Siakam 15+ PTS (-414): 83.1% to win. Alt line 15+ PTS at -414: our chance 83.1% vs the book's 80.5% (+3.1% expected value)"
+   ],
+   "p_win": 76.0,
+   "p_model": 76.0,
+   "ev": 17.5,
+   "score": 83.1,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Davion Mitchell 10+ PTS",
+     "game": "OKC@MIA",
+     "eid": "401910030",
+     "time": "6:00 PM ET",
+     "home": "MIA",
+     "away": "OKC",
+     "side": "Over",
+     "line": 9.5,
+     "price": -408,
+     "model": 16.1,
+     "chart": {
+      "vals": [
+       15.0,
+       15.0,
+       11.0,
+       22.0,
+       17.0,
+       19.0,
+       22.0,
+       15.0,
+       16.0,
+       24.0
+      ],
+      "line": 9.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "IND",
+       "LAL",
+       "LAC",
+       "GSW",
+       "SAC",
+       "UTA",
+       "CLE",
+       "DET",
+       "HOU",
+       "MIL"
+      ]
+     },
+     "reasons": [
+      "Alt line 10+ PTS at -408: our chance 91.5% vs the book's 80.3% (+13.9% expected value)",
+      "Cleared 10+ in 15 of his last 15 games",
+      "We project 16.1 PTS (DraftKings main line 14.5)"
+     ],
+     "p_win": 91.5,
+     "p_model": 91.5,
+     "ev": 13.9,
+     "score": 91.5,
+     "player": "Davion Mitchell",
+     "team": "MIA",
+     "stat": "PTS"
+    },
+    {
+     "type": "Prop",
+     "label": "Pascal Siakam 15+ PTS",
+     "game": "IND@NYK",
+     "eid": "401910034",
+     "time": "8:00 PM ET",
+     "home": "NYK",
+     "away": "IND",
+     "side": "Over",
+     "line": 14.5,
+     "price": -414,
+     "model": 21.0,
+     "chart": {
+      "vals": [
+       13.0,
+       17.0,
+       20.0,
+       23.0,
+       29.0,
+       28.0,
+       19.0,
+       31.0,
+       24.0,
+       21.0
+      ],
+      "line": 14.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "MIA",
+       "BKN",
+       "MEM",
+       "DEN",
+       "DAL",
+       "WAS",
+       "NYK",
+       "PHI",
+       "HOU",
+       "CLE"
+      ]
+     },
+     "reasons": [
+      "Alt line 15+ PTS at -414: our chance 83.1% vs the book's 80.5% (+3.1% expected value)",
+      "Cleared 15+ in 14 of his last 15 games",
+      "We project 21.0 PTS (DraftKings main line 19.5)"
+     ],
+     "p_win": 83.1,
+     "p_model": 83.1,
+     "ev": 3.1,
+     "score": 83.1,
+     "player": "Pascal Siakam",
+     "team": "IND",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-22",
+   "attempt": 4,
+   "day": 2,
+   "stake": 17.52,
+   "to_win": 9.57,
+   "picked_at": "2026-11-22 12:02 PM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 76% to hit by our numbers (76% trusting only half our edge) at -183. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Tristan da Silva 2+ 3PM + Zion Williamson 15+ PTS",
    "game": "ORL@BKN / NOP@OKC",
    "eid": "401909306",

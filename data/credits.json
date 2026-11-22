@@ -1,9 +1,90 @@
 {
- "date": "2026-11-21",
- "used_today": 0,
- "calls": [],
- "remaining": 9200,
+ "date": "2026-11-22",
+ "used_today": 72,
+ "calls": [
+  {
+   "time": "12:02 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "12:02 PM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "12:02 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props DET@ATL",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props OKC@MIA",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props ORL@WAS",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props DEN@CHI",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props DAL@UTA",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props IND@NYK",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "props BOS@GSW",
+   "cost": 8
+  },
+  {
+   "time": "12:02 PM",
+   "call": "championship odds",
+   "cost": 1
+  },
+  {
+   "time": "12:02 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "12:02 PM",
+   "call": "alt lines IND@NYK",
+   "cost": 4
+  },
+  {
+   "time": "12:02 PM",
+   "call": "alt lines BOS@GSW",
+   "cost": 4
+  },
+  {
+   "time": "12:02 PM",
+   "call": "alt lines OKC@MIA",
+   "cost": 4
+  }
+ ],
+ "remaining": 7151,
  "history": [
+  {
+   "date": "2026-11-22",
+   "used": 72,
+   "limit": 250
+  },
   {
    "date": "2026-11-21",
    "used": 0,
@@ -97,7 +178,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 13,
- "month_used": 2212,
+ "days_to_reset": 12,
+ "month_used": 2284,
  "month_limit": 5500
 }

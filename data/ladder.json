@@ -6,6 +6,105 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Draymond Green Under 4.5 PTS",
+   "game": "BOS@GSW",
+   "eid": "401910035",
+   "time": "8:30 PM ET",
+   "home": "GSW",
+   "away": "BOS",
+   "side": "Under",
+   "line": 4.5,
+   "price": -109,
+   "model": 3.1,
+   "edge": -1.4,
+   "edge_pct": 31.1,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     11,
+     13
+    ]
+   },
+   "chart": {
+    "vals": [
+     3.0,
+     2.0,
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     7.0,
+     4.0,
+     2.0,
+     3.0
+    ],
+    "line": 4.5,
+    "side": "Under",
+    "label": "PTS",
+    "opps": [
+     "MIN",
+     "LAL",
+     "PHX",
+     "MIA",
+     "ORL",
+     "NOP",
+     "HOU",
+     "SAS",
+     "NOP",
+     "DAL"
+    ]
+   },
+   "reasons": [
+    "Model projects 3.1 PTS vs a line of 4.5 (-1.4, 31% edge)",
+    "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 3.6 over the last 5 and 3.2 over the last 13",
+    "Minutes steady: 22 per game over the last 5 (26 over the last 13)",
+    "Matchup vs BOS: -4% to his PTS projection from their defense and pace (helps the under)",
+    "BOS ranks among the top-10 defenses for PTS; he went under 4.5 in 6 of 7 games against that tier",
+    "Teammate injury boost: Brandon Williams, Stephen Curry out, +11.9% to his PTS projection (extra minutes and usage)",
+    "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
+    "Best price: +102 at BetRivers (DraftKings -109; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 61.3,
+   "p_model": 75.8,
+   "ev": 17.5,
+   "score": 92.4,
+   "best": [
+    102,
+    "betrivers"
+   ],
+   "player": "Draymond Green",
+   "team": "GSW",
+   "stat": "PTS",
+   "date": "2026-11-22",
+   "attempt": 8,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 9.17,
+   "picked_at": "2026-11-22 12:02 PM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 61.3% to win, +17.5% expected value",
+   "open_line": 4.5,
+   "open_price": -109,
+   "close_line": 4.5,
+   "close_price": -109,
+   "close_at": "2026-11-22 12:02 PM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Sam Merrill Over 1.5 AST",
    "game": "IND@CLE",
    "eid": "401909307",
@@ -1753,5 +1852,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-22"
 }

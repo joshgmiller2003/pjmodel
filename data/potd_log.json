@@ -2,6 +2,103 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-22",
+   "eid": "401910034",
+   "game": "IND@NYK",
+   "time": "8:00 PM ET",
+   "home": "NYK",
+   "away": "IND",
+   "type": "Prop",
+   "player": "Josh Hart",
+   "team": "NYK",
+   "stat": "PRA",
+   "side": "Under",
+   "line": 21.5,
+   "price": -119,
+   "model": 13.1,
+   "edge": -8.4,
+   "edge_pct": 39.1,
+   "label": "Josh Hart Under 21.5 PRA",
+   "best": [
+    -112,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     10,
+     10
+    ],
+    "l15": [
+     10,
+     13
+    ]
+   },
+   "chart": {
+    "vals": [
+     14.0,
+     13.0,
+     16.0,
+     21.0,
+     13.0,
+     9.0,
+     7.0,
+     11.0,
+     19.0,
+     14.0
+    ],
+    "line": 21.5,
+    "side": "Under",
+    "label": "PRA",
+    "opps": [
+     "DET",
+     "CHI",
+     "PHI",
+     "BKN",
+     "CLE",
+     "IND",
+     "TOR",
+     "TOR",
+     "MIN",
+     "POR"
+    ]
+   },
+   "score": 96.8,
+   "reasons": [
+    "Model projects 13.1 PRA vs a line of 21.5 (-8.4, 39% edge)",
+    "Win chance 65.1% vs 54% implied by -119: +19.8% expected value (raw model said 89.3%; past picks went 21-13, so it trusts 38% of the model's edge)",
+    "Went under the line in 10 of his last 10 games (5/5 in the last 5)",
+    "Averaging 12.0 over the last 5 and 16.2 over the last 13",
+    "Minutes steady: 29 per game over the last 5 (30 over the last 13)",
+    "Matchup vs IND: +1.4% to his PRA projection from their defense and pace (works against the under)",
+    "IND ranks among the middle-10 defenses for PRA; he went under 21.5 in 4 of 5 games against that tier",
+    "Game script / rest: blowout risk (8.5-pt spread) -0.25%, back-to-back -3% (net -3.2%)",
+    "Best price: -112 at FanDuel (DraftKings -119; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 174,
+   "p_model": 97.6,
+   "p_win_raw": 89.3,
+   "p_honest": 51.1,
+   "p_win": 65.1,
+   "ev": 19.8,
+   "picked_at": "2026-11-22 12:02 PM ET",
+   "open_line": 21.5,
+   "open_price": -119,
+   "close_line": 21.5,
+   "close_price": -119,
+   "close_at": "2026-11-22 12:02 PM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-20",
    "eid": "401909313",
    "game": "SAC@LAL",
