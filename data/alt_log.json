@@ -64,7 +64,13 @@
     ]
    ],
    "saved_at": "2026-11-20 11:49 AM ET",
-   "updated_at": "2026-11-20 07:11 PM ET"
+   "updated_at": "2026-11-20 07:11 PM ET",
+   "value": 22.0,
+   "hit": 2,
+   "units": 0.67,
+   "result": "W",
+   "actual": "22 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-21 10:19 PM ET"
   },
   {
    "id": "2026-11-20|Wendell Carter Jr|PTS",

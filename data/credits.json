@@ -1,155 +1,14 @@
 {
- "date": "2026-11-20",
- "used_today": 163,
- "calls": [
-  {
-   "time": "01:53 AM",
-   "call": "championship odds",
-   "cost": 1
-  },
-  {
-   "time": "11:49 AM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "11:49 AM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "11:49 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props CHA@ATL",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props ORL@BKN",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props IND@CLE",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props TOR@DET",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props WAS@CHI",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props NOP@OKC",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props PHX@UTA",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props HOU@DEN",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "props SAC@LAL",
-   "cost": 8
-  },
-  {
-   "time": "11:49 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "11:49 AM",
-   "call": "alt lines NOP@OKC",
-   "cost": 4
-  },
-  {
-   "time": "11:49 AM",
-   "call": "alt lines ORL@BKN",
-   "cost": 4
-  },
-  {
-   "time": "11:49 AM",
-   "call": "alt lines PHX@UTA",
-   "cost": 4
-  },
-  {
-   "time": "06:44 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:44 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:44 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props CHA@ATL",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props ORL@BKN",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props IND@CLE",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props TOR@DET",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props WAS@CHI",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props NOP@OKC",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props PHX@UTA",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props HOU@DEN",
-   "cost": 8
-  },
-  {
-   "time": "06:44 PM",
-   "call": "props SAC@LAL",
-   "cost": 8
-  }
- ],
+ "date": "2026-11-21",
+ "used_today": 0,
+ "calls": [],
  "remaining": 9200,
  "history": [
+  {
+   "date": "2026-11-21",
+   "used": 0,
+   "limit": 250
+  },
   {
    "date": "2026-11-20",
    "used": 163,
@@ -238,7 +97,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 14,
+ "days_to_reset": 13,
  "month_used": 2212,
  "month_limit": 5500
 }

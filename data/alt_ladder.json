@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 4,
- "bankroll": 10.0,
+ "bankroll": 17.52,
  "steps": [
   {
    "type": "Parlay",
@@ -134,7 +134,11 @@
      "score": 85.2,
      "player": "Zion Williamson",
      "team": "NOP",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "22 PTS",
+     "units": 0.26,
+     "graded_at": "2026-11-21 10:19 PM ET"
     }
    ],
    "date": "2026-11-20",
@@ -145,7 +149,12 @@
    "picked_at": "2026-11-20 07:11 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 62% to hit by our numbers (62% trusting only half our edge) at -133. The most likely winner on today's alt lines at a ladder price",
    "first_picked_at": "2026-11-20 11:49 AM ET",
-   "locked_at": "2026-11-20 08:43 PM ET"
+   "locked_at": "2026-11-20 08:43 PM ET",
+   "result": "W",
+   "actual": "Tristan da Silva 2+ 3PM: 2 3PM \u2713 \u00b7 Zion Williamson 15+ PTS: 22 PTS \u2713",
+   "graded_at": "2026-11-21 10:19 PM ET",
+   "applied": true,
+   "bankroll_after": 17.52
   },
   {
    "type": "Prop",
