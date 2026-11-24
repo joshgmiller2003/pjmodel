@@ -8225,5 +8225,106 @@
 "AJ Dybantsa|BOS":{
 "date":"2026-11-24",
 "games":[]
+},
+"Sam Hauser|WAS":{
+"date":"2026-11-24",
+"games":[
+{
+"date":"2026-03-14",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":26.0,
+"pts":12.0,
+"reb":6.0,
+"ast":2.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":4.0
+},
+{
+"date":"2025-12-04",
+"season":"2025-26 Regular Season",
+"home":false,
+"min":21.0,
+"pts":6.0,
+"reb":2.0,
+"ast":3.0,
+"stl":1.0,
+"blk":0.0,
+"tpm":2.0
+},
+{
+"date":"2025-11-05",
+"season":"2025-26 Regular Season",
+"home":true,
+"min":22.0,
+"pts":3.0,
+"reb":2.0,
+"ast":3.0,
+"stl":0.0,
+"blk":0.0,
+"tpm":1.0
+},
+{
+"date":"2025-04-06",
+"season":"2024-25 Regular Season",
+"home":true,
+"min":22.0,
+"pts":18.0,
+"reb":8.0,
+"ast":0.0,
+"stl":0.0,
+"blk":1.0,
+"tpm":4.0
+},
+{
+"date":"2024-12-15",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":28.0,
+"pts":12.0,
+"reb":7.0,
+"ast":1.0,
+"stl":2.0,
+"blk":0.0,
+"tpm":4.0
+},
+{
+"date":"2024-11-22",
+"season":"2024-25 Regular Season",
+"home":false,
+"min":22.0,
+"pts":13.0,
+"reb":3.0,
+"ast":0.0,
+"stl":3.0,
+"blk":0.0,
+"tpm":3.0
+},
+{
+"date":"2024-04-14",
+"season":"2023-24 Regular Season",
+"home":true,
+"min":35.0,
+"pts":16.0,
+"reb":5.0,
+"ast":2.0,
+"stl":2.0,
+"blk":1.0,
+"tpm":4.0
+},
+{
+"date":"2024-03-17",
+"season":"2023-24 Regular Season",
+"home":false,
+"min":23.0,
+"pts":30.0,
+"reb":6.0,
+"ast":1.0,
+"stl":1.0,
+"blk":0.0,
+"tpm":10.0
+}
+]
 }
 }

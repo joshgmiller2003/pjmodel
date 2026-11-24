@@ -6,29 +6,29 @@
  "steps": [
   {
    "type": "Prop",
-   "label": "Franz Wagner Over 29.5 PA",
+   "label": "Franz Wagner Over 30.5 PA",
    "game": "DET@ORL",
    "eid": "401909314",
    "time": "7:00 PM ET",
    "home": "ORL",
    "away": "DET",
    "side": "Over",
-   "line": 29.5,
-   "price": -124,
+   "line": 30.5,
+   "price": -110,
    "model": 34.6,
-   "edge": 5.1,
-   "edge_pct": 17.3,
+   "edge": 4.1,
+   "edge_pct": 13.4,
    "hits": {
     "l5": [
-     4,
+     3,
      5
     ],
     "l10": [
-     9,
+     6,
      10
     ],
     "l15": [
-     11,
+     8,
      15
     ]
    },
@@ -45,7 +45,7 @@
      42.0,
      22.0
     ],
-    "line": 29.5,
+    "line": 30.5,
     "side": "Over",
     "label": "PA",
     "opps": [
@@ -62,22 +62,22 @@
     ]
    },
    "reasons": [
-    "Model projects 34.6 PA vs a line of 29.5 (+5.1, 17% edge)",
-    "Went over the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Model projects 34.6 PA vs a line of 30.5 (+4.1, 13% edge)",
+    "Went over the line in 6 of his last 10 games (3/5 in the last 5)",
     "Averaging 35.8 over the last 5 and 33.1 over the last 15",
     "Minutes steady: 36 per game over the last 5 (37 over the last 15)",
     "Matchup vs DET: neutral for PA (defense and pace about league average)",
-    "DET ranks among the middle-10 defenses for PA; he went over 29.5 in 4 of 5 games against that tier",
-    "Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings)",
+    "DET ranks among the middle-10 defenses for PA; he went over 30.5 in 2 of 5 games against that tier",
+    "Best price: -106 at FanDuel (DraftKings -110; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "p_win": 57.0,
-   "p_model": 72.2,
-   "ev": 3.0,
-   "score": 77.0,
+   "p_win": 53.8,
+   "p_model": 68.2,
+   "ev": 2.7,
+   "score": 56.3,
    "best": [
-    -120,
-    "betmgm"
+    -106,
+    "fanduel"
    ],
    "player": "Franz Wagner",
    "team": "ORL",
@@ -86,15 +86,14 @@
    "attempt": 9,
    "day": 1,
    "stake": 10,
-   "to_win": 8.06,
-   "picked_at": "2026-11-24 12:20 PM ET",
+   "to_win": 9.09,
+   "picked_at": "2026-11-24 02:00 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value",
-   "open_line": 29.5,
-   "open_price": -124,
-   "first_picked_at": "2026-11-24 11:26 AM ET",
-   "close_line": 29.5,
-   "close_price": -124,
-   "close_at": "2026-11-24 12:20 PM ET",
+   "open_line": 30.5,
+   "open_price": -110,
+   "close_line": 30.5,
+   "close_price": -110,
+   "close_at": "2026-11-24 02:00 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
