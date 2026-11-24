@@ -1556,6 +1556,72 @@ def step_eids(step):
     return [l["eid"] for l in step.get("legs") or [step] if l.get("eid")]
 
 
+# ------------------------------------------------------------------ keep today's picks steady
+# Once today's Pick of the Day or ladder step is posted it stays put until its game tips, unless
+#   (a) one of its bets is gone: the player was ruled out, or the bet flipped sides or lost its value, or
+#   (b) a new pick clearly beats it on the same measure the picker uses (small shifts between refreshes don't count).
+POTD_SWAP_MARGIN = 5.0     # Pick of the Day: pick-score points (0-100) a new pick must win by
+STEP_SWAP_PTS = 3.0        # ladder singles and Alt Parlay steps: percentage points of win chance a new step must win by
+STEP_SWAP_EFF = 1.05       # ladder steps with a parlay on either side: 5% better ladder efficiency
+
+
+def same_bet_key(b, with_line=False):
+    """The exact bet (player + stat + side, or game + bet type + side), unlike bet_key which is any bet on that player."""
+    k = (norm(b["player"]) if b.get("player") else b.get("game"), b.get("type"), b.get("stat"), b.get("side"), b.get("team"))
+    return k + (b.get("line"),) if with_line else k
+
+
+def current_legs(prev, cands, with_line=False):
+    """Today's earlier pick as it stands on the board now: the current version of each of its bets, or None if any
+    of them is gone (player ruled out, game started, bet flipped sides, or it no longer has positive value)."""
+    by = {}
+    for c in cands:
+        by.setdefault(same_bet_key(c, with_line), c)
+    cur = [by.get(same_bet_key(l, with_line)) for l in prev.get("legs") or [prev]]
+    if not cur or any(c is None or c.get("ev", -1) <= 0 for c in cur):
+        return None
+    return cur
+
+
+def _step_eff(legs):
+    return ladder_efficiency(math.prod(_shrunk(l["p_win"]) for l in legs), math.prod(decimal(l["price"]) for l in legs))
+
+
+def keep_step(prev, cur, alt):
+    """Rebuild today's earlier ladder step from the current versions of its bets (fresh prices and chances), or
+    None if it no longer passes that ladder's own rules."""
+    dec = math.prod(decimal(c["price"]) for c in cur)
+    if alt:
+        p_adj = math.prod(_alt_adj(c) for c in cur)
+        ok = p_adj >= ALT_LAD_MIN_WIN and p_adj * dec > 1 and (1.5 <= dec <= 2.2 if len(cur) > 1 else -200 <= cur[0]["price"] <= 120)
+    elif len(cur) == 1:
+        ok = -200 <= cur[0]["price"] <= 120
+    else:
+        p_s = math.prod(_shrunk(c["p_win"]) for c in cur)
+        ok = all(c["p_win"] >= PARLAY_LEG_MIN and -300 <= c["price"] <= 120 for c in cur) and p_s >= PARLAY_MIN_WIN and p_s * dec > 1
+    if not ok:
+        return None
+    if len(cur) == 1:
+        return {**cur[0], "why_step": prev.get("why_ladder")}
+    p_raw = math.prod(c["p_win"] / 100 for c in cur)
+    step = {k: prev[k] for k in ("type", "label", "game", "eid", "time", "home", "away", "side", "line", "reasons", "why_parlay") if k in prev}
+    step.update({"legs": [{k: c[k] for k in LEG_KEYS if k in c} for c in cur], "price": american(dec),
+                 "p_win": rnd(p_raw * 100, 1), "p_model": rnd(math.prod(c.get("p_model", c["p_win"]) / 100 for c in cur) * 100, 1),
+                 "ev": rnd((p_raw * dec - 1) * 100, 1), "score": rnd(min(c.get("score", 0) for c in cur), 1),
+                 "why_step": prev.get("why_ladder")})
+    return step
+
+
+def clearly_better(new, kept_legs, alt):
+    """Does the new step beat today's earlier one by a clear margin, on the measure that ladder picks by?"""
+    new_legs = new.get("legs") or [new]
+    if alt:
+        return math.prod(_alt_adj(l) for l in new_legs) * 100 >= math.prod(_alt_adj(l) for l in kept_legs) * 100 + STEP_SWAP_PTS
+    if len(new_legs) == 1 and len(kept_legs) == 1:
+        return new["p_win"] >= kept_legs[0]["p_win"] + STEP_SWAP_PTS
+    return _step_eff(new_legs) >= _step_eff(kept_legs) * STEP_SWAP_EFF
+
+
 def american(dec):
     return int(round((dec - 1) * 100)) if dec >= 2 else int(round(-100 / (dec - 1)))
 
@@ -1704,6 +1770,22 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=(), avoid_games=(), ch
                             for i, l in enumerate(legs)],
                 "why_parlay": f"{len(legs)} picks from different games beat the best single bet for finishing the ladder "
                               f"({eff:.2f} vs {eff1:.2f} on shrunk win chances)"}
+    # Keep today's earlier step unless one of its bets is gone or the new step is clearly better.
+    if prev_step and (not pick or {same_bet_key(l, bool(choose)) for l in pick.get("legs") or [pick]}
+                      != {same_bet_key(l, bool(choose)) for l in prev_step.get("legs") or [prev_step]}):
+        cur = current_legs(prev_step, [c for c in cands if bet_key(c) not in avoid], with_line=bool(choose))
+        kept = keep_step(prev_step, cur, bool(choose)) if cur else None
+        if kept and not (pick and clearly_better(pick, cur, bool(choose))):
+            log(f"{tag}: keeping {prev_step['label']}" + (f" (the new best, {pick['label']}, isn't clearly better)" if pick else ""))
+            pick = kept
+        elif kept:
+            log(f"{tag}: swapping {prev_step['label']} for {pick['label']} (clearly better)")
+            pick = {**pick, "swap_note": f" Replaced the earlier pick ({prev_step['label']}) because this one is clearly better."}
+        else:
+            log(f"{tag}: re-picking: {prev_step['label']} is no longer playable (player out, line flipped or no value left)"
+                + (f"; new pick {pick['label']}" if pick else ""))
+            if pick:
+                pick = {**pick, "swap_note": f" Replaced the earlier pick ({prev_step['label']}), which is no longer playable."}
     if pick:
         if not lad.get("attempt_started"):
             lad["attempt_started"] = t_iso
@@ -1717,8 +1799,9 @@ def run_ladder(lad, plog, cands, slate, t_iso, now, avoid=(), avoid_games=(), ch
                 step[k] = pick[k]
         step.update({"date": t_iso, "attempt": lad["attempt"], "day": day, "stake": stake,
                      "to_win": rnd(stake * (decimal(pick["price"]) - 1), 2), "picked_at": stamp,
-                     "why_ladder": pick.get("why_step") or (f"Multi-pick step. {pick['why_parlay']}: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value" if pick.get("legs") else
-                                    f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value")})
+                     "why_ladder": (pick.get("why_step") or (f"Multi-pick step. {pick['why_parlay']}: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value" if pick.get("legs") else
+                                    f"Highest win chance on the board at a ladder-friendly price: {pick['p_win']:g}% to win, {pick['ev']:+g}% expected value"))
+                                   + pick.get("swap_note", "")})
         lad["steps"].insert(0, carry_open(step, prev_step))
         log(f"{tag}: attempt {lad['attempt']} day {day}, ${stake:g} on {pick['label']} ({fmt_px(pick['price'])})")
     else:
@@ -2759,6 +2842,22 @@ def main():
         why = "locked ladder bet" if bet_key(pick) in lad_keys else f"{pick['ev']:+g}% expected value at honest odds"
         log(f"potd: passed on {pick['label']} ({why})")
         pick = next((c for c in all_cands if ev_ok(c) and bet_key(c) not in lad_keys), None)
+    # Keep today's earlier Pick of the Day until tip-off unless its player is ruled out, the bet is gone or lost its
+    # value, or a new pick beats it by POTD_SWAP_MARGIN points of pick score.
+    potd_swap_note = ""
+    prev_potd = None if locked else next((h for h in potd_hist if h["date"] == t_iso), None)
+    if prev_potd and (not pick or same_bet_key(pick) != same_bet_key(prev_potd)):
+        cur = current_legs(prev_potd, [c for c in all_cands if bet_key(c) not in lad_keys])
+        if cur and not (pick and pick["score"] >= cur[0]["score"] + POTD_SWAP_MARGIN):
+            log(f"potd: keeping {cur[0]['label']}" + (f" (the new best, {pick['label']}, isn't clearly better)" if pick else ""))
+            pick = cur[0]
+        elif cur:
+            log(f"potd: swapping {prev_potd['label']} for {pick['label']} (score {pick['score']:g} vs {cur[0]['score']:g})")
+            potd_swap_note = f"Replaced the earlier pick ({prev_potd['label']}) because this one scores clearly higher"
+        else:
+            log(f"potd: re-picking: {prev_potd['label']} is no longer playable (player out, line flipped or no value left)")
+            if pick:
+                potd_swap_note = f"Replaced the earlier pick ({prev_potd['label']}), which is no longer playable"
     if pick:
         new_alts = [c for c in new_alts if bet_key(c) != bet_key(pick)]
         imp = implied(pick["price"]) * 100
@@ -2766,6 +2865,8 @@ def main():
         rec = f"past picks went {T['w']}-{T['n'] - T['w']}, so it trusts {T['s'] * 100:.0f}% of the model's edge" if T["n"] else f"trusting {T['s'] * 100:.0f}% of the model's edge until picks are graded"
         pick["reasons"] = pick["reasons"][:1] + [f"Win chance {pick['p_win']:g}% vs {imp:.0f}% implied by {fmt_px(pick['price'])}: "
                                                  f"{pick['ev']:+g}% expected value (raw model said {pick.get('p_win_raw', pick['p_win']):g}%; {rec})"] + pick["reasons"][1:]
+        if potd_swap_note:
+            pick["reasons"] = pick["reasons"] + [potd_swap_note]
     top = max([c["p_win"] for c in all_cands], default=None)
     board = {"date": t_iso, "qualified": len(all_cands), "positive": sum(1 for c in all_cands if ev_ok(c)),
              "top_win": top, "trust": {k: PICK_TRUST[k] for k in ("s", "n", "w", "raw")},
@@ -2803,7 +2904,8 @@ def main():
 
     alt_log = track_alt_ladders(alt_ladders, alt_date, slate, plog, now, cal)
     # 3e. Alt Parlay ladder: separate challenge, picks only from today's alt lines (no extra Odds API calls)
-    alt_lad = run_ladder(load(ALT_LADDER_PATH, {}), plog, alt_ladder_cands(alt_ladders if alt_date == t_iso else [], slate),
+    alt_lad = run_ladder(load(ALT_LADDER_PATH, {}), plog, [c for c in alt_ladder_cands(alt_ladders if alt_date == t_iso else [], slate)
+                                                          if norm(c["player"]) not in out_set],
                          slate, t_iso, now, choose=choose_alt_step, tag="alt parlay")
     opp_of = lambda x: (x.get("away") if x.get("team") == x.get("home") else x.get("home")) if x.get("team") else None
     h2h_for = []
