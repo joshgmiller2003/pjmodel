@@ -1,8 +1,8 @@
 {
- "start": 10.0,
- "goal": 1000.0,
- "attempt": 10,
- "bankroll": 10.0,
+ "start": 10,
+ "goal": 1000,
+ "attempt": 9,
+ "bankroll": 10,
  "steps": [
   {
    "type": "Prop",
@@ -34,16 +34,16 @@
    },
    "chart": {
     "vals": [
-     30.0,
-     30.0,
-     41.0,
-     40.0,
-     39.0,
-     47.0,
-     30.0,
-     38.0,
-     42.0,
-     22.0
+     30,
+     30,
+     41,
+     40,
+     39,
+     47,
+     30,
+     38,
+     42,
+     22
     ],
     "line": 29.5,
     "side": "Over",
@@ -74,7 +74,7 @@
    "p_win": 56.2,
    "p_model": 72.2,
    "ev": 1.5,
-   "score": 77.0,
+   "score": 77,
    "best": [
     -120,
     "betmgm"
@@ -83,9 +83,9 @@
    "team": "ORL",
    "stat": "PA",
    "date": "2026-11-24",
-   "attempt": 10,
+   "attempt": 9,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 8.06,
    "picked_at": "2026-11-24 11:26 AM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +1.5% expected value",
@@ -95,111 +95,11 @@
    "close_price": -124,
    "close_at": "2026-11-24 11:26 AM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": false
    }
-  },
-  {
-   "type": "Prop",
-   "label": "Devin Vassell Under 21.5 PR",
-   "game": "SAS@SAC",
-   "eid": "401910045",
-   "time": "10:00 PM ET",
-   "home": "SAC",
-   "away": "SAS",
-   "side": "Under",
-   "line": 21.5,
-   "price": -115,
-   "model": 17.6,
-   "edge": -3.9,
-   "edge_pct": 18.1,
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     10,
-     10
-    ],
-    "l15": [
-     14,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     14.0,
-     13.0,
-     9.0,
-     21.0,
-     17.0,
-     9.0,
-     12.0,
-     17.0,
-     19.0,
-     13.0
-    ],
-    "line": 21.5,
-    "side": "Under",
-    "label": "PR",
-    "opps": [
-     "MIN",
-     "UTA",
-     "DAL",
-     "SAC",
-     "POR",
-     "GSW",
-     "UTA",
-     "DET",
-     "LAC",
-     "NOP"
-    ]
-   },
-   "reasons": [
-    "Model projects 17.6 PR vs a line of 21.5 (-3.9, 18% edge)",
-    "Went under the line in 10 of his last 10 games (5/5 in the last 5)",
-    "Averaging 14.0 over the last 5 and 15.1 over the last 15",
-    "Minutes steady: 30 per game over the last 5 (30 over the last 15)",
-    "Matchup vs SAC: +2% to his PR projection from their defense and pace (works against the under)",
-    "SAC ranks among the bottom-10 defenses for PR; he went under 21.5 in 5 of 6 games against that tier",
-    "Teammate injury boost: De'Aaron Fox, Dylan Harper, Victor Wembanyama out, +20% to his PR projection (extra minutes and usage)",
-    "Not on the injury report at pick time"
-   ],
-   "p_win": 62.4,
-   "p_model": 81.2,
-   "ev": 16.7,
-   "score": 86.7,
-   "best": null,
-   "player": "Devin Vassell",
-   "team": "SAS",
-   "stat": "PR",
-   "date": "2026-11-23",
-   "attempt": 9,
-   "day": 1,
-   "stake": 10.0,
-   "to_win": 8.7,
-   "picked_at": "2026-11-23 08:36 PM ET",
-   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 62.4% to win, +16.7% expected value",
-   "open_line": 21.5,
-   "open_price": -115,
-   "close_line": 21.5,
-   "close_price": -115,
-   "close_at": "2026-11-23 08:36 PM ET",
-   "clv": {
-    "line": 0.0,
-    "price": 0.0,
-    "beat": false,
-    "final": true
-   },
-   "result": "L",
-   "actual": "22 PR",
-   "units": -1.0,
-   "graded_at": "2026-11-24 11:26 AM ET",
-   "applied": true,
-   "bankroll_after": 0
   },
   {
    "type": "Prop",
@@ -231,16 +131,16 @@
    },
    "chart": {
     "vals": [
-     3.0,
-     2.0,
-     4.0,
-     2.0,
-     2.0,
-     2.0,
-     7.0,
-     4.0,
-     2.0,
-     3.0
+     3,
+     2,
+     4,
+     2,
+     2,
+     2,
+     7,
+     4,
+     2,
+     3
     ],
     "line": 4.5,
     "side": "Under",
@@ -284,7 +184,7 @@
    "date": "2026-11-22",
    "attempt": 8,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 8.55,
    "picked_at": "2026-11-22 06:33 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 61.3% to win, +13.7% expected value",
@@ -295,14 +195,14 @@
    "close_price": -117,
    "close_at": "2026-11-22 06:33 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 1.8,
     "beat": true,
     "final": true
    },
    "result": "L",
    "actual": "9 PTS",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-23 08:36 PM ET",
    "applied": true,
    "bankroll_after": 0
@@ -320,7 +220,7 @@
    "price": 109,
    "model": 2.1,
    "edge": 0.6,
-   "edge_pct": 40.0,
+   "edge_pct": 40,
    "hits": {
     "l5": [
      3,
@@ -337,16 +237,16 @@
    },
    "chart": {
     "vals": [
-     2.0,
-     3.0,
-     2.0,
-     1.0,
-     3.0,
-     3.0,
-     2.0,
-     1.0,
-     0.0,
-     3.0
+     2,
+     3,
+     2,
+     1,
+     3,
+     3,
+     2,
+     1,
+     0,
+     3
     ],
     "line": 1.5,
     "side": "Over",
@@ -376,7 +276,7 @@
     "Not on the injury report at pick time"
    ],
    "p_win": 51.1,
-   "p_model": 62.0,
+   "p_model": 62,
    "ev": 6.8,
    "score": 82.1,
    "best": [
@@ -400,15 +300,15 @@
    "close_price": 109,
    "close_at": "2026-11-20 07:11 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-20 08:43 PM ET",
    "result": "L",
    "actual": "1 AST",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-20 10:12 PM ET",
    "applied": true,
    "bankroll_after": 0
@@ -426,7 +326,7 @@
    "price": 109,
    "model": 9.3,
    "edge": 1.8,
-   "edge_pct": 24.0,
+   "edge_pct": 24,
    "hits": {
     "l5": [
      4,
@@ -443,16 +343,16 @@
    },
    "chart": {
     "vals": [
-     6.0,
-     8.0,
-     7.0,
-     12.0,
-     11.0,
-     8.0,
-     10.0,
-     8.0,
-     12.0,
-     3.0
+     6,
+     8,
+     7,
+     12,
+     11,
+     8,
+     10,
+     8,
+     12,
+     3
     ],
     "line": 7.5,
     "side": "Over",
@@ -491,7 +391,7 @@
    "date": "2026-11-19",
    "attempt": 7,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 10.9,
    "picked_at": "2026-11-19 07:07 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.1% to win, +6.8% expected value",
@@ -502,7 +402,7 @@
    "close_price": 109,
    "close_at": "2026-11-19 07:07 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": -0.5,
     "beat": false,
     "final": true
@@ -527,8 +427,8 @@
    "line": 2.5,
    "price": 114,
    "model": 3.5,
-   "edge": 1.0,
-   "edge_pct": 40.0,
+   "edge": 1,
+   "edge_pct": 40,
    "hits": {
     "l5": [
      3,
@@ -545,16 +445,16 @@
    },
    "chart": {
     "vals": [
-     1.0,
-     5.0,
-     4.0,
-     2.0,
-     5.0,
-     2.0,
-     4.0,
-     5.0,
-     2.0,
-     3.0
+     1,
+     5,
+     4,
+     2,
+     5,
+     2,
+     4,
+     5,
+     2,
+     3
     ],
     "line": 2.5,
     "side": "Over",
@@ -596,7 +496,7 @@
    "date": "2026-11-18",
    "attempt": 6,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 11.4,
    "picked_at": "2026-11-18 06:47 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +10.2% expected value",
@@ -607,7 +507,7 @@
    "close_price": 114,
    "close_at": "2026-11-18 06:47 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 0.6,
     "beat": true,
     "final": true
@@ -615,7 +515,7 @@
    "locked_at": "2026-11-18 07:15 PM ET",
    "result": "L",
    "actual": "2 3PM",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-18 10:18 PM ET",
    "applied": true,
    "bankroll_after": 0
@@ -650,16 +550,16 @@
    },
    "chart": {
     "vals": [
-     6.0,
-     6.0,
-     7.0,
-     5.0,
-     6.0,
-     7.0,
-     5.0,
-     6.0,
-     4.0,
-     10.0
+     6,
+     6,
+     7,
+     5,
+     6,
+     7,
+     5,
+     6,
+     4,
+     10
     ],
     "line": 5.5,
     "side": "Over",
@@ -712,15 +612,15 @@
    "close_price": 115,
    "close_at": "2026-11-17 07:13 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-17 08:48 PM ET",
    "result": "L",
    "actual": "2 REB",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-18 01:53 AM ET",
    "applied": true,
    "bankroll_after": 0
@@ -755,16 +655,16 @@
    },
    "chart": {
     "vals": [
-     4.0,
-     2.0,
-     1.0,
-     7.0,
-     4.0,
-     8.0,
-     2.0,
-     7.0,
-     2.0,
-     6.0
+     4,
+     2,
+     1,
+     7,
+     4,
+     8,
+     2,
+     7,
+     2,
+     6
     ],
     "line": 3.5,
     "side": "Over",
@@ -808,7 +708,7 @@
    "date": "2026-11-16",
    "attempt": 5,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 10.3,
    "picked_at": "2026-11-16 07:05 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +4.5% expected value",
@@ -819,8 +719,8 @@
    "close_price": 103,
    "close_at": "2026-11-16 07:05 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -862,16 +762,16 @@
    },
    "chart": {
     "vals": [
-     10.0,
-     12.0,
-     12.0,
-     9.0,
-     12.0,
-     18.0,
-     17.0,
-     5.0,
-     6.0,
-     9.0
+     10,
+     12,
+     12,
+     9,
+     12,
+     18,
+     17,
+     5,
+     6,
+     9
     ],
     "line": 8.5,
     "side": "Over",
@@ -919,15 +819,15 @@
    "close_price": -106,
    "close_at": "2026-11-15 11:28 AM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-15 06:41 PM ET",
    "result": "L",
    "actual": "6 RA",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-15 07:05 PM ET",
    "applied": true,
    "bankroll_after": 0
@@ -962,16 +862,16 @@
    },
    "chart": {
     "vals": [
-     11.0,
-     3.0,
-     6.0,
-     9.0,
-     8.0,
-     6.0,
-     17.0,
-     11.0,
-     5.0,
-     11.0
+     11,
+     3,
+     6,
+     9,
+     8,
+     6,
+     17,
+     11,
+     5,
+     11
     ],
     "line": 7.5,
     "side": "Over",
@@ -1000,10 +900,10 @@
     "Best price: +105 at Hard Rock (DraftKings +104; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "p_win": 52.0,
+   "p_win": 52,
    "p_model": 76.1,
    "ev": 6.1,
-   "score": 78.0,
+   "score": 78,
    "best": [
     105,
     "hardrockbet"
@@ -1025,7 +925,7 @@
    "close_price": 104,
    "close_at": "2026-11-14 06:31 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 0.9,
     "beat": true,
     "final": true
@@ -1068,16 +968,16 @@
    },
    "chart": {
     "vals": [
-     18.0,
-     6.0,
-     16.0,
-     22.0,
-     15.0,
-     9.0,
-     8.0,
-     12.0,
-     10.0,
-     13.0
+     18,
+     6,
+     16,
+     22,
+     15,
+     9,
+     8,
+     12,
+     10,
+     13
     ],
     "line": 18.5,
     "side": "Under",
@@ -1109,7 +1009,7 @@
    "p_win": 54.2,
    "p_model": 76.7,
    "ev": 0.5,
-   "score": 86.0,
+   "score": 86,
    "best": [
     -110,
     "hardrockbet"
@@ -1130,8 +1030,8 @@
    "close_price": -117,
    "close_at": "2026-11-13 06:37 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1173,14 +1073,14 @@
    },
    "chart": {
     "vals": [
-     2.0,
-     5.0,
-     7.0,
-     9.0,
-     8.0,
-     5.0,
-     7.0,
-     6.0
+     2,
+     5,
+     7,
+     9,
+     8,
+     5,
+     7,
+     6
     ],
     "line": 4.5,
     "side": "Over",
@@ -1208,7 +1108,7 @@
     "Not on the injury report at pick time"
    ],
    "p_win": 56.3,
-   "p_model": 81.0,
+   "p_model": 81,
    "ev": 19.4,
    "score": 94.8,
    "best": null,
@@ -1229,8 +1129,8 @@
    "close_price": 112,
    "close_at": "2026-11-12 07:06 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1272,14 +1172,14 @@
    },
    "chart": {
     "vals": [
-     18.0,
-     15.0,
-     16.0,
-     23.0,
-     10.0,
-     16.0,
-     13.0,
-     24.0
+     18,
+     15,
+     16,
+     23,
+     10,
+     16,
+     13,
+     24
     ],
     "line": 13.5,
     "side": "Over",
@@ -1328,8 +1228,8 @@
    "close_price": -109,
    "close_at": "2026-11-11 07:09 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1371,15 +1271,15 @@
    },
    "chart": {
     "vals": [
-     4.0,
-     7.0,
-     7.0,
-     11.0,
-     10.0,
-     5.0,
-     10.0,
-     12.0,
-     6.0
+     4,
+     7,
+     7,
+     11,
+     10,
+     5,
+     10,
+     12,
+     6
     ],
     "line": 11.5,
     "side": "Under",
@@ -1421,7 +1321,7 @@
    "date": "2026-11-10",
    "attempt": 4,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 9.09,
    "picked_at": "2026-11-10 08:32 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 54.6% to win, +4.2% expected value",
@@ -1432,8 +1332,8 @@
    "close_price": -110,
    "close_at": "2026-11-10 08:32 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1458,7 +1358,7 @@
    "price": 105,
    "model": 9.1,
    "edge": 2.6,
-   "edge_pct": 40.0,
+   "edge_pct": 40,
    "hits": {
     "l5": [
      5,
@@ -1475,14 +1375,14 @@
    },
    "chart": {
     "vals": [
-     3.0,
-     7.0,
-     9.0,
-     8.0,
-     7.0,
-     8.0,
-     11.0,
-     9.0
+     3,
+     7,
+     9,
+     8,
+     7,
+     8,
+     11,
+     9
     ],
     "line": 6.5,
     "side": "Over",
@@ -1519,7 +1419,7 @@
    "date": "2026-11-09",
    "attempt": 3,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 10.5,
    "picked_at": "2026-11-09 06:36 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.1% to win, +17.1% expected value",
@@ -1530,7 +1430,7 @@
    "close_price": 105,
    "close_at": "2026-11-09 06:36 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": -4.5,
     "beat": false,
     "final": true
@@ -1538,7 +1438,7 @@
    "locked_at": "2026-11-09 08:32 PM ET",
    "result": "L",
    "actual": "3 RA",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-09 10:12 PM ET",
    "applied": true,
    "bankroll_after": 0
@@ -1554,9 +1454,9 @@
    "side": "Under",
    "line": 17.5,
    "price": -102,
-   "model": 14.0,
+   "model": 14,
    "edge": -3.5,
-   "edge_pct": 20.0,
+   "edge_pct": 20,
    "hits": {
     "l5": [
      4,
@@ -1573,14 +1473,14 @@
    },
    "chart": {
     "vals": [
-     9.0,
-     10.0,
-     17.0,
-     12.0,
-     18.0,
-     17.0,
-     17.0,
-     11.0
+     9,
+     10,
+     17,
+     12,
+     18,
+     17,
+     17,
+     11
     ],
     "line": 17.5,
     "side": "Under",
@@ -1627,14 +1527,14 @@
    "close_price": -102,
    "close_at": "2026-11-08 11:26 AM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "result": "L",
    "actual": "26 PR",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-08 06:32 PM ET",
    "applied": true,
    "bankroll_after": 0,
@@ -1653,7 +1553,7 @@
    "price": -126,
    "model": 11.2,
    "edge": -2.3,
-   "edge_pct": 17.0,
+   "edge_pct": 17,
    "hits": {
     "l5": [
      5,
@@ -1670,14 +1570,14 @@
    },
    "chart": {
     "vals": [
-     4.0,
-     7.0,
-     7.0,
-     11.0,
-     10.0,
-     5.0,
-     10.0,
-     12.0
+     4,
+     7,
+     7,
+     11,
+     10,
+     5,
+     10,
+     12
     ],
     "line": 13.5,
     "side": "Under",
@@ -1718,7 +1618,7 @@
    "date": "2026-11-07",
    "attempt": 2,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 7.94,
    "picked_at": "2026-11-07 08:38 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 58.1% to win, +4.2% expected value",
@@ -1729,8 +1629,8 @@
    "close_price": -126,
    "close_at": "2026-11-07 08:38 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1772,14 +1672,14 @@
    },
    "chart": {
     "vals": [
-     6.0,
-     13.0,
-     15.0,
-     13.0,
-     14.0,
-     15.0,
-     14.0,
-     13.0
+     6,
+     13,
+     15,
+     13,
+     14,
+     15,
+     14,
+     13
     ],
     "line": 10.5,
     "side": "Over",
@@ -1826,15 +1726,15 @@
    "close_price": -105,
    "close_at": "2026-11-06 06:33 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-06 08:29 PM ET",
    "result": "L",
    "actual": "8 PR",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-07 01:37 AM ET",
    "applied": true,
    "bankroll_after": 0
@@ -1869,14 +1769,14 @@
    },
    "chart": {
     "vals": [
-     14.0,
-     18.0,
-     6.0,
-     16.0,
-     22.0,
-     15.0,
-     9.0,
-     8.0
+     14,
+     18,
+     6,
+     16,
+     22,
+     15,
+     9,
+     8
     ],
     "line": 16.5,
     "side": "Under",
@@ -1894,7 +1794,7 @@
    ],
    "p_win": 56.3,
    "p_model": 74.6,
-   "ev": 11.0,
+   "ev": 11,
    "score": 81.2,
    "best": null,
    "player": "Andrew Wiggins",
@@ -1914,8 +1814,8 @@
    "close_price": -103,
    "close_at": "2026-11-05 08:41 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -1974,7 +1874,7 @@
    "date": "2026-11-04",
    "attempt": 1,
    "day": 1,
-   "stake": 10.0,
+   "stake": 10,
    "to_win": 7.46,
    "picked_at": "2026-11-04 07:05 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value",
@@ -1985,8 +1885,8 @@
    "close_price": -134,
    "close_at": "2026-11-04 07:05 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -2000,19 +1900,11 @@
  ],
  "attempts": [
   {
-   "attempt": 9,
-   "start": "2026-11-23",
-   "end": "2026-11-23",
-   "days": 1,
-   "peak": 10.0,
-   "result": "Busted"
-  },
-  {
    "attempt": 8,
    "start": "2026-11-22",
    "end": "2026-11-22",
    "days": 1,
-   "peak": 10.0,
+   "peak": 10,
    "result": "Busted"
   },
   {
@@ -2028,7 +1920,7 @@
    "start": "2026-11-18",
    "end": "2026-11-18",
    "days": 1,
-   "peak": 10.0,
+   "peak": 10,
    "result": "Busted"
   },
   {
@@ -2052,7 +1944,7 @@
    "start": "2026-11-09",
    "end": "2026-11-09",
    "days": 1,
-   "peak": 10.0,
+   "peak": 10,
    "result": "Busted"
   },
   {
