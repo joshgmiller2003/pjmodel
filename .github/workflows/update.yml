@@ -2,12 +2,10 @@ name: Update projections
 
 on:
   schedule:
-    # 3 runs a day: 10:00 AM, 2:00 PM and 5:00 PM ET. Each is listed at both the EST and EDT UTC hours, at :07
-    # (GitHub delays runs set for :00 the most), with a backup at :37 in case GitHub drops or delays the first.
-    # The gate job lets each slot run once a day; the extra copies stop in seconds and cost nothing.
-    - cron: "7,37 14,15 * * *"
-    - cron: "7,37 18,19 * * *"
-    - cron: "7,37 21,22 * * *"
+    # 3 refreshes a day: 10 AM, 2 PM and 5 PM ET. GitHub drops or delays many scheduled runs (some days most of
+    # them), so this checks every 15 minutes from 9 AM to about 7 PM ET. The gate job lets each slot through once
+    # a day at the first check inside its window; every other check stops in seconds and uses no credits.
+    - cron: "2,17,32,47 14-23 * * *"
   workflow_dispatch:        # run by hand from the Actions tab any time
     inputs:
       off_daily_cap:
@@ -46,9 +44,6 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.free_run }}" = "true" ]; then
             echo "Free run by hand"; echo "go=true" >> "$GITHUB_OUTPUT"; echo "free=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
           # Paid runs (10 AM, 2 PM, 5 PM ET). GitHub often starts scheduled runs late, so each slot gets a window
           # instead of an exact hour, and each slot runs at most once a day.
           H10=$((10#$H))
@@ -56,6 +51,12 @@ jobs:
           elif [ "$H10" -ge 14 ] && [ "$H10" -le 16 ]; then SLOT=mid
           elif [ "$H10" -ge 17 ]; then SLOT=pm
           else SLOT=""; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # A run by hand always goes, and counts as this slot's run if it lands inside a window.
+            echo "go=true" >> "$GITHUB_OUTPUT"
+            if [ -n "$SLOT" ] && ! grep -qx "$D $SLOT" data/paid_slots.txt 2>/dev/null; then echo "slot=$D $SLOT" >> "$GITHUB_OUTPUT"; fi
+            exit 0
+          fi
           if [ -z "$SLOT" ]; then
             echo "Outside the paid windows"; echo "go=false" >> "$GITHUB_OUTPUT"
           elif grep -qx "$D $SLOT" data/paid_slots.txt 2>/dev/null; then
