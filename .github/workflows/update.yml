@@ -2,18 +2,18 @@ name: Update projections
 
 on:
   schedule:
-    # Refreshes at 1 AM, 11 AM and 6 PM ET, plus free tip-off checks at about 7-10 PM ET (0 credits).
-    # GitHub drops or delays many scheduled runs, so the paid slots are checked every 15 minutes inside their
-    # windows. The gate job lets each slot through once a day at the first check that lands in its window;
-    # every other check stops in seconds and uses no credits.
-    - cron: "2,17,32,47 5-10,15-23,0-4 * * *"
-    # Free tip-off checks: no Odds API calls. They reload injuries from ESPN and re-pick with the saved lines,
-    # so a pick whose player is ruled out gets swapped before tip-off.
-    - cron: "30 23,0,1,2,3 * * *"
+    # 3 refreshes a day: 10 AM, 2 PM and 5 PM ET. An outside timer (cron-job.org) starts each one on time through
+    # workflow_dispatch with scheduled=true. These GitHub checks are the backup in case the timer misses: they run
+    # at :20 and :50, and the gate lets each slot through once a day, so a slot never refreshes twice.
+    - cron: "20,50 14-23 * * *"
   workflow_dispatch:        # run by hand from the Actions tab any time
     inputs:
       off_daily_cap:
         description: "One time only: keep this run's credits off today's daily cap (they still count toward the month)"
+        type: boolean
+        default: false
+      scheduled:
+        description: "Timer run: counts as this slot's refresh and is skipped if the slot already ran today"
         type: boolean
         default: false
       free_run:
@@ -45,27 +45,16 @@ jobs:
           H=$(TZ=America/New_York date +%H)
           D=$(TZ=America/New_York date +%F)
           echo "ET hour is $H on $D"
-          if [ "${{ github.event.schedule }}" = "30 23,0,1,2,3 * * *" ]; then
-            # free tip-off check: only 7-10 PM ET, and never a paid run
-            if [ "$H" = "19" ] || [ "$H" = "20" ] || [ "$H" = "21" ] || [ "$H" = "22" ]; then
-              echo "Free tip-off check"; echo "go=true" >> "$GITHUB_OUTPUT"; echo "free=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "go=false" >> "$GITHUB_OUTPUT"
-            fi
-            exit 0
-          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.free_run }}" = "true" ]; then
             echo "Free run by hand"; echo "go=true" >> "$GITHUB_OUTPUT"; echo "free=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          # Paid runs (1 AM, 11 AM, 6 PM ET). Each slot has a window instead of an exact hour, because GitHub often
-          # starts scheduled runs late, and each slot runs at most once a day. The 1 AM window ends before 6 AM so
-          # the run still counts as the overnight run (results and grading, no line pulls).
+          # Paid runs (10 AM, 2 PM, 5 PM ET). Each slot has a window instead of an exact hour, and runs once a day.
           H10=$((10#$H))
-          if [ "$H10" -ge 1 ] && [ "$H10" -le 5 ]; then SLOT=overnight
-          elif [ "$H10" -ge 11 ] && [ "$H10" -le 16 ]; then SLOT=morning
-          elif [ "$H10" -ge 18 ]; then SLOT=pretip
+          if [ "$H10" -ge 10 ] && [ "$H10" -le 13 ]; then SLOT=am
+          elif [ "$H10" -ge 14 ] && [ "$H10" -le 16 ]; then SLOT=mid
+          elif [ "$H10" -ge 17 ]; then SLOT=pm
           else SLOT=""; fi
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.scheduled }}" != "true" ]; then
             # A run by hand always goes, and counts as this slot's run if it lands inside a window.
             echo "go=true" >> "$GITHUB_OUTPUT"
             if [ -n "$SLOT" ] && ! grep -qx "$D $SLOT" data/paid_slots.txt 2>/dev/null; then echo "slot=$D $SLOT" >> "$GITHUB_OUTPUT"; fi
