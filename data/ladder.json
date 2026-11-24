@@ -1,9 +1,106 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 9,
+ "attempt": 10,
  "bankroll": 10.0,
  "steps": [
+  {
+   "type": "Prop",
+   "label": "Franz Wagner Over 29.5 PA",
+   "game": "DET@ORL",
+   "eid": "401909314",
+   "time": "7:00 PM ET",
+   "home": "ORL",
+   "away": "DET",
+   "side": "Over",
+   "line": 29.5,
+   "price": -124,
+   "model": 34.6,
+   "edge": 5.1,
+   "edge_pct": 17.3,
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     30.0,
+     30.0,
+     41.0,
+     40.0,
+     39.0,
+     47.0,
+     30.0,
+     38.0,
+     42.0,
+     22.0
+    ],
+    "line": 29.5,
+    "side": "Over",
+    "label": "PA",
+    "opps": [
+     "WAS",
+     "PHX",
+     "GSW",
+     "SAC",
+     "UTA",
+     "MIL",
+     "BOS",
+     "PHI",
+     "BKN",
+     "WAS"
+    ]
+   },
+   "reasons": [
+    "Model projects 34.6 PA vs a line of 29.5 (+5.1, 17% edge)",
+    "Went over the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 35.8 over the last 5 and 33.1 over the last 15",
+    "Minutes steady: 36 per game over the last 5 (37 over the last 15)",
+    "Matchup vs DET: neutral for PA (defense and pace about league average)",
+    "DET ranks among the middle-10 defenses for PA; he went over 29.5 in 4 of 5 games against that tier",
+    "Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 56.2,
+   "p_model": 72.2,
+   "ev": 1.5,
+   "score": 77.0,
+   "best": [
+    -120,
+    "betmgm"
+   ],
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "stat": "PA",
+   "date": "2026-11-24",
+   "attempt": 10,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 8.06,
+   "picked_at": "2026-11-24 11:26 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +1.5% expected value",
+   "open_line": 29.5,
+   "open_price": -124,
+   "close_line": 29.5,
+   "close_price": -124,
+   "close_at": "2026-11-24 11:26 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
   {
    "type": "Prop",
    "label": "Devin Vassell Under 21.5 PR",
@@ -95,8 +192,14 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "22 PR",
+   "units": -1.0,
+   "graded_at": "2026-11-24 11:26 AM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Prop",
@@ -1897,6 +2000,14 @@
  ],
  "attempts": [
   {
+   "attempt": 9,
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "days": 1,
+   "peak": 10.0,
+   "result": "Busted"
+  },
+  {
    "attempt": 8,
    "start": "2026-11-22",
    "end": "2026-11-22",
@@ -1961,5 +2072,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": "2026-11-23"
+ "attempt_started": "2026-11-24"
 }

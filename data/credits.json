@@ -1,45 +1,70 @@
 {
- "date": "2026-11-23",
- "used_today": 28,
+ "date": "2026-11-24",
+ "used_today": 40,
  "calls": [
   {
-   "time": "08:36 PM",
+   "time": "11:26 AM",
    "call": "balance check",
    "cost": 0
   },
   {
-   "time": "08:36 PM",
+   "time": "11:26 AM",
    "call": "game lines",
    "cost": 3
   },
   {
-   "time": "08:36 PM",
+   "time": "11:26 AM",
    "call": "event list",
    "cost": 0
   },
   {
-   "time": "08:36 PM",
-   "call": "props LAC@HOU",
+   "time": "11:26 AM",
+   "call": "props DET@ORL",
    "cost": 8
   },
   {
-   "time": "08:36 PM",
-   "call": "props UTA@LAL",
+   "time": "11:26 AM",
+   "call": "props BOS@WAS",
    "cost": 8
   },
   {
-   "time": "08:36 PM",
-   "call": "props SAS@SAC",
+   "time": "11:26 AM",
+   "call": "props DAL@DEN",
    "cost": 8
   },
   {
-   "time": "08:36 PM",
+   "time": "11:26 AM",
    "call": "championship odds",
    "cost": 1
+  },
+  {
+   "time": "11:26 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines DAL@DEN",
+   "cost": 4
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines DET@ORL",
+   "cost": 4
+  },
+  {
+   "time": "11:26 AM",
+   "call": "alt lines BOS@WAS",
+   "cost": 4
   }
  ],
- "remaining": 6747,
+ "remaining": 6631,
  "history": [
+  {
+   "date": "2026-11-24",
+   "used": 40,
+   "limit": 250
+  },
   {
    "date": "2026-11-23",
    "used": 28,
@@ -143,7 +168,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 11,
- "month_used": 2355,
+ "days_to_reset": 10,
+ "month_used": 2395,
  "month_limit": 5500
 }

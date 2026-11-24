@@ -2,6 +2,102 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-24",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
+   "type": "Prop",
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "stat": "RA",
+   "side": "Under",
+   "line": 8.5,
+   "price": -104,
+   "model": 6.5,
+   "edge": -2.0,
+   "edge_pct": 23.5,
+   "label": "Daniel Gafford Under 8.5 RA",
+   "best": [
+    -102,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     5.0,
+     2.0,
+     7.0,
+     5.0,
+     4.0,
+     4.0,
+     6.0,
+     8.0,
+     13.0,
+     8.0
+    ],
+    "line": 8.5,
+    "side": "Under",
+    "label": "RA",
+    "opps": [
+     "SAS",
+     "UTA",
+     "BKN",
+     "IND",
+     "MIN",
+     "CLE",
+     "BOS",
+     "GSW",
+     "LAC",
+     "UTA"
+    ]
+   },
+   "score": 87.3,
+   "reasons": [
+    "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge)",
+    "Win chance 55.8% vs 51% implied by -104: +9.5% expected value (raw model said 71.3%; past picks went 21-16, so it trusts 27% of the model's edge)",
+    "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 7.8 over the last 5 and 7.6 over the last 15",
+    "Minutes steady: 24 per game over the last 5 (23 over the last 15)",
+    "Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under)",
+    "DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier",
+    "Best price: -102 at FanDuel (DraftKings -104; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 73,
+   "p_model": 74.4,
+   "p_win_raw": 71.3,
+   "p_honest": 51.2,
+   "p_win": 55.8,
+   "ev": 9.5,
+   "picked_at": "2026-11-24 11:26 AM ET",
+   "open_line": 8.5,
+   "open_price": -104,
+   "close_line": 8.5,
+   "close_price": -104,
+   "close_at": "2026-11-24 11:26 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-23",
    "eid": "401910043",
    "game": "LAC@HOU",
@@ -91,8 +187,12 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "3 PR",
+   "units": -1.0,
+   "graded_at": "2026-11-24 11:26 AM ET"
   },
   {
    "date": "2026-11-22",
