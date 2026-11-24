@@ -34,16 +34,16 @@
    },
    "chart": {
     "vals": [
-     30,
-     30,
-     41,
-     40,
-     39,
-     47,
-     30,
-     38,
-     42,
-     22
+     30.0,
+     30.0,
+     41.0,
+     40.0,
+     39.0,
+     47.0,
+     30.0,
+     38.0,
+     42.0,
+     22.0
     ],
     "line": 29.5,
     "side": "Over",
@@ -71,10 +71,10 @@
     "Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "p_win": 56.2,
+   "p_win": 57.0,
    "p_model": 72.2,
-   "ev": 1.5,
-   "score": 77,
+   "ev": 3.0,
+   "score": 77.0,
    "best": [
     -120,
     "betmgm"
@@ -87,16 +87,17 @@
    "day": 1,
    "stake": 10,
    "to_win": 8.06,
-   "picked_at": "2026-11-24 11:26 AM ET",
-   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +1.5% expected value",
+   "picked_at": "2026-11-24 12:20 PM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value",
    "open_line": 29.5,
    "open_price": -124,
+   "first_picked_at": "2026-11-24 11:26 AM ET",
    "close_line": 29.5,
    "close_price": -124,
-   "close_at": "2026-11-24 11:26 AM ET",
+   "close_at": "2026-11-24 12:20 PM ET",
    "clv": {
-    "line": 0,
-    "price": 0,
+    "line": 0.0,
+    "price": 0.0,
     "beat": false,
     "final": false
    }

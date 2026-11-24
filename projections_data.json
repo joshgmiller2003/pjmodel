@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T16:26:49Z",
+ "generated_at": "2026-11-24T17:20:15Z",
  "season": "2026-27",
  "games": [
   {
@@ -15459,6 +15459,13 @@
    "game": "SAS@POR"
   },
   {
+   "player": "Tre Mann",
+   "team": "WAS",
+   "status": "Day-To-Day",
+   "reason": "Illness",
+   "game": "BOS@WAS"
+  },
+  {
    "player": "Tristan Vukcevic",
    "team": "WAS",
    "status": "Out",
@@ -15487,7 +15494,7 @@
    "game": "BOS@WAS"
   }
  ],
- "injuries_updated": "11/24 11:26 AM ET",
+ "injuries_updated": "11/24 12:20 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -17561,335 +17568,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-11T18:44",
-   "games": [
-    {
-     "id": "WAS@IND",
-     "matchup": "WAS @ IND",
-     "model_spread": -2.7,
-     "model_total": 225.1,
-     "dk_spread": "-3.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "CLE@NYK",
-     "matchup": "CLE @ NYK",
-     "model_spread": -4.2,
-     "model_total": 224.2,
-     "dk_spread": "-4.5",
-     "dk_total": 220.5
-    },
-    {
-     "id": "BOS@TOR",
-     "matchup": "BOS @ TOR",
-     "model_spread": 0.2,
-     "model_total": 225.5,
-     "dk_spread": "+5.5",
-     "dk_total": 215.5
-    },
-    {
-     "id": "SAS@CHI",
-     "matchup": "SAS @ CHI",
-     "model_spread": 5.5,
-     "model_total": 230.4,
-     "dk_spread": "+15.5",
-     "dk_total": 236.5
-    },
-    {
-     "id": "DEN@MEM",
-     "matchup": "DEN @ MEM",
-     "model_spread": -4.1,
-     "model_total": 227.1,
-     "dk_spread": "+3.5",
-     "dk_total": 230.5
-    },
-    {
-     "id": "LAL@MIL",
-     "matchup": "LAL @ MIL",
-     "model_spread": 4.3,
-     "model_total": 229.8,
-     "dk_spread": "+14.5",
-     "dk_total": 229.5
-    },
-    {
-     "id": "BKN@NOP",
-     "matchup": "BKN @ NOP",
-     "model_spread": -3.4,
-     "model_total": 229.2,
-     "dk_spread": "-2.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "ORL@UTA",
-     "matchup": "ORL @ UTA",
-     "model_spread": -1.2,
-     "model_total": 224.5,
-     "dk_spread": "+4.5",
-     "dk_total": 214.5
-    },
-    {
-     "id": "GSW@HOU",
-     "matchup": "GSW @ HOU",
-     "model_spread": -2.3,
-     "model_total": 226.6,
-     "dk_spread": "-6.5",
-     "dk_total": 219.5
-    },
-    {
-     "id": "OKC@POR",
-     "matchup": "OKC @ POR",
-     "model_spread": -2.7,
-     "model_total": 225.5,
-     "dk_spread": "-2.5",
-     "dk_total": 224.5
-    },
-    {
-     "id": "TOR@PHI",
-     "matchup": "TOR @ PHI",
-     "model_spread": -1.7,
-     "model_total": 225.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DET@WAS",
-     "matchup": "DET @ WAS",
-     "model_spread": 1.5,
-     "model_total": 222.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DAL@MIN",
-     "matchup": "DAL @ MIN",
-     "model_spread": -4.2,
-     "model_total": 225.7,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "CHA@PHX",
-     "matchup": "CHA @ PHX",
-     "model_spread": -4.2,
-     "model_total": 222.7,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": [
-    {
-     "player": "Stephen Curry",
-     "stat": "PR",
-     "model": 39.2,
-     "dk": 30.5,
-     "edge": 8.7
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PRA",
-     "model": 43.8,
-     "dk": 35.5,
-     "edge": 8.3
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PTS",
-     "model": 34.7,
-     "dk": 26.5,
-     "edge": 8.2
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PRA",
-     "model": 57.4,
-     "dk": 49.5,
-     "edge": 7.9
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PA",
-     "model": 39.2,
-     "dk": 31.5,
-     "edge": 7.7
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PR",
-     "model": 48.9,
-     "dk": 41.5,
-     "edge": 7.4
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PRA",
-     "model": 51.6,
-     "dk": 44.5,
-     "edge": 7.1
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PR",
-     "model": 48.3,
-     "dk": 41.5,
-     "edge": 6.8
-    },
-    {
-     "player": "Ivica Zubac",
-     "stat": "PRA",
-     "model": 18.9,
-     "dk": 25.5,
-     "edge": -6.6
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PA",
-     "model": 49.1,
-     "dk": 42.5,
-     "edge": 6.6
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PTS",
-     "model": 35.8,
-     "dk": 29.5,
-     "edge": 6.3
-    },
-    {
-     "player": "Isaiah Stewart",
-     "stat": "PR",
-     "model": 16.7,
-     "dk": 10.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PTS",
-     "model": 40.6,
-     "dk": 34.5,
-     "edge": 6.1
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PR",
-     "model": 30.5,
-     "dk": 24.5,
-     "edge": 6.0
-    },
-    {
-     "player": "Nikola Jokic",
-     "stat": "PRA",
-     "model": 41.6,
-     "dk": 47.5,
-     "edge": -5.9
-    },
-    {
-     "player": "Ivica Zubac",
-     "stat": "PR",
-     "model": 17.7,
-     "dk": 23.5,
-     "edge": -5.8
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PR",
-     "model": 17.3,
-     "dk": 11.5,
-     "edge": 5.8
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PA",
-     "model": 38.9,
-     "dk": 33.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "stat": "PRA",
-     "model": 33.8,
-     "dk": 28.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Jamal Shead",
-     "stat": "PRA",
-     "model": 21.7,
-     "dk": 16.5,
-     "edge": 5.2
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PA",
-     "model": 15.6,
-     "dk": 10.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PRA",
-     "model": 18.6,
-     "dk": 13.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Isaiah Stewart",
-     "stat": "PTS",
-     "model": 12.6,
-     "dk": 7.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Nikola Jokic",
-     "stat": "PR",
-     "model": 32.4,
-     "dk": 37.5,
-     "edge": -5.1
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "stat": "PR",
-     "model": 29.6,
-     "dk": 24.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PTS",
-     "model": 26.5,
-     "dk": 21.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Austin Reaves",
-     "stat": "PTS",
-     "model": 27.5,
-     "dk": 22.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PRA",
-     "model": 35.4,
-     "dk": 30.5,
-     "edge": 4.9
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PTS",
-     "model": 14.3,
-     "dk": 9.5,
-     "edge": 4.8
-    },
-    {
-     "player": "RJ Barrett",
-     "stat": "PR",
-     "model": 31.3,
-     "dk": 26.5,
-     "edge": 4.8
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-11T19:09",
    "games": [
@@ -35254,6 +34932,319 @@
   },
   {
    "timestamp": "2026-11-24T11:26",
+   "games": [
+    {
+     "id": "DET@ORL",
+     "matchup": "DET @ ORL",
+     "model_spread": 0.7,
+     "model_total": 223.5,
+     "dk_spread": "+2.5",
+     "dk_total": 213.5
+    },
+    {
+     "id": "BOS@WAS",
+     "matchup": "BOS @ WAS",
+     "model_spread": 2.5,
+     "model_total": 221.9,
+     "dk_spread": "+11.5",
+     "dk_total": 217.5
+    },
+    {
+     "id": "DAL@DEN",
+     "matchup": "DAL @ DEN",
+     "model_spread": -2.9,
+     "model_total": 228.0,
+     "dk_spread": "-8.5",
+     "dk_total": 233.5
+    },
+    {
+     "id": "MIA@PHI",
+     "matchup": "MIA @ PHI",
+     "model_spread": -2.5,
+     "model_total": 232.0,
+     "dk_spread": "-3.5",
+     "dk_total": 238.5
+    },
+    {
+     "id": "CHI@CHA",
+     "matchup": "CHI @ CHA",
+     "model_spread": -1.1,
+     "model_total": 226.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "CLE@NYK",
+     "matchup": "CLE @ NYK",
+     "model_spread": -3.7,
+     "model_total": 224.7,
+     "dk_spread": "-5.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "MIN@OKC",
+     "matchup": "MIN @ OKC",
+     "model_spread": 0.3,
+     "model_total": 224.1,
+     "dk_spread": "-2.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "LAC@MEM",
+     "matchup": "LAC @ MEM",
+     "model_spread": -7.6,
+     "model_total": 229.0,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BKN@MIL",
+     "matchup": "BKN @ MIL",
+     "model_spread": -1.4,
+     "model_total": 229.8,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "PHX@HOU",
+     "matchup": "PHX @ HOU",
+     "model_spread": -5.2,
+     "model_total": 228.3,
+     "dk_spread": "-10.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "SAC@GSW",
+     "matchup": "SAC @ GSW",
+     "model_spread": -6.3,
+     "model_total": 225.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -0.3,
+     "model_total": 225.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Franz Wagner",
+     "stat": "PRA",
+     "model": 41.9,
+     "dk": 36.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PA",
+     "model": 34.6,
+     "dk": 29.5,
+     "edge": 5.1
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 28.4,
+     "dk": 23.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PR",
+     "model": 34.0,
+     "dk": 29.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PR",
+     "model": 23.0,
+     "dk": 18.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PA",
+     "model": 33.9,
+     "dk": 29.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PRA",
+     "model": 38.9,
+     "dk": 34.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PTS",
+     "model": 26.6,
+     "dk": 22.5,
+     "edge": 4.1
+    },
+    {
+     "player": "John Collins",
+     "stat": "PTS",
+     "model": 14.5,
+     "dk": 10.5,
+     "edge": 4.0
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PTS",
+     "model": 27.4,
+     "dk": 23.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PR",
+     "model": 32.4,
+     "dk": 28.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PR",
+     "model": 35.2,
+     "dk": 31.5,
+     "edge": 3.7
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PRA",
+     "model": 37.1,
+     "dk": 33.5,
+     "edge": 3.6
+    },
+    {
+     "player": "Daniel Gafford",
+     "stat": "PR",
+     "model": 12.9,
+     "dk": 16.5,
+     "edge": -3.6
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PR",
+     "model": 16.0,
+     "dk": 12.5,
+     "edge": 3.5
+    },
+    {
+     "player": "Daniel Gafford",
+     "stat": "REB",
+     "model": 4.1,
+     "dk": 7.5,
+     "edge": -3.4
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PA",
+     "model": 18.7,
+     "dk": 15.5,
+     "edge": 3.2
+    },
+    {
+     "player": "John Collins",
+     "stat": "PA",
+     "model": 14.7,
+     "dk": 11.5,
+     "edge": 3.2
+    },
+    {
+     "player": "Paul Reed",
+     "stat": "PR",
+     "model": 19.7,
+     "dk": 16.5,
+     "edge": 3.2
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PTS",
+     "model": 24.7,
+     "dk": 21.5,
+     "edge": 3.2
+    },
+    {
+     "player": "Daniel Gafford",
+     "stat": "PRA",
+     "model": 15.3,
+     "dk": 18.5,
+     "edge": -3.2
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PA",
+     "model": 26.6,
+     "dk": 23.5,
+     "edge": 3.1
+    },
+    {
+     "player": "John Collins",
+     "stat": "PR",
+     "model": 19.5,
+     "dk": 16.5,
+     "edge": 3.0
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PRA",
+     "model": 18.5,
+     "dk": 15.5,
+     "edge": 3.0
+    },
+    {
+     "player": "Kyshawn George",
+     "stat": "PR",
+     "model": 21.5,
+     "dk": 18.5,
+     "edge": 3.0
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PTS",
+     "model": 13.4,
+     "dk": 10.5,
+     "edge": 2.9
+    },
+    {
+     "player": "Tristan da Silva",
+     "stat": "PR",
+     "model": 17.4,
+     "dk": 14.5,
+     "edge": 2.9
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PTS",
+     "model": 13.3,
+     "dk": 10.5,
+     "edge": 2.8
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PTS",
+     "model": 11.3,
+     "dk": 8.5,
+     "edge": 2.8
+    },
+    {
+     "player": "Jalen Suggs",
+     "stat": "PTS",
+     "model": 8.9,
+     "dk": 11.5,
+     "edge": -2.6
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-24T12:20",
    "games": [
     {
      "id": "DET@ORL",
@@ -56016,7 +56007,7 @@
    "score": 87.3,
    "reasons": [
     "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge)",
-    "Win chance 55.8% vs 51% implied by -104: +9.5% expected value (raw model said 71.3%; past picks went 21-16, so it trusts 27% of the model's edge)",
+    "Win chance 56.6% vs 51% implied by -104: +11% expected value (raw model said 71.3%; past picks went 21-15, so it trusts 31% of the model's edge)",
     "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
     "Averaging 7.8 over the last 5 and 7.6 over the last 15",
     "Minutes steady: 24 per game over the last 5 (23 over the last 15)",
@@ -56029,117 +56020,21 @@
    "p_model": 74.4,
    "p_win_raw": 71.3,
    "p_honest": 51.2,
-   "p_win": 55.8,
-   "ev": 9.5,
-   "picked_at": "2026-11-24 11:26 AM ET",
+   "p_win": 56.6,
+   "ev": 11.0,
+   "picked_at": "2026-11-24 12:20 PM ET",
    "open_line": 8.5,
    "open_price": -104,
+   "first_picked_at": "2026-11-24 11:26 AM ET",
    "close_line": 8.5,
    "close_price": -104,
-   "close_at": "2026-11-24 11:26 AM ET",
+   "close_at": "2026-11-24 12:20 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
     "beat": false,
     "final": false
    }
-  },
-  {
-   "date": "2026-11-23",
-   "eid": "401910043",
-   "game": "LAC@HOU",
-   "time": "8:30 PM ET",
-   "home": "HOU",
-   "away": "LAC",
-   "type": "Prop",
-   "player": "Keaton Wagler",
-   "team": "LAC",
-   "stat": "PR",
-   "side": "Over",
-   "line": 10.5,
-   "price": -127,
-   "model": 13.6,
-   "edge": 3.1,
-   "edge_pct": 29.5,
-   "label": "Keaton Wagler Over 10.5 PR",
-   "best": null,
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     9,
-     10
-    ],
-    "l15": [
-     14,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     11.0,
-     10.0,
-     13.0,
-     17.0,
-     11.0,
-     16.0,
-     16.0,
-     17.0,
-     12.0,
-     14.0
-    ],
-    "line": 10.5,
-    "side": "Over",
-    "label": "PR",
-    "opps": [
-     "GSW",
-     "TOR",
-     "MIA",
-     "NOP",
-     "PHX",
-     "OKC",
-     "CHA",
-     "UTA",
-     "SAS",
-     "DAL"
-    ]
-   },
-   "score": 96.3,
-   "reasons": [
-    "Model projects 13.6 PR vs a line of 10.5 (+3.1, 30% edge)",
-    "Win chance 62.6% vs 56% implied by -127: +11.9% expected value (raw model said 86.5%; past picks went 21-14, so it trusts 34% of the model's edge)",
-    "Went over the line in 9 of his last 10 games (5/5 in the last 5)",
-    "Averaging 15.0 over the last 5 and 15.5 over the last 15",
-    "Minutes steady: 20 per game over the last 5 (22 over the last 15)",
-    "Matchup vs HOU: -1.2% to his PR projection from their defense and pace (works against the over)",
-    "HOU ranks among the top-10 defenses for PR; he went over 10.5 in 4 of 4 games against that tier",
-    "Game script / rest: blowout minutes (13.5-pt spread) +2.2% (net +2.2%)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 68,
-   "p_model": 81.9,
-   "p_win_raw": 86.5,
-   "p_honest": 51.3,
-   "p_win": 62.6,
-   "ev": 11.9,
-   "picked_at": "2026-11-23 08:36 PM ET",
-   "open_line": 10.5,
-   "open_price": -127,
-   "close_line": 10.5,
-   "close_price": -127,
-   "close_at": "2026-11-23 08:36 PM ET",
-   "clv": {
-    "line": 0.0,
-    "price": 0.0,
-    "beat": false,
-    "final": true
-   },
-   "result": "L",
-   "actual": "3 PR",
-   "units": -1.0,
-   "graded_at": "2026-11-24 11:26 AM ET"
   },
   {
    "date": "2026-11-22",
@@ -56155,7 +56050,7 @@
    "side": "Under",
    "line": 8.5,
    "price": -131,
-   "model": 6.0,
+   "model": 6,
    "edge": -2.5,
    "edge_pct": 29.4,
    "label": "Josh Hart Under 8.5 REB",
@@ -56176,16 +56071,16 @@
    },
    "chart": {
     "vals": [
-     4.0,
-     8.0,
-     6.0,
-     6.0,
-     4.0,
-     5.0,
-     5.0,
-     4.0,
-     6.0,
-     8.0
+     4,
+     8,
+     6,
+     6,
+     4,
+     5,
+     5,
+     4,
+     6,
+     8
     ],
     "line": 8.5,
     "side": "Under",
@@ -56229,14 +56124,14 @@
    "close_price": -131,
    "close_at": "2026-11-22 06:33 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "result": "L",
    "actual": "11 REB",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
@@ -56274,16 +56169,16 @@
    },
    "chart": {
     "vals": [
-     2.0,
-     1.0,
-     2.0,
-     0.0,
-     2.0,
-     4.0,
-     4.0,
-     3.0,
-     3.0,
-     1.0
+     2,
+     1,
+     2,
+     0,
+     2,
+     4,
+     4,
+     3,
+     3,
+     1
     ],
     "line": 1.5,
     "side": "Over",
@@ -56327,8 +56222,8 @@
    "close_price": 101,
    "close_at": "2026-11-20 08:43 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -56352,7 +56247,7 @@
    "side": "Under",
    "line": 4.5,
    "price": 110,
-   "model": 3.0,
+   "model": 3,
    "edge": -1.5,
    "edge_pct": 33.3,
    "label": "Scoot Henderson Under 4.5 RA",
@@ -56373,16 +56268,16 @@
    },
    "chart": {
     "vals": [
-     4.0,
-     4.0,
-     3.0,
-     2.0,
-     3.0,
-     5.0,
-     4.0,
-     1.0,
-     1.0,
-     2.0
+     4,
+     4,
+     3,
+     2,
+     3,
+     5,
+     4,
+     1,
+     1,
+     2
     ],
     "line": 4.5,
     "side": "Under",
@@ -56426,7 +56321,7 @@
    "close_price": 110,
    "close_at": "2026-11-19 07:07 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 0.2,
     "beat": false,
     "final": true
@@ -56434,7 +56329,7 @@
    "locked_at": "2026-11-19 08:40 PM ET",
    "result": "L",
    "actual": "10 RA",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-20 01:53 AM ET"
   },
   {
@@ -56475,16 +56370,16 @@
    },
    "chart": {
     "vals": [
-     6.0,
-     5.0,
-     6.0,
-     7.0,
-     6.0,
-     1.0,
-     4.0,
-     4.0,
-     4.0,
-     2.0
+     6,
+     5,
+     6,
+     7,
+     6,
+     1,
+     4,
+     4,
+     4,
+     2
     ],
     "line": 3.5,
     "side": "Over",
@@ -56528,15 +56423,15 @@
    "close_price": 104,
    "close_at": "2026-11-18 07:15 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-18 08:45 PM ET",
    "result": "L",
    "actual": "2 REB",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-19 01:54 AM ET"
   },
   {
@@ -56555,7 +56450,7 @@
    "price": -101,
    "model": 7.6,
    "edge": -1.9,
-   "edge_pct": 20.0,
+   "edge_pct": 20,
    "label": "Mo Bamba Under 9.5 REB",
    "best": null,
    "hits": {
@@ -56574,16 +56469,16 @@
    },
    "chart": {
     "vals": [
-     7.0,
-     4.0,
-     4.0,
-     8.0,
-     10.0,
-     3.0,
-     7.0,
-     1.0,
-     9.0,
-     5.0
+     7,
+     4,
+     4,
+     8,
+     10,
+     3,
+     7,
+     1,
+     9,
+     5
     ],
     "line": 9.5,
     "side": "Under",
@@ -56626,14 +56521,14 @@
    "close_price": -101,
    "close_at": "2026-11-17 10:17 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "result": "L",
    "actual": "10 REB",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-18 01:53 AM ET"
   },
   {
@@ -56671,16 +56566,16 @@
    },
    "chart": {
     "vals": [
-     5.0,
-     3.0,
-     3.0,
-     2.0,
-     4.0,
-     2.0,
-     2.0,
-     2.0,
-     7.0,
-     4.0
+     5,
+     3,
+     3,
+     2,
+     4,
+     2,
+     2,
+     2,
+     7,
+     4
     ],
     "line": 5.5,
     "side": "Under",
@@ -56723,7 +56618,7 @@
    "close_price": 103,
    "close_at": "2026-11-16 07:05 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 0.5,
     "beat": false,
     "final": true
@@ -56769,16 +56664,16 @@
    },
    "chart": {
     "vals": [
-     10.0,
-     6.0,
-     3.0,
-     4.0,
-     0.0,
-     9.0,
-     9.0,
-     8.0,
-     7.0,
-     7.0
+     10,
+     6,
+     3,
+     4,
+     0,
+     9,
+     9,
+     8,
+     7,
+     7
     ],
     "line": 5.5,
     "side": "Over",
@@ -56821,8 +56716,8 @@
    "close_price": -105,
    "close_at": "2026-11-15 11:28 AM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -56870,16 +56765,16 @@
    },
    "chart": {
     "vals": [
-     2.0,
-     5.0,
-     3.0,
-     6.0,
-     1.0,
-     4.0,
-     4.0,
-     6.0,
-     5.0,
-     3.0
+     2,
+     5,
+     3,
+     6,
+     1,
+     4,
+     4,
+     6,
+     5,
+     3
     ],
     "line": 6.5,
     "side": "Under",
@@ -56897,7 +56792,7 @@
      "MIA"
     ]
    },
-   "score": 100.0,
+   "score": 100,
    "reasons": [
     "Model projects 4.4 RA vs a line of 6.5 (-2.1, 32% edge)",
     "Honest win chance 52.5% vs 52% implied by -110: +0.2% expected value (raw model said 91.2%)",
@@ -56923,8 +56818,8 @@
    "close_price": -110,
    "close_at": "2026-11-14 06:31 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -56969,16 +56864,16 @@
    },
    "chart": {
     "vals": [
-     8.0,
-     6.0,
-     7.0,
-     6.0,
-     9.0,
-     2.0,
-     11.0,
-     13.0,
-     6.0,
-     7.0
+     8,
+     6,
+     7,
+     6,
+     9,
+     2,
+     11,
+     13,
+     6,
+     7
     ],
     "line": 5.5,
     "side": "Over",
@@ -57021,15 +56916,15 @@
    "close_price": -102,
    "close_at": "2026-11-13 08:33 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-13 10:14 PM ET",
    "result": "L",
    "actual": "3 AST",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-14 01:39 AM ET"
   },
   {
@@ -57048,7 +56943,7 @@
    "price": -108,
    "model": 1.6,
    "edge": -0.9,
-   "edge_pct": 36.0,
+   "edge_pct": 36,
    "label": "Jamison Battle Under 2.5 REB",
    "best": [
     100,
@@ -57070,16 +56965,16 @@
    },
    "chart": {
     "vals": [
-     0.0,
-     1.0,
-     0.0,
-     0.0,
-     5.0,
-     0.0,
-     1.0,
-     2.0,
-     1.0,
-     2.0
+     0,
+     1,
+     0,
+     0,
+     5,
+     0,
+     1,
+     2,
+     1,
+     2
     ],
     "line": 2.5,
     "side": "Under",
@@ -57124,8 +57019,8 @@
    "close_price": -108,
    "close_at": "2026-11-12 07:06 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -57151,7 +57046,7 @@
    "price": -105,
    "model": 11.9,
    "edge": 3.4,
-   "edge_pct": 40.0,
+   "edge_pct": 40,
    "label": "Ziaire Williams Over 8.5 PTS",
    "best": null,
    "hits": {
@@ -57170,15 +57065,15 @@
    },
    "chart": {
     "vals": [
-     9.0,
-     14.0,
-     11.0,
-     11.0,
-     9.0,
-     10.0,
-     8.0,
-     17.0,
-     12.0
+     9,
+     14,
+     11,
+     11,
+     9,
+     10,
+     8,
+     17,
+     12
     ],
     "line": 8.5,
     "side": "Over",
@@ -57210,9 +57105,9 @@
    ],
    "candidates_considered": 203,
    "p_model": 87.3,
-   "p_win_raw": 88.0,
+   "p_win_raw": 88,
    "p_win": 55.3,
-   "ev": 8.0,
+   "ev": 8,
    "picked_at": "2026-11-11 07:09 PM ET",
    "open_line": 8.5,
    "open_price": -111,
@@ -57221,7 +57116,7 @@
    "close_price": -105,
    "close_at": "2026-11-11 07:09 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": -1.4,
     "beat": false,
     "final": true
@@ -57267,16 +57162,16 @@
    },
    "chart": {
     "vals": [
-     12.0,
-     17.0,
-     19.0,
-     23.0,
-     9.0,
-     16.0,
-     12.0,
-     18.0,
-     11.0,
-     13.0
+     12,
+     17,
+     19,
+     23,
+     9,
+     16,
+     12,
+     18,
+     11,
+     13
     ],
     "line": 19.5,
     "side": "Under",
@@ -57318,8 +57213,8 @@
    "close_price": -120,
    "close_at": "2026-11-10 06:31 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -57367,14 +57262,14 @@
    },
    "chart": {
     "vals": [
-     7.0,
-     11.0,
-     11.0,
-     7.0,
-     7.0,
-     9.0,
-     9.0,
-     9.0
+     7,
+     11,
+     11,
+     7,
+     7,
+     9,
+     9,
+     9
     ],
     "line": 6.5,
     "side": "Over",
@@ -57390,7 +57285,7 @@
      "OKC"
     ]
    },
-   "score": 100.0,
+   "score": 100,
    "reasons": [
     "Model projects 8.6 REB vs a line of 6.5 (+2.1, 32% edge)",
     "Honest win chance 56.6% vs 54% implied by -119: +4.2% expected value (raw model said 85.3%)",
@@ -57416,7 +57311,7 @@
    "close_price": -119,
    "close_at": "2026-11-09 06:36 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 0.6,
     "beat": true,
     "final": true
@@ -57424,7 +57319,7 @@
    "locked_at": "2026-11-09 08:32 PM ET",
    "result": "L",
    "actual": "6 REB",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-09 10:12 PM ET"
   },
   {
@@ -57465,15 +57360,15 @@
    },
    "chart": {
     "vals": [
-     6.0,
-     6.0,
-     4.0,
-     8.0,
-     6.0,
-     6.0,
-     5.0,
-     1.0,
-     4.0
+     6,
+     6,
+     4,
+     8,
+     6,
+     6,
+     5,
+     1,
+     4
     ],
     "line": 3.5,
     "side": "Over",
@@ -57517,7 +57412,7 @@
    "close_price": 103,
    "close_at": "2026-11-08 07:20 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": -0.2,
     "beat": false,
     "final": true
@@ -57563,14 +57458,14 @@
    },
    "chart": {
     "vals": [
-     18.0,
-     19.0,
-     12.0,
-     13.0,
-     14.0,
-     9.0,
-     11.0,
-     18.0
+     18,
+     19,
+     12,
+     13,
+     14,
+     9,
+     11,
+     18
     ],
     "line": 10.5,
     "side": "Over",
@@ -57600,7 +57495,7 @@
     "Not on the injury report at pick time"
    ],
    "candidates_considered": 48,
-   "p_model": 91.0,
+   "p_model": 91,
    "p_win_raw": 89.6,
    "p_win": 58.6,
    "ev": 7.8,
@@ -57612,15 +57507,15 @@
    "close_price": -119,
    "close_at": "2026-11-07 08:38 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
    "locked_at": "2026-11-07 10:15 PM ET",
    "result": "L",
    "actual": "4 PTS",
-   "units": -1.0,
+   "units": -1,
    "graded_at": "2026-11-08 01:38 AM ET"
   },
   {
@@ -57639,7 +57534,7 @@
    "price": -148,
    "model": 3.7,
    "edge": 1.2,
-   "edge_pct": 48.0,
+   "edge_pct": 48,
    "label": "Jaden McDaniels Over 2.5 AST",
    "best": null,
    "hits": {
@@ -57658,15 +57553,15 @@
    },
    "chart": {
     "vals": [
-     1.0,
-     3.0,
-     3.0,
-     4.0,
-     4.0,
-     7.0,
-     3.0,
-     3.0,
-     4.0
+     1,
+     3,
+     3,
+     4,
+     4,
+     7,
+     3,
+     3,
+     4
     ],
     "line": 2.5,
     "side": "Over",
@@ -57699,7 +57594,7 @@
    "p_model": 71.5,
    "p_win_raw": 78.4,
    "p_win": 60.3,
-   "ev": 1.0,
+   "ev": 1,
    "picked_at": "2026-11-06 06:33 PM ET",
    "open_line": 2.5,
    "open_price": -134,
@@ -57708,7 +57603,7 @@
    "close_price": -148,
    "close_at": "2026-11-06 06:33 PM ET",
    "clv": {
-    "line": 0.0,
+    "line": 0,
     "price": 2.4,
     "beat": true,
     "final": true
@@ -57735,7 +57630,7 @@
    "price": -109,
    "model": 23.6,
    "edge": 4.1,
-   "edge_pct": 21.0,
+   "edge_pct": 21,
    "label": "Davion Mitchell Over 19.5 PA",
    "best": [
     -105,
@@ -57757,14 +57652,14 @@
    },
    "chart": {
     "vals": [
-     22.0,
-     23.0,
-     32.0,
-     23.0,
-     20.0,
-     26.0,
-     22.0,
-     21.0
+     22,
+     23,
+     32,
+     23,
+     20,
+     26,
+     22,
+     21
     ],
     "line": 19.5,
     "side": "Over",
@@ -57796,8 +57691,8 @@
    "close_price": -109,
    "close_at": "2026-11-05 08:41 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -57841,14 +57736,14 @@
    },
    "chart": {
     "vals": [
-     10.0,
-     7.0,
-     11.0,
-     7.0,
-     9.0,
-     10.0,
-     10.0,
-     3.0
+     10,
+     7,
+     11,
+     7,
+     9,
+     10,
+     10,
+     3
     ],
     "line": 6.5,
     "side": "Over",
@@ -57876,8 +57771,8 @@
    "close_price": 102,
    "close_at": "2026-11-04 07:05 PM ET",
    "clv": {
-    "line": 0.0,
-    "price": 0.0,
+    "line": 0,
+    "price": 0,
     "beat": false,
     "final": true
    },
@@ -57968,8 +57863,8 @@
    "p_model": 70.4,
    "p_win_raw": 70.8,
    "p_honest": 51.2,
-   "p_win": 55.7,
-   "ev": 2.9
+   "p_win": 56.4,
+   "ev": 4.2
   },
   {
    "date": "2026-11-24",
@@ -58051,8 +57946,8 @@
    "p_model": 56.6,
    "p_win_raw": 61.7,
    "p_honest": 50.3,
-   "p_win": 53.2,
-   "ev": 5.4
+   "p_win": 53.6,
+   "ev": 6.1
   },
   {
    "date": "2026-11-24",
@@ -58132,8 +58027,8 @@
    "p_model": 67.9,
    "p_win_raw": 62.1,
    "p_honest": 50.5,
-   "p_win": 53.3,
-   "ev": -7.2
+   "p_win": 53.7,
+   "ev": -6.5
   },
   {
    "date": "2026-11-24",
@@ -58216,8 +58111,8 @@
    "p_model": 69.9,
    "p_win_raw": 64.8,
    "p_honest": 51.1,
-   "p_win": 54.0,
-   "ev": -1.7
+   "p_win": 54.6,
+   "ev": -0.6
   },
   {
    "date": "2026-11-24",
@@ -58295,8 +58190,8 @@
    "p_model": 68.7,
    "p_win_raw": 67.9,
    "p_honest": 51.2,
-   "p_win": 54.9,
-   "ev": 1.0
+   "p_win": 55.5,
+   "ev": 2.1
   },
   {
    "date": "2026-11-24",
@@ -58378,20 +58273,20 @@
    "p_model": 64.1,
    "p_win_raw": 62.4,
    "p_honest": 50.5,
-   "p_win": 53.4,
-   "ev": 11.6
+   "p_win": 53.8,
+   "ev": 12.4
   }
  ],
  "board": {
   "date": "2026-11-24",
   "qualified": 73,
-  "positive": 31,
-  "top_win": 56.2,
+  "positive": 33,
+  "top_win": 57.0,
   "trust": {
-   "s": 0.27178648016965656,
-   "n": 37,
+   "s": 0.3079700686331553,
+   "n": 36,
    "w": 21,
-   "raw": 79.5
+   "raw": 79.3
   },
   "note": null
  },
@@ -59557,25 +59452,17 @@
   "AJ Dybantsa|BOS": []
  },
  "ladder": {
-  "start": 10.0,
-  "goal": 1000.0,
-  "attempt": 10,
-  "bankroll": 10.0,
+  "start": 10,
+  "goal": 1000,
+  "attempt": 9,
+  "bankroll": 10,
   "attempts": [
-   {
-    "attempt": 9,
-    "start": "2026-11-23",
-    "end": "2026-11-23",
-    "days": 1,
-    "peak": 10.0,
-    "result": "Busted"
-   },
    {
     "attempt": 8,
     "start": "2026-11-22",
     "end": "2026-11-22",
     "days": 1,
-    "peak": 10.0,
+    "peak": 10,
     "result": "Busted"
    },
    {
@@ -59591,7 +59478,7 @@
     "start": "2026-11-18",
     "end": "2026-11-18",
     "days": 1,
-    "peak": 10.0,
+    "peak": 10,
     "result": "Busted"
    },
    {
@@ -59615,7 +59502,7 @@
     "start": "2026-11-09",
     "end": "2026-11-09",
     "days": 1,
-    "peak": 10.0,
+    "peak": 10,
     "result": "Busted"
    },
    {
@@ -59704,9 +59591,9 @@
      "Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings)",
      "Not on the injury report at pick time"
     ],
-    "p_win": 56.2,
+    "p_win": 57.0,
     "p_model": 72.2,
-    "ev": 1.5,
+    "ev": 3.0,
     "score": 77.0,
     "best": [
      -120,
@@ -59716,123 +59603,24 @@
     "team": "ORL",
     "stat": "PA",
     "date": "2026-11-24",
-    "attempt": 10,
+    "attempt": 9,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 8.06,
-    "picked_at": "2026-11-24 11:26 AM ET",
-    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +1.5% expected value",
+    "picked_at": "2026-11-24 12:20 PM ET",
+    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value",
     "open_line": 29.5,
     "open_price": -124,
+    "first_picked_at": "2026-11-24 11:26 AM ET",
     "close_line": 29.5,
     "close_price": -124,
-    "close_at": "2026-11-24 11:26 AM ET",
+    "close_at": "2026-11-24 12:20 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
      "beat": false,
      "final": false
     }
-   },
-   {
-    "type": "Prop",
-    "label": "Devin Vassell Under 21.5 PR",
-    "game": "SAS@SAC",
-    "eid": "401910045",
-    "time": "10:00 PM ET",
-    "home": "SAC",
-    "away": "SAS",
-    "side": "Under",
-    "line": 21.5,
-    "price": -115,
-    "model": 17.6,
-    "edge": -3.9,
-    "edge_pct": 18.1,
-    "hits": {
-     "l5": [
-      5,
-      5
-     ],
-     "l10": [
-      10,
-      10
-     ],
-     "l15": [
-      14,
-      15
-     ]
-    },
-    "chart": {
-     "vals": [
-      14.0,
-      13.0,
-      9.0,
-      21.0,
-      17.0,
-      9.0,
-      12.0,
-      17.0,
-      19.0,
-      13.0
-     ],
-     "line": 21.5,
-     "side": "Under",
-     "label": "PR",
-     "opps": [
-      "MIN",
-      "UTA",
-      "DAL",
-      "SAC",
-      "POR",
-      "GSW",
-      "UTA",
-      "DET",
-      "LAC",
-      "NOP"
-     ]
-    },
-    "reasons": [
-     "Model projects 17.6 PR vs a line of 21.5 (-3.9, 18% edge)",
-     "Went under the line in 10 of his last 10 games (5/5 in the last 5)",
-     "Averaging 14.0 over the last 5 and 15.1 over the last 15",
-     "Minutes steady: 30 per game over the last 5 (30 over the last 15)",
-     "Matchup vs SAC: +2% to his PR projection from their defense and pace (works against the under)",
-     "SAC ranks among the bottom-10 defenses for PR; he went under 21.5 in 5 of 6 games against that tier",
-     "Teammate injury boost: De'Aaron Fox, Dylan Harper, Victor Wembanyama out, +20% to his PR projection (extra minutes and usage)",
-     "Not on the injury report at pick time"
-    ],
-    "p_win": 62.4,
-    "p_model": 81.2,
-    "ev": 16.7,
-    "score": 86.7,
-    "best": null,
-    "player": "Devin Vassell",
-    "team": "SAS",
-    "stat": "PR",
-    "date": "2026-11-23",
-    "attempt": 9,
-    "day": 1,
-    "stake": 10.0,
-    "to_win": 8.7,
-    "picked_at": "2026-11-23 08:36 PM ET",
-    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 62.4% to win, +16.7% expected value",
-    "open_line": 21.5,
-    "open_price": -115,
-    "close_line": 21.5,
-    "close_price": -115,
-    "close_at": "2026-11-23 08:36 PM ET",
-    "clv": {
-     "line": 0.0,
-     "price": 0.0,
-     "beat": false,
-     "final": true
-    },
-    "result": "L",
-    "actual": "22 PR",
-    "units": -1.0,
-    "graded_at": "2026-11-24 11:26 AM ET",
-    "applied": true,
-    "bankroll_after": 0
    },
    {
     "type": "Prop",
@@ -59864,16 +59652,16 @@
     },
     "chart": {
      "vals": [
-      3.0,
-      2.0,
-      4.0,
-      2.0,
-      2.0,
-      2.0,
-      7.0,
-      4.0,
-      2.0,
-      3.0
+      3,
+      2,
+      4,
+      2,
+      2,
+      2,
+      7,
+      4,
+      2,
+      3
      ],
      "line": 4.5,
      "side": "Under",
@@ -59917,7 +59705,7 @@
     "date": "2026-11-22",
     "attempt": 8,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 8.55,
     "picked_at": "2026-11-22 06:33 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 61.3% to win, +13.7% expected value",
@@ -59928,14 +59716,14 @@
     "close_price": -117,
     "close_at": "2026-11-22 06:33 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 1.8,
      "beat": true,
      "final": true
     },
     "result": "L",
     "actual": "9 PTS",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-23 08:36 PM ET",
     "applied": true,
     "bankroll_after": 0
@@ -59953,7 +59741,7 @@
     "price": 109,
     "model": 2.1,
     "edge": 0.6,
-    "edge_pct": 40.0,
+    "edge_pct": 40,
     "hits": {
      "l5": [
       3,
@@ -59970,16 +59758,16 @@
     },
     "chart": {
      "vals": [
-      2.0,
-      3.0,
-      2.0,
-      1.0,
-      3.0,
-      3.0,
-      2.0,
-      1.0,
-      0.0,
-      3.0
+      2,
+      3,
+      2,
+      1,
+      3,
+      3,
+      2,
+      1,
+      0,
+      3
      ],
      "line": 1.5,
      "side": "Over",
@@ -60009,7 +59797,7 @@
      "Not on the injury report at pick time"
     ],
     "p_win": 51.1,
-    "p_model": 62.0,
+    "p_model": 62,
     "ev": 6.8,
     "score": 82.1,
     "best": [
@@ -60033,15 +59821,15 @@
     "close_price": 109,
     "close_at": "2026-11-20 07:11 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
     "locked_at": "2026-11-20 08:43 PM ET",
     "result": "L",
     "actual": "1 AST",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-20 10:12 PM ET",
     "applied": true,
     "bankroll_after": 0
@@ -60059,7 +59847,7 @@
     "price": 109,
     "model": 9.3,
     "edge": 1.8,
-    "edge_pct": 24.0,
+    "edge_pct": 24,
     "hits": {
      "l5": [
       4,
@@ -60076,16 +59864,16 @@
     },
     "chart": {
      "vals": [
-      6.0,
-      8.0,
-      7.0,
-      12.0,
-      11.0,
-      8.0,
-      10.0,
-      8.0,
-      12.0,
-      3.0
+      6,
+      8,
+      7,
+      12,
+      11,
+      8,
+      10,
+      8,
+      12,
+      3
      ],
      "line": 7.5,
      "side": "Over",
@@ -60124,7 +59912,7 @@
     "date": "2026-11-19",
     "attempt": 7,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.9,
     "picked_at": "2026-11-19 07:07 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.1% to win, +6.8% expected value",
@@ -60135,7 +59923,7 @@
     "close_price": 109,
     "close_at": "2026-11-19 07:07 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -0.5,
      "beat": false,
      "final": true
@@ -60160,8 +59948,8 @@
     "line": 2.5,
     "price": 114,
     "model": 3.5,
-    "edge": 1.0,
-    "edge_pct": 40.0,
+    "edge": 1,
+    "edge_pct": 40,
     "hits": {
      "l5": [
       3,
@@ -60178,16 +59966,16 @@
     },
     "chart": {
      "vals": [
-      1.0,
-      5.0,
-      4.0,
-      2.0,
-      5.0,
-      2.0,
-      4.0,
-      5.0,
-      2.0,
-      3.0
+      1,
+      5,
+      4,
+      2,
+      5,
+      2,
+      4,
+      5,
+      2,
+      3
      ],
      "line": 2.5,
      "side": "Over",
@@ -60229,7 +60017,7 @@
     "date": "2026-11-18",
     "attempt": 6,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 11.4,
     "picked_at": "2026-11-18 06:47 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +10.2% expected value",
@@ -60240,7 +60028,7 @@
     "close_price": 114,
     "close_at": "2026-11-18 06:47 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.6,
      "beat": true,
      "final": true
@@ -60248,7 +60036,7 @@
     "locked_at": "2026-11-18 07:15 PM ET",
     "result": "L",
     "actual": "2 3PM",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-18 10:18 PM ET",
     "applied": true,
     "bankroll_after": 0
@@ -60283,16 +60071,16 @@
     },
     "chart": {
      "vals": [
-      6.0,
-      6.0,
-      7.0,
-      5.0,
-      6.0,
-      7.0,
-      5.0,
-      6.0,
-      4.0,
-      10.0
+      6,
+      6,
+      7,
+      5,
+      6,
+      7,
+      5,
+      6,
+      4,
+      10
      ],
      "line": 5.5,
      "side": "Over",
@@ -60345,15 +60133,15 @@
     "close_price": 115,
     "close_at": "2026-11-17 07:13 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
     "locked_at": "2026-11-17 08:48 PM ET",
     "result": "L",
     "actual": "2 REB",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-18 01:53 AM ET",
     "applied": true,
     "bankroll_after": 0
@@ -60388,16 +60176,16 @@
     },
     "chart": {
      "vals": [
-      4.0,
-      2.0,
-      1.0,
-      7.0,
-      4.0,
-      8.0,
-      2.0,
-      7.0,
-      2.0,
-      6.0
+      4,
+      2,
+      1,
+      7,
+      4,
+      8,
+      2,
+      7,
+      2,
+      6
      ],
      "line": 3.5,
      "side": "Over",
@@ -60441,7 +60229,7 @@
     "date": "2026-11-16",
     "attempt": 5,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.3,
     "picked_at": "2026-11-16 07:05 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +4.5% expected value",
@@ -60452,8 +60240,8 @@
     "close_price": 103,
     "close_at": "2026-11-16 07:05 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -60495,16 +60283,16 @@
     },
     "chart": {
      "vals": [
-      10.0,
-      12.0,
-      12.0,
-      9.0,
-      12.0,
-      18.0,
-      17.0,
-      5.0,
-      6.0,
-      9.0
+      10,
+      12,
+      12,
+      9,
+      12,
+      18,
+      17,
+      5,
+      6,
+      9
      ],
      "line": 8.5,
      "side": "Over",
@@ -60552,15 +60340,15 @@
     "close_price": -106,
     "close_at": "2026-11-15 11:28 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
     "locked_at": "2026-11-15 06:41 PM ET",
     "result": "L",
     "actual": "6 RA",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-15 07:05 PM ET",
     "applied": true,
     "bankroll_after": 0
@@ -60595,16 +60383,16 @@
     },
     "chart": {
      "vals": [
-      11.0,
-      3.0,
-      6.0,
-      9.0,
-      8.0,
-      6.0,
-      17.0,
-      11.0,
-      5.0,
-      11.0
+      11,
+      3,
+      6,
+      9,
+      8,
+      6,
+      17,
+      11,
+      5,
+      11
      ],
      "line": 7.5,
      "side": "Over",
@@ -60633,10 +60421,10 @@
      "Best price: +105 at Hard Rock (DraftKings +104; the record is graded at DraftKings)",
      "Not on the injury report at pick time"
     ],
-    "p_win": 52.0,
+    "p_win": 52,
     "p_model": 76.1,
     "ev": 6.1,
-    "score": 78.0,
+    "score": 78,
     "best": [
      105,
      "hardrockbet"
@@ -60658,7 +60446,7 @@
     "close_price": 104,
     "close_at": "2026-11-14 06:31 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.9,
      "beat": true,
      "final": true
@@ -60701,16 +60489,16 @@
     },
     "chart": {
      "vals": [
-      18.0,
-      6.0,
-      16.0,
-      22.0,
-      15.0,
-      9.0,
-      8.0,
-      12.0,
-      10.0,
-      13.0
+      18,
+      6,
+      16,
+      22,
+      15,
+      9,
+      8,
+      12,
+      10,
+      13
      ],
      "line": 18.5,
      "side": "Under",
@@ -60742,7 +60530,7 @@
     "p_win": 54.2,
     "p_model": 76.7,
     "ev": 0.5,
-    "score": 86.0,
+    "score": 86,
     "best": [
      -110,
      "hardrockbet"
@@ -60763,8 +60551,8 @@
     "close_price": -117,
     "close_at": "2026-11-13 06:37 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -60806,14 +60594,14 @@
     },
     "chart": {
      "vals": [
-      2.0,
-      5.0,
-      7.0,
-      9.0,
-      8.0,
-      5.0,
-      7.0,
-      6.0
+      2,
+      5,
+      7,
+      9,
+      8,
+      5,
+      7,
+      6
      ],
      "line": 4.5,
      "side": "Over",
@@ -60841,7 +60629,7 @@
      "Not on the injury report at pick time"
     ],
     "p_win": 56.3,
-    "p_model": 81.0,
+    "p_model": 81,
     "ev": 19.4,
     "score": 94.8,
     "best": null,
@@ -60862,8 +60650,8 @@
     "close_price": 112,
     "close_at": "2026-11-12 07:06 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -60905,14 +60693,14 @@
     },
     "chart": {
      "vals": [
-      18.0,
-      15.0,
-      16.0,
-      23.0,
-      10.0,
-      16.0,
-      13.0,
-      24.0
+      18,
+      15,
+      16,
+      23,
+      10,
+      16,
+      13,
+      24
      ],
      "line": 13.5,
      "side": "Over",
@@ -60961,8 +60749,8 @@
     "close_price": -109,
     "close_at": "2026-11-11 07:09 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -61004,15 +60792,15 @@
     },
     "chart": {
      "vals": [
-      4.0,
-      7.0,
-      7.0,
-      11.0,
-      10.0,
-      5.0,
-      10.0,
-      12.0,
-      6.0
+      4,
+      7,
+      7,
+      11,
+      10,
+      5,
+      10,
+      12,
+      6
      ],
      "line": 11.5,
      "side": "Under",
@@ -61054,7 +60842,7 @@
     "date": "2026-11-10",
     "attempt": 4,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 9.09,
     "picked_at": "2026-11-10 08:32 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 54.6% to win, +4.2% expected value",
@@ -61065,8 +60853,8 @@
     "close_price": -110,
     "close_at": "2026-11-10 08:32 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -61091,7 +60879,7 @@
     "price": 105,
     "model": 9.1,
     "edge": 2.6,
-    "edge_pct": 40.0,
+    "edge_pct": 40,
     "hits": {
      "l5": [
       5,
@@ -61108,14 +60896,14 @@
     },
     "chart": {
      "vals": [
-      3.0,
-      7.0,
-      9.0,
-      8.0,
-      7.0,
-      8.0,
-      11.0,
-      9.0
+      3,
+      7,
+      9,
+      8,
+      7,
+      8,
+      11,
+      9
      ],
      "line": 6.5,
      "side": "Over",
@@ -61152,7 +60940,7 @@
     "date": "2026-11-09",
     "attempt": 3,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.5,
     "picked_at": "2026-11-09 06:36 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.1% to win, +17.1% expected value",
@@ -61163,7 +60951,7 @@
     "close_price": 105,
     "close_at": "2026-11-09 06:36 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -4.5,
      "beat": false,
      "final": true
@@ -61171,7 +60959,7 @@
     "locked_at": "2026-11-09 08:32 PM ET",
     "result": "L",
     "actual": "3 RA",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-09 10:12 PM ET",
     "applied": true,
     "bankroll_after": 0
@@ -61187,9 +60975,9 @@
     "side": "Under",
     "line": 17.5,
     "price": -102,
-    "model": 14.0,
+    "model": 14,
     "edge": -3.5,
-    "edge_pct": 20.0,
+    "edge_pct": 20,
     "hits": {
      "l5": [
       4,
@@ -61206,14 +60994,14 @@
     },
     "chart": {
      "vals": [
-      9.0,
-      10.0,
-      17.0,
-      12.0,
-      18.0,
-      17.0,
-      17.0,
-      11.0
+      9,
+      10,
+      17,
+      12,
+      18,
+      17,
+      17,
+      11
      ],
      "line": 17.5,
      "side": "Under",
@@ -61260,14 +61048,14 @@
     "close_price": -102,
     "close_at": "2026-11-08 11:26 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
     "result": "L",
     "actual": "26 PR",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-08 06:32 PM ET",
     "applied": true,
     "bankroll_after": 0,
@@ -61286,7 +61074,7 @@
     "price": -126,
     "model": 11.2,
     "edge": -2.3,
-    "edge_pct": 17.0,
+    "edge_pct": 17,
     "hits": {
      "l5": [
       5,
@@ -61303,14 +61091,14 @@
     },
     "chart": {
      "vals": [
-      4.0,
-      7.0,
-      7.0,
-      11.0,
-      10.0,
-      5.0,
-      10.0,
-      12.0
+      4,
+      7,
+      7,
+      11,
+      10,
+      5,
+      10,
+      12
      ],
      "line": 13.5,
      "side": "Under",
@@ -61351,7 +61139,7 @@
     "date": "2026-11-07",
     "attempt": 2,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 7.94,
     "picked_at": "2026-11-07 08:38 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 58.1% to win, +4.2% expected value",
@@ -61362,8 +61150,8 @@
     "close_price": -126,
     "close_at": "2026-11-07 08:38 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -61405,14 +61193,14 @@
     },
     "chart": {
      "vals": [
-      6.0,
-      13.0,
-      15.0,
-      13.0,
-      14.0,
-      15.0,
-      14.0,
-      13.0
+      6,
+      13,
+      15,
+      13,
+      14,
+      15,
+      14,
+      13
      ],
      "line": 10.5,
      "side": "Over",
@@ -61459,15 +61247,15 @@
     "close_price": -105,
     "close_at": "2026-11-06 06:33 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
     "locked_at": "2026-11-06 08:29 PM ET",
     "result": "L",
     "actual": "8 PR",
-    "units": -1.0,
+    "units": -1,
     "graded_at": "2026-11-07 01:37 AM ET",
     "applied": true,
     "bankroll_after": 0
@@ -61502,14 +61290,14 @@
     },
     "chart": {
      "vals": [
-      14.0,
-      18.0,
-      6.0,
-      16.0,
-      22.0,
-      15.0,
-      9.0,
-      8.0
+      14,
+      18,
+      6,
+      16,
+      22,
+      15,
+      9,
+      8
      ],
      "line": 16.5,
      "side": "Under",
@@ -61527,7 +61315,7 @@
     ],
     "p_win": 56.3,
     "p_model": 74.6,
-    "ev": 11.0,
+    "ev": 11,
     "score": 81.2,
     "best": null,
     "player": "Andrew Wiggins",
@@ -61547,8 +61335,8 @@
     "close_price": -103,
     "close_at": "2026-11-05 08:41 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -61607,7 +61395,7 @@
     "date": "2026-11-04",
     "attempt": 1,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 7.46,
     "picked_at": "2026-11-04 07:05 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 88.1% to win, +53.8% expected value",
@@ -61618,8 +61406,8 @@
     "close_price": -134,
     "close_at": "2026-11-04 07:05 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -66916,19 +66704,19 @@
   "potd": {
    "current": {
     "type": "L",
-    "n": 2
+    "n": 1
    },
    "best_win": {
     "n": 3,
     "start": "2026-11-04",
     "end": "2026-11-06"
    },
-   "record": "11-8"
+   "record": "11-7"
   },
   "ladder": {
-   "attempt": 10,
+   "attempt": 9,
    "day": 0,
-   "bankroll": 10.0,
+   "bankroll": 10,
    "best_day": 5,
    "peak": 293.58,
    "completed": 0
@@ -66980,7 +66768,7 @@
     "name": "Winning Month",
     "desc": "A month with 10+ graded picks at 55%+",
     "earned": "2026-11-14",
-    "progress": "best so far 11-8 (2026-11)"
+    "progress": "best so far 11-7 (2026-11)"
    },
    {
     "id": "climber",
@@ -67913,19 +67701,19 @@
  },
  "clv": {
   "potd": {
-   "bets": 19,
+   "bets": 18,
    "beat": 2,
    "avg_line": 0.0,
-   "avg_price": 0.11
+   "avg_price": 0.12
   },
   "ladder": {
-   "bets": 19,
+   "bets": 18,
    "beat": 3,
    "avg_line": 0.0,
    "avg_price": -0.09
   },
   "all": {
-   "bets": 38,
+   "bets": 36,
    "beat": 5,
    "avg_line": 0.0,
    "avg_price": 0.01
@@ -67937,7 +67725,7 @@
   "remaining": 6631,
   "allowed_now": 210,
   "skipped": [],
-  "slot": "morning",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "11:26 AM",
@@ -67996,6 +67784,11 @@
    }
   ],
   "history": [
+   {
+    "date": "2026-11-24",
+    "used": 40,
+    "limit": 250
+   },
    {
     "date": "2026-11-23",
     "used": 28,
@@ -68059,11 +67852,6 @@
    {
     "date": "2026-11-11",
     "used": 179,
-    "limit": 250
-   },
-   {
-    "date": "2026-11-10",
-    "used": 107,
     "limit": 250
    }
   ],
@@ -68270,17 +68058,17 @@
      "units": -465.01
     },
     "Pick of the Day": {
-     "bets": 20,
+     "bets": 19,
      "won": 11,
-     "lost": 8,
+     "lost": 7,
      "push": 0,
      "pending": 1,
-     "units": 2.26
+     "units": 3.26
     },
     "Ladder Challenge": {
-     "bets": 20,
+     "bets": 19,
      "won": 10,
-     "lost": 9,
+     "lost": 8,
      "push": 0,
      "pending": 1,
      "units": 0.0
@@ -68312,17 +68100,17 @@
      "units": -465.01
     },
     "Pick of the Day": {
-     "bets": 20,
+     "bets": 19,
      "won": 11,
-     "lost": 8,
+     "lost": 7,
      "push": 0,
      "pending": 1,
-     "units": 2.26
+     "units": 3.26
     },
     "Ladder Challenge": {
-     "bets": 20,
+     "bets": 19,
      "won": 10,
-     "lost": 9,
+     "lost": 8,
      "push": 0,
      "pending": 1,
      "units": 0.0
@@ -68548,13 +68336,13 @@
     "edge_pct": 23.5,
     "best": null,
     "confidence": 87.3,
-    "win_chance": 55.8,
+    "win_chance": 56.6,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge) | Win chance 55.8% vs 51% implied by -104: +9.5% expected value (raw model said 71.3%; past picks went 21-16, so it trusts 27% of the model's edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.6 over the last 15 | Minutes steady: 24 per game over the last 5 (23 over the last 15) | Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under) | DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier | Best price: -102 at FanDuel (DraftKings -104; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-24 11:26 AM ET",
+    "why": "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge) | Win chance 56.6% vs 51% implied by -104: +11% expected value (raw model said 71.3%; past picks went 21-15, so it trusts 31% of the model's edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.6 over the last 15 | Minutes steady: 24 per game over the last 5 (23 over the last 15) | Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under) | DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier | Best price: -102 at FanDuel (DraftKings -104; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-24 12:20 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -68572,7 +68360,7 @@
     ]
    },
    {
-    "id": "ladder|10|1|2026-11-24",
+    "id": "ladder|9|1|2026-11-24",
     "source": "Ladder Challenge",
     "date": "2026-11-24",
     "game": "DET@ORL",
@@ -68591,18 +68379,18 @@
     "edge_pct": 17.3,
     "best": null,
     "confidence": 77.0,
-    "attempt": 10,
+    "attempt": 9,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 8.06,
     "bankroll_after": null,
-    "win_chance": 56.2,
+    "win_chance": 57.0,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +1.5% expected value | Model projects 34.6 PA vs a line of 29.5 (+5.1, 17% edge) | Went over the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 35.8 over the last 5 and 33.1 over the last 15 | Minutes steady: 36 per game over the last 5 (37 over the last 15) | Matchup vs DET: neutral for PA (defense and pace about league average) | DET ranks among the middle-10 defenses for PA; he went over 29.5 in 4 of 5 games against that tier | Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-24 11:26 AM ET",
+    "why": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value | Model projects 34.6 PA vs a line of 29.5 (+5.1, 17% edge) | Went over the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 35.8 over the last 5 and 33.1 over the last 15 | Minutes steady: 36 per game over the last 5 (37 over the last 15) | Matchup vs DET: neutral for PA (defense and pace about league average) | DET ranks among the middle-10 defenses for PA; he went over 29.5 in 4 of 5 games against that tier | Best price: -120 at BetMGM (DraftKings -124; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-24 12:20 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -71272,97 +71060,6 @@
     "why": "Model 5.1 vs DraftKings 6.5 (edge -1.4)"
    },
    {
-    "id": "potd|2026-11-23",
-    "source": "Pick of the Day",
-    "date": "2026-11-23",
-    "game": "LAC@HOU",
-    "market": "Prop",
-    "pick": "Keaton Wagler Over 10.5 PR",
-    "type": "Prop",
-    "player": "Keaton Wagler",
-    "team": "LAC",
-    "opp": "HOU",
-    "stat": "PR",
-    "dir": "Over",
-    "line": 10.5,
-    "price": -127,
-    "model": 13.6,
-    "edge": 3.1,
-    "edge_pct": 29.5,
-    "best": null,
-    "confidence": 96.3,
-    "win_chance": 62.6,
-    "result": "L",
-    "status": "Lost",
-    "actual": "3 PR",
-    "units": -1.0,
-    "why": "Model projects 13.6 PR vs a line of 10.5 (+3.1, 30% edge) | Win chance 62.6% vs 56% implied by -127: +11.9% expected value (raw model said 86.5%; past picks went 21-14, so it trusts 34% of the model's edge) | Went over the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 15.0 over the last 5 and 15.5 over the last 15 | Minutes steady: 20 per game over the last 5 (22 over the last 15) | Matchup vs HOU: -1.2% to his PR projection from their defense and pace (works against the over) | HOU ranks among the top-10 defenses for PR; he went over 10.5 in 4 of 4 games against that tier | Game script / rest: blowout minutes (13.5-pt spread) +2.2% (net +2.2%) | Not on the injury report at pick time",
-    "picked_at": "2026-11-23 08:36 PM ET",
-    "graded_at": "2026-11-24 11:26 AM ET",
-    "clv": {
-     "line": 0.0,
-     "price": 0.0,
-     "beat": false,
-     "final": true
-    },
-    "open": [
-     10.5,
-     -127
-    ],
-    "close": [
-     10.5,
-     -127
-    ]
-   },
-   {
-    "id": "ladder|9|1|2026-11-23",
-    "source": "Ladder Challenge",
-    "date": "2026-11-23",
-    "game": "SAS@SAC",
-    "market": "Prop",
-    "pick": "Devin Vassell Under 21.5 PR",
-    "type": "Prop",
-    "player": "Devin Vassell",
-    "team": "SAS",
-    "opp": "SAC",
-    "stat": "PR",
-    "dir": "Under",
-    "line": 21.5,
-    "price": -115,
-    "model": 17.6,
-    "edge": -3.9,
-    "edge_pct": 18.1,
-    "best": null,
-    "confidence": 86.7,
-    "attempt": 9,
-    "day": 1,
-    "stake": 10.0,
-    "to_win": 8.7,
-    "bankroll_after": 0,
-    "win_chance": 62.4,
-    "result": "L",
-    "status": "Lost",
-    "actual": "22 PR",
-    "units": -10.0,
-    "why": "Highest win chance on the board at a ladder-friendly price: 62.4% to win, +16.7% expected value | Model projects 17.6 PR vs a line of 21.5 (-3.9, 18% edge) | Went under the line in 10 of his last 10 games (5/5 in the last 5) | Averaging 14.0 over the last 5 and 15.1 over the last 15 | Minutes steady: 30 per game over the last 5 (30 over the last 15) | Matchup vs SAC: +2% to his PR projection from their defense and pace (works against the under) | SAC ranks among the bottom-10 defenses for PR; he went under 21.5 in 5 of 6 games against that tier | Teammate injury boost: De'Aaron Fox, Dylan Harper, Victor Wembanyama out, +20% to his PR projection (extra minutes and usage) | Not on the injury report at pick time",
-    "picked_at": "2026-11-23 08:36 PM ET",
-    "graded_at": "2026-11-24 11:26 AM ET",
-    "clv": {
-     "line": 0.0,
-     "price": 0.0,
-     "beat": false,
-     "final": true
-    },
-    "open": [
-     21.5,
-     -115
-    ],
-    "close": [
-     21.5,
-     -115
-    ]
-   },
-   {
     "id": "model|2026-11-23|LAC @ HOU|Spread",
     "source": "Model bet",
     "date": "2026-11-23",
@@ -73093,7 +72790,7 @@
     "dir": "Under",
     "line": 8.5,
     "price": -131,
-    "model": 6.0,
+    "model": 6,
     "edge": -2.5,
     "edge_pct": 29.4,
     "best": null,
@@ -73102,13 +72799,13 @@
     "result": "L",
     "status": "Lost",
     "actual": "11 REB",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 6 REB vs a line of 8.5 (-2.5, 29% edge) | Win chance 64.5% vs 57% implied by -131: +13.7% expected value (raw model said 87.8%; past picks went 21-13, so it trusts 38% of the model's edge) | Went under the line in 10 of his last 10 games (5/5 in the last 5) | Averaging 5.6 over the last 5 and 6.4 over the last 13 | Minutes steady: 29 per game over the last 5 (30 over the last 13) | Matchup vs IND: neutral for REB (defense and pace about league average) | IND ranks among the middle-10 defenses for REB; he went under 8.5 in 6 of 6 games against that tier | Teammate injury boost: OG Anunoby out, +13.8% to his REB projection (extra minutes and usage) | Game script / rest: back-to-back -3% (net -3%) | Not on the injury report at pick time",
     "picked_at": "2026-11-22 06:33 PM ET",
     "graded_at": "2026-11-23 08:36 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -73143,19 +72840,19 @@
     "confidence": 92.4,
     "attempt": 8,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 8.55,
     "bankroll_after": 0,
     "win_chance": 61.3,
     "result": "L",
     "status": "Lost",
     "actual": "9 PTS",
-    "units": -10.0,
+    "units": -10,
     "why": "Highest win chance on the board at a ladder-friendly price: 61.3% to win, +13.7% expected value | Model projects 3.1 PTS vs a line of 4.5 (-1.4, 31% edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 3.6 over the last 5 and 3.2 over the last 13 | Minutes steady: 22 per game over the last 5 (26 over the last 13) | Matchup vs BOS: -4% to his PTS projection from their defense and pace (helps the under) | BOS ranks among the top-10 defenses for PTS; he went under 4.5 in 6 of 7 games against that tier | Teammate injury boost: Brandon Williams, Stephen Curry out, +11.9% to his PTS projection (extra minutes and usage) | Game script / rest: opponent on a back-to-back +1.5% (net +1.5%) | Best price: +102 at BetRivers (DraftKings -117; the record is graded at DraftKings) | Not on the injury report at pick time",
     "picked_at": "2026-11-22 06:33 PM ET",
     "graded_at": "2026-11-23 08:36 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 1.8,
      "beat": true,
      "final": true
@@ -77167,8 +76864,8 @@
     "picked_at": "2026-11-20 08:43 PM ET",
     "graded_at": "2026-11-21 10:19 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -77198,7 +76895,7 @@
     "price": 109,
     "model": 2.1,
     "edge": 0.6,
-    "edge_pct": 40.0,
+    "edge_pct": 40,
     "best": null,
     "confidence": 82.1,
     "attempt": 7,
@@ -77215,8 +76912,8 @@
     "picked_at": "2026-11-20 07:11 PM ET",
     "graded_at": "2026-11-20 10:12 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -77495,7 +77192,7 @@
     "dir": "Under",
     "line": 4.5,
     "price": 110,
-    "model": 3.0,
+    "model": 3,
     "edge": -1.5,
     "edge_pct": 33.3,
     "best": null,
@@ -77504,12 +77201,12 @@
     "result": "L",
     "status": "Lost",
     "actual": "10 RA",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 3 RA vs a line of 4.5 (-1.5, 33% edge) | Honest win chance 51.1% vs 48% implied by +110: +7.3% expected value (raw model said 80.7%) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 2.6 over the last 5 and 3.1 over the last 14 | Minutes steady: 22 per game over the last 5 (22 over the last 14) | Matchup vs MIL: +2.8% to his RA projection from their defense and pace (works against the under) | MIL ranks among the bottom-10 defenses for RA; he went under 4.5 in 4 of 5 games against that tier | Teammate injury boost: Chris Youngblood, Robert Williams III, Vit Krejci out, +14% to his RA projection (extra minutes and usage) | Game script / rest: opponent on a back-to-back +1.5% (net +1.5%) | Not on the injury report at pick time",
     "picked_at": "2026-11-19 07:07 PM ET",
     "graded_at": "2026-11-20 01:53 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.2,
      "beat": false,
      "final": true
@@ -77540,12 +77237,12 @@
     "price": 109,
     "model": 9.3,
     "edge": 1.8,
-    "edge_pct": 24.0,
+    "edge_pct": 24,
     "best": null,
     "confidence": 81.7,
     "attempt": 7,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.9,
     "bankroll_after": 20.9,
     "win_chance": 51.1,
@@ -77557,7 +77254,7 @@
     "picked_at": "2026-11-19 07:07 PM ET",
     "graded_at": "2026-11-20 01:53 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -0.5,
      "beat": false,
      "final": true
@@ -78028,13 +77725,13 @@
     "result": "L",
     "status": "Lost",
     "actual": "2 REB",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 5.1 REB vs a line of 3.5 (+1.6, 46% edge) | Honest win chance 51.5% vs 49% implied by +104: +5.1% expected value (raw model said 73.5%) | Went over the line in 8 of his last 10 games (3/5 in the last 5) | Averaging 3.0 over the last 5 and 4.1 over the last 14 | Minutes steady: 21 per game over the last 5 (22 over the last 14) | Matchup vs DAL: +1.1% to his REB projection from their defense and pace (helps the over) | DAL ranks among the middle-10 defenses for REB; he went over 3.5 in 2 of 3 games against that tier | Teammate injury boost: Al Horford, Brandon Williams, Stephen Curry out, +20% to his REB projection (extra minutes and usage) | Best price: +105 at Hard Rock (DraftKings +104; the record is graded at DraftKings) | Not on the injury report at pick time",
     "picked_at": "2026-11-18 07:15 PM ET",
     "graded_at": "2026-11-19 01:54 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -78063,25 +77760,25 @@
     "line": 2.5,
     "price": 114,
     "model": 3.5,
-    "edge": 1.0,
-    "edge_pct": 40.0,
+    "edge": 1,
+    "edge_pct": 40,
     "best": null,
     "confidence": 78.5,
     "attempt": 6,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 11.4,
     "bankroll_after": 0,
     "win_chance": 51.5,
     "result": "L",
     "status": "Lost",
     "actual": "2 3PM",
-    "units": -10.0,
+    "units": -10,
     "why": "Highest win chance on the board at a ladder-friendly price: 51.5% to win, +10.2% expected value | Model projects 3.5 3PM vs a line of 2.5 (+1, 40% edge) | Went over the line in 6 of his last 10 games (3/5 in the last 5) | Averaging 3.2 over the last 5 and 3.4 over the last 11 | Minutes steady: 33 per game over the last 5 (31 over the last 11) | Matchup vs PHI: +2.1% to his 3PM projection from their defense and pace (helps the over) | PHI ranks among the bottom-10 defenses for 3PM; he went over 2.5 in 4 of 6 games against that tier | Best price: +120 at Bally Bet (DraftKings +114; the record is graded at DraftKings) | Not on the injury report at pick time",
     "picked_at": "2026-11-18 06:47 PM ET",
     "graded_at": "2026-11-18 10:18 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.6,
      "beat": true,
      "final": true
@@ -78519,20 +78216,20 @@
     "price": -101,
     "model": 7.6,
     "edge": -1.9,
-    "edge_pct": 20.0,
+    "edge_pct": 20,
     "best": null,
     "confidence": 86.9,
     "win_chance": 51.6,
     "result": "L",
     "status": "Lost",
     "actual": "10 REB",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 7.6 REB vs a line of 9.5 (-1.9, 20% edge) | Honest win chance 51.6% vs 50% implied by -101: +2.7% expected value (raw model said 81.9%) | Went under the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 5.0 over the last 5 and 5.8 over the last 10 | Minutes steady: 22 per game over the last 5 (20 over the last 10) | Matchup vs LAC: +2.6% to his REB projection from their defense and pace (works against the under) | LAC ranks among the middle-10 defenses for REB; he went under 9.5 in 4 of 5 games against that tier | Teammate injury boost: Jaxson Hayes, Lauri Markkanen out, +20% to his REB projection (extra minutes and usage) | Not on the injury report at pick time",
     "picked_at": "2026-11-17 10:17 PM ET",
     "graded_at": "2026-11-18 01:53 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -78579,8 +78276,8 @@
     "picked_at": "2026-11-17 07:13 PM ET",
     "graded_at": "2026-11-18 01:53 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -79081,7 +78778,7 @@
     "picked_at": "2026-11-16 07:05 PM ET",
     "graded_at": "2026-11-17 01:54 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.5,
      "beat": false,
      "final": true
@@ -79117,7 +78814,7 @@
     "confidence": 76.6,
     "attempt": 5,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.3,
     "bankroll_after": 20.3,
     "win_chance": 51.5,
@@ -79129,8 +78826,8 @@
     "picked_at": "2026-11-16 07:05 PM ET",
     "graded_at": "2026-11-16 10:14 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -79605,8 +79302,8 @@
     "picked_at": "2026-11-15 11:28 AM ET",
     "graded_at": "2026-11-15 08:52 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -79653,8 +79350,8 @@
     "picked_at": "2026-11-15 11:28 AM ET",
     "graded_at": "2026-11-15 07:05 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -80301,7 +79998,7 @@
     "edge": -2.1,
     "edge_pct": 32.3,
     "best": null,
-    "confidence": 100.0,
+    "confidence": 100,
     "win_chance": 52.5,
     "result": "W",
     "status": "Won",
@@ -80311,8 +80008,8 @@
     "picked_at": "2026-11-14 06:31 PM ET",
     "graded_at": "2026-11-14 10:13 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -80344,13 +80041,13 @@
     "edge": 2.3,
     "edge_pct": 30.7,
     "best": null,
-    "confidence": 78.0,
+    "confidence": 78,
     "attempt": 4,
     "day": 5,
     "stake": 143.91,
     "to_win": 149.67,
     "bankroll_after": 293.58,
-    "win_chance": 52.0,
+    "win_chance": 52,
     "result": "W",
     "status": "Won",
     "actual": "8 REB",
@@ -80359,7 +80056,7 @@
     "picked_at": "2026-11-14 06:31 PM ET",
     "graded_at": "2026-11-15 01:43 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.9,
      "beat": true,
      "final": true
@@ -80726,13 +80423,13 @@
     "result": "L",
     "status": "Lost",
     "actual": "3 AST",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 8.2 AST vs a line of 5.5 (+2.7, 49% edge) | Honest win chance 54.4% vs 50% implied by -102: +7.7% expected value (raw model said 85.6%) | Went over the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.5 over the last 10 | Minutes steady: 25 per game over the last 5 (27 over the last 10) | Matchup vs SAS: -5.3% to his AST projection from their defense and pace (works against the over) | SAS ranks among the top-10 defenses for AST; he went over 5.5 in 2 of 2 games against that tier | Teammate injury boost: Brandon Williams, Stephen Curry out, +14.1% to his AST projection (extra minutes and usage) | Not on the injury report at pick time",
     "picked_at": "2026-11-13 08:33 PM ET",
     "graded_at": "2026-11-14 01:39 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -80764,7 +80461,7 @@
     "edge": -3.6,
     "edge_pct": 19.5,
     "best": null,
-    "confidence": 86.0,
+    "confidence": 86,
     "attempt": 4,
     "day": 4,
     "stake": 77.59,
@@ -80779,8 +80476,8 @@
     "picked_at": "2026-11-13 06:37 PM ET",
     "graded_at": "2026-11-14 01:39 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -81191,7 +80888,7 @@
     "price": -108,
     "model": 1.6,
     "edge": -0.9,
-    "edge_pct": 36.0,
+    "edge_pct": 36,
     "best": null,
     "confidence": 94.8,
     "win_chance": 55.6,
@@ -81203,8 +80900,8 @@
     "picked_at": "2026-11-12 07:06 PM ET",
     "graded_at": "2026-11-12 10:13 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -81251,8 +80948,8 @@
     "picked_at": "2026-11-12 07:06 PM ET",
     "graded_at": "2026-11-13 01:52 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -81923,7 +81620,7 @@
     "price": -105,
     "model": 11.9,
     "edge": 3.4,
-    "edge_pct": 40.0,
+    "edge_pct": 40,
     "best": null,
     "confidence": 92.7,
     "win_chance": 55.3,
@@ -81935,7 +81632,7 @@
     "picked_at": "2026-11-11 07:09 PM ET",
     "graded_at": "2026-11-12 01:52 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -1.4,
      "beat": false,
      "final": true
@@ -81983,8 +81680,8 @@
     "picked_at": "2026-11-11 07:09 PM ET",
     "graded_at": "2026-11-11 10:16 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -82693,8 +82390,8 @@
     "picked_at": "2026-11-10 06:31 PM ET",
     "graded_at": "2026-11-10 10:16 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -82729,7 +82426,7 @@
     "confidence": 75.8,
     "attempt": 4,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 9.09,
     "bankroll_after": 19.09,
     "win_chance": 54.6,
@@ -82741,8 +82438,8 @@
     "picked_at": "2026-11-10 08:32 PM ET",
     "graded_at": "2026-11-11 01:50 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -83441,17 +83138,17 @@
     "edge": 2.1,
     "edge_pct": 32.3,
     "best": null,
-    "confidence": 100.0,
+    "confidence": 100,
     "win_chance": 56.6,
     "result": "L",
     "status": "Lost",
     "actual": "6 REB",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 8.6 REB vs a line of 6.5 (+2.1, 32% edge) | Honest win chance 56.6% vs 54% implied by -119: +4.2% expected value (raw model said 85.3%) | Went over the line in 8 of his last 8 games (5/5 in the last 5) | Averaging 8.2 over the last 5 and 8.8 over the last 8 | Minutes steady: 27 per game over the last 5 (28 over the last 8) | Matchup vs TOR: -6.5% to his REB projection from their defense and pace (works against the over) | TOR ranks among the top-10 defenses for REB; he went over 6.5 in 2 of 2 games against that tier | Teammate injury boost: Isaiah Stewart, Scotty Pippen Jr. out, +7.5% to his REB projection (extra minutes and usage) | Best price: -106 at FanDuel (DraftKings -119; the record is graded at DraftKings) | Not on the injury report at pick time",
     "picked_at": "2026-11-09 06:36 PM ET",
     "graded_at": "2026-11-09 10:12 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 0.6,
      "beat": true,
      "final": true
@@ -83482,24 +83179,24 @@
     "price": 105,
     "model": 9.1,
     "edge": 2.6,
-    "edge_pct": 40.0,
+    "edge_pct": 40,
     "best": null,
     "confidence": 94.8,
     "attempt": 3,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 10.5,
     "bankroll_after": 0,
     "win_chance": 57.1,
     "result": "L",
     "status": "Lost",
     "actual": "3 RA",
-    "units": -10.0,
+    "units": -10,
     "why": "Highest win chance on the board at a ladder-friendly price: 57.1% to win, +17.1% expected value | Model projects 9.1 RA vs a line of 6.5 (+2.6, 40% edge) | Went over the line in 7 of his last 8 games (5/5 in the last 5) | Averaging 8.6 over the last 5 and 7.8 over the last 8 | Minutes steady: 26 per game over the last 5 (28 over the last 8) | Matchup vs CHA: neutral for RA (defense and pace about league average) | CHA ranks among the bottom-10 defenses for RA; he went over 6.5 in 3 of 4 games against that tier | Teammate injury boost: Jaylon Tyson, Sam Merrill out, +17.6% to his RA projection (extra minutes and usage) | Not on the injury report at pick time",
     "picked_at": "2026-11-09 06:36 PM ET",
     "graded_at": "2026-11-09 10:12 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -4.5,
      "beat": false,
      "final": true
@@ -84209,7 +83906,7 @@
     "picked_at": "2026-11-08 07:20 PM ET",
     "graded_at": "2026-11-08 10:14 PM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": -0.2,
      "beat": false,
      "final": true
@@ -84238,9 +83935,9 @@
     "dir": "Under",
     "line": 17.5,
     "price": -102,
-    "model": 14.0,
+    "model": 14,
     "edge": -3.5,
-    "edge_pct": 20.0,
+    "edge_pct": 20,
     "best": null,
     "confidence": 83.1,
     "attempt": 2,
@@ -84257,8 +83954,8 @@
     "picked_at": "2026-11-08 11:26 AM ET",
     "graded_at": "2026-11-08 06:32 PM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -84962,13 +84659,13 @@
     "result": "L",
     "status": "Lost",
     "actual": "4 PTS",
-    "units": -1.0,
+    "units": -1,
     "why": "Model projects 15.8 PTS vs a line of 10.5 (+5.3, 50% edge) | Honest win chance 58.6% vs 54% implied by -119: +7.8% expected value (raw model said 89.6%) | Went over the line in 7 of his last 8 games (4/5 in the last 5) | Averaging 13.0 over the last 5 and 14.2 over the last 8 | Minutes steady: 30 per game over the last 5 (28 over the last 8) | Matchup vs SAS: -2.2% to his PTS projection from their defense and pace (works against the over) | SAS ranks among the top-10 defenses for PTS; he went over 10.5 in 1 of 1 games against that tier | Teammate injury boost: Ja Morant, Robert Williams III, Vit Krejci out, +11.5% to his PTS projection (extra minutes and usage) | Game script / rest: back-to-back -3%, opponent on a back-to-back +1.5% (net -1.5%) | Not on the injury report at pick time",
     "picked_at": "2026-11-07 08:38 PM ET",
     "graded_at": "2026-11-08 01:38 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -84998,12 +84695,12 @@
     "price": -126,
     "model": 11.2,
     "edge": -2.3,
-    "edge_pct": 17.0,
+    "edge_pct": 17,
     "best": null,
     "confidence": 85.7,
     "attempt": 2,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 7.94,
     "bankroll_after": 17.94,
     "win_chance": 58.1,
@@ -85015,8 +84712,8 @@
     "picked_at": "2026-11-07 08:38 PM ET",
     "graded_at": "2026-11-08 01:38 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -85670,7 +85367,7 @@
     "price": -148,
     "model": 3.7,
     "edge": 1.2,
-    "edge_pct": 48.0,
+    "edge_pct": 48,
     "best": null,
     "confidence": 95.4,
     "win_chance": 60.3,
@@ -85682,7 +85379,7 @@
     "picked_at": "2026-11-06 06:33 PM ET",
     "graded_at": "2026-11-07 01:37 AM ET",
     "clv": {
-     "line": 0.0,
+     "line": 0,
      "price": 2.4,
      "beat": true,
      "final": true
@@ -85730,8 +85427,8 @@
     "picked_at": "2026-11-06 06:33 PM ET",
     "graded_at": "2026-11-07 01:37 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -86385,7 +86082,7 @@
     "price": -109,
     "model": 23.6,
     "edge": 4.1,
-    "edge_pct": 21.0,
+    "edge_pct": 21,
     "best": null,
     "confidence": 92.8,
     "win_chance": 57.5,
@@ -86397,8 +86094,8 @@
     "picked_at": "2026-11-05 08:41 PM ET",
     "graded_at": "2026-11-06 01:52 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -86445,8 +86142,8 @@
     "picked_at": "2026-11-05 08:41 PM ET",
     "graded_at": "2026-11-06 01:52 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -87101,8 +86798,8 @@
     "picked_at": "2026-11-04 07:05 PM ET",
     "graded_at": "2026-11-05 01:52 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
@@ -87138,7 +86835,7 @@
     "confidence": 92.1,
     "attempt": 1,
     "day": 1,
-    "stake": 10.0,
+    "stake": 10,
     "to_win": 7.46,
     "bankroll_after": 17.46,
     "win_chance": 88.1,
@@ -87150,8 +86847,8 @@
     "picked_at": "2026-11-04 07:05 PM ET",
     "graded_at": "2026-11-05 01:52 AM ET",
     "clv": {
-     "line": 0.0,
-     "price": 0.0,
+     "line": 0,
+     "price": 0,
      "beat": false,
      "final": true
     },
