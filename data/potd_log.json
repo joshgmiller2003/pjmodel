@@ -2,6 +2,99 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-23",
+   "eid": "401910043",
+   "game": "LAC@HOU",
+   "time": "8:30 PM ET",
+   "home": "HOU",
+   "away": "LAC",
+   "type": "Prop",
+   "player": "Keaton Wagler",
+   "team": "LAC",
+   "stat": "PR",
+   "side": "Over",
+   "line": 10.5,
+   "price": -127,
+   "model": 13.6,
+   "edge": 3.1,
+   "edge_pct": 29.5,
+   "label": "Keaton Wagler Over 10.5 PR",
+   "best": null,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     14,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     11.0,
+     10.0,
+     13.0,
+     17.0,
+     11.0,
+     16.0,
+     16.0,
+     17.0,
+     12.0,
+     14.0
+    ],
+    "line": 10.5,
+    "side": "Over",
+    "label": "PR",
+    "opps": [
+     "GSW",
+     "TOR",
+     "MIA",
+     "NOP",
+     "PHX",
+     "OKC",
+     "CHA",
+     "UTA",
+     "SAS",
+     "DAL"
+    ]
+   },
+   "score": 96.3,
+   "reasons": [
+    "Model projects 13.6 PR vs a line of 10.5 (+3.1, 30% edge)",
+    "Win chance 62.6% vs 56% implied by -127: +11.9% expected value (raw model said 86.5%; past picks went 21-14, so it trusts 34% of the model's edge)",
+    "Went over the line in 9 of his last 10 games (5/5 in the last 5)",
+    "Averaging 15.0 over the last 5 and 15.5 over the last 15",
+    "Minutes steady: 20 per game over the last 5 (22 over the last 15)",
+    "Matchup vs HOU: -1.2% to his PR projection from their defense and pace (works against the over)",
+    "HOU ranks among the top-10 defenses for PR; he went over 10.5 in 4 of 4 games against that tier",
+    "Game script / rest: blowout minutes (13.5-pt spread) +2.2% (net +2.2%)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 68,
+   "p_model": 81.9,
+   "p_win_raw": 86.5,
+   "p_honest": 51.3,
+   "p_win": 62.6,
+   "ev": 11.9,
+   "picked_at": "2026-11-23 08:36 PM ET",
+   "open_line": 10.5,
+   "open_price": -127,
+   "close_line": 10.5,
+   "close_price": -127,
+   "close_at": "2026-11-23 08:36 PM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-22",
    "eid": "401910034",
    "game": "IND@NYK",
@@ -92,8 +185,12 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "11 REB",
+   "units": -1.0,
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "date": "2026-11-20",

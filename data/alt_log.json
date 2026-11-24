@@ -70,7 +70,12 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 12:02 PM ET"
+   "updated_at": "2026-11-22 12:02 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Pascal Siakam|PTS",
@@ -130,7 +135,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 25.0,
+   "hit": 2,
+   "units": 0.64,
+   "result": "W",
+   "actual": "25 PTS \u00b7 2 of 2 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Mikal Bridges|REB",
@@ -189,7 +200,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 3.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "3 REB \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Karl-Anthony Towns|REB",
@@ -273,7 +290,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 13.0,
+   "hit": 1,
+   "units": 0.48,
+   "result": "W",
+   "actual": "13 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Karl-Anthony Towns|AST",
@@ -332,7 +355,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 0.42,
+   "result": "W",
+   "actual": "5 AST \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Jared McCain|REB",
@@ -398,7 +427,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 12:02 PM ET"
+   "updated_at": "2026-11-22 12:02 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Davion Mitchell|3PM",
@@ -464,7 +499,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 12:02 PM ET"
+   "updated_at": "2026-11-22 12:02 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Davion Mitchell|PTS",
@@ -534,7 +575,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 12:02 PM ET"
+   "updated_at": "2026-11-22 12:02 PM ET",
+   "value": 14.0,
+   "hit": 1,
+   "units": -0.14,
+   "result": "L",
+   "actual": "14 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Andrew Nembhard|PTS",
@@ -598,7 +645,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 16.0,
+   "hit": 1,
+   "units": 0.44,
+   "result": "W",
+   "actual": "16 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-22|Aaron Nesmith|AST",
@@ -647,7 +700,13 @@
     ]
    ],
    "saved_at": "2026-11-22 12:02 PM ET",
-   "updated_at": "2026-11-22 06:33 PM ET"
+   "updated_at": "2026-11-22 06:33 PM ET",
+   "value": 2.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "2 AST \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-23 08:36 PM ET"
   },
   {
    "id": "2026-11-20|Zion Williamson|PTS",

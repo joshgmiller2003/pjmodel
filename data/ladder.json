@@ -1,9 +1,103 @@
 {
  "start": 10.0,
  "goal": 1000.0,
- "attempt": 8,
+ "attempt": 9,
  "bankroll": 10.0,
  "steps": [
+  {
+   "type": "Prop",
+   "label": "Devin Vassell Under 21.5 PR",
+   "game": "SAS@SAC",
+   "eid": "401910045",
+   "time": "10:00 PM ET",
+   "home": "SAC",
+   "away": "SAS",
+   "side": "Under",
+   "line": 21.5,
+   "price": -115,
+   "model": 17.6,
+   "edge": -3.9,
+   "edge_pct": 18.1,
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     10,
+     10
+    ],
+    "l15": [
+     14,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     14.0,
+     13.0,
+     9.0,
+     21.0,
+     17.0,
+     9.0,
+     12.0,
+     17.0,
+     19.0,
+     13.0
+    ],
+    "line": 21.5,
+    "side": "Under",
+    "label": "PR",
+    "opps": [
+     "MIN",
+     "UTA",
+     "DAL",
+     "SAC",
+     "POR",
+     "GSW",
+     "UTA",
+     "DET",
+     "LAC",
+     "NOP"
+    ]
+   },
+   "reasons": [
+    "Model projects 17.6 PR vs a line of 21.5 (-3.9, 18% edge)",
+    "Went under the line in 10 of his last 10 games (5/5 in the last 5)",
+    "Averaging 14.0 over the last 5 and 15.1 over the last 15",
+    "Minutes steady: 30 per game over the last 5 (30 over the last 15)",
+    "Matchup vs SAC: +2% to his PR projection from their defense and pace (works against the under)",
+    "SAC ranks among the bottom-10 defenses for PR; he went under 21.5 in 5 of 6 games against that tier",
+    "Teammate injury boost: De'Aaron Fox, Dylan Harper, Victor Wembanyama out, +20% to his PR projection (extra minutes and usage)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 62.4,
+   "p_model": 81.2,
+   "ev": 16.7,
+   "score": 86.7,
+   "best": null,
+   "player": "Devin Vassell",
+   "team": "SAS",
+   "stat": "PR",
+   "date": "2026-11-23",
+   "attempt": 9,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 8.7,
+   "picked_at": "2026-11-23 08:36 PM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 62.4% to win, +16.7% expected value",
+   "open_line": 21.5,
+   "open_price": -115,
+   "close_line": 21.5,
+   "close_price": -115,
+   "close_at": "2026-11-23 08:36 PM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
   {
    "type": "Prop",
    "label": "Draymond Green Under 4.5 PTS",
@@ -101,8 +195,14 @@
     "line": 0.0,
     "price": 1.8,
     "beat": true,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "9 PTS",
+   "units": -1.0,
+   "graded_at": "2026-11-23 08:36 PM ET",
+   "applied": true,
+   "bankroll_after": 0
   },
   {
    "type": "Prop",
@@ -1797,6 +1897,14 @@
  ],
  "attempts": [
   {
+   "attempt": 8,
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "days": 1,
+   "peak": 10.0,
+   "result": "Busted"
+  },
+  {
    "attempt": 7,
    "start": "2026-11-19",
    "end": "2026-11-20",
@@ -1853,5 +1961,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": "2026-11-22"
+ "attempt_started": "2026-11-23"
 }

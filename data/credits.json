@@ -1,125 +1,50 @@
 {
- "date": "2026-11-22",
- "used_today": 115,
+ "date": "2026-11-23",
+ "used_today": 28,
  "calls": [
   {
-   "time": "12:02 PM",
+   "time": "08:36 PM",
    "call": "balance check",
    "cost": 0
   },
   {
-   "time": "12:02 PM",
+   "time": "08:36 PM",
    "call": "game lines",
    "cost": 3
   },
   {
-   "time": "12:02 PM",
+   "time": "08:36 PM",
    "call": "event list",
    "cost": 0
   },
   {
-   "time": "12:02 PM",
-   "call": "props DET@ATL",
+   "time": "08:36 PM",
+   "call": "props LAC@HOU",
    "cost": 8
   },
   {
-   "time": "12:02 PM",
-   "call": "props OKC@MIA",
+   "time": "08:36 PM",
+   "call": "props UTA@LAL",
    "cost": 8
   },
   {
-   "time": "12:02 PM",
-   "call": "props ORL@WAS",
+   "time": "08:36 PM",
+   "call": "props SAS@SAC",
    "cost": 8
   },
   {
-   "time": "12:02 PM",
-   "call": "props DEN@CHI",
-   "cost": 8
-  },
-  {
-   "time": "12:02 PM",
-   "call": "props DAL@UTA",
-   "cost": 8
-  },
-  {
-   "time": "12:02 PM",
-   "call": "props IND@NYK",
-   "cost": 8
-  },
-  {
-   "time": "12:02 PM",
-   "call": "props BOS@GSW",
-   "cost": 8
-  },
-  {
-   "time": "12:02 PM",
+   "time": "08:36 PM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "12:02 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "12:02 PM",
-   "call": "alt lines IND@NYK",
-   "cost": 4
-  },
-  {
-   "time": "12:02 PM",
-   "call": "alt lines BOS@GSW",
-   "cost": 4
-  },
-  {
-   "time": "12:02 PM",
-   "call": "alt lines OKC@MIA",
-   "cost": 4
-  },
-  {
-   "time": "06:33 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "06:33 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "06:33 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "06:33 PM",
-   "call": "props ORL@WAS",
-   "cost": 8
-  },
-  {
-   "time": "06:33 PM",
-   "call": "props DEN@CHI",
-   "cost": 8
-  },
-  {
-   "time": "06:33 PM",
-   "call": "props DAL@UTA",
-   "cost": 8
-  },
-  {
-   "time": "06:33 PM",
-   "call": "props IND@NYK",
-   "cost": 8
-  },
-  {
-   "time": "06:33 PM",
-   "call": "props BOS@GSW",
-   "cost": 8
   }
  ],
- "remaining": 7006,
+ "remaining": 6747,
  "history": [
+  {
+   "date": "2026-11-23",
+   "used": 28,
+   "limit": 250
+  },
   {
    "date": "2026-11-22",
    "used": 115,
@@ -218,7 +143,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 12,
- "month_used": 2327,
+ "days_to_reset": 11,
+ "month_used": 2355,
  "month_limit": 5500
 }

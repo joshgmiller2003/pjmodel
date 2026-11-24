@@ -1,89 +1,89 @@
 {
- "updated": "2026-11-22 06:33 PM ET",
+ "updated": "2026-11-23 08:36 PM ET",
  "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
  "by_month": {
   "All": {
+   "Model bet": {
+    "bets": 4576,
+    "won": 2147,
+    "lost": 2294,
+    "push": 64,
+    "pending": 71,
+    "units": -458.79
+   },
    "Pick of the Day": {
-    "bets": 18,
+    "bets": 19,
     "won": 11,
-    "lost": 6,
+    "lost": 7,
     "push": 0,
     "pending": 1,
-    "units": 4.26
+    "units": 3.26
    },
    "Ladder Challenge": {
-    "bets": 18,
+    "bets": 19,
     "won": 10,
-    "lost": 7,
+    "lost": 8,
     "push": 0,
     "pending": 1,
     "units": 0.0
    },
    "Alt Parlay": {
     "bets": 14,
-    "won": 10,
+    "won": 11,
     "lost": 3,
     "push": 0,
-    "pending": 1,
+    "pending": 0,
     "units": 0.0
-   },
-   "Model bet": {
-    "bets": 4505,
-    "won": 2068,
-    "lost": 2213,
-    "push": 54,
-    "pending": 170,
-    "units": -445.42
    },
    "Alt Ladder": {
     "bets": 315,
-    "won": 115,
-    "lost": 178,
-    "push": 12,
-    "pending": 10,
-    "units": -34.62
+    "won": 119,
+    "lost": 183,
+    "push": 13,
+    "pending": 0,
+    "units": -36.78
    }
   },
   "2026-11": {
+   "Model bet": {
+    "bets": 4576,
+    "won": 2147,
+    "lost": 2294,
+    "push": 64,
+    "pending": 71,
+    "units": -458.79
+   },
    "Pick of the Day": {
-    "bets": 18,
+    "bets": 19,
     "won": 11,
-    "lost": 6,
+    "lost": 7,
     "push": 0,
     "pending": 1,
-    "units": 4.26
+    "units": 3.26
    },
    "Ladder Challenge": {
-    "bets": 18,
+    "bets": 19,
     "won": 10,
-    "lost": 7,
+    "lost": 8,
     "push": 0,
     "pending": 1,
     "units": 0.0
    },
    "Alt Parlay": {
     "bets": 14,
-    "won": 10,
+    "won": 11,
     "lost": 3,
     "push": 0,
-    "pending": 1,
+    "pending": 0,
     "units": 0.0
-   },
-   "Model bet": {
-    "bets": 4505,
-    "won": 2068,
-    "lost": 2213,
-    "push": 54,
-    "pending": 170,
-    "units": -445.42
    },
    "Alt Ladder": {
     "bets": 315,
-    "won": 115,
-    "lost": 178,
-    "push": 12,
-    "pending": 10,
-    "units": -34.62
+    "won": 119,
+    "lost": 183,
+    "push": 13,
+    "pending": 0,
+    "units": -36.78
    }
   }
  }

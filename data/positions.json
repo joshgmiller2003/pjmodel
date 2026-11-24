@@ -1,6 +1,6 @@
 {
 "note":"Player positions (G/F/C) from ESPN team rosters. Refreshed automatically each day.",
-"updated":"2026-11-22",
+"updated":"2026-11-23",
 "pos":{
 "AJ Dybantsa":"F",
 "AJ Green":"G",
@@ -166,6 +166,7 @@
 "Franz Wagner":"F",
 "Fred VanVleet":"G",
 "GG Jackson":"F",
+"Gabe Vincent":"G",
 "Gary Payton II":"G",
 "Gary Trent Jr.":"G",
 "Georges Niang":"F",
@@ -701,6 +702,7 @@
 "Franz Wagner":"4566434",
 "Fred VanVleet":"2991230",
 "GG Jackson":"5105550",
+"Gabe Vincent":"3137259",
 "Gary Payton II":"3134903",
 "Gary Trent Jr.":"4277843",
 "Georges Niang":"2990969",

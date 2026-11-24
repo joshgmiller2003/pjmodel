@@ -2,7 +2,7 @@
  "start": 10.0,
  "goal": 1000.0,
  "attempt": 4,
- "bankroll": 17.52,
+ "bankroll": 27.09,
  "steps": [
   {
    "type": "Parlay",
@@ -76,7 +76,11 @@
      "score": 91.5,
      "player": "Davion Mitchell",
      "team": "MIA",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "14 PTS",
+     "units": 0.25,
+     "graded_at": "2026-11-23 08:36 PM ET"
     },
     {
      "type": "Prop",
@@ -130,7 +134,11 @@
      "score": 83.1,
      "player": "Pascal Siakam",
      "team": "IND",
-     "stat": "PTS"
+     "stat": "PTS",
+     "result": "W",
+     "actual": "25 PTS",
+     "units": 0.24,
+     "graded_at": "2026-11-23 08:36 PM ET"
     }
    ],
    "date": "2026-11-22",
@@ -140,7 +148,12 @@
    "to_win": 9.57,
    "picked_at": "2026-11-22 12:02 PM ET",
    "why_ladder": "2-leg alt-line parlay, every leg from a different game: 76% to hit by our numbers (76% trusting only half our edge) at -183. The most likely winner on today's alt lines at a ladder price",
-   "locked_at": "2026-11-22 06:33 PM ET"
+   "locked_at": "2026-11-22 06:33 PM ET",
+   "result": "W",
+   "actual": "Davion Mitchell 10+ PTS: 14 PTS \u2713 \u00b7 Pascal Siakam 15+ PTS: 25 PTS \u2713",
+   "graded_at": "2026-11-23 08:36 PM ET",
+   "applied": true,
+   "bankroll_after": 27.09
   },
   {
    "type": "Parlay",
