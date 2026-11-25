@@ -2,6 +2,103 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-25",
+   "eid": "401909319",
+   "game": "CLE@NYK",
+   "time": "7:30 PM ET",
+   "home": "NYK",
+   "away": "CLE",
+   "type": "Prop",
+   "player": "Meleek Thomas",
+   "team": "CLE",
+   "stat": "PTS",
+   "side": "Over",
+   "line": 8.5,
+   "price": -103,
+   "model": 11.8,
+   "edge": 3.3,
+   "edge_pct": 38.8,
+   "label": "Meleek Thomas Over 8.5 PTS",
+   "best": [
+    100,
+    "williamhill_us"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     14,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     12.0,
+     9.0,
+     18.0,
+     14.0,
+     12.0,
+     20.0,
+     10.0,
+     14.0,
+     4.0,
+     13.0
+    ],
+    "line": 8.5,
+    "side": "Over",
+    "label": "PTS",
+    "opps": [
+     "PHI",
+     "NYK",
+     "CHA",
+     "NYK",
+     "MIA",
+     "DAL",
+     "CHI",
+     "MEM",
+     "IND",
+     "CHI"
+    ]
+   },
+   "score": 93.6,
+   "reasons": [
+    "Model projects 11.8 PTS vs a line of 8.5 (+3.3, 39% edge)",
+    "Win chance 58.1% vs 51% implied by -103: +14.5% expected value (raw model said 83.4%; past picks went 21-17, so it trusts 24% of the model's edge)",
+    "Went over the line in 9 of his last 10 games (4/5 in the last 5)",
+    "Averaging 12.2 over the last 5 and 12.7 over the last 15",
+    "Minutes steady: 25 per game over the last 5 (23 over the last 15)",
+    "Matchup vs NYK: -3.7% to his PTS projection from their defense and pace (works against the over)",
+    "NYK ranks among the middle-10 defenses for PTS; he went over 8.5 in 6 of 7 games against that tier",
+    "Teammate injury boost: Evan Mobley out, +3.5% to his PTS projection (extra minutes and usage)",
+    "Best price: +100 at Caesars (DraftKings -103; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 202,
+   "p_model": 76.8,
+   "p_win_raw": 83.4,
+   "p_honest": 51.4,
+   "p_win": 58.1,
+   "ev": 14.5,
+   "picked_at": "2026-11-25 10:00 AM ET",
+   "open_line": 8.5,
+   "open_price": -103,
+   "close_line": 8.5,
+   "close_price": -103,
+   "close_at": "2026-11-25 10:00 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-24",
    "eid": "401909316",
    "game": "DAL@DEN",
@@ -95,8 +192,12 @@
     "line": 0.0,
     "price": 2.3,
     "beat": true,
-    "final": false
-   }
+    "final": true
+   },
+   "result": "L",
+   "actual": "9 RA",
+   "units": -1.0,
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "date": "2026-11-22",

@@ -6,6 +6,143 @@
  "steps": [
   {
    "type": "Parlay",
+   "label": "Karl-Anthony Towns 11+ REB + Jaden McDaniels 12+ PTS",
+   "game": "CLE@NYK / MIN@OKC",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "home": "NYK",
+   "away": "CLE",
+   "side": null,
+   "line": null,
+   "price": -171,
+   "reasons": [
+    "Leg 1: Karl-Anthony Towns 11+ REB (-304): 80.5% to win. Alt line 11+ REB at -304: our chance 80.5% vs the book's 75.2% (+7% expected value)",
+    "Leg 2: Jaden McDaniels 12+ PTS (-522): 89.5% to win. Alt line 12+ PTS at -522: our chance 89.5% vs the book's 83.9% (+6.7% expected value)"
+   ],
+   "p_win": 72.0,
+   "p_model": 72.0,
+   "ev": 14.1,
+   "score": 80.5,
+   "legs": [
+    {
+     "type": "Prop",
+     "label": "Karl-Anthony Towns 11+ REB",
+     "game": "CLE@NYK",
+     "eid": "401909319",
+     "time": "7:30 PM ET",
+     "home": "NYK",
+     "away": "CLE",
+     "side": "Over",
+     "line": 10.5,
+     "price": -304,
+     "model": 14.9,
+     "chart": {
+      "vals": [
+       16.0,
+       12.0,
+       13.0,
+       16.0,
+       11.0,
+       15.0,
+       17.0,
+       16.0,
+       12.0,
+       13.0
+      ],
+      "line": 10.5,
+      "side": "Over",
+      "label": "REB",
+      "opps": [
+       "BKN",
+       "CHI",
+       "CLE",
+       "MIL",
+       "CLE",
+       "IND",
+       "TOR",
+       "TOR",
+       "MIN",
+       "IND"
+      ]
+     },
+     "reasons": [
+      "Alt line 11+ REB at -304: our chance 80.5% vs the book's 75.2% (+7% expected value)",
+      "Cleared 11+ in 14 of his last 15 games",
+      "We project 14.9 REB (DraftKings main line 13.5)"
+     ],
+     "p_win": 80.5,
+     "p_model": 80.5,
+     "ev": 7.0,
+     "score": 80.5,
+     "player": "Karl-Anthony Towns",
+     "team": "NYK",
+     "stat": "REB"
+    },
+    {
+     "type": "Prop",
+     "label": "Jaden McDaniels 12+ PTS",
+     "game": "MIN@OKC",
+     "eid": "401909320",
+     "time": "7:30 PM ET",
+     "home": "OKC",
+     "away": "MIN",
+     "side": "Over",
+     "line": 11.5,
+     "price": -522,
+     "model": 18.8,
+     "chart": {
+      "vals": [
+       14.0,
+       23.0,
+       16.0,
+       16.0,
+       18.0,
+       13.0,
+       22.0,
+       17.0,
+       25.0,
+       34.0
+      ],
+      "line": 11.5,
+      "side": "Over",
+      "label": "PTS",
+      "opps": [
+       "HOU",
+       "NOP",
+       "UTA",
+       "DAL",
+       "CHI",
+       "POR",
+       "POR",
+       "NYK",
+       "MEM",
+       "BKN"
+      ]
+     },
+     "reasons": [
+      "Alt line 12+ PTS at -522: our chance 89.5% vs the book's 83.9% (+6.7% expected value)",
+      "Cleared 12+ in 15 of his last 15 games",
+      "We project 18.8 PTS (DraftKings main line 17.5)"
+     ],
+     "p_win": 89.5,
+     "p_model": 89.5,
+     "ev": 6.7,
+     "score": 89.5,
+     "player": "Jaden McDaniels",
+     "team": "MIN",
+     "stat": "PTS"
+    }
+   ],
+   "date": "2026-11-25",
+   "attempt": 4,
+   "day": 3,
+   "stake": 27.09,
+   "to_win": 15.84,
+   "picked_at": "2026-11-25 10:00 AM ET",
+   "why_ladder": "2-leg alt-line parlay, every leg from a different game: 72% to hit by our numbers (72% trusting only half our edge) at -171. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Parlay",
    "label": "Davion Mitchell 10+ PTS + Pascal Siakam 15+ PTS",
    "game": "OKC@MIA / IND@NYK",
    "eid": "401910030",

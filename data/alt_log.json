@@ -2,6 +2,1238 @@
  "note": "Every suggested alt-line ladder: 1 unit split across its rungs (50/30/20, or 60/40), graded after the game. Never trimmed.",
  "ladders": [
   {
+   "id": "2026-11-25|Zach LaVine|REB",
+   "date": "2026-11-25",
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "stat": "REB",
+   "game": "SAC@GSW",
+   "eid": "401909324",
+   "time": "10:00 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -219,
+     "p": 71.6,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     -219,
+     78.7
+    ],
+    [
+     3.5,
+     107,
+     55.9
+    ],
+    [
+     4.5,
+     227,
+     34.6
+    ],
+    [
+     5.5,
+     456,
+     19.5
+    ],
+    [
+     6.5,
+     920,
+     10.0
+    ],
+    [
+     7.5,
+     1660,
+     3.9
+    ],
+    [
+     8.5,
+     2600,
+     1.6
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Zach LaVine|3PM",
+   "date": "2026-11-25",
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "stat": "3PM",
+   "game": "SAC@GSW",
+   "eid": "401909324",
+   "time": "10:00 PM ET",
+   "main_line": 2.5,
+   "model": 2.5,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": -200,
+     "p": 67.0,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     0.5,
+     -930,
+     92.2
+    ],
+    [
+     1.5,
+     -200,
+     73.4
+    ],
+    [
+     2.5,
+     138,
+     47.5
+    ],
+    [
+     3.5,
+     339,
+     21.6
+    ],
+    [
+     4.5,
+     770,
+     11.5
+    ],
+    [
+     5.5,
+     1580,
+     4.8
+    ],
+    [
+     6.5,
+     2800,
+     1.1
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Tyrese Proctor|3PM",
+   "date": "2026-11-25",
+   "player": "Tyrese Proctor",
+   "team": "CLE",
+   "stat": "3PM",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 1.5,
+   "model": 1.7,
+   "rungs": [
+    {
+     "line": 1.5,
+     "price": 144,
+     "p": 45.1,
+     "stake": 0.6
+    },
+    {
+     "line": 2.5,
+     "price": 441,
+     "p": 20.1,
+     "stake": 0.4
+    }
+   ],
+   "all_rungs": [
+    [
+     0.5,
+     -310,
+     79.7
+    ],
+    [
+     1.5,
+     144,
+     52.9
+    ],
+    [
+     2.5,
+     441,
+     24.9
+    ],
+    [
+     3.5,
+     1140,
+     10.3
+    ],
+    [
+     4.5,
+     2500,
+     3.9
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Shai Gilgeous-Alexander|3PM",
+   "date": "2026-11-25",
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "stat": "3PM",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 2.5,
+   "model": 2.7,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 146,
+     "p": 43.7,
+     "stake": 0.6
+    },
+    {
+     "line": 3.5,
+     "price": 359,
+     "p": 25.9,
+     "stake": 0.4
+    }
+   ],
+   "all_rungs": [
+    [
+     0.5,
+     -1000,
+     91.7
+    ],
+    [
+     1.5,
+     -202,
+     71.5
+    ],
+    [
+     2.5,
+     146,
+     51.3
+    ],
+    [
+     3.5,
+     359,
+     29.7
+    ],
+    [
+     4.5,
+     860,
+     12.0
+    ],
+    [
+     5.5,
+     1800,
+     4.3
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Shai Gilgeous-Alexander|PTS",
+   "date": "2026-11-25",
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "stat": "PTS",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 32.5,
+   "model": 35.0,
+   "rungs": [
+    {
+     "line": 39.5,
+     "price": 308,
+     "p": 25.6,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     24.5,
+     -594,
+     89.7
+    ],
+    [
+     29.5,
+     -204,
+     71.9
+    ],
+    [
+     32.5,
+     -115,
+     59.3
+    ],
+    [
+     34.5,
+     126,
+     49.3
+    ],
+    [
+     39.5,
+     308,
+     29.5
+    ],
+    [
+     44.5,
+     750,
+     10.5
+    ],
+    [
+     49.5,
+     1780,
+     3.7
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Peyton Watson|AST",
+   "date": "2026-11-25",
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "stat": "AST",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": null,
+   "model": 2.7,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 139,
+     "p": 42.9,
+     "stake": 0.6
+    },
+    {
+     "line": 3.5,
+     "price": 355,
+     "p": 22.5,
+     "stake": 0.4
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     139,
+     50.5
+    ],
+    [
+     3.5,
+     355,
+     26.9
+    ],
+    [
+     4.5,
+     850,
+     12.2
+    ],
+    [
+     5.5,
+     1880,
+     6.0
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Peyton Watson|REB",
+   "date": "2026-11-25",
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "stat": "REB",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 4.5,
+   "model": 4.8,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": -187,
+     "p": 65.2,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     -464,
+     84.4
+    ],
+    [
+     3.5,
+     -187,
+     71.4
+    ],
+    [
+     4.5,
+     112,
+     50.8
+    ],
+    [
+     5.5,
+     217,
+     35.8
+    ],
+    [
+     6.5,
+     416,
+     21.6
+    ],
+    [
+     7.5,
+     760,
+     14.1
+    ],
+    [
+     8.5,
+     1340,
+     7.8
+    ],
+    [
+     9.5,
+     2200,
+     3.7
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Mikal Bridges|REB",
+   "date": "2026-11-25",
+   "player": "Mikal Bridges",
+   "team": "NYK",
+   "stat": "REB",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 3.5,
+   "model": 4.0,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -188,
+     "p": 68.9,
+     "stake": 0.5
+    },
+    {
+     "line": 3.5,
+     "price": 123,
+     "p": 46.3,
+     "stake": 0.3
+    },
+    {
+     "line": 4.5,
+     "price": 253,
+     "p": 29.6,
+     "stake": 0.2
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     -188,
+     75.5
+    ],
+    [
+     3.5,
+     123,
+     54.3
+    ],
+    [
+     4.5,
+     253,
+     37.8
+    ],
+    [
+     5.5,
+     499,
+     19.5
+    ],
+    [
+     6.5,
+     930,
+     10.0
+    ],
+    [
+     7.5,
+     1580,
+     3.9
+    ],
+    [
+     8.5,
+     2400,
+     1.6
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Karl-Anthony Towns|REB",
+   "date": "2026-11-25",
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "stat": "REB",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 13.5,
+   "model": 14.9,
+   "rungs": [
+    {
+     "line": 11.5,
+     "price": -203,
+     "p": 74.5,
+     "stake": 0.6
+    },
+    {
+     "line": 12.5,
+     "price": -137,
+     "p": 64.9,
+     "stake": 0.4
+    }
+   ],
+   "all_rungs": [
+    [
+     8.5,
+     -780,
+     97.0
+    ],
+    [
+     9.5,
+     -478,
+     94.4
+    ],
+    [
+     10.5,
+     -304,
+     89.0
+    ],
+    [
+     11.5,
+     -203,
+     82.2
+    ],
+    [
+     12.5,
+     -137,
+     71.0
+    ],
+    [
+     13.5,
+     103,
+     58.9
+    ],
+    [
+     14.5,
+     148,
+     49.4
+    ],
+    [
+     15.5,
+     212,
+     40.0
+    ],
+    [
+     16.5,
+     295,
+     28.0
+    ],
+    [
+     17.5,
+     422,
+     20.0
+    ],
+    [
+     18.5,
+     600,
+     14.8
+    ],
+    [
+     19.5,
+     830,
+     10.7
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Karl-Anthony Towns|PTS",
+   "date": "2026-11-25",
+   "player": "Karl-Anthony Towns",
+   "team": "NYK",
+   "stat": "PTS",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 21.5,
+   "model": 23.4,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": -241,
+     "p": 74.9,
+     "stake": 0.6
+    },
+    {
+     "line": 19.5,
+     "price": -154,
+     "p": 67.9,
+     "stake": 0.4
+    }
+   ],
+   "all_rungs": [
+    [
+     14.5,
+     -521,
+     93.5
+    ],
+    [
+     17.5,
+     -241,
+     83.3
+    ],
+    [
+     19.5,
+     -154,
+     74.4
+    ],
+    [
+     21.5,
+     -103,
+     62.1
+    ],
+    [
+     24.5,
+     175,
+     38.7
+    ],
+    [
+     29.5,
+     464,
+     12.9
+    ],
+    [
+     34.5,
+     1200,
+     2.2
+    ],
+    [
+     39.5,
+     2600,
+     0.2
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jonathan Kuminga|AST",
+   "date": "2026-11-25",
+   "player": "Jonathan Kuminga",
+   "team": "MIN",
+   "stat": "AST",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 2.5,
+   "model": 2.9,
+   "rungs": [
+    {
+     "line": 3.5,
+     "price": 270,
+     "p": 29.0,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     110,
+     55.6
+    ],
+    [
+     3.5,
+     270,
+     32.3
+    ],
+    [
+     4.5,
+     630,
+     17.0
+    ],
+    [
+     5.5,
+     1360,
+     5.3
+    ],
+    [
+     6.5,
+     2500,
+     2.0
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jarrett Allen|AST",
+   "date": "2026-11-25",
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "stat": "AST",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": null,
+   "model": 2.1,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 256,
+     "p": 29.5,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     1.5,
+     -121,
+     58.3
+    ],
+    [
+     2.5,
+     256,
+     34.6
+    ],
+    [
+     3.5,
+     660,
+     17.1
+    ],
+    [
+     4.5,
+     1560,
+     4.7
+    ],
+    [
+     5.5,
+     2900,
+     1.6
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jared McCain|PTS",
+   "date": "2026-11-25",
+   "player": "Jared McCain",
+   "team": "OKC",
+   "stat": "PTS",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 15.5,
+   "model": 17.4,
+   "rungs": [
+    {
+     "line": 17.5,
+     "price": 144,
+     "p": 42.5,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     9.5,
+     -580,
+     91.6
+    ],
+    [
+     11.5,
+     -313,
+     81.8
+    ],
+    [
+     14.5,
+     -140,
+     66.4
+    ],
+    [
+     15.5,
+     -110,
+     61.2
+    ],
+    [
+     17.5,
+     144,
+     49.9
+    ],
+    [
+     19.5,
+     223,
+     32.4
+    ],
+    [
+     24.5,
+     650,
+     6.7
+    ],
+    [
+     29.5,
+     1760,
+     0.8
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|James Harden|PTS",
+   "date": "2026-11-25",
+   "player": "James Harden",
+   "team": "CLE",
+   "stat": "PTS",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 17.5,
+   "model": 19.7,
+   "rungs": [
+    {
+     "line": 24.5,
+     "price": 457,
+     "p": 24.0,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     11.5,
+     -493,
+     78.2
+    ],
+    [
+     14.5,
+     -212,
+     66.5
+    ],
+    [
+     17.5,
+     -103,
+     55.3
+    ],
+    [
+     19.5,
+     153,
+     46.6
+    ],
+    [
+     24.5,
+     457,
+     28.1
+    ],
+    [
+     29.5,
+     1280,
+     17.0
+    ],
+    [
+     34.5,
+     2800,
+     8.1
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|James Harden|3PM",
+   "date": "2026-11-25",
+   "player": "James Harden",
+   "team": "CLE",
+   "stat": "3PM",
+   "game": "CLE@NYK",
+   "eid": "401909319",
+   "time": "7:30 PM ET",
+   "main_line": 2.5,
+   "model": 2.9,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": 114,
+     "p": 48.2,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     1.5,
+     -258,
+     82.1
+    ],
+    [
+     2.5,
+     114,
+     58.1
+    ],
+    [
+     3.5,
+     282,
+     28.3
+    ],
+    [
+     4.5,
+     630,
+     16.0
+    ],
+    [
+     5.5,
+     1360,
+     7.2
+    ],
+    [
+     6.5,
+     2500,
+     3.8
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jaden McDaniels|PTS",
+   "date": "2026-11-25",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "PTS",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 17.5,
+   "model": 18.8,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": -220,
+     "p": 69.9,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     11.5,
+     -522,
+     92.5
+    ],
+    [
+     14.5,
+     -220,
+     76.6
+    ],
+    [
+     17.5,
+     -109,
+     57.7
+    ],
+    [
+     19.5,
+     143,
+     42.3
+    ],
+    [
+     24.5,
+     419,
+     15.1
+    ],
+    [
+     29.5,
+     1180,
+     3.8
+    ],
+    [
+     34.5,
+     2700,
+     0.2
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jaden McDaniels|AST",
+   "date": "2026-11-25",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "AST",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 3.5,
+   "model": 3.7,
+   "rungs": [
+    {
+     "line": 2.5,
+     "price": -192,
+     "p": 70.0,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     2.5,
+     -192,
+     76.7
+    ],
+    [
+     3.5,
+     111,
+     52.8
+    ],
+    [
+     4.5,
+     219,
+     30.2
+    ],
+    [
+     5.5,
+     406,
+     17.7
+    ],
+    [
+     6.5,
+     750,
+     7.8
+    ],
+    [
+     7.5,
+     1300,
+     2.7
+    ],
+    [
+     8.5,
+     2100,
+     1.0
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Jaden McDaniels|REB",
+   "date": "2026-11-25",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "REB",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 5.5,
+   "model": 6.0,
+   "rungs": [
+    {
+     "line": 4.5,
+     "price": -216,
+     "p": 68.6,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     3.5,
+     -428,
+     85.3
+    ],
+    [
+     4.5,
+     -216,
+     75.1
+    ],
+    [
+     5.5,
+     -118,
+     58.1
+    ],
+    [
+     6.5,
+     149,
+     36.3
+    ],
+    [
+     7.5,
+     248,
+     24.3
+    ],
+    [
+     8.5,
+     413,
+     14.8
+    ],
+    [
+     9.5,
+     670,
+     8.0
+    ],
+    [
+     10.5,
+     1040,
+     3.2
+    ],
+    [
+     11.5,
+     1580,
+     1.5
+    ],
+    [
+     12.5,
+     2300,
+     0.7
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|Isaiah Hartenstein|PTS",
+   "date": "2026-11-25",
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "stat": "PTS",
+   "game": "MIN@OKC",
+   "eid": "401909320",
+   "time": "7:30 PM ET",
+   "main_line": 8.5,
+   "model": 8.9,
+   "rungs": [
+    {
+     "line": 14.5,
+     "price": 562,
+     "p": 16.7,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     5.5,
+     -454,
+     65.4
+    ],
+    [
+     7.5,
+     -189,
+     53.8
+    ],
+    [
+     8.5,
+     -114,
+     49.4
+    ],
+    [
+     9.5,
+     110,
+     44.9
+    ],
+    [
+     11.5,
+     212,
+     33.1
+    ],
+    [
+     14.5,
+     562,
+     22.0
+    ],
+    [
+     17.5,
+     1300,
+     12.6
+    ],
+    [
+     19.5,
+     2000,
+     7.7
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
+   "id": "2026-11-25|De'Andre Hunter|PTS",
+   "date": "2026-11-25",
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "stat": "PTS",
+   "game": "SAC@GSW",
+   "eid": "401909324",
+   "time": "10:00 PM ET",
+   "main_line": 14.5,
+   "model": 16.1,
+   "rungs": [
+    {
+     "line": 19.5,
+     "price": 264,
+     "p": 29.5,
+     "stake": 1.0
+    }
+   ],
+   "all_rungs": [
+    [
+     7.5,
+     -980,
+     81.0
+    ],
+    [
+     9.5,
+     -476,
+     76.2
+    ],
+    [
+     11.5,
+     -260,
+     70.3
+    ],
+    [
+     14.5,
+     -121,
+     56.7
+    ],
+    [
+     17.5,
+     167,
+     42.4
+    ],
+    [
+     19.5,
+     264,
+     33.7
+    ],
+    [
+     24.5,
+     800,
+     13.0
+    ],
+    [
+     29.5,
+     2000,
+     5.3
+    ]
+   ],
+   "saved_at": "2026-11-25 10:00 AM ET",
+   "updated_at": "2026-11-25 10:00 AM ET"
+  },
+  {
    "id": "2026-11-24|Zaccharie Risacher|PTS",
    "date": "2026-11-24",
    "player": "Zaccharie Risacher",
@@ -69,7 +1301,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 09:30 PM ET"
+   "updated_at": "2026-11-24 09:30 PM ET",
+   "value": 12.0,
+   "hit": 1,
+   "units": 0.42,
+   "result": "W",
+   "actual": "12 PTS \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Tristan da Silva|PTS",
@@ -287,7 +1525,13 @@
     ]
    ],
    "saved_at": "2026-11-24 02:00 PM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Paul Reed Jr|PTS",
@@ -421,7 +1665,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 4.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "4 REB \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Kyshawn George|3PM",
@@ -487,7 +1737,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 4.0,
+   "hit": 3,
+   "units": 1.16,
+   "result": "W",
+   "actual": "4 3PM \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Jamal Murray|PTS",
@@ -557,7 +1813,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 09:30 PM ET"
+   "updated_at": "2026-11-24 09:30 PM ET",
+   "value": 20.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "20 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Franz Wagner|AST",
@@ -845,7 +2107,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 09:30 PM ET"
+   "updated_at": "2026-11-24 09:30 PM ET",
+   "value": 4.0,
+   "hit": 1,
+   "units": 0.31,
+   "result": "W",
+   "actual": "4 AST \u00b7 1 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Caleb Martin|PTS",
@@ -899,7 +2167,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 09:30 PM ET"
+   "updated_at": "2026-11-24 09:30 PM ET",
+   "value": 13.0,
+   "hit": 1,
+   "units": 3.41,
+   "result": "W",
+   "actual": "13 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Ausar Thompson|PTS",
@@ -1113,7 +2387,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 33.0,
+   "hit": 1,
+   "units": 1.66,
+   "result": "W",
+   "actual": "33 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Alex Sarr|PTS",
@@ -1183,7 +2463,13 @@
     ]
    ],
    "saved_at": "2026-11-24 11:26 AM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 7.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "7 PTS \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-24|AJ Dybantsa|REB",
@@ -1274,7 +2560,13 @@
     ]
    ],
    "saved_at": "2026-11-24 02:00 PM ET",
-   "updated_at": "2026-11-24 07:00 PM ET"
+   "updated_at": "2026-11-24 07:00 PM ET",
+   "value": 11.0,
+   "hit": 3,
+   "units": 1.28,
+   "result": "W",
+   "actual": "11 REB \u00b7 3 of 3 rungs hit",
+   "graded_at": "2026-11-25 10:00 AM ET"
   },
   {
    "id": "2026-11-22|Shai Gilgeous-Alexander|PTS",
