@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T22:00:40Z",
+ "generated_at": "2026-11-25T00:00:35Z",
  "season": "2026-27",
  "games": [
   {
@@ -357,64 +357,6 @@
  ],
  "props": [
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "AST",
-   "model": 8.9,
-   "base": 8.6,
-   "matchup": -7.1,
-   "injury": 3.8,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.664,
-   "dk": 7.5,
-   "over": -129,
-   "under": -102,
-   "best_under": [
-    116,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 70.3,
-   "win_raw": 66.5,
-   "win_chance": 51.2,
-   "edge": 1.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     6,
-     9
-    ],
-    "soft": [
-     3,
-     5
-    ]
-   }
-  },
-  {
    "player": "Franz Wagner",
    "team": "ORL",
    "opp": "DET",
@@ -532,11 +474,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "AST",
-   "model": 4.6,
-   "base": 4.8,
+   "model": 5.0,
+   "base": 5.2,
    "matchup": -7.2,
-   "injury": 1.7,
+   "injury": 11.1,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -563,10 +506,10 @@
      15
     ]
    },
-   "conf": 33.3,
+   "conf": 49.3,
    "win_raw": 50.6,
    "win_chance": 49.1,
-   "edge": 0.1,
+   "edge": 0.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -590,11 +533,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "AST",
-   "model": 5.4,
-   "base": 5.5,
+   "model": 6.2,
+   "base": 6.3,
    "matchup": -7.1,
-   "injury": 5.5,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -621,10 +565,10 @@
      15
     ]
    },
-   "conf": 62.6,
+   "conf": 71.6,
    "win_raw": 59.0,
    "win_chance": 49.6,
-   "edge": 0.9,
+   "edge": 1.7,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -768,11 +712,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "AST",
-   "model": 3.2,
-   "base": 3.2,
+   "model": 3.6,
+   "base": 3.6,
    "matchup": -7.0,
-   "injury": 5.2,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -806,7 +751,7 @@
    "conf": 77.1,
    "win_raw": 58.5,
    "win_chance": 49.5,
-   "edge": 0.7,
+   "edge": 1.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -937,64 +882,6 @@
    }
   },
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "PTS",
-   "model": 25.4,
-   "base": 26.4,
-   "matchup": -3.7,
-   "injury": 5.1,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.533,
-   "dk": 24.5,
-   "over": -110,
-   "under": -116,
-   "best_under": [
-    -105,
-    "hardrockbet"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 35.0,
-   "win_raw": 50.6,
-   "win_chance": 49.0,
-   "edge": 0.9,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     4,
-     7
-    ],
-    "mid": [
-     0,
-     3
-    ],
-    "soft": [
-     3,
-     5
-    ]
-   }
-  },
-  {
    "player": "Franz Wagner",
    "team": "ORL",
    "opp": "DET",
@@ -1116,11 +1003,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 16.8,
-   "base": 17.1,
+   "model": 17.7,
+   "base": 18.0,
    "matchup": -4.0,
-   "injury": 2.7,
+   "injury": 7.7,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1147,10 +1035,10 @@
      15
     ]
    },
-   "conf": 54.2,
+   "conf": 65.4,
    "win_raw": 55.6,
    "win_chance": 48.8,
-   "edge": 2.3,
+   "edge": 3.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -1230,11 +1118,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 13.6,
-   "base": 14.0,
+   "model": 15.3,
+   "base": 15.7,
    "matchup": -4.2,
-   "injury": 6.3,
+   "injury": 19.2,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1265,10 +1154,10 @@
      15
     ]
    },
-   "conf": 53.0,
+   "conf": 65.2,
    "win_raw": 48.5,
    "win_chance": 52.3,
-   "edge": 2.1,
+   "edge": 3.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -1292,11 +1181,13 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 12.0,
-   "base": 11.6,
+   "model": 13.9,
+   "base": 13.5,
    "matchup": -4.0,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 16.4,
+   "inj_out": [
+    "Cade Cunningham"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.546,
@@ -1325,10 +1216,10 @@
      5
     ]
    },
-   "conf": 29.8,
+   "conf": 59.6,
    "win_raw": 48.8,
    "win_chance": 52.0,
-   "edge": 0.5,
+   "edge": 2.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -1408,11 +1299,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 13.3,
-   "base": 13.1,
+   "model": 14.9,
+   "base": 14.7,
    "matchup": -3.6,
-   "injury": 6.6,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1446,7 +1338,7 @@
    "conf": 78.0,
    "win_raw": 70.3,
    "win_chance": 51.2,
-   "edge": 2.8,
+   "edge": 4.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -1526,11 +1418,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 14.5,
-   "base": 14.3,
+   "model": 15.5,
+   "base": 15.3,
    "matchup": 5.5,
-   "injury": 12.7,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1564,7 +1457,7 @@
    "conf": 73.4,
    "win_raw": 60.7,
    "win_chance": 50.1,
-   "edge": 4.0,
+   "edge": 5.0,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -1644,11 +1537,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PTS",
-   "model": 12.1,
-   "base": 12.1,
+   "model": 12.9,
+   "base": 12.9,
    "matchup": 5.3,
-   "injury": 12.8,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1678,7 +1572,7 @@
    "conf": 75.2,
    "win_raw": 65.9,
    "win_chance": 51.2,
-   "edge": 2.6,
+   "edge": 3.4,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -1693,64 +1587,6 @@
     "soft": [
      2,
      5
-    ]
-   }
-  },
-  {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "PA",
-   "model": 34.3,
-   "base": 35.0,
-   "matchup": -4.5,
-   "injury": 4.8,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.566,
-   "dk": 32.5,
-   "over": -112,
-   "under": -118,
-   "best_under": [
-    -102,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 38.4,
-   "win_raw": 52.6,
-   "win_chance": 48.0,
-   "edge": 1.8,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     4
-    ],
-    "mid": [
-     2,
-     3
-    ],
-    "soft": [
-     4,
-     8
     ]
    }
   },
@@ -1876,11 +1712,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PA",
-   "model": 21.4,
-   "base": 21.9,
+   "model": 22.7,
+   "base": 23.2,
    "matchup": -4.7,
-   "injury": 2.5,
+   "injury": 8.4,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -1911,10 +1748,10 @@
      15
     ]
    },
-   "conf": 43.2,
+   "conf": 55.2,
    "win_raw": 54.2,
    "win_chance": 48.4,
-   "edge": 1.9,
+   "edge": 3.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -1994,11 +1831,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PA",
-   "model": 18.7,
-   "base": 18.6,
+   "model": 21.1,
+   "base": 21.0,
    "matchup": -4.7,
-   "injury": 6.2,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2029,10 +1867,10 @@
      15
     ]
    },
-   "conf": 65.6,
+   "conf": 73.4,
    "win_raw": 62.0,
    "win_chance": 50.4,
-   "edge": 3.2,
+   "edge": 5.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -2116,11 +1954,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PA",
-   "model": 16.6,
-   "base": 17.2,
+   "model": 18.7,
+   "base": 19.3,
    "matchup": -4.8,
-   "injury": 6.1,
+   "injury": 19.3,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2151,10 +1990,10 @@
      15
     ]
    },
-   "conf": 52.7,
+   "conf": 71.6,
    "win_raw": 49.7,
    "win_chance": 50.5,
-   "edge": 2.1,
+   "edge": 4.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -2294,11 +2133,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PA",
-   "model": 14.7,
-   "base": 15.3,
+   "model": 15.7,
+   "base": 16.3,
    "matchup": 5.9,
-   "injury": 12.6,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2328,7 +2168,7 @@
    "conf": 67.0,
    "win_raw": 55.4,
    "win_chance": 48.7,
-   "edge": 3.2,
+   "edge": 4.2,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -2343,68 +2183,6 @@
     "soft": [
      1,
      3
-    ]
-   }
-  },
-  {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "PR",
-   "model": 30.2,
-   "base": 31.4,
-   "matchup": -3.6,
-   "injury": 4.9,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.525,
-   "dk": 29.5,
-   "over": -124,
-   "under": -106,
-   "best_over": [
-    -120,
-    "betmgm"
-   ],
-   "best_under": [
-    -102,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 32.7,
-   "win_raw": 50.2,
-   "win_chance": 49.7,
-   "edge": 0.7,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     0,
-     1
-    ],
-    "mid": [
-     1,
-     7
-    ],
-    "soft": [
-     6,
-     7
     ]
    }
   },
@@ -2586,11 +2364,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PR",
-   "model": 23.0,
-   "base": 22.9,
+   "model": 25.8,
+   "base": 25.7,
    "matchup": -2.9,
-   "injury": 6.1,
+   "injury": 19.5,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2613,10 +2392,10 @@
      15
     ]
    },
-   "conf": 57.1,
+   "conf": 69.8,
    "win_raw": 59.5,
    "win_chance": 49.8,
-   "edge": 3.5,
+   "edge": 6.3,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -2640,11 +2419,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PR",
-   "model": 21.1,
-   "base": 21.3,
+   "model": 21.9,
+   "base": 22.1,
    "matchup": -3.5,
-   "injury": 2.5,
+   "injury": 6.5,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2675,10 +2455,10 @@
      15
     ]
    },
-   "conf": 51.0,
+   "conf": 58.7,
    "win_raw": 55.2,
    "win_chance": 48.7,
-   "edge": 2.6,
+   "edge": 3.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -2762,11 +2542,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PR",
-   "model": 19.7,
-   "base": 20.0,
+   "model": 21.1,
+   "base": 21.4,
    "matchup": 0.8,
-   "injury": 12.3,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2793,10 +2574,10 @@
      15
     ]
    },
-   "conf": 64.2,
+   "conf": 74.3,
    "win_raw": 64.7,
    "win_chance": 51.1,
-   "edge": 3.2,
+   "edge": 4.6,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -2820,11 +2601,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PR",
-   "model": 19.5,
-   "base": 19.4,
+   "model": 20.8,
+   "base": 20.7,
    "matchup": 2.3,
-   "injury": 12.4,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2855,10 +2637,10 @@
      15
     ]
    },
-   "conf": 54.7,
+   "conf": 67.0,
    "win_raw": 53.9,
    "win_chance": 48.4,
-   "edge": 3.0,
+   "edge": 4.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -2942,11 +2724,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PR",
-   "model": 16.7,
-   "base": 17.2,
+   "model": 18.7,
+   "base": 19.2,
    "matchup": -3.8,
-   "injury": 6.1,
+   "injury": 18.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -2973,10 +2756,10 @@
      15
     ]
    },
-   "conf": 50.2,
+   "conf": 67.9,
    "win_raw": 48.1,
    "win_chance": 52.2,
-   "edge": 2.2,
+   "edge": 4.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -3051,60 +2834,6 @@
     "soft": [
      4,
      6
-    ]
-   }
-  },
-  {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "PRA",
-   "model": 39.2,
-   "base": 40.1,
-   "matchup": -4.3,
-   "injury": 4.7,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.56,
-   "dk": 37.5,
-   "over": -124,
-   "under": -106,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 36.6,
-   "win_raw": 52.3,
-   "win_chance": 47.9,
-   "edge": 1.7,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     0,
-     1
-    ],
-    "mid": [
-     1,
-     5
-    ],
-    "soft": [
-     6,
-     9
     ]
    }
   },
@@ -3234,11 +2963,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PRA",
-   "model": 28.4,
-   "base": 28.4,
+   "model": 32.0,
+   "base": 32.0,
    "matchup": -3.8,
-   "injury": 6.0,
+   "injury": 19.6,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3269,10 +2999,10 @@
      15
     ]
    },
-   "conf": 64.1,
+   "conf": 71.6,
    "win_raw": 66.4,
    "win_chance": 51.2,
-   "edge": 4.9,
+   "edge": 8.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -3356,11 +3086,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PRA",
-   "model": 25.7,
-   "base": 26.1,
+   "model": 26.9,
+   "base": 27.3,
    "matchup": -4.2,
-   "injury": 2.4,
+   "injury": 7.3,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3391,10 +3122,10 @@
      15
     ]
    },
-   "conf": 42.5,
+   "conf": 51.7,
    "win_raw": 54.1,
    "win_chance": 48.4,
-   "edge": 2.2,
+   "edge": 3.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -3534,11 +3265,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PRA",
-   "model": 19.9,
-   "base": 20.4,
+   "model": 22.3,
+   "base": 22.8,
    "matchup": -4.3,
-   "injury": 5.9,
+   "injury": 18.3,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3569,10 +3301,10 @@
      15
     ]
    },
-   "conf": 47.6,
+   "conf": 67.9,
    "win_raw": 47.4,
    "win_chance": 52.0,
-   "edge": 2.4,
+   "edge": 4.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -3596,11 +3328,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "PRA",
-   "model": 19.6,
-   "base": 20.4,
+   "model": 21.0,
+   "base": 21.8,
    "matchup": 2.7,
-   "injury": 12.3,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3623,10 +3356,10 @@
      15
     ]
    },
-   "conf": 55.8,
+   "conf": 67.0,
    "win_raw": 53.8,
    "win_chance": 48.3,
-   "edge": 3.1,
+   "edge": 4.5,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -3762,11 +3495,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "REB",
-   "model": 9.7,
-   "base": 9.8,
+   "model": 10.9,
+   "base": 11.0,
    "matchup": -1.9,
-   "injury": 5.5,
+   "injury": 18.8,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3796,7 +3530,7 @@
    "conf": 78.0,
    "win_raw": 69.1,
    "win_chance": 51.2,
-   "edge": 2.2,
+   "edge": 3.4,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -3820,11 +3554,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "REB",
-   "model": 7.8,
-   "base": 8.0,
+   "model": 8.4,
+   "base": 8.6,
    "matchup": -5.3,
-   "injury": 11.6,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3855,10 +3590,10 @@
      15
     ]
    },
-   "conf": 72.7,
+   "conf": 81.7,
    "win_raw": 66.4,
    "win_chance": 51.2,
-   "edge": 1.3,
+   "edge": 1.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -3942,11 +3677,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "REB",
-   "model": 5.0,
-   "base": 5.1,
+   "model": 5.4,
+   "base": 5.5,
    "matchup": -5.8,
-   "injury": 11.5,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -3977,10 +3713,10 @@
      15
     ]
    },
-   "conf": 38.4,
+   "conf": 25.3,
    "win_raw": 53.0,
    "win_chance": 48.1,
-   "edge": -0.5,
+   "edge": -0.1,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -3995,64 +3731,6 @@
     "soft": [
      2,
      7
-    ]
-   }
-  },
-  {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "REB",
-   "model": 4.9,
-   "base": 5.0,
-   "matchup": -3.0,
-   "injury": 3.8,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.366,
-   "dk": 5.5,
-   "over": -101,
-   "under": -130,
-   "best_over": [
-    122,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     9,
-     10
-    ],
-    "l15": [
-     12,
-     15
-    ]
-   },
-   "conf": 69.1,
-   "win_raw": 70.0,
-   "win_chance": 51.2,
-   "edge": -0.6,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     5,
-     6
-    ],
-    "soft": [
-     6,
-     8
     ]
    }
   },
@@ -4183,6 +3861,7 @@
    "matchup": -1.8,
    "injury": 1.7,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4360,11 +4039,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "REB",
-   "model": 3.3,
-   "base": 3.3,
+   "model": 3.5,
+   "base": 3.5,
    "matchup": -1.8,
-   "injury": 5.2,
+   "injury": 13.2,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4395,10 +4075,10 @@
      15
     ]
    },
-   "conf": 47.9,
+   "conf": 37.6,
    "win_raw": 64.1,
    "win_chance": 51.0,
-   "edge": -0.2,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -4477,74 +4157,17 @@
    }
   },
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "RA",
-   "model": 13.9,
-   "base": 13.7,
-   "matchup": -5.6,
-   "injury": 3.8,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.546,
-   "dk": 13.5,
-   "over": -102,
-   "under": -129,
-   "best_under": [
-    -117,
-    "betparx"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     6,
-     15
-    ]
-   },
-   "conf": 30.1,
-   "win_raw": 48.8,
-   "win_chance": 52.0,
-   "edge": 0.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     1,
-     1
-    ],
-    "mid": [
-     2,
-     6
-    ],
-    "soft": [
-     3,
-     8
-    ]
-   }
-  },
-  {
    "player": "Ausar Thompson",
    "team": "DET",
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "RA",
-   "model": 15.0,
-   "base": 15.3,
+   "model": 17.0,
+   "base": 17.3,
    "matchup": -3.9,
-   "injury": 5.5,
+   "injury": 19.2,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4575,10 +4198,10 @@
      15
     ]
    },
-   "conf": 69.0,
+   "conf": 78.0,
    "win_raw": 66.1,
    "win_chance": 51.2,
-   "edge": 2.5,
+   "edge": 4.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -4722,11 +4345,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "RA",
-   "model": 8.7,
-   "base": 8.9,
+   "model": 9.2,
+   "base": 9.4,
    "matchup": -4.8,
-   "injury": 1.7,
+   "injury": 6.7,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4757,10 +4381,10 @@
      15
     ]
    },
-   "conf": 26.2,
+   "conf": 36.8,
    "win_raw": 47.5,
    "win_chance": 52.0,
-   "edge": 0.2,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -4900,11 +4524,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "RA",
-   "model": 5.9,
-   "base": 6.1,
+   "model": 6.3,
+   "base": 6.5,
    "matchup": -3.4,
-   "injury": 11.5,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4931,10 +4556,10 @@
      15
     ]
    },
-   "conf": 45.0,
+   "conf": 34.0,
    "win_raw": 52.6,
    "win_chance": 48.0,
-   "edge": -0.6,
+   "edge": -0.2,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -4958,11 +4583,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "RA",
-   "model": 6.5,
-   "base": 6.5,
+   "model": 7.2,
+   "base": 7.2,
    "matchup": -4.5,
-   "injury": 5.2,
+   "injury": 16.5,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -4981,23 +4607,23 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     10,
+     5,
      15
     ]
    },
-   "conf": 31.2,
-   "win_raw": 56.7,
-   "win_chance": 49.1,
-   "edge": 0.0,
-   "side": "Under",
+   "conf": 43.2,
+   "win_raw": 43.3,
+   "win_chance": 50.9,
+   "edge": 0.7,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
@@ -5005,11 +4631,11 @@
      2
     ],
     "mid": [
-     4,
+     2,
      6
     ],
     "soft": [
-     6,
+     2,
      8
     ]
    }
@@ -5136,11 +4762,13 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "3PM",
-   "model": 2.2,
-   "base": 2.1,
+   "model": 2.5,
+   "base": 2.4,
    "matchup": 2.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.6,
+   "inj_out": [
+    "Cade Cunningham"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.377,
@@ -5165,10 +4793,10 @@
      5
     ]
    },
-   "conf": 54.6,
+   "conf": 33.0,
    "win_raw": 61.4,
    "win_chance": 50.3,
-   "edge": -0.3,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -5248,11 +4876,12 @@
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "3PM",
-   "model": 2.8,
-   "base": 2.9,
+   "model": 2.9,
+   "base": 3.0,
    "matchup": 4.0,
-   "injury": 7.5,
+   "injury": 8.6,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -5286,7 +4915,7 @@
    "conf": 78.0,
    "win_raw": 70.1,
    "win_chance": 51.2,
-   "edge": 1.3,
+   "edge": 1.4,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -5305,74 +4934,17 @@
    }
   },
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
-   "opp": "ORL",
-   "game": "DET@ORL",
-   "stat": "3PM",
-   "model": 1.9,
-   "base": 2.0,
-   "matchup": 3.5,
-   "injury": 11.0,
-   "inj_out": [
-    "Duncan Robinson"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.566,
-   "dk": 1.5,
-   "over": -191,
-   "under": 144,
-   "best_over": [
-    -175,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     8,
-     15
-    ]
-   },
-   "conf": 71.6,
-   "win_raw": 55.3,
-   "win_chance": 48.7,
-   "edge": 0.4,
-   "side": "Over",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     2,
-     6
-    ],
-    "mid": [
-     2,
-     3
-    ],
-    "soft": [
-     4,
-     6
-    ]
-   }
-  },
-  {
    "player": "Kevin Huerter",
    "team": "DET",
    "opp": "ORL",
    "game": "DET@ORL",
    "stat": "3PM",
-   "model": 2.0,
-   "base": 2.1,
+   "model": 2.2,
+   "base": 2.3,
    "matchup": 3.2,
-   "injury": 11.1,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -5406,7 +4978,7 @@
    "conf": 69.8,
    "win_raw": 51.6,
    "win_chance": 47.8,
-   "edge": 0.5,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -5609,8 +5181,9 @@
    "model": 2.2,
    "base": 2.0,
    "matchup": 7.6,
-   "injury": 18.0,
+   "injury": 20.0,
    "inj_out": [
+    "Cade Cunningham",
     "Duncan Robinson"
    ],
    "sched": 0.0,
@@ -15375,17 +14948,24 @@
    "game": "BKN@MIL"
   },
   {
-   "player": "Grant Williams",
-   "team": "CHA",
-   "status": "Day-To-Day",
-   "reason": "Right Hamstring",
-   "game": "CHI@CHA"
-  },
-  {
    "player": "Ryan Kalkbrenner",
    "team": "CHA",
    "status": "Day-To-Day",
    "reason": "Left Hip",
+   "game": "CHI@CHA"
+  },
+  {
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "status": "Out",
+   "reason": "Left Hamstring",
+   "game": "CHI@CHA"
+  },
+  {
+   "player": "Sion James",
+   "team": "CHA",
+   "status": "Day-To-Day",
+   "reason": "Left Undisclosed",
    "game": "CHI@CHA"
   },
   {
@@ -15397,13 +14977,6 @@
   },
   {
    "player": "Kon Knueppel",
-   "team": "CHA",
-   "status": "Out",
-   "reason": "Left Hamstring",
-   "game": "CHI@CHA"
-  },
-  {
-   "player": "Dennis Schroder",
    "team": "CHA",
    "status": "Out",
    "reason": "Left Hamstring",
@@ -15480,6 +15053,13 @@
    "game": "DAL@DEN"
   },
   {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "status": "Out",
+   "reason": "Knee",
+   "game": "DET@ORL"
+  },
+  {
    "player": "Ebuka Okorie",
    "team": "DET",
    "status": "Out",
@@ -15508,11 +15088,11 @@
    "game": "DET@ORL"
   },
   {
-   "player": "Cade Cunningham",
-   "team": "DET",
+   "player": "Yaxel Lendeborg",
+   "team": "GSW",
    "status": "Day-To-Day",
-   "reason": "Knee",
-   "game": "DET@ORL"
+   "reason": "Illness",
+   "game": "SAC@GSW"
   },
   {
    "player": "Brandon Williams",
@@ -15564,6 +15144,13 @@
    "game": "LAC@MEM"
   },
   {
+   "player": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "status": "Out",
+   "reason": "Back",
+   "game": "LAC@MEM"
+  },
+  {
    "player": "Cameron Boozer",
    "team": "MEM",
    "status": "Out",
@@ -15582,13 +15169,6 @@
    "team": "MEM",
    "status": "Out",
    "reason": "Left Foot",
-   "game": "LAC@MEM"
-  },
-  {
-   "player": "Scotty Pippen Jr.",
-   "team": "MEM",
-   "status": "Out",
-   "reason": "Back",
    "game": "LAC@MEM"
   },
   {
@@ -15627,6 +15207,20 @@
    "game": "MIN@OKC"
   },
   {
+   "player": "Miles McBride",
+   "team": "NYK",
+   "status": "Day-To-Day",
+   "reason": "Left Groin",
+   "game": "CLE@NYK"
+  },
+  {
+   "player": "Jordan Clarkson",
+   "team": "NYK",
+   "status": "Out",
+   "reason": "Right Foot",
+   "game": "CLE@NYK"
+  },
+  {
    "player": "Josh Hart",
    "team": "NYK",
    "status": "Day-To-Day",
@@ -15648,34 +15242,6 @@
    "game": "CLE@NYK"
   },
   {
-   "player": "Jordan Clarkson",
-   "team": "NYK",
-   "status": "Out",
-   "reason": "Right Foot",
-   "game": "CLE@NYK"
-  },
-  {
-   "player": "Miles McBride",
-   "team": "NYK",
-   "status": "Day-To-Day",
-   "reason": "Left Groin",
-   "game": "CLE@NYK"
-  },
-  {
-   "player": "Jaylin Williams",
-   "team": "OKC",
-   "status": "Day-To-Day",
-   "reason": "Back",
-   "game": "MIN@OKC"
-  },
-  {
-   "player": "Aday Mara",
-   "team": "OKC",
-   "status": "Day-To-Day",
-   "reason": "Right Lower Leg",
-   "game": "MIN@OKC"
-  },
-  {
    "player": "Nikola Topic",
    "team": "OKC",
    "status": "Out",
@@ -15683,17 +15249,24 @@
    "game": "MIN@OKC"
   },
   {
+   "player": "Jaylin Williams",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Back",
+   "game": "MIN@OKC"
+  },
+  {
+   "player": "Aday Mara",
+   "team": "OKC",
+   "status": "Out",
+   "reason": "Right Lower Leg",
+   "game": "MIN@OKC"
+  },
+  {
    "player": "Jalen Williams",
    "team": "OKC",
    "status": "Out",
    "reason": "Left Leg",
-   "game": "MIN@OKC"
-  },
-  {
-   "player": "Alex Caruso",
-   "team": "OKC",
-   "status": "Out",
-   "reason": "Right Hip",
    "game": "MIN@OKC"
   },
   {
@@ -15879,7 +15452,7 @@
    "game": "BOS@WAS"
   }
  ],
- "injuries_updated": "11/24 05:00 PM ET",
+ "injuries_updated": "11/24 07:00 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -17953,311 +17526,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-11T22:16",
-   "games": [
-    {
-     "id": "SAS@CHI",
-     "matchup": "SAS @ CHI",
-     "model_spread": 5.5,
-     "model_total": 230.4,
-     "dk_spread": "+15.5",
-     "dk_total": 236.5
-    },
-    {
-     "id": "DEN@MEM",
-     "matchup": "DEN @ MEM",
-     "model_spread": -4.1,
-     "model_total": 227.1,
-     "dk_spread": "+3.5",
-     "dk_total": 230.5
-    },
-    {
-     "id": "LAL@MIL",
-     "matchup": "LAL @ MIL",
-     "model_spread": 4.3,
-     "model_total": 229.8,
-     "dk_spread": "+14.5",
-     "dk_total": 229.5
-    },
-    {
-     "id": "BKN@NOP",
-     "matchup": "BKN @ NOP",
-     "model_spread": -3.4,
-     "model_total": 229.2,
-     "dk_spread": "-2.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "ORL@UTA",
-     "matchup": "ORL @ UTA",
-     "model_spread": -1.2,
-     "model_total": 224.5,
-     "dk_spread": "+4.5",
-     "dk_total": 214.5
-    },
-    {
-     "id": "GSW@HOU",
-     "matchup": "GSW @ HOU",
-     "model_spread": -2.3,
-     "model_total": 226.6,
-     "dk_spread": "-6.5",
-     "dk_total": 219.5
-    },
-    {
-     "id": "OKC@POR",
-     "matchup": "OKC @ POR",
-     "model_spread": -2.7,
-     "model_total": 225.5,
-     "dk_spread": "-2.5",
-     "dk_total": 224.5
-    },
-    {
-     "id": "TOR@PHI",
-     "matchup": "TOR @ PHI",
-     "model_spread": -1.9,
-     "model_total": 224.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DET@WAS",
-     "matchup": "DET @ WAS",
-     "model_spread": 1.7,
-     "model_total": 222.1,
-     "dk_spread": "+9.5",
-     "dk_total": 220.5
-    },
-    {
-     "id": "DAL@MIN",
-     "matchup": "DAL @ MIN",
-     "model_spread": -4.2,
-     "model_total": 225.6,
-     "dk_spread": "-5.5",
-     "dk_total": 226.5
-    },
-    {
-     "id": "CHA@PHX",
-     "matchup": "CHA @ PHX",
-     "model_spread": -4.2,
-     "model_total": 222.6,
-     "dk_spread": "-7.5",
-     "dk_total": 213.5
-    }
-   ],
-   "props": [
-    {
-     "player": "Stephen Curry",
-     "stat": "PR",
-     "model": 39.2,
-     "dk": 30.5,
-     "edge": 8.7
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PRA",
-     "model": 43.8,
-     "dk": 35.5,
-     "edge": 8.3
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PTS",
-     "model": 34.7,
-     "dk": 26.5,
-     "edge": 8.2
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PRA",
-     "model": 35.6,
-     "dk": 27.5,
-     "edge": 8.1
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PR",
-     "model": 29.5,
-     "dk": 21.5,
-     "edge": 8.0
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PRA",
-     "model": 57.4,
-     "dk": 49.5,
-     "edge": 7.9
-    },
-    {
-     "player": "Stephen Curry",
-     "stat": "PA",
-     "model": 39.2,
-     "dk": 31.5,
-     "edge": 7.7
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PR",
-     "model": 48.9,
-     "dk": 41.5,
-     "edge": 7.4
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PRA",
-     "model": 51.6,
-     "dk": 44.5,
-     "edge": 7.1
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PR",
-     "model": 48.3,
-     "dk": 41.5,
-     "edge": 6.8
-    },
-    {
-     "player": "Ivica Zubac",
-     "stat": "PRA",
-     "model": 18.9,
-     "dk": 25.5,
-     "edge": -6.6
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PA",
-     "model": 49.1,
-     "dk": 42.5,
-     "edge": 6.6
-    },
-    {
-     "player": "Jeremiah Fears",
-     "stat": "PRA",
-     "model": 33.0,
-     "dk": 26.5,
-     "edge": 6.5
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PTS",
-     "model": 35.8,
-     "dk": 29.5,
-     "edge": 6.3
-    },
-    {
-     "player": "Isaiah Stewart",
-     "stat": "PR",
-     "model": 16.7,
-     "dk": 10.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PTS",
-     "model": 40.6,
-     "dk": 34.5,
-     "edge": 6.1
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PR",
-     "model": 30.5,
-     "dk": 24.5,
-     "edge": 6.0
-    },
-    {
-     "player": "Nikola Jokic",
-     "stat": "PRA",
-     "model": 41.6,
-     "dk": 47.5,
-     "edge": -5.9
-    },
-    {
-     "player": "Ivica Zubac",
-     "stat": "PR",
-     "model": 17.7,
-     "dk": 23.5,
-     "edge": -5.8
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PR",
-     "model": 17.3,
-     "dk": 11.5,
-     "edge": 5.8
-    },
-    {
-     "player": "Jeremiah Fears",
-     "stat": "PA",
-     "model": 27.2,
-     "dk": 21.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Saddiq Bey",
-     "stat": "PA",
-     "model": 22.2,
-     "dk": 16.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PTS",
-     "model": 22.0,
-     "dk": 16.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PA",
-     "model": 28.0,
-     "dk": 22.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Victor Wembanyama",
-     "stat": "PA",
-     "model": 38.9,
-     "dk": 33.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "stat": "PRA",
-     "model": 33.8,
-     "dk": 28.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Jamal Shead",
-     "stat": "PRA",
-     "model": 21.7,
-     "dk": 16.5,
-     "edge": 5.2
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PA",
-     "model": 15.6,
-     "dk": 10.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PRA",
-     "model": 18.6,
-     "dk": 13.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Isaiah Stewart",
-     "stat": "PTS",
-     "model": 12.6,
-     "dk": 7.5,
-     "edge": 5.1
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-12T01:52",
    "games": [
@@ -35906,6 +35174,319 @@
      "model": 21.1,
      "dk": 18.5,
      "edge": 2.6
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-24T19:00",
+   "games": [
+    {
+     "id": "DET@ORL",
+     "matchup": "DET @ ORL",
+     "model_spread": 0.7,
+     "model_total": 223.5,
+     "dk_spread": "+1.5",
+     "dk_total": 212.5
+    },
+    {
+     "id": "BOS@WAS",
+     "matchup": "BOS @ WAS",
+     "model_spread": 2.5,
+     "model_total": 221.9,
+     "dk_spread": "+10.5",
+     "dk_total": 218.5
+    },
+    {
+     "id": "DAL@DEN",
+     "matchup": "DAL @ DEN",
+     "model_spread": -2.9,
+     "model_total": 228.0,
+     "dk_spread": "-8.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@PHI",
+     "matchup": "MIA @ PHI",
+     "model_spread": -2.5,
+     "model_total": 232.0,
+     "dk_spread": "-2.5",
+     "dk_total": 240.5
+    },
+    {
+     "id": "CHI@CHA",
+     "matchup": "CHI @ CHA",
+     "model_spread": -1.1,
+     "model_total": 226.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "CLE@NYK",
+     "matchup": "CLE @ NYK",
+     "model_spread": -3.7,
+     "model_total": 224.7,
+     "dk_spread": "-3.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "MIN@OKC",
+     "matchup": "MIN @ OKC",
+     "model_spread": 0.3,
+     "model_total": 224.1,
+     "dk_spread": "-1.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "LAC@MEM",
+     "matchup": "LAC @ MEM",
+     "model_spread": -7.6,
+     "model_total": 229.0,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BKN@MIL",
+     "matchup": "BKN @ MIL",
+     "model_spread": -1.4,
+     "model_total": 229.8,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "PHX@HOU",
+     "matchup": "PHX @ HOU",
+     "model_spread": -5.2,
+     "model_total": 228.3,
+     "dk_spread": "-8.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "SAC@GSW",
+     "matchup": "SAC @ GSW",
+     "model_spread": -6.3,
+     "model_total": 225.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -0.3,
+     "model_total": 225.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 32.0,
+     "dk": 23.5,
+     "edge": 8.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PR",
+     "model": 25.8,
+     "dk": 19.5,
+     "edge": 6.3
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PA",
+     "model": 21.1,
+     "dk": 15.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PRA",
+     "model": 41.9,
+     "dk": 36.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PA",
+     "model": 34.6,
+     "dk": 29.5,
+     "edge": 5.1
+    },
+    {
+     "player": "John Collins",
+     "stat": "PTS",
+     "model": 15.5,
+     "dk": 10.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PR",
+     "model": 32.4,
+     "dk": 27.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PRA",
+     "model": 22.3,
+     "dk": 17.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Paul Reed",
+     "stat": "PR",
+     "model": 21.1,
+     "dk": 16.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PR",
+     "model": 34.0,
+     "dk": 29.5,
+     "edge": 4.5
+    },
+    {
+     "player": "John Collins",
+     "stat": "PRA",
+     "model": 21.0,
+     "dk": 16.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "RA",
+     "model": 17.0,
+     "dk": 12.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PR",
+     "model": 16.0,
+     "dk": 11.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PTS",
+     "model": 14.9,
+     "dk": 10.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PA",
+     "model": 33.9,
+     "dk": 29.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PRA",
+     "model": 38.9,
+     "dk": 34.5,
+     "edge": 4.4
+    },
+    {
+     "player": "John Collins",
+     "stat": "PR",
+     "model": 20.8,
+     "dk": 16.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PA",
+     "model": 18.7,
+     "dk": 14.5,
+     "edge": 4.2
+    },
+    {
+     "player": "John Collins",
+     "stat": "PA",
+     "model": 15.7,
+     "dk": 11.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PR",
+     "model": 18.7,
+     "dk": 14.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PR",
+     "model": 35.4,
+     "dk": 31.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PTS",
+     "model": 27.4,
+     "dk": 23.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PTS",
+     "model": 15.3,
+     "dk": 11.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PTS",
+     "model": 11.3,
+     "dk": 7.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Paul Reed",
+     "stat": "PTS",
+     "model": 12.9,
+     "dk": 9.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PR",
+     "model": 21.9,
+     "dk": 18.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PRA",
+     "model": 26.9,
+     "dk": 23.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "REB",
+     "model": 10.9,
+     "dk": 7.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PTS",
+     "model": 24.8,
+     "dk": 21.5,
+     "edge": 3.3
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PTS",
+     "model": 17.7,
+     "dk": 14.5,
+     "edge": 3.2
     }
    ]
   }
@@ -56369,19 +55950,19 @@
     "Best price: -105 at BetMGM (DraftKings -114; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 74.4,
    "p_win_raw": 71.3,
    "p_honest": 51.2,
    "p_win": 56.6,
    "ev": 6.2,
-   "picked_at": "2026-11-24 05:00 PM ET",
+   "picked_at": "2026-11-24 07:00 PM ET",
    "open_line": 8.5,
    "open_price": -104,
    "first_picked_at": "2026-11-24 11:26 AM ET",
    "close_line": 8.5,
    "close_price": -114,
-   "close_at": "2026-11-24 05:00 PM ET",
+   "close_at": "2026-11-24 07:00 PM ET",
    "clv": {
     "line": 0.0,
     "price": 2.3,
@@ -58212,7 +57793,7 @@
     "Best price: -120 at BetMGM (DraftKings -127; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 70.1,
    "p_win_raw": 73.5,
    "p_honest": 51.2,
@@ -58295,7 +57876,7 @@
     "Best price: +105 at Bally Bet (DraftKings +103; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 56.6,
    "p_win_raw": 61.7,
    "p_honest": 50.3,
@@ -58379,12 +57960,96 @@
     "Best price: +100 at Fanatics (DraftKings -102; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 69.9,
    "p_win_raw": 64.8,
    "p_honest": 51.1,
    "p_win": 54.6,
    "ev": 8.1
+  },
+  {
+   "date": "2026-11-24",
+   "eid": "401909314",
+   "game": "DET@ORL",
+   "time": "7:00 PM ET",
+   "home": "ORL",
+   "away": "DET",
+   "type": "Prop",
+   "player": "Paul Reed",
+   "team": "DET",
+   "stat": "REB",
+   "side": "Over",
+   "line": 6.5,
+   "price": -127,
+   "model": 8.4,
+   "edge": 1.9,
+   "edge_pct": 29.2,
+   "label": "Paul Reed Over 6.5 REB",
+   "best": [
+    -105,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     5.0,
+     7.0,
+     10.0,
+     10.0,
+     11.0,
+     9.0,
+     6.0,
+     7.0,
+     7.0,
+     5.0
+    ],
+    "line": 6.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "CHA",
+     "PHI",
+     "LAL",
+     "WAS",
+     "WAS",
+     "MIA",
+     "SAS",
+     "NOP",
+     "TOR",
+     "ATL"
+    ]
+   },
+   "score": 81.7,
+   "reasons": [
+    "Model projects 8.4 REB vs a line of 6.5 (+1.9, 29% edge)",
+    "Went over the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 6.8 over the last 5 and 7.5 over the last 15",
+    "Minutes steady: 24 per game over the last 5 (27 over the last 15)",
+    "Matchup vs ORL: -5.3% to his REB projection from their defense and pace (works against the over)",
+    "ORL ranks among the top-10 defenses for REB; he went over 6.5 in 1 of 5 games against that tier",
+    "Teammate injury boost: Cade Cunningham, Duncan Robinson out, +20% to his REB projection (extra minutes and usage)",
+    "Best price: -105 at BetMGM (DraftKings -127; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 75,
+   "p_model": 73.3,
+   "p_win_raw": 70.6,
+   "p_honest": 51.2,
+   "p_win": 56.4,
+   "ev": 0.8
   },
   {
    "date": "2026-11-24",
@@ -58458,7 +58123,7 @@
     "DET ranks among the middle-10 defenses for AST; he went over 6.5 in 4 of 4 games against that tier",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 68.7,
    "p_win_raw": 67.9,
    "p_honest": 51.2,
@@ -58537,104 +58202,19 @@
     "DET ranks among the top-10 defenses for 3PM; he went over 3.5 in 3 of 6 games against that tier",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 76,
+   "candidates_considered": 75,
    "p_model": 64.1,
    "p_win_raw": 62.4,
    "p_honest": 50.5,
    "p_win": 53.8,
    "ev": 19.4
-  },
-  {
-   "date": "2026-11-24",
-   "eid": "401909315",
-   "game": "BOS@WAS",
-   "time": "8:00 PM ET",
-   "home": "WAS",
-   "away": "BOS",
-   "type": "Prop",
-   "player": "Sam Hauser",
-   "team": "BOS",
-   "stat": "PR",
-   "side": "Over",
-   "line": 10.5,
-   "price": -112,
-   "model": 13.3,
-   "edge": 2.8,
-   "edge_pct": 26.7,
-   "label": "Sam Hauser Over 10.5 PR",
-   "best": [
-    -111,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     9,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     13.0,
-     12.0,
-     10.0,
-     17.0,
-     17.0,
-     9.0,
-     13.0,
-     11.0,
-     20.0,
-     4.0
-    ],
-    "line": 10.5,
-    "side": "Over",
-    "label": "PR",
-    "opps": [
-     "MIL",
-     "CHA",
-     "MIL",
-     "PHI",
-     "TOR",
-     "DAL",
-     "ORL",
-     "DEN",
-     "SAC",
-     "GSW"
-    ]
-   },
-   "score": 80.8,
-   "reasons": [
-    "Model projects 13.3 PR vs a line of 10.5 (+2.8, 27% edge)",
-    "Went over the line in 7 of his last 10 games (3/5 in the last 5)",
-    "Averaging 11.4 over the last 5 and 11.6 over the last 15",
-    "Minutes steady: 21 per game over the last 5 (21 over the last 15)",
-    "Matchup vs WAS: +2% to his PR projection from their defense and pace (helps the over)",
-    "WAS ranks among the bottom-10 defenses for PR; he went over 10.5 in 4 of 7 games against that tier",
-    "Teammate injury boost: Mitchell Robinson out, +4.7% to his PR projection (extra minutes and usage)",
-    "Game script / rest: blowout minutes (10.5-pt spread) +1% (net +1%)",
-    "Best price: -111 at FanDuel (DraftKings -112; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 76,
-   "p_model": 72.9,
-   "p_win_raw": 67.7,
-   "p_honest": 51.2,
-   "p_win": 55.5,
-   "ev": 5.1
   }
  ],
  "board": {
   "date": "2026-11-24",
-  "qualified": 76,
-  "positive": 38,
-  "top_win": 58.2,
+  "qualified": 75,
+  "positive": 39,
+  "top_win": 58.3,
   "trust": {
    "s": 0.3079700686331553,
    "n": 36,
@@ -60058,13 +59638,14 @@
     "day": 1,
     "stake": 10,
     "to_win": 8.0,
-    "picked_at": "2026-11-24 05:00 PM ET",
+    "picked_at": "2026-11-24 07:00 PM ET",
     "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value",
     "open_line": 29.5,
     "open_price": -125,
+    "first_picked_at": "2026-11-24 05:00 PM ET",
     "close_line": 29.5,
     "close_price": -125,
-    "close_at": "2026-11-24 05:00 PM ET",
+    "close_at": "2026-11-24 07:00 PM ET",
     "clv": {
      "line": 0.0,
      "price": 0.0,
@@ -68099,7 +67680,7 @@
   "remaining": 6523,
   "allowed_now": 144,
   "skipped": [],
-  "slot": "pretip",
+  "slot": "tipcheck",
   "calls": [
    {
     "time": "11:26 AM",
@@ -68205,7 +67786,7 @@
   "history": [
    {
     "date": "2026-11-24",
-    "used": 79,
+    "used": 106,
     "limit": 250
    },
    {
@@ -68469,11 +68050,11 @@
   "summary": {
    "All": {
     "Model bet": {
-     "bets": 4659,
+     "bets": 4651,
      "won": 2179,
      "lost": 2328,
      "push": 64,
-     "pending": 88,
+     "pending": 80,
      "units": -465.01
     },
     "Pick of the Day": {
@@ -68511,11 +68092,11 @@
    },
    "2026-11": {
     "Model bet": {
-     "bets": 4659,
+     "bets": 4651,
      "won": 2179,
      "lost": 2328,
      "push": 64,
-     "pending": 88,
+     "pending": 80,
      "units": -465.01
     },
     "Pick of the Day": {
@@ -68709,7 +68290,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge) | Win chance 56.6% vs 53% implied by -114: +6.2% expected value (raw model said 71.3%; past picks went 21-15, so it trusts 31% of the model's edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.6 over the last 15 | Minutes steady: 24 per game over the last 5 (23 over the last 15) | Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under) | DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier | Best price: -105 at BetMGM (DraftKings -114; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-24 05:00 PM ET",
+    "picked_at": "2026-11-24 07:00 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -68757,7 +68338,7 @@
     "actual": null,
     "units": null,
     "why": "Highest win chance on the board at a ladder-friendly price: 57% to win, +3% expected value | Model projects 34.6 PA vs a line of 29.5 (+5.1, 17% edge) | Went over the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 35.8 over the last 5 and 33.1 over the last 15 | Minutes steady: 36 per game over the last 5 (37 over the last 15) | Matchup vs DET: neutral for PA (defense and pace about league average) | DET ranks among the middle-10 defenses for PA; he went over 29.5 in 4 of 5 games against that tier | Best price: -120 at BetMGM (DraftKings -125; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-24 05:00 PM ET",
+    "picked_at": "2026-11-24 07:00 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -69373,32 +68954,6 @@
     "why": "Model 228.0 vs DraftKings 234.5 (edge -6.5)"
    },
    {
-    "id": "model|2026-11-24|DET @ ORL|Cade Cunningham|AST",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Cade Cunningham Over 7.5 AST",
-    "player": "Cade Cunningham",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "AST",
-    "dir": "Over",
-    "line": 7.5,
-    "price": -129,
-    "model": 8.9,
-    "edge": 1.4,
-    "confidence": 70.3,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 8.9 vs DraftKings 7.5 (edge 1.4)"
-   },
-   {
     "id": "model|2026-11-24|DET @ ORL|Franz Wagner|AST",
     "source": "Model bet",
     "date": "2026-11-24",
@@ -69423,32 +68978,6 @@
     "actual": null,
     "units": null,
     "why": "Model 8.0 vs DraftKings 6.5 (edge 1.5)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|AST",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 4.5 AST",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "AST",
-    "dir": "Over",
-    "line": 4.5,
-    "price": 107,
-    "model": 5.4,
-    "edge": 0.9,
-    "confidence": 62.6,
-    "win_chance": 49.6,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 5.4 vs DraftKings 4.5 (edge 0.9)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Franz Wagner|PTS",
@@ -69491,16 +69020,16 @@
     "dir": "Over",
     "line": 14.5,
     "price": -121,
-    "model": 16.8,
-    "edge": 2.3,
-    "confidence": 54.2,
+    "model": 17.7,
+    "edge": 3.2,
+    "confidence": 65.4,
     "win_chance": 48.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 16.8 vs DraftKings 14.5 (edge 2.3)"
+    "why": "Model 17.7 vs DraftKings 14.5 (edge 3.2)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Anthony Black|PTS",
@@ -69543,16 +69072,16 @@
     "dir": "Over",
     "line": 11.5,
     "price": -110,
-    "model": 13.6,
-    "edge": 2.1,
-    "confidence": 53.0,
+    "model": 15.3,
+    "edge": 3.8,
+    "confidence": 65.2,
     "win_chance": 52.3,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 13.6 vs DraftKings 11.5 (edge 2.1)"
+    "why": "Model 15.3 vs DraftKings 11.5 (edge 3.8)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Jalen Suggs|PTS",
@@ -69607,58 +69136,6 @@
     "why": "Model 13.4 vs DraftKings 10.5 (edge 2.9)"
    },
    {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|PTS",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 10.5 PTS",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PTS",
-    "dir": "Over",
-    "line": 10.5,
-    "price": -122,
-    "model": 13.3,
-    "edge": 2.8,
-    "confidence": 78.0,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 13.3 vs DraftKings 10.5 (edge 2.8)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Paul Reed|PTS",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Paul Reed Over 9.5 PTS",
-    "player": "Paul Reed",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PTS",
-    "dir": "Over",
-    "line": 9.5,
-    "price": -128,
-    "model": 12.1,
-    "edge": 2.6,
-    "confidence": 75.2,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 12.1 vs DraftKings 9.5 (edge 2.6)"
-   },
-   {
     "id": "model|2026-11-24|DET @ ORL|Franz Wagner|PA",
     "source": "Model bet",
     "date": "2026-11-24",
@@ -69699,42 +69176,16 @@
     "dir": "Over",
     "line": 19.5,
     "price": -112,
-    "model": 21.4,
-    "edge": 1.9,
-    "confidence": 43.2,
+    "model": 22.7,
+    "edge": 3.2,
+    "confidence": 55.2,
     "win_chance": 48.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 21.4 vs DraftKings 19.5 (edge 1.9)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|PA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 15.5 PA",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PA",
-    "dir": "Over",
-    "line": 15.5,
-    "price": -109,
-    "model": 18.7,
-    "edge": 3.2,
-    "confidence": 65.6,
-    "win_chance": 50.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 18.7 vs DraftKings 15.5 (edge 3.2)"
+    "why": "Model 22.7 vs DraftKings 19.5 (edge 3.2)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Jalen Suggs|PA",
@@ -69777,16 +69228,16 @@
     "dir": "Over",
     "line": 14.5,
     "price": -108,
-    "model": 16.6,
-    "edge": 2.1,
-    "confidence": 52.7,
+    "model": 18.7,
+    "edge": 4.2,
+    "confidence": 71.6,
     "win_chance": 50.5,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 16.6 vs DraftKings 14.5 (edge 2.1)"
+    "why": "Model 18.7 vs DraftKings 14.5 (edge 4.2)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Tristan da Silva|PA",
@@ -69813,32 +69264,6 @@
     "actual": null,
     "units": null,
     "why": "Model 14.4 vs DraftKings 11.5 (edge 2.9)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|John Collins|PA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "John Collins Over 11.5 PA",
-    "player": "John Collins",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PA",
-    "dir": "Over",
-    "line": 11.5,
-    "price": -111,
-    "model": 14.7,
-    "edge": 3.2,
-    "confidence": 67.0,
-    "win_chance": 48.7,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 14.7 vs DraftKings 11.5 (edge 3.2)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Franz Wagner|PR",
@@ -69881,16 +69306,16 @@
     "dir": "Over",
     "line": 18.5,
     "price": -127,
-    "model": 21.1,
-    "edge": 2.6,
-    "confidence": 51.0,
+    "model": 21.9,
+    "edge": 3.4,
+    "confidence": 58.7,
     "win_chance": 48.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 21.1 vs DraftKings 18.5 (edge 2.6)"
+    "why": "Model 21.9 vs DraftKings 18.5 (edge 3.4)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|PR",
@@ -69907,16 +69332,16 @@
     "dir": "Over",
     "line": 19.5,
     "price": -103,
-    "model": 23.0,
-    "edge": 3.5,
-    "confidence": 57.1,
+    "model": 25.8,
+    "edge": 6.3,
+    "confidence": 69.8,
     "win_chance": 49.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 23.0 vs DraftKings 19.5 (edge 3.5)"
+    "why": "Model 25.8 vs DraftKings 19.5 (edge 6.3)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Paul Reed|PR",
@@ -69933,16 +69358,16 @@
     "dir": "Over",
     "line": 16.5,
     "price": -124,
-    "model": 19.7,
-    "edge": 3.2,
-    "confidence": 64.2,
+    "model": 21.1,
+    "edge": 4.6,
+    "confidence": 74.3,
     "win_chance": 51.1,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 19.7 vs DraftKings 16.5 (edge 3.2)"
+    "why": "Model 21.1 vs DraftKings 16.5 (edge 4.6)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|John Collins|PR",
@@ -69959,16 +69384,16 @@
     "dir": "Over",
     "line": 16.5,
     "price": -102,
-    "model": 19.5,
-    "edge": 3.0,
-    "confidence": 54.7,
+    "model": 20.8,
+    "edge": 4.3,
+    "confidence": 67.0,
     "win_chance": 48.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 19.5 vs DraftKings 16.5 (edge 3.0)"
+    "why": "Model 20.8 vs DraftKings 16.5 (edge 4.3)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Jalen Suggs|PR",
@@ -70089,42 +69514,16 @@
     "dir": "Over",
     "line": 23.5,
     "price": -116,
-    "model": 25.7,
-    "edge": 2.2,
-    "confidence": 42.5,
+    "model": 26.9,
+    "edge": 3.4,
+    "confidence": 51.7,
     "win_chance": 48.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 25.7 vs DraftKings 23.5 (edge 2.2)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|PRA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 23.5 PRA",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PRA",
-    "dir": "Over",
-    "line": 23.5,
-    "price": -118,
-    "model": 28.4,
-    "edge": 4.9,
-    "confidence": 64.1,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 28.4 vs DraftKings 23.5 (edge 4.9)"
+    "why": "Model 26.9 vs DraftKings 23.5 (edge 3.4)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Jalen Suggs|PRA",
@@ -70167,16 +69566,16 @@
     "dir": "Over",
     "line": 17.5,
     "price": -121,
-    "model": 19.9,
-    "edge": 2.4,
-    "confidence": 47.6,
+    "model": 22.3,
+    "edge": 4.8,
+    "confidence": 67.9,
     "win_chance": 52.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 19.9 vs DraftKings 17.5 (edge 2.4)"
+    "why": "Model 22.3 vs DraftKings 17.5 (edge 4.8)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|John Collins|PRA",
@@ -70193,16 +69592,16 @@
     "dir": "Over",
     "line": 16.5,
     "price": -126,
-    "model": 19.6,
-    "edge": 3.1,
-    "confidence": 55.8,
+    "model": 21.0,
+    "edge": 4.5,
+    "confidence": 67.0,
     "win_chance": 48.3,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 19.6 vs DraftKings 16.5 (edge 3.1)"
+    "why": "Model 21.0 vs DraftKings 16.5 (edge 4.5)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Tristan da Silva|PRA",
@@ -70231,32 +69630,6 @@
     "why": "Model 18.5 vs DraftKings 15.5 (edge 3.0)"
    },
    {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|REB",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 7.5 REB",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "REB",
-    "dir": "Over",
-    "line": 7.5,
-    "price": -144,
-    "model": 9.7,
-    "edge": 2.2,
-    "confidence": 78.0,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 9.7 vs DraftKings 7.5 (edge 2.2)"
-   },
-   {
     "id": "model|2026-11-24|DET @ ORL|Paul Reed|REB",
     "source": "Model bet",
     "date": "2026-11-24",
@@ -70271,16 +69644,16 @@
     "dir": "Over",
     "line": 6.5,
     "price": -127,
-    "model": 7.8,
-    "edge": 1.3,
-    "confidence": 72.7,
+    "model": 8.4,
+    "edge": 1.9,
+    "confidence": 81.7,
     "win_chance": 51.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 7.8 vs DraftKings 6.5 (edge 1.3)"
+    "why": "Model 8.4 vs DraftKings 6.5 (edge 1.9)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Franz Wagner|REB",
@@ -70333,32 +69706,6 @@
     "actual": null,
     "units": null,
     "why": "Model 15.4 vs DraftKings 13.5 (edge 1.9)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Ausar Thompson|RA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Ausar Thompson Over 12.5 RA",
-    "player": "Ausar Thompson",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "RA",
-    "dir": "Over",
-    "line": 12.5,
-    "price": -112,
-    "model": 15.0,
-    "edge": 2.5,
-    "confidence": 69.0,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 15.0 vs DraftKings 12.5 (edge 2.5)"
    },
    {
     "id": "model|2026-11-24|DET @ ORL|Desmond Bane|3PM",
@@ -71363,16 +70710,16 @@
     "dir": "Over",
     "line": 14.5,
     "price": -129,
-    "model": 16.7,
-    "edge": 2.2,
-    "confidence": 50.2,
+    "model": 18.7,
+    "edge": 4.2,
+    "confidence": 67.9,
     "win_chance": 52.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 16.7 vs DraftKings 14.5 (edge 2.2)"
+    "why": "Model 18.7 vs DraftKings 14.5 (edge 4.2)"
    },
    {
     "id": "model|2026-11-24|BOS @ WAS|Paul George|PR",
@@ -71399,6 +70746,32 @@
     "actual": null,
     "units": null,
     "why": "Model 25.5 vs DraftKings 23.5 (edge 2.0)"
+   },
+   {
+    "id": "model|2026-11-24|DET @ ORL|Isaiah Joe|PTS",
+    "source": "Model bet",
+    "date": "2026-11-24",
+    "game": "DET @ ORL",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Isaiah Joe Over 11.5 PTS",
+    "player": "Isaiah Joe",
+    "team": "DET",
+    "opp": "ORL",
+    "stat": "PTS",
+    "dir": "Over",
+    "line": 11.5,
+    "price": -101,
+    "model": 13.9,
+    "edge": 2.4,
+    "confidence": 59.6,
+    "win_chance": 52.0,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 13.9 vs DraftKings 11.5 (edge 2.4)"
    },
    {
     "id": "model|2026-11-23|LAC @ HOU|Spread",
@@ -77305,6 +76678,214 @@
     "actual": "16 PTS",
     "units": 0.94,
     "why": "Model 15.9 vs DraftKings 14.5 (edge 1.4)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Kelly Oubre Jr.|PTS",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Kelly Oubre Jr. Over 12.5 PTS",
+    "player": "Kelly Oubre Jr.",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PTS",
+    "dir": "Over",
+    "line": 12.5,
+    "price": -116,
+    "model": 14.4,
+    "edge": 1.9,
+    "confidence": 68.2,
+    "win_chance": 50.2,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "15 PTS",
+    "units": 0.86,
+    "why": "Model 14.4 vs DraftKings 12.5 (edge 1.9)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Aaron Nesmith|PTS",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Aaron Nesmith Under 12.5 PTS",
+    "player": "Aaron Nesmith",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PTS",
+    "dir": "Under",
+    "line": 12.5,
+    "price": -121,
+    "model": 9.6,
+    "edge": -2.9,
+    "confidence": 79.9,
+    "win_chance": 50.9,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "9 PTS",
+    "units": 0.83,
+    "why": "Model 9.6 vs DraftKings 12.5 (edge -2.9)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Landry Shamet|PTS",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Landry Shamet Over 11.5 PTS",
+    "player": "Landry Shamet",
+    "team": "NYK",
+    "opp": "IND",
+    "stat": "PTS",
+    "dir": "Over",
+    "line": 11.5,
+    "price": -116,
+    "model": 15.4,
+    "edge": 3.9,
+    "confidence": 73.4,
+    "win_chance": 50.4,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "17 PTS",
+    "units": 0.86,
+    "why": "Model 15.4 vs DraftKings 11.5 (edge 3.9)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Obi Toppin|PTS",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Obi Toppin Under 11.5 PTS",
+    "player": "Obi Toppin",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PTS",
+    "dir": "Under",
+    "line": 11.5,
+    "price": -122,
+    "model": 9.8,
+    "edge": -1.7,
+    "confidence": 64.3,
+    "win_chance": 50.0,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "9 PTS",
+    "units": 0.82,
+    "why": "Model 9.8 vs DraftKings 11.5 (edge -1.7)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Pascal Siakam|PA",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Pascal Siakam Over 23.5 PA",
+    "player": "Pascal Siakam",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PA",
+    "dir": "Over",
+    "line": 23.5,
+    "price": -105,
+    "model": 26.4,
+    "edge": 2.9,
+    "confidence": 53.4,
+    "win_chance": 51.1,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "26 PA",
+    "units": 0.95,
+    "why": "Model 26.4 vs DraftKings 23.5 (edge 2.9)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Andrew Nembhard|PA",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Andrew Nembhard Over 21.5 PA",
+    "player": "Andrew Nembhard",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PA",
+    "dir": "Over",
+    "line": 21.5,
+    "price": -115,
+    "model": 23.9,
+    "edge": 2.4,
+    "confidence": 50.1,
+    "win_chance": 50.5,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "24 PA",
+    "units": 0.87,
+    "why": "Model 23.9 vs DraftKings 21.5 (edge 2.4)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Kelly Oubre Jr.|PR",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Kelly Oubre Jr. Over 16.5 PR",
+    "player": "Kelly Oubre Jr.",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PR",
+    "dir": "Over",
+    "line": 16.5,
+    "price": -128,
+    "model": 18.7,
+    "edge": 2.2,
+    "confidence": 60.1,
+    "win_chance": 48.6,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "20 PR",
+    "units": 0.78,
+    "why": "Model 18.7 vs DraftKings 16.5 (edge 2.2)"
+   },
+   {
+    "id": "model|2026-11-22|IND @ NYK|Andrew Nembhard|PR",
+    "source": "Model bet",
+    "date": "2026-11-22",
+    "game": "IND @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Andrew Nembhard Over 16.5 PR",
+    "player": "Andrew Nembhard",
+    "team": "IND",
+    "opp": "NYK",
+    "stat": "PR",
+    "dir": "Over",
+    "line": 16.5,
+    "price": -120,
+    "model": 18.4,
+    "edge": 1.9,
+    "confidence": 45.2,
+    "win_chance": 50.5,
+    "price_book": "draftkings",
+    "result": "W",
+    "status": "Won",
+    "actual": "18 PR",
+    "units": 0.83,
+    "why": "Model 18.4 vs DraftKings 16.5 (edge 1.9)"
    },
    {
     "id": "potd|2026-11-20",
