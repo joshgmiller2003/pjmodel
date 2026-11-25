@@ -62,8 +62,9 @@
    "day": 3,
    "stake": 27.09,
    "to_win": 14.33,
-   "picked_at": "2026-11-25 02:00 PM ET",
-   "why_ladder": "Single alt line: 73.4% to hit by our numbers (73% trusting only half our edge) at -189, +12.2% expected value. The most likely winner on today's alt lines at a ladder price Replaced the earlier pick (Karl-Anthony Towns 11+ REB + Jaden McDaniels 12+ PTS), which is no longer playable."
+   "picked_at": "2026-11-25 05:00 PM ET",
+   "why_ladder": "Single alt line: 73.4% to hit by our numbers (73% trusting only half our edge) at -189, +12.2% expected value. The most likely winner on today's alt lines at a ladder price",
+   "first_picked_at": "2026-11-25 02:00 PM ET"
   },
   {
    "type": "Parlay",
