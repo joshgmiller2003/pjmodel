@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "used_today": 88,
+ "used_today": 175,
  "calls": [
   {
    "time": "10:00 AM",
@@ -86,13 +86,93 @@
    "time": "10:00 AM",
    "call": "alt lines MIN@OKC",
    "cost": 4
+  },
+  {
+   "time": "02:00 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "02:00 PM",
+   "call": "game lines",
+   "cost": 3
+  },
+  {
+   "time": "02:00 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props MIA@PHI",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props CHI@CHA",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props CLE@NYK",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props MIN@OKC",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props LAC@MEM",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props BKN@MIL",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props PHX@HOU",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props SAC@GSW",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "props SAS@POR",
+   "cost": 8
+  },
+  {
+   "time": "02:00 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "02:00 PM",
+   "call": "alt lines SAC@GSW",
+   "cost": 4
+  },
+  {
+   "time": "02:00 PM",
+   "call": "alt lines CLE@NYK",
+   "cost": 4
+  },
+  {
+   "time": "02:00 PM",
+   "call": "alt lines CHI@CHA",
+   "cost": 4
   }
  ],
- "remaining": 6295,
+ "remaining": 6144,
  "history": [
   {
    "date": "2026-11-25",
-   "used": 88,
+   "used": 175,
    "limit": 250
   },
   {
@@ -204,6 +284,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 9,
- "month_used": 2549,
+ "month_used": 2636,
  "month_limit": 5500
 }

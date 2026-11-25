@@ -6,18 +6,18 @@
  "steps": [
   {
    "type": "Prop",
-   "label": "Draymond Green Under 6.5 PTS",
+   "label": "Draymond Green Under 5.5 PTS",
    "game": "SAC@GSW",
    "eid": "401909324",
    "time": "10:00 PM ET",
    "home": "GSW",
    "away": "SAC",
    "side": "Under",
-   "line": 6.5,
-   "price": -130,
+   "line": 5.5,
+   "price": 100,
    "model": 4.4,
-   "edge": -2.1,
-   "edge_pct": 32.3,
+   "edge": -1.1,
+   "edge_pct": 20.0,
    "hits": {
     "l5": [
      3,
@@ -45,7 +45,7 @@
      3.0,
      9.0
     ],
-    "line": 6.5,
+    "line": 5.5,
     "side": "Under",
     "label": "PTS",
     "opps": [
@@ -62,23 +62,23 @@
     ]
    },
    "reasons": [
-    "Model projects 4.4 PTS vs a line of 6.5 (-2.1, 32% edge)",
+    "Model projects 4.4 PTS vs a line of 5.5 (-1.1, 20% edge)",
     "Went under the line in 8 of his last 10 games (3/5 in the last 5)",
     "Averaging 5.0 over the last 5 and 3.6 over the last 14",
     "Minutes steady: 24 per game over the last 5 (26 over the last 14)",
     "Matchup vs SAC: +4.2% to his PTS projection from their defense and pace (works against the under)",
-    "SAC ranks among the bottom-10 defenses for PTS; he went under 6.5 in 3 of 3 games against that tier",
+    "SAC ranks among the bottom-10 defenses for PTS; he went under 5.5 in 3 of 3 games against that tier",
     "Teammate injury boost: Brandon Williams, Stephen Curry out, +10.1% to his PTS projection (extra minutes and usage)",
-    "Best price: -120 at ESPN BET (DraftKings -130; the record is graded at DraftKings)",
+    "Best price: +105 at BetMGM (DraftKings +100; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "p_win": 57.8,
-   "p_model": 80.4,
-   "ev": 2.3,
-   "score": 87.0,
+   "p_win": 56.0,
+   "p_model": 67.3,
+   "ev": 12.0,
+   "score": 78.0,
    "best": [
-    -120,
-    "espnbet"
+    105,
+    "betmgm"
    ],
    "player": "Draymond Green",
    "team": "GSW",
@@ -87,14 +87,14 @@
    "attempt": 10,
    "day": 1,
    "stake": 10,
-   "to_win": 7.69,
-   "picked_at": "2026-11-25 10:00 AM ET",
+   "to_win": 10.0,
+   "picked_at": "2026-11-25 02:00 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.8% to win, +2.3% expected value",
-   "open_line": 6.5,
-   "open_price": -130,
-   "close_line": 6.5,
-   "close_price": -130,
-   "close_at": "2026-11-25 10:00 AM ET",
+   "open_line": 5.5,
+   "open_price": 100,
+   "close_line": 5.5,
+   "close_price": 100,
+   "close_at": "2026-11-25 02:00 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.0,
