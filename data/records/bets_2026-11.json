@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "updated": "2026-11-24 07:00 PM ET",
+ "updated": "2026-11-24 08:30 PM ET",
  "count": 5036,
  "bets": [
   {
@@ -159,7 +159,7 @@
    "actual": null,
    "units": null,
    "why": "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge) | Win chance 56.6% vs 53% implied by -114: +6.2% expected value (raw model said 71.3%; past picks went 21-15, so it trusts 31% of the model's edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.6 over the last 15 | Minutes steady: 24 per game over the last 5 (23 over the last 15) | Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under) | DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier | Best price: -105 at BetMGM (DraftKings -114; the record is graded at DraftKings) | Not on the injury report at pick time",
-   "picked_at": "2026-11-24 07:00 PM ET",
+   "picked_at": "2026-11-24 08:30 PM ET",
    "graded_at": null,
    "clv": {
     "line": 0.0,
@@ -213,7 +213,7 @@
     "line": 0.0,
     "price": 0.0,
     "beat": false,
-    "final": false
+    "final": true
    },
    "open": [
     29.5,

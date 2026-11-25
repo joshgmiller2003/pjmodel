@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T00:00:35Z",
+ "generated_at": "2026-11-25T01:30:32Z",
  "season": "2026-27",
  "games": [
   {
@@ -24,14 +24,18 @@
     "over_px": -113,
     "under_px": -107
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 0.8,
    "total_edge": 11.0,
-   "note": "Model ORL +0.7, total 223.5; leans ORL vs the market spread."
+   "note": "Model ORL +0.7, total 223.5; leans ORL vs the market spread.",
+   "score": {
+    "away": 55,
+    "home": 42
+   }
   },
   {
    "id": "BOS@WAS",
@@ -55,14 +59,18 @@
     "over_px": -112,
     "under_px": -108
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 8.0,
    "total_edge": 3.4,
-   "note": "Model WAS +2.5, total 221.9; leans WAS vs the market spread."
+   "note": "Model WAS +2.5, total 221.9; leans WAS vs the market spread.",
+   "score": {
+    "away": 21,
+    "home": 11
+   }
   },
   {
    "id": "DAL@DEN",
@@ -15417,13 +15425,6 @@
    "game": "SAS@POR"
   },
   {
-   "player": "Tre Mann",
-   "team": "WAS",
-   "status": "Day-To-Day",
-   "reason": "Illness",
-   "game": "BOS@WAS"
-  },
-  {
    "player": "Tristan Vukcevic",
    "team": "WAS",
    "status": "Out",
@@ -15452,7 +15453,7 @@
    "game": "BOS@WAS"
   }
  ],
- "injuries_updated": "11/24 07:00 PM ET",
+ "injuries_updated": "11/24 08:30 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -17526,116 +17527,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-12T01:52",
-   "games": [
-    {
-     "id": "TOR@PHI",
-     "matchup": "TOR @ PHI",
-     "model_spread": -1.9,
-     "model_total": 224.4,
-     "dk_spread": "-10.5",
-     "dk_total": 221.5
-    },
-    {
-     "id": "DET@WAS",
-     "matchup": "DET @ WAS",
-     "model_spread": 1.7,
-     "model_total": 222.3,
-     "dk_spread": "+9.5",
-     "dk_total": 221.5
-    },
-    {
-     "id": "DAL@MIN",
-     "matchup": "DAL @ MIN",
-     "model_spread": -4.2,
-     "model_total": 225.8,
-     "dk_spread": "-5.5",
-     "dk_total": 227.5
-    },
-    {
-     "id": "CHA@PHX",
-     "matchup": "CHA @ PHX",
-     "model_spread": -4.2,
-     "model_total": 222.8,
-     "dk_spread": "-6.5",
-     "dk_total": 213.5
-    },
-    {
-     "id": "NYK@IND",
-     "matchup": "NYK @ IND",
-     "model_spread": 0.4,
-     "model_total": 222.6,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "MIL@ORL",
-     "matchup": "MIL @ ORL",
-     "model_spread": -5.1,
-     "model_total": 225.9,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "CLE@MIA",
-     "matchup": "CLE @ MIA",
-     "model_spread": -0.4,
-     "model_total": 230.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "ATL@CHI",
-     "matchup": "ATL @ CHI",
-     "model_spread": 2.6,
-     "model_total": 233.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "MEM@NOP",
-     "matchup": "MEM @ NOP",
-     "model_spread": 1.6,
-     "model_total": 231.9,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "UTA@HOU",
-     "matchup": "UTA @ HOU",
-     "model_spread": -8.4,
-     "model_total": 224.6,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "GSW@SAS",
-     "matchup": "GSW @ SAS",
-     "model_spread": -3.3,
-     "model_total": 228.1,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "POR@SAC",
-     "matchup": "POR @ SAC",
-     "model_spread": 3.5,
-     "model_total": 228.9,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "OKC@LAC",
-     "matchup": "OKC @ LAC",
-     "model_spread": 0.6,
-     "model_total": 225.1,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": []
-  },
   {
    "timestamp": "2026-11-12T11:50",
    "games": [
@@ -35179,6 +35070,319 @@
   },
   {
    "timestamp": "2026-11-24T19:00",
+   "games": [
+    {
+     "id": "DET@ORL",
+     "matchup": "DET @ ORL",
+     "model_spread": 0.7,
+     "model_total": 223.5,
+     "dk_spread": "+1.5",
+     "dk_total": 212.5
+    },
+    {
+     "id": "BOS@WAS",
+     "matchup": "BOS @ WAS",
+     "model_spread": 2.5,
+     "model_total": 221.9,
+     "dk_spread": "+10.5",
+     "dk_total": 218.5
+    },
+    {
+     "id": "DAL@DEN",
+     "matchup": "DAL @ DEN",
+     "model_spread": -2.9,
+     "model_total": 228.0,
+     "dk_spread": "-8.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "MIA@PHI",
+     "matchup": "MIA @ PHI",
+     "model_spread": -2.5,
+     "model_total": 232.0,
+     "dk_spread": "-2.5",
+     "dk_total": 240.5
+    },
+    {
+     "id": "CHI@CHA",
+     "matchup": "CHI @ CHA",
+     "model_spread": -1.1,
+     "model_total": 226.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "CLE@NYK",
+     "matchup": "CLE @ NYK",
+     "model_spread": -3.7,
+     "model_total": 224.7,
+     "dk_spread": "-3.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "MIN@OKC",
+     "matchup": "MIN @ OKC",
+     "model_spread": 0.3,
+     "model_total": 224.1,
+     "dk_spread": "-1.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "LAC@MEM",
+     "matchup": "LAC @ MEM",
+     "model_spread": -7.6,
+     "model_total": 229.0,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "BKN@MIL",
+     "matchup": "BKN @ MIL",
+     "model_spread": -1.4,
+     "model_total": 229.8,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "PHX@HOU",
+     "matchup": "PHX @ HOU",
+     "model_spread": -5.2,
+     "model_total": 228.3,
+     "dk_spread": "-8.5",
+     "dk_total": 224.5
+    },
+    {
+     "id": "SAC@GSW",
+     "matchup": "SAC @ GSW",
+     "model_spread": -6.3,
+     "model_total": 225.4,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -0.3,
+     "model_total": 225.7,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 32.0,
+     "dk": 23.5,
+     "edge": 8.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PR",
+     "model": 25.8,
+     "dk": 19.5,
+     "edge": 6.3
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PA",
+     "model": 21.1,
+     "dk": 15.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PRA",
+     "model": 41.9,
+     "dk": 36.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PA",
+     "model": 34.6,
+     "dk": 29.5,
+     "edge": 5.1
+    },
+    {
+     "player": "John Collins",
+     "stat": "PTS",
+     "model": 15.5,
+     "dk": 10.5,
+     "edge": 5.0
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PR",
+     "model": 32.4,
+     "dk": 27.5,
+     "edge": 4.9
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PRA",
+     "model": 22.3,
+     "dk": 17.5,
+     "edge": 4.8
+    },
+    {
+     "player": "Paul Reed",
+     "stat": "PR",
+     "model": 21.1,
+     "dk": 16.5,
+     "edge": 4.6
+    },
+    {
+     "player": "Franz Wagner",
+     "stat": "PR",
+     "model": 34.0,
+     "dk": 29.5,
+     "edge": 4.5
+    },
+    {
+     "player": "John Collins",
+     "stat": "PRA",
+     "model": 21.0,
+     "dk": 16.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "RA",
+     "model": 17.0,
+     "dk": 12.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PR",
+     "model": 16.0,
+     "dk": 11.5,
+     "edge": 4.5
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PTS",
+     "model": 14.9,
+     "dk": 10.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PA",
+     "model": 33.9,
+     "dk": 29.5,
+     "edge": 4.4
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PRA",
+     "model": 38.9,
+     "dk": 34.5,
+     "edge": 4.4
+    },
+    {
+     "player": "John Collins",
+     "stat": "PR",
+     "model": 20.8,
+     "dk": 16.5,
+     "edge": 4.3
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PA",
+     "model": 18.7,
+     "dk": 14.5,
+     "edge": 4.2
+    },
+    {
+     "player": "John Collins",
+     "stat": "PA",
+     "model": 15.7,
+     "dk": 11.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PR",
+     "model": 18.7,
+     "dk": 14.5,
+     "edge": 4.2
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PR",
+     "model": 35.4,
+     "dk": 31.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Jamal Murray",
+     "stat": "PTS",
+     "model": 27.4,
+     "dk": 23.5,
+     "edge": 3.9
+    },
+    {
+     "player": "Kevin Huerter",
+     "stat": "PTS",
+     "model": 15.3,
+     "dk": 11.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PTS",
+     "model": 11.3,
+     "dk": 7.5,
+     "edge": 3.8
+    },
+    {
+     "player": "Paul Reed",
+     "stat": "PTS",
+     "model": 12.9,
+     "dk": 9.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PR",
+     "model": 21.9,
+     "dk": 18.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PRA",
+     "model": 26.9,
+     "dk": 23.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "REB",
+     "model": 10.9,
+     "dk": 7.5,
+     "edge": 3.4
+    },
+    {
+     "player": "Anthony Davis",
+     "stat": "PTS",
+     "model": 24.8,
+     "dk": 21.5,
+     "edge": 3.3
+    },
+    {
+     "player": "Daniss Jenkins",
+     "stat": "PTS",
+     "model": 17.7,
+     "dk": 14.5,
+     "edge": 3.2
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-24T20:30",
    "games": [
     {
      "id": "DET@ORL",
@@ -55950,19 +56154,19 @@
     "Best price: -105 at BetMGM (DraftKings -114; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 75,
+   "candidates_considered": 20,
    "p_model": 74.4,
    "p_win_raw": 71.3,
    "p_honest": 51.2,
    "p_win": 56.6,
    "ev": 6.2,
-   "picked_at": "2026-11-24 07:00 PM ET",
+   "picked_at": "2026-11-24 08:30 PM ET",
    "open_line": 8.5,
    "open_price": -104,
    "first_picked_at": "2026-11-24 11:26 AM ET",
    "close_line": 8.5,
    "close_price": -114,
-   "close_at": "2026-11-24 07:00 PM ET",
+   "close_at": "2026-11-24 08:30 PM ET",
    "clv": {
     "line": 0.0,
     "price": 2.3,
@@ -57719,25 +57923,187 @@
  "potd_alts": [
   {
    "date": "2026-11-24",
-   "eid": "401909314",
-   "game": "DET@ORL",
-   "time": "7:00 PM ET",
-   "home": "ORL",
-   "away": "DET",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
    "type": "Prop",
-   "player": "Tristan da Silva",
-   "team": "ORL",
-   "stat": "PA",
+   "player": "Zaccharie Risacher",
+   "team": "DAL",
+   "stat": "REB",
    "side": "Over",
-   "line": 11.5,
-   "price": -127,
-   "model": 14.4,
-   "edge": 2.9,
-   "edge_pct": 25.2,
-   "label": "Tristan da Silva Over 11.5 PA",
+   "line": 3.5,
+   "price": -126,
+   "model": 4.6,
+   "edge": 1.1,
+   "edge_pct": 31.4,
+   "label": "Zaccharie Risacher Over 3.5 REB",
    "best": [
     -120,
-    "betmgm"
+    "williamhill_us"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     1.0,
+     4.0,
+     6.0,
+     2.0,
+     6.0,
+     2.0,
+     5.0,
+     3.0,
+     7.0,
+     8.0
+    ],
+    "line": 3.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "SAS",
+     "UTA",
+     "BKN",
+     "IND",
+     "MIN",
+     "CLE",
+     "BOS",
+     "GSW",
+     "LAC",
+     "UTA"
+    ]
+   },
+   "score": 79.8,
+   "reasons": [
+    "Model projects 4.6 REB vs a line of 3.5 (+1.1, 31% edge)",
+    "Went over the line in 6 of his last 10 games (3/5 in the last 5)",
+    "Averaging 5.0 over the last 5 and 4.9 over the last 15",
+    "Minutes steady: 23 per game over the last 5 (23 over the last 15)",
+    "Matchup vs DEN: -7% to his REB projection from their defense and pace (works against the over)",
+    "DEN ranks among the top-10 defenses for REB; he went over 3.5 in 3 of 5 games against that tier",
+    "Best price: -120 at Caesars (DraftKings -126; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 20,
+   "p_model": 67.4,
+   "p_win_raw": 69.8,
+   "p_honest": 51.2,
+   "p_win": 56.1,
+   "ev": 0.6
+  },
+  {
+   "date": "2026-11-24",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
+   "type": "Prop",
+   "player": "DeMar DeRozan",
+   "team": "DEN",
+   "stat": "PTS",
+   "side": "Under",
+   "line": 10.5,
+   "price": -122,
+   "model": 8.4,
+   "edge": -2.1,
+   "edge_pct": 20.0,
+   "label": "DeMar DeRozan Under 10.5 PTS",
+   "best": null,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     8,
+     14
+    ]
+   },
+   "chart": {
+    "vals": [
+     3.0,
+     9.0,
+     11.0,
+     7.0,
+     8.0,
+     9.0,
+     2.0,
+     18.0,
+     15.0,
+     4.0
+    ],
+    "line": 10.5,
+    "side": "Under",
+    "label": "PTS",
+    "opps": [
+     "PHX",
+     "POR",
+     "IND",
+     "HOU",
+     "MEM",
+     "NOP",
+     "PHX",
+     "BOS",
+     "HOU",
+     "CHI"
+    ]
+   },
+   "score": 71.4,
+   "reasons": [
+    "Model projects 8.4 PTS vs a line of 10.5 (-2.1, 20% edge)",
+    "Went under the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 9.6 over the last 5 and 9.9 over the last 14",
+    "Minutes steady: 21 per game over the last 5 (22 over the last 14)",
+    "Matchup vs DAL: -2% to his PTS projection from their defense and pace (helps the under)",
+    "DAL ranks among the middle-10 defenses for PTS; he went under 10.5 in 3 of 5 games against that tier",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 20,
+   "p_model": 66.0,
+   "p_win_raw": 62.4,
+   "p_honest": 50.5,
+   "p_win": 53.8,
+   "ev": -2.1
+  },
+  {
+   "date": "2026-11-24",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
+   "type": "Prop",
+   "player": "Christian Braun",
+   "team": "DEN",
+   "stat": "REB",
+   "side": "Over",
+   "line": 4.5,
+   "price": -114,
+   "model": 5.4,
+   "edge": 0.9,
+   "edge_pct": 20.0,
+   "label": "Christian Braun Over 4.5 REB",
+   "best": [
+    -110,
+    "ballybet"
    ],
    "hits": {
     "l5": [
@@ -57745,81 +58111,81 @@
      5
     ],
     "l10": [
-     8,
+     6,
      10
     ],
     "l15": [
-     11,
-     14
+     8,
+     15
     ]
    },
    "chart": {
     "vals": [
-     8.0,
-     25.0,
-     13.0,
-     19.0,
-     21.0,
-     14.0,
-     16.0,
-     12.0,
-     8.0,
-     18.0
+     3.0,
+     3.0,
+     4.0,
+     5.0,
+     5.0,
+     7.0,
+     3.0,
+     5.0,
+     5.0,
+     8.0
     ],
-    "line": 11.5,
+    "line": 4.5,
     "side": "Over",
-    "label": "PA",
+    "label": "REB",
     "opps": [
+     "POR",
      "TOR",
-     "BOS",
-     "WAS",
+     "IND",
+     "HOU",
+     "MEM",
+     "NOP",
      "PHX",
-     "GSW",
-     "MIL",
      "BOS",
-     "PHI",
-     "BKN",
-     "WAS"
+     "HOU",
+     "CHI"
     ]
    },
-   "score": 88.8,
+   "score": 70.8,
    "reasons": [
-    "Model projects 14.4 PA vs a line of 11.5 (+2.9, 25% edge)",
-    "Went over the line in 8 of his last 10 games (4/5 in the last 5)",
-    "Averaging 13.6 over the last 5 and 15.6 over the last 14",
-    "Minutes steady: 28 per game over the last 5 (30 over the last 14)",
-    "Matchup vs DET: neutral for PA (defense and pace about league average)",
-    "DET ranks among the middle-10 defenses for PA; he went over 11.5 in 5 of 5 games against that tier",
-    "Best price: -120 at BetMGM (DraftKings -127; the record is graded at DraftKings)",
+    "Model projects 5.4 REB vs a line of 4.5 (+0.9, 20% edge)",
+    "Went over the line in 6 of his last 10 games (4/5 in the last 5)",
+    "Averaging 5.6 over the last 5 and 4.6 over the last 15",
+    "Minutes steady: 33 per game over the last 5 (34 over the last 15)",
+    "Matchup vs DAL: +4.1% to his REB projection from their defense and pace (helps the over)",
+    "DAL ranks among the bottom-10 defenses for REB; he went over 4.5 in 1 of 4 games against that tier",
+    "Best price: -110 at Bally Bet (DraftKings -114; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 75,
-   "p_model": 70.1,
-   "p_win_raw": 73.5,
-   "p_honest": 51.2,
-   "p_win": 57.2,
-   "ev": 2.2
+   "candidates_considered": 20,
+   "p_model": 62.7,
+   "p_win_raw": 58.9,
+   "p_honest": 49.6,
+   "p_win": 52.8,
+   "ev": -0.9
   },
   {
    "date": "2026-11-24",
-   "eid": "401909314",
-   "game": "DET@ORL",
-   "time": "7:00 PM ET",
-   "home": "ORL",
-   "away": "DET",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
    "type": "Prop",
-   "player": "Anthony Black",
-   "team": "ORL",
-   "stat": "3PM",
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "stat": "PR",
    "side": "Over",
-   "line": 1.5,
-   "price": 103,
-   "model": 1.9,
-   "edge": 0.4,
-   "edge_pct": 26.7,
-   "label": "Anthony Black Over 1.5 3PM",
+   "line": 27.5,
+   "price": -121,
+   "model": 32.4,
+   "edge": 4.9,
+   "edge_pct": 17.8,
+   "label": "Jamal Murray Over 27.5 PR",
    "best": [
-    105,
+    -109,
     "ballybet"
    ],
    "hits": {
@@ -57833,160 +58199,76 @@
     ],
     "l15": [
      9,
-     13
+     15
     ]
    },
    "chart": {
     "vals": [
-     1.0,
-     1.0,
-     2.0,
-     2.0,
-     3.0,
-     1.0,
-     3.0,
-     2.0,
-     2.0,
-     2.0
+     40.0,
+     19.0,
+     22.0,
+     40.0,
+     34.0,
+     30.0,
+     32.0,
+     28.0,
+     16.0,
+     50.0
     ],
-    "line": 1.5,
+    "line": 27.5,
     "side": "Over",
-    "label": "3PM",
+    "label": "PR",
     "opps": [
-     "BOS",
-     "PHX",
-     "GSW",
-     "SAC",
-     "UTA",
-     "MIL",
-     "BOS",
-     "PHI",
-     "BKN",
-     "WAS"
-    ]
-   },
-   "score": 84.8,
-   "reasons": [
-    "Model projects 1.9 3PM vs a line of 1.5 (+0.4, 27% edge)",
-    "Went over the line in 7 of his last 10 games (4/5 in the last 5)",
-    "Averaging 2.0 over the last 5 and 2.1 over the last 13",
-    "Minutes steady: 36 per game over the last 5 (33 over the last 13)",
-    "Matchup vs DET: -3.9% to his 3PM projection from their defense and pace (works against the over)",
-    "DET ranks among the top-10 defenses for 3PM; he went over 1.5 in 4 of 4 games against that tier",
-    "Best price: +105 at Bally Bet (DraftKings +103; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 75,
-   "p_model": 56.6,
-   "p_win_raw": 61.7,
-   "p_honest": 50.3,
-   "p_win": 53.6,
-   "ev": 8.8
-  },
-  {
-   "date": "2026-11-24",
-   "eid": "401909315",
-   "game": "BOS@WAS",
-   "time": "8:00 PM ET",
-   "home": "WAS",
-   "away": "BOS",
-   "type": "Prop",
-   "player": "AJ Dybantsa",
-   "team": "WAS",
-   "stat": "REB",
-   "side": "Over",
-   "line": 6.5,
-   "price": -102,
-   "model": 8.1,
-   "edge": 1.6,
-   "edge_pct": 24.6,
-   "label": "AJ Dybantsa Over 6.5 REB",
-   "best": [
-    100,
-    "fanatics"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     8,
-     14
-    ]
-   },
-   "chart": {
-    "vals": [
-     9.0,
-     6.0,
-     8.0,
-     4.0,
-     8.0,
-     7.0,
-     5.0,
-     12.0,
-     10.0,
-     8.0
-    ],
-    "line": 6.5,
-    "side": "Over",
-    "label": "REB",
-    "opps": [
-     "ATL",
-     "OKC",
-     "DET",
+     "POR",
+     "TOR",
      "IND",
-     "DET",
      "HOU",
      "MEM",
-     "TOR",
-     "CHI",
-     "ORL"
+     "NOP",
+     "PHX",
+     "BOS",
+     "HOU",
+     "CHI"
     ]
    },
-   "score": 82.4,
+   "score": 70.6,
    "reasons": [
-    "Model projects 8.1 REB vs a line of 6.5 (+1.6, 25% edge)",
+    "Model projects 32.4 PR vs a line of 27.5 (+4.9, 18% edge)",
     "Went over the line in 7 of his last 10 games (4/5 in the last 5)",
-    "Averaging 8.4 over the last 5 and 6.9 over the last 14",
-    "Minutes steady: 34 per game over the last 5 (34 over the last 14)",
-    "Matchup vs BOS: +2.6% to his REB projection from their defense and pace (helps the over)",
-    "BOS ranks among the bottom-10 defenses for REB; he went over 6.5 in 3 of 5 games against that tier",
-    "Game script / rest: blowout risk (10.5-pt spread) -1.25% (net -1.2%)",
-    "Best price: +100 at Fanatics (DraftKings -102; the record is graded at DraftKings)",
+    "Averaging 31.2 over the last 5 and 31.2 over the last 15",
+    "Minutes steady: 38 per game over the last 5 (37 over the last 15)",
+    "Matchup vs DAL: -1% to his PR projection from their defense and pace (works against the over)",
+    "DAL ranks among the middle-10 defenses for PR; he went over 27.5 in 1 of 3 games against that tier",
+    "Best price: -109 at Bally Bet (DraftKings -121; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 75,
-   "p_model": 69.9,
+   "candidates_considered": 20,
+   "p_model": 68.0,
    "p_win_raw": 64.8,
    "p_honest": 51.1,
    "p_win": 54.6,
-   "ev": 8.1
+   "ev": -0.3
   },
   {
    "date": "2026-11-24",
-   "eid": "401909314",
-   "game": "DET@ORL",
-   "time": "7:00 PM ET",
-   "home": "ORL",
-   "away": "DET",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
    "type": "Prop",
-   "player": "Paul Reed",
-   "team": "DET",
-   "stat": "REB",
-   "side": "Over",
+   "player": "Naji Marshall",
+   "team": "DAL",
+   "stat": "RA",
+   "side": "Under",
    "line": 6.5,
-   "price": -127,
-   "model": 8.4,
-   "edge": 1.9,
-   "edge_pct": 29.2,
-   "label": "Paul Reed Over 6.5 REB",
+   "price": -148,
+   "model": 5.1,
+   "edge": -1.4,
+   "edge_pct": 21.5,
+   "label": "Naji Marshall Under 6.5 RA",
    "best": [
-    -105,
+    -135,
     "betmgm"
    ],
    "hits": {
@@ -57995,160 +58277,83 @@
      5
     ],
     "l10": [
-     7,
+     6,
      10
     ],
     "l15": [
-     10,
-     15
+     6,
+     14
     ]
    },
    "chart": {
     "vals": [
+     8.0,
+     6.0,
+     3.0,
+     7.0,
      5.0,
+     8.0,
+     4.0,
      7.0,
-     10.0,
-     10.0,
-     11.0,
-     9.0,
-     6.0,
-     7.0,
-     7.0,
-     5.0
+     4.0,
+     4.0
     ],
     "line": 6.5,
-    "side": "Over",
-    "label": "REB",
+    "side": "Under",
+    "label": "RA",
     "opps": [
-     "CHA",
-     "PHI",
-     "LAL",
-     "WAS",
-     "WAS",
-     "MIA",
      "SAS",
-     "NOP",
-     "TOR",
-     "ATL"
-    ]
-   },
-   "score": 81.7,
-   "reasons": [
-    "Model projects 8.4 REB vs a line of 6.5 (+1.9, 29% edge)",
-    "Went over the line in 7 of his last 10 games (3/5 in the last 5)",
-    "Averaging 6.8 over the last 5 and 7.5 over the last 15",
-    "Minutes steady: 24 per game over the last 5 (27 over the last 15)",
-    "Matchup vs ORL: -5.3% to his REB projection from their defense and pace (works against the over)",
-    "ORL ranks among the top-10 defenses for REB; he went over 6.5 in 1 of 5 games against that tier",
-    "Teammate injury boost: Cade Cunningham, Duncan Robinson out, +20% to his REB projection (extra minutes and usage)",
-    "Best price: -105 at BetMGM (DraftKings -127; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 75,
-   "p_model": 73.3,
-   "p_win_raw": 70.6,
-   "p_honest": 51.2,
-   "p_win": 56.4,
-   "ev": 0.8
-  },
-  {
-   "date": "2026-11-24",
-   "eid": "401909314",
-   "game": "DET@ORL",
-   "time": "7:00 PM ET",
-   "home": "ORL",
-   "away": "DET",
-   "type": "Prop",
-   "player": "Franz Wagner",
-   "team": "ORL",
-   "stat": "AST",
-   "side": "Over",
-   "line": 6.5,
-   "price": -119,
-   "model": 8.0,
-   "edge": 1.5,
-   "edge_pct": 23.1,
-   "label": "Franz Wagner Over 6.5 AST",
-   "best": null,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     6.0,
-     15.0,
-     11.0,
-     7.0,
-     1.0,
-     12.0,
-     9.0,
-     11.0,
-     7.0,
-     6.0
-    ],
-    "line": 6.5,
-    "side": "Over",
-    "label": "AST",
-    "opps": [
-     "WAS",
-     "PHX",
-     "GSW",
-     "SAC",
      "UTA",
-     "MIL",
-     "BOS",
-     "PHI",
      "BKN",
-     "WAS"
+     "IND",
+     "MIN",
+     "CLE",
+     "BOS",
+     "GSW",
+     "LAC",
+     "UTA"
     ]
    },
-   "score": 81.0,
+   "score": 69.4,
    "reasons": [
-    "Model projects 8 AST vs a line of 6.5 (+1.5, 23% edge)",
-    "Went over the line in 7 of his last 10 games (4/5 in the last 5)",
-    "Averaging 9.0 over the last 5 and 8.5 over the last 15",
-    "Minutes steady: 36 per game over the last 5 (37 over the last 15)",
-    "Matchup vs DET: -1.1% to his AST projection from their defense and pace (works against the over)",
-    "DET ranks among the middle-10 defenses for AST; he went over 6.5 in 4 of 4 games against that tier",
+    "Model projects 5.1 RA vs a line of 6.5 (-1.4, 22% edge)",
+    "Went under the line in 6 of his last 10 games (3/5 in the last 5)",
+    "Averaging 5.4 over the last 5 and 6.6 over the last 14",
+    "Minutes steady: 24 per game over the last 5 (24 over the last 14)",
+    "Matchup vs DEN: -1.3% to his RA projection from their defense and pace (helps the under)",
+    "DEN ranks among the top-10 defenses for RA; he went under 6.5 in 3 of 6 games against that tier",
+    "Best price: -135 at BetMGM (DraftKings -148; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 75,
-   "p_model": 68.7,
-   "p_win_raw": 67.9,
-   "p_honest": 51.2,
-   "p_win": 55.5,
-   "ev": 2.1
+   "candidates_considered": 20,
+   "p_model": 75.8,
+   "p_win_raw": 62.6,
+   "p_honest": 50.6,
+   "p_win": 53.9,
+   "ev": -9.7
   },
   {
    "date": "2026-11-24",
-   "eid": "401909314",
-   "game": "DET@ORL",
-   "time": "7:00 PM ET",
-   "home": "ORL",
-   "away": "DET",
+   "eid": "401909316",
+   "game": "DAL@DEN",
+   "time": "10:00 PM ET",
+   "home": "DEN",
+   "away": "DAL",
    "type": "Prop",
-   "player": "Desmond Bane",
-   "team": "ORL",
-   "stat": "3PM",
-   "side": "Over",
-   "line": 3.5,
-   "price": 122,
-   "model": 4.4,
-   "edge": 0.9,
-   "edge_pct": 25.7,
-   "label": "Desmond Bane Over 3.5 3PM",
-   "best": null,
+   "player": "Aaron Gordon",
+   "team": "DEN",
+   "stat": "REB",
+   "side": "Under",
+   "line": 5.5,
+   "price": -135,
+   "model": 4.8,
+   "edge": -0.7,
+   "edge_pct": 12.7,
+   "label": "Aaron Gordon Under 5.5 REB",
+   "best": [
+    -132,
+    "betparx"
+   ],
    "hits": {
     "l5": [
      3,
@@ -58159,62 +58364,63 @@
      10
     ],
     "l15": [
-     9,
+     10,
      15
     ]
    },
    "chart": {
     "vals": [
-     5.0,
-     4.0,
-     3.0,
-     4.0,
-     7.0,
      6.0,
+     1.0,
+     5.0,
+     5.0,
      3.0,
      5.0,
-     7.0,
-     3.0
+     1.0,
+     8.0,
+     3.0,
+     8.0
     ],
-    "line": 3.5,
-    "side": "Over",
-    "label": "3PM",
+    "line": 5.5,
+    "side": "Under",
+    "label": "REB",
     "opps": [
-     "BOS",
-     "WAS",
+     "POR",
+     "TOR",
+     "IND",
+     "HOU",
+     "MEM",
+     "NOP",
      "PHX",
-     "SAC",
-     "UTA",
-     "MIL",
      "BOS",
-     "PHI",
-     "BKN",
-     "WAS"
+     "HOU",
+     "CHI"
     ]
    },
-   "score": 80.8,
+   "score": 59.6,
    "reasons": [
-    "Model projects 4.4 3PM vs a line of 3.5 (+0.9, 26% edge)",
-    "Went over the line in 7 of his last 10 games (3/5 in the last 5)",
-    "Averaging 4.8 over the last 5 and 4.2 over the last 15",
-    "Minutes steady: 35 per game over the last 5 (35 over the last 15)",
-    "Matchup vs DET: -3.2% to his 3PM projection from their defense and pace (works against the over)",
-    "DET ranks among the top-10 defenses for 3PM; he went over 3.5 in 3 of 6 games against that tier",
+    "Model projects 4.8 REB vs a line of 5.5 (-0.7, 13% edge)",
+    "Went under the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 5.0 over the last 5 and 5.0 over the last 15",
+    "Minutes steady: 30 per game over the last 5 (29 over the last 15)",
+    "Matchup vs DAL: +1.9% to his REB projection from their defense and pace (works against the under)",
+    "DAL ranks among the bottom-10 defenses for REB; he went under 5.5 in 2 of 5 games against that tier",
+    "Best price: -132 at betPARX (DraftKings -135; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 75,
-   "p_model": 64.1,
-   "p_win_raw": 62.4,
-   "p_honest": 50.5,
-   "p_win": 53.8,
-   "ev": 19.4
+   "candidates_considered": 20,
+   "p_model": 65.1,
+   "p_win_raw": 65.7,
+   "p_honest": 51.2,
+   "p_win": 54.8,
+   "ev": -4.6
   }
  ],
  "board": {
   "date": "2026-11-24",
-  "qualified": 75,
-  "positive": 39,
-  "top_win": 58.3,
+  "qualified": 20,
+  "positive": 8,
+  "top_win": 58.2,
   "trust": {
    "s": 0.3079700686331553,
    "n": 36,
@@ -59650,8 +59856,9 @@
      "line": 0.0,
      "price": 0.0,
      "beat": false,
-     "final": false
-    }
+     "final": true
+    },
+    "locked_at": "2026-11-24 08:30 PM ET"
    },
    {
     "type": "Prop",
@@ -67662,13 +67869,13 @@
    "avg_price": 0.12
   },
   "ladder": {
-   "bets": 18,
+   "bets": 19,
    "beat": 3,
    "avg_line": 0.0,
    "avg_price": -0.09
   },
   "all": {
-   "bets": 36,
+   "bets": 37,
    "beat": 5,
    "avg_line": 0.0,
    "avg_price": 0.01
@@ -68290,7 +68497,7 @@
     "actual": null,
     "units": null,
     "why": "Model projects 6.5 RA vs a line of 8.5 (-2, 24% edge) | Win chance 56.6% vs 53% implied by -114: +6.2% expected value (raw model said 71.3%; past picks went 21-15, so it trusts 31% of the model's edge) | Went under the line in 9 of his last 10 games (4/5 in the last 5) | Averaging 7.8 over the last 5 and 7.6 over the last 15 | Minutes steady: 24 per game over the last 5 (23 over the last 15) | Matchup vs DEN: -3.7% to his RA projection from their defense and pace (helps the under) | DEN ranks among the top-10 defenses for RA; he went under 8.5 in 5 of 6 games against that tier | Best price: -105 at BetMGM (DraftKings -114; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-24 07:00 PM ET",
+    "picked_at": "2026-11-24 08:30 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -68344,7 +68551,7 @@
      "line": 0.0,
      "price": 0.0,
      "beat": false,
-     "final": false
+     "final": true
     },
     "open": [
      29.5,
