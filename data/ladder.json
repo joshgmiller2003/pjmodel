@@ -15,9 +15,9 @@
    "side": "Under",
    "line": 5.5,
    "price": -102,
-   "model": 4.4,
-   "edge": -1.1,
-   "edge_pct": 20.0,
+   "model": 4.3,
+   "edge": -1.2,
+   "edge_pct": 21.8,
    "hits": {
     "l5": [
      3,
@@ -62,20 +62,20 @@
     ]
    },
    "reasons": [
-    "Model projects 4.4 PTS vs a line of 5.5 (-1.1, 20% edge)",
+    "Model projects 4.3 PTS vs a line of 5.5 (-1.2, 22% edge)",
     "Went under the line in 8 of his last 10 games (3/5 in the last 5)",
     "Averaging 5.0 over the last 5 and 3.6 over the last 14",
     "Minutes steady: 24 per game over the last 5 (26 over the last 14)",
-    "Matchup vs SAC: +4.2% to his PTS projection from their defense and pace (works against the under)",
+    "Matchup vs SAC: +4.1% to his PTS projection from their defense and pace (works against the under)",
     "SAC ranks among the bottom-10 defenses for PTS; he went under 5.5 in 3 of 3 games against that tier",
-    "Teammate injury boost: Brandon Williams, Stephen Curry out, +10.1% to his PTS projection (extra minutes and usage)",
+    "Teammate injury boost: Stephen Curry out, +8.7% to his PTS projection (extra minutes and usage)",
     "Best price: +105 at BetMGM (DraftKings -102; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "p_win": 56.0,
-   "p_model": 67.3,
-   "ev": 10.9,
-   "score": 78.0,
+   "p_win": 56.2,
+   "p_model": 68.8,
+   "ev": 11.3,
+   "score": 81.3,
    "best": [
     105,
     "betmgm"
@@ -88,14 +88,14 @@
    "day": 1,
    "stake": 10,
    "to_win": 9.8,
-   "picked_at": "2026-11-25 07:00 PM ET",
+   "picked_at": "2026-11-25 08:30 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.8% to win, +2.3% expected value",
    "open_line": 5.5,
    "open_price": 100,
    "first_picked_at": "2026-11-25 02:00 PM ET",
    "close_line": 5.5,
    "close_price": -102,
-   "close_at": "2026-11-25 07:00 PM ET",
+   "close_at": "2026-11-25 08:30 PM ET",
    "clv": {
     "line": 0.0,
     "price": 0.5,
