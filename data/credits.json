@@ -1,6 +1,6 @@
 {
- "date": "2026-11-25",
- "used_today": 269,
+ "date": "2026-11-26",
+ "used_today": 4,
  "calls": [
   {
    "time": "10:00 AM",
@@ -14,257 +14,17 @@
   },
   {
    "time": "10:00 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props MIA@PHI",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props CHI@CHA",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props CLE@NYK",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props MIN@OKC",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props LAC@MEM",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props BKN@MIL",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props PHX@HOU",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props SAC@GSW",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
-   "call": "props SAS@POR",
-   "cost": 8
-  },
-  {
-   "time": "10:00 AM",
    "call": "championship odds",
    "cost": 1
-  },
-  {
-   "time": "10:00 AM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "10:00 AM",
-   "call": "alt lines SAC@GSW",
-   "cost": 4
-  },
-  {
-   "time": "10:00 AM",
-   "call": "alt lines CLE@NYK",
-   "cost": 4
-  },
-  {
-   "time": "10:00 AM",
-   "call": "alt lines MIN@OKC",
-   "cost": 4
-  },
-  {
-   "time": "02:00 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "02:00 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "02:00 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props MIA@PHI",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props CHI@CHA",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props CLE@NYK",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props MIN@OKC",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props LAC@MEM",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props BKN@MIL",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props PHX@HOU",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props SAC@GSW",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "props SAS@POR",
-   "cost": 8
-  },
-  {
-   "time": "02:00 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "02:00 PM",
-   "call": "alt lines SAC@GSW",
-   "cost": 4
-  },
-  {
-   "time": "02:00 PM",
-   "call": "alt lines CLE@NYK",
-   "cost": 4
-  },
-  {
-   "time": "02:00 PM",
-   "call": "alt lines CHI@CHA",
-   "cost": 4
-  },
-  {
-   "time": "05:00 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "05:00 PM",
-   "call": "game lines",
-   "cost": 3
-  },
-  {
-   "time": "05:00 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props MIA@PHI",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props CHI@CHA",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props CLE@NYK",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props MIN@OKC",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props LAC@MEM",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props BKN@MIL",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props PHX@HOU",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props SAC@GSW",
-   "cost": 8
-  },
-  {
-   "time": "05:00 PM",
-   "call": "props SAS@POR",
-   "cost": 8
-  },
-  {
-   "time": "10:03 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "10:03 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "10:07 PM",
-   "call": "balance check",
-   "cost": 0
-  },
-  {
-   "time": "10:07 PM",
-   "call": "game lines (off daily cap)",
-   "cost": 3
-  },
-  {
-   "time": "10:07 PM",
-   "call": "event list",
-   "cost": 0
-  },
-  {
-   "time": "10:07 PM",
-   "call": "props SAC@GSW (off daily cap)",
-   "cost": 8
-  },
-  {
-   "time": "10:07 PM",
-   "call": "props SAS@POR (off daily cap)",
-   "cost": 8
   }
  ],
- "remaining": 5892,
+ "remaining": 5692,
  "history": [
+  {
+   "date": "2026-11-26",
+   "used": 4,
+   "limit": 250
+  },
   {
    "date": "2026-11-25",
    "used": 269,
@@ -378,8 +138,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 9,
- "month_used": 2730,
- "month_limit": 5500,
- "off_cap": 19
+ "days_to_reset": 8,
+ "month_used": 2734,
+ "month_limit": 5500
 }

@@ -58,7 +58,12 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 10:07 PM ET"
+   "updated_at": "2026-11-25 10:07 PM ET",
+   "result": "P",
+   "actual": "Did not play (void)",
+   "units": 0.0,
+   "hit": 0,
+   "graded_at": "2026-11-26 10:00 AM ET"
   },
   {
    "id": "2026-11-25|Tyrese Proctor|3PM",
@@ -689,7 +694,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 10:07 PM ET"
+   "updated_at": "2026-11-25 10:07 PM ET",
+   "value": 15.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "15 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-26 10:00 AM ET"
   },
   {
    "id": "2026-11-24|Zaccharie Risacher|PTS",
