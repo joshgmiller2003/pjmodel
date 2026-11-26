@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "used_today": 250,
+ "used_today": 269,
  "calls": [
   {
    "time": "10:00 AM",
@@ -236,13 +236,38 @@
    "time": "10:03 PM",
    "call": "event list",
    "cost": 0
+  },
+  {
+   "time": "10:07 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "10:07 PM",
+   "call": "game lines (off daily cap)",
+   "cost": 3
+  },
+  {
+   "time": "10:07 PM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "10:07 PM",
+   "call": "props SAC@GSW (off daily cap)",
+   "cost": 8
+  },
+  {
+   "time": "10:07 PM",
+   "call": "props SAS@POR (off daily cap)",
+   "cost": 8
   }
  ],
- "remaining": 5911,
+ "remaining": 5892,
  "history": [
   {
    "date": "2026-11-25",
-   "used": 250,
+   "used": 269,
    "limit": 250
   },
   {
@@ -354,7 +379,7 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 9,
- "month_used": 2711,
+ "month_used": 2730,
  "month_limit": 5500,
- "off_cap": 0
+ "off_cap": 19
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T03:03:42Z",
+ "generated_at": "2026-11-26T03:07:08Z",
  "season": "2026-27",
  "games": [
   {
@@ -144,7 +144,7 @@
    "total_edge": 1.6,
    "note": "Model OKC +0.3, total 224.1; leans MIN vs the market spread.",
    "score": {
-    "away": 110,
+    "away": 111,
     "home": 106
    }
   },
@@ -179,8 +179,8 @@
    "total_edge": 1.5,
    "note": "Model and market are close; no strong spread lean.",
    "score": {
-    "away": 81,
-    "home": 100
+    "away": 82,
+    "home": 104
    }
   },
   {
@@ -214,8 +214,8 @@
    "total_edge": -4.7,
    "note": "Model and market are close; no strong spread lean.",
    "score": {
-    "away": 85,
-    "home": 78
+    "away": 88,
+    "home": 80
    }
   },
   {
@@ -249,8 +249,8 @@
    "total_edge": 5.7,
    "note": "Model HOU -5.2, total 228.2; leans PHX vs the market spread.",
    "score": {
-    "away": 56,
-    "home": 66
+    "away": 58,
+    "home": 69
    }
   },
   {
@@ -266,10 +266,14 @@
     "ml_away": 0.3
    },
    "dk": {
-    "spread": "-8.5",
-    "total": 216.5,
+    "ml_home": "-324",
     "ml_away": "+261",
-    "ml_home": "-324"
+    "spread": "-8.5",
+    "spread_px_home": -115,
+    "spread_px_away": -105,
+    "total": 216.5,
+    "over_px": -107,
+    "under_px": -113
    },
    "status": "Upcoming",
    "rest": {
@@ -293,10 +297,14 @@
     "ml_away": 0.49
    },
    "dk": {
-    "spread": "+3.5",
-    "total": 224.5,
+    "ml_home": "+136",
     "ml_away": "-162",
-    "ml_home": "+136"
+    "spread": "+3.5",
+    "spread_px_home": -110,
+    "spread_px_away": -110,
+    "total": 224.5,
+    "over_px": -110,
+    "under_px": -110
    },
    "status": "Upcoming",
    "rest": {
@@ -37821,15 +37829,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.588,
-   "dk": 7.5,
-   "over": 108,
-   "under": -142,
-   "best_under": [
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.722,
+   "dk": 6.5,
+   "over": -142,
+   "under": 107,
+   "best_over": [
     -120,
-    "fanatics"
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -37841,19 +37851,19 @@
      10
     ],
     "l15": [
-     6,
+     7,
      15
     ]
    },
-   "conf": 44.0,
-   "win_raw": 51.3,
-   "win_chance": 47.7,
-   "edge": 0.8,
+   "conf": 70.7,
+   "win_raw": 62.0,
+   "win_chance": 50.6,
+   "edge": 1.8,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     1,
+     2,
      10
     ],
     "mid": [
@@ -37879,23 +37889,29 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.542,
-   "dk": 4.5,
-   "over": -160,
-   "under": 121,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.366,
+   "dk": 5.5,
+   "over": 116,
+   "under": -153,
    "best_over": [
+    126,
+    "fanduel"
+   ],
+   "best_under": [
     -140,
-    "williamhill_us"
+    "betmgm"
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     5,
+     8,
      10
     ],
     "l15": [
@@ -37903,11 +37919,11 @@
      15
     ]
    },
-   "conf": 43.5,
-   "win_raw": 56.5,
-   "win_chance": 49.0,
-   "edge": 0.4,
-   "side": "Over",
+   "conf": 58.1,
+   "win_raw": 62.0,
+   "win_chance": 50.6,
+   "edge": -0.6,
+   "side": "Under",
    "tiers": {
     "tonight": "soft",
     "tough": [
@@ -37915,7 +37931,7 @@
      7
     ],
     "mid": [
-     4,
+     3,
      6
     ],
     "soft": [
@@ -37941,10 +37957,10 @@
    "sched_notes": [],
    "p_over": 0.673,
    "dk": 4.5,
-   "over": -143,
-   "under": 109,
+   "over": -136,
+   "under": 103,
    "best_under": [
-    120,
+    115,
     "hardrockbet"
    ],
    "hits": {
@@ -37995,15 +38011,21 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.137,
    "dk": 4.5,
    "over": 126,
    "under": -167,
-   "best_under": [
-    -139,
+   "best_over": [
+    128,
     "betrivers"
+   ],
+   "best_under": [
+    -155,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -38053,14 +38075,16 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.506,
    "dk": 3.5,
-   "over": -157,
-   "under": 119,
+   "over": -166,
+   "under": 125,
    "best_over": [
-    -136,
+    -132,
     "betrivers"
    ],
    "hits": {
@@ -38099,6 +38123,66 @@
    }
   },
   {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "AST",
+   "model": 4.3,
+   "base": 4.6,
+   "matchup": 5.1,
+   "injury": 18.4,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.623,
+   "dk": 3.5,
+   "over": -124,
+   "under": -106,
+   "best_under": [
+    104,
+    "betrivers"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     5,
+     15
+    ]
+   },
+   "conf": 62.2,
+   "win_raw": 50.7,
+   "win_chance": 48.7,
+   "edge": 0.8,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     4,
+     9
+    ],
+    "mid": [
+     1,
+     4
+    ],
+    "soft": [
+     0,
+     2
+    ]
+   }
+  },
+  {
    "player": "De'Anthony Melton",
    "team": "GSW",
    "opp": "SAC",
@@ -38113,45 +38197,101 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.506,
-   "dk": 3.5,
-   "over": 128,
-   "under": -170,
+   "p_over": 0.715,
+   "dk": 2.5,
+   "over": -167,
+   "under": 126,
    "best_under": [
-    -160,
+    130,
     "hardrockbet"
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     3,
+     5,
      10
     ],
     "l15": [
-     4,
+     9,
      15
     ]
    },
-   "conf": 27.7,
-   "win_raw": 41.0,
-   "win_chance": 50.3,
-   "edge": 0.2,
+   "conf": 75.2,
+   "win_raw": 66.9,
+   "win_chance": 51.4,
+   "edge": 1.2,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     3,
+     4,
      8
     ],
     "mid": [
-     1,
+     2,
      5
     ],
     "soft": [
-     0,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "AST",
+   "model": 2.3,
+   "base": 2.2,
+   "matchup": -0.7,
+   "injury": 3.3,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.669,
+   "dk": 1.5,
+   "over": -192,
+   "under": 144,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     6,
+     14
+    ]
+   },
+   "conf": 70.1,
+   "win_raw": 57.3,
+   "win_chance": 49.2,
+   "edge": 0.8,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     3,
+     6
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     1,
      4
     ]
    }
@@ -38169,18 +38309,20 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.815,
    "dk": 1.5,
-   "over": -191,
-   "under": 144,
+   "over": -177,
+   "under": 134,
    "best_over": [
-    -180,
-    "hardrockbet"
+    -165,
+    "betparx"
    ],
    "best_under": [
-    146,
+    158,
     "fanduel"
    ],
    "hits": {
@@ -38231,19 +38373,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.594,
    "dk": 1.5,
-   "over": -114,
-   "under": -115,
+   "over": -121,
+   "under": -108,
    "best_over": [
-    -112,
+    -104,
     "betrivers"
-   ],
-   "best_under": [
-    -114,
-    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -38293,18 +38433,20 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.463,
    "dk": 24.5,
-   "over": -104,
-   "under": -122,
+   "over": -110,
+   "under": -116,
    "best_over": [
     -102,
     "fanduel"
    ],
    "best_under": [
-    -120,
+    -115,
     "betmgm"
    ],
    "hits": {
@@ -38355,15 +38497,21 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.37,
-   "dk": 21.5,
-   "over": -102,
-   "under": -125,
-   "best_under": [
-    -115,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.409,
+   "dk": 20.5,
+   "over": -126,
+   "under": -101,
+   "best_over": [
+    -110,
     "betmgm"
+   ],
+   "best_under": [
+    100,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -38379,10 +38527,10 @@
      15
     ]
    },
-   "conf": 60.7,
-   "win_raw": 56.5,
-   "win_chance": 49.0,
-   "edge": -3.2,
+   "conf": 53.2,
+   "win_raw": 54.1,
+   "win_chance": 48.3,
+   "edge": -2.2,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -38406,54 +38554,56 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PTS",
-   "model": 17.6,
-   "base": 18.0,
+   "model": 17.5,
+   "base": 17.9,
    "matchup": 2.6,
    "injury": 11.1,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.432,
-   "dk": 18.5,
-   "over": -101,
-   "under": -126,
-   "best_under": [
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.575,
+   "dk": 16.5,
+   "over": -126,
+   "under": -101,
+   "best_over": [
     -125,
-    "betmgm"
+    "espnbet"
    ],
    "hits": {
     "l5": [
-     5,
+     1,
      5
     ],
     "l10": [
-     7,
+     4,
      10
     ],
     "l15": [
-     11,
+     8,
      15
     ]
    },
-   "conf": 51.8,
-   "win_raw": 63.4,
-   "win_chance": 51.0,
-   "edge": -0.9,
-   "side": "Under",
+   "conf": 32.0,
+   "win_raw": 55.8,
+   "win_chance": 48.8,
+   "edge": 1.0,
+   "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     5,
+     2,
      5
     ],
     "mid": [
-     3,
+     2,
      4
     ],
     "soft": [
-     3,
+     4,
      6
     ]
    }
@@ -38464,19 +38614,25 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PTS",
-   "model": 18.7,
-   "base": 18.4,
+   "model": 18.6,
+   "base": 18.3,
    "matchup": 3.1,
    "injury": 5.4,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.653,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.649,
    "dk": 15.5,
-   "over": -102,
-   "under": -125,
+   "over": -125,
+   "under": -102,
+   "best_over": [
+    -112,
+    "betrivers"
+   ],
    "hits": {
     "l5": [
      3,
@@ -38491,10 +38647,10 @@
      15
     ]
    },
-   "conf": 61.9,
-   "win_raw": 55.2,
-   "win_chance": 48.6,
-   "edge": 3.2,
+   "conf": 60.8,
+   "win_raw": 54.9,
+   "win_chance": 48.5,
+   "edge": 3.1,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -38518,22 +38674,24 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PTS",
-   "model": 16.1,
-   "base": 15.7,
+   "model": 16.0,
+   "base": 15.6,
    "matchup": 3.3,
    "injury": 12.0,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.595,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.589,
    "dk": 14.5,
-   "over": -102,
-   "under": -125,
+   "over": -110,
+   "under": -116,
    "best_under": [
-    -120,
-    "hardrockbet"
+    -112,
+    "williamhill_us"
    ],
    "hits": {
     "l5": [
@@ -38549,10 +38707,10 @@
      15
     ]
    },
-   "conf": 52.9,
-   "win_raw": 59.7,
-   "win_chance": 49.9,
-   "edge": 1.6,
+   "conf": 51.6,
+   "win_raw": 59.3,
+   "win_chance": 49.8,
+   "edge": 1.5,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -38576,22 +38734,28 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PTS",
-   "model": 14.3,
-   "base": 14.1,
+   "model": 14.2,
+   "base": 14.0,
    "matchup": 3.8,
    "injury": 11.1,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.575,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.565,
    "dk": 13.5,
-   "over": -116,
-   "under": -110,
+   "over": -110,
+   "under": -116,
    "best_over": [
     102,
     "fanduel"
+   ],
+   "best_under": [
+    -111,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -38607,10 +38771,10 @@
      10
     ]
    },
-   "conf": 28.5,
-   "win_raw": 46.5,
-   "win_chance": 51.9,
-   "edge": 0.8,
+   "conf": 27.2,
+   "win_raw": 45.9,
+   "win_chance": 51.7,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -38643,32 +38807,28 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.262,
-   "dk": 11.5,
-   "over": -121,
-   "under": -105,
-   "best_under": [
-    -104,
-    "fanduel"
-   ],
+   "p_over": 0.308,
+   "dk": 10.5,
+   "over": -130,
+   "under": 102,
    "hits": {
     "l5": [
      5,
      5
     ],
     "l10": [
-     9,
+     8,
      10
     ],
     "l15": [
-     11,
+     10,
      15
     ]
    },
-   "conf": 93.6,
-   "win_raw": 73.6,
+   "conf": 89.9,
+   "win_raw": 68.2,
    "win_chance": 51.4,
-   "edge": -4.7,
+   "edge": -3.7,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -38681,8 +38841,68 @@
      5
     ],
     "soft": [
-     4,
+     3,
      7
+    ]
+   }
+  },
+  {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "PTS",
+   "model": 10.1,
+   "base": 10.8,
+   "matchup": -1.6,
+   "injury": 20.0,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.475,
+   "dk": 10.5,
+   "over": -116,
+   "under": -110,
+   "best_under": [
+    -105,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "conf": 38.0,
+   "win_raw": 58.2,
+   "win_chance": 49.4,
+   "edge": -0.4,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     2,
+     5
+    ],
+    "mid": [
+     5,
+     7
+    ],
+    "soft": [
+     3,
+     3
     ]
    }
   },
@@ -38699,15 +38919,17 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
    "p_over": 0.714,
    "dk": 10.5,
-   "over": -112,
-   "under": -114,
+   "over": -103,
+   "under": -124,
    "best_under": [
-    -105,
-    "espnbet"
+    -117,
+    "williamhill_us"
    ],
    "hits": {
     "l5": [
@@ -38745,6 +38967,248 @@
    }
   },
   {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PTS",
+   "model": 7.6,
+   "base": 7.2,
+   "matchup": 4.4,
+   "injury": 5.6,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.509,
+   "dk": 7.5,
+   "over": -132,
+   "under": 104,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     3,
+     10
+    ],
+    "l15": [
+     5,
+     14
+    ]
+   },
+   "conf": 23.8,
+   "win_raw": 44.8,
+   "win_chance": 51.4,
+   "edge": 0.1,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     4,
+     10
+    ],
+    "mid": [
+     0,
+     1
+    ],
+    "soft": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "player": "Will Richard",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PTS",
+   "model": 9.8,
+   "base": 9.9,
+   "matchup": 2.5,
+   "injury": 10.2,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.749,
+   "dk": 6.5,
+   "over": -110,
+   "under": -116,
+   "best_over": [
+    100,
+    "hardrockbet"
+   ],
+   "best_under": [
+    -111,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     8,
+     14
+    ]
+   },
+   "conf": 80.4,
+   "win_raw": 67.8,
+   "win_chance": 51.4,
+   "edge": 3.3,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     1,
+     4
+    ],
+    "mid": [
+     3,
+     4
+    ],
+    "soft": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "PTS",
+   "model": 7.5,
+   "base": 7.8,
+   "matchup": 2.5,
+   "injury": 13.6,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.568,
+   "dk": 6.5,
+   "over": 103,
+   "under": -131,
+   "best_over": [
+    110,
+    "hardrockbet"
+   ],
+   "best_under": [
+    -125,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     9,
+     14
+    ]
+   },
+   "conf": 61.3,
+   "win_raw": 59.8,
+   "win_chance": 49.9,
+   "edge": 1.0,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     7,
+     11
+    ],
+    "mid": [
+     1,
+     1
+    ],
+    "soft": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "player": "Emanuel Sharp",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "PTS",
+   "model": 4.8,
+   "base": 4.8,
+   "matchup": -0.3,
+   "injury": 20.0,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.407,
+   "dk": 5.5,
+   "over": -118,
+   "under": -108,
+   "best_under": [
+    108,
+    "betrivers"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "conf": 60.5,
+   "win_raw": 64.9,
+   "win_chance": 51.4,
+   "edge": -0.7,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     4,
+     6
+    ],
+    "mid": [
+     6,
+     7
+    ],
+    "soft": [
+     2,
+     4
+    ]
+   }
+  },
+  {
    "player": "Draymond Green",
    "team": "GSW",
    "opp": "SAC",
@@ -38761,15 +39225,15 @@
    "sched_notes": [],
    "p_over": 0.287,
    "dk": 5.5,
-   "over": -125,
-   "under": -102,
+   "over": -110,
+   "under": -116,
    "best_over": [
-    -121,
-    "williamhill_us"
+    110,
+    "espnbet"
    ],
    "best_under": [
-    105,
-    "betmgm"
+    -109,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -38819,15 +39283,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.528,
    "dk": 31.5,
-   "over": -118,
-   "under": -111,
+   "over": -120,
+   "under": -110,
    "best_over": [
     -110,
-    "betrivers"
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -38870,26 +39336,28 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PA",
-   "model": 22.1,
-   "base": 23.3,
+   "model": 22.0,
+   "base": 23.2,
    "matchup": 3.1,
    "injury": 7.0,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.373,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.37,
    "dk": 25.5,
-   "over": -107,
-   "under": -123,
+   "over": -106,
+   "under": -124,
    "best_over": [
-    -104,
-    "betrivers"
+    -105,
+    "espnbet"
    ],
    "best_under": [
-    -115,
-    "betmgm"
+    -112,
+    "betparx"
    ],
    "hits": {
     "l5": [
@@ -38905,10 +39373,10 @@
      15
     ]
    },
-   "conf": 61.6,
-   "win_raw": 59.0,
+   "conf": 62.3,
+   "win_raw": 59.1,
    "win_chance": 49.7,
-   "edge": -3.4,
+   "edge": -3.5,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -38932,21 +39400,27 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PA",
-   "model": 20.3,
-   "base": 20.9,
+   "model": 20.2,
+   "base": 20.8,
    "matchup": 3.2,
    "injury": 10.7,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.358,
-   "dk": 22.5,
-   "over": -109,
-   "under": -121,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.415,
+   "dk": 21.5,
+   "over": -106,
+   "under": -124,
+   "best_over": [
+    -105,
+    "espnbet"
+   ],
    "best_under": [
-    -111,
+    -105,
     "betmgm"
    ],
    "hits": {
@@ -38955,18 +39429,18 @@
      5
     ],
     "l10": [
-     8,
+     7,
      10
     ],
     "l15": [
-     10,
+     9,
      15
     ]
    },
-   "conf": 62.5,
-   "win_raw": 65.2,
-   "win_chance": 51.4,
-   "edge": -2.2,
+   "conf": 52.1,
+   "win_raw": 59.1,
+   "win_chance": 49.7,
+   "edge": -1.3,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -38975,7 +39449,7 @@
      6
     ],
     "mid": [
-     3,
+     2,
      5
     ],
     "soft": [
@@ -38990,26 +39464,28 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PA",
-   "model": 21.0,
-   "base": 20.6,
+   "model": 20.9,
+   "base": 20.5,
    "matchup": 3.4,
    "injury": 11.2,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.578,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.573,
    "dk": 19.5,
-   "over": -113,
-   "under": -116,
+   "over": -121,
+   "under": -108,
    "best_over": [
-    -110,
-    "espnbet"
+    -117,
+    "betrivers"
    ],
    "best_under": [
-    -112,
-    "fanduel"
+    -105,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -39025,10 +39501,10 @@
      15
     ]
    },
-   "conf": 35.8,
-   "win_raw": 50.7,
-   "win_chance": 48.8,
-   "edge": 1.5,
+   "conf": 34.9,
+   "win_raw": 50.4,
+   "win_chance": 49.3,
+   "edge": 1.4,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -39052,22 +39528,24 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PA",
-   "model": 21.3,
-   "base": 21.1,
+   "model": 21.2,
+   "base": 21.0,
    "matchup": 3.1,
    "injury": 4.9,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.677,
-   "dk": 17.5,
-   "over": -108,
-   "under": -122,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.628,
+   "dk": 18.5,
+   "over": -107,
+   "under": -123,
    "best_over": [
-    -103,
-    "betrivers"
+    -105,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -39083,10 +39561,10 @@
      15
     ]
    },
-   "conf": 70.3,
-   "win_raw": 59.3,
-   "win_chance": 49.8,
-   "edge": 3.8,
+   "conf": 57.4,
+   "win_raw": 56.3,
+   "win_chance": 48.9,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -39117,14 +39595,16 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.568,
    "dk": 15.5,
-   "over": -106,
-   "under": -124,
+   "over": -105,
+   "under": -125,
    "best_over": [
-    100,
+    -103,
     "betrivers"
    ],
    "hits": {
@@ -39163,6 +39643,70 @@
    }
   },
   {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "PA",
+   "model": 14.4,
+   "base": 15.4,
+   "matchup": 0.3,
+   "injury": 19.5,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.495,
+   "dk": 14.5,
+   "over": -113,
+   "under": -117,
+   "best_over": [
+    -109,
+    "betrivers"
+   ],
+   "best_under": [
+    -108,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "conf": 32.4,
+   "win_raw": 57.0,
+   "win_chance": 49.1,
+   "edge": -0.1,
+   "side": "Under",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     6,
+     9
+    ],
+    "mid": [
+     2,
+     3
+    ],
+    "soft": [
+     2,
+     3
+    ]
+   }
+  },
+  {
    "player": "De'Anthony Melton",
    "team": "GSW",
    "opp": "SAC",
@@ -39177,17 +39721,13 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.269,
-   "dk": 15.5,
-   "over": -102,
-   "under": -129,
-   "best_over": [
-    100,
-    "espnbet"
-   ],
+   "p_over": 0.312,
+   "dk": 14.5,
+   "over": -104,
+   "under": -127,
    "best_under": [
-    -125,
-    "hardrockbet"
+    -102,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -39195,18 +39735,18 @@
      5
     ],
     "l10": [
-     9,
+     8,
      10
     ],
     "l15": [
-     11,
+     10,
      15
     ]
    },
-   "conf": 93.6,
-   "win_raw": 73.2,
+   "conf": 89.9,
+   "win_raw": 67.9,
    "win_chance": 51.4,
-   "edge": -4.9,
+   "edge": -3.9,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -39215,7 +39755,7 @@
      6
     ],
     "mid": [
-     4,
+     3,
      6
     ],
     "soft": [
@@ -39241,8 +39781,16 @@
    "sched_notes": [],
    "p_over": 0.448,
    "dk": 10.5,
-   "over": -132,
-   "under": 100,
+   "over": -117,
+   "under": -112,
+   "best_over": [
+    -108,
+    "fanduel"
+   ],
+   "best_under": [
+    -110,
+    "betmgm"
+   ],
    "hits": {
     "l5": [
      3,
@@ -39279,31 +39827,93 @@
    }
   },
   {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PA",
+   "model": 9.7,
+   "base": 9.4,
+   "matchup": 3.2,
+   "injury": 5.0,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.431,
+   "dk": 10.5,
+   "over": -106,
+   "under": -124,
+   "best_under": [
+    -105,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     9,
+     14
+    ]
+   },
+   "conf": 47.3,
+   "win_raw": 59.9,
+   "win_chance": 49.9,
+   "edge": -0.8,
+   "side": "Under",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     5,
+     7
+    ],
+    "mid": [
+     3,
+     5
+    ],
+    "soft": [
+     1,
+     2
+    ]
+   }
+  },
+  {
    "player": "Yaxel Lendeborg",
    "team": "GSW",
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PR",
-   "model": 25.9,
-   "base": 27.1,
+   "model": 25.8,
+   "base": 27.0,
    "matchup": 2.1,
    "injury": 6.3,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.406,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.402,
    "dk": 28.5,
-   "over": -114,
-   "under": -115,
+   "over": -112,
+   "under": -117,
    "best_over": [
-    -110,
+    -108,
     "fanduel"
    ],
    "best_under": [
-    -111,
-    "betmgm"
+    -105,
+    "betparx"
    ],
    "hits": {
     "l5": [
@@ -39319,10 +39929,10 @@
      15
     ]
    },
-   "conf": 50.3,
-   "win_raw": 54.3,
-   "win_chance": 48.3,
-   "edge": -2.6,
+   "conf": 51.0,
+   "win_raw": 54.5,
+   "win_chance": 48.4,
+   "edge": -2.7,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -39353,14 +39963,16 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.56,
    "dk": 27.5,
-   "over": -118,
-   "under": -112,
+   "over": -123,
+   "under": -107,
    "best_over": [
-    -114,
+    -115,
     "fanduel"
    ],
    "hits": {
@@ -39404,25 +40016,27 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PR",
-   "model": 26.7,
-   "base": 27.7,
+   "model": 26.6,
+   "base": 27.6,
    "matchup": -1.1,
    "injury": 6.7,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.458,
    "dk": 27.5,
-   "over": -114,
-   "under": -116,
+   "over": -117,
+   "under": -113,
    "best_over": [
     -108,
-    "betrivers"
+    "fanduel"
    ],
    "best_under": [
-    -115,
+    -110,
     "betmgm"
    ],
    "hits": {
@@ -39439,10 +40053,10 @@
      15
     ]
    },
-   "conf": 43.7,
+   "conf": 44.4,
    "win_raw": 56.5,
    "win_chance": 49.0,
-   "edge": -0.8,
+   "edge": -0.9,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -39466,21 +40080,23 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PR",
-   "model": 22.6,
-   "base": 23.0,
+   "model": 22.5,
+   "base": 22.9,
    "matchup": 2.3,
    "injury": 10.2,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.507,
-   "dk": 22.5,
-   "over": -126,
-   "under": -104,
-   "best_over": [
-    -122,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.571,
+   "dk": 21.5,
+   "over": -120,
+   "under": -109,
+   "best_under": [
+    -102,
     "fanduel"
    ],
    "hits": {
@@ -39489,23 +40105,23 @@
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 21.0,
-   "win_raw": 49.1,
-   "win_chance": 51.6,
-   "edge": 0.1,
+   "conf": 32.2,
+   "win_raw": 55.6,
+   "win_chance": 48.7,
+   "edge": 1.0,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     3,
+     4,
      8
     ],
     "mid": [
@@ -39531,18 +40147,20 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.666,
-   "dk": 19.5,
-   "over": -126,
-   "under": -105,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.623,
+   "dk": 20.5,
+   "over": -117,
+   "under": -112,
    "best_over": [
-    -115,
-    "betmgm"
+    -108,
+    "betrivers"
    ],
    "best_under": [
-    -102,
+    -111,
     "fanduel"
    ],
    "hits": {
@@ -39559,10 +40177,10 @@
      15
     ]
    },
-   "conf": 65.3,
-   "win_raw": 58.6,
-   "win_chance": 49.6,
-   "edge": 3.7,
+   "conf": 54.9,
+   "win_raw": 56.0,
+   "win_chance": 48.8,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -39581,64 +40199,6 @@
    }
   },
   {
-   "player": "Charles Bassey",
-   "team": "GSW",
-   "opp": "SAC",
-   "game": "SAC@GSW",
-   "stat": "PR",
-   "model": 21.3,
-   "base": 20.8,
-   "matchup": 1.4,
-   "injury": 5.5,
-   "inj_out": [
-    "Stephen Curry"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.604,
-   "dk": 19.5,
-   "over": -104,
-   "under": -126,
-   "best_under": [
-    -108,
-    "betparx"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     4,
-     13
-    ]
-   },
-   "conf": 37.3,
-   "win_raw": 48.5,
-   "win_chance": 52.5,
-   "edge": 1.8,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     2,
-     6
-    ],
-    "mid": [
-     0,
-     3
-    ],
-    "soft": [
-     2,
-     4
-    ]
-   }
-  },
-  {
    "player": "Keegan Murray",
    "team": "SAC",
    "opp": "GSW",
@@ -39651,15 +40211,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.559,
    "dk": 18.5,
-   "over": -126,
-   "under": -104,
+   "over": -118,
+   "under": -111,
    "best_over": [
-    -109,
-    "betrivers"
+    -102,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -39697,6 +40259,66 @@
    }
   },
   {
+   "player": "Charles Bassey",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PR",
+   "model": 21.3,
+   "base": 20.8,
+   "matchup": 1.4,
+   "injury": 5.5,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.659,
+   "dk": 18.5,
+   "over": -111,
+   "under": -119,
+   "best_under": [
+    -110,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     4,
+     13
+    ]
+   },
+   "conf": 48.0,
+   "win_raw": 51.8,
+   "win_chance": 47.6,
+   "edge": 2.8,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     2,
+     6
+    ],
+    "mid": [
+     0,
+     3
+    ],
+    "soft": [
+     2,
+     4
+    ]
+   }
+  },
+  {
    "player": "De'Anthony Melton",
    "team": "GSW",
    "opp": "SAC",
@@ -39711,37 +40333,33 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.261,
-   "dk": 15.5,
-   "over": -120,
-   "under": -109,
-   "best_under": [
-    -105,
-    "espnbet"
-   ],
+   "p_over": 0.303,
+   "dk": 14.5,
+   "over": -121,
+   "under": -108,
    "hits": {
     "l5": [
      5,
      5
     ],
     "l10": [
-     9,
+     8,
      10
     ],
     "l15": [
-     11,
+     10,
      15
     ]
    },
-   "conf": 93.6,
-   "win_raw": 73.7,
+   "conf": 89.9,
+   "win_raw": 68.5,
    "win_chance": 51.4,
-   "edge": -5.2,
+   "edge": -4.2,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     7,
+     6,
      8
     ],
     "mid": [
@@ -39751,6 +40369,70 @@
     "soft": [
      3,
      4
+    ]
+   }
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PR",
+   "model": 12.5,
+   "base": 12.1,
+   "matchup": 0.9,
+   "injury": 4.3,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.5,
+   "dk": 12.5,
+   "over": -112,
+   "under": -117,
+   "best_over": [
+    -102,
+    "fanduel"
+   ],
+   "best_under": [
+    -115,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     10,
+     14
+    ]
+   },
+   "conf": 40.1,
+   "win_raw": 58.6,
+   "win_chance": 49.6,
+   "edge": 0.0,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     5,
+     6
+    ],
+    "mid": [
+     1,
+     2
+    ],
+    "soft": [
+     4,
+     6
     ]
    }
   },
@@ -39771,8 +40453,16 @@
    "sched_notes": [],
    "p_over": 0.279,
    "dk": 10.5,
-   "over": -134,
-   "under": 101,
+   "over": -113,
+   "under": -116,
+   "best_over": [
+    106,
+    "fanduel"
+   ],
+   "best_under": [
+    -110,
+    "betparx"
+   ],
    "hits": {
     "l5": [
      3,
@@ -39809,27 +40499,87 @@
    }
   },
   {
+   "player": "Will Richard",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PR",
+   "model": 12.5,
+   "base": 12.6,
+   "matchup": 2.0,
+   "injury": 9.3,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.785,
+   "dk": 8.5,
+   "over": -123,
+   "under": -107,
+   "best_over": [
+    -104,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     10,
+     14
+    ]
+   },
+   "conf": 85.1,
+   "win_raw": 75.7,
+   "win_chance": 51.4,
+   "edge": 4.0,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     4,
+     6
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     4,
+     4
+    ]
+   }
+  },
+  {
    "player": "Darius Acuff Jr.",
    "team": "SAC",
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PRA",
-   "model": 35.0,
-   "base": 36.1,
+   "model": 34.9,
+   "base": 36.0,
    "matchup": 0.4,
    "injury": 6.0,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.521,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.517,
    "dk": 34.5,
-   "over": -124,
-   "under": -106,
+   "over": -121,
+   "under": -109,
    "best_over": [
-    -120,
-    "betmgm"
+    -108,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -39845,10 +40595,10 @@
      15
     ]
    },
-   "conf": 29.2,
-   "win_raw": 52.6,
+   "conf": 28.7,
+   "win_raw": 52.4,
    "win_chance": 47.8,
-   "edge": 0.5,
+   "edge": 0.4,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -39872,26 +40622,24 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PRA",
-   "model": 34.0,
-   "base": 33.6,
+   "model": 33.9,
+   "base": 33.5,
    "matchup": 1.8,
    "injury": 10.1,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.556,
-   "dk": 32.5,
-   "over": -124,
-   "under": -106,
-   "best_over": [
-    -115,
-    "betmgm"
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
    ],
-   "best_under": [
-    -105,
-    "espnbet"
+   "p_over": 0.515,
+   "dk": 33.5,
+   "over": -111,
+   "under": -119,
+   "best_over": [
+    -110,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -39903,19 +40651,19 @@
      10
     ],
     "l15": [
-     10,
+     8,
      15
     ]
    },
-   "conf": 42.2,
-   "win_raw": 60.0,
-   "win_chance": 50.0,
-   "edge": 1.5,
+   "conf": 34.2,
+   "win_raw": 52.2,
+   "win_chance": 47.7,
+   "edge": 0.4,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     9,
+     7,
      10
     ],
     "mid": [
@@ -39934,26 +40682,28 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PRA",
-   "model": 29.6,
-   "base": 30.8,
+   "model": 29.5,
+   "base": 30.7,
    "matchup": 1.4,
    "injury": 6.1,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.403,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.4,
    "dk": 32.5,
    "over": -118,
    "under": -112,
    "best_over": [
-    -110,
-    "betrivers"
+    -113,
+    "fanduel"
    ],
    "best_under": [
-    -111,
-    "betmgm"
+    -107,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -39969,10 +40719,10 @@
      15
     ]
    },
-   "conf": 50.0,
-   "win_raw": 54.5,
+   "conf": 50.5,
+   "win_raw": 54.7,
    "win_chance": 48.4,
-   "edge": -2.9,
+   "edge": -3.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -39996,41 +40746,43 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "PRA",
-   "model": 25.2,
-   "base": 25.9,
+   "model": 25.1,
+   "base": 25.8,
    "matchup": 2.9,
    "injury": 9.9,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.363,
-   "dk": 27.5,
-   "over": -108,
-   "under": -121,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.415,
+   "dk": 26.5,
+   "over": -103,
+   "under": -127,
    "best_under": [
-    -110,
-    "hardrockbet"
+    -112,
+    "betparx"
    ],
    "hits": {
     "l5": [
-     5,
+     4,
      5
     ],
     "l10": [
-     8,
+     7,
      10
     ],
     "l15": [
-     10,
+     9,
      15
     ]
    },
-   "conf": 60.0,
-   "win_raw": 64.9,
-   "win_chance": 51.4,
-   "edge": -2.3,
+   "conf": 48.0,
+   "win_raw": 59.1,
+   "win_chance": 49.7,
+   "edge": -1.4,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
@@ -40039,7 +40791,7 @@
      7
     ],
     "mid": [
-     4,
+     3,
      4
     ],
     "soft": [
@@ -40061,15 +40813,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.645,
    "dk": 22.5,
-   "over": -106,
-   "under": -125,
+   "over": -121,
+   "under": -108,
    "best_over": [
-    102,
+    -108,
     "betrivers"
+   ],
+   "best_under": [
+    -104,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -40112,22 +40870,24 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "PRA",
-   "model": 21.7,
-   "base": 21.3,
+   "model": 21.6,
+   "base": 21.2,
    "matchup": 2.3,
    "injury": 10.0,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.563,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.557,
    "dk": 20.5,
-   "over": -121,
-   "under": -109,
+   "over": -109,
+   "under": -120,
    "best_over": [
-    -102,
-    "fanduel"
+    -105,
+    "fanatics"
    ],
    "hits": {
     "l5": [
@@ -40143,10 +40903,10 @@
      10
     ]
    },
-   "conf": 35.3,
-   "win_raw": 49.8,
-   "win_chance": 50.4,
-   "edge": 1.2,
+   "conf": 34.4,
+   "win_raw": 49.4,
+   "win_chance": 51.0,
+   "edge": 1.1,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -40179,37 +40939,33 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.265,
-   "dk": 19.5,
-   "over": -104,
-   "under": -127,
-   "best_under": [
-    -125,
-    "hardrockbet"
-   ],
+   "p_over": 0.347,
+   "dk": 17.5,
+   "over": -124,
+   "under": -106,
    "hits": {
     "l5": [
      5,
      5
     ],
     "l10": [
-     9,
+     8,
      10
     ],
     "l15": [
-     11,
+     10,
      15
     ]
    },
-   "conf": 93.6,
-   "win_raw": 73.4,
+   "conf": 79.9,
+   "win_raw": 65.8,
    "win_chance": 51.4,
-   "edge": -5.4,
+   "edge": -3.4,
    "side": "Under",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     6,
+     5,
      7
     ],
     "mid": [
@@ -40237,13 +40993,17 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.308,
-   "dk": 16.5,
-   "over": -103,
-   "under": -128,
+   "p_over": 0.396,
+   "dk": 15.5,
+   "over": -113,
+   "under": -116,
+   "best_over": [
+    100,
+    "fanduel"
+   ],
    "best_under": [
     -110,
-    "espnbet"
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -40255,19 +41015,19 @@
      10
     ],
     "l15": [
-     9,
+     8,
      14
     ]
    },
-   "conf": 56.5,
-   "win_raw": 67.2,
-   "win_chance": 51.4,
-   "edge": -2.1,
+   "conf": 45.4,
+   "win_raw": 59.1,
+   "win_chance": 49.7,
+   "edge": -1.1,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     5,
+     4,
      6
     ],
     "mid": [
@@ -40277,6 +41037,70 @@
     "soft": [
      0,
      3
+    ]
+   }
+  },
+  {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "PRA",
+   "model": 14.6,
+   "base": 14.3,
+   "matchup": 0.7,
+   "injury": 4.2,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.507,
+   "dk": 14.5,
+   "over": -118,
+   "under": -112,
+   "best_over": [
+    -115,
+    "fanduel"
+   ],
+   "best_under": [
+    -107,
+    "betrivers"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     3,
+     10
+    ],
+    "l15": [
+     5,
+     14
+    ]
+   },
+   "conf": 22.7,
+   "win_raw": 44.7,
+   "win_chance": 51.4,
+   "edge": 0.1,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     1,
+     6
+    ],
+    "mid": [
+     3,
+     6
+    ],
+    "soft": [
+     1,
+     2
     ]
    }
   },
@@ -40293,19 +41117,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.427,
    "dk": 13.5,
-   "over": -104,
-   "under": -126,
+   "over": 101,
+   "under": -134,
    "best_over": [
-    108,
+    112,
     "fanduel"
    ],
    "best_under": [
     -125,
-    "betmgm"
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -40355,18 +41181,20 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.477,
-   "dk": 8.5,
-   "over": -104,
-   "under": -126,
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.614,
+   "dk": 7.5,
+   "over": -130,
+   "under": -101,
    "best_over": [
-    102,
-    "williamhill_us"
+    -125,
+    "espnbet"
    ],
    "best_under": [
-    -125,
+    110,
     "betmgm"
    ],
    "hits": {
@@ -40375,31 +41203,31 @@
      5
     ],
     "l10": [
-     7,
+     5,
      10
     ],
     "l15": [
-     9,
+     6,
      13
     ]
    },
-   "conf": 37.0,
-   "win_raw": 59.1,
-   "win_chance": 49.7,
-   "edge": 0.0,
-   "side": "Under",
+   "conf": 52.3,
+   "win_raw": 55.3,
+   "win_chance": 48.6,
+   "edge": 1.0,
+   "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     2,
+     3,
      5
     ],
     "mid": [
-     4,
+     1,
      5
     ],
     "soft": [
-     3,
+     2,
      3
     ]
    }
@@ -40417,15 +41245,17 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.475,
    "dk": 7.5,
-   "over": 105,
-   "under": -138,
+   "over": 109,
+   "under": -143,
    "best_over": [
-    110,
-    "betrivers"
+    115,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -40468,54 +41298,60 @@
    "opp": "GSW",
    "game": "SAC@GSW",
    "stat": "REB",
-   "model": 5.3,
-   "base": 5.3,
+   "model": 5.2,
+   "base": 5.2,
    "matchup": -1.4,
    "injury": 7.9,
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.437,
-   "dk": 5.5,
-   "over": 112,
-   "under": -148,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.594,
+   "dk": 4.5,
+   "over": -155,
+   "under": 117,
    "best_over": [
+    -140,
+    "betmgm"
+   ],
+   "best_under": [
     118,
-    "fanduel"
+    "williamhill_us"
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     6,
+     4,
      10
     ]
    },
-   "conf": 36.8,
-   "win_raw": 57.8,
-   "win_chance": 49.3,
-   "edge": -0.2,
-   "side": "Under",
+   "conf": 52.8,
+   "win_raw": 51.6,
+   "win_chance": 47.5,
+   "edge": 0.7,
+   "side": "Over",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     2,
-     3
-    ],
-    "mid": [
      1,
      3
     ],
+    "mid": [
+     2,
+     3
+    ],
     "soft": [
-     3,
+     1,
      4
     ]
    }
@@ -40537,11 +41373,15 @@
    "sched_notes": [],
    "p_over": 0.449,
    "dk": 4.5,
-   "over": -152,
-   "under": 115,
+   "over": -130,
+   "under": -101,
    "best_over": [
-    -136,
+    -118,
     "fanduel"
+   ],
+   "best_under": [
+    100,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -40591,19 +41431,21 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.542,
    "dk": 4.5,
-   "over": -132,
-   "under": 101,
+   "over": -124,
+   "under": -106,
    "best_over": [
-    -130,
-    "espnbet"
+    -120,
+    "betmgm"
    ],
    "best_under": [
-    106,
-    "williamhill_us"
+    108,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -40653,19 +41495,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.487,
    "dk": 4.5,
-   "over": -119,
-   "under": -110,
+   "over": -113,
+   "under": -117,
    "best_over": [
-    -105,
+    -110,
     "betmgm"
    ],
    "best_under": [
-    -109,
-    "williamhill_us"
+    104,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -40703,6 +41547,62 @@
    }
   },
   {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "REB",
+   "model": 5.0,
+   "base": 4.9,
+   "matchup": -3.7,
+   "injury": 2.5,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.56,
+   "dk": 4.5,
+   "over": 114,
+   "under": -150,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     6,
+     14
+    ]
+   },
+   "conf": 47.9,
+   "win_raw": 50.7,
+   "win_chance": 48.7,
+   "edge": 0.5,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     0,
+     6
+    ],
+    "mid": [
+     2,
+     3
+    ],
+    "soft": [
+     4,
+     5
+    ]
+   }
+  },
+  {
    "player": "De'Anthony Melton",
    "team": "GSW",
    "opp": "SAC",
@@ -40719,11 +41619,11 @@
    "sched_notes": [],
    "p_over": 0.463,
    "dk": 3.5,
-   "over": -136,
-   "under": 103,
-   "best_over": [
-    -125,
-    "hardrockbet"
+   "over": -113,
+   "under": -116,
+   "best_under": [
+    -105,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -40773,19 +41673,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.308,
    "dk": 3.5,
-   "over": 119,
-   "under": -158,
+   "over": 134,
+   "under": -177,
    "best_over": [
-    134,
+    138,
     "fanduel"
    ],
    "best_under": [
-    -143,
-    "betrivers"
+    -155,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -40823,6 +41725,64 @@
    }
   },
   {
+   "player": "Will Richard",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "REB",
+   "model": 2.7,
+   "base": 2.7,
+   "matchup": 0.4,
+   "injury": 6.2,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.506,
+   "dk": 2.5,
+   "over": 131,
+   "under": -173,
+   "best_over": [
+    140,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     8,
+     14
+    ]
+   },
+   "conf": 44.3,
+   "win_raw": 53.2,
+   "win_chance": 48.0,
+   "edge": 0.2,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     3,
+     4
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     3,
+     6
+    ]
+   }
+  },
+  {
    "player": "Domantas Sabonis",
    "team": "SAC",
    "opp": "GSW",
@@ -40835,15 +41795,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.453,
    "dk": 18.5,
    "over": -114,
-   "under": -115,
+   "under": -116,
    "best_over": [
     100,
-    "betmgm"
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -40886,21 +41848,27 @@
    "opp": "SAC",
    "game": "SAC@GSW",
    "stat": "RA",
-   "model": 11.3,
-   "base": 11.3,
+   "model": 11.2,
+   "base": 11.2,
    "matchup": -3.1,
    "injury": 3.8,
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.479,
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
+   "p_over": 0.468,
    "dk": 11.5,
-   "over": -103,
-   "under": -128,
+   "over": 100,
+   "under": -132,
    "best_over": [
-    105,
+    108,
+    "betrivers"
+   ],
+   "best_under": [
+    -130,
     "espnbet"
    ],
    "hits": {
@@ -40917,10 +41885,10 @@
      15
     ]
    },
-   "conf": 46.2,
-   "win_raw": 60.6,
-   "win_chance": 50.2,
-   "edge": -0.2,
+   "conf": 47.8,
+   "win_raw": 61.3,
+   "win_chance": 50.3,
+   "edge": -0.3,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -40951,19 +41919,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.563,
-   "dk": 10.5,
-   "over": -113,
-   "under": -117,
-   "best_over": [
-    -105,
-    "betmgm"
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
    ],
+   "p_over": 0.573,
+   "dk": 10.5,
+   "over": 108,
+   "under": -142,
    "best_under": [
-    -104,
-    "betparx"
+    -120,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -40980,8 +41946,8 @@
     ]
    },
    "conf": 37.7,
-   "win_raw": 52.4,
-   "win_chance": 47.8,
+   "win_raw": 53.0,
+   "win_chance": 48.0,
    "edge": 0.7,
    "side": "Over",
    "tiers": {
@@ -41017,15 +41983,15 @@
    "sched_notes": [],
    "p_over": 0.556,
    "dk": 9.5,
-   "over": -142,
-   "under": 107,
+   "over": -123,
+   "under": -107,
    "best_over": [
-    -136,
+    -113,
     "fanduel"
    ],
    "best_under": [
-    110,
-    "hardrockbet"
+    -105,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -41075,12 +42041,18 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.395,
    "dk": 8.5,
-   "over": -138,
-   "under": 105,
+   "over": -132,
+   "under": 100,
+   "best_under": [
+    110,
+    "betmgm"
+   ],
    "hits": {
     "l5": [
      3,
@@ -41117,64 +42089,6 @@
    }
   },
   {
-   "player": "De'Anthony Melton",
-   "team": "GSW",
-   "opp": "SAC",
-   "game": "SAC@GSW",
-   "stat": "RA",
-   "model": 7.2,
-   "base": 7.3,
-   "matchup": 4.3,
-   "injury": 7.3,
-   "inj_out": [
-    "Stephen Curry"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.615,
-   "dk": 6.5,
-   "over": -147,
-   "under": 112,
-   "best_over": [
-    -140,
-    "espnbet"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 50.6,
-   "win_raw": 63.6,
-   "win_chance": 51.0,
-   "edge": 0.7,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     2,
-     6
-    ],
-    "mid": [
-     5,
-     6
-    ],
-    "soft": [
-     3,
-     5
-    ]
-   }
-  },
-  {
    "player": "Keegan Murray",
    "team": "SAC",
    "opp": "GSW",
@@ -41187,14 +42101,16 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.574,
    "dk": 6.5,
-   "over": -134,
-   "under": 102,
+   "over": -129,
+   "under": -102,
    "best_over": [
-    -113,
+    -110,
     "betrivers"
    ],
    "hits": {
@@ -41233,6 +42149,64 @@
    }
   },
   {
+   "player": "De'Anthony Melton",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "RA",
+   "model": 7.2,
+   "base": 7.3,
+   "matchup": 4.3,
+   "injury": 7.3,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.615,
+   "dk": 6.5,
+   "over": -125,
+   "under": -106,
+   "best_under": [
+    106,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "conf": 50.6,
+   "win_raw": 63.6,
+   "win_chance": 51.0,
+   "edge": 0.7,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     2,
+     6
+    ],
+    "mid": [
+     5,
+     6
+    ],
+    "soft": [
+     3,
+     5
+    ]
+   }
+  },
+  {
    "player": "De'Andre Hunter",
    "team": "SAC",
    "opp": "GSW",
@@ -41245,15 +42219,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.646,
    "dk": 6.5,
-   "over": -130,
-   "under": -101,
+   "over": -118,
+   "under": -112,
    "best_over": [
-    -110,
+    -115,
     "betmgm"
+   ],
+   "best_under": [
+    108,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -41291,6 +42271,70 @@
    }
   },
   {
+   "player": "Gui Santos",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "RA",
+   "model": 7.2,
+   "base": 7.1,
+   "matchup": -2.8,
+   "injury": 2.7,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.59,
+   "dk": 6.5,
+   "over": 100,
+   "under": -131,
+   "best_over": [
+    108,
+    "fanduel"
+   ],
+   "best_under": [
+    -129,
+    "betparx"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     5,
+     14
+    ]
+   },
+   "conf": 43.5,
+   "win_raw": 49.7,
+   "win_chance": 50.6,
+   "edge": 0.7,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     0,
+     5
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     3,
+     5
+    ]
+   }
+  },
+  {
    "player": "Darius Acuff Jr.",
    "team": "SAC",
    "opp": "GSW",
@@ -41303,15 +42347,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.531,
    "dk": 2.5,
-   "over": -140,
-   "under": 106,
+   "over": -148,
+   "under": 112,
    "best_under": [
-    118,
-    "fanduel"
+    130,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -41361,18 +42407,20 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.577,
    "dk": 2.5,
-   "over": -117,
-   "under": -112,
+   "over": -105,
+   "under": -126,
    "best_over": [
-    -108,
+    100,
     "fanduel"
    ],
    "best_under": [
-    -110,
+    -115,
     "betmgm"
    ],
    "hits": {
@@ -41411,68 +42459,6 @@
    }
   },
   {
-   "player": "De'Anthony Melton",
-   "team": "GSW",
-   "opp": "SAC",
-   "game": "SAC@GSW",
-   "stat": "3PM",
-   "model": 1.3,
-   "base": 1.5,
-   "matchup": 2.9,
-   "injury": 12.1,
-   "inj_out": [
-    "Stephen Curry"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.373,
-   "dk": 1.5,
-   "over": -187,
-   "under": 141,
-   "best_over": [
-    -185,
-    "hardrockbet"
-   ],
-   "best_under": [
-    148,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 55.2,
-   "win_raw": 56.3,
-   "win_chance": 48.9,
-   "edge": -0.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     1,
-     4
-    ],
-    "mid": [
-     4,
-     7
-    ],
-    "soft": [
-     3,
-     6
-    ]
-   }
-  },
-  {
    "player": "De'Andre Hunter",
    "team": "SAC",
    "opp": "GSW",
@@ -41485,19 +42471,17 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.645,
    "dk": 1.5,
-   "over": -181,
-   "under": 137,
+   "over": -196,
+   "under": 147,
    "best_over": [
-    -175,
-    "betmgm"
-   ],
-   "best_under": [
-    142,
-    "fanduel"
+    -180,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -41535,6 +42519,68 @@
    }
   },
   {
+   "player": "De'Anthony Melton",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "3PM",
+   "model": 1.3,
+   "base": 1.5,
+   "matchup": 2.9,
+   "injury": 12.1,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.373,
+   "dk": 1.5,
+   "over": -170,
+   "under": 129,
+   "best_over": [
+    -165,
+    "hardrockbet"
+   ],
+   "best_under": [
+    140,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     7,
+     15
+    ]
+   },
+   "conf": 55.2,
+   "win_raw": 56.3,
+   "win_chance": 48.9,
+   "edge": -0.2,
+   "side": "Under",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     1,
+     4
+    ],
+    "mid": [
+     4,
+     7
+    ],
+    "soft": [
+     3,
+     6
+    ]
+   }
+  },
+  {
    "player": "Yaxel Lendeborg",
    "team": "GSW",
    "opp": "SAC",
@@ -41547,19 +42593,17 @@
    "inj_out": [
     "Stephen Curry"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.442,
    "dk": 1.5,
    "over": -158,
    "under": 120,
    "best_over": [
-    -148,
+    -150,
     "betrivers"
-   ],
-   "best_under": [
-    125,
-    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -41609,19 +42653,21 @@
    "inj_out": [
     "Zach LaVine"
    ],
-   "sched": 0.0,
-   "sched_notes": [],
+   "sched": -0.2,
+   "sched_notes": [
+    "blowout risk (8.5-pt spread) -0.25%"
+   ],
    "p_over": 0.408,
    "dk": 1.5,
-   "over": -116,
-   "under": -114,
+   "over": -130,
+   "under": -101,
    "best_over": [
-    -115,
+    -122,
     "betrivers"
    ],
    "best_under": [
-    -104,
-    "fanduel"
+    105,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -41659,6 +42705,192 @@
    }
   },
   {
+   "player": "Malik Monk",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "3PM",
+   "model": 1.6,
+   "base": 1.7,
+   "matchup": -5.0,
+   "injury": 20.0,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.475,
+   "dk": 1.5,
+   "over": -122,
+   "under": -108,
+   "best_over": [
+    -106,
+    "betrivers"
+   ],
+   "best_under": [
+    -104,
+    "williamhill_us"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     5,
+     15
+    ]
+   },
+   "conf": 35.8,
+   "win_raw": 41.8,
+   "win_chance": 50.6,
+   "edge": 0.1,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     2,
+     7
+    ],
+    "mid": [
+     1,
+     3
+    ],
+    "soft": [
+     2,
+     5
+    ]
+   }
+  },
+  {
+   "player": "Emanuel Sharp",
+   "team": "SAC",
+   "opp": "GSW",
+   "game": "SAC@GSW",
+   "stat": "3PM",
+   "model": 0.9,
+   "base": 0.9,
+   "matchup": -4.5,
+   "injury": 20.0,
+   "inj_out": [
+    "Zach LaVine"
+   ],
+   "sched": 0.2,
+   "sched_notes": [
+    "blowout minutes (8.5-pt spread) +0.2%"
+   ],
+   "p_over": 0.228,
+   "dk": 1.5,
+   "over": 147,
+   "under": -196,
+   "best_under": [
+    -170,
+    "espnbet"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     13,
+     15
+    ]
+   },
+   "conf": 95.4,
+   "win_raw": 81.0,
+   "win_chance": 51.4,
+   "edge": -0.6,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     6,
+     7
+    ],
+    "mid": [
+     3,
+     5
+    ],
+    "soft": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "player": "Will Richard",
+   "team": "GSW",
+   "opp": "SAC",
+   "game": "SAC@GSW",
+   "stat": "3PM",
+   "model": 1.5,
+   "base": 1.5,
+   "matchup": 3.1,
+   "injury": 11.1,
+   "inj_out": [
+    "Stephen Curry"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.777,
+   "dk": 0.5,
+   "over": -201,
+   "under": 151,
+   "best_over": [
+    -200,
+    "williamhill_us"
+   ],
+   "best_under": [
+    175,
+    "espnbet"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     11,
+     14
+    ]
+   },
+   "conf": 94.3,
+   "win_raw": 78.0,
+   "win_chance": 51.4,
+   "edge": 1.0,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     2,
+     3
+    ],
+    "mid": [
+     4,
+     5
+    ],
+    "soft": [
+     5,
+     6
+    ]
+   }
+  },
+  {
    "player": "Draymond Green",
    "team": "GSW",
    "opp": "SAC",
@@ -41675,11 +42907,15 @@
    "sched_notes": [],
    "p_over": 0.503,
    "dk": 0.5,
-   "over": -148,
-   "under": 112,
+   "over": -137,
+   "under": 104,
    "best_over": [
     -127,
     "betrivers"
+   ],
+   "best_under": [
+    112,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -41734,15 +42970,11 @@
    "sched_notes": [],
    "p_over": 0.652,
    "dk": 7.5,
-   "over": 104,
-   "under": -137,
+   "over": -127,
+   "under": -104,
    "best_over": [
-    112,
-    "williamhill_us"
-   ],
-   "best_under": [
-    -135,
-    "hardrockbet"
+    -112,
+    "betparx"
    ],
    "hits": {
     "l5": [
@@ -41796,15 +43028,11 @@
    "sched_notes": [],
    "p_over": 0.57,
    "dk": 5.5,
-   "over": -143,
-   "under": 109,
+   "over": -148,
+   "under": 112,
    "best_over": [
-    -135,
-    "betmgm"
-   ],
-   "best_under": [
-    112,
-    "fanduel"
+    -130,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -41858,8 +43086,8 @@
    "sched_notes": [],
    "p_over": 0.56,
    "dk": 4.5,
-   "over": -116,
-   "under": -113,
+   "over": -118,
+   "under": -112,
    "best_over": [
     100,
     "fanduel"
@@ -41916,14 +43144,14 @@
    "sched_notes": [],
    "p_over": 0.547,
    "dk": 3.5,
-   "over": -153,
-   "under": 116,
+   "over": -148,
+   "under": 112,
    "best_over": [
-    -150,
-    "espnbet"
+    -145,
+    "betmgm"
    ],
    "best_under": [
-    120,
+    122,
     "fanduel"
    ],
    "hits": {
@@ -41979,11 +43207,11 @@
    "sched_notes": [],
    "p_over": 0.527,
    "dk": 3.5,
-   "over": 109,
-   "under": -144,
+   "over": -104,
+   "under": -126,
    "best_over": [
-    120,
-    "hardrockbet"
+    115,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -42038,15 +43266,11 @@
    "sched_notes": [],
    "p_over": 0.506,
    "dk": 2.5,
-   "over": -150,
-   "under": 114,
+   "over": -175,
+   "under": 132,
    "best_over": [
-    -136,
-    "fanduel"
-   ],
-   "best_under": [
-    115,
-    "betmgm"
+    -159,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -42099,13 +43323,13 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.737,
-   "dk": 29.5,
-   "over": -112,
-   "under": -114,
-   "best_over": [
-    -102,
-    "fanduel"
+   "p_over": 0.708,
+   "dk": 30.5,
+   "over": -120,
+   "under": -106,
+   "best_under": [
+    -105,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -42113,18 +43337,18 @@
      5
     ],
     "l10": [
-     6,
+     5,
      10
     ],
     "l15": [
-     8,
+     7,
      15
     ]
    },
-   "conf": 74.3,
-   "win_raw": 65.6,
-   "win_chance": 51.4,
-   "edge": 7.4,
+   "conf": 63.4,
+   "win_raw": 61.1,
+   "win_chance": 50.3,
+   "edge": 6.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -42137,7 +43361,7 @@
      7
     ],
     "soft": [
-     2,
+     1,
      5
     ]
    }
@@ -42159,15 +43383,15 @@
    "sched_notes": [],
    "p_over": 0.599,
    "dk": 22.5,
-   "over": -110,
-   "under": -116,
+   "over": -112,
+   "under": -114,
    "best_over": [
-    -105,
-    "espnbet"
+    -111,
+    "betmgm"
    ],
    "best_under": [
-    -115,
-    "williamhill_us"
+    -105,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -42221,11 +43445,15 @@
    "sched_notes": [],
    "p_over": 0.569,
    "dk": 20.5,
-   "over": -119,
-   "under": -107,
+   "over": -114,
+   "under": -112,
    "best_over": [
-    -106,
+    -102,
     "fanduel"
+   ],
+   "best_under": [
+    -111,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -42278,28 +43506,32 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.671,
-   "dk": 19.5,
-   "over": -107,
-   "under": -119,
+   "p_over": 0.714,
+   "dk": 18.5,
+   "over": -106,
+   "under": -120,
+   "best_under": [
+    -110,
+    "betmgm"
+   ],
    "hits": {
     "l5": [
-     3,
+     4,
      5
     ],
     "l10": [
-     4,
+     6,
      10
     ],
     "l15": [
-     4,
+     6,
      15
     ]
    },
-   "conf": 56.1,
-   "win_raw": 50.9,
-   "win_chance": 48.4,
-   "edge": 3.6,
+   "conf": 77.8,
+   "win_raw": 58.8,
+   "win_chance": 49.6,
+   "edge": 4.6,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -42308,12 +43540,70 @@
      3
     ],
     "mid": [
-     1,
+     2,
      5
     ],
     "soft": [
-     3,
+     5,
      10
+    ]
+   }
+  },
+  {
+   "player": "Jrue Holiday",
+   "team": "POR",
+   "opp": "SAS",
+   "game": "SAS@POR",
+   "stat": "PTS",
+   "model": 15.4,
+   "base": 15.1,
+   "matchup": -1.9,
+   "injury": 2.8,
+   "inj_out": [
+    "Chris Youngblood"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.701,
+   "dk": 12.5,
+   "over": -118,
+   "under": -108,
+   "best_over": [
+    -113,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     9,
+     15
+    ]
+   },
+   "conf": 74.8,
+   "win_raw": 66.1,
+   "win_chance": 51.4,
+   "edge": 2.9,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     4,
+     7
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     3,
+     6
     ]
    }
   },
@@ -42333,13 +43623,17 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.54,
-   "dk": 13.5,
-   "over": 100,
-   "under": -127,
+   "p_over": 0.618,
+   "dk": 12.5,
+   "over": -112,
+   "under": -113,
+   "best_over": [
+    -105,
+    "betmgm"
+   ],
    "best_under": [
-    -109,
-    "betrivers"
+    -105,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -42355,10 +43649,10 @@
      15
     ]
    },
-   "conf": 28.7,
-   "win_raw": 48.4,
-   "win_chance": 52.5,
-   "edge": 0.5,
+   "conf": 43.6,
+   "win_raw": 53.1,
+   "win_chance": 48.0,
+   "edge": 1.5,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -42373,68 +43667,6 @@
     "soft": [
      5,
      9
-    ]
-   }
-  },
-  {
-   "player": "Jrue Holiday",
-   "team": "POR",
-   "opp": "SAS",
-   "game": "SAS@POR",
-   "stat": "PTS",
-   "model": 15.4,
-   "base": 15.1,
-   "matchup": -1.9,
-   "injury": 2.8,
-   "inj_out": [
-    "Chris Youngblood"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.708,
-   "dk": 12.5,
-   "over": -117,
-   "under": -109,
-   "best_over": [
-    -114,
-    "fanduel"
-   ],
-   "best_under": [
-    -108,
-    "williamhill_us"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     9,
-     15
-    ]
-   },
-   "conf": 74.8,
-   "win_raw": 66.5,
-   "win_chance": 51.4,
-   "edge": 2.9,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     4,
-     7
-    ],
-    "mid": [
-     2,
-     4
-    ],
-    "soft": [
-     3,
-     6
     ]
    }
   },
@@ -42456,15 +43688,15 @@
    "sched_notes": [],
    "p_over": 0.662,
    "dk": 11.5,
-   "over": -115,
-   "under": -111,
+   "over": -112,
+   "under": -114,
    "best_over": [
-    -105,
-    "betmgm"
+    -110,
+    "espnbet"
    ],
    "best_under": [
-    -105,
-    "espnbet"
+    -108,
+    "williamhill_us"
    ],
    "hits": {
     "l5": [
@@ -42502,65 +43734,6 @@
    }
   },
   {
-   "player": "Keldon Johnson",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "PTS",
-   "model": 9.8,
-   "base": 9.8,
-   "matchup": -5.0,
-   "injury": 15.4,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.442,
-   "dk": 10.5,
-   "over": -121,
-   "under": -105,
-   "best_over": [
-    -112,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 48.7,
-   "win_raw": 60.1,
-   "win_chance": 50.0,
-   "edge": -0.7,
-   "side": "Under",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     5,
-     5
-    ],
-    "mid": [
-     4,
-     7
-    ],
-    "soft": [
-     4,
-     6
-    ]
-   }
-  },
-  {
    "player": "Toumani Camara",
    "team": "POR",
    "opp": "SAS",
@@ -42577,11 +43750,11 @@
    "sched_notes": [],
    "p_over": 0.483,
    "dk": 10.5,
-   "over": -121,
-   "under": -105,
+   "over": -119,
+   "under": -107,
    "best_over": [
-    -111,
-    "williamhill_us"
+    -105,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -42635,11 +43808,11 @@
    "sched_notes": [],
    "p_over": 0.591,
    "dk": 10.5,
-   "over": -119,
-   "under": -107,
+   "over": -115,
+   "under": -111,
    "best_over": [
-    -105,
-    "betmgm"
+    100,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -42677,6 +43850,69 @@
    }
   },
   {
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "PTS",
+   "model": 9.8,
+   "base": 9.8,
+   "matchup": -5.0,
+   "injury": 15.4,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.442,
+   "dk": 10.5,
+   "over": -107,
+   "under": -119,
+   "best_over": [
+    -105,
+    "betmgm"
+   ],
+   "best_under": [
+    -114,
+    "williamhill_us"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     10,
+     15
+    ]
+   },
+   "conf": 48.7,
+   "win_raw": 60.1,
+   "win_chance": 50.0,
+   "edge": -0.7,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     5,
+     5
+    ],
+    "mid": [
+     4,
+     7
+    ],
+    "soft": [
+     4,
+     6
+    ]
+   }
+  },
+  {
    "player": "Scoot Henderson",
    "team": "POR",
    "opp": "SAS",
@@ -42693,11 +43929,11 @@
    "sched_notes": [],
    "p_over": 0.593,
    "dk": 10.5,
-   "over": 100,
-   "under": -128,
+   "over": -103,
+   "under": -124,
    "best_under": [
-    -118,
-    "betrivers"
+    -115,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -42735,6 +43971,69 @@
    }
   },
   {
+   "player": "Harrison Barnes",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "PTS",
+   "model": 7.2,
+   "base": 7.2,
+   "matchup": -5.0,
+   "injury": 14.6,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.475,
+   "dk": 7.5,
+   "over": -121,
+   "under": -105,
+   "best_over": [
+    -117,
+    "betrivers"
+   ],
+   "best_under": [
+    102,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     9,
+     15
+    ]
+   },
+   "conf": 37.5,
+   "win_raw": 55.5,
+   "win_chance": 48.7,
+   "edge": -0.3,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     3,
+     4
+    ],
+    "mid": [
+     3,
+     6
+    ],
+    "soft": [
+     3,
+     5
+    ]
+   }
+  },
+  {
    "player": "Sidy Cissoko",
    "team": "POR",
    "opp": "SAS",
@@ -42751,11 +44050,11 @@
    "sched_notes": [],
    "p_over": 0.721,
    "dk": 6.5,
-   "over": -111,
-   "under": -114,
+   "over": -107,
+   "under": -119,
    "best_over": [
-    100,
-    "betrivers"
+    104,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -42793,6 +44092,64 @@
    }
   },
   {
+   "player": "Robert Williams III",
+   "team": "POR",
+   "opp": "SAS",
+   "game": "SAS@POR",
+   "stat": "PTS",
+   "model": 5.6,
+   "base": 6.0,
+   "matchup": 4.5,
+   "injury": 1.2,
+   "inj_out": [
+    "Chris Youngblood"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.51,
+   "dk": 5.5,
+   "over": -106,
+   "under": -120,
+   "best_under": [
+    -110,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     6,
+     10
+    ],
+    "l15": [
+     8,
+     14
+    ]
+   },
+   "conf": 33.1,
+   "win_raw": 53.5,
+   "win_chance": 48.1,
+   "edge": 0.1,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     3,
+     6
+    ],
+    "mid": [
+     4,
+     6
+    ],
+    "soft": [
+     1,
+     2
+    ]
+   }
+  },
+  {
    "player": "Victor Wembanyama",
    "team": "SAS",
    "opp": "POR",
@@ -42808,11 +44165,11 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.775,
-   "dk": 32.5,
-   "over": -123,
-   "under": -107,
-   "best_over": [
+   "p_over": 0.716,
+   "dk": 34.5,
+   "over": -115,
+   "under": -114,
+   "best_under": [
     -112,
     "fanduel"
    ],
@@ -42822,18 +44179,18 @@
      5
     ],
     "l10": [
-     5,
+     4,
      10
     ],
     "l15": [
-     7,
+     6,
      15
     ]
    },
-   "conf": 70.7,
-   "win_raw": 65.2,
-   "win_chance": 51.4,
-   "edge": 8.2,
+   "conf": 54.3,
+   "win_raw": 59.0,
+   "win_chance": 49.7,
+   "edge": 6.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -42846,7 +44203,7 @@
      6
     ],
     "soft": [
-     1,
+     0,
      5
     ]
    }
@@ -42869,14 +44226,10 @@
    "p_over": 0.579,
    "dk": 28.5,
    "over": -119,
-   "under": -111,
+   "under": -110,
    "best_over": [
-    -115,
-    "betmgm"
-   ],
-   "best_under": [
-    -110,
-    "espnbet"
+    -114,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -42931,11 +44284,15 @@
    "sched_notes": [],
    "p_over": 0.706,
    "dk": 26.5,
-   "over": -118,
-   "under": -112,
+   "over": -109,
+   "under": -120,
+   "best_over": [
+    -108,
+    "betrivers"
+   ],
    "best_under": [
-    -105,
-    "hardrockbet"
+    -110,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -42989,10 +44346,14 @@
    "sched_notes": [],
    "p_over": 0.558,
    "dk": 24.5,
-   "over": -121,
-   "under": -108,
+   "over": -118,
+   "under": -111,
    "best_over": [
-    -105,
+    -106,
+    "fanduel"
+   ],
+   "best_under": [
+    -110,
     "betmgm"
    ],
    "hits": {
@@ -43048,14 +44409,10 @@
    "p_over": 0.671,
    "dk": 17.5,
    "over": -115,
-   "under": -114,
+   "under": -115,
    "best_over": [
-    -102,
+    -104,
     "fanduel"
-   ],
-   "best_under": [
-    -105,
-    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -43108,41 +44465,37 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.515,
-   "dk": 16.5,
-   "over": -104,
-   "under": -127,
+   "p_over": 0.588,
+   "dk": 15.5,
+   "over": -120,
+   "under": -110,
    "best_over": [
-    -102,
-    "fanduel"
-   ],
-   "best_under": [
-    -125,
-    "espnbet"
+    -115,
+    "betmgm"
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 25.1,
-   "win_raw": 49.6,
-   "win_chance": 50.8,
-   "edge": 0.2,
+   "conf": 43.3,
+   "win_raw": 56.6,
+   "win_chance": 49.0,
+   "edge": 1.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
+     2,
      4
     ],
     "mid": [
@@ -43173,8 +44526,12 @@
    "sched_notes": [],
    "p_over": 0.667,
    "dk": 13.5,
-   "over": -119,
-   "under": -110,
+   "over": -116,
+   "under": -113,
+   "best_over": [
+    -115,
+    "espnbet"
+   ],
    "hits": {
     "l5": [
      3,
@@ -43226,28 +44583,32 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.758,
-   "dk": 42.5,
-   "over": -108,
-   "under": -122,
+   "p_over": 0.736,
+   "dk": 43.5,
+   "over": -113,
+   "under": -116,
+   "best_over": [
+    -106,
+    "fanduel"
+   ],
    "hits": {
     "l5": [
-     3,
+     1,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     8,
+     6,
      15
     ]
    },
-   "conf": 75.3,
-   "win_raw": 66.8,
-   "win_chance": 51.4,
-   "edge": 10.2,
+   "conf": 57.3,
+   "win_raw": 60.2,
+   "win_chance": 50.0,
+   "edge": 9.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -43260,7 +44621,7 @@
      8
     ],
     "soft": [
-     4,
+     2,
      6
     ]
    }
@@ -43282,15 +44643,11 @@
    "sched_notes": [],
    "p_over": 0.559,
    "dk": 28.5,
-   "over": -119,
-   "under": -111,
+   "over": -120,
+   "under": -110,
    "best_over": [
-    -118,
-    "fanduel"
-   ],
-   "best_under": [
-    -105,
-    "betmgm"
+    -115,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -43328,6 +44685,64 @@
    }
   },
   {
+   "player": "Damian Lillard",
+   "team": "POR",
+   "opp": "SAS",
+   "game": "SAS@POR",
+   "stat": "PR",
+   "model": 24.5,
+   "base": 24.1,
+   "matchup": -1.2,
+   "injury": 2.8,
+   "inj_out": [
+    "Chris Youngblood"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.55,
+   "dk": 23.5,
+   "over": -125,
+   "under": -105,
+   "best_over": [
+    -113,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     8,
+     15
+    ]
+   },
+   "conf": 31.5,
+   "win_raw": 54.3,
+   "win_chance": 48.3,
+   "edge": 1.0,
+   "side": "Over",
+   "tiers": {
+    "tonight": "soft",
+    "tough": [
+     2,
+     5
+    ],
+    "mid": [
+     2,
+     4
+    ],
+    "soft": [
+     6,
+     8
+    ]
+   }
+  },
+  {
    "player": "Stephon Castle",
    "team": "SAS",
    "opp": "POR",
@@ -43343,32 +44758,28 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.685,
-   "dk": 24.5,
-   "over": -119,
-   "under": -111,
-   "best_under": [
-    -105,
-    "espnbet"
-   ],
+   "p_over": 0.725,
+   "dk": 23.5,
+   "over": -125,
+   "under": -106,
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
-     3,
+     4,
      10
     ],
     "l15": [
-     4,
+     5,
      15
     ]
    },
-   "conf": 48.3,
-   "win_raw": 51.8,
-   "win_chance": 47.6,
-   "edge": 4.2,
+   "conf": 63.7,
+   "win_raw": 56.8,
+   "win_chance": 49.1,
+   "edge": 5.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -43381,62 +44792,8 @@
      5
     ],
     "soft": [
-     1,
-     7
-    ]
-   }
-  },
-  {
-   "player": "Damian Lillard",
-   "team": "POR",
-   "opp": "SAS",
-   "game": "SAS@POR",
-   "stat": "PR",
-   "model": 24.5,
-   "base": 24.1,
-   "matchup": -1.2,
-   "injury": 2.8,
-   "inj_out": [
-    "Chris Youngblood"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.5,
-   "dk": 24.5,
-   "over": -105,
-   "under": -125,
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 31.2,
-   "win_raw": 48.7,
-   "win_chance": 52.4,
-   "edge": 0.0,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     3,
-     5
-    ],
-    "mid": [
      2,
-     4
-    ],
-    "soft": [
-     3,
-     8
+     7
     ]
    }
   },
@@ -43457,15 +44814,11 @@
    "sched_notes": [],
    "p_over": 0.618,
    "dk": 21.5,
-   "over": -124,
-   "under": -106,
+   "over": -123,
+   "under": -107,
    "best_over": [
-    -115,
-    "betmgm"
-   ],
-   "best_under": [
-    -105,
-    "espnbet"
+    -104,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -43503,69 +44856,6 @@
    }
   },
   {
-   "player": "Devin Vassell",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "PR",
-   "model": 18.7,
-   "base": 18.5,
-   "matchup": -0.6,
-   "injury": 20.0,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.6,
-   "dk": 17.5,
-   "over": -109,
-   "under": -121,
-   "best_over": [
-    -108,
-    "fanduel"
-   ],
-   "best_under": [
-    -115,
-    "hardrockbet"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     3,
-     10
-    ],
-    "l15": [
-     5,
-     15
-    ]
-   },
-   "conf": 30.7,
-   "win_raw": 49.3,
-   "win_chance": 51.2,
-   "edge": 1.2,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     0,
-     6
-    ],
-    "mid": [
-     1,
-     4
-    ],
-    "soft": [
-     4,
-     6
-    ]
-   }
-  },
-  {
    "player": "Julian Champagnie",
    "team": "SAS",
    "opp": "POR",
@@ -43583,8 +44873,12 @@
    "sched_notes": [],
    "p_over": 0.698,
    "dk": 16.5,
-   "over": -128,
-   "under": -103,
+   "over": -121,
+   "under": -108,
+   "best_under": [
+    -102,
+    "fanduel"
+   ],
    "hits": {
     "l5": [
      3,
@@ -43621,6 +44915,65 @@
    }
   },
   {
+   "player": "Devin Vassell",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "PR",
+   "model": 18.7,
+   "base": 18.5,
+   "matchup": -0.6,
+   "injury": 20.0,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.678,
+   "dk": 16.5,
+   "over": -119,
+   "under": -110,
+   "best_under": [
+    -105,
+    "espnbet"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     7,
+     15
+    ]
+   },
+   "conf": 52.4,
+   "win_raw": 59.3,
+   "win_chance": 49.8,
+   "edge": 2.2,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     2,
+     6
+    ],
+    "mid": [
+     1,
+     4
+    ],
+    "soft": [
+     4,
+     6
+    ]
+   }
+  },
+  {
    "player": "Jrue Holiday",
    "team": "POR",
    "opp": "SAS",
@@ -43638,13 +44991,13 @@
    "p_over": 0.657,
    "dk": 16.5,
    "over": -114,
-   "under": -116,
+   "under": -115,
    "best_over": [
-    -110,
+    -108,
     "fanduel"
    ],
    "best_under": [
-    100,
+    -110,
     "betmgm"
    ],
    "hits": {
@@ -43683,6 +45036,69 @@
    }
   },
   {
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "PR",
+   "model": 15.6,
+   "base": 15.7,
+   "matchup": -3.3,
+   "injury": 14.9,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.508,
+   "dk": 15.5,
+   "over": -121,
+   "under": -109,
+   "best_over": [
+    -115,
+    "betmgm"
+   ],
+   "best_under": [
+    -104,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     7,
+     15
+    ]
+   },
+   "conf": 26.8,
+   "win_raw": 49.1,
+   "win_chance": 51.5,
+   "edge": 0.1,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     1,
+     3
+    ],
+    "mid": [
+     6,
+     9
+    ],
+    "soft": [
+     0,
+     6
+    ]
+   }
+  },
+  {
    "player": "Toumani Camara",
    "team": "POR",
    "opp": "SAS",
@@ -43699,8 +45115,12 @@
    "sched_notes": [],
    "p_over": 0.457,
    "dk": 15.5,
-   "over": -107,
-   "under": -123,
+   "over": -104,
+   "under": -126,
+   "best_over": [
+    105,
+    "betrivers"
+   ],
    "hits": {
     "l5": [
      3,
@@ -43753,11 +45173,11 @@
    "sched_notes": [],
    "p_over": 0.594,
    "dk": 12.5,
-   "over": -113,
-   "under": -117,
+   "over": -110,
+   "under": -119,
    "best_under": [
-    -114,
-    "fanduel"
+    -115,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -43795,6 +45215,69 @@
    }
   },
   {
+   "player": "Harrison Barnes",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "PR",
+   "model": 9.5,
+   "base": 9.5,
+   "matchup": -3.8,
+   "injury": 14.3,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.419,
+   "dk": 10.5,
+   "over": -109,
+   "under": -121,
+   "best_over": [
+    -105,
+    "betmgm"
+   ],
+   "best_under": [
+    -111,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     9,
+     15
+    ]
+   },
+   "conf": 47.4,
+   "win_raw": 58.9,
+   "win_chance": 49.6,
+   "edge": -1.0,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     1,
+     2
+    ],
+    "mid": [
+     4,
+     8
+    ],
+    "soft": [
+     4,
+     5
+    ]
+   }
+  },
+  {
    "player": "Sidy Cissoko",
    "team": "POR",
    "opp": "SAS",
@@ -43811,11 +45294,11 @@
    "sched_notes": [],
    "p_over": 0.781,
    "dk": 9.5,
-   "over": -125,
-   "under": -106,
+   "over": -121,
+   "under": -109,
    "best_over": [
-    -113,
-    "betrivers"
+    -105,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -43868,32 +45351,28 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.78,
-   "dk": 45.5,
-   "over": -115,
-   "under": -114,
-   "best_over": [
-    -109,
-    "betparx"
-   ],
+   "p_over": 0.736,
+   "dk": 47.5,
+   "over": -113,
+   "under": -117,
    "hits": {
     "l5": [
-     3,
+     1,
      5
     ],
     "l10": [
-     6,
+     3,
      10
     ],
     "l15": [
-     8,
+     5,
      15
     ]
    },
-   "conf": 75.2,
-   "win_raw": 68.1,
-   "win_chance": 51.4,
-   "edge": 10.9,
+   "conf": 49.3,
+   "win_raw": 57.5,
+   "win_chance": 49.3,
+   "edge": 8.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -43902,11 +45381,11 @@
      6
     ],
     "mid": [
-     4,
+     2,
      7
     ],
     "soft": [
-     1,
+     0,
      4
     ]
    }
@@ -43931,8 +45410,12 @@
    "over": -124,
    "under": -106,
    "best_over": [
-    -120,
-    "betmgm"
+    -118,
+    "fanduel"
+   ],
+   "best_under": [
+    -105,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -43985,13 +45468,13 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.688,
-   "dk": 32.5,
-   "over": -108,
-   "under": -122,
-   "best_under": [
-    -108,
-    "fanduel"
+   "p_over": 0.722,
+   "dk": 31.5,
+   "over": -123,
+   "under": -107,
+   "best_over": [
+    -115,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -44007,15 +45490,15 @@
      15
     ]
    },
-   "conf": 50.6,
-   "win_raw": 51.9,
-   "win_chance": 47.6,
-   "edge": 5.0,
+   "conf": 57.2,
+   "win_raw": 54.0,
+   "win_chance": 48.2,
+   "edge": 6.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     0,
+     1,
      6
     ],
     "mid": [
@@ -44043,13 +45526,71 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.495,
-   "dk": 28.5,
-   "over": -108,
-   "under": -122,
+   "p_over": 0.546,
+   "dk": 27.5,
+   "over": -124,
+   "under": -106,
    "best_over": [
-    -107,
-    "betparx"
+    -113,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     8,
+     15
+    ]
+   },
+   "conf": 29.7,
+   "win_raw": 54.1,
+   "win_chance": 48.3,
+   "edge": 0.9,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     2,
+     6
+    ],
+    "mid": [
+     4,
+     5
+    ],
+    "soft": [
+     3,
+     6
+    ]
+   }
+  },
+  {
+   "player": "Donovan Clingan",
+   "team": "POR",
+   "opp": "SAS",
+   "game": "SAS@POR",
+   "stat": "PRA",
+   "model": 26.4,
+   "base": 26.8,
+   "matchup": -0.5,
+   "injury": 1.4,
+   "inj_out": [
+    "Chris Youngblood"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.626,
+   "dk": 23.5,
+   "over": -125,
+   "under": -105,
+   "best_over": [
+    -111,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -44057,7 +45598,7 @@
      5
     ],
     "l10": [
-     6,
+     5,
      10
     ],
     "l15": [
@@ -44065,24 +45606,24 @@
      15
     ]
    },
-   "conf": 31.8,
-   "win_raw": 49.0,
-   "win_chance": 51.8,
-   "edge": -0.1,
-   "side": "Under",
+   "conf": 50.6,
+   "win_raw": 56.2,
+   "win_chance": 48.9,
+   "edge": 2.9,
+   "side": "Over",
    "tiers": {
-    "tonight": "mid",
+    "tonight": "tough",
     "tough": [
      4,
-     6
+     9
     ],
     "mid": [
-     1,
-     5
+     0,
+     3
     ],
     "soft": [
      3,
-     6
+     5
     ]
    }
   },
@@ -44101,18 +45642,10 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.624,
+   "p_over": 0.629,
    "dk": 21.5,
-   "over": -111,
-   "under": -118,
-   "best_over": [
-    -109,
-    "betrivers"
-   ],
-   "best_under": [
-    -110,
-    "betmgm"
-   ],
+   "over": -110,
+   "under": -120,
    "hits": {
     "l5": [
      4,
@@ -44128,8 +45661,8 @@
     ]
    },
    "conf": 52.1,
-   "win_raw": 56.1,
-   "win_chance": 48.8,
+   "win_raw": 56.4,
+   "win_chance": 48.9,
    "edge": 2.5,
    "side": "Over",
    "tiers": {
@@ -44164,41 +45697,33 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.574,
-   "dk": 20.5,
-   "over": -110,
-   "under": -119,
-   "best_over": [
-    -106,
-    "fanduel"
-   ],
-   "best_under": [
-    -115,
-    "hardrockbet"
-   ],
+   "p_over": 0.645,
+   "dk": 19.5,
+   "over": -125,
+   "under": -105,
    "hits": {
     "l5": [
      3,
      5
     ],
     "l10": [
-     4,
+     5,
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 34.4,
-   "win_raw": 53.1,
-   "win_chance": 48.0,
-   "edge": 1.0,
+   "conf": 47.8,
+   "win_raw": 60.0,
+   "win_chance": 50.0,
+   "edge": 2.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     1,
+     2,
      6
     ],
     "mid": [
@@ -44227,10 +45752,14 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.642,
-   "dk": 19.5,
-   "over": -104,
-   "under": -127,
+   "p_over": 0.693,
+   "dk": 18.5,
+   "over": -123,
+   "under": -107,
+   "best_over": [
+    -120,
+    "espnbet"
+   ],
    "hits": {
     "l5": [
      3,
@@ -44245,10 +45774,10 @@
      15
     ]
    },
-   "conf": 44.2,
-   "win_raw": 49.2,
-   "win_chance": 51.4,
-   "edge": 2.6,
+   "conf": 55.2,
+   "win_raw": 52.2,
+   "win_chance": 47.7,
+   "edge": 3.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -44263,6 +45792,64 @@
     "soft": [
      1,
      4
+    ]
+   }
+  },
+  {
+   "player": "Scoot Henderson",
+   "team": "POR",
+   "opp": "SAS",
+   "game": "SAS@POR",
+   "stat": "PRA",
+   "model": 16.1,
+   "base": 15.2,
+   "matchup": -1.0,
+   "injury": 2.8,
+   "inj_out": [
+    "Chris Youngblood"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.578,
+   "dk": 14.5,
+   "over": -123,
+   "under": -107,
+   "best_over": [
+    -113,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     5,
+     15
+    ]
+   },
+   "conf": 40.9,
+   "win_raw": 48.0,
+   "win_chance": 52.3,
+   "edge": 1.6,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     1,
+     6
+    ],
+    "mid": [
+     4,
+     5
+    ],
+    "soft": [
+     1,
+     6
     ]
    }
   },
@@ -44284,8 +45871,8 @@
    "sched_notes": [],
    "p_over": 0.793,
    "dk": 12.5,
-   "over": -103,
-   "under": -128,
+   "over": -110,
+   "under": -120,
    "best_over": [
     110,
     "espnbet"
@@ -44340,10 +45927,14 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.631,
+   "p_over": 0.642,
    "dk": 10.5,
-   "over": -133,
-   "under": 101,
+   "over": -125,
+   "under": -105,
+   "best_under": [
+    110,
+    "fanduel"
+   ],
    "hits": {
     "l5": [
      4,
@@ -44359,8 +45950,8 @@
     ]
    },
    "conf": 66.2,
-   "win_raw": 64.5,
-   "win_chance": 51.3,
+   "win_raw": 65.2,
+   "win_chance": 51.4,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
@@ -44394,13 +45985,17 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.33,
-   "dk": 6.5,
-   "over": 115,
-   "under": -152,
+   "p_over": 0.488,
+   "dk": 5.5,
+   "over": -147,
+   "under": 111,
+   "best_over": [
+    -141,
+    "betrivers"
+   ],
    "best_under": [
-    -140,
-    "betmgm"
+    124,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -44412,19 +46007,19 @@
      10
     ],
     "l15": [
-     8,
+     9,
      15
     ]
    },
-   "conf": 57.0,
-   "win_raw": 61.5,
-   "win_chance": 50.4,
-   "edge": -0.9,
-   "side": "Under",
+   "conf": 36.3,
+   "win_raw": 53.3,
+   "win_chance": 48.0,
+   "edge": 0.1,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
+     4,
      6
     ],
     "mid": [
@@ -44432,67 +46027,8 @@
      7
     ],
     "soft": [
-     2,
-     2
-    ]
-   }
-  },
-  {
-   "player": "Keldon Johnson",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "REB",
-   "model": 5.7,
-   "base": 5.9,
-   "matchup": -0.3,
-   "injury": 14.1,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.505,
-   "dk": 5.5,
-   "over": -110,
-   "under": -120,
-   "best_over": [
-    105,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     1,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 26.7,
-   "win_raw": 49.0,
-   "win_chance": 51.8,
-   "edge": 0.2,
-   "side": "Over",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
      1,
      2
-    ],
-    "mid": [
-     7,
-     10
-    ],
-    "soft": [
-     1,
-     6
     ]
    }
   },
@@ -44514,11 +46050,15 @@
    "sched_notes": [],
    "p_over": 0.522,
    "dk": 5.5,
-   "over": 109,
-   "under": -143,
-   "best_under": [
-    -120,
+   "over": -102,
+   "under": -128,
+   "best_over": [
+    120,
     "betmgm"
+   ],
+   "best_under": [
+    -125,
+    "espnbet"
    ],
    "hits": {
     "l5": [
@@ -44556,6 +46096,69 @@
    }
   },
   {
+   "player": "Keldon Johnson",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "REB",
+   "model": 5.7,
+   "base": 5.9,
+   "matchup": -0.3,
+   "injury": 14.1,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.505,
+   "dk": 5.5,
+   "over": 105,
+   "under": -138,
+   "best_over": [
+    106,
+    "fanduel"
+   ],
+   "best_under": [
+    -130,
+    "espnbet"
+   ],
+   "hits": {
+    "l5": [
+     1,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     7,
+     15
+    ]
+   },
+   "conf": 26.7,
+   "win_raw": 49.0,
+   "win_chance": 51.8,
+   "edge": 0.2,
+   "side": "Over",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     1,
+     2
+    ],
+    "mid": [
+     7,
+     10
+    ],
+    "soft": [
+     1,
+     6
+    ]
+   }
+  },
+  {
    "player": "Julian Champagnie",
    "team": "SAS",
    "opp": "POR",
@@ -44573,15 +46176,11 @@
    "sched_notes": [],
    "p_over": 0.488,
    "dk": 5.5,
-   "over": 111,
-   "under": -146,
-   "best_over": [
-    124,
-    "fanduel"
-   ],
+   "over": 116,
+   "under": -152,
    "best_under": [
-    -140,
-    "hardrockbet"
+    -146,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -44635,8 +46234,8 @@
    "sched_notes": [],
    "p_over": 0.487,
    "dk": 4.5,
-   "over": 105,
-   "under": -138,
+   "over": 106,
+   "under": -140,
    "best_over": [
     125,
     "betmgm"
@@ -44694,11 +46293,15 @@
    "sched_notes": [],
    "p_over": 0.706,
    "dk": 3.5,
-   "over": -152,
-   "under": 115,
+   "over": -153,
+   "under": 116,
+   "best_over": [
+    -142,
+    "fanduel"
+   ],
    "best_under": [
-    123,
-    "williamhill_us"
+    120,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -44755,7 +46358,7 @@
    "over": -113,
    "under": -116,
    "best_under": [
-    105,
+    -105,
     "betmgm"
    ],
    "hits": {
@@ -44817,8 +46420,8 @@
     "betmgm"
    ],
    "best_under": [
-    -158,
-    "fanduel"
+    -159,
+    "williamhill_us"
    ],
    "hits": {
     "l5": [
@@ -44870,13 +46473,13 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.527,
-   "dk": 3.5,
-   "over": 128,
-   "under": -169,
-   "best_under": [
-    -152,
-    "fanduel"
+   "p_over": 0.731,
+   "dk": 2.5,
+   "over": -168,
+   "under": 127,
+   "best_over": [
+    -155,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -44884,23 +46487,23 @@
      5
     ],
     "l10": [
-     5,
+     7,
      10
     ],
     "l15": [
-     7,
+     11,
      15
     ]
    },
-   "conf": 46.6,
-   "win_raw": 50.3,
-   "win_chance": 49.5,
-   "edge": 0.3,
+   "conf": 85.3,
+   "win_raw": 73.2,
+   "win_chance": 51.4,
+   "edge": 1.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
     "tough": [
-     1,
+     3,
      4
     ],
     "mid": [
@@ -44908,8 +46511,71 @@
      6
     ],
     "soft": [
-     5,
+     7,
      7
+    ]
+   }
+  },
+  {
+   "player": "Harrison Barnes",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "REB",
+   "model": 2.3,
+   "base": 2.3,
+   "matchup": -0.2,
+   "injury": 13.3,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.404,
+   "dk": 2.5,
+   "over": -104,
+   "under": -127,
+   "best_over": [
+    100,
+    "betmgm"
+   ],
+   "best_under": [
+    -109,
+    "betrivers"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     12,
+     15
+    ]
+   },
+   "conf": 52.9,
+   "win_raw": 67.8,
+   "win_chance": 51.4,
+   "edge": -0.2,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     1,
+     1
+    ],
+    "mid": [
+     8,
+     9
+    ],
+    "soft": [
+     3,
+     5
     ]
    }
   },
@@ -44930,8 +46596,8 @@
    "sched_notes": [],
    "p_over": 0.404,
    "dk": 2.5,
-   "over": 128,
-   "under": -170,
+   "over": 133,
+   "under": -176,
    "best_over": [
     140,
     "espnbet"
@@ -44989,11 +46655,11 @@
    "sched_notes": [],
    "p_over": 0.799,
    "dk": 15.5,
-   "over": -116,
-   "under": -113,
+   "over": -129,
+   "under": -102,
    "best_over": [
     100,
-    "fanduel"
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -45046,36 +46712,36 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.689,
-   "dk": 12.5,
-   "over": -115,
-   "under": -115,
+   "p_over": 0.592,
+   "dk": 13.5,
+   "over": -107,
+   "under": -123,
    "best_over": [
-    -114,
-    "betrivers"
+    -104,
+    "fanduel"
    ],
    "best_under": [
-    -105,
-    "espnbet"
+    -115,
+    "betmgm"
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     4,
+     3,
      10
     ],
     "l15": [
-     6,
+     4,
      15
     ]
    },
-   "conf": 52.1,
-   "win_raw": 57.3,
-   "win_chance": 49.2,
-   "edge": 1.9,
+   "conf": 29.4,
+   "win_raw": 46.2,
+   "win_chance": 51.8,
+   "edge": 0.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -45084,11 +46750,11 @@
      7
     ],
     "mid": [
-     4,
+     3,
      5
     ],
     "soft": [
-     2,
+     1,
      6
     ]
    }
@@ -45110,15 +46776,15 @@
    "sched_notes": [],
    "p_over": 0.415,
    "dk": 12.5,
-   "over": 100,
-   "under": -132,
+   "over": 103,
+   "under": -136,
    "best_over": [
     105,
     "betmgm"
    ],
    "best_under": [
-    -130,
-    "espnbet"
+    -135,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -45172,8 +46838,8 @@
    "sched_notes": [],
    "p_over": 0.5,
    "dk": 8.5,
-   "over": -104,
-   "under": -127,
+   "over": -103,
+   "under": -128,
    "best_over": [
     110,
     "fanduel"
@@ -45218,6 +46884,65 @@
    }
   },
   {
+   "player": "Julian Champagnie",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "RA",
+   "model": 7.5,
+   "base": 7.5,
+   "matchup": -1.0,
+   "injury": 13.6,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.5,
+   "dk": 7.5,
+   "over": 107,
+   "under": -141,
+   "best_under": [
+    -125,
+    "espnbet"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     12,
+     15
+    ]
+   },
+   "conf": 41.2,
+   "win_raw": 62.0,
+   "win_chance": 50.6,
+   "edge": 0.0,
+   "side": "Under",
+   "tiers": {
+    "tonight": "mid",
+    "tough": [
+     4,
+     4
+    ],
+    "mid": [
+     5,
+     8
+    ],
+    "soft": [
+     5,
+     6
+    ]
+   }
+  },
+  {
    "player": "Damian Lillard",
    "team": "POR",
    "opp": "SAS",
@@ -45234,11 +46959,15 @@
    "sched_notes": [],
    "p_over": 0.349,
    "dk": 7.5,
-   "over": 104,
-   "under": -137,
+   "over": 108,
+   "under": -142,
    "best_over": [
     110,
-    "betmgm"
+    "hardrockbet"
+   ],
+   "best_under": [
+    -136,
+    "fanduel"
    ],
    "hits": {
     "l5": [
@@ -45276,61 +47005,6 @@
    }
   },
   {
-   "player": "Julian Champagnie",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "RA",
-   "model": 7.5,
-   "base": 7.5,
-   "matchup": -1.0,
-   "injury": 13.6,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.5,
-   "dk": 7.5,
-   "over": 104,
-   "under": -136,
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     7,
-     10
-    ],
-    "l15": [
-     12,
-     15
-    ]
-   },
-   "conf": 41.2,
-   "win_raw": 62.0,
-   "win_chance": 50.6,
-   "edge": 0.0,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     4,
-     4
-    ],
-    "mid": [
-     5,
-     8
-    ],
-    "soft": [
-     5,
-     6
-    ]
-   }
-  },
-  {
    "player": "Devin Vassell",
    "team": "SAS",
    "opp": "POR",
@@ -45346,21 +47020,21 @@
    ],
    "sched": 0.0,
    "sched_notes": [],
-   "p_over": 0.633,
-   "dk": 6.5,
-   "over": -144,
-   "under": 110,
+   "p_over": 0.485,
+   "dk": 7.5,
+   "over": 108,
+   "under": -142,
    "best_over": [
-    -132,
-    "fanduel"
+    116,
+    "betrivers"
    ],
    "hits": {
     "l5": [
-     4,
+     2,
      5
     ],
     "l10": [
-     5,
+     6,
      10
     ],
     "l15": [
@@ -45368,15 +47042,15 @@
      15
     ]
    },
-   "conf": 57.9,
-   "win_raw": 62.0,
-   "win_chance": 50.6,
-   "edge": 0.9,
-   "side": "Over",
+   "conf": 32.6,
+   "win_raw": 54.9,
+   "win_chance": 48.5,
+   "edge": -0.1,
+   "side": "Under",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
+     5,
      6
     ],
     "mid": [
@@ -45384,7 +47058,7 @@
      4
     ],
     "soft": [
-     4,
+     2,
      6
     ]
    }
@@ -45406,15 +47080,15 @@
    "sched_notes": [],
    "p_over": 0.442,
    "dk": 3.5,
-   "over": 126,
-   "under": -166,
+   "over": 130,
+   "under": -172,
    "best_over": [
-    130,
-    "williamhill_us"
+    132,
+    "betrivers"
    ],
    "best_under": [
-    -157,
-    "betrivers"
+    -155,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -45469,14 +47143,10 @@
    "sched_notes": [],
    "p_over": 0.731,
    "dk": 2.5,
-   "over": -121,
-   "under": -109,
-   "best_over": [
-    -113,
-    "betrivers"
-   ],
+   "over": -109,
+   "under": -121,
    "best_under": [
-    -106,
+    -102,
     "fanduel"
    ],
    "hits": {
@@ -45515,69 +47185,6 @@
    }
   },
   {
-   "player": "Victor Wembanyama",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "3PM",
-   "model": 2.8,
-   "base": 2.8,
-   "matchup": -2.6,
-   "injury": 14.5,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.531,
-   "dk": 2.5,
-   "over": 125,
-   "under": -165,
-   "best_over": [
-    130,
-    "betmgm"
-   ],
-   "best_under": [
-    -150,
-    "hardrockbet"
-   ],
-   "hits": {
-    "l5": [
-     2,
-     5
-    ],
-    "l10": [
-     4,
-     10
-    ],
-    "l15": [
-     6,
-     15
-    ]
-   },
-   "conf": 43.6,
-   "win_raw": 47.9,
-   "win_chance": 52.3,
-   "edge": 0.3,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     2,
-     6
-    ],
-    "mid": [
-     4,
-     9
-    ],
-    "soft": [
-     0,
-     2
-    ]
-   }
-  },
-  {
    "player": "Toumani Camara",
    "team": "POR",
    "opp": "SAS",
@@ -45594,15 +47201,15 @@
    "sched_notes": [],
    "p_over": 0.217,
    "dk": 2.5,
-   "over": 130,
-   "under": -171,
+   "over": 129,
+   "under": -170,
    "best_over": [
-    135,
-    "hardrockbet"
+    142,
+    "fanduel"
    ],
    "best_under": [
-    -160,
-    "betmgm"
+    -159,
+    "betrivers"
    ],
    "hits": {
     "l5": [
@@ -45640,6 +47247,69 @@
    }
   },
   {
+   "player": "Victor Wembanyama",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "3PM",
+   "model": 2.8,
+   "base": 2.8,
+   "matchup": -2.6,
+   "injury": 14.5,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.531,
+   "dk": 2.5,
+   "over": 132,
+   "under": -175,
+   "best_over": [
+    140,
+    "betmgm"
+   ],
+   "best_under": [
+    -148,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     2,
+     5
+    ],
+    "l10": [
+     4,
+     10
+    ],
+    "l15": [
+     6,
+     15
+    ]
+   },
+   "conf": 43.6,
+   "win_raw": 47.9,
+   "win_chance": 52.3,
+   "edge": 0.3,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     2,
+     6
+    ],
+    "mid": [
+     4,
+     9
+    ],
+    "soft": [
+     0,
+     2
+    ]
+   }
+  },
+  {
    "player": "Jrue Holiday",
    "team": "POR",
    "opp": "SAS",
@@ -45656,14 +47326,14 @@
    "sched_notes": [],
    "p_over": 0.482,
    "dk": 2.5,
-   "over": 138,
-   "under": -184,
+   "over": 142,
+   "under": -188,
    "best_over": [
     145,
-    "hardrockbet"
+    "betmgm"
    ],
    "best_under": [
-    -182,
+    -180,
     "betrivers"
    ],
    "hits": {
@@ -45719,11 +47389,11 @@
    "sched_notes": [],
    "p_over": 0.769,
    "dk": 1.5,
-   "over": -170,
-   "under": 128,
+   "over": -141,
+   "under": 107,
    "best_under": [
-    141,
-    "williamhill_us"
+    140,
+    "betmgm"
    ],
    "hits": {
     "l5": [
@@ -45761,65 +47431,6 @@
    }
   },
   {
-   "player": "Devin Vassell",
-   "team": "SAS",
-   "opp": "POR",
-   "game": "SAS@POR",
-   "stat": "3PM",
-   "model": 2.0,
-   "base": 1.9,
-   "matchup": -3.2,
-   "injury": 20.0,
-   "inj_out": [
-    "De'Aaron Fox",
-    "Dylan Harper"
-   ],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.594,
-   "dk": 1.5,
-   "over": -156,
-   "under": 119,
-   "best_over": [
-    -140,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 73.4,
-   "win_raw": 54.3,
-   "win_chance": 48.3,
-   "edge": 0.5,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     2,
-     7
-    ],
-    "mid": [
-     1,
-     4
-    ],
-    "soft": [
-     4,
-     5
-    ]
-   }
-  },
-  {
    "player": "Deni Avdija",
    "team": "POR",
    "opp": "SAS",
@@ -45836,11 +47447,11 @@
    "sched_notes": [],
    "p_over": 0.692,
    "dk": 1.5,
-   "over": -134,
+   "over": -135,
    "under": 102,
    "best_under": [
-    105,
-    "williamhill_us"
+    110,
+    "hardrockbet"
    ],
    "hits": {
     "l5": [
@@ -45878,6 +47489,124 @@
    }
   },
   {
+   "player": "Devin Vassell",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "3PM",
+   "model": 2.0,
+   "base": 1.9,
+   "matchup": -3.2,
+   "injury": 20.0,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.594,
+   "dk": 1.5,
+   "over": -133,
+   "under": 101,
+   "best_under": [
+    126,
+    "fanduel"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     5,
+     10
+    ],
+    "l15": [
+     7,
+     15
+    ]
+   },
+   "conf": 73.4,
+   "win_raw": 54.3,
+   "win_chance": 48.3,
+   "edge": 0.5,
+   "side": "Over",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     2,
+     7
+    ],
+    "mid": [
+     1,
+     4
+    ],
+    "soft": [
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "player": "Harrison Barnes",
+   "team": "SAS",
+   "opp": "POR",
+   "game": "SAS@POR",
+   "stat": "3PM",
+   "model": 1.2,
+   "base": 1.2,
+   "matchup": -3.5,
+   "injury": 13.3,
+   "inj_out": [
+    "De'Aaron Fox",
+    "Dylan Harper"
+   ],
+   "sched": 0.0,
+   "sched_notes": [],
+   "p_over": 0.337,
+   "dk": 1.5,
+   "over": 114,
+   "under": -150,
+   "best_under": [
+    -120,
+    "betmgm"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "conf": 79.1,
+   "win_raw": 69.1,
+   "win_chance": 51.4,
+   "edge": -0.3,
+   "side": "Under",
+   "tiers": {
+    "tonight": "tough",
+    "tough": [
+     5,
+     5
+    ],
+    "mid": [
+     5,
+     8
+    ],
+    "soft": [
+     1,
+     2
+    ]
+   }
+  },
+  {
    "player": "Scoot Henderson",
    "team": "POR",
    "opp": "SAS",
@@ -45894,14 +47623,14 @@
    "sched_notes": [],
    "p_over": 0.442,
    "dk": 1.5,
-   "over": 130,
-   "under": -172,
+   "over": 132,
+   "under": -174,
    "best_over": [
     138,
     "betrivers"
    ],
    "best_under": [
-    -155,
+    -160,
     "betmgm"
    ],
    "hits": {
@@ -46226,7 +47955,7 @@
    "game": "SAS@POR"
   }
  ],
- "injuries_updated": "11/25 10:03 PM ET",
+ "injuries_updated": "11/25 10:07 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -48320,319 +50049,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-13T22:14",
-   "games": [
-    {
-     "id": "CLE@MIA",
-     "matchup": "CLE @ MIA",
-     "model_spread": -0.4,
-     "model_total": 230.6,
-     "dk_spread": "-2.5",
-     "dk_total": 235.5
-    },
-    {
-     "id": "ATL@CHI",
-     "matchup": "ATL @ CHI",
-     "model_spread": 2.6,
-     "model_total": 233.4,
-     "dk_spread": "+6.5",
-     "dk_total": 246.5
-    },
-    {
-     "id": "MEM@NOP",
-     "matchup": "MEM @ NOP",
-     "model_spread": 1.6,
-     "model_total": 232.0,
-     "dk_spread": "+3.5",
-     "dk_total": 235.5
-    },
-    {
-     "id": "UTA@HOU",
-     "matchup": "UTA @ HOU",
-     "model_spread": -8.4,
-     "model_total": 224.7,
-     "dk_spread": "-15.5",
-     "dk_total": 220.5
-    },
-    {
-     "id": "GSW@SAS",
-     "matchup": "GSW @ SAS",
-     "model_spread": -3.3,
-     "model_total": 228.1,
-     "dk_spread": "-12.5",
-     "dk_total": 217.5
-    },
-    {
-     "id": "POR@SAC",
-     "matchup": "POR @ SAC",
-     "model_spread": 3.5,
-     "model_total": 229.0,
-     "dk_spread": "+10.5",
-     "dk_total": 229.5
-    },
-    {
-     "id": "OKC@LAC",
-     "matchup": "OKC @ LAC",
-     "model_spread": 0.6,
-     "model_total": 225.1,
-     "dk_spread": "+7.5",
-     "dk_total": 222.5
-    },
-    {
-     "id": "DEN@NOP",
-     "matchup": "DEN @ NOP",
-     "model_spread": 0.2,
-     "model_total": 231.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DAL@CLE",
-     "matchup": "DAL @ CLE",
-     "model_spread": -2.6,
-     "model_total": 227.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DET@MIA",
-     "matchup": "DET @ MIA",
-     "model_spread": 1.2,
-     "model_total": 228.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "BKN@MEM",
-     "matchup": "BKN @ MEM",
-     "model_spread": -5.5,
-     "model_total": 227.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "CHI@MIN",
-     "matchup": "CHI @ MIN",
-     "model_spread": -10.6,
-     "model_total": 230.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": [
-    {
-     "player": "Tyrese Proctor",
-     "stat": "PRA",
-     "model": 18.7,
-     "dk": 11.5,
-     "edge": 7.2
-    },
-    {
-     "player": "Shai Gilgeous-Alexander",
-     "stat": "PR",
-     "model": 42.3,
-     "dk": 35.5,
-     "edge": 6.8
-    },
-    {
-     "player": "Shai Gilgeous-Alexander",
-     "stat": "PRA",
-     "model": 47.9,
-     "dk": 41.5,
-     "edge": 6.4
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PR",
-     "model": 33.8,
-     "dk": 27.5,
-     "edge": 6.3
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PRA",
-     "model": 31.7,
-     "dk": 25.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Jalen Suggs",
-     "stat": "PRA",
-     "model": 19.5,
-     "dk": 13.5,
-     "edge": 6.0
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PA",
-     "model": 35.4,
-     "dk": 29.5,
-     "edge": 5.9
-    },
-    {
-     "player": "Stephon Castle",
-     "stat": "PRA",
-     "model": 21.6,
-     "dk": 27.5,
-     "edge": -5.9
-    },
-    {
-     "player": "Stephon Castle",
-     "stat": "PA",
-     "model": 16.7,
-     "dk": 22.5,
-     "edge": -5.8
-    },
-    {
-     "player": "Jalen Suggs",
-     "stat": "RA",
-     "model": 11.2,
-     "dk": 5.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Tyrese Proctor",
-     "stat": "PR",
-     "model": 15.2,
-     "dk": 9.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PRA",
-     "model": 39.2,
-     "dk": 33.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Isaiah Collier",
-     "stat": "PRA",
-     "model": 18.2,
-     "dk": 12.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Shai Gilgeous-Alexander",
-     "stat": "PTS",
-     "model": 37.2,
-     "dk": 31.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Cam Spencer",
-     "stat": "PRA",
-     "model": 21.1,
-     "dk": 15.5,
-     "edge": 5.6
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PRA",
-     "model": 22.0,
-     "dk": 16.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Ty Jerome",
-     "stat": "PTS",
-     "model": 30.0,
-     "dk": 24.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "stat": "PTS",
-     "model": 26.0,
-     "dk": 20.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PTS",
-     "model": 16.9,
-     "dk": 11.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Shai Gilgeous-Alexander",
-     "stat": "PA",
-     "model": 42.9,
-     "dk": 37.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Giannis Antetokounmpo",
-     "stat": "PRA",
-     "model": 52.8,
-     "dk": 47.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Anthony Black",
-     "stat": "PR",
-     "model": 25.6,
-     "dk": 20.5,
-     "edge": 5.1
-    },
-    {
-     "player": "James Harden",
-     "stat": "PR",
-     "model": 26.6,
-     "dk": 21.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Cam Spencer",
-     "stat": "PA",
-     "model": 17.6,
-     "dk": 12.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Yaxel Lendeborg",
-     "stat": "PR",
-     "model": 33.6,
-     "dk": 28.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Tyrese Proctor",
-     "stat": "PA",
-     "model": 14.5,
-     "dk": 9.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PR",
-     "model": 20.5,
-     "dk": 15.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Cam Spencer",
-     "stat": "PR",
-     "model": 15.5,
-     "dk": 10.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Isaiah Collier",
-     "stat": "PR",
-     "model": 13.5,
-     "dk": 8.5,
-     "edge": 5.0
-    },
-    {
-     "player": "Stephon Castle",
-     "stat": "PR",
-     "model": 16.5,
-     "dk": 21.5,
-     "edge": -5.0
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-14T01:39",
    "games": [
@@ -66319,6 +67735,271 @@
      "stat": "PA",
      "model": 31.7,
      "dk": 26.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Josh Giddey",
+     "stat": "RA",
+     "model": 20.6,
+     "dk": 15.5,
+     "edge": 5.1
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-25T22:07",
+   "games": [
+    {
+     "id": "MIN@OKC",
+     "matchup": "MIN @ OKC",
+     "model_spread": 0.3,
+     "model_total": 224.1,
+     "dk_spread": "-1.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "LAC@MEM",
+     "matchup": "LAC @ MEM",
+     "model_spread": -7.6,
+     "model_total": 229.0,
+     "dk_spread": "-7.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "BKN@MIL",
+     "matchup": "BKN @ MIL",
+     "model_spread": -1.4,
+     "model_total": 229.8,
+     "dk_spread": "-1.5",
+     "dk_total": 234.5
+    },
+    {
+     "id": "PHX@HOU",
+     "matchup": "PHX @ HOU",
+     "model_spread": -5.2,
+     "model_total": 228.2,
+     "dk_spread": "-9.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "SAC@GSW",
+     "matchup": "SAC @ GSW",
+     "model_spread": -6.3,
+     "model_total": 225.4,
+     "dk_spread": "-8.5",
+     "dk_total": 216.5
+    },
+    {
+     "id": "SAS@POR",
+     "matchup": "SAS @ POR",
+     "model_spread": -0.3,
+     "model_total": 225.6,
+     "dk_spread": "+3.5",
+     "dk_total": 224.5
+    }
+   ],
+   "props": [
+    {
+     "player": "Cam Spencer",
+     "stat": "PA",
+     "model": 24.5,
+     "dk": 14.5,
+     "edge": 10.0
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PRA",
+     "model": 27.1,
+     "dk": 17.5,
+     "edge": 9.6
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PR",
+     "model": 52.7,
+     "dk": 43.5,
+     "edge": 9.2
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PRA",
+     "model": 56.4,
+     "dk": 47.5,
+     "edge": 8.9
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "stat": "PRA",
+     "model": 47.5,
+     "dk": 39.5,
+     "edge": 8.0
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PTS",
+     "model": 17.4,
+     "dk": 9.5,
+     "edge": 7.9
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PR",
+     "model": 20.1,
+     "dk": 12.5,
+     "edge": 7.6
+    },
+    {
+     "player": "Jalen Brunson",
+     "stat": "PRA",
+     "model": 42.8,
+     "dk": 35.5,
+     "edge": 7.3
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "stat": "PR",
+     "model": 42.4,
+     "dk": 35.5,
+     "edge": 6.9
+    },
+    {
+     "player": "Buddy Hield",
+     "stat": "PR",
+     "model": 24.3,
+     "dk": 17.5,
+     "edge": 6.8
+    },
+    {
+     "player": "Jalen Brunson",
+     "stat": "PA",
+     "model": 39.0,
+     "dk": 32.5,
+     "edge": 6.5
+    },
+    {
+     "player": "Buddy Hield",
+     "stat": "PRA",
+     "model": 25.9,
+     "dk": 19.5,
+     "edge": 6.4
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PTS",
+     "model": 36.9,
+     "dk": 30.5,
+     "edge": 6.4
+    },
+    {
+     "player": "Cedric Coward",
+     "stat": "PRA",
+     "model": 33.8,
+     "dk": 27.5,
+     "edge": 6.3
+    },
+    {
+     "player": "Buddy Hield",
+     "stat": "PTS",
+     "model": 19.7,
+     "dk": 13.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PA",
+     "model": 40.7,
+     "dk": 34.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Moussa Diabate",
+     "stat": "PRA",
+     "model": 28.6,
+     "dk": 22.5,
+     "edge": 6.1
+    },
+    {
+     "player": "Stephon Castle",
+     "stat": "PRA",
+     "model": 37.5,
+     "dk": 31.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Josh Giddey",
+     "stat": "PRA",
+     "model": 34.2,
+     "dk": 28.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Isaac Okoro",
+     "stat": "PRA",
+     "model": 20.2,
+     "dk": 14.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Taylor Hendricks",
+     "stat": "PR",
+     "model": 19.2,
+     "dk": 13.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Jalen Brunson",
+     "stat": "PR",
+     "model": 35.1,
+     "dk": 29.5,
+     "edge": 5.6
+    },
+    {
+     "player": "James Harden",
+     "stat": "PR",
+     "model": 27.1,
+     "dk": 21.5,
+     "edge": 5.6
+    },
+    {
+     "player": "VJ Edgecombe",
+     "stat": "PRA",
+     "model": 29.9,
+     "dk": 24.5,
+     "edge": 5.4
+    },
+    {
+     "player": "Moussa Diabate",
+     "stat": "PR",
+     "model": 25.8,
+     "dk": 20.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Karl-Anthony Towns",
+     "stat": "RA",
+     "model": 21.8,
+     "dk": 16.5,
+     "edge": 5.3
+    },
+    {
+     "player": "Shai Gilgeous-Alexander",
+     "stat": "PRA",
+     "model": 47.7,
+     "dk": 42.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Stephon Castle",
+     "stat": "PA",
+     "model": 31.7,
+     "dk": 26.5,
+     "edge": 5.2
+    },
+    {
+     "player": "Stephon Castle",
+     "stat": "PR",
+     "model": 28.7,
+     "dk": 23.5,
      "edge": 5.2
     },
     {
@@ -89187,8 +90868,8 @@
  "board": {
   "date": "2026-11-25",
   "qualified": 33,
-  "positive": 14,
-  "top_win": 57.2,
+  "positive": 13,
+  "top_win": 56.2,
   "trust": {
    "s": 0.24118236971627688,
    "n": 38,
@@ -90731,7 +92412,7 @@
     "away": "SAC",
     "side": "Under",
     "line": 5.5,
-    "price": -102,
+    "price": -116,
     "model": 4.3,
     "edge": -1.2,
     "edge_pct": 21.8,
@@ -90786,16 +92467,16 @@
      "Matchup vs SAC: +4.2% to his PTS projection from their defense and pace (works against the under)",
      "SAC ranks among the bottom-10 defenses for PTS; he went under 5.5 in 3 of 3 games against that tier",
      "Teammate injury boost: Stephen Curry out, +8.7% to his PTS projection (extra minutes and usage)",
-     "Best price: +105 at BetMGM (DraftKings -102; the record is graded at DraftKings)",
+     "Best price: -109 at BetRivers (DraftKings -116; the record is graded at DraftKings)",
      "Not on the injury report at pick time"
     ],
     "p_win": 56.2,
     "p_model": 68.8,
-    "ev": 11.3,
+    "ev": 4.6,
     "score": 81.3,
     "best": [
-     105,
-     "betmgm"
+     -109,
+     "betrivers"
     ],
     "player": "Draymond Green",
     "team": "GSW",
@@ -90804,19 +92485,19 @@
     "attempt": 10,
     "day": 1,
     "stake": 10,
-    "to_win": 9.8,
-    "picked_at": "2026-11-25 10:03 PM ET",
-    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 57.8% to win, +2.3% expected value",
+    "to_win": 8.62,
+    "picked_at": "2026-11-25 10:07 PM ET",
+    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +4.6% expected value",
     "open_line": 5.5,
     "open_price": 100,
     "first_picked_at": "2026-11-25 02:00 PM ET",
     "close_line": 5.5,
-    "close_price": -102,
-    "close_at": "2026-11-25 10:03 PM ET",
+    "close_price": -116,
+    "close_at": "2026-11-25 10:07 PM ET",
     "clv": {
      "line": 0.0,
-     "price": 0.5,
-     "beat": false,
+     "price": 3.7,
+     "beat": true,
      "final": false
     }
    },
@@ -98969,41 +100650,12 @@
  },
  "credits": {
   "limit": 250,
-  "used_today": 250,
-  "remaining": 5911,
-  "allowed_now": 0,
-  "skipped": [
-   "game lines",
-   "props SAC@GSW",
-   "props SAS@POR"
-  ],
+  "used_today": 269,
+  "remaining": 5892,
+  "allowed_now": 231,
+  "skipped": [],
   "slot": "pretip",
   "calls": [
-   {
-    "time": "02:00 PM",
-    "call": "props SAC@GSW",
-    "cost": 8
-   },
-   {
-    "time": "02:00 PM",
-    "call": "props SAS@POR",
-    "cost": 8
-   },
-   {
-    "time": "02:00 PM",
-    "call": "event list",
-    "cost": 0
-   },
-   {
-    "time": "02:00 PM",
-    "call": "alt lines SAC@GSW",
-    "cost": 4
-   },
-   {
-    "time": "02:00 PM",
-    "call": "alt lines CLE@NYK",
-    "cost": 4
-   },
    {
     "time": "02:00 PM",
     "call": "alt lines CHI@CHA",
@@ -99078,6 +100730,31 @@
     "time": "10:03 PM",
     "call": "event list",
     "cost": 0
+   },
+   {
+    "time": "10:07 PM",
+    "call": "balance check",
+    "cost": 0
+   },
+   {
+    "time": "10:07 PM",
+    "call": "game lines (off daily cap)",
+    "cost": 3
+   },
+   {
+    "time": "10:07 PM",
+    "call": "event list",
+    "cost": 0
+   },
+   {
+    "time": "10:07 PM",
+    "call": "props SAC@GSW (off daily cap)",
+    "cost": 8
+   },
+   {
+    "time": "10:07 PM",
+    "call": "props SAS@POR (off daily cap)",
+    "cost": 8
    }
   ],
   "history": [
@@ -99153,7 +100830,7 @@
    }
   ],
   "days_to_reset": 9,
-  "month_used": 2711,
+  "month_used": 2730,
   "month_limit": 5500
  },
  "futures": {
@@ -99371,11 +101048,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 4912,
+     "bets": 4918,
      "won": 2269,
      "lost": 2413,
      "push": 64,
-     "pending": 166,
+     "pending": 172,
      "units": -471.78
     },
     "Alt Ladder": {
@@ -99413,11 +101090,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 4912,
+     "bets": 4918,
      "won": 2269,
      "lost": 2413,
      "push": 64,
-     "pending": 166,
+     "pending": 172,
      "units": -471.78
     },
     "Alt Ladder": {
@@ -99488,7 +101165,7 @@
     "stat": "PTS",
     "dir": "Under",
     "line": 5.5,
-    "price": -102,
+    "price": -116,
     "model": 4.3,
     "edge": -1.2,
     "edge_pct": 21.8,
@@ -99497,20 +101174,20 @@
     "attempt": 10,
     "day": 1,
     "stake": 10,
-    "to_win": 9.8,
+    "to_win": 8.62,
     "bankroll_after": null,
     "win_chance": 56.2,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Highest win chance on the board at a ladder-friendly price: 57.8% to win, +2.3% expected value | Model projects 4.3 PTS vs a line of 5.5 (-1.2, 22% edge) | Went under the line in 8 of his last 10 games (3/5 in the last 5) | Averaging 5.0 over the last 5 and 3.6 over the last 14 | Minutes steady: 24 per game over the last 5 (26 over the last 14) | Matchup vs SAC: +4.2% to his PTS projection from their defense and pace (works against the under) | SAC ranks among the bottom-10 defenses for PTS; he went under 5.5 in 3 of 3 games against that tier | Teammate injury boost: Stephen Curry out, +8.7% to his PTS projection (extra minutes and usage) | Best price: +105 at BetMGM (DraftKings -102; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-25 10:03 PM ET",
+    "why": "Highest win chance on the board at a ladder-friendly price: 56.2% to win, +4.6% expected value | Model projects 4.3 PTS vs a line of 5.5 (-1.2, 22% edge) | Went under the line in 8 of his last 10 games (3/5 in the last 5) | Averaging 5.0 over the last 5 and 3.6 over the last 14 | Minutes steady: 24 per game over the last 5 (26 over the last 14) | Matchup vs SAC: +4.2% to his PTS projection from their defense and pace (works against the under) | SAC ranks among the bottom-10 defenses for PTS; he went under 5.5 in 3 of 3 games against that tier | Teammate injury boost: Stephen Curry out, +8.7% to his PTS projection (extra minutes and usage) | Best price: -109 at BetRivers (DraftKings -116; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-25 10:07 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
-     "price": 0.5,
-     "beat": false,
+     "price": 3.7,
+     "beat": true,
      "final": false
     },
     "open": [
@@ -99519,7 +101196,7 @@
     ],
     "close": [
      5.5,
-     -102
+     -116
     ]
    },
    {
@@ -103908,32 +105585,6 @@
     "why": "Model 11.3 vs DraftKings 8.5 (edge 2.8)"
    },
    {
-    "id": "model|2026-11-25|SAC @ GSW|Yaxel Lendeborg|PTS",
-    "source": "Model bet",
-    "date": "2026-11-25",
-    "game": "SAC @ GSW",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Yaxel Lendeborg Under 21.5 PTS",
-    "player": "Yaxel Lendeborg",
-    "team": "GSW",
-    "opp": "SAC",
-    "stat": "PTS",
-    "dir": "Under",
-    "line": 21.5,
-    "price": -125,
-    "model": 18.3,
-    "edge": -3.2,
-    "confidence": 60.7,
-    "win_chance": 49.0,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 18.3 vs DraftKings 21.5 (edge -3.2)"
-   },
-   {
     "id": "model|2026-11-25|SAC @ GSW|De'Andre Hunter|PTS",
     "source": "Model bet",
     "date": "2026-11-25",
@@ -103947,17 +105598,17 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 15.5,
-    "price": -102,
-    "model": 18.7,
-    "edge": 3.2,
-    "confidence": 61.9,
-    "win_chance": 48.6,
+    "price": -125,
+    "model": 18.6,
+    "edge": 3.1,
+    "confidence": 60.8,
+    "win_chance": 48.5,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 18.7 vs DraftKings 15.5 (edge 3.2)"
+    "why": "Model 18.6 vs DraftKings 15.5 (edge 3.1)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|Charles Bassey|PTS",
@@ -103973,7 +105624,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 10.5,
-    "price": -112,
+    "price": -103,
     "model": 12.9,
     "edge": 2.4,
     "confidence": 68.4,
@@ -103999,7 +105650,7 @@
     "stat": "PTS",
     "dir": "Under",
     "line": 5.5,
-    "price": -102,
+    "price": -116,
     "model": 4.3,
     "edge": -1.2,
     "confidence": 81.3,
@@ -104025,17 +105676,17 @@
     "stat": "PA",
     "dir": "Under",
     "line": 25.5,
-    "price": -123,
-    "model": 22.1,
-    "edge": -3.4,
-    "confidence": 61.6,
+    "price": -124,
+    "model": 22.0,
+    "edge": -3.5,
+    "confidence": 62.3,
     "win_chance": 49.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 22.1 vs DraftKings 25.5 (edge -3.4)"
+    "why": "Model 22.0 vs DraftKings 25.5 (edge -3.5)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|De'Andre Hunter|PA",
@@ -104044,24 +105695,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Andre Hunter Over 17.5 PA",
+    "pick": "De'Andre Hunter Over 18.5 PA",
     "player": "De'Andre Hunter",
     "team": "SAC",
     "opp": "GSW",
     "stat": "PA",
     "dir": "Over",
-    "line": 17.5,
-    "price": -108,
-    "model": 21.3,
-    "edge": 3.8,
-    "confidence": 70.3,
-    "win_chance": 49.8,
+    "line": 18.5,
+    "price": -107,
+    "model": 21.2,
+    "edge": 2.7,
+    "confidence": 57.4,
+    "win_chance": 48.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 21.3 vs DraftKings 17.5 (edge 3.8)"
+    "why": "Model 21.2 vs DraftKings 18.5 (edge 2.7)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|De'Andre Hunter|PR",
@@ -104070,24 +105721,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Andre Hunter Over 19.5 PR",
+    "pick": "De'Andre Hunter Over 20.5 PR",
     "player": "De'Andre Hunter",
     "team": "SAC",
     "opp": "GSW",
     "stat": "PR",
     "dir": "Over",
-    "line": 19.5,
-    "price": -126,
+    "line": 20.5,
+    "price": -117,
     "model": 23.2,
-    "edge": 3.7,
-    "confidence": 65.3,
-    "win_chance": 49.6,
+    "edge": 2.7,
+    "confidence": 54.9,
+    "win_chance": 48.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 23.2 vs DraftKings 19.5 (edge 3.7)"
+    "why": "Model 23.2 vs DraftKings 20.5 (edge 2.7)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|Charles Bassey|PR",
@@ -104096,24 +105747,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Charles Bassey Over 19.5 PR",
+    "pick": "Charles Bassey Over 18.5 PR",
     "player": "Charles Bassey",
     "team": "GSW",
     "opp": "SAC",
     "stat": "PR",
     "dir": "Over",
-    "line": 19.5,
-    "price": -104,
+    "line": 18.5,
+    "price": -111,
     "model": 21.3,
-    "edge": 1.8,
-    "confidence": 37.3,
-    "win_chance": 52.5,
+    "edge": 2.8,
+    "confidence": 48.0,
+    "win_chance": 47.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 21.3 vs DraftKings 19.5 (edge 1.8)"
+    "why": "Model 21.3 vs DraftKings 18.5 (edge 2.8)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|Draymond Green|PR",
@@ -104129,7 +105780,7 @@
     "stat": "PR",
     "dir": "Under",
     "line": 10.5,
-    "price": 101,
+    "price": -116,
     "model": 8.7,
     "edge": -1.8,
     "confidence": 71.9,
@@ -104155,7 +105806,7 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 22.5,
-    "price": -106,
+    "price": -121,
     "model": 25.8,
     "edge": 3.3,
     "confidence": 53.9,
@@ -104181,7 +105832,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 6.5,
-    "price": -130,
+    "price": -118,
     "model": 7.6,
     "edge": 1.1,
     "confidence": 61.6,
@@ -104200,24 +105851,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Victor Wembanyama Over 29.5 PTS",
+    "pick": "Victor Wembanyama Over 30.5 PTS",
     "player": "Victor Wembanyama",
     "team": "SAS",
     "opp": "POR",
     "stat": "PTS",
     "dir": "Over",
-    "line": 29.5,
-    "price": -112,
+    "line": 30.5,
+    "price": -120,
     "model": 36.9,
-    "edge": 7.4,
-    "confidence": 74.3,
-    "win_chance": 51.4,
+    "edge": 6.4,
+    "confidence": 63.4,
+    "win_chance": 50.3,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 36.9 vs DraftKings 29.5 (edge 7.4)"
+    "why": "Model 36.9 vs DraftKings 30.5 (edge 6.4)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Stephon Castle|PTS",
@@ -104226,24 +105877,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephon Castle Over 19.5 PTS",
+    "pick": "Stephon Castle Over 18.5 PTS",
     "player": "Stephon Castle",
     "team": "SAS",
     "opp": "POR",
     "stat": "PTS",
     "dir": "Over",
-    "line": 19.5,
-    "price": -107,
+    "line": 18.5,
+    "price": -106,
     "model": 23.1,
-    "edge": 3.6,
-    "confidence": 56.1,
-    "win_chance": 48.4,
+    "edge": 4.6,
+    "confidence": 77.8,
+    "win_chance": 49.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 23.1 vs DraftKings 19.5 (edge 3.6)"
+    "why": "Model 23.1 vs DraftKings 18.5 (edge 4.6)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Jrue Holiday|PTS",
@@ -104259,7 +105910,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 12.5,
-    "price": -117,
+    "price": -118,
     "model": 15.4,
     "edge": 2.9,
     "confidence": 74.8,
@@ -104285,7 +105936,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 11.5,
-    "price": -115,
+    "price": -112,
     "model": 14.4,
     "edge": 2.9,
     "confidence": 73.4,
@@ -104311,7 +105962,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 10.5,
-    "price": -119,
+    "price": -115,
     "model": 11.9,
     "edge": 1.4,
     "confidence": 53.3,
@@ -104337,7 +105988,7 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 10.5,
-    "price": 100,
+    "price": -103,
     "model": 12.0,
     "edge": 1.5,
     "confidence": 50.5,
@@ -104356,24 +106007,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Victor Wembanyama Over 32.5 PA",
+    "pick": "Victor Wembanyama Over 34.5 PA",
     "player": "Victor Wembanyama",
     "team": "SAS",
     "opp": "POR",
     "stat": "PA",
     "dir": "Over",
-    "line": 32.5,
-    "price": -123,
+    "line": 34.5,
+    "price": -115,
     "model": 40.7,
-    "edge": 8.2,
-    "confidence": 70.7,
-    "win_chance": 51.4,
+    "edge": 6.2,
+    "confidence": 54.3,
+    "win_chance": 49.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 40.7 vs DraftKings 32.5 (edge 8.2)"
+    "why": "Model 40.7 vs DraftKings 34.5 (edge 6.2)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Jrue Holiday|PA",
@@ -104408,24 +106059,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Victor Wembanyama Over 42.5 PR",
+    "pick": "Victor Wembanyama Over 43.5 PR",
     "player": "Victor Wembanyama",
     "team": "SAS",
     "opp": "POR",
     "stat": "PR",
     "dir": "Over",
-    "line": 42.5,
-    "price": -108,
+    "line": 43.5,
+    "price": -113,
     "model": 52.7,
-    "edge": 10.2,
-    "confidence": 75.3,
-    "win_chance": 51.4,
+    "edge": 9.2,
+    "confidence": 57.3,
+    "win_chance": 50.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 52.7 vs DraftKings 42.5 (edge 10.2)"
+    "why": "Model 52.7 vs DraftKings 43.5 (edge 9.2)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Jrue Holiday|PR",
@@ -104460,24 +106111,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Victor Wembanyama Over 45.5 PRA",
+    "pick": "Victor Wembanyama Over 47.5 PRA",
     "player": "Victor Wembanyama",
     "team": "SAS",
     "opp": "POR",
     "stat": "PRA",
     "dir": "Over",
-    "line": 45.5,
-    "price": -115,
+    "line": 47.5,
+    "price": -113,
     "model": 56.4,
-    "edge": 10.9,
-    "confidence": 75.2,
-    "win_chance": 51.4,
+    "edge": 8.9,
+    "confidence": 49.3,
+    "win_chance": 49.3,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 56.4 vs DraftKings 45.5 (edge 10.9)"
+    "why": "Model 56.4 vs DraftKings 47.5 (edge 8.9)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Jrue Holiday|PRA",
@@ -104493,11 +106144,11 @@
     "stat": "PRA",
     "dir": "Over",
     "line": 21.5,
-    "price": -111,
+    "price": -110,
     "model": 24.0,
     "edge": 2.5,
     "confidence": 52.1,
-    "win_chance": 48.8,
+    "win_chance": 48.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -104519,7 +106170,7 @@
     "stat": "REB",
     "dir": "Over",
     "line": 12.5,
-    "price": -103,
+    "price": -110,
     "model": 15.8,
     "edge": 3.3,
     "confidence": 66.1,
@@ -104545,7 +106196,7 @@
     "stat": "RA",
     "dir": "Over",
     "line": 15.5,
-    "price": -116,
+    "price": -129,
     "model": 19.6,
     "edge": 4.1,
     "confidence": 79.8,
@@ -106202,24 +107853,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Anthony Melton Under 15.5 PA",
+    "pick": "De'Anthony Melton Under 14.5 PA",
     "player": "De'Anthony Melton",
     "team": "GSW",
     "opp": "SAC",
     "stat": "PA",
     "dir": "Under",
-    "line": 15.5,
-    "price": -129,
+    "line": 14.5,
+    "price": -127,
     "model": 10.6,
-    "edge": -4.9,
-    "confidence": 93.6,
+    "edge": -3.9,
+    "confidence": 89.9,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 10.6 vs DraftKings 15.5 (edge -4.9)"
+    "why": "Model 10.6 vs DraftKings 14.5 (edge -3.9)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|De'Anthony Melton|PR",
@@ -106228,24 +107879,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Anthony Melton Under 15.5 PR",
+    "pick": "De'Anthony Melton Under 14.5 PR",
     "player": "De'Anthony Melton",
     "team": "GSW",
     "opp": "SAC",
     "stat": "PR",
     "dir": "Under",
-    "line": 15.5,
-    "price": -109,
+    "line": 14.5,
+    "price": -108,
     "model": 10.3,
-    "edge": -5.2,
-    "confidence": 93.6,
+    "edge": -4.2,
+    "confidence": 89.9,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 10.3 vs DraftKings 15.5 (edge -5.2)"
+    "why": "Model 10.3 vs DraftKings 14.5 (edge -4.2)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|De'Anthony Melton|PRA",
@@ -106254,24 +107905,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "De'Anthony Melton Under 19.5 PRA",
+    "pick": "De'Anthony Melton Under 17.5 PRA",
     "player": "De'Anthony Melton",
     "team": "GSW",
     "opp": "SAC",
     "stat": "PRA",
     "dir": "Under",
-    "line": 19.5,
-    "price": -127,
+    "line": 17.5,
+    "price": -106,
     "model": 14.1,
-    "edge": -5.4,
-    "confidence": 93.6,
+    "edge": -3.4,
+    "confidence": 79.9,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 14.1 vs DraftKings 19.5 (edge -5.4)"
+    "why": "Model 14.1 vs DraftKings 17.5 (edge -3.4)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Stephon Castle|PA",
@@ -106287,7 +107938,7 @@
     "stat": "PA",
     "dir": "Over",
     "line": 26.5,
-    "price": -118,
+    "price": -109,
     "model": 31.7,
     "edge": 5.2,
     "confidence": 58.2,
@@ -106313,7 +107964,7 @@
     "stat": "PA",
     "dir": "Over",
     "line": 13.5,
-    "price": -119,
+    "price": -116,
     "model": 16.6,
     "edge": 3.1,
     "confidence": 68.8,
@@ -106332,24 +107983,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephon Castle Over 24.5 PR",
+    "pick": "Stephon Castle Over 23.5 PR",
     "player": "Stephon Castle",
     "team": "SAS",
     "opp": "POR",
     "stat": "PR",
     "dir": "Over",
-    "line": 24.5,
-    "price": -119,
+    "line": 23.5,
+    "price": -125,
     "model": 28.7,
-    "edge": 4.2,
-    "confidence": 48.3,
-    "win_chance": 47.6,
+    "edge": 5.2,
+    "confidence": 63.7,
+    "win_chance": 49.1,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 28.7 vs DraftKings 24.5 (edge 4.2)"
+    "why": "Model 28.7 vs DraftKings 23.5 (edge 5.2)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Donovan Clingan|PR",
@@ -106365,7 +108016,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 21.5,
-    "price": -124,
+    "price": -123,
     "model": 23.9,
     "edge": 2.4,
     "confidence": 48.5,
@@ -106391,7 +108042,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 16.5,
-    "price": -128,
+    "price": -121,
     "model": 20.1,
     "edge": 3.6,
     "confidence": 63.1,
@@ -106417,7 +108068,7 @@
     "stat": "PR",
     "dir": "Over",
     "line": 12.5,
-    "price": -113,
+    "price": -110,
     "model": 14.3,
     "edge": 1.8,
     "confidence": 44.3,
@@ -106443,11 +108094,11 @@
     "stat": "REB",
     "dir": "Over",
     "line": 10.5,
-    "price": -133,
+    "price": -125,
     "model": 11.9,
     "edge": 1.4,
     "confidence": 66.2,
-    "win_chance": 51.3,
+    "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -106514,24 +108165,24 @@
     "game": "SAC @ GSW",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Darius Acuff Jr. Over 7.5 AST",
+    "pick": "Darius Acuff Jr. Over 6.5 AST",
     "player": "Darius Acuff Jr.",
     "team": "SAC",
     "opp": "GSW",
     "stat": "AST",
     "dir": "Over",
-    "line": 7.5,
-    "price": 108,
+    "line": 6.5,
+    "price": -142,
     "model": 8.3,
-    "edge": 0.8,
-    "confidence": 44.0,
-    "win_chance": 47.7,
+    "edge": 1.8,
+    "confidence": 70.7,
+    "win_chance": 50.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 8.3 vs DraftKings 7.5 (edge 0.8)"
+    "why": "Model 8.3 vs DraftKings 6.5 (edge 1.8)"
    },
    {
     "id": "model|2026-11-25|SAC @ GSW|Domantas Sabonis|PTS",
@@ -106547,69 +108198,17 @@
     "stat": "PTS",
     "dir": "Over",
     "line": 14.5,
-    "price": -102,
-    "model": 16.1,
-    "edge": 1.6,
-    "confidence": 52.9,
-    "win_chance": 49.9,
+    "price": -110,
+    "model": 16.0,
+    "edge": 1.5,
+    "confidence": 51.6,
+    "win_chance": 49.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 16.1 vs DraftKings 14.5 (edge 1.6)"
-   },
-   {
-    "id": "model|2026-11-25|SAC @ GSW|Draymond Green|PRA",
-    "source": "Model bet",
-    "date": "2026-11-25",
-    "game": "SAC @ GSW",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Draymond Green Under 16.5 PRA",
-    "player": "Draymond Green",
-    "team": "GSW",
-    "opp": "SAC",
-    "stat": "PRA",
-    "dir": "Under",
-    "line": 16.5,
-    "price": -128,
-    "model": 14.4,
-    "edge": -2.1,
-    "confidence": 56.5,
-    "win_chance": 51.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 14.4 vs DraftKings 16.5 (edge -2.1)"
-   },
-   {
-    "id": "model|2026-11-25|SAS @ POR|Deni Avdija|REB",
-    "source": "Model bet",
-    "date": "2026-11-25",
-    "game": "SAS @ POR",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Deni Avdija Under 6.5 REB",
-    "player": "Deni Avdija",
-    "team": "POR",
-    "opp": "SAS",
-    "stat": "REB",
-    "dir": "Under",
-    "line": 6.5,
-    "price": -152,
-    "model": 5.6,
-    "edge": -0.9,
-    "confidence": 57.0,
-    "win_chance": 50.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 5.6 vs DraftKings 6.5 (edge -0.9)"
+    "why": "Model 16.0 vs DraftKings 14.5 (edge 1.5)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Stephon Castle|AST",
@@ -106625,7 +108224,7 @@
     "stat": "AST",
     "dir": "Over",
     "line": 7.5,
-    "price": 104,
+    "price": -127,
     "model": 8.8,
     "edge": 1.3,
     "confidence": 51.4,
@@ -106644,24 +108243,24 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Stephon Castle Over 32.5 PRA",
+    "pick": "Stephon Castle Over 31.5 PRA",
     "player": "Stephon Castle",
     "team": "SAS",
     "opp": "POR",
     "stat": "PRA",
     "dir": "Over",
-    "line": 32.5,
-    "price": -108,
+    "line": 31.5,
+    "price": -123,
     "model": 37.5,
-    "edge": 5.0,
-    "confidence": 50.6,
-    "win_chance": 47.6,
+    "edge": 6.0,
+    "confidence": 57.2,
+    "win_chance": 48.2,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 37.5 vs DraftKings 32.5 (edge 5.0)"
+    "why": "Model 37.5 vs DraftKings 31.5 (edge 6.0)"
    },
    {
     "id": "model|2026-11-25|SAS @ POR|Julian Champagnie|PRA",
@@ -106670,76 +108269,310 @@
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Julian Champagnie Over 19.5 PRA",
+    "pick": "Julian Champagnie Over 18.5 PRA",
     "player": "Julian Champagnie",
     "team": "SAS",
     "opp": "POR",
     "stat": "PRA",
     "dir": "Over",
-    "line": 19.5,
-    "price": -104,
+    "line": 18.5,
+    "price": -123,
     "model": 22.1,
-    "edge": 2.6,
-    "confidence": 44.2,
-    "win_chance": 51.4,
+    "edge": 3.6,
+    "confidence": 55.2,
+    "win_chance": 47.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 22.1 vs DraftKings 19.5 (edge 2.6)"
+    "why": "Model 22.1 vs DraftKings 18.5 (edge 3.6)"
    },
    {
-    "id": "model|2026-11-25|SAS @ POR|Stephon Castle|RA",
+    "id": "model|2026-11-25|SAC @ GSW|Spread",
     "source": "Model bet",
     "date": "2026-11-25",
-    "game": "SAS @ POR",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Stephon Castle Over 12.5 RA",
-    "player": "Stephon Castle",
-    "team": "SAS",
-    "opp": "POR",
-    "stat": "RA",
+    "game": "SAC @ GSW",
+    "market": "Spread",
+    "type": "Spread",
+    "pick": "SAC +8.5",
+    "player": null,
+    "team": "SAC",
+    "opp": "GSW",
+    "stat": "Spread",
+    "dir": "Cover",
+    "line": 8.5,
+    "price": -105,
+    "model": -6.3,
+    "edge": -2.2,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model -6.3 vs DraftKings 8.5 (edge -2.2)"
+   },
+   {
+    "id": "model|2026-11-25|SAC @ GSW|Total",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAC @ GSW",
+    "market": "Total",
+    "type": "Total",
+    "pick": "Over 216.5",
+    "player": null,
+    "team": null,
+    "opp": null,
+    "stat": "Total",
     "dir": "Over",
-    "line": 12.5,
-    "price": -115,
-    "model": 14.4,
-    "edge": 1.9,
-    "confidence": 52.1,
-    "win_chance": 49.2,
+    "line": 216.5,
+    "price": -107,
+    "model": 225.4,
+    "edge": 8.9,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 225.4 vs DraftKings 216.5 (edge 8.9)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Spread",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Spread",
+    "type": "Spread",
+    "pick": "POR +3.5",
+    "player": null,
+    "team": "POR",
+    "opp": "SAS",
+    "stat": "Spread",
+    "dir": "Cover",
+    "line": 3.5,
+    "price": -110,
+    "model": 0.3,
+    "edge": 3.8,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 0.3 vs DraftKings 3.5 (edge 3.8)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Total",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Total",
+    "type": "Total",
+    "pick": "Over 224.5",
+    "player": null,
+    "team": null,
+    "opp": null,
+    "stat": "Total",
+    "dir": "Over",
+    "line": 224.5,
+    "price": -110,
+    "model": 225.6,
+    "edge": 1.1,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 225.6 vs DraftKings 224.5 (edge 1.1)"
+   },
+   {
+    "id": "model|2026-11-25|SAC @ GSW|Precious Achiuwa|PTS",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAC @ GSW",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Precious Achiuwa Over 6.5 PTS",
+    "player": "Precious Achiuwa",
+    "team": "SAC",
+    "opp": "GSW",
+    "stat": "PTS",
+    "dir": "Over",
+    "line": 6.5,
+    "price": 103,
+    "model": 7.5,
+    "edge": 1.0,
+    "confidence": 61.3,
+    "win_chance": 49.9,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 14.4 vs DraftKings 12.5 (edge 1.9)"
+    "why": "Model 7.5 vs DraftKings 6.5 (edge 1.0)"
    },
    {
-    "id": "model|2026-11-25|SAS @ POR|Devin Vassell|RA",
+    "id": "model|2026-11-25|SAC @ GSW|Charles Bassey|REB",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAC @ GSW",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Charles Bassey Over 7.5 REB",
+    "player": "Charles Bassey",
+    "team": "GSW",
+    "opp": "SAC",
+    "stat": "REB",
+    "dir": "Over",
+    "line": 7.5,
+    "price": -130,
+    "model": 8.5,
+    "edge": 1.0,
+    "confidence": 52.3,
+    "win_chance": 48.6,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 8.5 vs DraftKings 7.5 (edge 1.0)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Devin Vassell|PTS",
     "source": "Model bet",
     "date": "2026-11-25",
     "game": "SAS @ POR",
     "market": "Player Prop",
     "type": "Prop",
-    "pick": "Devin Vassell Over 6.5 RA",
+    "pick": "Devin Vassell Over 12.5 PTS",
     "player": "Devin Vassell",
     "team": "SAS",
     "opp": "POR",
-    "stat": "RA",
+    "stat": "PTS",
     "dir": "Over",
-    "line": 6.5,
-    "price": -144,
-    "model": 7.4,
-    "edge": 0.9,
-    "confidence": 57.9,
-    "win_chance": 50.6,
+    "line": 12.5,
+    "price": -112,
+    "model": 14.0,
+    "edge": 1.5,
+    "confidence": 43.6,
+    "win_chance": 48.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 7.4 vs DraftKings 6.5 (edge 0.9)"
+    "why": "Model 14.0 vs DraftKings 12.5 (edge 1.5)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Devin Vassell|PR",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Devin Vassell Over 16.5 PR",
+    "player": "Devin Vassell",
+    "team": "SAS",
+    "opp": "POR",
+    "stat": "PR",
+    "dir": "Over",
+    "line": 16.5,
+    "price": -119,
+    "model": 18.7,
+    "edge": 2.2,
+    "confidence": 52.4,
+    "win_chance": 49.8,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 18.7 vs DraftKings 16.5 (edge 2.2)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Donovan Clingan|PRA",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Donovan Clingan Over 23.5 PRA",
+    "player": "Donovan Clingan",
+    "team": "POR",
+    "opp": "SAS",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 23.5,
+    "price": -125,
+    "model": 26.4,
+    "edge": 2.9,
+    "confidence": 50.6,
+    "win_chance": 48.9,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 26.4 vs DraftKings 23.5 (edge 2.9)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Devin Vassell|PRA",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Devin Vassell Over 19.5 PRA",
+    "player": "Devin Vassell",
+    "team": "SAS",
+    "opp": "POR",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 19.5,
+    "price": -125,
+    "model": 21.5,
+    "edge": 2.0,
+    "confidence": 47.8,
+    "win_chance": 50.0,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 21.5 vs DraftKings 19.5 (edge 2.0)"
+   },
+   {
+    "id": "model|2026-11-25|SAS @ POR|Scoot Henderson|PRA",
+    "source": "Model bet",
+    "date": "2026-11-25",
+    "game": "SAS @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Scoot Henderson Over 14.5 PRA",
+    "player": "Scoot Henderson",
+    "team": "POR",
+    "opp": "SAS",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 14.5,
+    "price": -123,
+    "model": 16.1,
+    "edge": 1.6,
+    "confidence": 40.9,
+    "win_chance": 52.3,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 16.1 vs DraftKings 14.5 (edge 1.6)"
    },
    {
     "id": "potd|2026-11-24",
@@ -108027,162 +109860,6 @@
     "actual": "12 PRA",
     "units": 0.81,
     "why": "Model 16.9 vs DraftKings 19.5 (edge -2.6)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Kevin Huerter|PRA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Kevin Huerter Over 17.5 PRA",
-    "player": "Kevin Huerter",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PRA",
-    "dir": "Over",
-    "line": 17.5,
-    "price": -121,
-    "model": 22.3,
-    "edge": 4.8,
-    "confidence": 67.9,
-    "win_chance": 52.0,
-    "price_book": "draftkings",
-    "result": "W",
-    "status": "Won",
-    "actual": "24 PRA",
-    "units": 0.83,
-    "why": "Model 22.3 vs DraftKings 17.5 (edge 4.8)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|John Collins|PRA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "John Collins Over 16.5 PRA",
-    "player": "John Collins",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "PRA",
-    "dir": "Over",
-    "line": 16.5,
-    "price": -126,
-    "model": 21.0,
-    "edge": 4.5,
-    "confidence": 67.0,
-    "win_chance": 48.3,
-    "price_book": "draftkings",
-    "result": "L",
-    "status": "Lost",
-    "actual": "16 PRA",
-    "units": -1.0,
-    "why": "Model 21.0 vs DraftKings 16.5 (edge 4.5)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Tristan da Silva|PRA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Tristan da Silva Over 15.5 PRA",
-    "player": "Tristan da Silva",
-    "team": "ORL",
-    "opp": "DET",
-    "stat": "PRA",
-    "dir": "Over",
-    "line": 15.5,
-    "price": -121,
-    "model": 18.5,
-    "edge": 3.0,
-    "confidence": 72.2,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": "W",
-    "status": "Won",
-    "actual": "20 PRA",
-    "units": 0.83,
-    "why": "Model 18.5 vs DraftKings 15.5 (edge 3.0)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Paul Reed|REB",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Paul Reed Over 6.5 REB",
-    "player": "Paul Reed",
-    "team": "DET",
-    "opp": "ORL",
-    "stat": "REB",
-    "dir": "Over",
-    "line": 6.5,
-    "price": -127,
-    "model": 8.4,
-    "edge": 1.9,
-    "confidence": 81.7,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": "L",
-    "status": "Lost",
-    "actual": "6 REB",
-    "units": -1.0,
-    "why": "Model 8.4 vs DraftKings 6.5 (edge 1.9)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Franz Wagner|REB",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Franz Wagner Over 6.5 REB",
-    "player": "Franz Wagner",
-    "team": "ORL",
-    "opp": "DET",
-    "stat": "REB",
-    "dir": "Over",
-    "line": 6.5,
-    "price": -114,
-    "model": 7.4,
-    "edge": 0.9,
-    "confidence": 62.5,
-    "win_chance": 49.4,
-    "price_book": "draftkings",
-    "result": "W",
-    "status": "Won",
-    "actual": "9 REB",
-    "units": 0.88,
-    "why": "Model 7.4 vs DraftKings 6.5 (edge 0.9)"
-   },
-   {
-    "id": "model|2026-11-24|DET @ ORL|Franz Wagner|RA",
-    "source": "Model bet",
-    "date": "2026-11-24",
-    "game": "DET @ ORL",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Franz Wagner Over 13.5 RA",
-    "player": "Franz Wagner",
-    "team": "ORL",
-    "opp": "DET",
-    "stat": "RA",
-    "dir": "Over",
-    "line": 13.5,
-    "price": -107,
-    "model": 15.4,
-    "edge": 1.9,
-    "confidence": 64.8,
-    "win_chance": 51.2,
-    "price_book": "draftkings",
-    "result": "W",
-    "status": "Won",
-    "actual": "15 RA",
-    "units": 0.93,
-    "why": "Model 15.4 vs DraftKings 13.5 (edge 1.9)"
    },
    {
     "id": "potd|2026-11-22",
