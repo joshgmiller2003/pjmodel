@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T19:00:42Z",
+ "generated_at": "2026-11-26T22:00:31Z",
  "season": "2026-27",
  "games": [
   {
@@ -20,9 +20,9 @@
     "spread": "-3.5",
     "spread_px_home": -115,
     "spread_px_away": -105,
-    "total": 224.5,
-    "over_px": -105,
-    "under_px": -115
+    "total": 223.5,
+    "over_px": -115,
+    "under_px": -105
    },
    "status": "Upcoming",
    "rest": {
@@ -30,7 +30,7 @@
     "home": 1
    },
    "spread_edge": 0.8,
-   "total_edge": 1.4,
+   "total_edge": 2.4,
    "note": "Model NYK -4.3, total 225.9; leans NYK vs the market spread."
   },
   {
@@ -46,12 +46,12 @@
     "ml_away": 0.25
    },
    "dk": {
-    "ml_home": "-561",
-    "ml_away": "+420",
+    "ml_home": "-484",
+    "ml_away": "+371",
     "spread": "-11.5",
     "spread_px_home": -110,
     "spread_px_away": -110,
-    "total": 221.5,
+    "total": 220.5,
     "over_px": -110,
     "under_px": -110
    },
@@ -61,7 +61,7 @@
     "home": 2
    },
    "spread_edge": -3.4,
-   "total_edge": 3.8,
+   "total_edge": 4.8,
    "note": "Model DET -8.1, total 225.3; leans MIL vs the market spread."
   },
   {
@@ -77,8 +77,8 @@
     "ml_away": 0.49
    },
    "dk": {
-    "ml_home": "+146",
-    "ml_away": "-174",
+    "ml_home": "+130",
+    "ml_away": "-155",
     "spread": "+3.5",
     "spread_px_home": -112,
     "spread_px_away": -108,
@@ -113,9 +113,9 @@
     "spread": "-7.5",
     "spread_px_home": -115,
     "spread_px_away": -105,
-    "total": 221.5,
-    "over_px": -110,
-    "under_px": -110
+    "total": 220.5,
+    "over_px": -106,
+    "under_px": -114
    },
    "status": "Upcoming",
    "rest": {
@@ -123,7 +123,7 @@
     "home": 3
    },
    "spread_edge": -2.5,
-   "total_edge": 5.0,
+   "total_edge": 6.0,
    "note": "Model TOR -5, total 226.5; leans BKN vs the market spread."
   },
   {
@@ -139,14 +139,14 @@
     "ml_away": 0.35
    },
    "dk": {
-    "ml_home": "-395",
-    "ml_away": "+312",
+    "ml_home": "-410",
+    "ml_away": "+322",
     "spread": "-9.5",
     "spread_px_home": -110,
     "spread_px_away": -110,
-    "total": 222.5,
-    "over_px": -113,
-    "under_px": -107
+    "total": 221.5,
+    "over_px": -110,
+    "under_px": -110
    },
    "status": "Upcoming",
    "rest": {
@@ -154,7 +154,7 @@
     "home": 2
    },
    "spread_edge": -5.0,
-   "total_edge": 1.4,
+   "total_edge": 2.4,
    "note": "Model BOS -4.5, total 223.9; leans ATL vs the market spread."
   },
   {
@@ -170,23 +170,23 @@
     "ml_away": 0.41
    },
    "dk": {
-    "ml_home": "-142",
-    "ml_away": "+120",
-    "spread": "-2.5",
-    "spread_px_home": -112,
-    "spread_px_away": -108,
-    "total": 223.5,
-    "over_px": -110,
-    "under_px": -110
+    "ml_home": "-148",
+    "ml_away": "+124",
+    "spread": "-3.5",
+    "spread_px_home": -108,
+    "spread_px_away": -112,
+    "total": 220.5,
+    "over_px": -108,
+    "under_px": -112
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": 0.2,
-   "total_edge": 2.9,
-   "note": "Model and market are close; no strong spread lean."
+   "spread_edge": -0.8,
+   "total_edge": 5.9,
+   "note": "Model MIN -2.7, total 226.4; leans MEM vs the market spread."
   },
   {
    "id": "DAL@PHX",
@@ -203,9 +203,9 @@
    "dk": {
     "ml_home": "-142",
     "ml_away": "+120",
-    "spread": "-3.5",
-    "spread_px_home": -106,
-    "spread_px_away": -114,
+    "spread": "-1.5",
+    "spread_px_home": -117,
+    "spread_px_away": -103,
     "total": 227.5,
     "over_px": -110,
     "under_px": -110
@@ -215,9 +215,9 @@
     "away": 2,
     "home": 1
    },
-   "spread_edge": -2.0,
+   "spread_edge": 0.0,
    "total_edge": -0.8,
-   "note": "Model PHX -1.5, total 226.7; leans DAL vs the market spread."
+   "note": "Model and market are close; no strong spread lean."
   },
   {
    "id": "LAL@SAS",
@@ -234,20 +234,20 @@
    "dk": {
     "ml_home": "-205",
     "ml_away": "+171",
-    "spread": "-4.5",
-    "spread_px_home": -116,
-    "spread_px_away": -104,
-    "total": 224.5,
-    "over_px": -115,
-    "under_px": -105
+    "spread": "-5.5",
+    "spread_px_home": -104,
+    "spread_px_away": -116,
+    "total": 225.5,
+    "over_px": -108,
+    "under_px": -112
    },
    "status": "Upcoming",
    "rest": {
     "away": 3,
     "home": 1
    },
-   "spread_edge": -0.5,
-   "total_edge": 2.8,
+   "spread_edge": -1.5,
+   "total_edge": 1.8,
    "note": "Model SAS -4, total 227.3; leans LAL vs the market spread."
   },
   {
@@ -266,11 +266,11 @@
     "ml_home": "+326",
     "ml_away": "-416",
     "spread": "+9.5",
-    "spread_px_home": -110,
-    "spread_px_away": -110,
-    "total": 228.5,
-    "over_px": -110,
-    "under_px": -110
+    "spread_px_home": -107,
+    "spread_px_away": -113,
+    "total": 229.5,
+    "over_px": -112,
+    "under_px": -108
    },
    "status": "Upcoming",
    "rest": {
@@ -278,7 +278,7 @@
     "home": 3
    },
    "spread_edge": 9.0,
-   "total_edge": -1.5,
+   "total_edge": -2.5,
    "note": "Model UTA +0.5, total 227; leans UTA vs the market spread."
   },
   {
@@ -294,23 +294,23 @@
     "ml_away": 0.42
    },
    "dk": {
-    "ml_home": "-147",
-    "ml_away": "+124",
-    "spread": "-2.5",
-    "spread_px_home": -110,
-    "spread_px_away": -110,
-    "total": 229.5,
-    "over_px": -106,
-    "under_px": -114
+    "ml_home": "-162",
+    "ml_away": "+136",
+    "spread": "-3.5",
+    "spread_px_home": -107,
+    "spread_px_away": -113,
+    "total": 231.5,
+    "over_px": -110,
+    "under_px": -110
    },
    "status": "Upcoming",
    "rest": {
     "away": 3,
     "home": 1
    },
-   "spread_edge": 0.1,
-   "total_edge": 1.0,
-   "note": "Model and market are close; no strong spread lean."
+   "spread_edge": -0.9,
+   "total_edge": -1.0,
+   "note": "Model LAC -2.6, total 230.5; leans NOP vs the market spread."
   },
   {
    "id": "GSW@POR",
@@ -325,22 +325,22 @@
     "ml_away": 0.36
    },
    "dk": {
-    "ml_home": "-325",
-    "ml_away": "+262",
-    "spread": "-9.5",
-    "spread_px_home": -110,
-    "spread_px_away": -110,
-    "total": 221.5,
-    "over_px": -110,
-    "under_px": -110
+    "ml_home": "-344",
+    "ml_away": "+276",
+    "spread": "-8.5",
+    "spread_px_home": -107,
+    "spread_px_away": -113,
+    "total": 220.5,
+    "over_px": -108,
+    "under_px": -112
    },
    "status": "Upcoming",
    "rest": {
     "away": 1,
     "home": 1
    },
-   "spread_edge": -5.1,
-   "total_edge": 4.4,
+   "spread_edge": -4.1,
+   "total_edge": 5.4,
    "note": "Model POR -4.4, total 225.9; leans GSW vs the market spread."
   }
  ],
@@ -624,6 +624,20 @@
    "game": "MEM@MIN"
   },
   {
+   "player": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "status": "Day-To-Day",
+   "reason": "Right Groin",
+   "game": "MIA@NYK"
+  },
+  {
+   "player": "Andrew Wiggins",
+   "team": "MIA",
+   "status": "Day-To-Day",
+   "reason": "Right Ankle",
+   "game": "MIA@NYK"
+  },
+  {
    "player": "LaMelo Ball",
    "team": "MIN",
    "status": "Day-To-Day",
@@ -652,13 +666,6 @@
    "game": "MEM@MIN"
   },
   {
-   "player": "Julian Reese",
-   "team": "NOP",
-   "status": "Day-To-Day",
-   "reason": "Right Knee",
-   "game": "NOP@LAC"
-  },
-  {
    "player": "Trendon Watford",
    "team": "NOP",
    "status": "Out",
@@ -673,6 +680,13 @@
    "game": "NOP@LAC"
   },
   {
+   "player": "Julian Reese",
+   "team": "NOP",
+   "status": "Day-To-Day",
+   "reason": "Right Knee",
+   "game": "NOP@LAC"
+  },
+  {
    "player": "Dejounte Murray",
    "team": "NOP",
    "status": "Out",
@@ -680,17 +694,17 @@
    "game": "NOP@LAC"
   },
   {
-   "player": "Miles McBride",
-   "team": "NYK",
-   "status": "Day-To-Day",
-   "reason": "Left Groin",
-   "game": "MIA@NYK"
-  },
-  {
    "player": "Andre Drummond",
    "team": "NYK",
    "status": "Day-To-Day",
    "reason": "Head",
+   "game": "MIA@NYK"
+  },
+  {
+   "player": "Miles McBride",
+   "team": "NYK",
+   "status": "Day-To-Day",
+   "reason": "Left Groin",
    "game": "MIA@NYK"
   },
   {
@@ -792,6 +806,13 @@
    "game": "LAL@SAS"
   },
   {
+   "player": "Alijah Martin",
+   "team": "TOR",
+   "status": "Day-To-Day",
+   "reason": "Left Knee",
+   "game": "BKN@TOR"
+  },
+  {
    "player": "Kawhi Leonard",
    "team": "TOR",
    "status": "Out",
@@ -841,7 +862,7 @@
    "game": "DEN@UTA"
   }
  ],
- "injuries_updated": "11/26 02:00 PM ET",
+ "injuries_updated": "11/26 05:00 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -2942,335 +2963,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-14T18:31",
-   "games": [
-    {
-     "id": "DEN@NOP",
-     "matchup": "DEN @ NOP",
-     "model_spread": 0.9,
-     "model_total": 231.9,
-     "dk_spread": "+12.5",
-     "dk_total": 235.5
-    },
-    {
-     "id": "DAL@CLE",
-     "matchup": "DAL @ CLE",
-     "model_spread": -2.3,
-     "model_total": 228.2,
-     "dk_spread": "+8.5",
-     "dk_total": 227.5
-    },
-    {
-     "id": "DET@MIA",
-     "matchup": "DET @ MIA",
-     "model_spread": 0.8,
-     "model_total": 229.0,
-     "dk_spread": "+4.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "BKN@MEM",
-     "matchup": "BKN @ MEM",
-     "model_spread": -6.2,
-     "model_total": 228.0,
-     "dk_spread": "-3.5",
-     "dk_total": 224.5
-    },
-    {
-     "id": "CHI@MIN",
-     "matchup": "CHI @ MIN",
-     "model_spread": -10.2,
-     "model_total": 230.8,
-     "dk_spread": "-15.5",
-     "dk_total": 234.5
-    },
-    {
-     "id": "IND@PHI",
-     "matchup": "IND @ PHI",
-     "model_spread": -3.5,
-     "model_total": 224.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "LAL@PHX",
-     "matchup": "LAL @ PHX",
-     "model_spread": 1.4,
-     "model_total": 230.1,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "CHA@LAC",
-     "matchup": "CHA @ LAC",
-     "model_spread": -4.1,
-     "model_total": 222.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "SAS@UTA",
-     "matchup": "SAS @ UTA",
-     "model_spread": 5.2,
-     "model_total": 226.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "DAL@BOS",
-     "matchup": "DAL @ BOS",
-     "model_spread": -5.4,
-     "model_total": 223.6,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "NYK@TOR",
-     "matchup": "NYK @ TOR",
-     "model_spread": -0.9,
-     "model_total": 222.9,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "HOU@WAS",
-     "matchup": "HOU @ WAS",
-     "model_spread": 2.2,
-     "model_total": 225.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "ATL@MIL",
-     "matchup": "ATL @ MIL",
-     "model_spread": 2.5,
-     "model_total": 229.3,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "OKC@SAC",
-     "matchup": "OKC @ SAC",
-     "model_spread": 2.7,
-     "model_total": 225.0,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": [
-    {
-     "player": "Craig Porter Jr.",
-     "stat": "PRA",
-     "model": 6.7,
-     "dk": 20.5,
-     "edge": -13.8
-    },
-    {
-     "player": "Craig Porter Jr.",
-     "stat": "PA",
-     "model": 4.3,
-     "dk": 14.5,
-     "edge": -10.2
-    },
-    {
-     "player": "Craig Porter Jr.",
-     "stat": "PR",
-     "model": 4.5,
-     "dk": 14.5,
-     "edge": -10.0
-    },
-    {
-     "player": "Mario Hezonja",
-     "stat": "PRA",
-     "model": 14.6,
-     "dk": 24.5,
-     "edge": -9.9
-    },
-    {
-     "player": "Jaylon Tyson",
-     "stat": "PRA",
-     "model": 15.8,
-     "dk": 25.5,
-     "edge": -9.7
-    },
-    {
-     "player": "Thomas Bryant",
-     "stat": "PRA",
-     "model": 13.1,
-     "dk": 22.5,
-     "edge": -9.4
-    },
-    {
-     "player": "Jaylon Tyson",
-     "stat": "PR",
-     "model": 13.2,
-     "dk": 22.5,
-     "edge": -9.3
-    },
-    {
-     "player": "Mario Hezonja",
-     "stat": "PR",
-     "model": 13.4,
-     "dk": 21.5,
-     "edge": -8.1
-    },
-    {
-     "player": "Mario Hezonja",
-     "stat": "PA",
-     "model": 8.6,
-     "dk": 16.5,
-     "edge": -7.9
-    },
-    {
-     "player": "Thomas Bryant",
-     "stat": "PR",
-     "model": 12.8,
-     "dk": 20.5,
-     "edge": -7.7
-    },
-    {
-     "player": "Jaylon Tyson",
-     "stat": "PA",
-     "model": 12.6,
-     "dk": 19.5,
-     "edge": -6.9
-    },
-    {
-     "player": "Craig Porter Jr.",
-     "stat": "RA",
-     "model": 4.6,
-     "dk": 11.5,
-     "edge": -6.9
-    },
-    {
-     "player": "Craig Porter Jr.",
-     "stat": "PTS",
-     "model": 2.1,
-     "dk": 8.5,
-     "edge": -6.4
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PRA",
-     "model": 19.2,
-     "dk": 25.5,
-     "edge": -6.3
-    },
-    {
-     "player": "Cade Cunningham",
-     "stat": "PR",
-     "model": 35.7,
-     "dk": 29.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Cade Cunningham",
-     "stat": "PRA",
-     "model": 44.6,
-     "dk": 38.5,
-     "edge": 6.1
-    },
-    {
-     "player": "Mario Hezonja",
-     "stat": "PTS",
-     "model": 7.6,
-     "dk": 13.5,
-     "edge": -5.9
-    },
-    {
-     "player": "Cade Cunningham",
-     "stat": "PTS",
-     "model": 30.1,
-     "dk": 24.5,
-     "edge": 5.6
-    },
-    {
-     "player": "Jaylon Tyson",
-     "stat": "PTS",
-     "model": 10.0,
-     "dk": 15.5,
-     "edge": -5.5
-    },
-    {
-     "player": "Cade Cunningham",
-     "stat": "PA",
-     "model": 39.0,
-     "dk": 33.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Tyrese Proctor",
-     "stat": "PRA",
-     "model": 20.1,
-     "dk": 25.5,
-     "edge": -5.4
-    },
-    {
-     "player": "Bam Adebayo",
-     "stat": "PR",
-     "model": 31.9,
-     "dk": 26.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Daniss Jenkins",
-     "stat": "PR",
-     "model": 22.9,
-     "dk": 17.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Ausar Thompson",
-     "stat": "PRA",
-     "model": 27.9,
-     "dk": 22.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Bam Adebayo",
-     "stat": "PRA",
-     "model": 34.7,
-     "dk": 29.5,
-     "edge": 5.2
-    },
-    {
-     "player": "Meleek Thomas",
-     "stat": "PA",
-     "model": 16.5,
-     "dk": 21.5,
-     "edge": -5.0
-    },
-    {
-     "player": "Davion Mitchell",
-     "stat": "PA",
-     "model": 26.2,
-     "dk": 21.5,
-     "edge": 4.7
-    },
-    {
-     "player": "Tyrese Proctor",
-     "stat": "PA",
-     "model": 16.0,
-     "dk": 20.5,
-     "edge": -4.5
-    },
-    {
-     "player": "Zaccharie Risacher",
-     "stat": "PR",
-     "model": 14.0,
-     "dk": 9.5,
-     "edge": 4.5
-    },
-    {
-     "player": "Ausar Thompson",
-     "stat": "PR",
-     "model": 22.0,
-     "dk": 17.5,
-     "edge": 4.5
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-14T20:40",
    "games": [
@@ -20641,6 +20333,100 @@
      "model_total": 225.9,
      "dk_spread": "-9.5",
      "dk_total": 221.5
+    }
+   ],
+   "props": []
+  },
+  {
+   "timestamp": "2026-11-26T17:00",
+   "games": [
+    {
+     "id": "MIA@NYK",
+     "matchup": "MIA @ NYK",
+     "model_spread": -4.3,
+     "model_total": 225.9,
+     "dk_spread": "-3.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "MIL@DET",
+     "matchup": "MIL @ DET",
+     "model_spread": -8.1,
+     "model_total": 225.3,
+     "dk_spread": "-11.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "PHI@IND",
+     "matchup": "PHI @ IND",
+     "model_spread": -0.4,
+     "model_total": 227.6,
+     "dk_spread": "+3.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "BKN@TOR",
+     "matchup": "BKN @ TOR",
+     "model_spread": -5.0,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "ATL@BOS",
+     "matchup": "ATL @ BOS",
+     "model_spread": -4.5,
+     "model_total": 223.9,
+     "dk_spread": "-9.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "MEM@MIN",
+     "matchup": "MEM @ MIN",
+     "model_spread": -2.7,
+     "model_total": 226.4,
+     "dk_spread": "-3.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "DAL@PHX",
+     "matchup": "DAL @ PHX",
+     "model_spread": -1.5,
+     "model_total": 226.7,
+     "dk_spread": "-1.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "LAL@SAS",
+     "matchup": "LAL @ SAS",
+     "model_spread": -4.0,
+     "model_total": 227.3,
+     "dk_spread": "-5.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "DEN@UTA",
+     "matchup": "DEN @ UTA",
+     "model_spread": 0.5,
+     "model_total": 227.0,
+     "dk_spread": "+9.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "NOP@LAC",
+     "matchup": "NOP @ LAC",
+     "model_spread": -2.6,
+     "model_total": 230.5,
+     "dk_spread": "-3.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "GSW@POR",
+     "matchup": "GSW @ POR",
+     "model_spread": -4.4,
+     "model_total": 225.9,
+     "dk_spread": "-8.5",
+     "dk_total": 220.5
     }
    ],
    "props": []
@@ -48107,11 +47893,11 @@
  },
  "credits": {
   "limit": 250,
-  "used_today": 7,
-  "remaining": 5525,
-  "allowed_now": 243,
+  "used_today": 10,
+  "remaining": 5416,
+  "allowed_now": 240,
   "skipped": [],
-  "slot": "morning",
+  "slot": "pretip",
   "calls": [
    {
     "time": "10:00 AM",
@@ -48137,12 +47923,22 @@
     "time": "02:00 PM",
     "call": "game lines",
     "cost": 3
+   },
+   {
+    "time": "05:00 PM",
+    "call": "balance check",
+    "cost": 0
+   },
+   {
+    "time": "05:00 PM",
+    "call": "game lines",
+    "cost": 3
    }
   ],
   "history": [
    {
     "date": "2026-11-26",
-    "used": 4,
+    "used": 7,
     "limit": 250
    },
    {
@@ -48212,7 +48008,7 @@
    }
   ],
   "days_to_reset": 8,
-  "month_used": 2737,
+  "month_used": 2740,
   "month_limit": 5500
  },
  "futures": {
@@ -48497,16 +48293,16 @@
     "game": "MIA @ NYK",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 224.5",
+    "pick": "Over 223.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 224.5,
-    "price": -105,
+    "line": 223.5,
+    "price": -115,
     "model": 225.9,
-    "edge": 1.4,
+    "edge": 2.4,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48514,7 +48310,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 225.9 vs DraftKings 224.5 (edge 1.4)"
+    "why": "Model 225.9 vs DraftKings 223.5 (edge 2.4)"
    },
    {
     "id": "model|2026-11-27|PHI @ IND|Spread",
@@ -48601,16 +48397,16 @@
     "game": "ATL @ BOS",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 222.5",
+    "pick": "Over 221.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 222.5,
-    "price": -113,
+    "line": 221.5,
+    "price": -110,
     "model": 223.9,
-    "edge": 1.4,
+    "edge": 2.4,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48618,7 +48414,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 223.9 vs DraftKings 222.5 (edge 1.4)"
+    "why": "Model 223.9 vs DraftKings 221.5 (edge 2.4)"
    },
    {
     "id": "model|2026-11-27|LAL @ SAS|Total",
@@ -48627,16 +48423,16 @@
     "game": "LAL @ SAS",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 224.5",
+    "pick": "Over 225.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 224.5,
-    "price": -115,
+    "line": 225.5,
+    "price": -108,
     "model": 227.3,
-    "edge": 2.8,
+    "edge": 1.8,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48644,7 +48440,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 227.3 vs DraftKings 224.5 (edge 2.8)"
+    "why": "Model 227.3 vs DraftKings 225.5 (edge 1.8)"
    },
    {
     "id": "model|2026-11-27|DEN @ UTA|Spread",
@@ -48660,7 +48456,7 @@
     "stat": "Spread",
     "dir": "Cover",
     "line": 9.5,
-    "price": -110,
+    "price": -107,
     "model": -0.5,
     "edge": 9.0,
     "confidence": null,
@@ -48679,16 +48475,16 @@
     "game": "DEN @ UTA",
     "market": "Total",
     "type": "Total",
-    "pick": "Under 228.5",
+    "pick": "Under 229.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Under",
-    "line": 228.5,
-    "price": -110,
+    "line": 229.5,
+    "price": -108,
     "model": 227.0,
-    "edge": -1.5,
+    "edge": -2.5,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48696,7 +48492,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 227.0 vs DraftKings 228.5 (edge -1.5)"
+    "why": "Model 227.0 vs DraftKings 229.5 (edge -2.5)"
    },
    {
     "id": "model|2026-11-27|MIL @ DET|Spread",
@@ -48731,16 +48527,16 @@
     "game": "MIL @ DET",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 221.5",
+    "pick": "Over 220.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 221.5,
+    "line": 220.5,
     "price": -110,
     "model": 225.3,
-    "edge": 3.8,
+    "edge": 4.8,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48748,7 +48544,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 225.3 vs DraftKings 221.5 (edge 3.8)"
+    "why": "Model 225.3 vs DraftKings 220.5 (edge 4.8)"
    },
    {
     "id": "model|2026-11-27|BKN @ TOR|Spread",
@@ -48783,16 +48579,16 @@
     "game": "BKN @ TOR",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 221.5",
+    "pick": "Over 220.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 221.5,
-    "price": -110,
+    "line": 220.5,
+    "price": -106,
     "model": 226.5,
-    "edge": 5.0,
+    "edge": 6.0,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48800,7 +48596,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 226.5 vs DraftKings 221.5 (edge 5.0)"
+    "why": "Model 226.5 vs DraftKings 220.5 (edge 6.0)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Total",
@@ -48809,16 +48605,16 @@
     "game": "MEM @ MIN",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 223.5",
+    "pick": "Over 220.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 223.5,
-    "price": -110,
+    "line": 220.5,
+    "price": -108,
     "model": 226.4,
-    "edge": 2.9,
+    "edge": 5.9,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48826,33 +48622,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 226.4 vs DraftKings 223.5 (edge 2.9)"
-   },
-   {
-    "id": "model|2026-11-27|DAL @ PHX|Spread",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Spread",
-    "type": "Spread",
-    "pick": "DAL +3.5",
-    "player": null,
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "Spread",
-    "dir": "Cover",
-    "line": 3.5,
-    "price": -114,
-    "model": -1.5,
-    "edge": -2.0,
-    "confidence": null,
-    "win_chance": null,
-    "price_book": null,
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model -1.5 vs DraftKings 3.5 (edge -2.0)"
+    "why": "Model 226.4 vs DraftKings 220.5 (edge 5.9)"
    },
    {
     "id": "model|2026-11-27|NOP @ LAC|Total",
@@ -48861,16 +48631,16 @@
     "game": "NOP @ LAC",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 229.5",
+    "pick": "Under 231.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
-    "dir": "Over",
-    "line": 229.5,
-    "price": -106,
+    "dir": "Under",
+    "line": 231.5,
+    "price": -110,
     "model": 230.5,
-    "edge": 1.0,
+    "edge": -1.0,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48878,7 +48648,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 230.5 vs DraftKings 229.5 (edge 1.0)"
+    "why": "Model 230.5 vs DraftKings 231.5 (edge -1.0)"
    },
    {
     "id": "model|2026-11-27|GSW @ POR|Spread",
@@ -48887,16 +48657,16 @@
     "game": "GSW @ POR",
     "market": "Spread",
     "type": "Spread",
-    "pick": "GSW +9.5",
+    "pick": "GSW +8.5",
     "player": null,
     "team": "GSW",
     "opp": "POR",
     "stat": "Spread",
     "dir": "Cover",
-    "line": 9.5,
-    "price": -110,
+    "line": 8.5,
+    "price": -113,
     "model": -4.4,
-    "edge": -5.1,
+    "edge": -4.1,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48904,7 +48674,7 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model -4.4 vs DraftKings 9.5 (edge -5.1)"
+    "why": "Model -4.4 vs DraftKings 8.5 (edge -4.1)"
    },
    {
     "id": "model|2026-11-27|GSW @ POR|Total",
@@ -48913,16 +48683,16 @@
     "game": "GSW @ POR",
     "market": "Total",
     "type": "Total",
-    "pick": "Over 221.5",
+    "pick": "Over 220.5",
     "player": null,
     "team": null,
     "opp": null,
     "stat": "Total",
     "dir": "Over",
-    "line": 221.5,
-    "price": -110,
+    "line": 220.5,
+    "price": -108,
     "model": 225.9,
-    "edge": 4.4,
+    "edge": 5.4,
     "confidence": null,
     "win_chance": null,
     "price_book": null,
@@ -48930,7 +48700,33 @@
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 225.9 vs DraftKings 221.5 (edge 4.4)"
+    "why": "Model 225.9 vs DraftKings 220.5 (edge 5.4)"
+   },
+   {
+    "id": "model|2026-11-27|LAL @ SAS|Spread",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "LAL @ SAS",
+    "market": "Spread",
+    "type": "Spread",
+    "pick": "LAL +5.5",
+    "player": null,
+    "team": "LAL",
+    "opp": "SAS",
+    "stat": "Spread",
+    "dir": "Cover",
+    "line": 5.5,
+    "price": -116,
+    "model": -4.0,
+    "edge": -1.5,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model -4.0 vs DraftKings 5.5 (edge -1.5)"
    },
    {
     "id": "potd|2026-11-25",

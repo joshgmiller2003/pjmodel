@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "used_today": 7,
+ "used_today": 10,
  "calls": [
   {
    "time": "10:00 AM",
@@ -26,13 +26,23 @@
    "time": "02:00 PM",
    "call": "game lines",
    "cost": 3
+  },
+  {
+   "time": "05:00 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "05:00 PM",
+   "call": "game lines",
+   "cost": 3
   }
  ],
- "remaining": 5525,
+ "remaining": 5416,
  "history": [
   {
    "date": "2026-11-26",
-   "used": 7,
+   "used": 10,
    "limit": 250
   },
   {
@@ -149,6 +159,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 8,
- "month_used": 2737,
+ "month_used": 2740,
  "month_limit": 5500
 }
