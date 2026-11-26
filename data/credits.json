@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "used_today": 4,
+ "used_today": 7,
  "calls": [
   {
    "time": "10:00 AM",
@@ -16,13 +16,23 @@
    "time": "10:00 AM",
    "call": "championship odds",
    "cost": 1
+  },
+  {
+   "time": "02:00 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "02:00 PM",
+   "call": "game lines",
+   "cost": 3
   }
  ],
- "remaining": 5692,
+ "remaining": 5525,
  "history": [
   {
    "date": "2026-11-26",
-   "used": 4,
+   "used": 7,
    "limit": 250
   },
   {
@@ -139,6 +149,6 @@
  "adjust": null,
  "limit": 250,
  "days_to_reset": 8,
- "month_used": 2734,
+ "month_used": 2737,
  "month_limit": 5500
 }

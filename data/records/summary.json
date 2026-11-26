@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-26 10:00 AM ET",
+ "updated": "2026-11-26 02:00 PM ET",
  "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
  "by_month": {
   "All": {
    "Model bet": {
-    "bets": 4927,
+    "bets": 4935,
     "won": 2364,
     "lost": 2490,
     "push": 64,
-    "pending": 9,
+    "pending": 17,
     "units": -466.88
    },
    "Pick of the Day": {
@@ -46,11 +46,11 @@
   },
   "2026-11": {
    "Model bet": {
-    "bets": 4927,
+    "bets": 4935,
     "won": 2364,
     "lost": 2490,
     "push": 64,
-    "pending": 9,
+    "pending": 17,
     "units": -466.88
    },
    "Pick of the Day": {
