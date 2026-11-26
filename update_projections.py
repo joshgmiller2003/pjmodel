@@ -116,6 +116,7 @@ class Credits:
                                                               "adjust": st.get("adjust")}
         self.state["limit"] = DAILY_CREDIT_LIMIT
         self.skipped = []
+        self.run_off_cap = 0            # credits this run has spent off the daily cap
 
     def days_to_reset(self):
         d = self.now.date()
@@ -141,6 +142,14 @@ class Credits:
     def allowance(self):
         """What is still allowed today: the daily cap, and never more than an even share of what is left in the plan."""
         u = self.state["used_today"] - self.state.get("off_cap", 0)     # credits that count against today's cap
+        if OFF_DAILY_CAP:
+            # One-time run by hand that is kept off today's cap: the daily cap and the even daily share don't apply,
+            # but it still counts toward the month, never goes past this site's monthly budget or the plan's balance,
+            # and one such run can spend at most one day's cap.
+            left = min(MONTHLY_CREDIT_LIMIT - self.month_used(), DAILY_CREDIT_LIMIT - self.run_off_cap)
+            if self.state.get("remaining") is not None:
+                left = min(left, int(self.state["remaining"]))
+            return max(0, left)
         left_today = DAILY_CREDIT_LIMIT - u
         # this site's monthly budget, spread evenly over the days left in the cycle
         month_left = MONTHLY_CREDIT_LIMIT - self.month_used()
@@ -170,6 +179,7 @@ class Credits:
         self.state["used_today"] += cost
         if OFF_DAILY_CAP:
             self.state["off_cap"] = self.state.get("off_cap", 0) + cost
+            self.run_off_cap += cost
         if rem is not None:
             self.state["remaining"] = int(num(rem))
         self.state["calls"].append({"time": datetime.now(ET).strftime("%I:%M %p"), "call": label + (" (off daily cap)" if OFF_DAILY_CAP and cost else ""), "cost": cost})
