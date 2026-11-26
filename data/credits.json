@@ -226,9 +226,19 @@
    "time": "05:00 PM",
    "call": "props SAS@POR",
    "cost": 8
+  },
+  {
+   "time": "10:03 PM",
+   "call": "balance check",
+   "cost": 0
+  },
+  {
+   "time": "10:03 PM",
+   "call": "event list",
+   "cost": 0
   }
  ],
- "remaining": 6031,
+ "remaining": 5911,
  "history": [
   {
    "date": "2026-11-25",
@@ -345,5 +355,6 @@
  "limit": 250,
  "days_to_reset": 9,
  "month_used": 2711,
- "month_limit": 5500
+ "month_limit": 5500,
+ "off_cap": 0
 }
