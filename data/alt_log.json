@@ -58,7 +58,7 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 09:30 PM ET"
+   "updated_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Tyrese Proctor|3PM",
@@ -113,7 +113,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 0.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "0 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Peyton Watson|AST",
@@ -174,7 +180,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 2.0,
+   "hit": 1,
+   "units": -0.24,
+   "result": "L",
+   "actual": "2 AST \u00b7 1 of 3 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Peyton Watson|REB",
@@ -238,7 +250,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 5.0,
+   "hit": 1,
+   "units": 0.53,
+   "result": "W",
+   "actual": "5 REB \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Karl-Anthony Towns|REB",
@@ -334,7 +352,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 10.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "10 REB \u00b7 0 of 3 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Jarrett Allen|AST",
@@ -384,7 +408,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 AST \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|James Harden|PTS",
@@ -453,7 +483,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 28.0,
+   "hit": 1,
+   "units": 4.49,
+   "result": "W",
+   "actual": "28 PTS \u00b7 1 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|James Harden|3PM",
@@ -513,7 +549,13 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 1.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "1 3PM \u00b7 0 of 2 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|Jalen Brunson|PTS",
@@ -577,7 +619,13 @@
     ]
    ],
    "saved_at": "2026-11-25 02:00 PM ET",
-   "updated_at": "2026-11-25 07:00 PM ET"
+   "updated_at": "2026-11-25 07:00 PM ET",
+   "value": 19.0,
+   "hit": 0,
+   "units": -1.0,
+   "result": "L",
+   "actual": "19 PTS \u00b7 0 of 1 rungs hit",
+   "graded_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-25|De'Andre Hunter|PTS",
@@ -641,7 +689,7 @@
     ]
    ],
    "saved_at": "2026-11-25 10:00 AM ET",
-   "updated_at": "2026-11-25 09:30 PM ET"
+   "updated_at": "2026-11-25 10:00 PM ET"
   },
   {
    "id": "2026-11-24|Zaccharie Risacher|PTS",

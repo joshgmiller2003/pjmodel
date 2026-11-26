@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-25 09:30 PM ET",
+ "updated": "2026-11-25 10:00 PM ET",
  "note": "Units are 1 unit per bet for Model bets and Pick of the Day. Ladder steps are tracked in dollars on the ladder itself.",
  "by_month": {
   "All": {
    "Pick of the Day": {
     "bets": 20,
     "won": 11,
-    "lost": 8,
+    "lost": 9,
     "push": 0,
-    "pending": 1,
-    "units": 2.26
+    "pending": 0,
+    "units": 1.26
    },
    "Ladder Challenge": {
     "bets": 20,
@@ -22,36 +22,36 @@
    "Alt Parlay": {
     "bets": 15,
     "won": 11,
-    "lost": 3,
+    "lost": 4,
     "push": 0,
-    "pending": 1,
+    "pending": 0,
     "units": 0.0
    },
    "Model bet": {
     "bets": 4915,
-    "won": 2261,
-    "lost": 2395,
+    "won": 2269,
+    "lost": 2413,
     "push": 64,
-    "pending": 195,
-    "units": -460.77
+    "pending": 169,
+    "units": -471.78
    },
    "Alt Ladder": {
     "bets": 343,
-    "won": 130,
-    "lost": 190,
+    "won": 132,
+    "lost": 196,
     "push": 13,
-    "pending": 10,
-    "units": -32.2
+    "pending": 2,
+    "units": -32.42
    }
   },
   "2026-11": {
    "Pick of the Day": {
     "bets": 20,
     "won": 11,
-    "lost": 8,
+    "lost": 9,
     "push": 0,
-    "pending": 1,
-    "units": 2.26
+    "pending": 0,
+    "units": 1.26
    },
    "Ladder Challenge": {
     "bets": 20,
@@ -64,26 +64,26 @@
    "Alt Parlay": {
     "bets": 15,
     "won": 11,
-    "lost": 3,
+    "lost": 4,
     "push": 0,
-    "pending": 1,
+    "pending": 0,
     "units": 0.0
    },
    "Model bet": {
     "bets": 4915,
-    "won": 2261,
-    "lost": 2395,
+    "won": 2269,
+    "lost": 2413,
     "push": 64,
-    "pending": 195,
-    "units": -460.77
+    "pending": 169,
+    "units": -471.78
    },
    "Alt Ladder": {
     "bets": 343,
-    "won": 130,
-    "lost": 190,
+    "won": 132,
+    "lost": 196,
     "push": 13,
-    "pending": 10,
-    "units": -32.2
+    "pending": 2,
+    "units": -32.42
    }
   }
  }
