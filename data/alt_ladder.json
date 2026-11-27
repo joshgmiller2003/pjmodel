@@ -6,6 +6,67 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Jaden McDaniels 5+ REB",
+   "game": "MEM@MIN",
+   "eid": "401909331",
+   "time": "8:30 PM ET",
+   "home": "MIN",
+   "away": "MEM",
+   "side": "Over",
+   "line": 4.5,
+   "price": -189,
+   "model": 6.2,
+   "chart": {
+    "vals": [
+     6.0,
+     6.0,
+     9.0,
+     5.0,
+     6.0,
+     5.0,
+     3.0,
+     5.0,
+     10.0,
+     10.0
+    ],
+    "line": 4.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "NOP",
+     "UTA",
+     "DAL",
+     "CHI",
+     "POR",
+     "POR",
+     "NYK",
+     "MEM",
+     "BKN",
+     "OKC"
+    ]
+   },
+   "reasons": [
+    "Alt line 5+ REB at -189: our chance 70.8% vs the book's 65.4% (+8.3% expected value)",
+    "Cleared 5+ in 13 of his last 15 games",
+    "We project 6.2 REB (DraftKings main line 5.5)"
+   ],
+   "p_win": 70.8,
+   "p_model": 70.8,
+   "ev": 8.3,
+   "score": 70.8,
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "stat": "REB",
+   "date": "2026-11-27",
+   "attempt": 5,
+   "day": 1,
+   "stake": 10.0,
+   "to_win": 5.29,
+   "picked_at": "2026-11-27 02:00 PM ET",
+   "why_ladder": "Single alt line: 70.8% to hit by our numbers (71% trusting only half our edge) at -189, +8.3% expected value. The most likely winner on today's alt lines at a ladder price"
+  },
+  {
+   "type": "Prop",
    "label": "Karl-Anthony Towns 12+ REB",
    "game": "CLE@NYK",
    "eid": "401909319",
@@ -1885,5 +1946,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-27"
 }
