@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T01:30:41Z",
+ "generated_at": "2026-11-27T02:30:32Z",
  "season": "2026-27",
  "games": [
   {
@@ -869,7 +869,7 @@
    "game": "DEN@UTA"
   }
  ],
- "injuries_updated": "11/26 08:30 PM ET",
+ "injuries_updated": "11/26 09:30 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -2970,148 +2970,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-15T01:43",
-   "games": [
-    {
-     "id": "IND@PHI",
-     "matchup": "IND @ PHI",
-     "model_spread": -3.5,
-     "model_total": 224.3,
-     "dk_spread": "-7.5",
-     "dk_total": 224.5
-    },
-    {
-     "id": "LAL@PHX",
-     "matchup": "LAL @ PHX",
-     "model_spread": 1.4,
-     "model_total": 230.2,
-     "dk_spread": "+2.5",
-     "dk_total": 226.5
-    },
-    {
-     "id": "CHA@LAC",
-     "matchup": "CHA @ LAC",
-     "model_spread": -4.1,
-     "model_total": 222.3,
-     "dk_spread": "-1.5",
-     "dk_total": 215.5
-    },
-    {
-     "id": "SAS@UTA",
-     "matchup": "SAS @ UTA",
-     "model_spread": 5.2,
-     "model_total": 226.4,
-     "dk_spread": "+17.5",
-     "dk_total": 223.5
-    },
-    {
-     "id": "DAL@BOS",
-     "matchup": "DAL @ BOS",
-     "model_spread": -5.6,
-     "model_total": 224.1,
-     "dk_spread": "-13.5",
-     "dk_total": 217.5
-    },
-    {
-     "id": "NYK@TOR",
-     "matchup": "NYK @ TOR",
-     "model_spread": -0.9,
-     "model_total": 223.0,
-     "dk_spread": "+4.5",
-     "dk_total": 217.5
-    },
-    {
-     "id": "HOU@WAS",
-     "matchup": "HOU @ WAS",
-     "model_spread": 2.2,
-     "model_total": 225.6,
-     "dk_spread": "+9.5",
-     "dk_total": 222.5
-    },
-    {
-     "id": "ATL@MIL",
-     "matchup": "ATL @ MIL",
-     "model_spread": 2.5,
-     "model_total": 229.4,
-     "dk_spread": "+7.5",
-     "dk_total": 234.5
-    },
-    {
-     "id": "OKC@SAC",
-     "matchup": "OKC @ SAC",
-     "model_spread": 2.7,
-     "model_total": 225.1,
-     "dk_spread": "+10.5",
-     "dk_total": 222.5
-    },
-    {
-     "id": "ORL@BOS",
-     "matchup": "ORL @ BOS",
-     "model_spread": -7.0,
-     "model_total": 222.4,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "CHI@CLE",
-     "matchup": "CHI @ CLE",
-     "model_spread": -6.2,
-     "model_total": 233.2,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "MEM@WAS",
-     "matchup": "MEM @ WAS",
-     "model_spread": 2.2,
-     "model_total": 228.4,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "PHI@BKN",
-     "matchup": "PHI @ BKN",
-     "model_spread": 0.1,
-     "model_total": 225.0,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "HOU@MIA",
-     "matchup": "HOU @ MIA",
-     "model_spread": 0.8,
-     "model_total": 229.6,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "POR@MIN",
-     "matchup": "POR @ MIN",
-     "model_spread": -3.5,
-     "model_total": 227.8,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "GSW@NOP",
-     "matchup": "GSW @ NOP",
-     "model_spread": 1.9,
-     "model_total": 232.1,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    },
-    {
-     "id": "PHX@DEN",
-     "matchup": "PHX @ DEN",
-     "model_spread": -4.1,
-     "model_total": 227.5,
-     "dk_spread": "N/A",
-     "dk_total": 0
-    }
-   ],
-   "props": []
-  },
   {
    "timestamp": "2026-11-15T11:28",
    "games": [
@@ -19892,6 +19750,100 @@
   },
   {
    "timestamp": "2026-11-26T20:30",
+   "games": [
+    {
+     "id": "MIA@NYK",
+     "matchup": "MIA @ NYK",
+     "model_spread": -4.3,
+     "model_total": 225.9,
+     "dk_spread": "-3.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "MIL@DET",
+     "matchup": "MIL @ DET",
+     "model_spread": -8.1,
+     "model_total": 225.3,
+     "dk_spread": "-11.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "PHI@IND",
+     "matchup": "PHI @ IND",
+     "model_spread": -0.4,
+     "model_total": 227.6,
+     "dk_spread": "+3.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "BKN@TOR",
+     "matchup": "BKN @ TOR",
+     "model_spread": -5.0,
+     "model_total": 226.5,
+     "dk_spread": "-7.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "ATL@BOS",
+     "matchup": "ATL @ BOS",
+     "model_spread": -4.5,
+     "model_total": 223.9,
+     "dk_spread": "-9.5",
+     "dk_total": 221.5
+    },
+    {
+     "id": "MEM@MIN",
+     "matchup": "MEM @ MIN",
+     "model_spread": -2.7,
+     "model_total": 226.4,
+     "dk_spread": "-3.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "DAL@PHX",
+     "matchup": "DAL @ PHX",
+     "model_spread": -1.5,
+     "model_total": 226.7,
+     "dk_spread": "-1.5",
+     "dk_total": 227.5
+    },
+    {
+     "id": "LAL@SAS",
+     "matchup": "LAL @ SAS",
+     "model_spread": -4.0,
+     "model_total": 227.3,
+     "dk_spread": "-5.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "DEN@UTA",
+     "matchup": "DEN @ UTA",
+     "model_spread": 0.5,
+     "model_total": 227.0,
+     "dk_spread": "+9.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "NOP@LAC",
+     "matchup": "NOP @ LAC",
+     "model_spread": -2.6,
+     "model_total": 230.5,
+     "dk_spread": "-3.5",
+     "dk_total": 231.5
+    },
+    {
+     "id": "GSW@POR",
+     "matchup": "GSW @ POR",
+     "model_spread": -4.4,
+     "model_total": 225.9,
+     "dk_spread": "-8.5",
+     "dk_total": 220.5
+    }
+   ],
+   "props": []
+  },
+  {
+   "timestamp": "2026-11-26T21:30",
    "games": [
     {
      "id": "MIA@NYK",
