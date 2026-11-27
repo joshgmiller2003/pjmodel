@@ -69,7 +69,7 @@
     "Matchup vs MIL: -1% to his AST projection from their defense and pace (helps the under)",
     "MIL ranks among the middle-10 defenses for AST; he went under 7.5 in 6 of 7 games against that tier",
     "Teammate injury boost: Cade Cunningham, Duncan Robinson out, +12.2% to his AST projection (extra minutes and usage)",
-    "Best price: +100 at FanDuel (DraftKings -117; the record is graded at DraftKings)",
+    "Best price: -108 at Caesars (DraftKings -117; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
    "p_win": 55.0,
@@ -77,8 +77,8 @@
    "ev": 2.0,
    "score": 79.3,
    "best": [
-    100,
-    "fanduel"
+    -108,
+    "williamhill_us"
    ],
    "player": "Daniss Jenkins",
    "team": "DET",
@@ -88,14 +88,14 @@
    "day": 1,
    "stake": 10,
    "to_win": 8.55,
-   "picked_at": "2026-11-27 02:00 PM ET",
+   "picked_at": "2026-11-27 05:00 PM ET",
    "why_ladder": "Highest win chance on the board at a ladder-friendly price: 55% to win, +2% expected value",
    "open_line": 7.5,
    "open_price": -102,
    "first_picked_at": "2026-11-27 10:00 AM ET",
    "close_line": 7.5,
    "close_price": -117,
-   "close_at": "2026-11-27 02:00 PM ET",
+   "close_at": "2026-11-27 05:00 PM ET",
    "clv": {
     "line": 0.0,
     "price": 3.4,
