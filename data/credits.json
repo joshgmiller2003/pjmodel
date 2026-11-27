@@ -1,6 +1,6 @@
 {
- "date": "2026-11-26",
- "used_today": 10,
+ "date": "2026-11-27",
+ "used_today": 104,
  "calls": [
   {
    "time": "10:00 AM",
@@ -14,32 +14,97 @@
   },
   {
    "time": "10:00 AM",
+   "call": "event list",
+   "cost": 0
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props MIA@NYK",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props MIL@DET",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props PHI@IND",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props BKN@TOR",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props ATL@BOS",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props MEM@MIN",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props DAL@PHX",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props LAL@SAS",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props DEN@UTA",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props NOP@LAC",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
+   "call": "props GSW@POR",
+   "cost": 8
+  },
+  {
+   "time": "10:00 AM",
    "call": "championship odds",
    "cost": 1
   },
   {
-   "time": "02:00 PM",
-   "call": "balance check",
+   "time": "10:00 AM",
+   "call": "event list",
    "cost": 0
   },
   {
-   "time": "02:00 PM",
-   "call": "game lines",
-   "cost": 3
+   "time": "10:00 AM",
+   "call": "alt lines MEM@MIN",
+   "cost": 4
   },
   {
-   "time": "05:00 PM",
-   "call": "balance check",
-   "cost": 0
+   "time": "10:00 AM",
+   "call": "alt lines LAL@SAS",
+   "cost": 4
   },
   {
-   "time": "05:00 PM",
-   "call": "game lines",
-   "cost": 3
+   "time": "10:00 AM",
+   "call": "alt lines BKN@TOR",
+   "cost": 4
   }
  ],
- "remaining": 5416,
+ "remaining": 4877,
  "history": [
+  {
+   "date": "2026-11-27",
+   "used": 104,
+   "limit": 250
+  },
   {
    "date": "2026-11-26",
    "used": 10,
@@ -158,7 +223,7 @@
  ],
  "adjust": null,
  "limit": 250,
- "days_to_reset": 8,
- "month_used": 2740,
+ "days_to_reset": 7,
+ "month_used": 2844,
  "month_limit": 5500
 }

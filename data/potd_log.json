@@ -2,6 +2,103 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-27",
+   "eid": "401909331",
+   "game": "MEM@MIN",
+   "time": "8:30 PM ET",
+   "home": "MIN",
+   "away": "MEM",
+   "type": "Prop",
+   "player": "Cam Spencer",
+   "team": "MEM",
+   "stat": "PRA",
+   "side": "Over",
+   "line": 17.5,
+   "price": -108,
+   "model": 25.6,
+   "edge": 8.1,
+   "edge_pct": 46.3,
+   "label": "Cam Spencer Over 17.5 PRA",
+   "best": [
+    -103,
+    "ballybet"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     9,
+     10
+    ],
+    "l15": [
+     13,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     13.0,
+     21.0,
+     21.0,
+     26.0,
+     27.0,
+     34.0,
+     22.0,
+     19.0,
+     30.0,
+     20.0
+    ],
+    "line": 17.5,
+    "side": "Over",
+    "label": "PRA",
+    "opps": [
+     "TOR",
+     "DEN",
+     "NOP",
+     "BKN",
+     "WAS",
+     "CLE",
+     "GSW",
+     "MIN",
+     "CHA",
+     "LAC"
+    ]
+   },
+   "score": 95.4,
+   "reasons": [
+    "Model projects 25.6 PRA vs a line of 17.5 (+8.1, 46% edge)",
+    "Win chance 56.8% vs 52% implied by -108: +9.4% expected value (raw model said 88.5%; past picks went 21-19, so it trusts 18% of the model's edge)",
+    "Went over the line in 9 of his last 10 games (5/5 in the last 5)",
+    "Averaging 25.0 over the last 5 and 22.3 over the last 15",
+    "Minutes steady: 26 per game over the last 5 (25 over the last 15)",
+    "Matchup vs MIN: -4% to his PRA projection from their defense and pace (works against the over)",
+    "MIN ranks among the top-10 defenses for PRA; he went over 17.5 in 4 of 5 games against that tier",
+    "Teammate injury boost: Cameron Boozer, GG Jackson, Jerami Grant out, +12% to his PRA projection (extra minutes and usage)",
+    "Best price: -103 at Bally Bet (DraftKings -108; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 321,
+   "p_model": 89.7,
+   "p_win_raw": 88.5,
+   "p_honest": 51.4,
+   "p_win": 56.8,
+   "ev": 9.4,
+   "picked_at": "2026-11-27 10:00 AM ET",
+   "open_line": 17.5,
+   "open_price": -108,
+   "close_line": 17.5,
+   "close_price": -108,
+   "close_at": "2026-11-27 10:00 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-25",
    "eid": "401909319",
    "game": "CLE@NYK",

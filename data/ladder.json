@@ -6,6 +6,105 @@
  "steps": [
   {
    "type": "Prop",
+   "label": "Daniss Jenkins Under 7.5 AST",
+   "game": "MIL@DET",
+   "eid": "401909327",
+   "time": "7:30 PM ET",
+   "home": "DET",
+   "away": "MIL",
+   "side": "Under",
+   "line": 7.5,
+   "price": -102,
+   "model": 5.8,
+   "edge": -1.7,
+   "edge_pct": 22.7,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     7,
+     10
+    ],
+    "l15": [
+     12,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     4.0,
+     4.0,
+     8.0,
+     0.0,
+     5.0,
+     5.0,
+     9.0,
+     1.0,
+     3.0,
+     10.0
+    ],
+    "line": 7.5,
+    "side": "Under",
+    "label": "AST",
+    "opps": [
+     "PHI",
+     "LAL",
+     "WAS",
+     "WAS",
+     "MIA",
+     "SAS",
+     "NOP",
+     "TOR",
+     "ATL",
+     "ORL"
+    ]
+   },
+   "reasons": [
+    "Model projects 5.8 AST vs a line of 7.5 (-1.7, 23% edge)",
+    "Went under the line in 7 of his last 10 games (3/5 in the last 5)",
+    "Averaging 5.6 over the last 5 and 4.8 over the last 15",
+    "Minutes steady: 37 per game over the last 5 (32 over the last 15)",
+    "Matchup vs MIL: -1% to his AST projection from their defense and pace (helps the under)",
+    "MIL ranks among the middle-10 defenses for AST; he went under 7.5 in 6 of 7 games against that tier",
+    "Teammate injury boost: Cade Cunningham, Duncan Robinson out, +12.2% to his AST projection (extra minutes and usage)",
+    "Game script / rest: blowout risk (10.5-pt spread) -1.25% (net -1.2%)",
+    "Best price: +100 at FanDuel (DraftKings -102; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 55.0,
+   "p_model": 77.1,
+   "ev": 8.9,
+   "score": 79.3,
+   "best": [
+    100,
+    "fanduel"
+   ],
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "stat": "AST",
+   "date": "2026-11-27",
+   "attempt": 11,
+   "day": 1,
+   "stake": 10,
+   "to_win": 9.8,
+   "picked_at": "2026-11-27 10:00 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 55% to win, +8.9% expected value",
+   "open_line": 7.5,
+   "open_price": -102,
+   "close_line": 7.5,
+   "close_price": -102,
+   "close_at": "2026-11-27 10:00 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
+   "type": "Prop",
    "label": "Draymond Green Under 5.5 PTS",
    "game": "SAC@GSW",
    "eid": "401909324",
@@ -2093,5 +2192,5 @@
    "result": "Busted"
   }
  ],
- "attempt_started": null
+ "attempt_started": "2026-11-27"
 }
