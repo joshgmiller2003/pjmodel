@@ -2,6 +2,103 @@
  "note": "Every Pick of the Day with its reasons and result. Never trimmed.",
  "picks": [
   {
+   "date": "2026-11-28",
+   "eid": "401910049",
+   "game": "OKC@MIL",
+   "time": "8:00 PM ET",
+   "home": "MIL",
+   "away": "OKC",
+   "type": "Prop",
+   "player": "Myles Turner",
+   "team": "MIL",
+   "stat": "RA",
+   "side": "Over",
+   "line": 7.5,
+   "price": -123,
+   "model": 9.9,
+   "edge": 2.4,
+   "edge_pct": 32.0,
+   "label": "Myles Turner Over 7.5 RA",
+   "best": [
+    -120,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     5,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     11,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     7.0,
+     12.0,
+     5.0,
+     14.0,
+     8.0,
+     9.0,
+     11.0,
+     12.0,
+     8.0,
+     13.0
+    ],
+    "line": 7.5,
+    "side": "Over",
+    "label": "RA",
+    "opps": [
+     "TOR",
+     "BOS",
+     "NYK",
+     "ORL",
+     "ATL",
+     "MIA",
+     "PHI",
+     "TOR",
+     "BKN",
+     "DET"
+    ]
+   },
+   "score": 90.8,
+   "reasons": [
+    "Model projects 9.9 RA vs a line of 7.5 (+2.4, 32% edge)",
+    "Win chance 55.4% vs 55% implied by -123: +0.4% expected value (raw model said 77%; past picks went 22-19, so it trusts 20% of the model's edge)",
+    "Went over the line in 8 of his last 10 games (5/5 in the last 5)",
+    "Averaging 10.6 over the last 5 and 9.8 over the last 15",
+    "Minutes steady: 26 per game over the last 5 (27 over the last 15)",
+    "Matchup vs OKC: neutral for RA (defense and pace about league average)",
+    "OKC ranks among the middle-10 defenses for RA; he went over 7.5 in 2 of 5 games against that tier",
+    "Game script / rest: back-to-back -3% (net -3%)",
+    "Best price: -120 at Hard Rock (DraftKings -123; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 123,
+   "p_model": 79.4,
+   "p_win_raw": 77.0,
+   "p_honest": 51.3,
+   "p_win": 55.4,
+   "ev": 0.4,
+   "picked_at": "2026-11-28 10:00 AM ET",
+   "open_line": 7.5,
+   "open_price": -123,
+   "close_line": 7.5,
+   "close_price": -123,
+   "close_at": "2026-11-28 10:00 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
+  {
    "date": "2026-11-27",
    "eid": "401909331",
    "game": "MEM@MIN",
@@ -98,7 +195,11 @@
     "beat": true,
     "final": true
    },
-   "locked_at": "2026-11-27 09:30 PM ET"
+   "locked_at": "2026-11-27 09:30 PM ET",
+   "result": "W",
+   "actual": "26 PRA",
+   "units": 0.81,
+   "graded_at": "2026-11-28 10:00 AM ET"
   },
   {
    "date": "2026-11-25",

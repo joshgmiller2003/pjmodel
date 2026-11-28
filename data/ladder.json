@@ -2,8 +2,103 @@
  "start": 10,
  "goal": 1000,
  "attempt": 11,
- "bankroll": 10,
+ "bankroll": 18.55,
  "steps": [
+  {
+   "type": "Prop",
+   "label": "Sion James Over 9.5 PR",
+   "game": "BKN@CHA",
+   "eid": "401910047",
+   "time": "6:00 PM ET",
+   "home": "CHA",
+   "away": "BKN",
+   "side": "Over",
+   "line": 9.5,
+   "price": -112,
+   "model": 13.1,
+   "edge": 3.6,
+   "edge_pct": 37.9,
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     9,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     15.0,
+     12.0,
+     14.0,
+     15.0,
+     11.0,
+     11.0,
+     9.0,
+     10.0,
+     9.0,
+     10.0
+    ],
+    "line": 9.5,
+    "side": "Over",
+    "label": "PR",
+    "opps": [
+     "DET",
+     "BKN",
+     "BOS",
+     "CLE",
+     "PHX",
+     "LAC",
+     "LAL",
+     "ATL",
+     "MEM",
+     "CHI"
+    ]
+   },
+   "reasons": [
+    "Model projects 13.1 PR vs a line of 9.5 (+3.6, 38% edge)",
+    "Went over the line in 8 of his last 10 games (3/5 in the last 5)",
+    "Averaging 9.8 over the last 5 and 10.1 over the last 15",
+    "Minutes steady: 30 per game over the last 5 (28 over the last 15)",
+    "Matchup vs BKN: neutral for PR (defense and pace about league average)",
+    "BKN ranks among the middle-10 defenses for PR; he went over 9.5 in 4 of 7 games against that tier",
+    "Teammate injury boost: Dennis Schroder, Grayson Allen out, +12.1% to his PR projection (extra minutes and usage)",
+    "Game script / rest: opponent on a back-to-back +1.5% (net +1.5%)",
+    "Not on the injury report at pick time"
+   ],
+   "p_win": 55.2,
+   "p_model": 86.4,
+   "ev": 4.5,
+   "score": 83.5,
+   "best": null,
+   "player": "Sion James",
+   "team": "CHA",
+   "stat": "PR",
+   "date": "2026-11-28",
+   "attempt": 11,
+   "day": 2,
+   "stake": 18.55,
+   "to_win": 16.56,
+   "picked_at": "2026-11-28 10:00 AM ET",
+   "why_ladder": "Highest win chance on the board at a ladder-friendly price: 55.2% to win, +4.5% expected value",
+   "open_line": 9.5,
+   "open_price": -112,
+   "close_line": 9.5,
+   "close_price": -112,
+   "close_at": "2026-11-28 10:00 AM ET",
+   "clv": {
+    "line": 0.0,
+    "price": 0.0,
+    "beat": false,
+    "final": false
+   }
+  },
   {
    "type": "Prop",
    "label": "Daniss Jenkins Under 7.5 AST",
@@ -102,7 +197,13 @@
     "beat": true,
     "final": true
    },
-   "locked_at": "2026-11-27 08:30 PM ET"
+   "locked_at": "2026-11-27 08:30 PM ET",
+   "result": "W",
+   "actual": "3 AST",
+   "units": 0.85,
+   "graded_at": "2026-11-28 10:00 AM ET",
+   "applied": true,
+   "bankroll_after": 18.55
   },
   {
    "type": "Prop",
