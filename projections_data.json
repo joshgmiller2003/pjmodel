@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T00:00:32Z",
+ "generated_at": "2026-11-28T01:30:30Z",
  "season": "2026-27",
  "games": [
   {
@@ -24,14 +24,18 @@
     "over_px": -105,
     "under_px": -115
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 1
    },
    "spread_edge": 1.8,
    "total_edge": 3.4,
-   "note": "Model NYK -4.3, total 225.9; leans NYK vs the market spread."
+   "note": "Model NYK -4.3, total 225.9; leans NYK vs the market spread.",
+   "score": {
+    "away": 61,
+    "home": 51
+   }
   },
   {
    "id": "MIL@DET",
@@ -55,14 +59,18 @@
     "over_px": -107,
     "under_px": -113
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 2
    },
    "spread_edge": -1.4,
    "total_edge": 5.8,
-   "note": "Model DET -8.1, total 225.3; leans MIL vs the market spread."
+   "note": "Model DET -8.1, total 225.3; leans MIL vs the market spread.",
+   "score": {
+    "away": 42,
+    "home": 40
+   }
   },
   {
    "id": "PHI@IND",
@@ -86,14 +94,18 @@
     "over_px": -105,
     "under_px": -115
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 3
    },
    "spread_edge": 3.9,
    "total_edge": -1.9,
-   "note": "Model IND -0.4, total 227.6; leans IND vs the market spread."
+   "note": "Model IND -0.4, total 227.6; leans IND vs the market spread.",
+   "score": {
+    "away": 39,
+    "home": 38
+   }
   },
   {
    "id": "BKN@TOR",
@@ -117,14 +129,18 @@
     "over_px": -108,
     "under_px": -112
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 1,
     "home": 3
    },
    "spread_edge": -4.5,
    "total_edge": 7.0,
-   "note": "Model TOR -5, total 226.5; leans BKN vs the market spread."
+   "note": "Model TOR -5, total 226.5; leans BKN vs the market spread.",
+   "score": {
+    "away": 40,
+    "home": 48
+   }
   },
   {
    "id": "ATL@BOS",
@@ -148,14 +164,18 @@
     "over_px": -112,
     "under_px": -108
    },
-   "status": "Upcoming",
+   "status": "Live",
    "rest": {
     "away": 4,
     "home": 2
    },
    "spread_edge": -4.0,
    "total_edge": 0.4,
-   "note": "Model BOS -4.5, total 223.9; leans ATL vs the market spread."
+   "note": "Model BOS -4.5, total 223.9; leans ATL vs the market spread.",
+   "score": {
+    "away": 12,
+    "home": 21
+   }
   },
   {
    "id": "MEM@MIN",
@@ -356,19 +376,19 @@
     "ml_away": 0.43
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+3.5",
+    "total": 218.5,
+    "ml_away": "-169",
+    "ml_home": "+142"
    },
    "status": "Upcoming",
    "rest": {
     "away": 3,
     "home": 3
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 5.5,
+   "total_edge": 5.9,
+   "note": "Model WAS -2, total 224.4; leans WAS vs the market spread."
   },
   {
    "id": "BKN@CHA",
@@ -383,19 +403,19 @@
     "ml_away": 0.44
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-5.5",
+    "total": 213.5,
+    "ml_away": "+186",
+    "ml_home": "-224"
    },
    "status": "Upcoming",
    "rest": {
     "away": 2,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -3.8,
+   "total_edge": 9.0,
+   "note": "Model CHA -1.7, total 222.5; leans BKN vs the market spread."
   },
   {
    "id": "IND@CHI",
@@ -410,19 +430,19 @@
     "ml_away": 0.46
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "-2.5",
+    "total": 236.5,
+    "ml_away": "+119",
+    "ml_home": "-141"
    },
    "status": "Upcoming",
    "rest": {
     "away": 4,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": -1.2,
+   "total_edge": -5.1,
+   "note": "Model CHI -1.3, total 231.4; leans IND vs the market spread."
   },
   {
    "id": "OKC@MIL",
@@ -437,19 +457,19 @@
     "ml_away": 0.58
    },
    "dk": {
-    "spread": "N/A",
-    "total": 0,
-    "ml_away": "N/A",
-    "ml_home": "N/A"
+    "spread": "+11.5",
+    "total": 228.5,
+    "ml_away": "-521",
+    "ml_home": "+395"
    },
    "status": "Upcoming",
    "rest": {
     "away": 2,
     "home": 2
    },
-   "spread_edge": 0,
-   "total_edge": 0,
-   "note": "No market line available yet."
+   "spread_edge": 8.9,
+   "total_edge": -2.1,
+   "note": "Model MIL +2.6, total 226.4; leans MIL vs the market spread."
   },
   {
    "id": "PHI@HOU",
@@ -29878,13 +29898,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "AST",
-   "model": 5.0,
-   "base": 4.9,
+   "model": 5.3,
+   "base": 5.2,
    "matchup": -5.6,
-   "injury": 11.6,
+   "injury": 18.3,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -29915,10 +29936,10 @@
      14
     ]
    },
-   "conf": 49.0,
+   "conf": 39.2,
    "win_raw": 59.8,
    "win_chance": 50.1,
-   "edge": -0.5,
+   "edge": -0.2,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -30060,13 +30081,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "AST",
-   "model": 6.4,
-   "base": 6.5,
+   "model": 6.8,
+   "base": 6.9,
    "matchup": -8.3,
-   "injury": 12.7,
+   "injury": 18.1,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30100,7 +30122,7 @@
    "conf": 85.3,
    "win_raw": 75.2,
    "win_chance": 51.4,
-   "edge": 1.9,
+   "edge": 2.3,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -30249,6 +30271,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30424,12 +30447,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "AST",
-   "model": 1.3,
-   "base": 1.3,
+   "model": 1.4,
+   "base": 1.4,
    "matchup": -2.4,
-   "injury": 12.8,
+   "injury": 17.9,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30460,10 +30484,10 @@
      11
     ]
    },
-   "conf": 68.3,
+   "conf": 56.3,
    "win_raw": 70.3,
    "win_chance": 51.4,
-   "edge": -0.2,
+   "edge": -0.1,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -30490,10 +30514,11 @@
    "model": 1.0,
    "base": 1.0,
    "matchup": 1.7,
-   "injury": 11.8,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30543,13 +30568,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PTS",
-   "model": 22.1,
-   "base": 23.2,
+   "model": 23.6,
+   "base": 24.7,
    "matchup": -3.8,
-   "injury": 10.7,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30572,10 +30598,10 @@
      14
     ]
    },
-   "conf": 32.1,
+   "conf": 44.7,
    "win_raw": 54.4,
    "win_chance": 48.7,
-   "edge": 0.6,
+   "edge": 2.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -30720,6 +30746,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30946,13 +30973,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PTS",
-   "model": 16.7,
-   "base": 16.7,
+   "model": 17.6,
+   "base": 17.6,
    "matchup": -3.1,
-   "injury": 11.7,
+   "injury": 17.5,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -30982,7 +31010,7 @@
    "conf": 79.8,
    "win_raw": 72.4,
    "win_chance": 51.4,
-   "edge": 6.2,
+   "edge": 7.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -31013,6 +31041,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31125,13 +31154,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PTS",
-   "model": 9.7,
-   "base": 9.7,
+   "model": 10.5,
+   "base": 10.5,
    "matchup": -5.4,
-   "injury": 11.1,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31158,10 +31188,10 @@
      15
     ]
    },
-   "conf": 46.5,
+   "conf": 63.4,
    "win_raw": 48.9,
    "win_chance": 51.7,
-   "edge": 1.2,
+   "edge": 2.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -31185,12 +31215,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PTS",
-   "model": 5.1,
-   "base": 4.9,
+   "model": 5.3,
+   "base": 5.1,
    "matchup": -3.0,
-   "injury": 12.3,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31217,10 +31248,10 @@
      11
     ]
    },
-   "conf": 47.8,
+   "conf": 41.3,
    "win_raw": 62.0,
    "win_chance": 50.7,
-   "edge": -0.4,
+   "edge": -0.2,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -31244,13 +31275,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PA",
-   "model": 27.1,
-   "base": 28.1,
+   "model": 28.9,
+   "base": 29.9,
    "matchup": -4.1,
-   "injury": 10.9,
+   "injury": 17.9,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31265,27 +31297,27 @@
    ],
    "hits": {
     "l5": [
-     4,
+     1,
      5
     ],
     "l10": [
-     7,
+     3,
      10
     ],
     "l15": [
-     8,
+     6,
      14
     ]
    },
-   "conf": 40.7,
-   "win_raw": 53.9,
-   "win_chance": 48.6,
-   "edge": -0.4,
-   "side": "Under",
+   "conf": 26.1,
+   "win_raw": 46.1,
+   "win_chance": 51.4,
+   "edge": 1.4,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     3,
+     0,
      3
     ],
     "mid": [
@@ -31293,7 +31325,7 @@
      6
     ],
     "soft": [
-     2,
+     3,
      5
     ]
    }
@@ -31429,6 +31461,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31545,13 +31578,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PA",
-   "model": 23.2,
-   "base": 23.3,
+   "model": 24.4,
+   "base": 24.5,
    "matchup": -4.6,
-   "injury": 12.0,
+   "injury": 17.7,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31581,7 +31615,7 @@
    "conf": 89.0,
    "win_raw": 84.8,
    "win_chance": 51.4,
-   "edge": 7.7,
+   "edge": 8.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -31612,6 +31646,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31720,13 +31755,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PA",
-   "model": 10.8,
-   "base": 10.6,
+   "model": 11.7,
+   "base": 11.5,
    "matchup": -4.8,
-   "injury": 11.2,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31753,10 +31789,10 @@
      15
     ]
    },
-   "conf": 46.6,
+   "conf": 63.7,
    "win_raw": 51.9,
    "win_chance": 48.0,
-   "edge": 1.3,
+   "edge": 2.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -31780,12 +31816,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PA",
-   "model": 6.2,
-   "base": 6.2,
+   "model": 6.5,
+   "base": 6.5,
    "matchup": -2.9,
-   "injury": 12.4,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31812,10 +31849,10 @@
      11
     ]
    },
-   "conf": 72.7,
+   "conf": 65.5,
    "win_raw": 71.1,
    "win_chance": 51.4,
-   "edge": -1.3,
+   "edge": -1.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -31839,13 +31876,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PR",
-   "model": 26.2,
-   "base": 27.3,
+   "model": 27.9,
+   "base": 29.0,
    "matchup": -2.7,
-   "injury": 10.8,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -31876,10 +31914,10 @@
      14
     ]
    },
-   "conf": 25.6,
+   "conf": 37.6,
    "win_raw": 51.5,
    "win_chance": 47.9,
-   "edge": 0.7,
+   "edge": 2.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -32028,6 +32066,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32203,13 +32242,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PR",
-   "model": 16.3,
-   "base": 16.7,
+   "model": 17.6,
+   "base": 18.0,
    "matchup": -5.4,
-   "injury": 11.2,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32240,10 +32280,10 @@
      15
     ]
    },
-   "conf": 35.0,
+   "conf": 50.1,
    "win_raw": 51.4,
    "win_chance": 47.9,
-   "edge": 0.8,
+   "edge": 2.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -32274,6 +32314,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32331,13 +32372,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PR",
-   "model": 19.2,
-   "base": 19.5,
+   "model": 20.2,
+   "base": 20.5,
    "matchup": -2.4,
-   "injury": 11.8,
+   "injury": 17.6,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32367,7 +32409,7 @@
    "conf": 89.0,
    "win_raw": 86.2,
    "win_chance": 51.4,
-   "edge": 6.7,
+   "edge": 7.7,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -32391,12 +32433,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PR",
-   "model": 7.0,
-   "base": 7.0,
+   "model": 7.3,
+   "base": 7.3,
    "matchup": -3.3,
-   "injury": 12.3,
+   "injury": 17.7,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32427,10 +32470,10 @@
      11
     ]
    },
-   "conf": 86.5,
+   "conf": 83.2,
    "win_raw": 78.4,
    "win_chance": 51.4,
-   "edge": -2.5,
+   "edge": -2.2,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -32454,13 +32497,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PRA",
-   "model": 31.1,
-   "base": 32.2,
+   "model": 33.1,
+   "base": 34.2,
    "matchup": -3.2,
-   "injury": 10.9,
+   "injury": 17.9,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32475,27 +32519,27 @@
    ],
    "hits": {
     "l5": [
-     4,
+     1,
      5
     ],
     "l10": [
-     7,
+     3,
      10
     ],
     "l15": [
-     8,
+     6,
      14
     ]
    },
-   "conf": 40.4,
-   "win_raw": 53.8,
-   "win_chance": 48.5,
-   "edge": -0.4,
-   "side": "Under",
+   "conf": 26.0,
+   "win_raw": 46.2,
+   "win_chance": 51.5,
+   "edge": 1.6,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     4,
+     1,
      5
     ],
     "mid": [
@@ -32503,7 +32547,7 @@
      4
     ],
     "soft": [
-     2,
+     3,
      5
     ]
    }
@@ -32643,6 +32687,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32877,13 +32922,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PRA",
-   "model": 25.6,
-   "base": 26.0,
+   "model": 27.0,
+   "base": 27.4,
    "matchup": -4.0,
-   "injury": 12.0,
+   "injury": 17.7,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32917,7 +32963,7 @@
    "conf": 95.4,
    "win_raw": 88.4,
    "win_chance": 51.4,
-   "edge": 8.1,
+   "edge": 9.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -32941,13 +32987,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PRA",
-   "model": 17.8,
-   "base": 17.7,
+   "model": 19.2,
+   "base": 19.1,
    "matchup": -5.0,
-   "injury": 11.3,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -32974,10 +33021,10 @@
      15
     ]
    },
-   "conf": 28.8,
+   "conf": 43.2,
    "win_raw": 49.7,
    "win_chance": 50.5,
-   "edge": 0.3,
+   "edge": 1.7,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -33008,6 +33055,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33061,12 +33109,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "PRA",
-   "model": 8.3,
-   "base": 8.3,
+   "model": 8.7,
+   "base": 8.7,
    "matchup": -3.2,
-   "injury": 12.4,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33093,10 +33142,10 @@
      11
     ]
    },
-   "conf": 86.5,
+   "conf": 85.3,
    "win_raw": 79.8,
    "win_chance": 51.4,
-   "edge": -3.2,
+   "edge": -2.8,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -33186,6 +33235,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33243,13 +33293,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "REB",
-   "model": 6.5,
-   "base": 7.0,
+   "model": 7.1,
+   "base": 7.6,
    "matchup": -5.4,
-   "injury": 11.4,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33276,10 +33327,10 @@
      15
     ]
    },
-   "conf": 53.3,
+   "conf": 38.9,
    "win_raw": 61.7,
    "win_chance": 50.6,
-   "edge": -1.0,
+   "edge": -0.4,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -33546,6 +33597,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33599,13 +33651,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "REB",
-   "model": 4.0,
-   "base": 4.0,
+   "model": 4.3,
+   "base": 4.3,
    "matchup": 3.8,
-   "injury": 11.4,
+   "injury": 18.2,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33632,10 +33685,10 @@
      14
     ]
    },
-   "conf": 58.3,
+   "conf": 73.7,
    "win_raw": 56.9,
    "win_chance": 49.4,
-   "edge": 0.5,
+   "edge": 0.8,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -33659,12 +33712,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "REB",
-   "model": 2.1,
-   "base": 2.1,
+   "model": 2.2,
+   "base": 2.2,
    "matchup": -4.1,
-   "injury": 12.5,
+   "injury": 17.7,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33698,7 +33752,7 @@
    "conf": 89.2,
    "win_raw": 83.1,
    "win_chance": 51.4,
-   "edge": -1.4,
+   "edge": -1.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -33781,13 +33835,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "REB",
-   "model": 2.4,
-   "base": 2.7,
+   "model": 2.6,
+   "base": 2.9,
    "matchup": 2.1,
-   "injury": 12.5,
+   "injury": 18.1,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -33806,35 +33861,35 @@
    ],
    "hits": {
     "l5": [
-     4,
+     1,
      5
     ],
     "l10": [
-     7,
+     3,
      10
     ],
     "l15": [
-     9,
+     6,
      15
     ]
    },
-   "conf": 45.7,
-   "win_raw": 58.2,
-   "win_chance": 49.7,
-   "edge": -0.1,
-   "side": "Under",
+   "conf": 23.7,
+   "win_raw": 41.8,
+   "win_chance": 50.3,
+   "edge": 0.1,
+   "side": "Over",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     5,
+     3,
      8
     ],
     "mid": [
-     5,
+     2,
      7
     ],
     "soft": [
-     1,
+     3,
      4
     ]
    }
@@ -33911,6 +33966,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34082,13 +34138,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "RA",
-   "model": 9.0,
-   "base": 9.0,
+   "model": 9.5,
+   "base": 9.5,
    "matchup": -1.6,
-   "injury": 11.5,
+   "injury": 18.3,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34115,10 +34172,10 @@
      14
     ]
    },
-   "conf": 36.7,
+   "conf": 47.3,
    "win_raw": 55.0,
    "win_chance": 48.9,
-   "edge": 0.5,
+   "edge": 1.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -34142,13 +34199,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "RA",
-   "model": 7.9,
-   "base": 8.0,
+   "model": 8.5,
+   "base": 8.6,
    "matchup": -4.6,
-   "injury": 11.5,
+   "injury": 20.0,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34175,10 +34233,10 @@
      15
     ]
    },
-   "conf": 42.0,
+   "conf": 29.3,
    "win_raw": 55.3,
    "win_chance": 48.9,
-   "edge": -0.6,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -34261,13 +34319,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "RA",
-   "model": 8.9,
-   "base": 9.3,
+   "model": 9.3,
+   "base": 9.7,
    "matchup": -5.5,
-   "injury": 12.6,
+   "injury": 18.1,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34294,10 +34353,10 @@
      15
     ]
    },
-   "conf": 63.9,
+   "conf": 73.5,
    "win_raw": 61.0,
    "win_chance": 50.4,
-   "edge": 1.4,
+   "edge": 1.8,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -34328,6 +34387,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34381,12 +34441,13 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "RA",
-   "model": 3.4,
-   "base": 3.4,
+   "model": 3.6,
+   "base": 3.6,
    "matchup": -3.5,
-   "injury": 12.6,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34409,10 +34470,10 @@
      11
     ]
    },
-   "conf": 84.3,
+   "conf": 76.2,
    "win_raw": 70.4,
    "win_chance": 51.4,
-   "edge": -1.1,
+   "edge": -0.9,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -34436,13 +34497,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "3PM",
-   "model": 2.8,
-   "base": 3.0,
+   "model": 3.0,
+   "base": 3.2,
    "matchup": -4.1,
-   "injury": 11.1,
+   "injury": 17.8,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34473,10 +34535,10 @@
      14
     ]
    },
-   "conf": 44.0,
+   "conf": 58.4,
    "win_raw": 49.0,
    "win_chance": 51.4,
-   "edge": 0.3,
+   "edge": 0.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -34566,6 +34628,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34685,6 +34748,7 @@
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34797,13 +34861,14 @@
    "opp": "MIN",
    "game": "MEM@MIN",
    "stat": "3PM",
-   "model": 2.5,
-   "base": 2.5,
+   "model": 2.6,
+   "base": 2.6,
    "matchup": -2.6,
-   "injury": 11.8,
+   "injury": 17.2,
    "inj_out": [
     "Cameron Boozer",
     "GG Jackson",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34833,7 +34898,7 @@
    "conf": 77.1,
    "win_raw": 64.1,
    "win_chance": 51.3,
-   "edge": 1.0,
+   "edge": 1.1,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -34860,9 +34925,10 @@
    "model": 0.6,
    "base": 0.6,
    "matchup": -8.6,
-   "injury": 12.1,
+   "injury": 17.2,
    "inj_out": [
     "Cameron Boozer",
+    "Isaiah Stewart",
     "Jerami Grant"
    ],
    "sched": 0.0,
@@ -34920,11 +34986,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "AST",
-   "model": 7.4,
-   "base": 7.2,
+   "model": 8.4,
+   "base": 8.2,
    "matchup": 2.8,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.0,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.747,
@@ -34952,7 +35020,7 @@
    "conf": 78.9,
    "win_raw": 71.5,
    "win_chance": 51.4,
-   "edge": 1.9,
+   "edge": 2.9,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -35027,62 +35095,6 @@
     "soft": [
      5,
      8
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "AST",
-   "model": 4.6,
-   "base": 4.5,
-   "matchup": -4.4,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.487,
-   "dk": 4.5,
-   "over": -119,
-   "under": -111,
-   "best_under": [
-    102,
-    "betparx"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     7,
-     15
-    ]
-   },
-   "conf": 35.2,
-   "win_raw": 47.9,
-   "win_chance": 51.9,
-   "edge": 0.1,
-   "side": "Over",
-   "tiers": {
-    "tonight": "tough",
-    "tough": [
-     2,
-     5
-    ],
-    "mid": [
-     2,
-     5
-    ],
-    "soft": [
-     3,
-     5
     ]
    }
   },
@@ -35328,11 +35340,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "AST",
-   "model": 2.9,
-   "base": 3.0,
+   "model": 3.3,
+   "base": 3.4,
    "matchup": 3.1,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.9,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.554,
@@ -35357,10 +35371,10 @@
      15
     ]
    },
-   "conf": 50.8,
+   "conf": 67.0,
    "win_raw": 57.2,
    "win_chance": 49.4,
-   "edge": 0.4,
+   "edge": 0.8,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -35384,11 +35398,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "AST",
-   "model": 4.0,
-   "base": 3.9,
+   "model": 4.5,
+   "base": 4.4,
    "matchup": 2.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.7,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.762,
@@ -35420,7 +35436,7 @@
    "conf": 88.6,
    "win_raw": 68.6,
    "win_chance": 51.4,
-   "edge": 1.5,
+   "edge": 2.0,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -35504,11 +35520,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "AST",
-   "model": 2.5,
-   "base": 2.5,
+   "model": 2.8,
+   "base": 2.8,
    "matchup": 2.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.7,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.713,
@@ -35540,7 +35558,7 @@
    "conf": 87.2,
    "win_raw": 69.4,
    "win_chance": 51.4,
-   "edge": 1.0,
+   "edge": 1.3,
    "side": "Over",
    "tiers": {
     "tonight": "soft",
@@ -35676,11 +35694,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 23.6,
-   "base": 23.5,
+   "model": 26.8,
+   "base": 26.7,
    "matchup": -3.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.4,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.455,
@@ -35693,23 +35713,23 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     8,
+     7,
      15
     ]
    },
-   "conf": 38.7,
-   "win_raw": 54.0,
-   "win_chance": 48.6,
-   "edge": -0.9,
-   "side": "Under",
+   "conf": 39.8,
+   "win_raw": 46.0,
+   "win_chance": 51.4,
+   "edge": 2.3,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
@@ -35721,64 +35741,8 @@
      8
     ],
     "soft": [
-     2,
+     1,
      3
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "PTS",
-   "model": 20.6,
-   "base": 21.5,
-   "matchup": 1.7,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.413,
-   "dk": 22.5,
-   "over": -114,
-   "under": -112,
-   "best_over": [
-    -104,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     9,
-     15
-    ]
-   },
-   "conf": 48.2,
-   "win_raw": 59.2,
-   "win_chance": 50.0,
-   "edge": -1.9,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     3,
-     4
-    ],
-    "mid": [
-     2,
-     4
-    ],
-    "soft": [
-     4,
-     7
     ]
    }
   },
@@ -35960,11 +35924,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 12.2,
-   "base": 12.1,
+   "model": 13.9,
+   "base": 13.8,
    "matchup": -3.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.543,
@@ -35989,10 +35955,10 @@
      15
     ]
    },
-   "conf": 42.1,
+   "conf": 68.7,
    "win_raw": 59.2,
    "win_chance": 50.0,
-   "edge": 0.7,
+   "edge": 2.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -36016,11 +35982,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 9.2,
-   "base": 9.2,
+   "model": 10.5,
+   "base": 10.5,
    "matchup": -3.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.3,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.396,
@@ -36041,10 +36009,10 @@
      15
     ]
    },
-   "conf": 48.0,
+   "conf": 25.7,
    "win_raw": 54.9,
    "win_chance": 48.8,
-   "edge": -1.3,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -36068,11 +36036,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 9.4,
-   "base": 9.4,
+   "model": 10.5,
+   "base": 10.5,
    "matchup": -3.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.1,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.493,
@@ -36085,7 +36055,7 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
@@ -36093,27 +36063,27 @@
      10
     ],
     "l15": [
-     8,
+     7,
      15
     ]
    },
-   "conf": 28.5,
-   "win_raw": 51.8,
-   "win_chance": 48.0,
-   "edge": -0.1,
-   "side": "Under",
+   "conf": 47.4,
+   "win_raw": 48.2,
+   "win_chance": 52.0,
+   "edge": 1.0,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     5,
+     2,
      7
     ],
     "mid": [
-     5,
+     3,
      8
     ],
     "soft": [
-     0,
+     3,
      3
     ]
    }
@@ -36184,11 +36154,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 11.2,
-   "base": 10.9,
+   "model": 12.5,
+   "base": 12.2,
    "matchup": -3.4,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.719,
@@ -36220,7 +36192,7 @@
    "conf": 79.8,
    "win_raw": 64.5,
    "win_chance": 51.4,
-   "edge": 3.7,
+   "edge": 5.0,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -36360,11 +36332,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PTS",
-   "model": 8.2,
-   "base": 7.5,
+   "model": 9.1,
+   "base": 8.4,
    "matchup": -3.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.0,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.688,
@@ -36392,7 +36366,7 @@
    "conf": 80.4,
    "win_raw": 64.1,
    "win_chance": 51.3,
-   "edge": 2.7,
+   "edge": 3.6,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -36472,11 +36446,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 31.0,
-   "base": 30.7,
+   "model": 35.1,
+   "base": 34.8,
    "matchup": -2.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.3,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.522,
@@ -36501,10 +36477,10 @@
      15
     ]
    },
-   "conf": 32.3,
+   "conf": 56.5,
    "win_raw": 52.7,
    "win_chance": 48.2,
-   "edge": 0.5,
+   "edge": 4.6,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -36519,62 +36495,6 @@
     "soft": [
      4,
      5
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "PA",
-   "model": 25.3,
-   "base": 26.0,
-   "matchup": 0.6,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.407,
-   "dk": 27.5,
-   "over": -111,
-   "under": -118,
-   "best_over": [
-    -102,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 48.3,
-   "win_raw": 62.2,
-   "win_chance": 50.8,
-   "edge": -2.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     2,
-     3
-    ],
-    "mid": [
-     4,
-     6
-    ],
-    "soft": [
-     4,
-     6
     ]
    }
   },
@@ -36820,11 +36740,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 12.1,
-   "base": 12.2,
+   "model": 13.8,
+   "base": 13.9,
    "matchup": -2.0,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.2,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.398,
@@ -36837,7 +36759,7 @@
    ],
    "hits": {
     "l5": [
-     2,
+     3,
      5
     ],
     "l10": [
@@ -36845,23 +36767,23 @@
      10
     ],
     "l15": [
-     6,
+     9,
      15
     ]
    },
-   "conf": 43.4,
-   "win_raw": 52.1,
-   "win_chance": 48.1,
-   "edge": -1.4,
-   "side": "Under",
+   "conf": 34.3,
+   "win_raw": 47.9,
+   "win_chance": 51.9,
+   "edge": 0.3,
+   "side": "Over",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     2,
+     3,
      5
     ],
     "mid": [
-     2,
+     4,
      6
     ],
     "soft": [
@@ -36876,11 +36798,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 13.4,
-   "base": 13.3,
+   "model": 15.2,
+   "base": 15.1,
    "matchup": -3.2,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 13.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.553,
@@ -36905,10 +36829,10 @@
      15
     ]
    },
-   "conf": 44.1,
+   "conf": 70.0,
    "win_raw": 59.8,
    "win_chance": 50.1,
-   "edge": 0.9,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -36932,11 +36856,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 12.0,
-   "base": 11.9,
+   "model": 13.4,
+   "base": 13.3,
    "matchup": -2.5,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.0,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.535,
@@ -36961,10 +36887,10 @@
      15
     ]
    },
-   "conf": 32.6,
+   "conf": 54.5,
    "win_raw": 48.1,
    "win_chance": 52.0,
-   "edge": 0.5,
+   "edge": 1.9,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -37096,11 +37022,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 12.8,
-   "base": 11.9,
+   "model": 14.3,
+   "base": 13.4,
    "matchup": -2.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.735,
@@ -37128,7 +37056,7 @@
    "conf": 79.8,
    "win_raw": 65.4,
    "win_chance": 51.4,
-   "edge": 4.3,
+   "edge": 5.8,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -37152,11 +37080,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PA",
-   "model": 11.8,
-   "base": 11.4,
+   "model": 13.2,
+   "base": 12.8,
    "matchup": -1.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.9,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.701,
@@ -37184,7 +37114,7 @@
    "conf": 79.4,
    "win_raw": 62.1,
    "win_chance": 50.7,
-   "edge": 3.3,
+   "edge": 4.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -37208,11 +37138,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 29.6,
-   "base": 29.7,
+   "model": 33.4,
+   "base": 33.5,
    "matchup": -3.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.459,
@@ -37225,23 +37157,23 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     8,
+     7,
      15
     ]
    },
-   "conf": 37.4,
-   "win_raw": 53.8,
-   "win_chance": 48.5,
-   "edge": -0.9,
-   "side": "Under",
+   "conf": 40.0,
+   "win_raw": 46.2,
+   "win_chance": 51.5,
+   "edge": 2.9,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
@@ -37253,7 +37185,7 @@
      8
     ],
     "soft": [
-     2,
+     1,
      3
     ]
    }
@@ -37311,66 +37243,6 @@
     "soft": [
      1,
      4
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "PR",
-   "model": 24.7,
-   "base": 25.5,
-   "matchup": 1.8,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.421,
-   "dk": 26.5,
-   "over": -118,
-   "under": -111,
-   "best_over": [
-    -108,
-    "fanduel"
-   ],
-   "best_under": [
-    -110,
-    "espnbet"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 46.1,
-   "win_raw": 61.4,
-   "win_chance": 50.5,
-   "edge": -1.8,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     3,
-     4
-    ],
-    "mid": [
-     3,
-     4
-    ],
-    "soft": [
-     4,
-     7
     ]
    }
   },
@@ -37556,11 +37428,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 17.2,
-   "base": 17.2,
+   "model": 19.4,
+   "base": 19.4,
    "matchup": -2.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.6,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.535,
@@ -37589,10 +37463,10 @@
      15
     ]
    },
-   "conf": 37.9,
+   "conf": 61.9,
    "win_raw": 56.1,
    "win_chance": 49.1,
-   "edge": 0.7,
+   "edge": 2.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -37616,11 +37490,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 14.2,
-   "base": 14.2,
+   "model": 15.8,
+   "base": 15.8,
    "matchup": -3.2,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.2,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.37,
@@ -37649,10 +37525,10 @@
      15
     ]
    },
-   "conf": 59.9,
+   "conf": 42.5,
    "win_raw": 59.1,
    "win_chance": 49.9,
-   "edge": -2.3,
+   "edge": -0.7,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -37676,11 +37552,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 11.2,
-   "base": 11.4,
+   "model": 12.7,
+   "base": 12.9,
    "matchup": -3.2,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.342,
@@ -37705,10 +37583,10 @@
      15
     ]
    },
-   "conf": 55.4,
+   "conf": 35.4,
    "win_raw": 55.5,
    "win_chance": 49.0,
-   "edge": -2.3,
+   "edge": -0.8,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -37848,11 +37726,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 16.5,
-   "base": 16.0,
+   "model": 18.4,
+   "base": 17.9,
    "matchup": -3.0,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.7,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.739,
@@ -37880,7 +37760,7 @@
    "conf": 80.8,
    "win_raw": 68.3,
    "win_chance": 51.4,
-   "edge": 5.0,
+   "edge": 6.9,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -37960,11 +37840,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PR",
-   "model": 12.7,
-   "base": 11.8,
+   "model": 14.0,
+   "base": 13.1,
    "matchup": -3.0,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.1,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.676,
@@ -37992,7 +37874,7 @@
    "conf": 76.6,
    "win_raw": 60.6,
    "win_chance": 50.3,
-   "edge": 3.2,
+   "edge": 4.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -38016,11 +37898,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 37.1,
-   "base": 37.0,
+   "model": 41.8,
+   "base": 41.7,
    "matchup": -2.2,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.484,
@@ -38037,7 +37921,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -38045,27 +37929,27 @@
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 30.3,
-   "win_raw": 49.6,
-   "win_chance": 50.5,
-   "edge": -0.4,
-   "side": "Under",
+   "conf": 47.2,
+   "win_raw": 50.4,
+   "win_chance": 49.5,
+   "edge": 4.3,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     4,
+     1,
      5
     ],
     "mid": [
-     3,
+     5,
      8
     ],
     "soft": [
-     1,
+     3,
      4
     ]
    }
@@ -38123,66 +38007,6 @@
     "soft": [
      5,
      8
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "PRA",
-   "model": 29.3,
-   "base": 30.0,
-   "matchup": 0.8,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.411,
-   "dk": 31.5,
-   "over": -113,
-   "under": -116,
-   "best_over": [
-    -106,
-    "fanduel"
-   ],
-   "best_under": [
-    -115,
-    "espnbet"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "conf": 46.5,
-   "win_raw": 62.0,
-   "win_chance": 50.7,
-   "edge": -2.2,
-   "side": "Under",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     3,
-     4
-    ],
-    "mid": [
-     4,
-     6
-    ],
-    "soft": [
-     3,
-     5
     ]
    }
   },
@@ -38372,11 +38196,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 16.8,
-   "base": 16.7,
+   "model": 18.7,
+   "base": 18.6,
    "matchup": -2.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.3,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.405,
@@ -38389,31 +38215,31 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
-     7,
+     3,
      10
     ],
     "l15": [
-     8,
+     7,
      15
     ]
    },
-   "conf": 51.4,
-   "win_raw": 57.0,
-   "win_chance": 49.4,
-   "edge": -1.7,
-   "side": "Under",
+   "conf": 22.1,
+   "win_raw": 43.0,
+   "win_chance": 50.6,
+   "edge": 0.2,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     5,
+     1,
      6
     ],
     "mid": [
-     3,
+     5,
      8
     ],
     "soft": [
@@ -38428,11 +38254,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 18.2,
-   "base": 18.4,
+   "model": 20.6,
+   "base": 20.8,
    "matchup": -2.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.6,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.485,
@@ -38449,7 +38277,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -38457,27 +38285,27 @@
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 31.3,
-   "win_raw": 49.6,
-   "win_chance": 50.6,
-   "edge": -0.3,
-   "side": "Under",
+   "conf": 47.0,
+   "win_raw": 50.4,
+   "win_chance": 49.4,
+   "edge": 2.1,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     3,
+     2,
      5
     ],
     "mid": [
-     4,
+     3,
      7
     ],
     "soft": [
-     1,
+     3,
      4
     ]
    }
@@ -38548,11 +38376,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 14.1,
-   "base": 14.4,
+   "model": 16.0,
+   "base": 16.3,
    "matchup": -1.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 12.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.345,
@@ -38577,10 +38407,10 @@
      15
     ]
    },
-   "conf": 50.9,
+   "conf": 30.2,
    "win_raw": 55.3,
    "win_chance": 48.9,
-   "edge": -2.4,
+   "edge": -0.5,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -38716,11 +38546,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 18.0,
-   "base": 17.0,
+   "model": 20.0,
+   "base": 19.0,
    "matchup": -2.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.7,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.746,
@@ -38748,7 +38580,7 @@
    "conf": 80.8,
    "win_raw": 68.8,
    "win_chance": 51.4,
-   "edge": 5.5,
+   "edge": 7.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -38772,11 +38604,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "PRA",
-   "model": 16.2,
-   "base": 15.7,
+   "model": 18.0,
+   "base": 17.5,
    "matchup": -1.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.2,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.682,
@@ -38808,7 +38642,7 @@
    "conf": 78.4,
    "win_raw": 58.1,
    "win_chance": 49.7,
-   "edge": 3.7,
+   "edge": 5.5,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -38832,11 +38666,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 4.7,
-   "base": 4.8,
+   "model": 5.1,
+   "base": 5.2,
    "matchup": -1.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 9.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.195,
@@ -38861,10 +38697,10 @@
      15
     ]
    },
-   "conf": 89.9,
+   "conf": 83.7,
    "win_raw": 75.0,
    "win_chance": 51.4,
-   "edge": -1.8,
+   "edge": -1.4,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -38888,11 +38724,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 6.0,
-   "base": 6.2,
+   "model": 6.7,
+   "base": 6.9,
    "matchup": -1.8,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.394,
@@ -38909,35 +38747,35 @@
    ],
    "hits": {
     "l5": [
-     5,
+     0,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     9,
+     6,
      15
     ]
    },
-   "conf": 52.3,
-   "win_raw": 60.4,
-   "win_chance": 50.3,
-   "edge": -0.5,
-   "side": "Under",
+   "conf": 22.0,
+   "win_raw": 39.6,
+   "win_chance": 49.7,
+   "edge": 0.2,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     2,
+     3,
      5
     ],
     "mid": [
-     5,
+     3,
      8
     ],
     "soft": [
-     4,
+     0,
      4
     ]
    }
@@ -39064,11 +38902,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 5.0,
-   "base": 5.1,
+   "model": 5.6,
+   "base": 5.7,
    "matchup": -0.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.384,
@@ -39085,35 +38925,35 @@
    ],
    "hits": {
     "l5": [
-     4,
+     1,
      5
     ],
     "l10": [
-     6,
+     4,
      10
     ],
     "l15": [
-     7,
+     8,
      15
     ]
    },
-   "conf": 50.3,
-   "win_raw": 55.6,
-   "win_chance": 49.0,
-   "edge": -0.5,
-   "side": "Under",
+   "conf": 24.4,
+   "win_raw": 44.4,
+   "win_chance": 51.0,
+   "edge": 0.1,
+   "side": "Over",
    "tiers": {
     "tonight": "tough",
     "tough": [
-     4,
+     2,
      6
     ],
     "mid": [
-     3,
+     4,
      7
     ],
     "soft": [
-     1,
+     2,
      3
     ]
    }
@@ -39124,11 +38964,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 4.5,
-   "base": 4.3,
+   "model": 4.9,
+   "base": 4.7,
    "matchup": -1.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 9.4,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.658,
@@ -39156,7 +38998,7 @@
    "conf": 82.1,
    "win_raw": 59.5,
    "win_chance": 50.0,
-   "edge": 1.0,
+   "edge": 1.4,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -39171,66 +39013,6 @@
     "soft": [
      2,
      3
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "REB",
-   "model": 4.0,
-   "base": 4.0,
-   "matchup": 2.3,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.567,
-   "dk": 3.5,
-   "over": -153,
-   "under": 116,
-   "best_over": [
-    -135,
-    "betmgm"
-   ],
-   "best_under": [
-    122,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     5,
-     10
-    ],
-    "l15": [
-     8,
-     15
-    ]
-   },
-   "conf": 57.8,
-   "win_raw": 55.4,
-   "win_chance": 48.9,
-   "edge": 0.5,
-   "side": "Over",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     3,
-     7
-    ],
-    "mid": [
-     3,
-     4
-    ],
-    "soft": [
-     2,
-     4
     ]
    }
   },
@@ -39300,11 +39082,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 5.2,
-   "base": 5.1,
+   "model": 5.7,
+   "base": 5.6,
    "matchup": -2.2,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 9.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.762,
@@ -39336,7 +39120,7 @@
    "conf": 85.3,
    "win_raw": 75.1,
    "win_chance": 51.4,
-   "edge": 1.7,
+   "edge": 2.2,
    "side": "Over",
    "tiers": {
     "tonight": "tough",
@@ -39592,11 +39376,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "REB",
-   "model": 2.0,
-   "base": 2.2,
+   "model": 2.2,
+   "base": 2.4,
    "matchup": -1.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.4,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.323,
@@ -39625,10 +39411,10 @@
      15
     ]
    },
-   "conf": 68.1,
+   "conf": 53.7,
    "win_raw": 62.0,
    "win_chance": 50.7,
-   "edge": -0.5,
+   "edge": -0.3,
    "side": "Under",
    "tiers": {
     "tonight": "tough",
@@ -39652,11 +39438,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 13.4,
-   "base": 13.4,
+   "model": 15.0,
+   "base": 15.0,
    "matchup": 0.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.8,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.6,
@@ -39681,10 +39469,10 @@
      15
     ]
    },
-   "conf": 50.5,
+   "conf": 73.6,
    "win_raw": 65.3,
    "win_chance": 51.4,
-   "edge": 0.9,
+   "edge": 2.5,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -39879,72 +39667,18 @@
    }
   },
   {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "RA",
-   "model": 8.6,
-   "base": 8.5,
-   "matchup": -1.4,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.512,
-   "dk": 8.5,
-   "over": -119,
-   "under": -110,
-   "best_under": [
-    105,
-    "betparx"
-   ],
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     8,
-     15
-    ]
-   },
-   "conf": 39.7,
-   "win_raw": 52.1,
-   "win_chance": 48.1,
-   "edge": 0.1,
-   "side": "Over",
-   "tiers": {
-    "tonight": "mid",
-    "tough": [
-     1,
-     4
-    ],
-    "mid": [
-     3,
-     7
-    ],
-    "soft": [
-     4,
-     4
-    ]
-   }
-  },
-  {
    "player": "Daniel Gafford",
    "team": "DAL",
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 7.3,
-   "base": 7.3,
+   "model": 8.0,
+   "base": 8.0,
    "matchup": -0.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.3,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.36,
@@ -39969,10 +39703,10 @@
      15
     ]
    },
-   "conf": 64.8,
+   "conf": 50.0,
    "win_raw": 65.1,
    "win_chance": 51.4,
-   "edge": -1.2,
+   "edge": -0.5,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -40116,11 +39850,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 8.4,
-   "base": 8.2,
+   "model": 9.2,
+   "base": 9.0,
    "matchup": 0.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.704,
@@ -40152,7 +39888,7 @@
    "conf": 88.6,
    "win_raw": 65.1,
    "win_chance": 51.4,
-   "edge": 1.9,
+   "edge": 2.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -40176,11 +39912,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 6.0,
-   "base": 6.3,
+   "model": 6.7,
+   "base": 7.0,
    "matchup": -0.4,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.9,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.435,
@@ -40193,7 +39931,7 @@
    ],
    "hits": {
     "l5": [
-     3,
+     2,
      5
     ],
     "l10": [
@@ -40201,19 +39939,19 @@
      10
     ],
     "l15": [
-     6,
+     9,
      15
     ]
    },
-   "conf": 41.3,
-   "win_raw": 49.9,
-   "win_chance": 50.1,
-   "edge": -0.5,
-   "side": "Under",
+   "conf": 33.0,
+   "win_raw": 50.1,
+   "win_chance": 49.9,
+   "edge": 0.2,
+   "side": "Over",
    "tiers": {
     "tonight": "mid",
     "tough": [
-     3,
+     1,
      4
     ],
     "mid": [
@@ -40221,7 +39959,7 @@
      6
     ],
     "soft": [
-     1,
+     5,
      6
     ]
    }
@@ -40348,11 +40086,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 4.9,
-   "base": 5.2,
+   "model": 5.5,
+   "base": 5.8,
    "matchup": 1.1,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 11.9,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.399,
@@ -40377,10 +40117,10 @@
      15
     ]
    },
-   "conf": 52.6,
+   "conf": 33.0,
    "win_raw": 52.1,
    "win_chance": 48.1,
-   "edge": -0.6,
+   "edge": 0.0,
    "side": "Under",
    "tiers": {
     "tonight": "mid",
@@ -40404,11 +40144,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "RA",
-   "model": 6.1,
-   "base": 6.1,
+   "model": 6.8,
+   "base": 6.8,
    "matchup": -1.3,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 10.2,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.724,
@@ -40432,7 +40174,7 @@
    "conf": 85.3,
    "win_raw": 72.8,
    "win_chance": 51.4,
-   "edge": 1.6,
+   "edge": 2.3,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -40447,62 +40189,6 @@
     "soft": [
      5,
      6
-    ]
-   }
-  },
-  {
-   "player": "Kyrie Irving",
-   "team": "DAL",
-   "opp": "PHX",
-   "game": "DAL@PHX",
-   "stat": "3PM",
-   "model": 3.2,
-   "base": 3.3,
-   "matchup": 3.3,
-   "injury": 0.0,
-   "inj_out": [],
-   "sched": 0.0,
-   "sched_notes": [],
-   "p_over": 0.397,
-   "dk": 3.5,
-   "over": 117,
-   "under": -155,
-   "best_over": [
-    142,
-    "fanduel"
-   ],
-   "hits": {
-    "l5": [
-     3,
-     5
-    ],
-    "l10": [
-     6,
-     10
-    ],
-    "l15": [
-     9,
-     15
-    ]
-   },
-   "conf": 48.4,
-   "win_raw": 60.2,
-   "win_chance": 50.2,
-   "edge": -0.3,
-   "side": "Under",
-   "tiers": {
-    "tonight": "soft",
-    "tough": [
-     4,
-     5
-    ],
-    "mid": [
-     2,
-     5
-    ],
-    "soft": [
-     3,
-     5
     ]
    }
   },
@@ -40800,11 +40486,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "3PM",
-   "model": 2.1,
-   "base": 2.1,
+   "model": 2.4,
+   "base": 2.4,
    "matchup": -3.4,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 15.9,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.62,
@@ -40836,7 +40524,7 @@
    "conf": 78.9,
    "win_raw": 63.9,
    "win_chance": 51.2,
-   "edge": 0.6,
+   "edge": 0.9,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -40860,11 +40548,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "3PM",
-   "model": 1.9,
-   "base": 1.9,
+   "model": 2.2,
+   "base": 2.2,
    "matchup": -3.5,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 15.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.566,
@@ -40896,7 +40586,7 @@
    "conf": 79.8,
    "win_raw": 55.3,
    "win_chance": 48.9,
-   "edge": 0.4,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -40980,11 +40670,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "3PM",
-   "model": 1.7,
-   "base": 1.5,
+   "model": 1.9,
+   "base": 1.7,
    "matchup": -3.9,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 14.0,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.817,
@@ -41016,7 +40708,7 @@
    "conf": 81.3,
    "win_raw": 74.7,
    "win_chance": 51.4,
-   "edge": 1.2,
+   "edge": 1.4,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -41040,11 +40732,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "3PM",
-   "model": 1.0,
-   "base": 1.0,
+   "model": 1.2,
+   "base": 1.2,
    "matchup": -2.7,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 14.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.632,
@@ -41072,7 +40766,7 @@
    "conf": 84.4,
    "win_raw": 64.6,
    "win_chance": 51.4,
-   "edge": 0.5,
+   "edge": 0.7,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -41096,11 +40790,13 @@
    "opp": "PHX",
    "game": "DAL@PHX",
    "stat": "3PM",
-   "model": 1.0,
-   "base": 0.9,
+   "model": 1.1,
+   "base": 1.0,
    "matchup": -3.6,
-   "injury": 0.0,
-   "inj_out": [],
+   "injury": 15.5,
+   "inj_out": [
+    "Kyrie Irving"
+   ],
    "sched": 0.0,
    "sched_notes": [],
    "p_over": 0.632,
@@ -41128,7 +40824,7 @@
    "conf": 80.8,
    "win_raw": 61.9,
    "win_chance": 50.7,
-   "edge": 0.5,
+   "edge": 0.6,
    "side": "Over",
    "tiers": {
     "tonight": "mid",
@@ -41161,7 +40857,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.519,
+   "p_over": 0.504,
    "dk": 7.5,
    "over": -109,
    "under": -121,
@@ -41184,8 +40880,8 @@
     ]
    },
    "conf": 33.2,
-   "win_raw": 49.8,
-   "win_chance": 50.3,
+   "win_raw": 48.9,
+   "win_chance": 51.6,
    "edge": 0.2,
    "side": "Over",
    "tiers": {
@@ -41459,7 +41155,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.803,
+   "p_over": 0.762,
    "dk": 2.5,
    "over": -113,
    "under": -116,
@@ -41482,7 +41178,7 @@
     ]
    },
    "conf": 83.5,
-   "win_raw": 72.2,
+   "win_raw": 69.7,
    "win_chance": 51.4,
    "edge": 1.5,
    "side": "Over",
@@ -41517,7 +41213,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.62,
+   "p_over": 0.554,
    "dk": 2.5,
    "over": 112,
    "under": -147,
@@ -41540,8 +41236,8 @@
     ]
    },
    "conf": 64.5,
-   "win_raw": 61.2,
-   "win_chance": 50.5,
+   "win_raw": 57.2,
+   "win_chance": 49.4,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -41575,7 +41271,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.769,
+   "p_over": 0.733,
    "dk": 1.5,
    "over": -130,
    "under": -101,
@@ -41598,7 +41294,7 @@
     ]
    },
    "conf": 80.8,
-   "win_raw": 70.1,
+   "win_raw": 68.0,
    "win_chance": 51.4,
    "edge": 1.1,
    "side": "Over",
@@ -41691,7 +41387,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.62,
+   "p_over": 0.594,
    "dk": 1.5,
    "over": -111,
    "under": -119,
@@ -41714,8 +41410,8 @@
     ]
    },
    "conf": 79.8,
-   "win_raw": 58.5,
-   "win_chance": 49.8,
+   "win_raw": 57.0,
+   "win_chance": 49.4,
    "edge": 0.5,
    "side": "Over",
    "tiers": {
@@ -41749,7 +41445,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.535,
+   "p_over": 0.487,
    "dk": 33.5,
    "over": -120,
    "under": -106,
@@ -41772,8 +41468,8 @@
     ]
    },
    "conf": 29.1,
-   "win_raw": 43.9,
-   "win_chance": 50.9,
+   "win_raw": 46.8,
+   "win_chance": 51.6,
    "edge": -0.3,
    "side": "Under",
    "tiers": {
@@ -41985,7 +41681,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.689,
+   "p_over": 0.611,
    "dk": 12.5,
    "over": -117,
    "under": -108,
@@ -42008,8 +41704,8 @@
     ]
    },
    "conf": 46.6,
-   "win_raw": 62.7,
-   "win_chance": 50.9,
+   "win_raw": 58.0,
+   "win_chance": 49.6,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -42101,7 +41797,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.7,
+   "p_over": 0.66,
    "dk": 10.5,
    "over": -128,
    "under": 101,
@@ -42124,8 +41820,8 @@
     ]
    },
    "conf": 76.2,
-   "win_raw": 60.7,
-   "win_chance": 50.4,
+   "win_raw": 58.3,
+   "win_chance": 49.7,
    "edge": 4.9,
    "side": "Over",
    "tiers": {
@@ -42217,7 +41913,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.716,
+   "p_over": 0.65,
    "dk": 9.5,
    "over": -112,
    "under": -113,
@@ -42244,7 +41940,7 @@
     ]
    },
    "conf": 92.2,
-   "win_raw": 72.3,
+   "win_raw": 68.3,
    "win_chance": 51.4,
    "edge": 2.3,
    "side": "Over",
@@ -42279,7 +41975,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.65,
+   "p_over": 0.598,
    "dk": 6.5,
    "over": -116,
    "under": -109,
@@ -42302,8 +41998,8 @@
     ]
    },
    "conf": 61.6,
-   "win_raw": 57.7,
-   "win_chance": 49.6,
+   "win_raw": 54.5,
+   "win_chance": 48.7,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -42337,7 +42033,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.582,
+   "p_over": 0.541,
    "dk": 6.5,
    "over": 101,
    "under": -128,
@@ -42360,8 +42056,8 @@
     ]
    },
    "conf": 34.0,
-   "win_raw": 53.6,
-   "win_chance": 48.5,
+   "win_raw": 51.1,
+   "win_chance": 48.4,
    "edge": 0.4,
    "side": "Over",
    "tiers": {
@@ -42395,7 +42091,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.526,
+   "p_over": 0.473,
    "dk": 41.5,
    "over": -119,
    "under": -110,
@@ -42418,8 +42114,8 @@
     ]
    },
    "conf": 26.9,
-   "win_raw": 41.8,
-   "win_chance": 50.3,
+   "win_raw": 45.0,
+   "win_chance": 51.1,
    "edge": -0.7,
    "side": "Under",
    "tiers": {
@@ -42697,7 +42393,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.669,
+   "p_over": 0.594,
    "dk": 14.5,
    "over": -113,
    "under": -117,
@@ -42724,8 +42420,8 @@
     ]
    },
    "conf": 47.0,
-   "win_raw": 61.5,
-   "win_chance": 50.6,
+   "win_raw": 57.0,
+   "win_chance": 49.4,
    "edge": 1.2,
    "side": "Over",
    "tiers": {
@@ -42759,7 +42455,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.721,
+   "p_over": 0.68,
    "dk": 13.5,
    "over": -120,
    "under": -110,
@@ -42782,8 +42478,8 @@
     ]
    },
    "conf": 82.6,
-   "win_raw": 64.6,
-   "win_chance": 51.4,
+   "win_raw": 62.1,
+   "win_chance": 50.7,
    "edge": 5.9,
    "side": "Over",
    "tiers": {
@@ -42875,7 +42571,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.753,
+   "p_over": 0.687,
    "dk": 11.5,
    "over": -130,
    "under": -102,
@@ -42894,7 +42590,7 @@
     ]
    },
    "conf": 90.8,
-   "win_raw": 74.5,
+   "win_raw": 70.6,
    "win_chance": 51.4,
    "edge": 3.2,
    "side": "Over",
@@ -42929,7 +42625,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.691,
+   "p_over": 0.643,
    "dk": 7.5,
    "over": -135,
    "under": 102,
@@ -42952,8 +42648,8 @@
     ]
    },
    "conf": 56.5,
-   "win_raw": 60.1,
-   "win_chance": 50.2,
+   "win_raw": 57.2,
+   "win_chance": 49.4,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
@@ -43045,7 +42741,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.485,
+   "p_over": 0.435,
    "dk": 40.5,
    "over": -120,
    "under": -110,
@@ -43068,8 +42764,8 @@
     ]
    },
    "conf": 35.1,
-   "win_raw": 46.9,
-   "win_chance": 51.6,
+   "win_raw": 49.9,
+   "win_chance": 50.1,
    "edge": -1.7,
    "side": "Under",
    "tiers": {
@@ -43103,7 +42799,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.629,
+   "p_over": 0.552,
    "dk": 23.5,
    "over": -111,
    "under": -118,
@@ -43126,8 +42822,8 @@
     ]
    },
    "conf": 28.1,
-   "win_raw": 53.7,
-   "win_chance": 48.5,
+   "win_raw": 49.1,
+   "win_chance": 51.3,
    "edge": 0.8,
    "side": "Over",
    "tiers": {
@@ -43397,7 +43093,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.687,
+   "p_over": 0.646,
    "dk": 14.5,
    "over": -108,
    "under": -121,
@@ -43420,8 +43116,8 @@
     ]
    },
    "conf": 72.5,
-   "win_raw": 57.2,
-   "win_chance": 49.4,
+   "win_raw": 54.8,
+   "win_chance": 48.8,
    "edge": 5.0,
    "side": "Over",
    "tiers": {
@@ -43455,7 +43151,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.688,
+   "p_over": 0.626,
    "dk": 11.5,
    "over": -104,
    "under": -126,
@@ -43482,8 +43178,8 @@
     ]
    },
    "conf": 71.4,
-   "win_raw": 65.3,
-   "win_chance": 51.4,
+   "win_raw": 61.6,
+   "win_chance": 50.6,
    "edge": 2.1,
    "side": "Over",
    "tiers": {
@@ -43517,7 +43213,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.68,
+   "p_over": 0.641,
    "dk": 10.5,
    "over": -104,
    "under": -126,
@@ -43544,8 +43240,8 @@
     ]
    },
    "conf": 52.1,
-   "win_raw": 59.5,
-   "win_chance": 50.0,
+   "win_raw": 57.1,
+   "win_chance": 49.4,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -43579,7 +43275,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.662,
+   "p_over": 0.6,
    "dk": 9.5,
    "over": 100,
    "under": -131,
@@ -43598,8 +43294,8 @@
     ]
    },
    "conf": 57.7,
-   "win_raw": 58.4,
-   "win_chance": 49.7,
+   "win_raw": 54.7,
+   "win_chance": 48.8,
    "edge": 1.4,
    "side": "Over",
    "tiers": {
@@ -43633,7 +43329,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.48,
+   "p_over": 0.432,
    "dk": 48.5,
    "over": -116,
    "under": -114,
@@ -43660,8 +43356,8 @@
     ]
    },
    "conf": 31.3,
-   "win_raw": 44.5,
-   "win_chance": 51.0,
+   "win_raw": 47.4,
+   "win_chance": 51.8,
    "edge": -2.0,
    "side": "Under",
    "tiers": {
@@ -43811,7 +43507,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.673,
+   "p_over": 0.602,
    "dk": 24.5,
    "over": -126,
    "under": -105,
@@ -43834,8 +43530,8 @@
     ]
    },
    "conf": 35.4,
-   "win_raw": 59.0,
-   "win_chance": 49.9,
+   "win_raw": 54.8,
+   "win_chance": 48.8,
    "edge": 1.7,
    "side": "Over",
    "tiers": {
@@ -44051,7 +43747,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.735,
+   "p_over": 0.692,
    "dk": 16.5,
    "over": -128,
    "under": -103,
@@ -44070,8 +43766,8 @@
     ]
    },
    "conf": 82.6,
-   "win_raw": 65.4,
-   "win_chance": 51.4,
+   "win_raw": 62.9,
+   "win_chance": 50.9,
    "edge": 7.1,
    "side": "Over",
    "tiers": {
@@ -44105,7 +43801,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.728,
+   "p_over": 0.659,
    "dk": 13.5,
    "over": -117,
    "under": -112,
@@ -44128,7 +43824,7 @@
     ]
    },
    "conf": 81.7,
-   "win_raw": 73.0,
+   "win_raw": 68.9,
    "win_chance": 51.4,
    "edge": 2.9,
    "side": "Over",
@@ -44163,7 +43859,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.726,
+   "p_over": 0.675,
    "dk": 12.5,
    "over": 100,
    "under": -131,
@@ -44182,8 +43878,8 @@
     ]
    },
    "conf": 57.3,
-   "win_raw": 62.2,
-   "win_chance": 50.8,
+   "win_raw": 59.2,
+   "win_chance": 50.0,
    "edge": 2.2,
    "side": "Over",
    "tiers": {
@@ -44279,7 +43975,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.54,
+   "p_over": 0.492,
    "dk": 10.5,
    "over": 101,
    "under": -133,
@@ -44306,8 +44002,8 @@
     ]
    },
    "conf": 40.2,
-   "win_raw": 56.4,
-   "win_chance": 49.2,
+   "win_raw": 53.5,
+   "win_chance": 48.5,
    "edge": 0.1,
    "side": "Over",
    "tiers": {
@@ -44341,7 +44037,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.346,
+   "p_over": 0.33,
    "dk": 6.5,
    "over": -113,
    "under": -116,
@@ -44368,8 +44064,8 @@
     ]
    },
    "conf": 66.2,
-   "win_raw": 63.2,
-   "win_chance": 51.0,
+   "win_raw": 64.2,
+   "win_chance": 51.3,
    "edge": -0.9,
    "side": "Under",
    "tiers": {
@@ -44523,7 +44219,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.798,
+   "p_over": 0.775,
    "dk": 3.5,
    "over": -143,
    "under": 108,
@@ -44546,7 +44242,7 @@
     ]
    },
    "conf": 73.4,
-   "win_raw": 66.5,
+   "win_raw": 65.2,
    "win_chance": 51.4,
    "edge": 1.8,
    "side": "Over",
@@ -44701,7 +44397,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.641,
+   "p_over": 0.586,
    "dk": 3.5,
    "over": 123,
    "under": -163,
@@ -44724,8 +44420,8 @@
     ]
    },
    "conf": 62.0,
-   "win_raw": 57.1,
-   "win_chance": 49.4,
+   "win_raw": 53.8,
+   "win_chance": 48.5,
    "edge": 0.6,
    "side": "Over",
    "tiers": {
@@ -44759,7 +44455,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.697,
+   "p_over": 0.66,
    "dk": 2.5,
    "over": 115,
    "under": -152,
@@ -44786,8 +44482,8 @@
     ]
    },
    "conf": 68.8,
-   "win_raw": 55.2,
-   "win_chance": 48.9,
+   "win_raw": 52.9,
+   "win_chance": 48.3,
    "edge": 0.9,
    "side": "Over",
    "tiers": {
@@ -44883,7 +44579,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.399,
+   "p_over": 0.367,
    "dk": 14.5,
    "over": 103,
    "under": -136,
@@ -44902,8 +44598,8 @@
     ]
    },
    "conf": 57.1,
-   "win_raw": 62.7,
-   "win_chance": 50.9,
+   "win_raw": 64.6,
+   "win_chance": 51.4,
    "edge": -1.2,
    "side": "Under",
    "tiers": {
@@ -44995,7 +44691,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.665,
+   "p_over": 0.615,
    "dk": 11.5,
    "over": -129,
    "under": -102,
@@ -45018,8 +44714,8 @@
     ]
    },
    "conf": 59.4,
-   "win_raw": 66.6,
-   "win_chance": 51.4,
+   "win_raw": 63.6,
+   "win_chance": 51.1,
    "edge": 1.1,
    "side": "Over",
    "tiers": {
@@ -45227,7 +44923,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.788,
+   "p_over": 0.748,
    "dk": 5.5,
    "over": -130,
    "under": -101,
@@ -45250,7 +44946,7 @@
     ]
    },
    "conf": 82.6,
-   "win_raw": 68.6,
+   "win_raw": 66.2,
    "win_chance": 51.4,
    "edge": 2.6,
    "side": "Over",
@@ -45285,7 +44981,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.75,
+   "p_over": 0.733,
    "dk": 5.5,
    "over": -124,
    "under": -106,
@@ -45308,7 +45004,7 @@
     ]
    },
    "conf": 84.4,
-   "win_raw": 71.7,
+   "win_raw": 70.6,
    "win_chance": 51.4,
    "edge": 2.4,
    "side": "Over",
@@ -45343,7 +45039,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.785,
+   "p_over": 0.739,
    "dk": 3.5,
    "over": -141,
    "under": 107,
@@ -45366,7 +45062,7 @@
     ]
    },
    "conf": 82.6,
-   "win_raw": 76.4,
+   "win_raw": 73.7,
    "win_chance": 51.4,
    "edge": 1.3,
    "side": "Over",
@@ -45401,7 +45097,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.352,
+   "p_over": 0.332,
    "dk": 4.5,
    "over": -101,
    "under": -130,
@@ -45428,8 +45124,8 @@
     ]
    },
    "conf": 51.8,
-   "win_raw": 52.2,
-   "win_chance": 48.1,
+   "win_raw": 53.4,
+   "win_chance": 48.4,
    "edge": -0.7,
    "side": "Under",
    "tiers": {
@@ -45703,7 +45399,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.475,
+   "p_over": 0.442,
    "dk": 1.5,
    "over": 104,
    "under": -137,
@@ -45730,8 +45426,8 @@
     ]
    },
    "conf": 19.2,
-   "win_raw": 47.5,
-   "win_chance": 51.8,
+   "win_raw": 49.5,
+   "win_chance": 50.8,
    "edge": 0.0,
    "side": "Under",
    "tiers": {
@@ -45765,7 +45461,7 @@
    "sched_notes": [
     "3 days rest +1%"
    ],
-   "p_over": 0.785,
+   "p_over": 0.769,
    "dk": 1.5,
    "over": 106,
    "under": -140,
@@ -45788,8 +45484,8 @@
     ]
    },
    "conf": 68.8,
-   "win_raw": 60.4,
-   "win_chance": 50.3,
+   "win_raw": 59.5,
+   "win_chance": 50.0,
    "edge": 1.3,
    "side": "Over",
    "tiers": {
@@ -61834,7 +61530,7 @@
   {
    "player": "Kyrie Irving",
    "team": "DAL",
-   "status": "Day-To-Day",
+   "status": "Out",
    "reason": "Left Knee",
    "game": "DAL@PHX"
   },
@@ -61974,15 +61670,8 @@
   {
    "player": "Isaiah Stewart",
    "team": "MEM",
-   "status": "Day-To-Day",
+   "status": "Out",
    "reason": "Right Hip",
-   "game": "MEM@MIN"
-  },
-  {
-   "player": "Zach Edey",
-   "team": "MEM",
-   "status": "Day-To-Day",
-   "reason": "Left Ankle",
    "game": "MEM@MIN"
   },
   {
@@ -62059,7 +61748,7 @@
    "player": "Trendon Watford",
    "team": "NOP",
    "status": "Out",
-   "reason": "Right Ankle",
+   "reason": "Watford (ankle) is probable for Friday's game against the Clippers.",
    "game": "NOP@LAC"
   },
   {
@@ -62224,13 +61913,6 @@
    "game": "PHI@HOU"
   },
   {
-   "player": "Joel Embiid",
-   "team": "PHI",
-   "status": "Day-To-Day",
-   "reason": "Illness",
-   "game": "PHI@HOU"
-  },
-  {
    "player": "Ariel Hukporti",
    "team": "PHI",
    "status": "Out",
@@ -62392,7 +62074,7 @@
    "game": "ORL@WAS"
   }
  ],
- "injuries_updated": "11/27 07:00 PM ET",
+ "injuries_updated": "11/27 08:30 PM ET",
  "residuals": {
   "player": {
    "Cade Cunningham|AST": 2.08,
@@ -64493,295 +64175,6 @@
   "Honest win chances: every win chance shown for a Pick of the Day or ladder pick is calibrated against how the model's past leans actually did, so a pick the raw model rates 80% shows what picks like it have really hit. The map updates after every run"
  ],
  "prediction_history": [
-  {
-   "timestamp": "2026-11-15T22:31",
-   "games": [
-    {
-     "id": "OKC@SAC",
-     "matchup": "OKC @ SAC",
-     "model_spread": 2.7,
-     "model_total": 225.2,
-     "dk_spread": "+11.5",
-     "dk_total": 223.5
-    },
-    {
-     "id": "ORL@BOS",
-     "matchup": "ORL @ BOS",
-     "model_spread": -7.7,
-     "model_total": 222.6,
-     "dk_spread": "-9.5",
-     "dk_total": 211.5
-    },
-    {
-     "id": "CHI@CLE",
-     "matchup": "CHI @ CLE",
-     "model_spread": -6.2,
-     "model_total": 233.3,
-     "dk_spread": "-10.5",
-     "dk_total": 241.5
-    },
-    {
-     "id": "MEM@WAS",
-     "matchup": "MEM @ WAS",
-     "model_spread": 2.8,
-     "model_total": 229.4,
-     "dk_spread": "+5.5",
-     "dk_total": 230.5
-    },
-    {
-     "id": "PHI@BKN",
-     "matchup": "PHI @ BKN",
-     "model_spread": 0.3,
-     "model_total": 225.8,
-     "dk_spread": "+5.5",
-     "dk_total": 226.5
-    },
-    {
-     "id": "HOU@MIA",
-     "matchup": "HOU @ MIA",
-     "model_spread": 1.3,
-     "model_total": 230.6,
-     "dk_spread": "+2.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "POR@MIN",
-     "matchup": "POR @ MIN",
-     "model_spread": -3.5,
-     "model_total": 227.9,
-     "dk_spread": "-2.5",
-     "dk_total": 228.5
-    },
-    {
-     "id": "GSW@NOP",
-     "matchup": "GSW @ NOP",
-     "model_spread": 1.9,
-     "model_total": 232.2,
-     "dk_spread": "+2.5",
-     "dk_total": 226.5
-    },
-    {
-     "id": "PHX@DEN",
-     "matchup": "PHX @ DEN",
-     "model_spread": -4.2,
-     "model_total": 228.2,
-     "dk_spread": "-10.5",
-     "dk_total": 228.5
-    }
-   ],
-   "props": [
-    {
-     "player": "Alperen Sengun",
-     "stat": "PR",
-     "model": 36.6,
-     "dk": 28.5,
-     "edge": 8.1
-    },
-    {
-     "player": "Alperen Sengun",
-     "stat": "PRA",
-     "model": 44.4,
-     "dk": 36.5,
-     "edge": 7.9
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PR",
-     "model": 50.3,
-     "dk": 42.5,
-     "edge": 7.8
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PTS",
-     "model": 42.6,
-     "dk": 35.5,
-     "edge": 7.1
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PA",
-     "model": 50.3,
-     "dk": 43.5,
-     "edge": 6.8
-    },
-    {
-     "player": "Luka Doncic",
-     "stat": "PRA",
-     "model": 58.2,
-     "dk": 51.5,
-     "edge": 6.7
-    },
-    {
-     "player": "Onyeka Okongwu",
-     "stat": "PR",
-     "model": 28.0,
-     "dk": 21.5,
-     "edge": 6.5
-    },
-    {
-     "player": "Darius Acuff Jr.",
-     "stat": "PRA",
-     "model": 39.9,
-     "dk": 33.5,
-     "edge": 6.4
-    },
-    {
-     "player": "Onyeka Okongwu",
-     "stat": "PRA",
-     "model": 30.8,
-     "dk": 24.5,
-     "edge": 6.3
-    },
-    {
-     "player": "Darius Acuff Jr.",
-     "stat": "PA",
-     "model": 35.7,
-     "dk": 29.5,
-     "edge": 6.2
-    },
-    {
-     "player": "Walker Kessler",
-     "stat": "PRA",
-     "model": 32.5,
-     "dk": 26.5,
-     "edge": 6.0
-    },
-    {
-     "player": "Darryn Peterson",
-     "stat": "PRA",
-     "model": 33.4,
-     "dk": 27.5,
-     "edge": 5.9
-    },
-    {
-     "player": "Aaron Wiggins",
-     "stat": "PRA",
-     "model": 24.3,
-     "dk": 18.5,
-     "edge": 5.8
-    },
-    {
-     "player": "Alperen Sengun",
-     "stat": "PTS",
-     "model": 25.2,
-     "dk": 19.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Reed Sheppard",
-     "stat": "PRA",
-     "model": 13.8,
-     "dk": 19.5,
-     "edge": -5.7
-    },
-    {
-     "player": "Alex Sarr",
-     "stat": "PRA",
-     "model": 24.2,
-     "dk": 18.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Darius Acuff Jr.",
-     "stat": "PR",
-     "model": 32.2,
-     "dk": 26.5,
-     "edge": 5.7
-    },
-    {
-     "player": "Walker Kessler",
-     "stat": "PR",
-     "model": 30.1,
-     "dk": 24.5,
-     "edge": 5.6
-    },
-    {
-     "player": "Alperen Sengun",
-     "stat": "PA",
-     "model": 33.1,
-     "dk": 27.5,
-     "edge": 5.6
-    },
-    {
-     "player": "Keyonte George",
-     "stat": "PRA",
-     "model": 36.0,
-     "dk": 30.5,
-     "edge": 5.5
-    },
-    {
-     "player": "Alex Sarr",
-     "stat": "PR",
-     "model": 22.9,
-     "dk": 17.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Reed Sheppard",
-     "stat": "PR",
-     "model": 11.1,
-     "dk": 16.5,
-     "edge": -5.4
-    },
-    {
-     "player": "Darius Acuff Jr.",
-     "stat": "PTS",
-     "model": 27.9,
-     "dk": 22.5,
-     "edge": 5.4
-    },
-    {
-     "player": "Domantas Sabonis",
-     "stat": "PRA",
-     "model": 35.8,
-     "dk": 30.5,
-     "edge": 5.3
-    },
-    {
-     "player": "Anthony Davis",
-     "stat": "PRA",
-     "model": 39.7,
-     "dk": 34.5,
-     "edge": 5.2
-    },
-    {
-     "player": "Anthony Davis",
-     "stat": "PR",
-     "model": 37.6,
-     "dk": 32.5,
-     "edge": 5.1
-    },
-    {
-     "player": "Darryn Peterson",
-     "stat": "PR",
-     "model": 28.5,
-     "dk": 23.5,
-     "edge": 5.0
-    },
-    {
-     "player": "VJ Edgecombe",
-     "stat": "PRA",
-     "model": 27.4,
-     "dk": 22.5,
-     "edge": 4.9
-    },
-    {
-     "player": "Aaron Wiggins",
-     "stat": "PA",
-     "model": 19.4,
-     "dk": 14.5,
-     "edge": 4.9
-    },
-    {
-     "player": "Onyeka Okongwu",
-     "stat": "PTS",
-     "model": 18.2,
-     "dk": 13.5,
-     "edge": 4.7
-    }
-   ]
-  },
   {
    "timestamp": "2026-11-16T11:31",
    "games": [
@@ -81496,6 +80889,351 @@
      "model": 41.7,
      "dk": 36.5,
      "edge": 5.2
+    }
+   ]
+  },
+  {
+   "timestamp": "2026-11-27T20:30",
+   "games": [
+    {
+     "id": "MIA@NYK",
+     "matchup": "MIA @ NYK",
+     "model_spread": -4.3,
+     "model_total": 225.9,
+     "dk_spread": "-2.5",
+     "dk_total": 222.5
+    },
+    {
+     "id": "MIL@DET",
+     "matchup": "MIL @ DET",
+     "model_spread": -8.1,
+     "model_total": 225.3,
+     "dk_spread": "-9.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "PHI@IND",
+     "matchup": "PHI @ IND",
+     "model_spread": -0.4,
+     "model_total": 227.6,
+     "dk_spread": "+3.5",
+     "dk_total": 229.5
+    },
+    {
+     "id": "BKN@TOR",
+     "matchup": "BKN @ TOR",
+     "model_spread": -5.0,
+     "model_total": 226.5,
+     "dk_spread": "-9.5",
+     "dk_total": 219.5
+    },
+    {
+     "id": "ATL@BOS",
+     "matchup": "ATL @ BOS",
+     "model_spread": -4.5,
+     "model_total": 223.9,
+     "dk_spread": "-8.5",
+     "dk_total": 223.5
+    },
+    {
+     "id": "MEM@MIN",
+     "matchup": "MEM @ MIN",
+     "model_spread": -2.7,
+     "model_total": 226.4,
+     "dk_spread": "-2.5",
+     "dk_total": 220.5
+    },
+    {
+     "id": "DAL@PHX",
+     "matchup": "DAL @ PHX",
+     "model_spread": -1.5,
+     "model_total": 226.7,
+     "dk_spread": "-3.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "LAL@SAS",
+     "matchup": "LAL @ SAS",
+     "model_spread": -4.0,
+     "model_total": 227.3,
+     "dk_spread": "-6.5",
+     "dk_total": 225.5
+    },
+    {
+     "id": "DEN@UTA",
+     "matchup": "DEN @ UTA",
+     "model_spread": 0.5,
+     "model_total": 227.0,
+     "dk_spread": "+9.5",
+     "dk_total": 232.5
+    },
+    {
+     "id": "NOP@LAC",
+     "matchup": "NOP @ LAC",
+     "model_spread": -2.6,
+     "model_total": 230.5,
+     "dk_spread": "-2.5",
+     "dk_total": 230.5
+    },
+    {
+     "id": "GSW@POR",
+     "matchup": "GSW @ POR",
+     "model_spread": -4.4,
+     "model_total": 225.9,
+     "dk_spread": "-7.5",
+     "dk_total": 217.5
+    },
+    {
+     "id": "ORL@WAS",
+     "matchup": "ORL @ WAS",
+     "model_spread": -2.0,
+     "model_total": 224.4,
+     "dk_spread": "+3.5",
+     "dk_total": 218.5
+    },
+    {
+     "id": "BKN@CHA",
+     "matchup": "BKN @ CHA",
+     "model_spread": -1.7,
+     "model_total": 222.5,
+     "dk_spread": "-5.5",
+     "dk_total": 213.5
+    },
+    {
+     "id": "IND@CHI",
+     "matchup": "IND @ CHI",
+     "model_spread": -1.3,
+     "model_total": 231.4,
+     "dk_spread": "-2.5",
+     "dk_total": 236.5
+    },
+    {
+     "id": "OKC@MIL",
+     "matchup": "OKC @ MIL",
+     "model_spread": 2.6,
+     "model_total": 226.4,
+     "dk_spread": "+11.5",
+     "dk_total": 228.5
+    },
+    {
+     "id": "PHI@HOU",
+     "matchup": "PHI @ HOU",
+     "model_spread": -4.4,
+     "model_total": 227.5,
+     "dk_spread": "N/A",
+     "dk_total": 0
+    }
+   ],
+   "props": [
+    {
+     "player": "Cam Spencer",
+     "stat": "PRA",
+     "model": 27.0,
+     "dk": 17.5,
+     "edge": 9.5
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PA",
+     "model": 24.4,
+     "dk": 15.5,
+     "edge": 8.9
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PRA",
+     "model": 53.6,
+     "dk": 45.5,
+     "edge": 8.1
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PR",
+     "model": 20.2,
+     "dk": 12.5,
+     "edge": 7.7
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PRA",
+     "model": 20.0,
+     "dk": 12.5,
+     "edge": 7.5
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PR",
+     "model": 50.0,
+     "dk": 42.5,
+     "edge": 7.5
+    },
+    {
+     "player": "Cam Spencer",
+     "stat": "PTS",
+     "model": 17.6,
+     "dk": 10.5,
+     "edge": 7.1
+    },
+    {
+     "player": "Quentin Grimes",
+     "stat": "PRA",
+     "model": 23.6,
+     "dk": 16.5,
+     "edge": 7.1
+    },
+    {
+     "player": "Jaden McDaniels",
+     "stat": "PRA",
+     "model": 35.5,
+     "dk": 28.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Deni Avdija",
+     "stat": "PRA",
+     "model": 45.5,
+     "dk": 38.5,
+     "edge": 7.0
+    },
+    {
+     "player": "Dyson Daniels",
+     "stat": "RA",
+     "model": 19.4,
+     "dk": 12.5,
+     "edge": 6.9
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PR",
+     "model": 18.4,
+     "dk": 11.5,
+     "edge": 6.9
+    },
+    {
+     "player": "Stephon Castle",
+     "stat": "PRA",
+     "model": 36.4,
+     "dk": 29.5,
+     "edge": 6.9
+    },
+    {
+     "player": "Jaden McDaniels",
+     "stat": "PR",
+     "model": 31.1,
+     "dk": 24.5,
+     "edge": 6.6
+    },
+    {
+     "player": "Dyson Daniels",
+     "stat": "PRA",
+     "model": 28.7,
+     "dk": 22.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Brook Lopez",
+     "stat": "PA",
+     "model": 17.7,
+     "dk": 11.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Brook Lopez",
+     "stat": "PRA",
+     "model": 22.7,
+     "dk": 16.5,
+     "edge": 6.2
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PA",
+     "model": 39.6,
+     "dk": 33.5,
+     "edge": 6.1
+    },
+    {
+     "player": "Stephon Castle",
+     "stat": "PA",
+     "model": 30.5,
+     "dk": 24.5,
+     "edge": 6.0
+    },
+    {
+     "player": "Ausar Thompson",
+     "stat": "PRA",
+     "model": 32.4,
+     "dk": 26.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Nickeil Alexander-Walker",
+     "stat": "PRA",
+     "model": 31.4,
+     "dk": 25.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Quentin Grimes",
+     "stat": "PA",
+     "model": 19.4,
+     "dk": 13.5,
+     "edge": 5.9
+    },
+    {
+     "player": "Zaccharie Risacher",
+     "stat": "PA",
+     "model": 14.3,
+     "dk": 8.5,
+     "edge": 5.8
+    },
+    {
+     "player": "Brook Lopez",
+     "stat": "PR",
+     "model": 20.3,
+     "dk": 14.5,
+     "edge": 5.8
+    },
+    {
+     "player": "Jaden McDaniels",
+     "stat": "PTS",
+     "model": 24.2,
+     "dk": 18.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Jordan Poole",
+     "stat": "PTS",
+     "model": 17.2,
+     "dk": 11.5,
+     "edge": 5.7
+    },
+    {
+     "player": "Jordan Poole",
+     "stat": "PA",
+     "model": 20.1,
+     "dk": 14.5,
+     "edge": 5.6
+    },
+    {
+     "player": "Day'Ron Sharpe",
+     "stat": "PRA",
+     "model": 28.0,
+     "dk": 22.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Caleb Martin",
+     "stat": "PRA",
+     "model": 18.0,
+     "dk": 12.5,
+     "edge": 5.5
+    },
+    {
+     "player": "Victor Wembanyama",
+     "stat": "PTS",
+     "model": 36.0,
+     "dk": 30.5,
+     "edge": 5.5
     }
    ]
   }
@@ -101997,9 +101735,9 @@
    "side": "Over",
    "line": 17.5,
    "price": -124,
-   "model": 25.6,
-   "edge": 8.1,
-   "edge_pct": 46.3,
+   "model": 27.0,
+   "edge": 9.5,
+   "edge_pct": 54.3,
    "label": "Cam Spencer Over 17.5 PRA",
    "best": [
     -115,
@@ -102050,30 +101788,30 @@
    },
    "score": 95.4,
    "reasons": [
-    "Model projects 25.6 PRA vs a line of 17.5 (+8.1, 46% edge)",
-    "Win chance 56.8% vs 55% implied by -124: +2.6% expected value (raw model said 88.5%; past picks went 21-19, so it trusts 18% of the model's edge)",
+    "Model projects 27 PRA vs a line of 17.5 (+9.5, 54% edge)",
+    "Win chance 57% vs 55% implied by -124: +3% expected value (raw model said 89.9%; past picks went 21-19, so it trusts 18% of the model's edge)",
     "Went over the line in 9 of his last 10 games (5/5 in the last 5)",
     "Averaging 25.0 over the last 5 and 22.3 over the last 15",
     "Minutes steady: 26 per game over the last 5 (25 over the last 15)",
     "Matchup vs MIN: -4% to his PRA projection from their defense and pace (works against the over)",
     "MIN ranks among the top-10 defenses for PRA; he went over 17.5 in 4 of 5 games against that tier",
-    "Teammate injury boost: Cameron Boozer, GG Jackson, Jerami Grant out, +12% to his PRA projection (extra minutes and usage)",
+    "Teammate injury boost: Cameron Boozer, GG Jackson, Isaiah Stewart, Jerami Grant out, +17.7% to his PRA projection (extra minutes and usage)",
     "Best price: -115 at Hard Rock (DraftKings -124; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 316,
-   "p_model": 89.7,
-   "p_win_raw": 88.5,
+   "candidates_considered": 151,
+   "p_model": 92.0,
+   "p_win_raw": 89.9,
    "p_honest": 51.4,
-   "p_win": 56.8,
-   "ev": 2.6,
-   "picked_at": "2026-11-27 07:00 PM ET",
+   "p_win": 57.0,
+   "ev": 3.0,
+   "picked_at": "2026-11-27 08:30 PM ET",
    "open_line": 17.5,
    "open_price": -108,
    "first_picked_at": "2026-11-27 10:00 AM ET",
    "close_line": 17.5,
    "close_price": -124,
-   "close_at": "2026-11-27 07:00 PM ET",
+   "close_at": "2026-11-27 08:30 PM ET",
    "clv": {
     "line": 0.0,
     "price": 3.4,
@@ -104034,85 +103772,6 @@
  "potd_alts": [
   {
    "date": "2026-11-27",
-   "eid": "401909326",
-   "game": "MIA@NYK",
-   "time": "7:00 PM ET",
-   "home": "NYK",
-   "away": "MIA",
-   "type": "Prop",
-   "player": "Davion Mitchell",
-   "team": "MIA",
-   "stat": "PTS",
-   "side": "Over",
-   "line": 13.5,
-   "price": -127,
-   "model": 17.1,
-   "edge": 3.6,
-   "edge_pct": 26.7,
-   "label": "Davion Mitchell Over 13.5 PTS",
-   "best": null,
-   "hits": {
-    "l5": [
-     5,
-     5
-    ],
-    "l10": [
-     9,
-     10
-    ],
-    "l15": [
-     13,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     11.0,
-     22.0,
-     17.0,
-     19.0,
-     22.0,
-     15.0,
-     16.0,
-     24.0,
-     14.0,
-     20.0
-    ],
-    "line": 13.5,
-    "side": "Over",
-    "label": "PTS",
-    "opps": [
-     "LAC",
-     "GSW",
-     "SAC",
-     "UTA",
-     "CLE",
-     "DET",
-     "HOU",
-     "MIL",
-     "OKC",
-     "PHI"
-    ]
-   },
-   "score": 95.4,
-   "reasons": [
-    "Model projects 17.1 PTS vs a line of 13.5 (+3.6, 27% edge)",
-    "Went over the line in 9 of his last 10 games (5/5 in the last 5)",
-    "Averaging 17.8 over the last 5 and 17.5 over the last 15",
-    "Minutes steady: 35 per game over the last 5 (36 over the last 15)",
-    "Matchup vs NYK: -3.4% to his PTS projection from their defense and pace (works against the over)",
-    "NYK ranks among the middle-10 defenses for PTS; he went over 13.5 in 4 of 4 games against that tier",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 316,
-   "p_model": 80.0,
-   "p_win_raw": 82.7,
-   "p_honest": 51.4,
-   "p_win": 55.8,
-   "ev": -0.3
-  },
-  {
-   "date": "2026-11-27",
    "eid": "401909333",
    "game": "LAL@SAS",
    "time": "9:30 PM ET",
@@ -104188,7 +103847,7 @@
     "Best price: -110 at BetRivers (DraftKings -112; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 316,
+   "candidates_considered": 151,
    "p_model": 67.4,
    "p_win_raw": 69.8,
    "p_honest": 51.4,
@@ -104197,23 +103856,26 @@
   },
   {
    "date": "2026-11-27",
-   "eid": "401909329",
-   "game": "BKN@TOR",
-   "time": "7:30 PM ET",
-   "home": "TOR",
-   "away": "BKN",
+   "eid": "401909336",
+   "game": "GSW@POR",
+   "time": "9:30 PM ET",
+   "home": "POR",
+   "away": "GSW",
    "type": "Prop",
-   "player": "Mikel Brown Jr.",
-   "team": "BKN",
-   "stat": "REB",
+   "player": "Toumani Camara",
+   "team": "POR",
+   "stat": "3PM",
    "side": "Under",
    "line": 2.5,
-   "price": -127,
+   "price": -144,
    "model": 1.8,
    "edge": -0.7,
    "edge_pct": 28.0,
-   "label": "Mikel Brown Jr. Under 2.5 REB",
-   "best": null,
+   "label": "Toumani Camara Under 2.5 3PM",
+   "best": [
+    -140,
+    "espnbet"
+   ],
    "hits": {
     "l5": [
      4,
@@ -104225,7 +103887,7 @@
     ],
     "l15": [
      10,
-     13
+     15
     ]
    },
    "chart": {
@@ -104233,69 +103895,153 @@
      0.0,
      2.0,
      2.0,
+     2.0,
+     0.0,
+     2.0,
+     4.0,
      1.0,
      1.0,
-     1.0,
-     1.0,
-     1.0,
-     5.0,
-     2.0
+     1.0
     ],
     "line": 2.5,
     "side": "Under",
-    "label": "REB",
+    "label": "3PM",
     "opps": [
-     "DET",
-     "NYK",
-     "CHA",
-     "ATL",
-     "MEM",
-     "PHI",
-     "CHI",
-     "ORL",
+     "SAS",
+     "OKC",
+     "OKC",
+     "SAC",
      "MIN",
-     "MIL"
+     "MIN",
+     "MIL",
+     "NYK",
+     "PHI",
+     "SAS"
     ]
    },
-   "score": 91.3,
+   "score": 89.9,
    "reasons": [
-    "Model projects 1.8 REB vs a line of 2.5 (-0.7, 28% edge)",
+    "Model projects 1.8 3PM vs a line of 2.5 (-0.7, 28% edge)",
     "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
-    "Averaging 2.0 over the last 5 and 2.0 over the last 13",
-    "Minutes steady: 24 per game over the last 5 (23 over the last 13)",
-    "Matchup vs TOR: neutral for REB (defense and pace about league average)",
-    "TOR ranks among the middle-10 defenses for REB; he went under 2.5 in 3 of 5 games against that tier",
-    "Teammate injury boost: Moritz Wagner, Nolan Traore out, +16.3% to his REB projection (extra minutes and usage)",
+    "Averaging 1.8 over the last 5 and 2.0 over the last 15",
+    "Minutes steady: 33 per game over the last 5 (31 over the last 15)",
+    "Matchup vs GSW: +5.8% to his 3PM projection from their defense and pace (works against the under)",
+    "GSW ranks among the bottom-10 defenses for 3PM; he went under 2.5 in 2 of 4 games against that tier",
+    "Teammate injury boost: Chris Youngblood, Damian Lillard out, +16.1% to his 3PM projection (extra minutes and usage)",
+    "Best price: -140 at ESPN BET (DraftKings -144; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 316,
+   "candidates_considered": 151,
    "p_model": 73.1,
-   "p_win_raw": 74.6,
+   "p_win_raw": 70.5,
    "p_honest": 51.4,
-   "p_win": 54.3,
-   "ev": -2.9
+   "p_win": 53.6,
+   "ev": -9.2
   },
   {
    "date": "2026-11-27",
-   "eid": "401909327",
-   "game": "MIL@DET",
-   "time": "7:30 PM ET",
-   "home": "DET",
-   "away": "MIL",
+   "eid": "401909335",
+   "game": "NOP@LAC",
+   "time": "9:30 PM ET",
+   "home": "LAC",
+   "away": "NOP",
    "type": "Prop",
-   "player": "Myles Turner",
-   "team": "MIL",
+   "player": "Kris Dunn",
+   "team": "LAC",
+   "stat": "REB",
+   "side": "Over",
+   "line": 2.5,
+   "price": -130,
+   "model": 3.4,
+   "edge": 0.9,
+   "edge_pct": 36.0,
+   "label": "Kris Dunn Over 2.5 REB",
+   "best": [
+    -125,
+    "ballybet"
+   ],
+   "hits": {
+    "l5": [
+     4,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     12,
+     15
+    ]
+   },
+   "chart": {
+    "vals": [
+     5.0,
+     5.0,
+     2.0,
+     3.0,
+     3.0,
+     5.0,
+     2.0,
+     4.0,
+     5.0,
+     6.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "REB",
+    "opps": [
+     "MIA",
+     "NOP",
+     "PHX",
+     "OKC",
+     "CHA",
+     "UTA",
+     "SAS",
+     "DAL",
+     "HOU",
+     "MEM"
+    ]
+   },
+   "score": 89.0,
+   "reasons": [
+    "Model projects 3.4 REB vs a line of 2.5 (+0.9, 36% edge)",
+    "Went over the line in 8 of his last 10 games (4/5 in the last 5)",
+    "Averaging 4.4 over the last 5 and 3.9 over the last 15",
+    "Minutes steady: 22 per game over the last 5 (25 over the last 15)",
+    "Matchup vs NOP: -7.6% to his REB projection from their defense and pace (works against the over)",
+    "NOP ranks among the top-10 defenses for REB; he went over 2.5 in 6 of 6 games against that tier",
+    "Best price: -125 at Bally Bet (DraftKings -130; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 151,
+   "p_model": 66.0,
+   "p_win_raw": 71.6,
+   "p_honest": 51.4,
+   "p_win": 53.8,
+   "ev": -4.8
+  },
+  {
+   "date": "2026-11-27",
+   "eid": "401909332",
+   "game": "DAL@PHX",
+   "time": "9:00 PM ET",
+   "home": "PHX",
+   "away": "DAL",
+   "type": "Prop",
+   "player": "Caleb Martin",
+   "team": "DAL",
    "stat": "RA",
    "side": "Over",
-   "line": 7.5,
-   "price": -119,
-   "model": 10.3,
-   "edge": 2.8,
-   "edge_pct": 37.3,
-   "label": "Myles Turner Over 7.5 RA",
+   "line": 6.5,
+   "price": -112,
+   "model": 9.2,
+   "edge": 2.7,
+   "edge_pct": 41.5,
+   "label": "Caleb Martin Over 6.5 RA",
    "best": [
-    -113,
-    "fanduel"
+    108,
+    "ballybet"
    ],
    "hits": {
     "l5": [
@@ -104307,110 +104053,26 @@
      10
     ],
     "l15": [
-     10,
-     15
+     8,
+     14
     ]
    },
    "chart": {
     "vals": [
-     15.0,
-     7.0,
-     12.0,
-     5.0,
-     14.0,
+     0.0,
+     4.0,
      8.0,
-     9.0,
+     7.0,
      11.0,
-     12.0,
+     10.0,
+     8.0,
+     7.0,
+     10.0,
      8.0
     ],
-    "line": 7.5,
+    "line": 6.5,
     "side": "Over",
     "label": "RA",
-    "opps": [
-     "BOS",
-     "TOR",
-     "BOS",
-     "NYK",
-     "ORL",
-     "ATL",
-     "MIA",
-     "PHI",
-     "TOR",
-     "BKN"
-    ]
-   },
-   "score": 89.9,
-   "reasons": [
-    "Model projects 10.3 RA vs a line of 7.5 (+2.8, 37% edge)",
-    "Went over the line in 8 of his last 10 games (5/5 in the last 5)",
-    "Averaging 9.6 over the last 5 and 9.3 over the last 15",
-    "Minutes steady: 25 per game over the last 5 (26 over the last 15)",
-    "Matchup vs DET: +1.8% to his RA projection from their defense and pace (helps the over)",
-    "DET ranks among the top-10 defenses for RA; he went over 7.5 in 4 of 6 games against that tier",
-    "Teammate injury boost: Kasparas Jakucionis out, +4.8% to his RA projection (extra minutes and usage)",
-    "Best price: -113 at FanDuel (DraftKings -119; the record is graded at DraftKings)",
-    "Not on the injury report at pick time"
-   ],
-   "candidates_considered": 316,
-   "p_model": 80.8,
-   "p_win_raw": 75.2,
-   "p_honest": 51.4,
-   "p_win": 54.4,
-   "ev": 0.1
-  },
-  {
-   "date": "2026-11-27",
-   "eid": "401909332",
-   "game": "DAL@PHX",
-   "time": "9:00 PM ET",
-   "home": "PHX",
-   "away": "DAL",
-   "type": "Prop",
-   "player": "Daniel Gafford",
-   "team": "DAL",
-   "stat": "REB",
-   "side": "Under",
-   "line": 6.5,
-   "price": -112,
-   "model": 4.7,
-   "edge": -1.8,
-   "edge_pct": 27.7,
-   "label": "Daniel Gafford Under 6.5 REB",
-   "best": [
-    105,
-    "betmgm"
-   ],
-   "hits": {
-    "l5": [
-     4,
-     5
-    ],
-    "l10": [
-     9,
-     10
-    ],
-    "l15": [
-     10,
-     15
-    ]
-   },
-   "chart": {
-    "vals": [
-     1.0,
-     5.0,
-     2.0,
-     3.0,
-     3.0,
-     4.0,
-     6.0,
-     10.0,
-     4.0,
-     6.0
-    ],
-    "line": 6.5,
-    "side": "Under",
-    "label": "REB",
     "opps": [
      "UTA",
      "BKN",
@@ -104424,29 +104086,115 @@
      "DEN"
     ]
    },
-   "score": 89.9,
+   "score": 88.6,
    "reasons": [
-    "Model projects 4.7 REB vs a line of 6.5 (-1.8, 28% edge)",
-    "Went under the line in 9 of his last 10 games (4/5 in the last 5)",
-    "Averaging 6.0 over the last 5 and 5.5 over the last 15",
-    "Minutes steady: 26 per game over the last 5 (23 over the last 15)",
-    "Matchup vs PHX: -1.9% to his REB projection from their defense and pace (helps the under)",
-    "PHX ranks among the top-10 defenses for REB; he went under 6.5 in 5 of 6 games against that tier",
-    "Best price: +105 at BetMGM (DraftKings -112; the record is graded at DraftKings)",
+    "Model projects 9.2 RA vs a line of 6.5 (+2.7, 42% edge)",
+    "Went over the line in 8 of his last 10 games (5/5 in the last 5)",
+    "Averaging 8.6 over the last 5 and 6.1 over the last 14",
+    "Minutes steady: 27 per game over the last 5 (23 over the last 14)",
+    "Matchup vs PHX: neutral for RA (defense and pace about league average)",
+    "PHX ranks among the middle-10 defenses for RA; he went over 6.5 in 2 of 5 games against that tier",
+    "Teammate injury boost: Kyrie Irving out, +10.5% to his RA projection (extra minutes and usage)",
+    "Best price: +108 at Bally Bet (DraftKings -112; the record is graded at DraftKings)",
     "Not on the injury report at pick time"
    ],
-   "candidates_considered": 316,
-   "p_model": 80.5,
-   "p_win_raw": 74.9,
+   "candidates_considered": 151,
+   "p_model": 79.8,
+   "p_win_raw": 70.7,
    "p_honest": 51.4,
-   "p_win": 54.4,
-   "ev": 3.0
+   "p_win": 53.7,
+   "ev": 1.6
+  },
+  {
+   "date": "2026-11-27",
+   "eid": "401909335",
+   "game": "NOP@LAC",
+   "time": "9:30 PM ET",
+   "home": "LAC",
+   "away": "NOP",
+   "type": "Prop",
+   "player": "Trey Murphy III",
+   "team": "NOP",
+   "stat": "AST",
+   "side": "Over",
+   "line": 2.5,
+   "price": -155,
+   "model": 3.4,
+   "edge": 0.9,
+   "edge_pct": 36.0,
+   "label": "Trey Murphy III Over 2.5 AST",
+   "best": [
+    -145,
+    "hardrockbet"
+   ],
+   "hits": {
+    "l5": [
+     3,
+     5
+    ],
+    "l10": [
+     8,
+     10
+    ],
+    "l15": [
+     8,
+     11
+    ]
+   },
+   "chart": {
+    "vals": [
+     3.0,
+     4.0,
+     3.0,
+     3.0,
+     5.0,
+     5.0,
+     5.0,
+     3.0,
+     1.0,
+     2.0
+    ],
+    "line": 2.5,
+    "side": "Over",
+    "label": "AST",
+    "opps": [
+     "UTA",
+     "DEN",
+     "DEN",
+     "SAC",
+     "ATL",
+     "MEM",
+     "MIN",
+     "LAC",
+     "OKC",
+     "PHX"
+    ]
+   },
+   "score": 85.2,
+   "reasons": [
+    "Model projects 3.4 AST vs a line of 2.5 (+0.9, 36% edge)",
+    "Went over the line in 8 of his last 10 games (3/5 in the last 5)",
+    "Averaging 3.2 over the last 5 and 3.2 over the last 11",
+    "Minutes steady: 34 per game over the last 5 (33 over the last 11)",
+    "Matchup vs LAC: neutral for AST (defense and pace about league average)",
+    "LAC ranks among the middle-10 defenses for AST; he went over 2.5 in 2 of 3 games against that tier",
+    "Teammate injury boost: Bennedict Mathurin, Dejounte Murray out, +3.4% to his AST projection (extra minutes and usage)",
+    "Game script / rest: 3 days rest +1% (net +1%)",
+    "Best price: -145 at Hard Rock (DraftKings -155; the record is graded at DraftKings)",
+    "Not on the injury report at pick time"
+   ],
+   "candidates_considered": 151,
+   "p_model": 66.0,
+   "p_win_raw": 68.7,
+   "p_honest": 51.4,
+   "p_win": 53.3,
+   "ev": -12.3
   }
  ],
  "board": {
   "date": "2026-11-27",
-  "qualified": 316,
-  "positive": 90,
+  "qualified": 151,
+  "positive": 58,
   "top_win": 57.4,
   "trust": {
    "s": 0.17624409948696476,
@@ -106059,8 +105807,9 @@
      "line": 0.0,
      "price": 3.4,
      "beat": true,
-     "final": false
-    }
+     "final": true
+    },
+    "locked_at": "2026-11-27 08:30 PM ET"
    },
    {
     "type": "Prop",
@@ -108169,7 +107918,7 @@
     "day": 1,
     "stake": 10.0,
     "to_win": 5.29,
-    "picked_at": "2026-11-27 07:00 PM ET",
+    "picked_at": "2026-11-27 08:30 PM ET",
     "why_ladder": "Single alt line: 70.8% to hit by our numbers (71% trusting only half our edge) at -189, +8.3% expected value. The most likely winner on today's alt lines at a ladder price",
     "first_picked_at": "2026-11-27 02:00 PM ET"
    },
@@ -113482,7 +113231,7 @@
     "name": "Sharp",
     "desc": "Beat the closing line on 10 picks",
     "earned": null,
-    "progress": "8/10"
+    "progress": "9/10"
    }
   ]
  },
@@ -114377,16 +114126,16 @@
    "avg_price": 0.3
   },
   "ladder": {
-   "bets": 20,
-   "beat": 4,
+   "bets": 21,
+   "beat": 5,
    "avg_line": 0.0,
-   "avg_price": 0.1
+   "avg_price": 0.26
   },
   "all": {
-   "bets": 40,
-   "beat": 8,
+   "bets": 41,
+   "beat": 9,
    "avg_line": 0.0,
-   "avg_price": 0.2
+   "avg_price": 0.28
   }
  },
  "credits": {
@@ -114789,11 +114538,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 5303,
+     "bets": 5308,
      "won": 2364,
      "lost": 2490,
      "push": 64,
-     "pending": 385,
+     "pending": 390,
      "units": -466.88
     },
     "Alt Ladder": {
@@ -114831,11 +114580,11 @@
      "units": 0.0
     },
     "Model bet": {
-     "bets": 5303,
+     "bets": 5308,
      "won": 2364,
      "lost": 2490,
      "push": 64,
-     "pending": 385,
+     "pending": 390,
      "units": -466.88
     },
     "Alt Ladder": {
@@ -114864,18 +114613,18 @@
     "dir": "Over",
     "line": 17.5,
     "price": -124,
-    "model": 25.6,
-    "edge": 8.1,
-    "edge_pct": 46.3,
+    "model": 27.0,
+    "edge": 9.5,
+    "edge_pct": 54.3,
     "best": null,
     "confidence": 95.4,
-    "win_chance": 56.8,
+    "win_chance": 57.0,
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model projects 25.6 PRA vs a line of 17.5 (+8.1, 46% edge) | Win chance 56.8% vs 55% implied by -124: +2.6% expected value (raw model said 88.5%; past picks went 21-19, so it trusts 18% of the model's edge) | Went over the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 25.0 over the last 5 and 22.3 over the last 15 | Minutes steady: 26 per game over the last 5 (25 over the last 15) | Matchup vs MIN: -4% to his PRA projection from their defense and pace (works against the over) | MIN ranks among the top-10 defenses for PRA; he went over 17.5 in 4 of 5 games against that tier | Teammate injury boost: Cameron Boozer, GG Jackson, Jerami Grant out, +12% to his PRA projection (extra minutes and usage) | Best price: -115 at Hard Rock (DraftKings -124; the record is graded at DraftKings) | Not on the injury report at pick time",
-    "picked_at": "2026-11-27 07:00 PM ET",
+    "why": "Model projects 27 PRA vs a line of 17.5 (+9.5, 54% edge) | Win chance 57% vs 55% implied by -124: +3% expected value (raw model said 89.9%; past picks went 21-19, so it trusts 18% of the model's edge) | Went over the line in 9 of his last 10 games (5/5 in the last 5) | Averaging 25.0 over the last 5 and 22.3 over the last 15 | Minutes steady: 26 per game over the last 5 (25 over the last 15) | Matchup vs MIN: -4% to his PRA projection from their defense and pace (works against the over) | MIN ranks among the top-10 defenses for PRA; he went over 17.5 in 4 of 5 games against that tier | Teammate injury boost: Cameron Boozer, GG Jackson, Isaiah Stewart, Jerami Grant out, +17.7% to his PRA projection (extra minutes and usage) | Best price: -115 at Hard Rock (DraftKings -124; the record is graded at DraftKings) | Not on the injury report at pick time",
+    "picked_at": "2026-11-27 08:30 PM ET",
     "graded_at": null,
     "clv": {
      "line": 0.0,
@@ -114929,7 +114678,7 @@
      "line": 0.0,
      "price": 3.4,
      "beat": true,
-     "final": false
+     "final": true
     },
     "open": [
      7.5,
@@ -114971,7 +114720,7 @@
     "actual": null,
     "units": null,
     "why": "Single alt line: 70.8% to hit by our numbers (71% trusting only half our edge) at -189, +8.3% expected value. The most likely winner on today's alt lines at a ladder price | Alt line 5+ REB at -189: our chance 70.8% vs the book's 65.4% (+8.3% expected value) | Cleared 5+ in 13 of his last 15 games | We project 6.2 REB (DraftKings main line 5.5)",
-    "picked_at": "2026-11-27 07:00 PM ET",
+    "picked_at": "2026-11-27 08:30 PM ET",
     "graded_at": null,
     "clv": null,
     "open": [
@@ -119522,16 +119271,16 @@
     "dir": "Over",
     "line": 8.5,
     "price": 109,
-    "model": 9.7,
-    "edge": 1.2,
-    "confidence": 46.5,
+    "model": 10.5,
+    "edge": 2.0,
+    "confidence": 63.4,
     "win_chance": 51.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 9.7 vs DraftKings 8.5 (edge 1.2)"
+    "why": "Model 10.5 vs DraftKings 8.5 (edge 2.0)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Jaden McDaniels|PA",
@@ -119626,16 +119375,16 @@
     "dir": "Over",
     "line": 9.5,
     "price": -105,
-    "model": 10.8,
-    "edge": 1.3,
-    "confidence": 46.6,
+    "model": 11.7,
+    "edge": 2.2,
+    "confidence": 63.7,
     "win_chance": 48.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 10.8 vs DraftKings 9.5 (edge 1.3)"
+    "why": "Model 11.7 vs DraftKings 9.5 (edge 2.2)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Kris Murray|PA",
@@ -119652,16 +119401,16 @@
     "dir": "Under",
     "line": 7.5,
     "price": -110,
-    "model": 6.2,
-    "edge": -1.3,
-    "confidence": 72.7,
+    "model": 6.5,
+    "edge": -1.0,
+    "confidence": 65.5,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 6.2 vs DraftKings 7.5 (edge -1.3)"
+    "why": "Model 6.5 vs DraftKings 7.5 (edge -1.0)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Jaden McDaniels|PR",
@@ -119756,16 +119505,16 @@
     "dir": "Under",
     "line": 9.5,
     "price": -113,
-    "model": 7.0,
-    "edge": -2.5,
-    "confidence": 86.5,
+    "model": 7.3,
+    "edge": -2.2,
+    "confidence": 83.2,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 7.0 vs DraftKings 9.5 (edge -2.5)"
+    "why": "Model 7.3 vs DraftKings 9.5 (edge -2.2)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Jaden McDaniels|PRA",
@@ -119860,16 +119609,16 @@
     "dir": "Under",
     "line": 11.5,
     "price": -127,
-    "model": 8.3,
-    "edge": -3.2,
-    "confidence": 86.5,
+    "model": 8.7,
+    "edge": -2.8,
+    "confidence": 85.3,
     "win_chance": 51.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 8.3 vs DraftKings 11.5 (edge -3.2)"
+    "why": "Model 8.7 vs DraftKings 11.5 (edge -2.8)"
    },
    {
     "id": "model|2026-11-27|MEM @ MIN|Cedric Coward|REB",
@@ -120016,42 +119765,16 @@
     "dir": "Over",
     "line": 7.5,
     "price": -105,
-    "model": 8.9,
-    "edge": 1.4,
-    "confidence": 63.9,
+    "model": 9.3,
+    "edge": 1.8,
+    "confidence": 73.5,
     "win_chance": 50.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
     "actual": null,
     "units": null,
-    "why": "Model 8.9 vs DraftKings 7.5 (edge 1.4)"
-   },
-   {
-    "id": "model|2026-11-27|DAL @ PHX|Cooper Flagg|AST",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Cooper Flagg Over 5.5 AST",
-    "player": "Cooper Flagg",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "AST",
-    "dir": "Over",
-    "line": 5.5,
-    "price": -153,
-    "model": 7.4,
-    "edge": 1.9,
-    "confidence": 78.9,
-    "win_chance": 51.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 7.4 vs DraftKings 5.5 (edge 1.9)"
+    "why": "Model 9.3 vs DraftKings 7.5 (edge 1.8)"
    },
    {
     "id": "model|2026-11-27|DAL @ PHX|Collin Gillespie|PTS",
@@ -120158,32 +119881,6 @@
     "why": "Model 11.1 vs DraftKings 9.5 (edge 1.6)"
    },
    {
-    "id": "model|2026-11-27|DAL @ PHX|Daniel Gafford|PR",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Daniel Gafford Under 16.5 PR",
-    "player": "Daniel Gafford",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "PR",
-    "dir": "Under",
-    "line": 16.5,
-    "price": -114,
-    "model": 14.2,
-    "edge": -2.3,
-    "confidence": 59.9,
-    "win_chance": 49.9,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 14.2 vs DraftKings 16.5 (edge -2.3)"
-   },
-   {
     "id": "model|2026-11-27|DAL @ PHX|Collin Gillespie|PR",
     "source": "Model bet",
     "date": "2026-11-27",
@@ -120234,32 +119931,6 @@
     "actual": null,
     "units": null,
     "why": "Model 13.7 vs DraftKings 11.5 (edge 2.2)"
-   },
-   {
-    "id": "model|2026-11-27|DAL @ PHX|Caleb Martin|PR",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Caleb Martin Over 9.5 PR",
-    "player": "Caleb Martin",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "PR",
-    "dir": "Over",
-    "line": 9.5,
-    "price": -115,
-    "model": 12.7,
-    "edge": 3.2,
-    "confidence": 76.6,
-    "win_chance": 50.3,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 12.7 vs DraftKings 9.5 (edge 3.2)"
    },
    {
     "id": "model|2026-11-27|DAL @ PHX|Collin Gillespie|PRA",
@@ -120314,32 +119985,6 @@
     "why": "Model 16.4 vs DraftKings 13.5 (edge 2.9)"
    },
    {
-    "id": "model|2026-11-27|DAL @ PHX|Daniel Gafford|REB",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Daniel Gafford Under 6.5 REB",
-    "player": "Daniel Gafford",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "REB",
-    "dir": "Under",
-    "line": 6.5,
-    "price": -112,
-    "model": 4.7,
-    "edge": -1.8,
-    "confidence": 89.9,
-    "win_chance": 51.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 4.7 vs DraftKings 6.5 (edge -1.8)"
-   },
-   {
     "id": "model|2026-11-27|DAL @ PHX|Jalen Green|REB",
     "source": "Model bet",
     "date": "2026-11-27",
@@ -120364,32 +120009,6 @@
     "actual": null,
     "units": null,
     "why": "Model 4.7 vs DraftKings 3.5 (edge 1.2)"
-   },
-   {
-    "id": "model|2026-11-27|DAL @ PHX|Caleb Martin|REB",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Caleb Martin Over 3.5 REB",
-    "player": "Caleb Martin",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "REB",
-    "dir": "Over",
-    "line": 3.5,
-    "price": -154,
-    "model": 4.5,
-    "edge": 1.0,
-    "confidence": 82.1,
-    "win_chance": 50.0,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 4.5 vs DraftKings 3.5 (edge 1.0)"
    },
    {
     "id": "model|2026-11-27|DAL @ PHX|Devin Booker|REB",
@@ -120444,32 +120063,6 @@
     "why": "Model 11.0 vs DraftKings 9.5 (edge 1.5)"
    },
    {
-    "id": "model|2026-11-27|DAL @ PHX|Daniel Gafford|RA",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Daniel Gafford Under 8.5 RA",
-    "player": "Daniel Gafford",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "RA",
-    "dir": "Under",
-    "line": 8.5,
-    "price": -111,
-    "model": 7.3,
-    "edge": -1.2,
-    "confidence": 64.8,
-    "win_chance": 51.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 7.3 vs DraftKings 8.5 (edge -1.2)"
-   },
-   {
     "id": "model|2026-11-27|DAL @ PHX|Jalen Green|RA",
     "source": "Model bet",
     "date": "2026-11-27",
@@ -120520,32 +120113,6 @@
     "actual": null,
     "units": null,
     "why": "Model 8.1 vs DraftKings 6.5 (edge 1.6)"
-   },
-   {
-    "id": "model|2026-11-27|DAL @ PHX|Caleb Martin|RA",
-    "source": "Model bet",
-    "date": "2026-11-27",
-    "game": "DAL @ PHX",
-    "market": "Player Prop",
-    "type": "Prop",
-    "pick": "Caleb Martin Over 6.5 RA",
-    "player": "Caleb Martin",
-    "team": "DAL",
-    "opp": "PHX",
-    "stat": "RA",
-    "dir": "Over",
-    "line": 6.5,
-    "price": -112,
-    "model": 8.4,
-    "edge": 1.9,
-    "confidence": 88.6,
-    "win_chance": 51.4,
-    "price_book": "draftkings",
-    "result": null,
-    "status": "Pending",
-    "actual": null,
-    "units": null,
-    "why": "Model 8.4 vs DraftKings 6.5 (edge 1.9)"
    },
    {
     "id": "model|2026-11-27|DAL @ PHX|Dillon Brooks|RA",
@@ -120669,7 +120236,7 @@
     "model": 13.7,
     "edge": 1.2,
     "confidence": 46.6,
-    "win_chance": 50.9,
+    "win_chance": 49.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -120747,7 +120314,7 @@
     "model": 7.6,
     "edge": 1.1,
     "confidence": 61.6,
-    "win_chance": 49.6,
+    "win_chance": 48.7,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -120825,7 +120392,7 @@
     "model": 15.7,
     "edge": 1.2,
     "confidence": 47.0,
-    "win_chance": 50.6,
+    "win_chance": 49.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -120877,7 +120444,7 @@
     "model": 8.9,
     "edge": 1.4,
     "confidence": 56.5,
-    "win_chance": 50.2,
+    "win_chance": 49.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -121007,7 +120574,7 @@
     "model": 13.6,
     "edge": 2.1,
     "confidence": 71.4,
-    "win_chance": 51.4,
+    "win_chance": 50.6,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -121033,7 +120600,7 @@
     "model": 12.2,
     "edge": 1.7,
     "confidence": 52.1,
-    "win_chance": 50.0,
+    "win_chance": 49.4,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -121059,7 +120626,7 @@
     "model": 10.9,
     "edge": 1.4,
     "confidence": 57.7,
-    "win_chance": 49.7,
+    "win_chance": 48.8,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -121215,7 +120782,7 @@
     "model": 14.7,
     "edge": 2.2,
     "confidence": 57.3,
-    "win_chance": 50.8,
+    "win_chance": 50.0,
     "price_book": "draftkings",
     "result": null,
     "status": "Pending",
@@ -123172,6 +122739,188 @@
     "actual": null,
     "units": null,
     "why": "Model 16.8 vs DraftKings 15.5 (edge 1.3)"
+   },
+   {
+    "id": "model|2026-11-27|GSW @ POR|Sidy Cissoko|PRA",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "GSW @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Sidy Cissoko Over 14.5 PRA",
+    "player": "Sidy Cissoko",
+    "team": "POR",
+    "opp": "GSW",
+    "stat": "PRA",
+    "dir": "Over",
+    "line": 14.5,
+    "price": -124,
+    "model": 18.4,
+    "edge": 3.9,
+    "confidence": 66.1,
+    "win_chance": 49.8,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 18.4 vs DraftKings 14.5 (edge 3.9)"
+   },
+   {
+    "id": "model|2026-11-27|GSW @ POR|Charles Bassey|REB",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "GSW @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Charles Bassey Over 7.5 REB",
+    "player": "Charles Bassey",
+    "team": "GSW",
+    "opp": "POR",
+    "stat": "REB",
+    "dir": "Over",
+    "line": 7.5,
+    "price": -123,
+    "model": 8.3,
+    "edge": 0.8,
+    "confidence": 44.3,
+    "win_chance": 48.2,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 8.3 vs DraftKings 7.5 (edge 0.8)"
+   },
+   {
+    "id": "model|2026-11-27|GSW @ POR|Deni Avdija|RA",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "GSW @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Deni Avdija Over 13.5 RA",
+    "player": "Deni Avdija",
+    "team": "POR",
+    "opp": "GSW",
+    "stat": "RA",
+    "dir": "Over",
+    "line": 13.5,
+    "price": 103,
+    "model": 15.1,
+    "edge": 1.6,
+    "confidence": 46.1,
+    "win_chance": 48.7,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 15.1 vs DraftKings 13.5 (edge 1.6)"
+   },
+   {
+    "id": "model|2026-11-27|GSW @ POR|Brandin Podziemski|RA",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "GSW @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Brandin Podziemski Under 8.5 RA",
+    "player": "Brandin Podziemski",
+    "team": "GSW",
+    "opp": "POR",
+    "stat": "RA",
+    "dir": "Under",
+    "line": 8.5,
+    "price": 102,
+    "model": 7.1,
+    "edge": -1.4,
+    "confidence": 60.8,
+    "win_chance": 49.8,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 7.1 vs DraftKings 8.5 (edge -1.4)"
+   },
+   {
+    "id": "model|2026-11-27|GSW @ POR|Jrue Holiday|RA",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "GSW @ POR",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Jrue Holiday Over 9.5 RA",
+    "player": "Jrue Holiday",
+    "team": "POR",
+    "opp": "GSW",
+    "stat": "RA",
+    "dir": "Over",
+    "line": 9.5,
+    "price": -141,
+    "model": 11.2,
+    "edge": 1.7,
+    "confidence": 57.0,
+    "win_chance": 48.7,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 11.2 vs DraftKings 9.5 (edge 1.7)"
+   },
+   {
+    "id": "model|2026-11-27|MIA @ NYK|Spread",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "MIA @ NYK",
+    "market": "Spread",
+    "type": "Spread",
+    "pick": "NYK -2.5",
+    "player": null,
+    "team": "NYK",
+    "opp": "MIA",
+    "stat": "Spread",
+    "dir": "Cover",
+    "line": -2.5,
+    "price": -112,
+    "model": 4.3,
+    "edge": 1.8,
+    "confidence": null,
+    "win_chance": null,
+    "price_book": null,
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 4.3 vs DraftKings -2.5 (edge 1.8)"
+   },
+   {
+    "id": "model|2026-11-27|MIA @ NYK|Karl-Anthony Towns|PTS",
+    "source": "Model bet",
+    "date": "2026-11-27",
+    "game": "MIA @ NYK",
+    "market": "Player Prop",
+    "type": "Prop",
+    "pick": "Karl-Anthony Towns Over 21.5 PTS",
+    "player": "Karl-Anthony Towns",
+    "team": "NYK",
+    "opp": "MIA",
+    "stat": "PTS",
+    "dir": "Over",
+    "line": 21.5,
+    "price": -110,
+    "model": 23.8,
+    "edge": 2.3,
+    "confidence": 48.6,
+    "win_chance": 50.3,
+    "price_book": "draftkings",
+    "result": null,
+    "status": "Pending",
+    "actual": null,
+    "units": null,
+    "why": "Model 23.8 vs DraftKings 21.5 (edge 2.3)"
    },
    {
     "id": "potd|2026-11-25",
